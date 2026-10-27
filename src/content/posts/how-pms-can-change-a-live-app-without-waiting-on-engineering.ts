@@ -94,7 +94,7 @@ Being clear about limits helps adoption.
 
 - Changes to pricing logic, permissions, or data models need an engineer's eyes, even if the preview looks right. "Looks right" and "is right" are different checks.
 - Big features need design and scoping. A live-copy chat is for small, visible changes.
-- The developer still reviews every change. Expect that to take minutes, not days, because the intent is already in the conversation.
+- The developer still reviews every change. The requester sees the change on the preview in the same session, and the developer reviews it with the intent already written down in the conversation.
 
 To write these limits down for your team, use our [policy template for non-engineers requesting changes with AI](/blog/ai-change-request-policy-template).
 
