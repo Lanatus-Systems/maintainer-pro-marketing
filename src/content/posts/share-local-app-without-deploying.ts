@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "How to give a product manager or stakeholder a live link to the app running on your computer, so they can look and ask for changes, without a staging deploy, a VPN, or a screen share.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -99,13 +100,14 @@ The coding assistant on the developer's computer reads the request and edits the
 
 If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to someone whose computer has the project. Butterneck opens a private copy named after the ticket, and the title, description, comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
 
-## What stays on your computer
+## What stays on your computer, and what doesn't
 
 Sharing a local app is only comfortable if you know what the outside world can touch. With Butterneck:
 
 - The AI edits only the folder you connected. You can block other paths with ignore rules.
 - Secret settings files (\`.env\`) are on the agent's ignore list (an instruction, not a hard block).
 - If a turn goes wrong, you can stop it and roll back that turn's file changes.
+- Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use.
 - Nothing is merged, no pull request is opened, and nothing is deployed. The change stays on the computer until someone on your team publishes it the way you already do.
 
 That last point is the whole design. We wrote more about it in [Human-in-the-loop AI coding: why Butterneck never merges](/blog/human-in-the-loop-ai-coding).
