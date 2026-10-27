@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "How Itera and Butterneck compare for product teams: workflow scope, where the AI agent runs, PRs vs previews, Jira, and pricing, based on public information.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["Itera alternative", "comparison", "AI change requests", "product teams"],
   cover: {

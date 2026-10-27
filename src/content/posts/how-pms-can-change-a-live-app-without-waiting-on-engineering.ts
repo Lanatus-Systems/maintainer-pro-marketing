@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "A practical way to let PMs change a live app: ask on a live copy, an AI coding agent makes the edit, and a developer still decides what ships.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "AI coding agents", "workflow"],
   cover: {

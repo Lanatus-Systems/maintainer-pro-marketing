@@ -8,7 +8,7 @@ import { siteUrl } from "@/lib/site";
  * "Last updated" date they show, and the product pages use the date their copy last changed.
  * Bump PRODUCT_PAGES_UPDATED when home, /pricing or /integrations/jira copy changes.
  */
-const PRODUCT_PAGES_UPDATED = "2026-10-27";
+const PRODUCT_PAGES_UPDATED = "2026-10-28";
 const LEGAL_LAST_MODIFIED = new Date(`${LEGAL_UPDATED} 00:00:00 UTC`);
 
 function latestPostDate(): string {
