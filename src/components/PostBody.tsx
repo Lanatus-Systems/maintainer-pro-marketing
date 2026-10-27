@@ -1,13 +1,16 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { splitBlocks } from "@/lib/markdown";
 
 /** Renders the small Markdown subset documented on BlogPost.body. No dependencies. */
 export function PostBody({ body }: { body: string }) {
-  const blocks = body.trim().split(/\n\s*\n/);
-  return <div className="post-body">{blocks.map((block, i) => renderBlock(block.trim(), i))}</div>;
+  return <div className="post-body">{splitBlocks(body).map((block, i) => renderBlock(block, i))}</div>;
 }
 
 function renderBlock(block: string, key: number): ReactNode {
+  if (block.startsWith("```\n")) {
+    return <pre key={key} className="post-code"><code>{block.slice(4)}</code></pre>;
+  }
   if (block.startsWith("### ")) {
     const text = block.slice(4);
     return <h3 key={key} id={slugify(text)}>{inline(text)}</h3>;

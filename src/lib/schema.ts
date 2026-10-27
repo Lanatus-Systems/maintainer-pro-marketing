@@ -1,5 +1,6 @@
 import { FAQS } from "@/content/landing";
 import { brand } from "@/lib/brand";
+import { extractFaq } from "@/lib/markdown";
 import { LINKEDIN_URL, X_URL, SITE_DESCRIPTION, SITE_URL, SUPPORT_EMAIL } from "@/lib/site";
 
 export function homeJsonLd() {
@@ -91,5 +92,37 @@ export function breadcrumbJsonLd(title: string, path: string) {
         item: `${SITE_URL}${path}`,
       },
     ],
+  };
+}
+
+/** FAQPage for a blog post's "## FAQ" section, or null if the post has none. Built from the visible text. */
+export function postFaqJsonLd(body: string, url: string) {
+  const items = extractFaq(body);
+  if (items.length === 0) return null;
+  return {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    url,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
+
+/** WebPage node for a product page, about the site's SoftwareApplication (#software, defined on the home page). */
+export function webPageJsonLd(opts: { name: string; description: string; path: string }) {
+  const url = `${SITE_URL}${opts.path}`;
+  return {
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: opts.name,
+    description: opts.description,
+    inLanguage: "en",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#software` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
   };
 }

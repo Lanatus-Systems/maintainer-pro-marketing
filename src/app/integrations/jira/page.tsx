@@ -2,13 +2,16 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { JIRA } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
-import { breadcrumbJsonLd } from "@/lib/schema";
+import { breadcrumbJsonLd, webPageJsonLd } from "@/lib/schema";
 import { appUrl, WALKTHROUGH_URL } from "@/lib/site";
 
+const PAGE_TITLE = "Jira integration: label a ticket, get a live preview";
+const PAGE_DESCRIPTION =
+  "Label a Jira Cloud ticket butterneck and assign it. Butterneck opens a private copy named after the ticket, the AI works from the ticket, and a preview link is posted back. Nothing merges.";
+
 export const metadata = pageMeta({
-  title: "Jira integration: label a ticket, get a live preview",
-  description:
-    "Label a Jira Cloud ticket butterneck and assign it. Butterneck opens a private copy named after the ticket, the AI works from the ticket, and a preview link is posted back. Nothing merges.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   path: "/integrations/jira",
 });
 
@@ -16,6 +19,12 @@ export default function JiraIntegrationPage() {
   return (
     <main id="content" className="landing">
       <JsonLd data={breadcrumbJsonLd("Jira integration", "/integrations/jira")} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          ...webPageJsonLd({ name: PAGE_TITLE, description: PAGE_DESCRIPTION, path: "/integrations/jira" }),
+        }}
+      />
 
       <section className="landing-section">
         <p className="landing-kicker">Jira Cloud integration</p>

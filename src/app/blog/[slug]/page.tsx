@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PostBody } from "@/components/PostBody";
 import { formatDate, getPost, POSTS, postPath, readingMinutes } from "@/content/blog";
 import { brand } from "@/lib/brand";
+import { postFaqJsonLd } from "@/lib/schema";
 import { appUrl, SITE_URL, siteUrl, X_HANDLE } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
@@ -54,6 +55,7 @@ export default async function BlogPostPage({ params }: Params) {
   if (!post) notFound();
   const url = siteUrl(postPath(post.slug));
   const others = POSTS.filter((p) => p.slug !== post.slug);
+  const faq = postFaqJsonLd(post.body, url);
 
   return (
     <main id="content" className="blog-page blog-post">
@@ -83,6 +85,7 @@ export default async function BlogPostPage({ params }: Params) {
                 { "@type": "ListItem", position: 3, name: post.title, item: url },
               ],
             },
+            ...(faq ? [faq] : []),
           ],
         }}
       />
