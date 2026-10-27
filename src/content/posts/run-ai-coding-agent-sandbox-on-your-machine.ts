@@ -15,7 +15,7 @@ export const post: BlogPost = {
     height: 720,
   },
   body: `
-Butterneck lets a product manager or client ask for a change on a live copy of an app, and a coding agent makes the edit. The agent does not run on our servers. It runs on a developer's own computer, using the coding CLI that developer already has signed in: Cursor (\`agent\`), Claude Code (\`claude\`), or Antigravity (\`agy\`).
+Butterneck lets a product manager ask for a change on a live copy of an app, and a coding agent makes the edit. The agent does not run on our servers. It runs on a developer's own computer, using the coding CLI that developer already has signed in: Cursor (\`agent\`), Claude Code (\`claude\`), or Antigravity (\`agy\`).
 
 This post walks through how that works and what the guardrails actually are. Where a guardrail is a prompt instruction rather than a hard block, we say so.
 

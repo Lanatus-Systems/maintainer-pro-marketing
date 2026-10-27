@@ -97,7 +97,7 @@ export const legalPages = {
       {
         heading: "Liability",
         paragraphs: [
-          "The preview is a working copy on your machine. You decide what ships. Butterneck is provided as available, without a warranty that a change is correct or that the preview stays online.",
+          "The preview is a working copy on your machine. You decide what goes live. Butterneck is provided as available, without a warranty that a change is correct or that the preview stays online.",
         ],
       },
     ],

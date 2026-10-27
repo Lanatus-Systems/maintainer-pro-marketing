@@ -6,7 +6,7 @@ import { breadcrumbJsonLd } from "@/lib/schema";
 import { appUrl, WALKTHROUGH_URL } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Jira integration: a Jira label is the new prompt",
+  title: "Jira integration: label a ticket, get a live preview",
   description:
     "Label a Jira Cloud ticket butterneck and assign it. Butterneck opens a private copy named after the ticket, the AI works from the ticket, and a preview link is posted back. Nothing merges.",
   path: "/integrations/jira",
@@ -19,11 +19,12 @@ export default function JiraIntegrationPage() {
 
       <section className="landing-section">
         <p className="landing-kicker">Jira Cloud integration</p>
-        <h1>A Jira label is the new prompt</h1>
+        <h1>Label a ticket. Get a live preview.</h1>
         <p className="landing-section-lead">
           Add the label <code>butterneck</code> to a ticket and assign it to someone whose computer
-          has the project. The ticket becomes the request. The preview link comes back on the
-          ticket. A developer decides what goes live.
+          has the project. The ticket becomes the request, and the change is built by the developer&apos;s
+          own AI agent on their computer. A live preview link comes back on the ticket, and the
+          requester can keep refining it in plain words. A developer decides what goes live.
         </p>
         <div className="landing-cta">
           <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="jira_page">
