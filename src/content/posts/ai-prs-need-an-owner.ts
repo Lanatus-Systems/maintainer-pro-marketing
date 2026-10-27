@@ -90,7 +90,7 @@ What you get:
 
 - **No environment setup per ticket.** There's no base image, service list or secrets store to configure for each task. The project already runs on that computer.
 - **The real dev setup.** The agent works with the same dependencies, local data and dev server the developer uses every day, and the preview is that running app.
-- **The coding agent that's already signed in.** Butterneck doesn't ship its own model. It uses the developer's existing Cursor, Claude Code or Antigravity CLI and that tool's own provider terms.
+- **The coding agent that's already signed in.** Butterneck doesn't ship its own model. It uses the Cursor, Claude Code or Antigravity CLI your team already pays for (team or API plans recommended), under that tool's own provider terms.
 
 What it costs:
 

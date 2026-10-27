@@ -47,7 +47,7 @@ Here is how Butterneck implements those three properties. I'll keep it concrete.
 
 A daemon (the bridge) runs on a developer's machine. The developer connects one or more project folders. Each folder can be the main checkout, a fresh clone, or a git worktree under \`.worktrees/\` so several requests can run without touching the working copy.
 
-When a request arrives, the bridge's chat server starts the coding CLI the developer already uses, Cursor, Claude Code, or Antigravity, as a one-shot child process scoped to that folder. Butterneck does not ship a model. The developer's existing agent and its provider terms apply.
+When a request arrives, the bridge's chat server starts the coding CLI the developer already uses, Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended), as a one-shot child process scoped to that folder. Butterneck does not ship a model. The developer's existing agent and its provider terms apply.
 
 Why local? The project already runs there, with its real dependencies, data and dev server. No cloud environment to keep in sync.
 

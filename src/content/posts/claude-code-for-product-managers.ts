@@ -81,7 +81,7 @@ If your team needs written rules for who can ask the AI for what, start from our
 
 ## What it costs
 
-Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. Developers and people who request changes both count as seats; people who only open a share link to look do not. You keep paying for your own coding assistant subscription. Details on [pricing](/pricing).
+Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. Developers and people who request changes both count as seats; people who only open a share link to look do not. You keep paying for your own coding assistant subscription, on a plan that allows use on your team's behalf (see the note on plans and terms below). Details on [pricing](/pricing).
 
 ## FAQ
 

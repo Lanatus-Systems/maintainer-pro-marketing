@@ -33,7 +33,7 @@ export const STEPS = [
     title: "Connect the product",
     lines: [
       "Create a workspace.",
-      "A developer installs a small connector on a computer that already has the project. That computer needs Node.js 22 or newer, and a coding assistant already signed in: Cursor, Claude Code, or Antigravity.",
+      "A developer installs a small connector on a computer that already has the project. That computer needs Node.js 22 or newer, and a coding assistant already signed in: Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended).",
       "They point it at the project and start the app. Everyone else then opens a live copy.",
     ],
   },

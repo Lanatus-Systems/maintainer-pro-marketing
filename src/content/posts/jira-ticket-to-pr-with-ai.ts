@@ -53,7 +53,7 @@ So a useful ticket-to-change flow should give the ticket author a live preview, 
 
 ### The agent makes the change
 
-The coding agent runs on the assignee's computer, in that private copy's folder, using the CLI they are already signed in to: Cursor, Claude Code, or Antigravity. The app runs there too, and Butterneck gives it a share link.
+The coding agent runs on the assignee's computer, in that private copy's folder, using the CLI they are already signed in to: Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended). The app runs there too, and Butterneck gives it a share link.
 
 ### The preview goes back on the ticket
 

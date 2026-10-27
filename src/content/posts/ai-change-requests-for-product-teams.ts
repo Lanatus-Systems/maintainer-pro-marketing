@@ -120,7 +120,7 @@ Not in Butterneck. It edits files in a folder. A developer publishes.
 
 ### Which AI models are used?
 
-Whichever model the developer's Cursor, Claude Code, or Antigravity CLI is set to use, under their own subscription.
+Whichever model the developer's Cursor, Claude Code, or Antigravity CLI is set to use, under your team's plan for that tool (team or API plans recommended).
 
 ### How much does it cost?
 

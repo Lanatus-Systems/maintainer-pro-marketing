@@ -84,7 +84,7 @@ This is the part to show your CTO.
 - **The folder.** The agent works in one folder the developer chooses. That can be a git worktree, so in-flight requests do not touch the main checkout.
 - **The ignore list.** \`.env\` files and any globs the team adds are put in the agent's instructions as off-limits. That is an instruction to the agent, not a hard block, so keep production secrets off the machine that runs the bridge.
 - **The release.** Nothing is committed, pushed, or deployed by Butterneck.
-- **The agent account.** The coding CLI runs under the developer's own subscription and its provider terms. The CLI sends code context to that provider, as it does in normal use. Chat messages and preview traffic go through Butterneck's server.
+- **The agent account.** The coding CLI runs under the plan it is signed in with and that provider's terms; use a team or API plan that allows use on your team's behalf. The CLI sends code context to that provider, as it does in normal use. Chat messages and preview traffic go through Butterneck's server.
 
 For the full picture, read [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 

@@ -67,7 +67,7 @@ The fourth one is the part most tools skip.
 
 ### 1. Connect the computer that already has the project
 
-A developer creates a workspace and installs a small connector, called the bridge, on a computer that already has the project. That computer needs Node.js 22 or newer and a coding assistant that is already signed in: Cursor, Claude Code, or Antigravity. The bridge is paired to the workspace with a code from the admin screen.
+A developer creates a workspace and installs a small connector, called the bridge, on a computer that already has the project. That computer needs Node.js 22 or newer and a coding assistant that is already signed in: Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended). The bridge is paired to the workspace with a code from the admin screen.
 
 You point it at the project folder. It can start the app for you and find the port it runs on.
 

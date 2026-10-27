@@ -164,7 +164,7 @@ export default function JiraIntegrationPage() {
           </li>
           <li>
             It uses the coding assistant that is already signed in on that computer (Cursor, Claude
-            Code, or Antigravity). Butterneck does not ship its own model.
+            Code, or Antigravity; team, enterprise or API plans recommended). Butterneck does not ship its own model.
           </li>
           <li>
             The trade-off: the computer has to be on. If it is off or asleep, the ticket waits and the

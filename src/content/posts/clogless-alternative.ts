@@ -39,7 +39,7 @@ Its ticket-to-PR page lists Jira, Linear, Trello, monday.com, Notion, and Asana 
 
 Butterneck handles the small change on a product that already runs, and stops before anything goes live.
 
-- A developer installs a small connector on a computer that already has the project and a coding assistant already signed in: Cursor, Claude Code, or Antigravity.
+- A developer installs a small connector on a computer that already has the project and a coding assistant already signed in: Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended).
 - A PM or stakeholder opens a share link to a live copy of the app and types the change into a chat next to the screen they mean. Or someone adds the label \`butterneck\` to a Jira ticket and assigns it.
 - The coding assistant on that computer edits the connected project, and the preview updates on the same link.
 - The developer reads the conversation, checks the change, and publishes it the way the team already does.
@@ -52,7 +52,7 @@ Butterneck never opens pull requests, never merges, and never deploys. You decid
 
 Clogless runs each idea, ticket, or PR in its own cloud sandbox, set up once from a base image, services, and secrets you configure.
 
-Butterneck runs on a computer your team connects, in a project that already runs there, with the coding assistant that is already signed in. There is no per-ticket environment to configure. The trade-offs are real: that computer has to be on for the preview to load and for work to start, and \`.env\` handling is a guardrail, not a hard block. Secret settings files are on an ignore list the AI is told to stay out of, so keep production secrets off that computer. More on data flow in [how the agent runs on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+Butterneck runs on a computer your team connects, in a project that already runs there, with the coding assistant that is already signed in (team, enterprise or API plans recommended). There is no per-ticket environment to configure. The trade-offs are real: that computer has to be on for the preview to load and for work to start, and \`.env\` handling is a guardrail, not a hard block. Secret settings files are on an ignore list the AI is told to stay out of, so keep production secrets off that computer. More on data flow in [how the agent runs on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
 ### What you get at the end
 
@@ -104,7 +104,7 @@ Be honest about how your team ships.
 - Your requests already live in Jira and you want a label and an assignee to start the work, with the preview link landing back on the ticket.
 - You want the AI to edit files and stop there. No PRs, no merges, no deploys.
 - You would rather not configure a cloud environment, and the project already runs on a developer's computer.
-- You already pay for Cursor, Claude Code, or Antigravity and want the product team to use it through one developer's setup.
+- You already pay for Cursor, Claude Code, or Antigravity on a team or API plan and want the product team to use it through a connected developer computer.
 - You want to start free and pay per person, month to month.
 
 ## When neither is a fit

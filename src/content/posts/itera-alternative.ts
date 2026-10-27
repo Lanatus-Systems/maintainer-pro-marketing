@@ -60,7 +60,7 @@ Butterneck covers the last step for small changes: copy, layout, a missing field
 
 Itera says it connects to your Git host and hands the brief to a coding agent through an installed skill.
 
-In Butterneck, the agent runs on a developer's computer, in a folder the developer picks, using the CLI they are already signed in to. To be exact about data: the coding CLI sends prompts and code context to its own AI provider, as it does when you use it directly. Chat messages and preview traffic go through the Butterneck server so the share link works. See [what leaves your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+In Butterneck, the agent runs on a developer's computer, in a folder the developer picks, using the CLI they are already signed in to (team, enterprise or API plans recommended). To be exact about data: the coding CLI sends prompts and code context to its own AI provider, as it does when you use it directly. Chat messages and preview traffic go through the Butterneck server so the share link works. See [what leaves your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
 ### What you get at the end
 
@@ -98,7 +98,7 @@ Be honest with yourself about the kind of change you are shipping.
 - Most requests are small, and the slow part is explaining which page and which button.
 - You want the person asking to see the change on the live app, not a ticket status.
 - You want the AI to edit files and stop there. No PRs, no merges, no deploys.
-- You already pay for Cursor, Claude Code, or Antigravity and want the whole team to use it through one developer's setup.
+- You already pay for Cursor, Claude Code, or Antigravity on a team or API plan and want the product team to use it through a connected developer computer.
 - Your requests already live in Jira and you want a label to start the work.
 
 ## When neither is a fit
