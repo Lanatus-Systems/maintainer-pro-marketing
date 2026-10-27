@@ -108,6 +108,8 @@ Here is the allow-list from sections 1 and 2 with a review tier for each row. Ad
 
 No tier lets the AI ship on its own, and no tier skips the requester.
 
+Tiers matter more as agents open more changes than people can review. We collected the data on the [AI PR review bottleneck](/blog/ai-prs-need-an-owner) and what an owner changes.
+
 ## 4. How previews are checked
 
 A preview is where the requester does their part of the review. Agree on what "checked" means:

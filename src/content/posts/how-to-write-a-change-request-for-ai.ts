@@ -108,6 +108,8 @@ If the request is unclear, the agent is told it may ask one short question inste
 
 You check the change on the same preview link, using your **Check** line. Then a developer reads the conversation, reviews the change, and publishes it the way the team already does, or throws it away. Butterneck never opens a pull request, never merges and never deploys. You decide what goes live.
 
+Checking the change yourself first means it reaches a developer with an owner who has already looked at it. Why that matters: the [AI PR review bottleneck](/blog/ai-prs-need-an-owner).
+
 The coding agent runs on a developer's computer, using the Claude Code, Cursor or Antigravity CLI already signed in there (team, enterprise or API plans recommended). It sends code context to its AI provider, as it does in normal use, and chat messages and preview traffic go through Butterneck's server. More on that in [how PMs can change a live app without waiting on engineering](/blog/how-pms-can-change-a-live-app-without-waiting-on-engineering).
 
 ## FAQ
