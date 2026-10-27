@@ -34,11 +34,11 @@ Both pieces land in a similar place. Building is getting cheap. Deciding what sh
 
 ## What the data says about review
 
-The engineers' worry has numbers behind it now. InfoQ [reported on a Harvard study](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/) of 718 firms using data from the Jellyfish platform. According to that report:
+The engineers' worry has numbers behind it now. A [Harvard study by Fiona Chen and James Stratton](https://fion.ac/jellyfish.pdf) ("Artificial Intelligence in the Firm: Bottlenecks in Software Production", version of 4 Aug 2026) looked at 718 firms using data from the Jellyfish platform; [InfoQ covered it](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/) on 22 Oct. According to the paper:
 
 - AI agents increased lines of code by 30%, commits by 20% and pull requests by 23%.
-- Jira issues resolved per worker rose by only 12% with agents.
-- Average PR time to review went up 49%, comments per PR rose 53%, and the share of PRs requiring changes doubled.
+- Jira issues resolved per worker showed no statistically significant change with agents; the paper's estimates rule out an increase larger than 12%.
+- Average PR time to review went up 49%, review comments per PR rose 35%, and the share of PRs with changes requested nearly doubled.
 
 The authors' explanation is that writing code is only part of the job. Engineers spend 30–40% of their time writing code; the rest is planning, review, testing and deployment. Speed up the writing and the other steps become the bottleneck.
 
@@ -104,7 +104,7 @@ Teams trying it, like H&B, keep engineers reviewing both the plan and the merge 
 
 ### Does AI make code review the bottleneck?
 
-The Harvard study InfoQ reported suggests it can: pull requests went up 23% with AI agents, while average PR time to review rose 49%. Adding PM-authored PRs to that queue makes it bigger.
+The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: pull requests went up 23% with AI agents, while average PR time to review rose 49%. Adding PM-authored PRs to that queue makes it bigger.
 
 ### Does Butterneck open pull requests for PMs?
 
@@ -113,5 +113,7 @@ No. Butterneck never opens a pull request, never merges and never deploys. The d
 ## Try it
 
 [Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a small change your PMs have been waiting on. Or check [pricing](/#pricing): Starter is free for one developer and one requester, and Pro is $19 per person per month. Learn more at [butterneck.com](/).
+
+Correction (27 Oct 2026): an earlier version misstated two figures from the study (Jira issues resolved and comments per PR); they now match the [paper](https://fion.ac/jellyfish.pdf).
 `,
 };
