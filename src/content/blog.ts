@@ -6,6 +6,7 @@ import { post as shareLocalApp } from "@/content/posts/share-local-app-without-d
 import { post as sandboxOnYourMachine } from "@/content/posts/run-ai-coding-agent-sandbox-on-your-machine";
 import { post as hitlArchitecture } from "@/content/posts/human-in-the-loop-architecture-for-ai-product-changes";
 import { post as humanInTheLoop } from "@/content/posts/human-in-the-loop-ai-coding";
+import { post as pmsShipCode } from "@/content/posts/should-product-managers-ship-code";
 
 export type BlogPost = {
   slug: string;
@@ -25,7 +26,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
