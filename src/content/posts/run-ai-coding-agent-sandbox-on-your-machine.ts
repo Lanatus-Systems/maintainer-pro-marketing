@@ -9,10 +9,10 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
   cover: {
-    src: "/blog/product-sandbox-admin.png",
-    alt: "Butterneck admin showing a private copy (sandbox) connected to a folder on a developer computer",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-run-ai-coding-agent-sandbox-on-your-machine.png",
+    alt: "How Butterneck runs an AI coding agent in a sandbox on your own machine",
+    width: 1200,
+    height: 630,
   },
   body: `
 Butterneck lets a product manager ask for a change on a live copy of an app, and a coding agent makes the edit. The agent does not run on our servers. It runs on a developer's own computer, using the coding CLI that developer already has signed in: Cursor (\`agent\`), Claude Code (\`claude\`), or Antigravity (\`agy\`).
