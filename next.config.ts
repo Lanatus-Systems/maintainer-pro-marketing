@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
     return [
       { source: "/butterneck-vs-clickup", destination: "/", statusCode: 301 },
       { source: "/signup", destination: "https://app.butterneck.com/signup", statusCode: 301 },
+      {
+        source: "/blog/butterneck-vs-jira-coding-agent",
+        destination: "/integrations/jira",
+        statusCode: 301,
+      },
       { source: "/blogs", destination: "/blog", statusCode: 301 },
       ...blogSlugs.map((slug) => ({
         source: `/blogs/${slug}`,

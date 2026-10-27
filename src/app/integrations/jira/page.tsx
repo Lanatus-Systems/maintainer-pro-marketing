@@ -105,6 +105,39 @@ export default function JiraIntegrationPage() {
         </figure>
       </section>
 
+      <section className="landing-section" aria-labelledby="jira-differs-heading">
+        <h2 id="jira-differs-heading">How this differs from Jira&apos;s own coding agent</h2>
+        <p className="landing-section-lead">
+          Atlassian&apos;s Jira Coding Agent and Butterneck solve different problems.
+        </p>
+        <ul className="landing-points">
+          <li>
+            Jira Coding Agent runs from a Jira automation, makes code changes on a branch, and opens a
+            draft pull request in the repository you pick, for your team to review and merge.
+          </li>
+          <li>
+            Butterneck gives the person who asked a live preview of the app that they can keep
+            refining in plain words.
+          </li>
+          <li>
+            The change is built by the developer&apos;s own local AI agent on their computer, and the
+            developer publishes it through their own process. Your release process stays yours.
+          </li>
+          <li>Butterneck never opens pull requests, merges, or deploys.</li>
+        </ul>
+        <p className="landing-quiet">
+          Details on Atlassian&apos;s agent:{" "}
+          <a
+            href="https://support.atlassian.com/jira-software-cloud/docs/work-with-jira-coding-agent-in-automations/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Work with Jira Coding Agent in automations
+          </a>{" "}
+          (Atlassian support).
+        </p>
+      </section>
+
       <section className="landing-section" aria-labelledby="jira-limits-heading">
         <h2 id="jira-limits-heading">What it does not do</h2>
         <ul className="landing-points">
