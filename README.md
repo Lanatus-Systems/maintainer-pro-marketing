@@ -16,6 +16,16 @@ Dev server: http://localhost:3010
 
 `NEXT_PUBLIC_APP_URL` is where “Create workspace”, “Log in”, and Pro checkout go. Point it at the local admin (`http://localhost:4100`) while the app still lives there.
 
+## Vercel
+
+Add these as **Config** variables on Production, Preview, and Development. They are public. `NEXT_PUBLIC_*` cannot be Secret. Set them before the build, then redeploy after any change. Next bakes them into the site at build time.
+
+| Name | Value |
+|---|---|
+| `APP_NAME` | `butterneck` |
+| `NEXT_PUBLIC_SITE_URL` | `https://butterneck.com` |
+| `NEXT_PUBLIC_APP_URL` | `https://app.butterneck.com` |
+
 ## Pages
 
 Home, pricing, FAQ, privacy, terms, contact, and the Jira privacy and terms pages. Prices match `maintainer-pro-admin/server/src/lib/pricing.ts`.
