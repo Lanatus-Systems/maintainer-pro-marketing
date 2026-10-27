@@ -9,6 +9,7 @@ import { post as humanInTheLoop } from "@/content/posts/human-in-the-loop-ai-cod
 import { post as policyTemplate } from "@/content/posts/ai-change-request-policy-template";
 import { post as pmsShipCode } from "@/content/posts/should-product-managers-ship-code";
 import { post as aiPrsOwner } from "@/content/posts/ai-prs-need-an-owner";
+import { post as clogless } from "@/content/posts/clogless-alternative";
 
 export type BlogPost = {
   slug: string;
@@ -23,13 +24,15 @@ export type BlogPost = {
   /**
    * Body in a small Markdown subset: "## " / "### " headings, "- " lists,
    * "1. " lists, "> " quotes, ![alt](src "WxH") images, [text](href) links,
-   * **bold**, `code`, and fenced ``` blocks. Blocks are separated by a blank line.
+   * **bold**, `code`, fenced ``` blocks, and "| a | b |" pipe tables (header row,
+   * "|---|---|" separator, then rows; each row's first cell is a row header).
+   * Blocks are separated by a blank line.
    * A "## FAQ" section ("### " question + answer paragraphs) is also emitted as FAQPage JSON-LD.
    */
   body: string;
 };
 
-export const POSTS: BlogPost[] = [aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 

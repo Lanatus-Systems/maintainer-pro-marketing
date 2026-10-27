@@ -30,6 +30,22 @@ function renderBlock(block: string, key: number): ReactNode {
     );
   }
   const lines = block.split("\n");
+  if (lines.length >= 3 && lines.every((l) => l.startsWith("|")) && /^\|[\s:|-]+\|$/.test(lines[1])) {
+    const cells = (l: string) => l.replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+    const head = cells(lines[0]);
+    return (
+      <div key={key} className="post-table-wrap">
+        <table className="post-table">
+          <thead><tr>{head.map((c, j) => <th key={j} scope="col">{inline(c)}</th>)}</tr></thead>
+          <tbody>
+            {lines.slice(2).map((l, r) => (
+              <tr key={r}>{cells(l).map((c, j) => (j === 0 ? <th key={j} scope="row">{inline(c)}</th> : <td key={j}>{inline(c)}</td>))}</tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
   if (lines.every((l) => l.startsWith("- "))) {
     return <ul key={key}>{lines.map((l, j) => <li key={j}>{inline(l.slice(2))}</li>)}</ul>;
   }

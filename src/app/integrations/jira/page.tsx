@@ -177,7 +177,8 @@ export default function JiraIntegrationPage() {
         </ul>
         <p className="landing-quiet">
           More on this: <Link href="/blog/run-ai-coding-agent-sandbox-on-your-machine">how the agent runs on your machine</Link>{" "}
-          · <Link href="/blog/ai-prs-need-an-owner">why AI changes need an owner</Link>
+          · <Link href="/blog/ai-prs-need-an-owner">why AI changes need an owner</Link>{" "}
+          · <Link href="/blog/clogless-alternative">compared with a cloud-sandbox tool</Link>
         </p>
       </section>
 
