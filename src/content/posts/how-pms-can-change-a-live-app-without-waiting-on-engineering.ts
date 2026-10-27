@@ -129,6 +129,10 @@ Ask again in the chat, or stop the turn and its file changes are rolled back. Th
 
 Yes. Label a Jira ticket \`butterneck\` and assign it. A preview link is posted back on the ticket. See [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
 
+### Why not use a tool that opens the pull request for you?
+
+Butterneck runs on a developer's computer, where the project already runs, so there is no new cloud environment to set up and no need to copy secrets into a hosted machine. The person who asked sees the change on a live preview, and a developer decides what happens next. Butterneck itself never opens a pull request, merges or deploys. A tool that opens pull requests can suit teams who want a PR as the hand-off. Butterneck suits teams who want a developer to decide before anything becomes a PR.
+
 ## Try it
 
 [Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/#pricing): Starter is free for one developer and one requester. Learn more at [butterneck.com](/).

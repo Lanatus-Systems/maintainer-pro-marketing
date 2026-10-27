@@ -176,6 +176,15 @@ export const FAQS = [
       "Secret settings files (.env) are on an ignore list the AI is told to stay out of. It is an instruction, not a hard block, so keep production secrets off that computer.",
     ],
   },
+  {
+    q: "Why not use a tool that opens the pull request for you?",
+    lines: [
+      "Butterneck runs on a developer’s computer, where the project already runs. There is no new cloud environment to set up and no need to copy secrets into a hosted machine.",
+      "The person who asked sees the change on a live preview. Then a developer decides what happens next.",
+      "Butterneck itself never opens a pull request, merges, or deploys.",
+      "A tool that opens pull requests can suit teams who want a PR as the hand-off. Butterneck suits teams who want a developer to decide before anything becomes a PR.",
+    ],
+  },
 ] as const;
 
 export const NAV = [
