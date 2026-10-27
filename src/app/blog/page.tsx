@@ -14,7 +14,9 @@ export const metadata: Metadata = pageMeta({
   title,
   description,
   path: "/blog",
-  image: POSTS[0]?.cover?.src ?? "/og.png",
+  // Neutral site card: the newest post's cover would make every share of the index look like that post.
+  image: "/og.png",
+  imageAlt: `${brand.name} blog`,
 });
 
 export default function BlogIndex() {

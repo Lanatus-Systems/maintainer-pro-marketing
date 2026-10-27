@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "share-local-app-without-deploying",
   title: "Share your local app with stakeholders without deploying it",
   description:
-    "How to give a product manager or client a live link to the app running on your computer, so they can look and ask for changes, without a staging deploy, a VPN, or a screen share.",
+    "How to give a product manager or stakeholder a live link to the app running on your computer, so they can look and ask for changes, without a staging deploy, a VPN, or a screen share.",
   date: "2026-10-27",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
@@ -50,7 +50,7 @@ Very good when you already have them. They still need a push and a build, and th
 
 ## What a stakeholder actually needs
 
-When a product manager or a client reviews a change, they need four things:
+When a product manager or a support lead reviews a change, they need four things:
 
 1. **A link that opens the real app.** Not a picture. The app, running, with its pages and forms.
 2. **No setup.** No VPN, no account just to look, no "install this first".

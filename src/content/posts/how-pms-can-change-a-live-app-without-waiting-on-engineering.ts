@@ -123,7 +123,7 @@ Ask again in the chat, or stop the turn and its file changes are rolled back. Th
 
 ### Can requests come from Jira instead of chat?
 
-Yes. Label a Jira ticket \`butterneck\` and assign it. A preview link is posted back on the ticket. See [from Jira ticket to PR with AI](/blog/jira-ticket-to-pr-with-ai).
+Yes. Label a Jira ticket \`butterneck\` and assign it. A preview link is posted back on the ticket. See [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
 
 ## Try it
 

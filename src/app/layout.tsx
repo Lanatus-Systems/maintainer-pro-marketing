@@ -4,6 +4,7 @@ import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { brand } from "@/lib/brand";
+import { SITE_OPEN_GRAPH } from "@/lib/meta";
 import {
   SITE_DESCRIPTION,
   SITE_OG_DESCRIPTION,
@@ -36,21 +37,7 @@ export const metadata: Metadata = {
   alternates: {
     types: { "application/rss+xml": [{ url: "/blog/rss.xml", title: `${brand.name} blog` }] },
   },
-  openGraph: {
-    type: "website",
-    siteName: brand.name,
-    locale: "en_US",
-    title: SITE_TITLE,
-    description: SITE_OG_DESCRIPTION,
-    images: [
-      {
-        url: "/og.png",
-        width: 1280,
-        height: 720,
-        alt: `${brand.name}: let them ask. You decide what goes live.`,
-      },
-    ],
-  },
+  openGraph: SITE_OPEN_GRAPH,
   twitter: {
     card: "summary_large_image",
     site: X_HANDLE,

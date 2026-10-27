@@ -11,6 +11,7 @@ import {
   STEPS,
   WHY,
 } from "@/content/landing";
+import { SITE_OPEN_GRAPH } from "@/lib/meta";
 import { homeJsonLd } from "@/lib/schema";
 import { DemoVideo } from "@/components/DemoVideo";
 import { appUrl, SITE_DESCRIPTION, SITE_TITLE, WALKTHROUGH_URL } from "@/lib/site";
@@ -19,6 +20,10 @@ export const metadata: Metadata = {
   title: { absolute: SITE_TITLE },
   description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
+  openGraph: {
+    ...SITE_OPEN_GRAPH,
+    url: "https://www.butterneck.com",
+  },
 };
 
 export default function HomePage() {

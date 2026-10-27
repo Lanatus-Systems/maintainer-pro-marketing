@@ -40,7 +40,7 @@ That is a full product-development workflow: discovery, design, architecture sco
 
 Butterneck is narrower. It handles the small change on a product that already runs.
 
-- A PM or client opens a share link to a live copy of the app and types the change into a chat next to the screen they mean. Or they label a Jira ticket \`butterneck\`.
+- A PM or stakeholder opens a share link to a live copy of the app and types the change into a chat next to the screen they mean. Or they label a Jira ticket \`butterneck\`.
 - A coding agent CLI the developer already uses (Cursor \`agent\`, Claude Code \`claude\`, or Antigravity \`agy\`) runs on the developer's own computer and edits the connected project folder.
 - The preview updates on the same link. The developer reads the conversation, checks the change, and publishes it the way the team already does.
 

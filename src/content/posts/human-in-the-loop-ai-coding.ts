@@ -31,7 +31,7 @@ This post explains why.
 
 Everything else follows from that line.
 
-- A product manager or client types a request on a live copy of the app, or a Jira ticket labeled \`butterneck\` starts the chat.
+- A product manager or another stakeholder types a request on a live copy of the app, or a Jira ticket labeled \`butterneck\` starts the chat.
 - A coding assistant running on a developer's own computer edits the connected project folder.
 - The developer reads the conversation, looks at the running app, and publishes the change the way the team already does. Or leaves it.
 
@@ -55,7 +55,7 @@ The last step, deciding whether the change ships, takes a minute. Automating it 
 
 ### 1. The person asking is often not a developer
 
-Butterneck is built so that a product manager, or a client of an agency, can ask for a change. That is the point. But it also means the request comes from someone who can't review a diff.
+Butterneck is built so that a product manager, a support lead, or another stakeholder can ask for a change. That is the point. But it also means the request comes from someone who can't review a diff.
 
 If the tool merged on its own, a non-developer's sentence would become production code with no developer ever looking at it. Nobody on a product team actually wants that, even when the AI gets it right most of the time.
 
@@ -113,10 +113,10 @@ The developer's time goes from "find, change, send, wait" to "look and decide". 
 
 It fits teams where:
 
-- A product manager or client asks for many small changes to a product that is already running.
+- A product manager or stakeholder asks for many small changes to a product that is already running.
 - A developer is happy to review and publish, but tired of being the message carrier.
 - The project lives on a computer the team controls.
-- Agencies look after client web apps and want clients to ask on the app itself.
+- Product managers, designers or support leads want to ask for changes on the app itself, next to the screen they mean.
 
 It is not a fit if:
 
