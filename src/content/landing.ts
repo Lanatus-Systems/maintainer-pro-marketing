@@ -184,6 +184,7 @@ export const NAV = [
   { href: "/#jira", label: "Jira" },
   { href: "/#pricing", label: "Pricing" },
   { href: "/#faq", label: "FAQ" },
+  { href: "/blog", label: "Blog" },
 ] as const;
 
 export const FOOTER_NAV = [
@@ -196,6 +197,7 @@ export const FOOTER_NAV = [
   { href: "/#safety", label: "Your call" },
   { href: "/#pricing", label: "Pricing" },
   { href: "/#faq", label: "FAQ" },
+  { href: "/blog", label: "Blog" },
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
   { href: "/contact", label: "Contact" },
