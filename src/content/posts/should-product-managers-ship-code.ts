@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "PMs shipping code with AI is the debate of the month. A calmer option: PMs ask for small changes on a live preview, and engineers keep control of what ships.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -31,6 +32,8 @@ He is honest that it is not simple. Two questions stood out:
 Jeff Gothelf comes at it from the other side in [How to manage the inevitable mess of running a company where everyone is a builder](https://jeffgothelf.com/blog/how-to-manage-the-inevitable-mess-of-running-a-company-where-everyone-is-a-builder/). His first suggestion: "Keep the right to build separate from the right to ship." Anyone can build and show a prototype. Getting it in front of customers follows a path with evidence at each step.
 
 Both pieces land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
+
+Some tools now go a step further and pitch that whoever spots a problem ships the fix, even from a phone. Our view is different. The PM asks and sees the change on a live preview. A developer decides whether it ships, and anything touching data models, permissions or payments goes to an engineer from the start.
 
 ## What the data says about review
 
