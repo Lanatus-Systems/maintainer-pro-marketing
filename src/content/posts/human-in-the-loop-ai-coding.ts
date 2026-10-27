@@ -130,6 +130,8 @@ Butterneck does not ship its own model. It uses the coding assistant the develop
 
 If you want the details of the sharing side, read [Share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
 
+Why ownership matters for AI-written changes, with LinearB's 2026 data on AI PR merge rates and pickup times: [AI pull requests need an owner](/blog/ai-prs-need-an-owner).
+
 ## Try it
 
 Starter is free for one developer and one person who asks for changes. Pro is priced per person per month, with 20% off annual billing. See [pricing](/#pricing), or [the FAQ](/#faq) for who publishes and where file changes happen.

@@ -8,6 +8,7 @@ import { post as hitlArchitecture } from "@/content/posts/human-in-the-loop-arch
 import { post as humanInTheLoop } from "@/content/posts/human-in-the-loop-ai-coding";
 import { post as policyTemplate } from "@/content/posts/ai-change-request-policy-template";
 import { post as pmsShipCode } from "@/content/posts/should-product-managers-ship-code";
+import { post as aiPrsOwner } from "@/content/posts/ai-prs-need-an-owner";
 
 export type BlogPost = {
   slug: string;
@@ -28,7 +29,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 

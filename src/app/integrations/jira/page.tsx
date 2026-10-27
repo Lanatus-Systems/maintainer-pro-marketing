@@ -147,6 +147,40 @@ export default function JiraIntegrationPage() {
         </p>
       </section>
 
+      <section className="landing-section" aria-labelledby="jira-computer-heading">
+        <h2 id="jira-computer-heading">Why a connected computer, not a cloud sandbox?</h2>
+        <p className="landing-section-lead">
+          The AI runs on the assignee&apos;s computer, where the project already runs. Both approaches
+          are reasonable. Here is the trade-off.
+        </p>
+        <ul className="landing-points">
+          <li>
+            No environment to set up for each ticket: no base image, service list, or secrets store to
+            configure. The project already runs on that computer.
+          </li>
+          <li>
+            The AI works in the real dev setup, with the same dependencies, local data, and dev
+            server the developer uses, and the preview is that running app.
+          </li>
+          <li>
+            It uses the coding assistant that is already signed in on that computer (Cursor, Claude
+            Code, or Antigravity). Butterneck does not ship its own model.
+          </li>
+          <li>
+            The trade-off: the computer has to be on. If it is off or asleep, the ticket waits and the
+            preview link does not load.
+          </li>
+          <li>
+            <code>.env</code> handling is a guardrail, not a hard block. Secret settings files are on
+            an ignore list the AI is told to stay out of, so keep production secrets off that computer.
+          </li>
+        </ul>
+        <p className="landing-quiet">
+          More on this: <Link href="/blog/run-ai-coding-agent-sandbox-on-your-machine">how the agent runs on your machine</Link>{" "}
+          · <Link href="/blog/ai-prs-need-an-owner">why AI changes need an owner</Link>
+        </p>
+      </section>
+
       <section className="landing-section" aria-labelledby="jira-limits-heading">
         <h2 id="jira-limits-heading">What it does not do</h2>
         <ul className="landing-points">
