@@ -76,7 +76,7 @@ The H&B question, "where do you draw the line?", deserves a direct answer. A rea
 - **Needs an engineer from the start:** pricing logic, permissions, data models, anything touching auth or payments. A preview can look right and still be wrong.
 - **Not a chat request at all:** big features. Those need design and scoping first.
 
-Agree the list with your engineering lead before anyone starts. It is much easier than arguing about each request later.
+Agree the list with your engineering lead before anyone starts. It is much easier than arguing about each request later. If you want a starting point, here is [a policy template for what non-engineers can ask AI to change](/blog/ai-change-request-policy-template) that you can paste into your wiki.
 
 ## How Butterneck does this
 

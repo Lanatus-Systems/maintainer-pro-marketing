@@ -96,6 +96,8 @@ Being clear about limits helps adoption.
 - Big features need design and scoping. A live-copy chat is for small, visible changes.
 - The developer still reviews every change. Expect that to take minutes, not days, because the intent is already in the conversation.
 
+To write these limits down for your team, use our [policy template for non-engineers requesting changes with AI](/blog/ai-change-request-policy-template).
+
 ## A simple way to start
 
 - Pick one app and one developer.

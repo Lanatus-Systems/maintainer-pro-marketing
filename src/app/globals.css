@@ -1112,6 +1112,23 @@ h3 {
   border-radius: 4px;
 }
 
+.post-body pre.post-code {
+  margin: 1.2rem 0;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.post-body pre.post-code code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  white-space: pre;
+}
+
 .post-body blockquote {
   margin: 1.2rem 0;
   padding: 0.2rem 1rem;

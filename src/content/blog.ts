@@ -6,6 +6,7 @@ import { post as shareLocalApp } from "@/content/posts/share-local-app-without-d
 import { post as sandboxOnYourMachine } from "@/content/posts/run-ai-coding-agent-sandbox-on-your-machine";
 import { post as hitlArchitecture } from "@/content/posts/human-in-the-loop-architecture-for-ai-product-changes";
 import { post as humanInTheLoop } from "@/content/posts/human-in-the-loop-ai-coding";
+import { post as policyTemplate } from "@/content/posts/ai-change-request-policy-template";
 import { post as pmsShipCode } from "@/content/posts/should-product-managers-ship-code";
 
 export type BlogPost = {
@@ -21,12 +22,13 @@ export type BlogPost = {
   /**
    * Body in a small Markdown subset: "## " / "### " headings, "- " lists,
    * "1. " lists, "> " quotes, ![alt](src "WxH") images, [text](href) links,
-   * **bold**, and `code`. Blocks are separated by a blank line.
+   * **bold**, `code`, and fenced ``` blocks. Blocks are separated by a blank line.
+   * A "## FAQ" section ("### " question + answer paragraphs) is also emitted as FAQPage JSON-LD.
    */
   body: string;
 };
 
-export const POSTS: BlogPost[] = [pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
