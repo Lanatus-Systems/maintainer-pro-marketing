@@ -33,6 +33,15 @@ export default function PricingPage() {
           </li>
           <li>Prices are set per currency, not converted from US dollars.</li>
         </ul>
+        <h2 id="ai-usage-heading">What about AI usage?</h2>
+        <ul className="landing-points">
+          <li>AI usage isn’t included in the seat price.</li>
+          <li>
+            Butterneck runs on your team’s Claude Code, Cursor or Antigravity plan. Team, enterprise
+            or API plans are recommended.
+          </li>
+          <li>Butterneck doesn’t run its own model.</li>
+        </ul>
         <div className="landing-cta">
           <a
             href={WALKTHROUGH_URL}
