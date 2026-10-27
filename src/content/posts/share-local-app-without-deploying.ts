@@ -9,10 +9,10 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
-    src: "/blog/product-app-with-chat.png",
-    alt: "An app running on a developer's computer, opened through a Butterneck share link, with the chat panel open on the right",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-share-local-app-without-deploying.png",
+    alt: "Butterneck blog cover: Share your local app with stakeholders through a live link, without deploying it",
+    width: 1200,
+    height: 630,
   },
   body: `
 You changed the pricing page. It runs on your computer at \`localhost:3000\`. The product manager wants to see it before it goes anywhere. What happens next usually takes longer than the change did.

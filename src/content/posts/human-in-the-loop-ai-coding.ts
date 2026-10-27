@@ -9,10 +9,10 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
-    src: "/blog/product-sandbox-admin.png",
-    alt: "The Butterneck workspace, where a developer sees each private copy of the project before anything is published",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-human-in-the-loop-ai-coding.png",
+    alt: "Butterneck blog cover: Human-in-the-loop AI coding — the AI makes the change, a developer decides what goes live",
+    width: 1200,
+    height: 630,
   },
   body: `
 Coding assistants can now edit a real project. Give Cursor, Claude Code, or Antigravity a clear request and a folder, and it will usually find the right file and make the change.
