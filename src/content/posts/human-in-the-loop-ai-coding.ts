@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "AI can already edit a real project. Butterneck lets the product team hand it requests, but it never merges, never opens a pull request, and never deploys. Here is why a developer stays in the loop.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -22,6 +23,19 @@ So the obvious next step is to let it go all the way: take the request, change t
 Butterneck doesn't. It lets the product team hand requests to the AI directly, and then it stops. It never merges. It never opens a pull request. It never deploys. A developer looks at the result and decides whether it goes live.
 
 This post explains why.
+
+> **Human-in-the-loop for coding agents** means an AI coding agent can propose and make changes, but a person approves the steps that matter before anything reaches users. The agent does the work; a human holds the decision points: the plan, risky actions, the result, and the release.
+
+## The four approval points
+
+A coding agent's work has four places where a person can step in:
+
+- **Plan.** Someone approves what the agent intends to do before it starts.
+- **Action.** Someone approves individual steps while it works, like running a command or touching a file.
+- **Preview.** Someone checks the result on a running copy of the app.
+- **Ship.** Someone decides whether the change goes live.
+
+Butterneck puts the human at two of them. The person who asked (the requester) checks the change at the **preview**, on a live copy of the app. A developer decides at **ship**, and publishes it the usual way or leaves it. Butterneck itself never merges, opens a pull request, or deploys.
 
 ## What "human in the loop" means here
 
