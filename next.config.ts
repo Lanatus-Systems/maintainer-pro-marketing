@@ -17,15 +17,15 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      { source: "/butterneck-vs-clickup", destination: "/", permanent: true },
-      { source: "/signup", destination: "https://app.butterneck.com/signup", permanent: true },
-      { source: "/blogs", destination: "/blog", permanent: true },
+      { source: "/butterneck-vs-clickup", destination: "/", statusCode: 301 },
+      { source: "/signup", destination: "https://app.butterneck.com/signup", statusCode: 301 },
+      { source: "/blogs", destination: "/blog", statusCode: 301 },
       ...blogSlugs.map((slug) => ({
         source: `/blogs/${slug}`,
         destination: `/blog/${slug}`,
-        permanent: true,
+        statusCode: 301,
       })),
-      { source: "/blogs/:path*", destination: "/blog", permanent: true },
+      { source: "/blogs/:path*", destination: "/blog", statusCode: 301 },
     ];
   },
   async headers() {
