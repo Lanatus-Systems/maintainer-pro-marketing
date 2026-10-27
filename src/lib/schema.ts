@@ -1,6 +1,6 @@
 import { FAQS } from "@/content/landing";
 import { brand } from "@/lib/brand";
-import { LINKEDIN_URL, SITE_DESCRIPTION, SITE_URL, SUPPORT_EMAIL } from "@/lib/site";
+import { LINKEDIN_URL, X_URL, SITE_DESCRIPTION, SITE_URL, SUPPORT_EMAIL } from "@/lib/site";
 
 export function homeJsonLd() {
   return {
@@ -13,7 +13,7 @@ export function homeJsonLd() {
         url: SITE_URL,
         logo: `${SITE_URL}/logo-512.png`,
         email: SUPPORT_EMAIL,
-        sameAs: [LINKEDIN_URL],
+        sameAs: [LINKEDIN_URL, X_URL],
         parentOrganization: {
           "@type": "Organization",
           name: "Lanatus Systems LLP",

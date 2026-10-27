@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PostBody } from "@/components/PostBody";
 import { formatDate, getPost, POSTS, postPath, readingMinutes } from "@/content/blog";
 import { brand } from "@/lib/brand";
-import { appUrl, SITE_URL, siteUrl } from "@/lib/site";
+import { appUrl, SITE_URL, siteUrl, X_HANDLE } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -39,6 +39,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
+      site: X_HANDLE,
+      creator: X_HANDLE,
       title: post.title,
       description: post.description,
       images: [post.cover.src],

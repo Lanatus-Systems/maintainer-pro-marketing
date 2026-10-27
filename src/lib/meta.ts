@@ -1,3 +1,4 @@
+import { X_HANDLE } from "@/lib/site";
 import type { Metadata } from "next";
 import { brand } from "@/lib/brand";
 
@@ -25,6 +26,8 @@ export function pageMeta(opts: {
     },
     twitter: {
       card: "summary_large_image",
+      site: X_HANDLE,
+      creator: X_HANDLE,
       title: ogTitle,
       description: opts.description,
       images: [image],
