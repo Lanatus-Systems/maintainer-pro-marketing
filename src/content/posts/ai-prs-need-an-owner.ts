@@ -4,11 +4,13 @@ export const post: BlogPost = {
   slug: "ai-prs-need-an-owner",
   title: "AI pull requests need an owner: what LinearB's 2026 data says about the AI code review bottleneck",
   description:
-    "LinearB's 2026 benchmarks (8.1M PRs) show AI PRs merging at 32.7% vs 84.4% for manual PRs, and agentic AI PRs waiting 5.3x longer for pickup. The report points to ownership. Here is what that means for teams.",
+    "The AI PR review bottleneck in numbers: LinearB's 2026 benchmarks (8.1M PRs) show AI PRs merging at 32.7% vs 84.4% for manual PRs, plus CircleCI and MSR 2026 data. What it means for teams.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
+    "AI PR review bottleneck",
     "AI pull requests",
     "AI PR merge rate",
     "code review",
@@ -56,6 +58,16 @@ LinearB is careful here, and so should we be. The report says plainly that corre
 So the data does not prove that missing ownership causes low merge rates. Size, task priority and reviewer trust all play a part, and the report names each one. What the data does show is a large, consistent gap between AI and manual PRs, and LinearB's own reading that unclear ownership is likely part of it.
 
 That's enough to act on, as long as nobody promises a number.
+
+## Other data on the AI PR review bottleneck
+
+LinearB isn't the only source pointing at review and merge rather than writing. Two independent data sets, measured in different ways, show a similar shape.
+
+**CircleCI: more work on branches, less reaching main.** CircleCI's [2026 State of Software Delivery report](https://circleci.com/blog/five-takeaways-2026-software-delivery-report/) analysed more than 28 million CI/CD workflows. For the median team, feature-branch throughput rose 15% year over year, while throughput on the main branch fell 7%. CircleCI's reading: "Writing code is no longer the constraint. Review, validation, integration, recovery." This is pipeline data, not PR authorship, so it doesn't separate AI-written changes from human ones.
+
+**MSR 2026 study: AI-only review merges less often.** [A study presented at MSR 2026](https://arxiv.org/html/2604.03196) (Chowdhury, Banik, Ferdous and Shamim) looked at 3,109 pull requests from the AIDev dataset of agent-authored PRs on GitHub. Among PRs whose reviews only left comments, without an approval or a change request, those reviewed only by code review agents merged **45.20%** of the time (127 of 281). Those reviewed only by humans merged **68.37%** (804 of 1,176). The agent-only group was also closed unmerged more often: 34.88% against 21.60%.
+
+Both come with the same caveat as LinearB. The study's authors note that correlation does not imply causation, and their data comes from open-source repositories. CircleCI's numbers describe pipelines, not who wrote the code. Read together, they point the same way: the slow part is getting a change reviewed, trusted and merged, not writing it. None of them measured Butterneck.
 
 ## What "giving AI PRs an owner" can look like
 
@@ -126,6 +138,6 @@ So there's no environment to set up per ticket, and the agent uses the developer
 
 Starter is free for one developer and one requester. Pro is $19 per person per month. See [pricing](/#pricing), or [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a small change that has been waiting on review.
 
-Source: LinearB, [2026 Software Engineering Benchmarks Report](https://assets.linearb.io/image/upload/v1777392920/resources/LinearB_2026_Software_Engineering_Benchmarks_Report.pdf) (PDF) and [benchmarks page](https://linearb.io/library/engineering-benchmarks-and-research), read on 27 Oct 2026. Figures are as published by LinearB.
+Source: LinearB, [2026 Software Engineering Benchmarks Report](https://assets.linearb.io/image/upload/v1777392920/resources/LinearB_2026_Software_Engineering_Benchmarks_Report.pdf) (PDF) and [benchmarks page](https://linearb.io/library/engineering-benchmarks-and-research), read on 27 Oct 2026. Figures are as published by LinearB. CircleCI, [5 key takeaways from the 2026 State of Software Delivery](https://circleci.com/blog/five-takeaways-2026-software-delivery-report/), and Chowdhury et al., [From Industry Claims to Empirical Reality: An Empirical Study of Code Review Agents in Pull Requests](https://arxiv.org/html/2604.03196) (MSR 2026), both read on 28 Oct 2026.
 `,
 };
