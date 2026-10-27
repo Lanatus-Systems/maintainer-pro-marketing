@@ -14,7 +14,8 @@ import {
 } from "@/lib/pricing";
 import { appUrl } from "@/lib/site";
 
-export function PricingSection() {
+export function PricingSection({ standalone = false }: { standalone?: boolean } = {}) {
+  const Heading = standalone ? "h1" : "h2";
   const [interval, setInterval] = useState<BillingInterval>("month");
   const [country, setCountry] = useState("US");
   const quote = quotePro(country, interval);
@@ -31,7 +32,7 @@ export function PricingSection() {
       <div className="landing-prices-head">
         <div>
           <p className="landing-kicker">Pricing</p>
-          <h2 id="pricing-heading">Start with your product team</h2>
+          <Heading id="pricing-heading">{standalone ? "Pricing" : "Start with your product team"}</Heading>
           <p className="landing-section-lead">
             Starter is free for one developer and one person who requests changes. Pro is priced
             per person each month. A larger team is a conversation with us.
