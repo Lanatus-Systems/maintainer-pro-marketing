@@ -25,6 +25,8 @@ AI coding agents can now open pull requests faster than teams can review them. P
 
 This post goes through what the report found, what it does and doesn't show, and one practical response: make sure every AI-written change has a human owner before it reaches review. We build Butterneck, so we say how it fits near the end. The idea applies whatever tools you use.
 
+**Update, 28 October 2026:** On 26 October, Entire, the company led by former GitHub CEO Thomas Dohmke, [launched Trails](https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration), a replacement for the pull request built around the same review bottleneck. Its answer runs the other way from ours: agents generate evals on every push, so line-by-line human review becomes optional, while repositories can still require human approvals and other checks through [Gates](https://docs.entire.com/guides/trails/gates). Butterneck moves the human decision earlier instead: the person who asked sees the change on a live preview, and a developer decides before any PR exists.
+
 ## What LinearB measured
 
 The [2026 Software Engineering Benchmarks Report](https://linearb.io/library/engineering-benchmarks-and-research) covers 8,109,244 pull requests from 4,813 teams and 163,820 active contributors. Most of its benchmarks are aggregated at the 75th percentile (P75). This year it splits PRs into three types: Agentic AI PRs, AI-Assisted PRs, and Unassisted PRs.

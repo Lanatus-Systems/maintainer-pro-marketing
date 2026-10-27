@@ -68,7 +68,7 @@ In Butterneck, the work starts inside Jira. Add the label \`butterneck\` to a ti
 
 ### Breadth
 
-Clogless covers more ground: six ticketing tools (Butterneck supports only Jira Cloud), PRD drafting with agents, preview environments from a PR comment, and, on its Team plan, real-time collaboration, a context lake, and QA agents. Butterneck does none of those. It is built for one loop: someone asks for a small change, sees it on a live copy, and a developer decides.
+Clogless covers more ground: six ticketing tools (Butterneck supports only Jira Cloud), PRD drafting with agents, preview environments from a PR comment, and, on its Team plan, real-time collaboration and a context lake (its QA agents are not included on Team). Butterneck does none of those. It is built for one loop: someone asks for a small change, sees it on a live copy, and a developer decides.
 
 ### Pricing
 
