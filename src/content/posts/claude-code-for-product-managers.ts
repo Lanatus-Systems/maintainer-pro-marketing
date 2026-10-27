@@ -91,7 +91,9 @@ Not on their own; Claude Code is a command-line tool. With Butterneck, the PM ty
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 
-Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. Check that the plan it's signed in with allows use on behalf of your team; consumer plans may not (Anthropic's consumer terms, for example, say you may not make your account available to anyone else). Team, Enterprise or API plans are the safer fit. Each person who sends requests needs a Butterneck seat on Pro.
+Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. Each person who sends requests needs a Butterneck seat on Pro.
+
+**A note on plans and terms.** Butterneck runs requests through the AI coding tool your developer is already signed into, so that tool's terms apply. The signed-in plan must allow use on your team's behalf. Personal and consumer plans (Claude Pro or Max, Cursor Pro, personal Google AI plans) may not. Anthropic's consumer terms, for example, say you "may not make your Account available to anyone else," and Claude Code's docs say Pro and Max limits "assume ordinary, individual usage." Team, Business or Enterprise plans, where each person has a seat, or an organization API key (Anthropic Console, Gemini API / Vertex AI) are the safer fit. Check your plan's terms or ask your vendor. This is not legal advice.
 
 ### Does Butterneck open pull requests for the PM's change?
 
