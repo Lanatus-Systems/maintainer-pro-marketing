@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { PostBody } from "@/components/PostBody";
-import { formatDate, getPost, POSTS, postPath, readingMinutes } from "@/content/blog";
+import { formatDate, formatUpdatedDate, getPost, POSTS, postPath, readingMinutes } from "@/content/blog";
 import { brand } from "@/lib/brand";
 import { postFaqJsonLd } from "@/lib/schema";
 import { appUrl, SITE_URL, siteUrl, X_HANDLE } from "@/lib/site";
@@ -96,7 +96,14 @@ export default async function BlogPostPage({ params }: Params) {
         <header>
           <h1>{post.title}</h1>
           <p className="muted blog-meta">
-            <time dateTime={post.date}>{formatDate(post.date)}</time> · {post.author} ·{" "}
+            <time dateTime={post.date}>{formatDate(post.date)}</time>
+            {post.updated && post.updated !== post.date ? (
+              <>
+                {" · "}
+                <time dateTime={post.updated}>{`Updated ${formatUpdatedDate(post.updated)}`}</time>
+              </>
+            ) : null}{" "}
+            · {post.author} ·{" "}
             {readingMinutes(post)} min read
           </p>
           <img

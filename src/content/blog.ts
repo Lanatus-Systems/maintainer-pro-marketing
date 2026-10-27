@@ -49,6 +49,16 @@ export function readingMinutes(post: BlogPost): number {
   return Math.max(1, Math.round(post.body.split(/\s+/).length / 220));
 }
 
+/** "28 October 2026": used for the visible "Updated <date>" byline note. */
+export function formatUpdatedDate(iso: string): string {
+  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
 export function formatDate(iso: string): string {
   return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
     year: "numeric",
