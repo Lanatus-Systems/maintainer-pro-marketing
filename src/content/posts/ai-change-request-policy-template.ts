@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who request product changes with AI: what they can ask for, what needs an engineer, who reviews, and how secrets are handled.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -13,6 +14,7 @@ export const post: BlogPost = {
     "PM code change policy",
     "review UI changes from non-engineers",
     "AI coding governance",
+    "code review tiers",
   ],
   cover: {
     src: "/blog/cover-ai-change-request-policy-template.png",
@@ -73,6 +75,38 @@ Name the roles. A role that belongs to "the team" ends up belonging to nobody.
 The requester never ships on their own. The AI never ships at all. A developer publishes through your normal release process, with the same reviews, tests and approvals as any other change.
 
 If you use GitHub, branch protection can enforce part of this. Its [protected branch rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) can require approving pull request reviews before merging, including reviews from code owners. That makes "a developer decides" a setting, not just a promise.
+
+## Copy changes can skip code review. They shouldn't skip the person who asked.
+
+Teams that ship a lot of agent-written code are starting to drop human code review for the lowest-risk changes. The Claude Code team at Anthropic [describes its setup](https://claude.dev/blog/solving-code-review-at-anthropic/) as a risk table. Its Low tier covers "Docs, copy, internal-only features, additive changes behind a flag", and the human approvals it needs are "None required once automated review and security checks are green." Medium needs one person, High needs two. "The change sets the tier, not the author," and only authors on a repo's trusted list get the lighter paths.
+
+For code, that makes sense. A one-line copy change is rarely where bugs hide. But a copy change can be wrong in ways no automated check sees: the wrong word, the wrong tone, the right text on the wrong screen. Only the person who asked knows what they meant. The same post keeps that person in the loop: "On an agent-written PR, the person directing the agent counts as one of the required reviewers, the same as if they'd typed the code themselves."
+
+On a product team, the person directing the agent is often a PM or designer. So the lightest tier in this policy is not "no review". It is a **requester check**: the person who asked looks at the change on a running copy and confirms it is what they meant. Code review then scales with risk:
+
+- **Requester check:** the requester accepts it on the preview, and a developer publishes it through your normal release process. Code review can be as light as your team already allows for copy.
+- **Developer check:** the requester accepts it on the preview, then a developer reviews the diff properly before it ships.
+- **Two developers:** it starts with an engineer, and two developers approve it before it ships.
+
+Here is the allow-list from sections 1 and 2 with a review tier for each row. Adjust the tiers to your own risk, and start strict.
+
+| Change | Starts with | Review tier |
+|---|---|---|
+| Copy, labels, headings, button and help text | Requester, in chat | Requester check |
+| Empty states, error and confirmation messages | Requester, in chat | Requester check |
+| Reordering or hiding existing items | Requester, in chat | Requester check |
+| Small visual fixes (color, link, hover state) | Requester, in chat | Requester check |
+| Spacing and layout within the design system | Requester, in chat | Developer check |
+| Showing or hiding a form field the backend already supports | Requester, in chat | Developer check |
+| Legal or compliance copy | Engineer, with the content owner | Developer check, plus the content owner's sign-off |
+| Auth, sessions and permissions | Engineer | Two developers |
+| Billing, pricing logic and checkout | Engineer | Two developers |
+| Data models, migrations, deleting data | Engineer | Two developers |
+| Public or shared APIs | Engineer | Two developers |
+| Infrastructure, build/deploy config, env vars | Engineer | Two developers |
+| New features | Engineer, after design and scoping | Your normal feature process |
+
+No tier lets the AI ship on its own, and no tier skips the requester.
 
 ## 4. How previews are checked
 
@@ -145,6 +179,12 @@ The requester and the AI never ship on their own.
 - Seed or scrubbed data only in previews.
 - Never paste secrets or customer data into chat.
 
+## Review tiers
+- Requester check: copy, labels, messages, reordering, small visual fixes
+- Developer check: layout, form fields, legal/compliance copy (+ content owner)
+- Two developers: auth, billing, data, shared APIs, infrastructure
+Every tier includes the requester's check on the preview.
+
 ## Limits
 - One change per request. [N] requests per person per week to start.
 - Every AI turn can be stopped and rolled back.
@@ -171,6 +211,10 @@ Visible, low-risk changes where they can judge the result on a preview: copy, la
 ### What should always go to an engineer first?
 
 Auth and permissions, billing and pricing logic, data models and migrations, shared APIs, infrastructure and deploy config, legal or compliance copy, and new features. These can look right on a preview and still be wrong.
+
+### Can copy changes skip code review?
+
+Some teams let them skip human code review once automated checks pass. The Claude Code team's Low tier, which includes docs and copy, needs no human approvals once automated review and security checks are green. A copy change shouldn't skip the person who asked, though: they are the one who can tell whether the words are right. In this policy, copy changes get a requester check on the preview, and a developer still publishes them.
 
 ### Who should decide what ships?
 
