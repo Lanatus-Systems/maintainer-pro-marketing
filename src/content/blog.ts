@@ -1,3 +1,7 @@
+import { post as itera } from "@/content/posts/itera-alternative";
+import { post as pms } from "@/content/posts/how-pms-can-change-a-live-app-without-waiting-on-engineering";
+import { post as jira } from "@/content/posts/jira-ticket-to-pr-with-ai";
+import { post as aicr } from "@/content/posts/ai-change-requests-for-product-teams";
 import { post as shareLocalApp } from "@/content/posts/share-local-app-without-deploying";
 import { post as sandboxOnYourMachine } from "@/content/posts/run-ai-coding-agent-sandbox-on-your-machine";
 import { post as hitlArchitecture } from "@/content/posts/human-in-the-loop-architecture-for-ai-product-changes";
@@ -21,7 +25,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
