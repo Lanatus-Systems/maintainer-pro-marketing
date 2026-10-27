@@ -106,18 +106,22 @@ export function PricingSection() {
                 ))}
               </ul>
               {plan.contact ? (
-                <Link className="landing-btn" href="/contact">
+                <Link className="landing-btn" href="/contact" data-ga-event="select_plan" data-ga-plan={plan.id} data-ga-location="pricing">
                   Contact us
                 </Link>
               ) : plan.priced ? (
                 <a
                   className={plan.highlighted ? "landing-btn primary" : "landing-btn"}
                   href={appUrl(checkoutPath(plan.id, interval, quote.country))}
+                  data-ga-event="select_plan"
+                  data-ga-plan={plan.id}
+                  data-ga-interval={interval}
+                  data-ga-location="pricing"
                 >
                   Continue to checkout
                 </a>
               ) : (
-                <a className="landing-btn" href={appUrl("/signup")}>
+                <a className="landing-btn" href={appUrl("/signup")} data-ga-event="select_plan" data-ga-plan={plan.id} data-ga-location="pricing">
                   Create a free workspace
                 </a>
               )}

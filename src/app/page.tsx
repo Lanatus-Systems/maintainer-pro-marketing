@@ -35,7 +35,7 @@ export default function HomePage() {
             looks once, then puts it live or leaves it there.
           </p>
           <div className="landing-cta">
-            <a href={appUrl("/signup")} className="landing-btn primary">
+            <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_hero">
               Create a free workspace
             </a>
             <a href="#example" className="landing-btn">
@@ -234,7 +234,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="landing-cta">
-          <a href={appUrl("/signup")} className="landing-btn primary">
+          <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_footer_cta">
             Create a free workspace
           </a>
           <a href={appUrl("/login")} className="landing-btn">

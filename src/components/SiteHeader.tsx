@@ -30,7 +30,7 @@ export function SiteHeader() {
         <a className="public-link" href={appUrl("/login")}>
           Log in
         </a>
-        <a className="public-signup" href={appUrl("/signup")}>
+        <a className="public-signup" href={appUrl("/signup")} data-ga-location="header">
           Create workspace
         </a>
         <button

@@ -111,7 +111,7 @@ export default async function BlogPostPage({ params }: Params) {
           Starter is free for one developer and one person who asks for changes.{" "}
           <Link href="/#pricing">See pricing</Link>.
         </p>
-        <a href={appUrl("/signup")} className="landing-btn primary">
+        <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="blog_post_cta">
           Create a free workspace
         </a>
       </aside>
