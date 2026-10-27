@@ -42,7 +42,24 @@ export default function JiraIntegrationPage() {
         </div>
       </section>
 
-      {/* Placeholder: label -> preview-link-on-ticket GIF goes here when recorded. */}
+      <section className="landing-section">
+        <video
+          className="landing-demo-video"
+          poster="/integrations/jira-flow-loop-poster.png"
+          width={1200}
+          height={676}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label="Diagram: Jira ticket labelled butterneck, AI builds in a sandbox, preview link posted back, developer reviews"
+          style={{ width: "100%", height: "auto", borderRadius: 12 }}
+        >
+          <source src="/integrations/jira-flow-loop.mp4" type="video/mp4" />
+        </video>
+      </section>
+
       <section className="landing-section" aria-labelledby="jira-steps-heading">
         <h2 id="jira-steps-heading">How it works</h2>
         <div className="landing-grid">
