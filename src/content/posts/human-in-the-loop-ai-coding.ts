@@ -83,7 +83,7 @@ Leaving the merge to a person is the main safeguard. There are a few more, all o
 
 - **The AI stays in the folder you connected.** It works in the project you pointed the bridge at, not the rest of the computer.
 - **You can block paths.** Ignore rules keep the AI out of folders you choose.
-- **\`.env\` is always blocked.** Secret settings files are off limits, always.
+- **\`.env\` is on the ignore list.** The agent is told secret settings files are off limits. That is an instruction, not a hard block, so keep production secrets off the machine.
 - **You choose who can ask.** A list of people, or anyone with the link. Someone who is not allowed can request access, and you decide.
 - **Developer replies don't change files.** A developer can answer in the chat without triggering the AI.
 - **Each private copy is separate.** A Jira ticket gets its own copy named after the ticket, and updating the ticket later does not open a second one.

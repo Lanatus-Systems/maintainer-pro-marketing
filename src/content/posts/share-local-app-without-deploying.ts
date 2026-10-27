@@ -104,7 +104,7 @@ If your requests start in Jira instead, add the label \`butterneck\` to a ticket
 Sharing a local app is only comfortable if you know what the outside world can touch. With Butterneck:
 
 - The AI edits only the folder you connected. You can block other paths with ignore rules.
-- Secret settings files (\`.env\`) are always off limits.
+- Secret settings files (\`.env\`) are on the agent's ignore list (an instruction, not a hard block).
 - If a turn goes wrong, you can stop it and roll back that turn's file changes.
 - Nothing is merged, no pull request is opened, and nothing is deployed. The change stays on the computer until someone on your team publishes it the way you already do.
 

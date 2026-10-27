@@ -173,7 +173,7 @@ export const FAQS = [
     lines: [
       "On the computer you connected, inside the project you chose.",
       "You can also block other folders.",
-      "Secret settings files (.env) are always off limits.",
+      "Secret settings files (.env) are on an ignore list the AI is told to stay out of. It is an instruction, not a hard block, so keep production secrets off that computer.",
     ],
   },
 ] as const;

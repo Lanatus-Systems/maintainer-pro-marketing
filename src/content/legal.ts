@@ -35,7 +35,7 @@ export const legalPages = {
         paragraphs: [
           "Account details you give us, such as your name, email, and workspace. If you sign in with Google, we receive the profile Google shares for that sign-in.",
           "Chat messages, attachments, and sandbox settings you create in the app. Project files stay on the computer you connect. We do not copy your repository to our servers to edit it.",
-          "A share link opens the preview. Who can send is set on the golem: a chosen list, or anyone with the link. Website hosts start open.",
+          "A share link opens the preview. Who can send is set on each private copy: a chosen list, or anyone with the link. Website hosts start open.",
           "On our public pages (the home page, our work, and pricing), Google Analytics uses cookies to count visits and see which pages people read. It does not run inside the app or on share previews.",
         ],
       },

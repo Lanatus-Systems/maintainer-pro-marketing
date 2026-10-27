@@ -177,7 +177,7 @@ export default function HomePage() {
           <li>
             <strong>Your project only</strong>
             <span>
-              The AI stays in the project you connected. Secret settings files (.env) stay blocked.
+              The AI works in the project you connected. Secret settings files (.env) are on its ignore list. That is an instruction, not a hard block, so keep production secrets off that computer.
             </span>
           </li>
           <li>
