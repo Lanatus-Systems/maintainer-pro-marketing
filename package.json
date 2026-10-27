@@ -1,0 +1,25 @@
+{
+  "name": "butterneck-marketing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Butterneck marketing site for butterneck.com",
+  "scripts": {
+    "dev": "next dev --port 3010",
+    "build": "next build",
+    "start": "next start --port 3010"
+  },
+  "dependencies": {
+    "next": "^16.2.9",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

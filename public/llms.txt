@@ -1,0 +1,14 @@
+# Butterneck
+
+> Let them ask. You decide what goes live.
+
+Butterneck is for product teams. People ask on a live copy of the product. The AI edits the project on a computer the team connects. A developer decides what goes live.
+
+- Home: https://butterneck.com/
+- Privacy: https://butterneck.com/privacy
+- Terms: https://butterneck.com/terms
+- Contact: https://butterneck.com/contact
+- Jira privacy: https://butterneck.com/jira/privacy
+- Jira terms: https://butterneck.com/jira/terms
+
+The product app (signup, login, workspaces) is at https://app.butterneck.com.

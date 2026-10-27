@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 96" role="img" aria-label="Butterneck">
+  <rect width="96" height="96" rx="22" fill="#0084FF"/>
+  <g transform="scale(0.1875)">
+    <path d="M198 158 L108 256 L198 354" fill="none" stroke="#fff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M314 158 L404 256 L314 354" fill="none" stroke="#fff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="256" cy="256" r="28" fill="#fff"/>
+  </g>
+  <text x="116" y="68" font-family="Segoe UI, IBM Plex Sans, Arial, sans-serif" font-size="58" font-weight="700" fill="#0B1220">Butterneck</text>
+</svg>
