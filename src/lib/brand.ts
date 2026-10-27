@@ -29,7 +29,7 @@ export type ProductBrand = {
 const butterneck: ProductBrand = {
   appName: "butterneck",
   name: "Butterneck",
-  title: "Butterneck — let them ask. You decide what goes live.",
+  title: "Butterneck — AI change requests on a live preview of your app",
   description:
     "For product teams. People on the team ask on a live copy of the product. You choose who can ask. The AI edits the project on your computer. A developer decides what goes live.",
   ogDescription: "Let them ask. You decide what goes live.",
@@ -40,7 +40,7 @@ const butterneck: ProductBrand = {
   accentSoft: "#eef4ff",
   accentKicker: "#e8f3ff",
   supportEmail: "support@butterneck.com",
-  defaultSiteUrl: "https://butterneck.com",
+  defaultSiteUrl: "https://www.butterneck.com",
   defaultAppUrl: "https://app.butterneck.com",
 };
 

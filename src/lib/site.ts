@@ -1,8 +1,12 @@
 import { brand } from "@/lib/brand";
 
-const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? brand.defaultSiteUrl
-).replace(/\/$/, "");
+/**
+ * The live site answers on www.butterneck.com (the bare domain redirects there).
+ * Canonical URLs, the sitemap, and Open Graph must use the host that serves 200.
+ */
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? brand.defaultSiteUrl)
+  .replace(/\/$/, "")
+  .replace(/^https?:\/\/butterneck\.com$/, "https://www.butterneck.com");
 
 const APP_URL = (
   process.env.NEXT_PUBLIC_APP_URL ?? brand.defaultAppUrl

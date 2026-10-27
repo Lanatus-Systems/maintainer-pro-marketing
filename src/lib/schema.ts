@@ -13,6 +13,11 @@ export function homeJsonLd() {
         url: SITE_URL,
         logo: `${SITE_URL}/logo-512.png`,
         email: SUPPORT_EMAIL,
+        parentOrganization: {
+          "@type": "Organization",
+          name: "Lanatus Systems LLP",
+          url: "https://lanatussystems.com",
+        },
       },
       {
         "@type": "WebSite",
@@ -25,9 +30,12 @@ export function homeJsonLd() {
       },
       {
         "@type": "SoftwareApplication",
+        "@id": `${SITE_URL}/#software`,
         name: brand.name,
         applicationCategory: "BusinessApplication",
+        applicationSubCategory: "DeveloperApplication",
         operatingSystem: "Web",
+        image: `${SITE_URL}/og.png`,
         url: SITE_URL,
         description: SITE_DESCRIPTION,
         offers: [

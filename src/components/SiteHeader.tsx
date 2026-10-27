@@ -11,10 +11,10 @@ export function SiteHeader() {
 
   return (
     <header className="public-header">
-      <Link href="/" className="public-brand" aria-label={brand.name}>
+      <Link href="/" className="public-brand" aria-label={`${brand.name} home`}>
         <img
           src={brand.wordmarkSrc}
-          alt=""
+          alt={brand.name}
           width={148}
           height={31}
         />
