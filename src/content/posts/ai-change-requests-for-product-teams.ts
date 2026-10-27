@@ -120,6 +120,8 @@ Poor fits:
 - Changes to billing, permissions, or data models without close engineering review.
 - Anything that needs production data or secrets.
 
+For how to word a single request so the agent gets it right, see [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai).
+
 ## A rollout plan for product teams
 
 - **Week 1:** One app, one developer, one PM. Requests limited to copy and UI.

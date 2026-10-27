@@ -104,6 +104,7 @@ To write these limits down for your team, use our [policy template for non-engin
 - Pick one app and one developer.
 - Agree on the kind of changes PMs can request: copy, layout, small UI fixes.
 - Share the link with one PM for a week.
+- Give that PM a simple format for requests: where, what it says now, what you want, what must not change, and how you'll check it. Our [change request template for AI coding agents](/blog/how-to-write-a-change-request-for-ai) has examples.
 - Count how many requests went from ask to reviewed change the same day.
 
 ## FAQ
