@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    { url: siteUrl("/pricing"), lastModified: new Date("2026-10-27"), changeFrequency: "monthly", priority: 0.8 },
+    { url: siteUrl("/integrations/jira"), lastModified: new Date("2026-10-27"), changeFrequency: "monthly", priority: 0.8 },
     ...legal,
   ];
 }

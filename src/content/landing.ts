@@ -182,7 +182,8 @@ export const NAV = [
   { href: "/#how-it-works", label: "How it works" },
   { href: "/#why-now", label: "Why now" },
   { href: "/#jira", label: "Jira" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/integrations/jira", label: "Jira integration" },
   { href: "/#faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
 ] as const;

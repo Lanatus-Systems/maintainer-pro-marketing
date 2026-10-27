@@ -4,17 +4,18 @@ import { JsonLd } from "@/components/JsonLd";
 import { formatDate, POSTS, postPath, readingMinutes } from "@/content/blog";
 import { brand } from "@/lib/brand";
 import { breadcrumbJsonLd } from "@/lib/schema";
+import { pageMeta } from "@/lib/meta";
 import { siteUrl } from "@/lib/site";
 
 const title = "Blog";
 const description = `Notes from the ${brand.name} team on AI coding with a human in the loop, live previews, and getting change requests from the product team to the project.`;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title,
   description,
-  alternates: { canonical: "/blog" },
-  openGraph: { type: "website", title: `${title} — ${brand.name}`, description, url: "/blog" },
-};
+  path: "/blog",
+  image: POSTS[0]?.cover?.src ?? "/og.png",
+});
 
 export default function BlogIndex() {
   return (

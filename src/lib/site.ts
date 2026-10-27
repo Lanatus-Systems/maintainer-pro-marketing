@@ -26,6 +26,9 @@ export function appUrl(path: string): string {
   return `${APP_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
+/** Public profiles, used in the footer and Organization sameAs. */
+export const LINKEDIN_URL = "https://www.linkedin.com/company/92815972/";
+
 export const SITE_TITLE = brand.title;
 
 export const SITE_DESCRIPTION = brand.description;
