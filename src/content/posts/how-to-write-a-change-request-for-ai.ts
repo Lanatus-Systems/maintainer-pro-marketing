@@ -67,7 +67,7 @@ The **Check** line is for you as much as for the agent. If you can't say how you
 | Mobile layout | The footer is broken on mobile. | Footer, on a phone-width screen. The address and the opening hours overlap. Stack them, address first. Don't change the desktop footer. |
 | Scope | Update the hours. | Change the opening hours from "Tuesday to Sunday, 10 to 6" to "Tuesday to Sunday, 9 to 6". It appears in the footer and on the contact page; change both. |
 
-The color and fig requests are sample prompts in Elm & Fern, the Butterneck demo shop. They work because each one names one thing and one result.
+The color and fig requests are based on sample prompts in Elm & Fern, the Butterneck demo shop. They work because each one names one thing and one result.
 
 ## Seven habits that help
 
