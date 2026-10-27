@@ -132,6 +132,6 @@ Butterneck stops at a reviewable change on a live preview. For a comparison with
 
 ## Try it
 
-[Book a 20-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a change request from your backlog. Or start on the free plan from [pricing](/#pricing). Learn more at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a change request from your backlog. Or start on the free plan from [pricing](/#pricing). Learn more at [butterneck.com](/).
 `,
 };

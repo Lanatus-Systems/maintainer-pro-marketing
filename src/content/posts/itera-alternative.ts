@@ -129,6 +129,6 @@ Yes. Starter is free for one developer and one person asking for changes.
 
 ## Try it
 
-If your team's small changes stall in handoffs, [book a 20-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/#pricing) and start on the free plan. More on the product at [butterneck.com](/).
+If your team's small changes stall in handoffs, [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/#pricing) and start on the free plan. More on the product at [butterneck.com](/).
 `,
 };

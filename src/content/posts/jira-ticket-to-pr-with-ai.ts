@@ -126,6 +126,6 @@ The Cursor, Claude Code, or Antigravity CLI already installed and signed in on t
 
 ## Try it
 
-[Book a 20-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/#pricing): the Starter plan is free. More at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/#pricing): the Starter plan is free. More at [butterneck.com](/).
 `,
 };

@@ -127,6 +127,6 @@ Yes. Label a Jira ticket \`butterneck\` and assign it. A preview link is posted 
 
 ## Try it
 
-[Book a 20-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/#pricing): Starter is free for one developer and one requester. Learn more at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/#pricing): Starter is free for one developer and one requester. Learn more at [butterneck.com](/).
 `,
 };
