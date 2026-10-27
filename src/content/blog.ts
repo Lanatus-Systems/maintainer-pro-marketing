@@ -11,6 +11,7 @@ import { post as pmsShipCode } from "@/content/posts/should-product-managers-shi
 import { post as aiPrsOwner } from "@/content/posts/ai-prs-need-an-owner";
 import { post as clogless } from "@/content/posts/clogless-alternative";
 import { post as claudeCodePms } from "@/content/posts/claude-code-for-product-managers";
+import { post as changeRequestTemplate } from "@/content/posts/how-to-write-a-change-request-for-ai";
 
 export type BlogPost = {
   slug: string;
@@ -33,7 +34,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
