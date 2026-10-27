@@ -51,7 +51,7 @@ Butterneck never opens a pull request, never merges, and never deploys. You deci
 | | PM runs Claude Code or Cursor | PM asks on a Butterneck preview |
 |---|---|---|
 | What the PM needs | Repo access, a local setup, a terminal, git basics | A browser and the share link |
-| Whose AI subscription | A seat for the PM | The developer's already-signed-in CLI |
+| Whose AI subscription | A seat for the PM | The CLI signed in on the connected computer (under its plan's terms) |
 | Where the change is checked | The PM's own local app | A live preview of the developer's running dev server |
 | What comes out | A pull request from the PM | Edited files on the developer's computer; no PR |
 | Who decides what ships | A developer reviewing the PR | A developer reviewing the change and the conversation |
@@ -91,7 +91,7 @@ Not on their own; Claude Code is a command-line tool. With Butterneck, the PM ty
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 
-No. Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. Each person who sends requests needs a Butterneck seat on Pro.
+Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. Check that the plan it's signed in with allows use on behalf of your team; consumer plans may not (Anthropic's consumer terms, for example, say you may not make your account available to anyone else). Team, Enterprise or API plans are the safer fit. Each person who sends requests needs a Butterneck seat on Pro.
 
 ### Does Butterneck open pull requests for the PM's change?
 
