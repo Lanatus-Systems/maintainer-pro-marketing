@@ -2,15 +2,15 @@ import type { BlogPost } from "@/content/blog";
 
 export const post: BlogPost = {
   slug: "jira-ticket-to-pr-with-ai",
-  title: "From Jira ticket to PR with AI: turning tickets into reviewable changes",
+  title: "From Jira ticket to reviewable change with AI",
   description:
-    "Label a Jira ticket, let an AI coding agent make the change on a live copy, get a preview link back on the ticket, then open the PR yourself.",
+    "Jira to PR with AI, minus the auto-PR: label a ticket, an AI coding agent makes the change on a live copy, a preview link lands on the ticket, and your developer opens the PR.",
   date: "2026-10-27",
   author: "The Butterneck team",
   tags: ["Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
   cover: {
-    src: "/blog/cover-human-in-the-loop-ai-coding.png",
-    alt: "Butterneck cover: a human reviewing an AI-made change",
+    src: "/blog/cover-jira-ticket-to-reviewable-change.png",
+    alt: "Butterneck blog cover: from a labeled Jira ticket to a live preview that a developer reviews and ships",
     width: 1200,
     height: 630,
   },

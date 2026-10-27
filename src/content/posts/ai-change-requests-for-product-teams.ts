@@ -9,8 +9,8 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process"],
   cover: {
-    src: "/blog/cover-share-local-app-without-deploying.png",
-    alt: "Butterneck cover: sharing a running app for review",
+    src: "/blog/cover-ai-change-requests-for-product-teams.png",
+    alt: "Butterneck blog cover: AI change requests for product teams. Teammates ask, AI builds locally, developers decide what goes live",
     width: 1200,
     height: 630,
   },

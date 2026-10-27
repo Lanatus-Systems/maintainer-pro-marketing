@@ -9,8 +9,8 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "AI coding agents", "workflow"],
   cover: {
-    src: "/blog/product-app-with-chat.png",
-    alt: "A live app with the Butterneck chat open beside it",
+    src: "/blog/cover-how-pms-can-change-a-live-app.png",
+    alt: "Butterneck blog cover: Let PMs change a live app. They ask in chat, the developer's AI builds it, and you publish",
     width: 1280,
     height: 720,
   },
