@@ -31,3 +31,6 @@ export const SITE_TITLE = brand.title;
 export const SITE_DESCRIPTION = brand.description;
 
 export const SITE_OG_DESCRIPTION = brand.ogDescription;
+
+/** Google Calendar booking page for a live walkthrough. */
+export const WALKTHROUGH_URL = "https://calendar.app.google/p2McAaz4ZwXBiG5m9";

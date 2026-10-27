@@ -12,7 +12,8 @@ import {
   WHY,
 } from "@/content/landing";
 import { homeJsonLd } from "@/lib/schema";
-import { appUrl, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/site";
+import { DemoVideo } from "@/components/DemoVideo";
+import { appUrl, SITE_DESCRIPTION, SITE_TITLE, WALKTHROUGH_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: SITE_TITLE },
@@ -38,8 +39,18 @@ export default function HomePage() {
             <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_hero">
               Create a free workspace
             </a>
-            <a href="#example" className="landing-btn">
-              See a simple request and a messy one
+            <a
+              href={WALKTHROUGH_URL}
+              className="landing-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ga-event="book_walkthrough_click"
+              data-ga-location="home_hero"
+            >
+              Book a walkthrough
+            </a>
+            <a href="#demo" className="landing-btn">
+              Watch the demo
             </a>
           </div>
           <ul className="landing-trust">
@@ -50,6 +61,35 @@ export default function HomePage() {
           </ul>
         </div>
         <ProductPreview />
+      </section>
+
+      <section id="demo" className="landing-section landing-demo" aria-labelledby="demo-heading">
+        <h2 id="demo-heading">See a request go from chat to preview</h2>
+        <p className="landing-section-lead">
+          A request typed on the live copy, the AI editing the project, and the updated preview.
+        </p>
+        <DemoVideo
+          src="/media/demo.mp4"
+          poster="/media/demo-poster.png"
+          width={1280}
+          height={720}
+          label="Butterneck demo: a change request typed on a live preview and the AI updating the app"
+        />
+        <div className="landing-cta">
+          <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_demo">
+            Create a free workspace
+          </a>
+          <a
+            href={WALKTHROUGH_URL}
+            className="landing-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ga-event="book_walkthrough_click"
+            data-ga-location="home_demo"
+          >
+            Book a walkthrough
+          </a>
+        </div>
       </section>
 
       <section className="landing-proof" aria-label="Where the time goes">

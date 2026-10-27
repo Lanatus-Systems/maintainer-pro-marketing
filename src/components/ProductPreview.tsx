@@ -3,7 +3,7 @@ export function ProductPreview() {
     <div className="landing-preview" aria-hidden="true">
       <header className="aui-preview-header">
         <div>
-          <h2>AI Assistant</h2>
+          <p className="aui-preview-title">AI Assistant</p>
           <p>On a live copy of the product</p>
         </div>
         <div className="aui-preview-user">
