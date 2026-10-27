@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "run-ai-coding-agent-sandbox-on-your-machine",
   title: "How Butterneck runs an AI coding agent in a sandbox on your own machine",
   description:
-    "A walkthrough of how Butterneck runs Cursor, Claude Code, or Antigravity on a developer's computer: folder isolation, .env blocking, per-turn rollback, preview links, and why it never merges.",
+    "A walkthrough of how Butterneck runs Cursor, Claude Code, or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback, preview links, and why it never merges.",
   date: "2026-10-27",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
