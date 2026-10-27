@@ -11,8 +11,8 @@ export const post: BlogPost = {
   cover: {
     src: "/blog/cover-itera-alternative.png",
     alt: "Butterneck blog cover: Itera alternative. Plain-words change requests on a live preview, and your developers approve what ships",
-    width: 1280,
-    height: 720,
+    width: 1200,
+    height: 630,
   },
   body: `
 If you are looking at Itera and wondering whether there is an alternative that fits your team better, this post compares Itera and Butterneck side by side. We make Butterneck, so we are not neutral. We have tried to stick to what each product says publicly, and to be clear about where Itera may be the better pick.
@@ -32,7 +32,7 @@ Its site lists this flow:
 
 Features listed on the site include GitHub, GitLab, and Bitbucket integration, design-system-aware output, branch-based frontend previews, ephemeral environments with mock data for backend-touching changes, test suite integration, a Point & Edit visual mode, AI-generated pull requests, and a view of every change in flight across teams.
 
-The public pricing shows a Builder plan at €30 per seat per month, which includes 5 iterations per month.
+Its public pricing says "One seat per builder. Collaborators are always free." and "Currently free for early partners". Two paid plans are listed: Builder at €30 per seat per month, which includes 5 iterations per month, and Unlimited at €100 per seat per month, which adds unlimited iterations, priority support, multi-repo workspaces, and advanced review workflows.
 
 That is a full product-development workflow: discovery, design, architecture scoping, and a planned PR at the end.
 
@@ -80,7 +80,7 @@ Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticke
 
 ### Pricing
 
-Itera's Builder plan is listed at €30 per seat per month with 5 iterations per month.
+Itera lists two plans: Builder at €30 per seat per month with 5 iterations per month, and Unlimited at €100 per seat per month with unlimited iterations. Its site says "One seat per builder. Collaborators are always free." and that it is "Currently free for early partners".
 
 Butterneck has a free Starter plan for one developer and one requester with one private copy. Pro is USD 19 per person per month (also priced in INR, EUR, GBP, AUD, CAD, SGD, and AED), with 20% off annual billing, 50 private copies, and 50 GB of preview traffic per month. You also pay for your own coding agent subscription. Details on [pricing](/#pricing).
 
