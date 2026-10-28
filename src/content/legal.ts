@@ -136,14 +136,14 @@ export const legalPages = {
         heading: "What we access",
         paragraphs: [
           "When a workspace admin connects a Jira Cloud site, Atlassian asks them to approve read and write access to Jira work, read access to Jira users, and offline access so the connection can be refreshed.",
-          "We read the sites they grant, project names, and the Jira users who can be assigned in linked projects (through Jira user search), so each one can be matched to a computer. For each ticket that starts work, we read its key, summary, description, status, type, priority, assignee, reporter, labels, recent comments with their author names, and attachments.",
+          "We read the sites they grant, project names, and and Jira users on the connected site, found by name or email through Jira's free-text user search, so each one can be matched to a computer. For each ticket that starts work, we read its key, summary, description, status, type, priority, assignee, reporter, labels, recent comments with their author names, and attachments up to 8 MB.",
         ],
       },
       {
         heading: "What we store",
         paragraphs: [
           "The site name, site URL, and encrypted access and refresh tokens for that workspace. The link from a sandbox to an issue key, summary, and issue URL. If the app is tied to one Jira project, we store that project key and name. We also store the mapping between Jira users and computers, and the ticket events we receive from Jira webhooks, including ignored ones and the reason they were ignored.",
-          "Work starts when someone picks a ticket, or automatically when a ticket in a linked project is labelled butterneck and assigned to a mapped Jira user. Starting work copies the ticket's details and link, plus its last 8 comments with author names, into a sandbox chat, and downloads the ticket's attachments and stores them as chat attachments. The coding agent on the connected computer reads them, and may send them to its own AI provider, as the Butterneck privacy policy says. That chat is stored like any other Butterneck conversation.",
+          "Work starts when someone picks a ticket, or automatically when a ticket in a linked project is labelled butterneck and assigned to a mapped Jira user. Starting work copies the ticket's details and link, plus its last 8 comments with author names, into a sandbox chat, and downloads the ticket's attachments up to 8 MB each and stores them as chat attachments. Larger files and duplicates are skipped. The coding agent on the connected computer reads them, and may send them to its own AI provider, as the Butterneck privacy policy says. That chat is stored like any other Butterneck conversation.",
         ],
       },
       {
