@@ -27,7 +27,7 @@ export function appUrl(path: string): string {
 }
 
 /** Public profiles, used in the footer and Organization sameAs. */
-export const LINKEDIN_URL = "https://www.linkedin.com/company/92815972/";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/butterneckai";
 export const X_URL = "https://x.com/butterneckai";
 export const X_HANDLE = "@butterneckai";
 
