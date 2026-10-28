@@ -22,6 +22,11 @@ export default function PricingPage() {
       <section className="landing-section" aria-labelledby="seats-heading">
         <h2 id="seats-heading">Who counts as a person</h2>
         <ul className="landing-points">
+          <li>
+            Try Pro for one month: a workspace owner on Starter can start a one-month Pro trial from
+            the Billing page, once per workspace. When the month ends, the workspace goes back to
+            Starter limits unless you subscribe to Pro.
+          </li>
           <li>On Pro, developers and people who request changes both count as a person.</li>
           <li>
             People who only open a share link to look at the preview don’t need an account, so they
