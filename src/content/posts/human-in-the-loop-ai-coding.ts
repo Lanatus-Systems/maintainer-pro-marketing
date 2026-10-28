@@ -102,6 +102,12 @@ Leaving the merge to a person is the main safeguard. There are a few more, all o
 - **Developer replies don't change files.** A developer can answer in the chat without triggering the AI.
 - **Each private copy is separate.** A Jira ticket gets its own copy named after the ticket, and updating the ticket later does not open a second one.
 
+## A human in the loop can still defer
+
+Putting a person in the loop doesn't guarantee that person decides. In a study published on 27 October 2026, Anthropic asked 50 professional analysts to do a realistic statistical analysis with Claude Code. A coin flip secretly set which option the agent leaned towards on each choice, and across four analytical choices the analysts went with the agent's lean 86% of the time ([Anthropic](https://www.anthropic.com/research/agents-judgment-calls)). It's a study of data analysts, not code reviewers, but the lesson carries: a summary from the agent is an easy thing to agree with.
+
+So in Butterneck the check isn't the agent's account of what it did. The person who asked looks at the change themselves on a live preview of the running app, and the developer reads the diff in their own editor before anything is committed or becomes a pull request. Both are checking the actual result, not the AI's description of it.
+
 ## "Isn't this just slower than auto-merge?"
 
 For the one step at the end, yes, by a minute or two. For the whole request, no.

@@ -87,6 +87,8 @@ LinearB isn't the only source pointing at review and merge rather than writing. 
 
 All of them come with the same caveat as LinearB. The MSR study's authors note that correlation does not imply causation, and their data comes from open-source repositories. CircleCI's numbers describe pipelines, not who wrote the code. The Carnegie Mellon/Stanford study covers a single company. DX and Faros are vendor reports that compare teams by how much they use AI. Read together, they point the same way: the slow part is getting a change reviewed, trusted and merged, not writing it. None of them measured Butterneck.
 
+**Update, 28 October 2026: Jellyfish.** Jellyfish's [AI Engineering Trends](https://jellyfish.co/ai-engineering-trends/) report (October 2026) shows agents writing a growing share of the code while people still sign off on nearly all of it. At the median company, 28% of merged PRs now involve an agent (58% at leading companies), but only 0.5% merge with AI-only review; lead adopters of that workflow merge 9% with no human review. Over the past year the median company's cost per merged PR fell from $1,202 to $820, and it ended the third quarter at 98% of its first-quarter headcount while spending 3.8x as much per engineer. So humans still own the merge. The useful question is whether that sign-off is a real decision. Butterneck moves it earlier: the person who asked checks the change on a live preview, and a developer decides before there's a PR at all. Jellyfish didn't measure Butterneck either.
+
 ## How teams reduce the AI PR review bottleneck
 
 Faros puts the problem plainly: "the code arriving for review is often not review-ready." You don't need a new tool to start. Some options teams use:
