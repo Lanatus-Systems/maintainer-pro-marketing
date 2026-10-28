@@ -30,6 +30,8 @@ A coding agent reads your message and the code. It does not see your roadmap, th
 
 None of this is new. A good ticket for a human developer has the same parts. An agent just acts on what you wrote faster, and with fewer questions.
 
+**Update, 28 October 2026: why the Keep line matters.** Coding agents are good at following detailed specs and weaker at what you leave unsaid. Cognition's [FrontierCode 2.0 benchmark](https://cognition.com/blog/frontier-code-2.0) (October 2026) found that models "struggle to infer user intent, respect unstated constraints, and anticipate long-term consequences of their changes", and that "thoroughness" criteria had the highest failure rate of any category. That is what the Keep and Check lines are for.
+
 ## The template: five lines
 
 Copy this and fill it in. Most small requests fit in five short lines.
