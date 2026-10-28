@@ -23,6 +23,8 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
+An AI change request policy is a one-page agreement that says what non-engineers (PMs, designers, support leads) may ask an AI coding agent to change in a live web app, what must start with an engineer, and who decides what ships. In short: the person who asked checks the change on a live preview, and a developer decides whether it ships; the AI never ships on its own.
+
 Once a PM, designer or support lead can type a change and watch an AI make it, someone will ask: what are they allowed to ask for? If nobody writes it down, every request turns into a small debate. Engineers say no to things that were fine. Requesters ask for things that should never have started in chat.
 
 This post is a policy you can copy. It covers what non-engineers can ask for directly, what needs an engineer from the start, who reviews and who decides what ships, how previews get checked, and how secrets and production data are handled. There is a short template at the end to paste into your wiki.
