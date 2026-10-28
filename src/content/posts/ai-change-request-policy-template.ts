@@ -78,6 +78,8 @@ The requester never ships on their own. The AI never ships at all. A developer p
 
 If you use GitHub, branch protection can enforce part of this. Its [protected branch rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) can require approving pull request reviews before merging, including reviews from code owners. That makes "a developer decides" a setting, not just a promise.
 
+**One caveat since 28 October 2026:** if an admin turns on [Copilot approvals](https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals) (they're off by default), Copilot's approval also counts toward the required approvals. If your policy says a developer decides, leave that off, or limit the file paths Copilot is allowed to approve so it doesn't cover the changes a developer must decide on.
+
 ## Copy changes can skip code review. They shouldn't skip the person who asked.
 
 Teams that ship a lot of agent-written code are starting to drop human code review for the lowest-risk changes. The Claude Code team at Anthropic [describes its setup](https://claude.dev/blog/solving-code-review-at-anthropic/) as a risk table. Its Low tier covers "Docs, copy, internal-only features, additive changes behind a flag", and the human approvals it needs are "None required once automated review and security checks are green." Medium needs one person, High needs two. "The change sets the tier, not the author," and only authors on a repo's trusted list get the lighter paths.
@@ -200,9 +202,9 @@ Not ready to adopt a policy yet? Start smaller: a [4-week pilot proposal](/blog/
 
 ## How Butterneck fits
 
-Butterneck is built around this split. A developer connects a project folder on their own computer, and the running app gets a share link to a private live copy. A requester opens the link and types the change in a chat beside the app, or labels a [Jira ticket](/integrations/jira) \`butterneck\` and assigns it. The developer's own coding agent (Cursor, Claude Code or Antigravity) edits the files on that computer, and the requester sees the result on the same screen.
+Butterneck is built around this split. A developer connects a project folder on their own computer, and the running app gets a share link to a private live copy. A requester opens the link and types the change in a chat beside the app, or labels a [Jira ticket](/integrations/jira) \`butterneck\` and assigns it to a teammate whose computer has the project. The developer's own coding agent (Cursor, Claude Code or Antigravity) edits the files on that computer, and the requester sees the result on the same screen.
 
-The developer chooses who can send requests. Any turn can be stopped and its file changes rolled back. Butterneck never merges, never opens a pull request and never deploys: the developer reviews and publishes the usual way, which is step 4 of the template.
+The developer chooses who can send requests. Any turn can be stopped, and its file changes are usually rolled back; if the rollback can't be completed, the chat says so. Butterneck never merges, never opens a pull request and never deploys: the developer reviews and publishes the usual way, which is step 4 of the template.
 
 Two honest notes. \`.env\` files are on an ignore list the agent is told to stay out of. That is an instruction, not a hard block, so keep production secrets off that computer. And chat messages and preview traffic go through Butterneck's server, while the coding agent sends code context to its provider as it normally does. More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
@@ -225,6 +227,10 @@ Some teams let them skip human code review once automated checks pass. The Claud
 ### Who should decide what ships?
 
 A developer, through your normal release process. The requester accepts the change on the preview, and the developer reviews the diff and decides whether it ships. Neither the requester nor the AI should ship on their own.
+
+### Can an AI reviewer's approval count as the developer's decision?
+
+On GitHub it can if an admin turns it on. Since 28 October 2026, Copilot approvals are generally available, and when they're on, Copilot's approval counts toward the repository's required approvals. They're off by default, and repository admins can limit the file paths Copilot may approve. In this policy, an AI review can add to a developer's review but doesn't replace it: a developer still decides what ships, after the requester has checked the preview.
 
 ### Is an .env ignore rule enough to protect secrets?
 
