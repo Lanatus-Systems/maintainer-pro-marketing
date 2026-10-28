@@ -74,6 +74,7 @@ export const JIRA = [
       "Assign it to a teammate whose Jira account is mapped to a computer that has the project.",
       "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
       "Butterneck opens a private copy of the project, named after the ticket.",
+      "Each ticket’s copy counts toward your plan’s private copies: 1 on Starter (one ticket or one chat copy at a time), 50 on Pro.",
       "The title, description, comments, and attached files become the request.",
     ],
   },

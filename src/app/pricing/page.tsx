@@ -38,16 +38,24 @@ const PRICING_FAQS = [
     ],
   },
   {
+    q: "Is the Jira integration included?",
+    lines: [
+      "Yes, on every plan, including Starter.",
+      "Each labeled ticket opens its own private copy, and private copies count toward your plan: 1 on Starter, 50 on Pro. So Starter fits one ticket or one chat copy at a time, and regular Jira use needs Pro.",
+      "You can try it on Pro for a month first.",
+    ],
+  },
+  {
     q: "Is AI usage included in the price?",
     lines: [
       "No. Butterneck runs on your team’s Claude Code, Cursor or Antigravity plan, on the developer’s computer. Team, enterprise or API plans are recommended.",
-      "Butterneck doesn’t run its own model.",
+      "Butterneck doesn’t run its own model or resell AI usage, so there’s no markup on your AI plan.",
     ],
   },
   {
     q: "Can I try Pro before paying?",
     lines: [
-      "Yes. A workspace owner on Starter can start a one-month Pro trial from the Billing page, once per workspace.",
+      "Yes. A workspace owner on Starter can start a one-month Pro trial from the Billing page, once per workspace. The trial covers up to 20 people.",
       "When the month ends, the workspace goes back to Starter limits unless you subscribe to Pro.",
     ],
   },
@@ -82,11 +90,12 @@ export default function PricingPage() {
           <li>
             A workspace owner on Starter can start a one-month Pro trial from the Billing page, once
             per workspace. When the month ends, the workspace goes back to Starter limits unless you
-            subscribe to Pro.
+            subscribe to Pro. The trial includes Pro’s limits for up to 20 people.
           </li>
           <li>
-            A trial month is enough to run a real workflow, such as{" "}
-            <a href="/integrations/jira">labeling Jira tickets</a>, or a{" "}
+            Each labeled Jira ticket opens its own private copy, and Starter has one, so regular{" "}
+            <a href="/integrations/jira">Jira use</a> needs Pro. A trial month is enough to try it
+            for real, or to run a{" "}
             <a href="/blog/pm-change-request-pilot-proposal">4-week PM change request pilot</a>.
           </li>
         </ul>
