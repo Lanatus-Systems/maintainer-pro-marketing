@@ -89,7 +89,7 @@ Some requests should not start with a PM and an agent, however well they're writ
 - Secrets, API keys and environment settings.
 - Anything legal or compliance-related that needs sign-off first.
 
-If your team wants this written down, start from our [AI change request policy template](/blog/ai-change-request-policy-template). For the wider process (who asks, who checks, who ships), see [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
+If your team wants this written down, start from our [AI change request policy template](/blog/ai-change-request-policy-template). For the wider process (who asks, who checks, who ships), see [AI change requests for product teams](/blog/ai-change-requests-for-product-teams). To try it with your team first, send your engineering lead a [4-week pilot proposal](/blog/pm-change-request-pilot-proposal).
 
 ## What Butterneck adds to your request
 

@@ -194,6 +194,8 @@ Every tier includes the requester's check on the preview.
 
 Review it after a month. Move items between the lists based on what actually happened, not on what people feared.
 
+Not ready to adopt a policy yet? Start smaller: a [4-week pilot proposal](/blog/pm-change-request-pilot-proposal) you can send your engineering lead, with the same split between what requesters can ask for and what stays engineering-only.
+
 ## How Butterneck fits
 
 Butterneck is built around this split. A developer connects a project folder on their own computer, and the running app gets a share link to a private live copy. A requester opens the link and types the change in a chat beside the app, or labels a [Jira ticket](/integrations/jira) \`butterneck\` and assigns it. The developer's own coding agent (Cursor, Claude Code or Antigravity) edits the files on that computer, and the requester sees the result on the same screen.
