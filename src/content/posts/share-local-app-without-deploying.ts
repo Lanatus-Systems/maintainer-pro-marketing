@@ -137,7 +137,7 @@ It is not the right tool when:
 
 ## Try it
 
-Starter is free for one developer and one person who asks for changes, with one private copy and 1 GB of preview traffic a month. Pro is per person per month and adds more copies, more traffic, and shared history. See [pricing](/#pricing) for the details, or read [how it works](/#how-it-works) on the home page.
+Starter is free for one developer and one person who asks for changes, with one private copy and 1 GB of preview traffic a month. Pro is per person per month and adds more copies and more traffic. See [pricing](/#pricing) for the details, or read [how it works](/#how-it-works) on the home page.
 
 The change is usually small. Getting the request to the project is what takes the week. A link to the app that's already running on your computer removes most of that.
 `,
