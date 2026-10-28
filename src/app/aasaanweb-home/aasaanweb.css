@@ -1,6 +1,6 @@
 /* AasaanWeb home page styles, ported from the admin app (client/src/pages/studio-landing.css). Scoped to .studio. */
 .studio {
-  --font-display: var(--aw-display), var(--aw-body), "Segoe UI", system-ui, sans-serif;
+  --font-display: Outfit, "Instrument Sans", "Segoe UI", system-ui, sans-serif;
   --ink: #091f41;
   --muted: #4b5a73;
   --line: rgb(9 31 65 / 12%);
@@ -22,7 +22,7 @@
     radial-gradient(900px 480px at 100% -10%, rgb(0 201 175 / 11%), transparent 60%),
     radial-gradient(700px 420px at -10% 20%, rgb(0 201 175 / 6%), transparent 55%),
     var(--paper);
-  font-family: var(--aw-body), "Segoe UI", system-ui, sans-serif;
+  font-family: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
   font-size: 1.05rem;
   line-height: 1.55;
 }
@@ -180,7 +180,7 @@
   padding: 1rem;
   background: var(--paper);
   color: var(--muted);
-  font-family: var(--aw-body), "Segoe UI", system-ui, sans-serif;
+  font-family: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
 }
 
 .studio-nav {
@@ -860,7 +860,7 @@
 }
 
 .studio-steps h3 {
-  font-family: var(--aw-body), system-ui, sans-serif;
+  font-family: "Instrument Sans", system-ui, sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
   font-weight: 700;
@@ -1778,16 +1778,4 @@
     opacity: 1;
     transform: none;
   }
-}
-
-/* Marketing-site additions */
-.studio a.studio-header-login {
-  font-weight: 600;
-  color: var(--ink);
-  text-decoration: none;
-  margin-right: 0.75rem;
-}
-.studio-logo-word {
-  display: block;
-  height: auto;
 }
