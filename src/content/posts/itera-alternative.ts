@@ -20,6 +20,8 @@ If you are looking at Itera and wondering whether there is an alternative that f
 
 Everything about Itera below comes from its public website, [iteradev.ai](https://iteradev.ai), as read on October 27, 2026. Products change. Check their site for the current details.
 
+> **Itera vs Butterneck, in short:** Itera takes a change from idea through design and engineering scoping to a written brief, and a coding agent turns it into an AI-generated pull request. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, no pull request is opened, and a developer decides first what ships.
+
 ## What Itera says it does
 
 Itera describes itself as "the shared context layer where PMs, designers, and engineers iterate on the live product together, then hand coding agents the complete brief they need to ship."
@@ -130,6 +132,6 @@ Yes. Starter is free for one developer and one person asking for changes.
 
 ## Try it
 
-If your team's small changes stall in handoffs, [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/pricing) and start on the free plan. More on the product at [butterneck.com](/). Comparing a cloud-sandbox tool too? Read our [Clogless alternative](/blog/clogless-alternative) comparison.
+If your team's small changes stall in handoffs, [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/pricing) and start on the free plan. More on the product at [butterneck.com](/). Comparing a cloud-sandbox tool too? Read our [Clogless alternative](/blog/clogless-alternative) comparison. For a wider comparison, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 `,
 };

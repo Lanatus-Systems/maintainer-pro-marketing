@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "Clogless vs Butterneck for product teams: cloud sandbox vs a connected computer, pull requests vs previews, Jira tickets and pricing, from public information.",
   date: "2026-10-28",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -135,6 +136,6 @@ Yes. Starter is free for one developer and one person who asks for changes.
 
 ## Try it
 
-If your team's small changes stall in the backlog, [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/pricing) and start on the free plan. If you are comparing other tools too, we also wrote an [Itera alternative](/blog/itera-alternative) comparison.
+If your team's small changes stall in the backlog, [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/pricing) and start on the free plan. If you are comparing other tools too, we also wrote an [Itera alternative](/blog/itera-alternative) comparison. For a wider comparison, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 `,
 };

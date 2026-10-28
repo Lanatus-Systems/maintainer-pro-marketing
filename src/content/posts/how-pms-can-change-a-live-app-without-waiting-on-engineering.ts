@@ -62,7 +62,7 @@ Fine for marketing pages built in a CMS. Not useful when the change is in the pr
 
 ### Give the PM an AI coding tool
 
-Some PMs install Cursor or Claude Code and edit the repo. This can work for technical PMs, but it means a local dev setup, git, and a PM opening pull requests. Many teams do not want that.
+Some PMs install Cursor or Claude Code and edit the repo. This can work for technical PMs, but it means a local dev setup, git, and a PM opening pull requests. Many teams do not want that. We compare the main options, from prototype tools to ticket-to-PR agents, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ### Let the PM ask on a live copy
 
