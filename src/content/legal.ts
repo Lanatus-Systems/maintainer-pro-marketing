@@ -135,15 +135,15 @@ export const legalPages = {
       {
         heading: "What we access",
         paragraphs: [
-          "When a partner admin connects a Jira Cloud site, Atlassian asks them to approve read and write access to Jira work, plus offline access so the connection can be refreshed.",
-          "We read the sites they grant, project names, and the issue key, summary, description, and status they pick. We do not browse Jira beyond that search.",
+          "When a workspace admin connects a Jira Cloud site, Atlassian asks them to approve read and write access to Jira work, read access to Jira users, and offline access so the connection can be refreshed.",
+          "We read the sites they grant, project names, and the Jira users who can be assigned in linked projects (through Jira user search), so each one can be matched to a computer. For each ticket that starts work, we read its key, summary, description, status, type, priority, assignee, reporter, labels, recent comments with their author names, and attachments.",
         ],
       },
       {
         heading: "What we store",
         paragraphs: [
-          "The site name, site URL, and encrypted access and refresh tokens for that client. The link from a sandbox to an issue key, summary, and issue URL. If the app is tied to one Jira project, we store that project key and name.",
-          "Starting work copies the issue summary, description, and link into a sandbox chat so the assistant can act on it. That chat is stored like any other Butterneck conversation.",
+          "The site name, site URL, and encrypted access and refresh tokens for that workspace. The link from a sandbox to an issue key, summary, and issue URL. If the app is tied to one Jira project, we store that project key and name. We also store the mapping between Jira users and computers, and the ticket events we receive from Jira webhooks, including ignored ones and the reason they were ignored.",
+          "Work starts when someone picks a ticket, or automatically when a ticket in a linked project is labelled butterneck and assigned to a mapped Jira user. Starting work copies the ticket's details and link, plus its last 8 comments with author names, into a sandbox chat, and downloads the ticket's attachments and stores them as chat attachments. The coding agent on the connected computer reads them, and may send them to its own AI provider, as the Butterneck privacy policy says. That chat is stored like any other Butterneck conversation.",
         ],
       },
       {
@@ -155,7 +155,7 @@ export const legalPages = {
       {
         heading: "How long, and how to stop",
         paragraphs: [
-          "Tokens stay until a partner disconnects the site. Unlinking a ticket stops future comments. The sandbox chat remains. Disconnecting the site deletes the stored tokens.",
+          "Tokens stay until a workspace admin disconnects the site. Unlinking a ticket stops future comments. The sandbox chat remains. Disconnecting the site deletes the stored tokens.",
           `Email ${SUPPORT_EMAIL} to ask about Jira data we hold.`,
         ],
       },
@@ -171,14 +171,14 @@ export const legalPages = {
       {
         heading: "Optional connection",
         paragraphs: [
-          "A partner admin may connect a Jira Cloud site to a client. Butterneck does not require Jira. The Butterneck terms still apply. These terms cover the connection only.",
+          "A workspace admin may connect a Jira Cloud site to the workspace. Butterneck does not require Jira. The Butterneck terms still apply. These terms cover the connection only.",
         ],
       },
       {
         heading: "Your Jira site",
         paragraphs: [
           "You must be allowed to install an app on that site and to read and comment on the issues you link. Atlassian’s own terms apply to Jira. We are not Atlassian.",
-          "You choose the issues. We do not change issue status, fields, or attachments. We add a comment when a linked turn finishes.",
+          "You choose the issues, either by picking them or by labelling them butterneck and assigning them to a mapped Jira user. We do not change issue status, fields, or attachments. We add a comment when a linked turn finishes.",
         ],
       },
       {
