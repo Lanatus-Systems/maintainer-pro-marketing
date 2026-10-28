@@ -257,7 +257,7 @@ export default function HomePage() {
           lines={[
             "A team that builds a product and keeps it running.",
             "The moment this helps: passing requests around takes more of the week than the work itself.",
-            "A product manager describes the change. A developer decides what goes live.",
+            "A product manager or another non-technical teammate describes the change. A developer decides what goes live.",
             "The project lives on a computer you control.",
           ]}
         />

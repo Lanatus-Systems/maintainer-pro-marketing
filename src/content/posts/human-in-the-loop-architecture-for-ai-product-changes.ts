@@ -56,7 +56,7 @@ Why local? The project already runs there, with its real dependencies, data and 
 There are two entry points:
 
 - A chat widget embedded on the live preview. It sends the page URL along with the message, so "this button" has a referent.
-- A Jira Cloud ticket with a \`butterneck\` label. Title, description, comments and attachments become the request. A note with the preview link is posted back to the ticket.
+- A Jira Cloud ticket with a \`butterneck\` label, assigned to someone whose computer has the project. Title, description, comments and attachments become the request. A note with the preview link is posted back to the ticket.
 
 Developer replies in the thread don't trigger the agent, so the developer can talk to the requester without kicking off another edit.
 
@@ -64,13 +64,13 @@ Developer replies in the thread don't trigger the agent, so the developer can ta
 
 The bridge starts the app and the server issues a public share URL that relays traffic over the bridge's WebSocket, including hot-reload sockets. When the agent saves a file, the dev server reloads and the requester sees it.
 
-That gives you property 2 with no deploy step. It also means the agent is told never to run a production build mid-turn; the dev server is the preview.
+That gives you property 2 with no deploy step. It also means the agent is told not to run a production build mid-turn unless the person asking explicitly requests one; the dev server is the preview.
 
 ### 4. Guardrails in layers
 
 - **Scope.** The system prompt has a mandatory file-access section: only the attached folders, nothing outside.
 - **Secrets.** A built-in ignore list (\`.env\`, \`.env.*\`, and the same in any subfolder) is always merged with team-defined globs and included in that section. The agent is told to refuse any part of a request that needs those paths.
-- **Undo.** Before each turn, the workspace is snapshotted (via git when available, file copy otherwise). Stopping a turn kills the agent and restores the snapshot.
+- **Undo.** Before each turn, the workspace is snapshotted (via git when available, file copy otherwise). Stopping a turn kills the agent and restores the snapshot. If the restore can't be completed, for example because a changed file was too large to snapshot, the chat says so.
 - **Confidence.** The agent ends each change with a hidden confidence level (very low to very high), shown to the team as a tag, so reviewers know where to look harder.
 - **Access.** The developer chooses who may send requests: a named list or anyone with the link.
 
@@ -98,6 +98,6 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 
 Human-in-the-loop is often treated as a temporary crutch until the models get better. I think for product changes it's a permanent design choice: ask freely, preview instantly, ship deliberately.
 
-If that's how you want your team to work with coding agents, Butterneck has a free Starter plan at [butterneck.com](/pricing).
+If that's how you want your team to work with coding agents, Butterneck has a free Starter plan; see [pricing](/pricing).
 `,
 };

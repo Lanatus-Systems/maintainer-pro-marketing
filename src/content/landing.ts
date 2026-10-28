@@ -172,7 +172,7 @@ export const FAQS = [
   {
     q: "Are there AI tools where a non-developer can request a code change and preview it before a pull request is opened?",
     lines: [
-      "Yes. In Butterneck, a product manager, designer, or support lead types the request in a chat on a live preview of the product, or labels a Jira ticket.",
+      "Yes. In Butterneck, non-technical teammates (a product manager, designer, or support lead) type the request in a chat on a live preview of the product, or label a Jira ticket and assign it.",
       "The AI coding agent the developer already uses (Cursor, Claude Code, or Antigravity) runs on the developer’s computer and edits the project. The requester checks the updated preview.",
       "No pull request is opened. A developer decides first. Butterneck itself never opens a pull request, merges, or deploys.",
     ],
