@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable one-page proposal for a 4-week pilot where PMs request small product changes on a live preview and one developer decides what ships. Scope, guardrails, metrics to track and decision criteria.",
   date: "2026-10-28",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["PM pilot proposal", "AI change requests", "AI for product managers", "engineering leads", "product teams"],
   cover: {
@@ -160,7 +161,7 @@ WHAT WE NEED
 ### Week 3: normal volume
 
 - Requesters ask for changes as they come up, not saved for the pilot.
-- If you use Jira, try a few requests that start from a labeled ticket instead of the chat.
+- If you use Jira, try a few requests that start from a labeled ticket instead of the chat. Each ticket opens its own private copy, so this step needs Pro.
 - Weekly review: look at the dropped requests. Were they out of scope, unclear, or did the agent get them wrong? Each has a different fix.
 
 ### Week 4: decide
@@ -211,7 +212,7 @@ The guardrails in the proposal map to the product:
 
 For writing the requests themselves, give your requesters [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai). Its five-line template (where, now, want, keep, check) makes requests easier to review, and the **Check** line doubles as the requester's sign-off on the preview.
 
-On cost: the Starter plan is free for one developer and one requester, which covers a one-PM pilot. More requesters need Pro seats. AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
+On cost: the Starter plan is free for one developer and one requester, with one private copy, which is enough to try the chat flow with one PM. Each Jira ticket opens its own private copy, and each extra requester needs a seat, so a pilot that uses Jira or more than one PM needs Pro ($19 per person per month). AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
 
 ## FAQ
 
@@ -241,6 +242,6 @@ No. The requester describes the change and checks it on a live preview. The deve
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring the in-scope list from your backlog; we'll run one of the changes on a live copy. Or see [pricing](/pricing) and start on the free plan.
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring the in-scope list from your backlog; we'll run one of the changes on a live copy. Or see [pricing](/pricing): the free plan is enough to try the chat flow with one PM, and a pilot with Jira or more PMs needs Pro.
 `,
 };
