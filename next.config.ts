@@ -13,6 +13,27 @@ const aasaanWebAppUrl = (
   process.env.NEXT_PUBLIC_AASAANWEB_APP_URL || "https://aasaan.butterneck.com"
 ).replace(/\/$/, "");
 
+/** App-only (signed-in, checkout or password) routes on the AasaanWeb app. */
+const AASAANWEB_APP_ROUTES = [
+  "/checkout",
+  "/forgot-password",
+  "/reset-password",
+  "/get-started",
+  "/onboarding",
+  "/golems/:path*",
+  "/bridges/:path*",
+  "/site-from-message/:path*",
+  "/partners/:path*",
+  "/clients/:path*",
+  "/users",
+  "/usage",
+  "/billing",
+  "/stats/:path*",
+  "/settings",
+  "/applications",
+  "/companies",
+];
+
 /** AasaanWeb (APP_NAME=maintainer-pro): its own home page; signup and login live on the app. */
 const aasaanWebRedirects = [
   { source: "/signup", destination: `${aasaanWebAppUrl}/signup`, statusCode: 307 as const },
@@ -21,6 +42,24 @@ const aasaanWebRedirects = [
   // Site forms and previews live on the app; path and query string carry over.
   { source: "/site-form/:path*", destination: `${aasaanWebAppUrl}/site-form/:path*`, statusCode: 307 as const },
   { source: "/p/:path*", destination: `${aasaanWebAppUrl}/p/:path*`, statusCode: 307 as const },
+  // Every other app-only route (see the admin repo's client/src/App.tsx) is served by the app.
+  ...AASAANWEB_APP_ROUTES.map((route) => ({
+    source: route,
+    destination: `${aasaanWebAppUrl}${route}`,
+    statusCode: 307 as const,
+  })),
+  { source: "/aasaanweb-pages/:page", destination: "/:page", statusCode: 308 as const },
+];
+
+/** Public AasaanWeb pages that share a path with a Butterneck page are served from src/app/aasaanweb-pages. */
+const aasaanWebRewrites = [
+  { source: "/", destination: "/aasaanweb-home" },
+  ...["work", "pricing", "contact", "privacy", "terms"].map((page) => ({
+    source: `/${page}`,
+    destination: `/aasaanweb-pages/${page}`,
+  })),
+  { source: "/jira/privacy", destination: "/aasaanweb-pages/jira-privacy" },
+  { source: "/jira/terms", destination: "/aasaanweb-pages/jira-terms" },
 ];
 
 const nextConfig: NextConfig = {
@@ -33,7 +72,7 @@ const nextConfig: NextConfig = {
   ...(isAasaanWeb
     ? {
         async rewrites() {
-          return { beforeFiles: [{ source: "/", destination: "/aasaanweb-home" }], afterFiles: [], fallback: [] };
+          return { beforeFiles: aasaanWebRewrites, afterFiles: [], fallback: [] };
         },
       }
     : {}),

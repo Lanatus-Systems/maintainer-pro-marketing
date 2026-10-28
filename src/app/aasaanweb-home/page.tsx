@@ -2,18 +2,22 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { JsonLd } from "@/components/JsonLd";
-import { AasaanWebShell, Reveal } from "@/components/aasaanweb/AasaanWebShell";
-import { aasaanWebAppUrl, aasaanWebJsonLd, aasaanWebPageMeta, PageUrlTags } from "@/lib/aasaanweb";
+import { AasaanWebShell } from "@/components/aasaanweb/AasaanWebShell";
+import { Reveal } from "@/components/aasaanweb/Reveal";
+import { WORK } from "@/components/aasaanweb/work";
+import { aasaanWebJsonLd, aasaanWebPageMeta, PageUrlTags } from "@/lib/aasaanweb";
 import { isAasaanWeb } from "@/lib/brand";
 import "./aasaanweb.css";
 
 /**
  * AasaanWeb home page (APP_NAME=maintainer-pro). next.config rewrites "/" here for that brand only.
- * Copy is ported from the admin app's StudioLandingPage.tsx (branch seo-fixes); no new claims.
+ * Markup is a straight port of the admin app's client/src/pages/StudioLandingPage.tsx (branch
+ * seo-fixes), so the page matches https://aasaan.butterneck.com/.
  */
 export const metadata: Metadata = aasaanWebPageMeta();
 
-const SIGNUP_URL = aasaanWebAppUrl("/signup");
+const SIGNUP_URL = "/signup";
+const WORK_URL = "/work";
 
 function unsplash(photo: string, width: number) {
   return `https://images.unsplash.com/${photo}?auto=format&fit=crop&w=${width}&q=70`;
@@ -256,11 +260,8 @@ export default function AasaanWebHome() {
           <div className="studio-hero-copy">
             <p className="studio-kicker">For the page customers actually see</p>
             <h1>
-              Create or edit your business website <em>in plain words</em>
+              Create your own site. Update the one you have <em>on the go.</em>
             </h1>
-            <p className="studio-lead studio-lead-hi" lang="hi">
-              Apna business website banaiye — bas likhkar batayein.
-            </p>
             <p className="studio-lead">
               Tell us about your business. You get a page. When a photo, a
               price, or a Saturday hour changes, you fix it yourself — while
@@ -339,6 +340,29 @@ export default function AasaanWebHome() {
             </li>
           </ol>
 
+          <figure className="studio-bars">
+            <figcaption>How long a small change takes</figcaption>
+            <div className="studio-bar-row">
+              <div className="studio-bar-label">
+                <strong>4 days</strong>
+                <span>The usual way</span>
+              </div>
+              <div className="studio-bar-track" aria-hidden="true">
+                <span />
+              </div>
+              <p>You send a message. You wait. It goes live later in the week.</p>
+            </div>
+            <div className="studio-bar-row is-fast">
+              <div className="studio-bar-label">
+                <strong>10 min</strong>
+                <span>On your page</span>
+              </div>
+              <div className="studio-bar-track" aria-hidden="true">
+                <span />
+              </div>
+              <p>You open the page, say the fix, and put it live when it looks right.</p>
+            </div>
+          </figure>
 
           <div className="studio-bits-wrap">
             <h3>What you can change yourself</h3>
@@ -388,6 +412,45 @@ export default function AasaanWebHome() {
           </div>
         </section>
 
+        <section id="examples" className="studio-section" aria-labelledby="examples-heading">
+          <Reveal>
+            <div className="studio-section-head">
+              <p className="studio-kicker">Our work</p>
+              <h2 id="examples-heading">Pages for real businesses.</h2>
+              <p>
+                A customer can see what they do, and how to get in touch.
+              </p>
+            </div>
+          </Reveal>
+          <div className="studio-examples">
+            {WORK.filter((item) => item.src).map((item) => (
+              <Reveal key={item.name}>
+                <figure className="studio-example">
+                  <div className="studio-example-frame">
+                    <img src={item.src} alt={item.alt ?? item.name} width={1440} height={900} loading="lazy" />
+                  </div>
+                  <figcaption>
+                    <p className="studio-example-meta">{item.meta}</p>
+                    <h3>{item.name}</h3>
+                    <p>{item.summary}</p>
+                    <a
+                      href={item.open}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="studio-example-open"
+                      aria-label={`Open the ${item.name} website in a new tab`}
+                    >
+                      Open the website ↗
+                    </a>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+          <a href={WORK_URL} className="studio-more">
+            See our work →
+          </a>
+        </section>
 
         <section id="problem" className="studio-section" aria-labelledby="problem-heading">
           <Reveal>
