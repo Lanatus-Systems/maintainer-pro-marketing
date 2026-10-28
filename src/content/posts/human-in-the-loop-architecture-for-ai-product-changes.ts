@@ -22,6 +22,8 @@ I think that is the wrong default for changes requested by people who can't read
 
 This piece lays out the argument and then the concrete architecture we use in Butterneck to keep a human in the loop without making them the bottleneck.
 
+> **Human-in-the-loop AI product changes, in short:** People who can't read the diff ask a coding agent for changes on the running product and see the result on a live preview before it is real, but only a developer can make a change live. In Butterneck the developer's own Cursor, Claude Code or Antigravity CLI edits files in a folder on their computer; the folder and \`.env\` limits are guardrails, not an OS sandbox, and each turn is snapshotted first so a stopped turn can be restored. There is no push, pull request, merge or deploy in the bridge or chat server: no pull request is opened, and a developer decides first what ships.
+
 ## Where a small change actually spends its time
 
 Take "make the button say Book a call". The edit is one line. The time goes to everything around it: which page, which button, a screenshot, someone finds the file, someone sends a link to check, a reply, another tweak.

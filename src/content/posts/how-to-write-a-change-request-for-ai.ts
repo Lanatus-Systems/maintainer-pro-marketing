@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "A five-line AI change request template for PMs and designers, with before-and-after examples and what to leave to a developer.",
   date: "2026-10-28",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -18,6 +19,8 @@ export const post: BlogPost = {
 Most AI change requests that go wrong were not hard changes. The AI changed the wrong button, rewrote a sentence nobody asked it to touch, or made the page "cleaner" in a way nobody meant. The fix is usually in how the request was written, not in the model.
 
 This guide is for product managers, designers, support leads and anyone else who asks for changes to a product they don't code. It gives you a five-line template, before-and-after examples, and a short list of what to leave to a developer. We make Butterneck, where people type these requests into a chat on a live preview of the app, so the last section covers what Butterneck adds to a request for you. The template works with any AI coding agent.
+
+> **Writing a change request for an AI coding agent, in short:** Most requests that go wrong miss one of four things: where the change is, what it says now, what "better" means, or what must stay. Write five lines (Where, Now, Want, Keep, Check), send one change per message, and leave login, permissions, billing, data changes and secrets to a developer. In Butterneck you type the request in a chat on a live preview, the Claude Code, Cursor or Antigravity CLI already signed in on a developer's computer makes the edit, and you check it on the same preview. No pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
 
 ## Why AI change requests go wrong
 

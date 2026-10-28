@@ -20,6 +20,8 @@ Butterneck lets a product manager ask for a change on a live copy of an app, and
 
 This post walks through how that works and what the guardrails actually are. Where a guardrail is a prompt instruction rather than a hard block, we say so.
 
+> **How Butterneck runs a coding agent on your machine, in short:** The agent runs on the developer's own computer with the CLI already signed in there (Cursor, Claude Code or Antigravity), one turn at a time, in a folder the developer chooses, such as a git worktree under \`.worktrees/\`. The folder boundary and the always-on \`.env\` ignore list are guardrails (instructions to the agent plus the CLI's workspace setting), not an OS-level sandbox, so keep production secrets off that machine. Each turn's baseline is captured first so a stopped turn can be undone, and there is no code path that pushes, opens a pull request, merges or deploys: the developer decides what ships.
+
 ## The pieces
 
 - **The bridge.** A small Node.js daemon (Node 22 or newer) that the developer pairs with their account. It watches the project folders the developer connects, starts the app, and keeps a WebSocket open to the Butterneck server.

@@ -20,6 +20,8 @@ You changed the pricing page. It runs on your computer at \`localhost:3000\`. Th
 
 This post is about that gap: getting a running local app in front of the people who asked for it, and getting their feedback back to the project, without deploying first.
 
+> **Sharing a local app without deploying, in short:** With Butterneck, a bridge on the developer's computer starts the app and gives it a public share link, so a PM or stakeholder opens the real running app with no staging deploy, VPN or screen share, and no account just to look. They ask for changes in a chat on that preview, the coding assistant already signed in on the developer's computer edits the project, and hot reload shows the result. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider. No pull request is opened; a developer decides first what ships.
+
 ## Why "just deploy it to staging" is slow
 
 Staging works. It is also a lot of steps for "can you look at this button".
