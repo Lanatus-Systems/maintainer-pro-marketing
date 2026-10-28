@@ -25,7 +25,7 @@ Product managers, designers, support staff and founders increasingly want to cha
 
 | Tool | Who it's for (their words) | Where the work happens | What you get back | Jira | Published price |
 |---|---|---|---|---|---|
-| [Butterneck](https://www.butterneck.com) | Product teams: anyone who asks for a change, plus the developer who decides | The developer's agent, on a computer the team connects | A live preview the requester checks; no PR until a developer decides | Yes (label and assign a ticket) | Free Starter; Pro $19 per person |
+| [Butterneck](https://www.butterneck.com) | Product teams: anyone who asks for a change, plus the developer who decides | The developer's agent, on a computer the team connects | A live preview the requester checks; no PR until a developer decides | Yes (label and assign a ticket) | Free Starter; Pro $19 per person; one-month Pro trial |
 | [ronda](https://useronda.com/) | "Marketing, design, and product" | An isolated live sandbox running your dev server | "ronda writes the code and opens a pull request. Engineering reviews and merges." | Not on the pages we read | Free $0; Starter $9/month; bring your own Anthropic key |
 | [Refinar](https://refinar.ai/en/for/product-managers) | Product managers (its /for/product-managers page) | "A copy of the live app" | "Publish it or send it to engineering"; risky changes go to a developer first as a draft PR | Not checked | "From $50 a month for 500 credits" |
 | [Fixdog](https://fix.dog/) | "PMs, designers, operators" | "Directly on their live product" | It "auto-generates a PR. Eng reviews and merges." | Not checked | No public price found |
