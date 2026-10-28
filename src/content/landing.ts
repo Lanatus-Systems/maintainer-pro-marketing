@@ -211,7 +211,7 @@ export const FAQS = [
     q: "Where do the file changes happen?",
     lines: [
       "On the computer you connected, inside the project you chose.",
-      "You can also block other folders.",
+      "You can also list folders or files inside it that the AI is told to stay out of.",
       "Secret settings files (.env) are on an ignore list the AI is told to stay out of. It is an instruction, not a hard block, so keep production secrets off that computer.",
     ],
   },

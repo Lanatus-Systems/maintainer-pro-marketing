@@ -2,6 +2,7 @@ import type { BlogPost } from "@/content/blog";
 
 export const post: BlogPost = {
   slug: "pm-change-request-pilot-proposal",
+  seoTitle: "PM pilot proposal for AI change requests (4 weeks)",
   title: "A 4-week pilot to let PMs request live changes: the proposal to send your engineering lead",
   description:
     "A copyable one-page proposal for a 4-week pilot where PMs request small changes on a live preview and a developer decides what ships.",
@@ -73,7 +74,7 @@ ENGINEERING-ONLY ZONE (not in the pilot; normal ticket to engineering)
 
 HOW A REQUEST WORKS
 1. The requester asks in a chat on a live preview of the app, or labels a
-   Jira ticket for it.
+   Jira ticket for it and assigns it to the developer.
 2. A coding agent makes the change on the developer's computer, using the
    team's existing AI coding plan.
 3. The requester checks the result on the live preview and refines it in
@@ -84,12 +85,13 @@ HOW A REQUEST WORKS
 
 GUARDRAILS
 - One change per request.
-- The agent works in the project folder we connect. Other folders can
-  be blocked.
+- The agent works in the project folder we connect. Folders and files
+  inside it can be put on an ignore list the agent is told to stay out of.
 - Secret settings files (.env) are on an ignore list the agent is told to
   stay out of. This is a guardrail, not a hard block, so no production
   secrets on the pilot computer.
-- A run can be stopped and its file changes reverted.
+- A run can be stopped, and its file changes are usually reverted (the chat
+  says so if they can't be).
 - Only named requesters can send requests during the pilot.
 - Anything that touches the engineering-only zone is dropped and becomes a
   normal ticket.
@@ -206,9 +208,9 @@ If you run the pilot with Butterneck, this is what happens. We checked each poin
 
 The guardrails in the proposal map to the product:
 
-- **Folders.** The agent works in the connected project folder, and you can block other folders.
+- **Folders.** The agent works in the connected project folder, and you can add folders or files inside it to an ignore list the agent is told to stay out of.
 - **Secrets.** \`.env\` files are on an ignore list the agent is told to stay out of. That's a guardrail, not a hard block, so keep production secrets off the pilot computer.
-- **Stop and undo.** A run can be stopped, and its file changes reverted.
+- **Stop and undo.** A run can be stopped, and its file changes are usually reverted; if the rollback can't be completed (for example, a changed file was too large to snapshot), the chat says so.
 - **Who can ask.** You choose who can send requests: a list of people, or anyone with the link. For a pilot, use the list.
 - **Developer replies.** A developer can reply in the chat without starting the agent.
 
