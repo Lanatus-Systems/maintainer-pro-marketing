@@ -114,7 +114,7 @@ If the request is unclear, the agent is told it may ask one short question inste
 
 ## After you send it
 
-You check the change on the same preview link, using your **Check** line. Then a developer reads the conversation, reviews the change, and publishes it the way the team already does, or throws it away. Butterneck never opens a pull request, never merges and never deploys. You decide what goes live.
+You check the change on the same preview link, using your **Check** line. Then a developer reads the conversation, reviews the change, and publishes it the way the team already does, or throws it away. Butterneck never opens a pull request, never merges and never deploys. A developer decides what goes live.
 
 Checking the change yourself first means it reaches a developer with an owner who has already looked at it. Why that matters: the [AI PR review bottleneck](/blog/ai-prs-need-an-owner).
 

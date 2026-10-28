@@ -41,7 +41,7 @@ Your team probably already has a coding assistant signed in on a developer's com
 - The CLI on the developer's computer edits the connected project. The preview updates on the same link.
 - A developer reads the conversation, checks the change, and publishes it the way the team already does. Or throws it away.
 
-Butterneck never opens a pull request, never merges, and never deploys. You decide what goes live.
+Butterneck never opens a pull request, never merges, and never deploys. A developer decides what goes live.
 
 ## How it works
 

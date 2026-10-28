@@ -81,7 +81,7 @@ The PM asks for the change in a chat on a running copy of the app. A coding agen
 5. The PM keeps going until it is right. If a turn goes wrong, it can be stopped and its file changes rolled back.
 6. The developer reads the conversation, checks the diff in their own tools, and publishes it the usual way. Or discards it.
 
-Butterneck never merges, never opens a pull request, and never deploys. You decide what goes live.
+Butterneck never merges, never opens a pull request, and never deploys. A developer decides what goes live.
 
 The share link needs no VPN or staging deploy, and viewers do not need an account. The developer chooses who can send requests: a named list, or anyone with the link. A developer can reply in the chat without starting the agent: the reply is saved and changes no files, though it can be included as context on the requester's next turn. More detail in [how to share a local app without deploying](/blog/share-local-app-without-deploying).
 
