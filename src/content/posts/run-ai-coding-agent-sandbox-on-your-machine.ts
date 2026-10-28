@@ -62,13 +62,13 @@ Same caveat as above: the agent is told not to touch those files. If you need a 
 
 Before a turn starts, the chat handler captures a baseline of the folder. In a git repo it uses git; otherwise it copies files (skipping \`node_modules\`, \`.git\`, build output, and very large files).
 
-If the person asking or the developer stops the turn, the agent process is aborted and the files are put back to that baseline. A bad turn does not leave a half-edited project behind.
+If the person asking or the developer stops the turn, the agent process is aborted and the files are put back to that baseline. In most cases a bad turn does not leave a half-edited project behind. If the restore can't be completed, for example because a changed file was too large to snapshot, the chat says so, and the developer can clean up with their own tools.
 
 ## Never merges, never opens a PR, never deploys
 
 There is no code path in the bridge or chat server that pushes, opens a pull request, merges, or deploys. The agent edits files in the folder. That's it.
 
-The system prompt also tells the agent not to run production builds during a chat turn. The dev server is already running and hot-reloads the edit, and a production build can break the running preview.
+The system prompt also tells the agent not to run production builds during a chat turn unless the person asking explicitly requests one. The dev server is already running and hot-reloads the edit, and a production build can break the running preview.
 
 What ships is up to the developer. They read the conversation, look at the running app, check the diff in their own tools, and commit and publish the way the team already does. Or they throw it away.
 
@@ -89,6 +89,6 @@ Worth being exact here, because "runs locally" is easy to over-read:
 
 ## Try it
 
-Butterneck has a free Starter plan for one developer and one person asking for changes. If your team spends more time relaying small requests than making them, take a look at [butterneck.com](/pricing).
+Butterneck has a free Starter plan for one developer and one person asking for changes, and a one-month Pro trial a workspace owner can start from the Billing page. If your team spends more time relaying small requests than making them, see [pricing](/pricing).
 `,
 };

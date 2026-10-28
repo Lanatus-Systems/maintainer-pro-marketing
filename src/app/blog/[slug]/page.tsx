@@ -124,6 +124,7 @@ export default async function BlogPostPage({ params }: Params) {
         <h2>Try {brand.name} on your own project</h2>
         <p className="muted">
           Starter is free for one developer and one person who asks for changes.{" "}
+          {!isAasaanWeb && <>A workspace owner can also try Pro for one month.{" "}</>}
           <Link href="/pricing">See pricing</Link>.
         </p>
         <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="blog_post_cta">

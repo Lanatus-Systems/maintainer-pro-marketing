@@ -4,11 +4,11 @@ export const post: BlogPost = {
   slug: "ai-change-requests-for-product-teams",
   title: "AI change requests for product teams: a practical guide",
   description:
-    "What AI change requests are, how product teams can run them safely on a live copy, what guardrails to check, and a simple rollout plan.",
+    "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",
-  tags: ["AI change requests", "product teams", "human in the loop", "change request process"],
+  tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams"],
   cover: {
     src: "/blog/cover-ai-change-requests-for-product-teams.png",
     alt: "Butterneck blog cover: AI change requests for product teams. Teammates ask, AI builds locally, developers decide what goes live",
@@ -61,11 +61,13 @@ For a fuller checklist, and why this check should happen before a pull request e
 
 The requester's check matters more as AI writes more code than people can review. We collected the data on the [AI PR review bottleneck](/blog/ai-prs-need-an-owner).
 
-## Why product teams need a process for this
+## Why product teams need a process for this (and what AI automation should cover)
 
 Without a process, AI change requests happen anyway, just badly. A PM pastes a screenshot into a chat tool and asks a developer to "just run it through Claude." The developer copies the request, runs the agent, deploys a preview, and sends a link. The AI saved five minutes of coding. The relay still took two days.
 
 A process puts the request, the agent, and the preview in the same place.
+
+Most AI automation for product teams moves information: routing feedback, writing release notes, syncing Jira and Slack. Change requests are the same problem with code at the end. The part worth automating is the handoff: the request, the screen it's about, and the files, delivered to a coding agent that already knows the project. The part to keep human is the decision about what ships.
 
 ## How Butterneck handles AI change requests
 
@@ -155,7 +157,7 @@ Whichever model the developer's Cursor, Claude Code, or Antigravity CLI is set t
 
 ### How much does it cost?
 
-Starter is free for one developer and one requester. Pro is USD 19 per person per month, with 20% off annual billing and local-currency pricing. See [pricing](/pricing).
+Starter is free for one developer and one requester. Pro is USD 19 per person per month, with 20% off annual billing and local-currency pricing, and a workspace owner on Starter can try Pro for one month. See [pricing](/pricing).
 
 ### How is this different from tools that open pull requests?
 

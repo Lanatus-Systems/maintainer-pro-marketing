@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Live preview before the PR: how PMs can review a change before anyone opens a pull request",
   seoTitle: "Live preview before the PR: how PMs review AI changes",
   description:
-    "Why the requester should check a change on a live preview before a pull request exists, what to look at, who decides, and how it differs from PR previews.",
+    "Preview an AI-made change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams"],
@@ -111,7 +111,7 @@ A preview before the PR works only if everyone knows which decision is theirs.
 
 The requester's sign-off is necessary, not sufficient. A developer still checks what the requester can't see: shared components, translations, tests, anything near sign-in, billing or data. And the developer decides whether the change ships at all. If your team wants this written down, our [AI change request policy template](/blog/ai-change-request-policy-template) has sections on who reviews and decides what ships, and on how previews are checked.
 
-## How Butterneck does a preview before the PR
+## How Butterneck lets you preview AI code changes before a pull request
 
 Butterneck is built around this order: the requester checks on a live preview, then a developer decides. We checked each point below against the product code.
 
@@ -142,6 +142,10 @@ The point is the order. For small product changes, let the person who asked chec
 ### What is a live preview before the PR?
 
 A running copy of the app with the change in it, checked by the person who asked for the change before a pull request is opened. It answers "is this what I meant?" so that code review can focus on "is this safe to ship?".
+
+### Can a PM preview AI code changes before a pull request is opened?
+
+Yes. In Butterneck the PM types the request in a chat on a live copy of the app, the coding agent on a developer's computer edits the project, and the PM checks the result on the same preview. No pull request exists at that point. A developer then decides whether the change ships, and opens a pull request in your normal process if your team uses one.
 
 ### How is this different from a PR preview environment?
 
