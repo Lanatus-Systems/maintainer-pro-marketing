@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "human-in-the-loop-architecture-for-ai-product-changes",
   title: "Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes",
   description:
-    "Why letting non-developers request changes from coding agents should stop short of auto-merge, and the concrete local-agent, live-preview, no-merge architecture Butterneck uses.",
+    "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
@@ -98,6 +98,6 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 
 Human-in-the-loop is often treated as a temporary crutch until the models get better. I think for product changes it's a permanent design choice: ask freely, preview instantly, ship deliberately.
 
-If that's how you want your team to work with coding agents, Butterneck has a free Starter plan at [butterneck.com](/#pricing).
+If that's how you want your team to work with coding agents, Butterneck has a free Starter plan at [butterneck.com](/pricing).
 `,
 };

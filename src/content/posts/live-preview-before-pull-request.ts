@@ -3,8 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "live-preview-before-pull-request",
   title: "Live preview before the PR: how PMs can review a change before anyone opens a pull request",
+  seoTitle: "Live preview before the PR: how PMs review AI changes",
   description:
-    "Why the person who asked for a change should check it on a live preview before a pull request exists, what to look at on the preview, who decides what, and how this differs from PR preview environments.",
+    "Why the requester should check a change on a live preview before a pull request exists, what to look at, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams"],

@@ -22,14 +22,14 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!post) return {};
   const path = siteUrl(postPath(post.slug));
   return {
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.description,
     keywords: post.tags,
     authors: [{ name: post.author }],
     alternates: { canonical: path },
     openGraph: {
       type: "article",
-      title: post.title,
+      title: post.seoTitle ?? post.title,
       description: post.description,
       url: path,
       publishedTime: post.date,
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       card: "summary_large_image",
       site: X_HANDLE,
       creator: X_HANDLE,
-      title: post.title,
+      title: post.seoTitle ?? post.title,
       description: post.description,
       images: [post.cover.src],
     },
@@ -121,7 +121,7 @@ export default async function BlogPostPage({ params }: Params) {
         <h2>Try {brand.name} on your own project</h2>
         <p className="muted">
           Starter is free for one developer and one person who asks for changes.{" "}
-          <Link href="/#pricing">See pricing</Link>.
+          <Link href="/pricing">See pricing</Link>.
         </p>
         <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="blog_post_cta">
           Create a free workspace

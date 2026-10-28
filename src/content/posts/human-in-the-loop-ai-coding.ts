@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "human-in-the-loop-ai-coding",
   title: "Human-in-the-loop AI coding: why Butterneck never merges",
   description:
-    "AI can already edit a real project. Butterneck lets the product team hand it requests, but it never merges, never opens a pull request, and never deploys. Here is why a developer stays in the loop.",
+    "Butterneck lets product teams hand AI change requests, but it never opens a pull request, merges or deploys. Here is why a developer stays in the loop.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",
@@ -154,7 +154,7 @@ Why ownership matters for AI-written changes, with LinearB's 2026 data on AI PR 
 
 ## Try it
 
-Starter is free for one developer and one person who asks for changes. Pro is priced per person per month, with 20% off annual billing. See [pricing](/#pricing), or [the FAQ](/#faq) for who publishes and where file changes happen.
+Starter is free for one developer and one person who asks for changes. Pro is priced per person per month, with 20% off annual billing. See [pricing](/pricing), or [the FAQ](/#faq) for who publishes and where file changes happen.
 
 Let them ask. You decide what goes live.
 `,

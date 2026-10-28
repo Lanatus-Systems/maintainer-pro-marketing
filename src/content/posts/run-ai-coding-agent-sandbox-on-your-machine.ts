@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "run-ai-coding-agent-sandbox-on-your-machine",
   title: "How Butterneck runs an AI coding agent in a sandbox on your own machine",
   description:
-    "A walkthrough of how Butterneck runs Cursor, Claude Code, or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback, preview links, and why it never merges.",
+    "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback and preview links.",
   date: "2026-10-27",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
@@ -89,6 +89,6 @@ Worth being exact here, because "runs locally" is easy to over-read:
 
 ## Try it
 
-Butterneck has a free Starter plan for one developer and one person asking for changes. If your team spends more time relaying small requests than making them, take a look at [butterneck.com](/#pricing).
+Butterneck has a free Starter plan for one developer and one person asking for changes. If your team spends more time relaying small requests than making them, take a look at [butterneck.com](/pricing).
 `,
 };

@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "share-local-app-without-deploying",
   title: "Share your local app with stakeholders without deploying it",
   description:
-    "How to give a product manager or stakeholder a live link to the app running on your computer, so they can look and ask for changes, without a staging deploy, a VPN, or a screen share.",
+    "Give a PM or stakeholder a live link to the app running on your computer so they can ask for changes, without a staging deploy, VPN or screen share.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",
@@ -137,7 +137,7 @@ It is not the right tool when:
 
 ## Try it
 
-Starter is free for one developer and one person who asks for changes, with one private copy and 1 GB of preview traffic a month. Pro is per person per month and adds more copies and more traffic. See [pricing](/#pricing) for the details, or read [how it works](/#how-it-works) on the home page.
+Starter is free for one developer and one person who asks for changes, with one private copy and 1 GB of preview traffic a month. Pro is per person per month and adds more copies and more traffic. See [pricing](/pricing) for the details, or read [how it works](/#how-it-works) on the home page.
 
 The change is usually small. Getting the request to the project is what takes the week. A link to the app that's already running on your computer removes most of that.
 `,

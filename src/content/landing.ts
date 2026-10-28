@@ -243,7 +243,7 @@ export const FOOTER_NAV = [
   { href: "/#jira", label: "Jira" },
   { href: "/#access", label: "Access" },
   { href: "/#safety", label: "Your call" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/#faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
   { href: "/privacy", label: "Privacy" },

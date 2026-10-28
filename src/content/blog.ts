@@ -19,6 +19,8 @@ import { post as previewBeforePr } from "@/content/posts/live-preview-before-pul
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Optional shorter title for the <title> tag and social cards. */
+  seoTitle?: string;
   description: string;
   /** ISO date, YYYY-MM-DD. */
   date: string;

@@ -3,6 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "how-pms-can-change-a-live-app-without-waiting-on-engineering",
   title: "Small changes stuck in the backlog? How PMs can change a live app without waiting on engineering",
+  seoTitle: "How PMs can change a live app without waiting on engineering",
   description:
     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI agent makes the edit, a developer decides what ships.",
   date: "2026-10-27",
@@ -144,6 +145,6 @@ Butterneck runs on a developer's computer, where the project already runs, so th
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/#pricing): Starter is free for one developer and one requester. Learn more at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/pricing): Starter is free for one developer and one requester. Learn more at [butterneck.com](/).
 `,
 };

@@ -8,8 +8,8 @@ import { WALKTHROUGH_URL } from "@/lib/site";
 const usd = PRO_MONTHLY_PRICE.USD;
 
 export const metadata = pageMeta({
-  title: "Pricing",
-  description: `Butterneck pricing: Starter is free for one developer and one requester. Pro is $${usd} per person a month (${ANNUAL_DISCOUNT_PERCENT}% off billed annually), with local prices in 8 currencies. Custom for larger teams.`,
+  title: `Pricing: free Starter, Pro $${usd} per person, one-month trial`,
+  description: `Starter is free for one developer and one requester. Pro is $${usd} per person a month, ${ANNUAL_DISCOUNT_PERCENT}% off yearly, with a one-month Pro trial. AI runs on your own coding agent.`,
   path: "/pricing",
 });
 
@@ -19,14 +19,25 @@ export default function PricingPage() {
       <JsonLd data={breadcrumbJsonLd("Pricing", "/pricing")} />
       <PricingSection standalone />
 
+      <section className="landing-section" aria-labelledby="trial-heading">
+        <h2 id="trial-heading">Try Pro for one month</h2>
+        <ul className="landing-points">
+          <li>
+            A workspace owner on Starter can start a one-month Pro trial from the Billing page, once
+            per workspace. When the month ends, the workspace goes back to Starter limits unless you
+            subscribe to Pro.
+          </li>
+          <li>
+            A trial month is enough to run a real workflow, such as{" "}
+            <a href="/integrations/jira">labeling Jira tickets</a>, or a{" "}
+            <a href="/blog/pm-change-request-pilot-proposal">4-week PM change request pilot</a>.
+          </li>
+        </ul>
+      </section>
+
       <section className="landing-section" aria-labelledby="seats-heading">
         <h2 id="seats-heading">Who counts as a person</h2>
         <ul className="landing-points">
-          <li>
-            Try Pro for one month: a workspace owner on Starter can start a one-month Pro trial from
-            the Billing page, once per workspace. When the month ends, the workspace goes back to
-            Starter limits unless you subscribe to Pro.
-          </li>
           <li>On Pro, developers and people who request changes both count as a person.</li>
           <li>
             People who only open a share link to look at the preview don’t need an account, so they

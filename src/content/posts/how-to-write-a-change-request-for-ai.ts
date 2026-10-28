@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "how-to-write-a-change-request-for-ai",
   title: "How to write a change request for an AI coding agent: a template for PMs",
   description:
-    "A five-line AI change request template for product managers and designers, with before-and-after examples, what to leave to a developer, and what Butterneck adds to each request.",
+    "A five-line AI change request template for PMs and designers, with before-and-after examples and what to leave to a developer.",
   date: "2026-10-28",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],

@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "pm-change-request-pilot-proposal",
   title: "A 4-week pilot to let PMs request live changes: the proposal to send your engineering lead",
   description:
-    "A copyable one-page proposal for a 4-week pilot where PMs request small product changes on a live preview and one developer decides what ships. Scope, guardrails, metrics to track and decision criteria.",
+    "A copyable one-page proposal for a 4-week pilot where PMs request small changes on a live preview and a developer decides what ships.",
   date: "2026-10-28",
   updated: "2026-10-28",
   author: "The Butterneck team",

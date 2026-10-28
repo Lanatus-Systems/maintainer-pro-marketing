@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "jira-ticket-to-pr-with-ai",
   title: "Jira ticket to pull request with AI: check a live preview before anyone opens the PR",
   description:
-    "Jira ticket to pull request with AI: label a ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether a PR is created.",
+    "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",
@@ -140,6 +140,6 @@ The Cursor, Claude Code, or Antigravity CLI already installed and signed in on t
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/#pricing): the Starter plan is free and allows one private copy at a time (so one ticket or one chat copy). Each labeled ticket opens its own copy, so regular Jira use needs Pro. More at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/pricing): the Starter plan is free and allows one private copy at a time (so one ticket or one chat copy). Each labeled ticket opens its own copy, so regular Jira use needs Pro. More at [butterneck.com](/).
 `,
 };

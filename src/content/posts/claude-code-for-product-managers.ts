@@ -3,8 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "claude-code-for-product-managers",
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
+  seoTitle: "Claude Code for product managers, without a terminal",
   description:
-    "Most guides tell product managers to install Claude Code or Cursor and open pull requests themselves. Here is the other option: the PM asks on a live preview, the developer's own coding CLI makes the change, and a developer decides what ships.",
+    "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
   date: "2026-10-28",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams"],

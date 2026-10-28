@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "clogless-alternative",
   title: "Clogless alternative: an honest comparison with Butterneck",
   description:
-    "How Clogless and Butterneck compare for product teams: cloud sandbox vs a connected computer, pull requests vs previews, how Jira tickets start the work, and pricing, based on public information.",
+    "Clogless vs Butterneck for product teams: cloud sandbox vs a connected computer, pull requests vs previews, Jira tickets and pricing, from public information.",
   date: "2026-10-28",
   author: "The Butterneck team",
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],

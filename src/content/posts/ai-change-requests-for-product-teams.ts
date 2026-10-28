@@ -155,7 +155,7 @@ Whichever model the developer's Cursor, Claude Code, or Antigravity CLI is set t
 
 ### How much does it cost?
 
-Starter is free for one developer and one requester. Pro is USD 19 per person per month, with 20% off annual billing and local-currency pricing. See [pricing](/#pricing).
+Starter is free for one developer and one requester. Pro is USD 19 per person per month, with 20% off annual billing and local-currency pricing. See [pricing](/pricing).
 
 ### How is this different from tools that open pull requests?
 
@@ -163,6 +163,6 @@ Butterneck stops at a reviewable change on a live preview. For a comparison with
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a change request from your backlog. Or start on the free plan from [pricing](/#pricing). Learn more at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a change request from your backlog. Or start on the free plan from [pricing](/pricing). Learn more at [butterneck.com](/).
 `,
 };
