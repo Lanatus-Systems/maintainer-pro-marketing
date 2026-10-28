@@ -2,13 +2,13 @@ import type { BlogPost } from "@/content/blog";
 
 export const post: BlogPost = {
   slug: "how-pms-can-change-a-live-app-without-waiting-on-engineering",
-  title: "How PMs can change a live app without waiting on engineering",
+  title: "Small changes stuck in the backlog? How PMs can change a live app without waiting on engineering",
   description:
-    "A practical way to let PMs change a live app: ask on a live copy, an AI coding agent makes the edit, and a developer still decides what ships.",
+    "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI agent makes the edit, a developer decides what ships.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",
-  tags: ["product managers", "let PMs change a live app", "AI coding agents", "workflow"],
+  tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
     src: "/blog/cover-how-pms-can-change-a-live-app.png",
     alt: "Butterneck blog cover: Let PMs change a live app. They ask in chat, the developer's AI builds it, and you publish",
@@ -18,9 +18,11 @@ export const post: BlogPost = {
   body: `
 A product manager spots a problem on the live app. The button label is wrong. The empty state says nothing useful. A form asks for a field nobody needs. The fix is small. Getting it done is not.
 
+Most teams have a list of these paper cuts: wrong labels, unclear empty states, a field in the wrong order. Each one is too small to fight for in sprint planning, so the list grows.
+
 This post is about how a PM can change a live app without waiting on engineering, and without engineering losing control of what ships.
 
-## Why small changes wait
+## Why small product changes sit in the backlog (it isn't the code)
 
 The change usually takes a developer a few minutes. The wait comes from everything around it:
 
@@ -31,6 +33,8 @@ The change usually takes a developer a few minutes. The wait comes from everythi
 - A staging deploy so you can check it. You find one more thing.
 
 None of that is coding. It is relay. We wrote about this in [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding): the change is small, the back-and-forth is what takes the week.
+
+Paper cuts also lose every prioritisation call. Next to a feature or a bug, "rename this button" never looks urgent, so it waits behind work that does. Nobody decided the fix wasn't worth doing. It was just never worth a developer's context switch. That is the gap [AI change requests for product teams](/blog/ai-change-requests-for-product-teams) are meant to close: the person who spotted the problem asks for it directly, and a developer only steps in to decide.
 
 ## What "without waiting on engineering" should mean
 
@@ -61,7 +65,7 @@ Some PMs install Cursor or Claude Code and edit the repo. This can work for tech
 
 ### Let the PM ask on a live copy
 
-The PM asks for the change in a chat on a running copy of the app. A coding agent makes the edit. The preview updates. A developer reviews and publishes. This is the approach Butterneck takes.
+The PM asks for the change in a chat on a running copy of the app. A coding agent makes the edit. The preview updates. No pull request is opened; a developer reviews first and decides what ships. This is the approach Butterneck takes. Why the requester's check comes before any PR is covered in [live preview before the pull request](/blog/live-preview-before-pull-request).
 
 ## How it works in Butterneck
 
@@ -76,14 +80,14 @@ The PM asks for the change in a chat on a running copy of the app. A coding agen
 
 Butterneck never merges, never opens a pull request, and never deploys. You decide what goes live.
 
-The share link needs no VPN or staging deploy, and viewers do not need an account. The developer chooses who can send requests: a named list, or anyone with the link. A reply from a developer in the chat does not trigger the AI. More detail in [how to share a local app without deploying](/blog/share-local-app-without-deploying).
+The share link needs no VPN or staging deploy, and viewers do not need an account. The developer chooses who can send requests: a named list, or anyone with the link. A developer can reply in the chat without starting the agent: the reply is saved and changes no files, though it can be included as context on the requester's next turn. More detail in [how to share a local app without deploying](/blog/share-local-app-without-deploying).
 
 ## What engineering keeps control of
 
 This is the part to show your CTO.
 
 - **The folder.** The agent works in one folder the developer chooses. That can be a git worktree, so in-flight requests do not touch the main checkout.
-- **The ignore list.** \`.env\` files and any globs the team adds are put in the agent's instructions as off-limits. That is an instruction to the agent, not a hard block, so keep production secrets off the machine that runs the bridge.
+- **The ignore list.** \`.env\` files and any globs the team adds are put in the agent's instructions as off-limits. That is a guardrail, not an enforced block, so keep production secrets off the machine that runs the bridge.
 - **The release.** Nothing is committed, pushed, or deployed by Butterneck.
 - **The agent account.** The coding CLI runs under the plan it is signed in with and that provider's terms; use a team or API plan that allows use on your team's behalf. The CLI sends code context to that provider, as it does in normal use. Chat messages and preview traffic go through Butterneck's server.
 
@@ -103,11 +107,16 @@ To write these limits down for your team, use our [policy template for non-engin
 
 - Pick one app and one developer.
 - Agree on the kind of changes PMs can request: copy, layout, small UI fixes.
-- Share the link with one PM for a week.
+- Share the link with one PM for a week. If you need sign-off first, our [4-week pilot proposal](/blog/pm-change-request-pilot-proposal) is written to send to an engineering lead.
 - Give that PM a simple format for requests: where, what it says now, what you want, what must not change, and how you'll check it. Our [change request template for AI coding agents](/blog/how-to-write-a-change-request-for-ai) has examples.
+- Pick the paper cuts first: the small copy and UI fixes that have sat in the backlog longest.
 - Count how many requests went from ask to reviewed change the same day.
 
 ## FAQ
+
+### Why do small product changes sit in the backlog?
+
+Usually not because the code is hard. The time goes into the relay around it: writing the ticket, finding the right screenshot, waiting for a sprint, answering a clarifying question, checking a staging deploy. Small fixes also lose prioritisation calls to features and bugs, so they wait.
 
 ### Can a PM change a live app without engineering?
 
@@ -127,7 +136,7 @@ Ask again in the chat, or stop the turn and its file changes are rolled back. Th
 
 ### Can requests come from Jira instead of chat?
 
-Yes. Label a Jira ticket \`butterneck\` and assign it. A preview link is posted back on the ticket. See [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
+Yes. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A preview link is posted back on the ticket. See [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
 
 ### Why not use a tool that opens the pull request for you?
 
