@@ -9,7 +9,7 @@ import { SITE_URL, siteUrl } from "@/lib/site";
 
 /** Signup and login live on the AasaanWeb app. */
 export const AASAANWEB_APP_URL = (
-  process.env.NEXT_PUBLIC_AASAANWEB_APP_URL || "https://app.aasaanweb.butterneck.com"
+  process.env.NEXT_PUBLIC_AASAANWEB_APP_URL || "https://aasaan.butterneck.com"
 ).replace(/\/$/, "");
 
 export function aasaanWebAppUrl(path: string): string {
