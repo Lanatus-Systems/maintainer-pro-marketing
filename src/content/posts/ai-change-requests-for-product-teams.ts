@@ -72,7 +72,7 @@ A process puts the request, the agent, and the preview in the same place.
 ### Requests come from chat or Jira
 
 - **Chat on a live copy.** A developer shares a link to the running app. The requester opens it, sees the app with a chat beside it, and types the change.
-- **Jira.** Label a ticket \`butterneck\` and assign it to someone whose computer has the project. The ticket becomes the request, and a note with a preview link is posted back when the AI is done. Details in [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
+- **Jira.** Label a ticket \`butterneck\` and assign it to a teammate whose Jira account is mapped to a computer that has the project. The ticket becomes the request, and a note with a preview link is posted back when the AI is done. Details in [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
 
 ### The agent runs on a developer's machine
 

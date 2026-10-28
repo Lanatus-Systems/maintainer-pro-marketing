@@ -102,7 +102,7 @@ Faros puts the problem plainly: "the code arriving for review is often not revie
 
 Butterneck takes a different route: there is no bot PR to own.
 
-A PM, designer or support lead asks for a change on a live preview of the app, or labels a Jira ticket \`butterneck\` and assigns it to a developer whose computer has the project. A coding agent the developer already uses (Cursor, Claude Code or Antigravity) runs on that developer's computer and edits the connected folder. A preview link comes back on the ticket, and the requester can keep refining the change in plain words. See [the Jira integration](/integrations/jira) for the full flow, and [AI change requests for product teams](/blog/ai-change-requests-for-product-teams) for how the requester and the developer split the checks.
+A PM, designer or support lead asks for a change on a live preview of the app, or labels a Jira ticket \`butterneck\` and assigns it to a developer whose Jira account is mapped to a computer that has the project. A coding agent the developer already uses (Cursor, Claude Code or Antigravity) runs on that developer's computer and edits the connected folder. A preview link comes back on the ticket, and the requester can keep refining the change in plain words. See [the Jira integration](/integrations/jira) for the full flow, and [AI change requests for product teams](/blog/ai-change-requests-for-product-teams) for how the requester and the developer split the checks.
 
 Butterneck never opens a pull request, never merges and never deploys. The developer who checked the preview commits the change as their own work and ships it through the team's normal process. So the change has an owner from the start: a named developer who has already looked at it.
 

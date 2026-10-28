@@ -98,7 +98,7 @@ The coding assistant on the developer's computer reads the request and edits the
 
 ![A request typed in the chat, and the app in the preview updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
-If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to someone whose computer has the project. Butterneck opens a private copy named after the ticket, and the title, description, comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
+If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
 
 ## What stays on your computer, and what doesn't
 

@@ -77,7 +77,7 @@ Butterneck's preview is the app running on the developer's machine, with real lo
 
 ### Jira
 
-Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticket and assign it to someone whose computer has the project. A private copy opens, named after the ticket. The title, description, comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. We did not find a Jira integration listed on Itera's homepage. Check with them if that matters to you.
+Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket. The title, description, comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. We did not find a Jira integration listed on Itera's homepage. Check with them if that matters to you.
 
 ### Pricing
 
