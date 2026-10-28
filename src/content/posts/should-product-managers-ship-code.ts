@@ -105,7 +105,7 @@ Some technical PMs do, and it can work. But most PMs do not need to write code t
 
 ### Is it safe to let PMs ship code to production?
 
-Teams trying it, like H&B, keep engineers reviewing both the plan and the merge request. If you want PMs involved without that overhead, let them ask on a live preview and keep the release with engineering.
+Teams trying it, like H&B, keep engineers reviewing both the plan and the merge request. If you want PMs involved without that overhead, let them ask on [a live preview before the PR](/blog/live-preview-before-pull-request) and keep the release with engineering.
 
 ### Does AI make code review the bottleneck?
 
@@ -117,7 +117,7 @@ No. Butterneck never opens a pull request, never merges and never deploys. The d
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a small change your PMs have been waiting on. Or check [pricing](/pricing): Starter is free for one developer and one requester, and Pro is $19 per person per month. Learn more at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a small change your PMs have been waiting on. Or check [pricing](/pricing): Starter is free for one developer and one requester, and Pro is $19 per person per month. A workspace owner on Starter can also try Pro free for one month. Learn more at [butterneck.com](/).
 
 Correction (27 Oct 2026): an earlier version misstated two figures from the study (Jira issues resolved and comments per PR); they now match the [paper](https://fion.ac/jellyfish.pdf).
 `,

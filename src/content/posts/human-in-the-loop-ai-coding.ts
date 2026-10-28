@@ -81,7 +81,7 @@ If the tool merged on its own, a non-developer's sentence would become productio
 
 The product manager checks that the button now says the right thing. The developer checks the things nobody asked about: did the change touch a shared component, did it break the mobile layout, is the copy now out of sync with the email template.
 
-Both checks are needed. Butterneck puts the first one on the live preview, where the person asking can see it, and leaves the second one with the developer.
+Both checks are needed. Butterneck puts the first one on [a live preview before the pull request](/blog/live-preview-before-pull-request), where the person asking can see it, and leaves the second one with the developer.
 
 ### 3. Your release process already exists
 

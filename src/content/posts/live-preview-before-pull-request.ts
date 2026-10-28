@@ -122,7 +122,7 @@ Butterneck is built around this order: the requester checks on a live preview, t
 - **The chat is on the preview.** The requester types the change next to the screen they mean. Each request carries the page URL and route they have open, so the coding agent starts from that screen. They can attach screenshots or files.
 - **The change is made on the developer's computer.** The coding assistant already signed in there (Cursor, Claude Code or Antigravity) edits the connected project folder. It sends code context to its own AI provider, as it does in normal use, and chat messages go through Butterneck's server.
 - **AI replies carry a confidence label.** When the agent changes something, its reply is tagged from very low to very high, which tells the requester and the developer where to look harder.
-- **Refine, or stop and undo.** The requester keeps asking on the same preview until it's right. A run can be stopped, and that run's file changes are reverted.
+- **Refine, or stop and undo.** The requester keeps asking on the same preview until it's right. A run can be stopped, and that run's file changes are reverted. If the revert can't be completed, for example because a changed file was too large to snapshot, the chat says so.
 - **You choose who can ask.** Opening the preview and sending requests are separate. Requests can be limited to a list of people, or open to anyone with the link, and someone without access can ask for it.
 - **A developer can reply without starting the agent.** A developer's reply is saved in the chat and doesn't start a run or change any files.
 - **Jira works the same way.** Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket, and a short note with the preview link is posted back. See the [Jira integration](/integrations/jira).
@@ -172,6 +172,6 @@ No. Butterneck never opens a pull request, merges or deploys. A developer publis
 
 ## Try it
 
-Starter is free for one developer and one person who requests changes. See [pricing](/pricing), or [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring one small change from your backlog; we'll run it on a live preview.
+Starter is free for one developer and one person who requests changes. Pro is USD 19 per person per month, and a workspace owner on Starter can try Pro free for one month. See [pricing](/pricing), or [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring one small change from your backlog; we'll run it on a live preview.
 `,
 };

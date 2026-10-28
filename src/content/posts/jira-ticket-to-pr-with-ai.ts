@@ -49,7 +49,7 @@ That moves the code part faster. But for the person who wrote the ticket, often 
 
 For product changes, the reviewer that matters first is the person who asked. A diff does not tell a PM whether the empty state reads well. A running app does.
 
-So a useful ticket-to-change flow should give the ticket author a live preview, let them refine it, and only then put it in front of an engineer.
+So a useful ticket-to-change flow should give the ticket author a live preview, let them refine it, and only then put it in front of an engineer. (More on what to check in [a live preview before the PR](/blog/live-preview-before-pull-request).)
 
 ## How the Jira flow works in Butterneck
 

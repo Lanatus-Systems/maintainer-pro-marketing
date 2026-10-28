@@ -139,6 +139,10 @@ Track one number: time from request to reviewed change. Compare it with your nor
 
 ## FAQ
 
+### Is there an AI coding agent for product teams?
+
+Yes. With Butterneck, a PM, designer or support lead asks for a change in a chat beside a live preview of the app, and the developer's own coding agent (Cursor, Claude Code or Antigravity) makes it on a computer that has the project. The person who asked checks the preview. A developer decides whether it ships, and Butterneck never opens a pull request, merges or deploys.
+
 ### What are AI change requests?
 
 They let non-developers, like product managers and designers, ask for a change to an existing app in plain words. An AI coding agent edits the real code, the requester checks the result on a live preview, and a developer decides what ships.
