@@ -266,7 +266,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <PricingSection />
+      <PricingSection intro={<p className="landing-quiet">A workspace owner on Starter can try Pro free for one month, once per workspace. <a href="/pricing">How the trial works</a>.</p>} />
 
       <section id="faq" className="landing-section" aria-labelledby="faq-heading">
         <h2 id="faq-heading">Questions people ask first</h2>

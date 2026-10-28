@@ -98,7 +98,7 @@ When the AI gets it wrong, and sometimes it will, the wrong change stays on one 
 Leaving the merge to a person is the main safeguard. There are a few more, all on the developer's side:
 
 - **The AI is kept to the folder you connected.** Its working directory is the project you pointed the bridge at, and its instructions forbid touching anything outside it. Like the \`.env\` rule, that's a guardrail, not an operating-system sandbox.
-- **You can block paths.** Ignore rules keep the AI out of folders you choose.
+- **You can add an ignore list.** Folders or files inside the project that you list go into the AI's instructions as off limits. Like the folder rule, that's an instruction, not a hard block.
 - **\`.env\` is on the ignore list.** The agent is told secret settings files are off limits. That is an instruction, not a hard block, so keep production secrets off the machine.
 - **You choose who can ask.** A list of people, or anyone with the link. Someone who is not allowed can request access, and you decide.
 - **Developer replies don't change files.** A developer can answer in the chat without triggering the AI.
@@ -168,13 +168,17 @@ At two points. The person who asked checks the change on a live preview of the r
 
 No. It never opens a pull request, never merges and never deploys. The AI edits files in the connected project on a developer's computer; the developer decides whether to commit, open a PR, or throw the change away.
 
+### Should an AI coding agent merge its own pull request?
+
+For most product changes, no. Since 28 October 2026, GitHub's Agent Merge can watch a pull request, fix failing checks and merge conflicts, and, combined with auto-merge, let GitHub merge it as soon as all requirements are met. That works when a person has already decided the change is wanted and branch protection requires a human review. Butterneck puts that decision earlier: the person who asked checks the change on a live preview, and a developer decides whether it becomes a commit or a pull request at all. Butterneck itself never merges.
+
 ### Can a non-developer approve a change on their own?
 
 They can confirm it looks right on the preview, but they can't ship it. Only a developer on your team can make the change live.
 
 ## Try it
 
-Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, with 20% off annual billing. See [pricing](/pricing), or [the FAQ](/#faq) for who publishes and where file changes happen.
+Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, with 20% off annual billing. See [pricing](/pricing), or [the FAQ](/#faq) for who publishes and where file changes happen. A workspace owner on Starter can also try Pro free for one month.
 
 Let them ask. You decide what goes live.
 `,
