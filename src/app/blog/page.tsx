@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { formatDate, POSTS, postPath, readingMinutes } from "@/content/blog";
 import { brand, isAasaanWeb } from "@/lib/brand";
 import { breadcrumbJsonLd } from "@/lib/schema";
+import { DEFINITION } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
 import { siteUrl } from "@/lib/site";
 
@@ -46,6 +47,7 @@ export default function BlogIndex() {
         How product teams hand change requests to AI, and why a developer still decides what goes
         live. <a href="/blog/rss.xml">RSS feed</a>.
       </p>
+      <p className="landing-quiet landing-definition">{DEFINITION}</p>
       <ul className="blog-list">
         {POSTS.map((post) => (
           <li key={post.slug} className="blog-card">
