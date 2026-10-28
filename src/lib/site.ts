@@ -30,6 +30,12 @@ export function appUrl(path: string): string {
 export const LINKEDIN_URL = "https://www.linkedin.com/company/butterneckai";
 export const X_URL = "https://x.com/butterneckai";
 export const X_HANDLE = "@butterneckai";
+export const DEV_URL = "https://dev.to/butterneck";
+export const MEDIUM_URL = "https://medium.com/@butterneckhq";
+export const PEERLIST_URL = "https://peerlist.io/butterneck";
+export const DEVHUNT_URL = "https://devhunt.org/tool/butterneck";
+export const SAASHUB_URL = "https://www.saashub.com/butterneck";
+export const UNEED_URL = "https://www.uneed.best/tool/butterneck";
 
 export const SITE_TITLE = brand.title;
 
