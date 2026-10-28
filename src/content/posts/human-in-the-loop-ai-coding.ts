@@ -24,6 +24,8 @@ Butterneck doesn't. It lets the product team hand requests to the AI directly, a
 
 This post explains why.
 
+> **Why Butterneck never merges, in short:** Butterneck lets a product manager or another stakeholder ask an AI coding agent for a change, and the agent edits the project on the developer's computer with the CLI they already use (Cursor, Claude Code or Antigravity), but Butterneck never opens a pull request, merges or deploys. The person who asked checks the result on a live preview, and a developer, who checks the code the requester can't review, decides first what ships through the team's existing release process.
+
 > **Human-in-the-loop for coding agents** means an AI coding agent can propose and make changes, but a person approves the steps that matter before anything reaches users. The agent does the work; a human holds the decision points: the plan, risky actions, the result, and the release.
 
 ## The four approval points
