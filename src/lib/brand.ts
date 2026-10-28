@@ -61,7 +61,7 @@ const maintainerPro: ProductBrand = {
   accentKicker: "#e0f7f3",
   supportEmail: "support@butterneck.com",
   defaultSiteUrl: "https://aasaanweb.butterneck.com",
-  defaultAppUrl: "https://app.aasaanweb.butterneck.com",
+  defaultAppUrl: "https://aasaan.butterneck.com",
 };
 
 const BRANDS: Record<AppName, ProductBrand> = {

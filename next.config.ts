@@ -10,7 +10,7 @@ const appName = resolveAppName(process.env.APP_NAME);
 
 const isAasaanWeb = appName === "maintainer-pro";
 const aasaanWebAppUrl = (
-  process.env.NEXT_PUBLIC_AASAANWEB_APP_URL || "https://app.aasaanweb.butterneck.com"
+  process.env.NEXT_PUBLIC_AASAANWEB_APP_URL || "https://aasaan.butterneck.com"
 ).replace(/\/$/, "");
 
 /** AasaanWeb (APP_NAME=maintainer-pro): its own home page; signup and login live on the app. */
@@ -18,6 +18,9 @@ const aasaanWebRedirects = [
   { source: "/signup", destination: `${aasaanWebAppUrl}/signup`, statusCode: 307 as const },
   { source: "/login", destination: `${aasaanWebAppUrl}/login`, statusCode: 307 as const },
   { source: "/aasaanweb-home", destination: "/", statusCode: 308 as const },
+  // Site forms and previews live on the app; path and query string carry over.
+  { source: "/site-form/:path*", destination: `${aasaanWebAppUrl}/site-form/:path*`, statusCode: 307 as const },
+  { source: "/p/:path*", destination: `${aasaanWebAppUrl}/p/:path*`, statusCode: 307 as const },
 ];
 
 const nextConfig: NextConfig = {
