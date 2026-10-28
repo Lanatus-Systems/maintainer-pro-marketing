@@ -134,7 +134,7 @@ The files are edited on the connected computer, and Butterneck does not run its 
 
 ### Can I try Butterneck for free?
 
-Yes. Starter is free for one developer and one person who asks for changes.
+Yes. Starter is free for one developer and one person asking for changes, and a workspace owner can start a one-month Pro trial from the Billing page.
 
 ## Try it
 

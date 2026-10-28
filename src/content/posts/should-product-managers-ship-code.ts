@@ -20,6 +20,8 @@ AI coding tools have made a new question very real: should product managers ship
 
 This post looks at what the current debate is actually about, what recent data says about the review side, and a middle ground that gets PMs their small changes without handing them commit access.
 
+> **PMs shipping code, in short:** Building is getting cheap, but deciding what ships is still the hard part, and most PMs do not need to write code to get small changes made. With Butterneck, which runs on the developer's computer with the coding agent they already use, a PM asks for a change on a live copy of the app, no pull request is opened, and a developer decides first what ships; Butterneck never merges or deploys.
+
 ## The debate, in plain terms
 
 Guy Mor at H&B [described on LinkedIn](https://www.linkedin.com/posts/guy-mor-lin_were-starting-to-let-product-managers-ship-activity-7516032300925575169-vtdV) how his team is starting to let PMs use tools like Codex to make small changes to production systems. Their flow is careful: the PM identifies a simple change, uses AI to create a technical plan, an engineer reviews the plan, the PM uses AI to implement it, an engineer reviews the merge request, and then it goes to production.
