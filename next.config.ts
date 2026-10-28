@@ -8,14 +8,34 @@ const blogSlugs = readdirSync("./src/content/posts")
 
 const appName = resolveAppName(process.env.APP_NAME);
 
+const isAasaanWeb = appName === "maintainer-pro";
+const aasaanWebAppUrl = (
+  process.env.NEXT_PUBLIC_AASAANWEB_APP_URL || "https://app.aasaanweb.butterneck.com"
+).replace(/\/$/, "");
+
+/** AasaanWeb (APP_NAME=maintainer-pro): its own home page; signup and login live on the app. */
+const aasaanWebRedirects = [
+  { source: "/signup", destination: `${aasaanWebAppUrl}/signup`, statusCode: 307 as const },
+  { source: "/login", destination: `${aasaanWebAppUrl}/login`, statusCode: 307 as const },
+  { source: "/aasaanweb-home", destination: "/", statusCode: 308 as const },
+];
+
 const nextConfig: NextConfig = {
   agentRules: false,
   allowedDevOrigins: ["127.0.0.1"],
   poweredByHeader: false,
-  env: {
-    APP_NAME: appName,
-  },
+  env: isAasaanWeb
+    ? { APP_NAME: appName, NEXT_PUBLIC_AASAANWEB_APP_URL: aasaanWebAppUrl }
+    : { APP_NAME: appName },
+  ...(isAasaanWeb
+    ? {
+        async rewrites() {
+          return { beforeFiles: [{ source: "/", destination: "/aasaanweb-home" }], afterFiles: [], fallback: [] };
+        },
+      }
+    : {}),
   async redirects() {
+    if (isAasaanWeb) return aasaanWebRedirects;
     return [
       { source: "/butterneck-vs-clickup", destination: "/", statusCode: 301 },
       { source: "/signup", destination: "https://app.butterneck.com/signup", statusCode: 301 },

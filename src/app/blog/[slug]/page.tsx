@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { PostBody } from "@/components/PostBody";
 import { formatDate, formatUpdatedDate, getPost, POSTS, postPath, readingMinutes } from "@/content/blog";
-import { brand } from "@/lib/brand";
+import { brand, isAasaanWeb } from "@/lib/brand";
 import { postFaqJsonLd } from "@/lib/schema";
 import { appUrl, SITE_URL, siteUrl, X_HANDLE } from "@/lib/site";
 
@@ -13,6 +13,7 @@ type Params = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
+  if (isAasaanWeb) return [];
   return POSTS.map((p) => ({ slug: p.slug }));
 }
 
@@ -50,6 +51,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Params) {
+  // Butterneck-only page: 404 on the AasaanWeb site.
+  if (isAasaanWeb) notFound();
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) notFound();

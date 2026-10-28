@@ -4,7 +4,7 @@
  * To add a product: append its id to APP_NAMES, add a ProductBrand in BRANDS,
  * and add that product's pages. An unknown APP_NAME stays on Butterneck.
  */
-export const APP_NAMES = ["butterneck"] as const;
+export const APP_NAMES = ["butterneck", "maintainer-pro"] as const;
 
 export type AppName = (typeof APP_NAMES)[number];
 
@@ -44,8 +44,29 @@ const butterneck: ProductBrand = {
   defaultAppUrl: "https://app.butterneck.com",
 };
 
+/** AasaanWeb (APP_NAME=maintainer-pro). Copy from the admin app's brand-data.ts. */
+const maintainerPro: ProductBrand = {
+  appName: "maintainer-pro",
+  name: "AasaanWeb",
+  title: "AasaanWeb – Website Builder for Small Businesses in India",
+  description:
+    "Apna business website banaiye ya edit karein — bas likhkar batayein. AasaanWeb helps small Indian businesses build and update a landing page in plain words.",
+  ogDescription:
+    "Create a landing page, or update the site you already have, directly on the preview.",
+  wordmarkSrc: "/aasaanweb/logo-wordmark.svg",
+  themeColor: "#091f41",
+  accent: "#091f41",
+  accentHover: "#0d2c5c",
+  accentSoft: "#f6f8fb",
+  accentKicker: "#e0f7f3",
+  supportEmail: "support@butterneck.com",
+  defaultSiteUrl: "https://aasaanweb.butterneck.com",
+  defaultAppUrl: "https://app.aasaanweb.butterneck.com",
+};
+
 const BRANDS: Record<AppName, ProductBrand> = {
   butterneck,
+  "maintainer-pro": maintainerPro,
 };
 
 export function resolveAppName(value: string | undefined): AppName {
@@ -60,3 +81,6 @@ export function brandFor(appName: AppName): ProductBrand {
 
 /** Resolved once from APP_NAME. Next inlines that variable for client components. */
 export const brand = brandFor(resolveAppName(process.env.APP_NAME));
+
+/** True when this build serves the AasaanWeb site (APP_NAME=maintainer-pro). */
+export const isAasaanWeb = brand.appName === "maintainer-pro";

@@ -1,13 +1,15 @@
 import { POSTS, postPath } from "@/content/blog";
 import { legalPages } from "@/content/legal";
 import { DEFINITION } from "@/content/landing";
-import { brand } from "@/lib/brand";
+import { brand, isAasaanWeb } from "@/lib/brand";
 import { siteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 /** Generated from the post list so new posts appear automatically. */
 export function GET() {
+  // Butterneck-only route: 404 on the AasaanWeb site.
+  if (isAasaanWeb) return new Response("Not found", { status: 404 });
   const lines = [
     `# ${brand.name}`,
     "",

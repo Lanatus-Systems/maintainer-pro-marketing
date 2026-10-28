@@ -1,8 +1,9 @@
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { formatDate, POSTS, postPath, readingMinutes } from "@/content/blog";
-import { brand } from "@/lib/brand";
+import { brand, isAasaanWeb } from "@/lib/brand";
 import { breadcrumbJsonLd } from "@/lib/schema";
 import { pageMeta } from "@/lib/meta";
 import { siteUrl } from "@/lib/site";
@@ -20,6 +21,8 @@ export const metadata: Metadata = pageMeta({
 });
 
 export default function BlogIndex() {
+  // Butterneck-only page: 404 on the AasaanWeb site.
+  if (isAasaanWeb) notFound();
   return (
     <main id="content" className="blog-page">
       <JsonLd data={breadcrumbJsonLd(title, "/blog")} />

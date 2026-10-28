@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { POSTS, postPath } from "@/content/blog";
 import { LEGAL_UPDATED, legalPages } from "@/content/legal";
+import { AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
+import { isAasaanWeb } from "@/lib/brand";
 import { siteUrl } from "@/lib/site";
 
 /**
@@ -16,6 +18,12 @@ function latestPostDate(): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // AasaanWeb has one public page.
+  if (isAasaanWeb) {
+    return [
+      { url: siteUrl("/"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 1 },
+    ];
+  }
   const legal = Object.values(legalPages).map((page) => ({
     url: siteUrl(page.path),
     lastModified: LEGAL_LAST_MODIFIED,

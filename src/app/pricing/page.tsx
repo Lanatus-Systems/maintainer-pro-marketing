@@ -1,3 +1,5 @@
+import { isAasaanWeb } from "@/lib/brand";
+import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { PricingSection } from "@/components/PricingSection";
 import { pageMeta } from "@/lib/meta";
@@ -14,6 +16,8 @@ export const metadata = pageMeta({
 });
 
 export default function PricingPage() {
+  // Butterneck-only page: 404 on the AasaanWeb site.
+  if (isAasaanWeb) notFound();
   return (
     <main id="content" className="landing">
       <JsonLd data={breadcrumbJsonLd("Pricing", "/pricing")} />
