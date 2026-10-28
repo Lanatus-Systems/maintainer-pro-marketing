@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
   date: "2026-10-28",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -16,15 +17,15 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Search for "Claude Code for product managers" or "Cursor for PMs" and most guides give the same advice: install the tool, clone the repo, learn enough git, and open pull requests yourself. For some product managers that is the right move. For many product teams it is not, and there is another way to get the same coding assistant working on a PM's request.
+Search for "Claude Code for product managers" or "Cursor for PMs" and most guides give similar advice: get Claude Code or Cursor (Claude Code now also runs in a desktop app and on the web at claude.ai/code, so a terminal is optional), connect the repo, learn enough git, and open pull requests yourself. For some product managers that is the right move. For many product teams it is not, and there is another way to get the same coding assistant working on a PM's request.
 
 This post covers both. We make Butterneck, which takes the second route, so we are not neutral. We have tried to be clear about when a PM should just run Claude Code themselves.
 
-## The usual advice: give the PM a terminal
+## The usual advice: give the PM their own coding assistant
 
-The typical guide goes like this. The PM gets access to the repository, installs Claude Code or Cursor, runs the project locally, asks the assistant for a change, and then commits it and opens a pull request for a developer to review.
+The typical guide goes like this. The PM gets access to the repository, sets up Claude Code (in a terminal, an IDE, the desktop app or the web) or Cursor, runs the project, asks the assistant for a change, and then commits it and opens a pull request for a developer to review.
 
-That works. It also means the PM now owns a local development setup: dependencies, environment variables, a dev server, branches, merge conflicts. The developer still reviews the change, but now reviews a pull request from someone who may not be able to answer questions about the diff. We looked at that trade-off in more depth in [should product managers ship code?](/blog/should-product-managers-ship-code).
+That works. The desktop app and the web version remove the terminal, but not the rest: the assistant still edits a copy of the code, and the PM still needs a way to run the app to see the result. With a local setup, the PM also owns the development environment: dependencies, environment variables, a dev server, branches, merge conflicts. The developer still reviews the change, but now reviews a pull request from someone who may not be able to answer questions about the diff. We looked at that trade-off in more depth in [should product managers ship code?](/blog/should-product-managers-ship-code).
 
 ## The other way: the PM asks, the developer's CLI does the work
 
@@ -47,11 +48,11 @@ Butterneck never opens a pull request, never merges, and never deploys. You deci
 5. The coding CLI makes the edit in that folder, and the PM checks it on the preview. If it is wrong, the turn can be stopped and its file changes rolled back.
 6. A developer reviews the result and ships it through the normal process: commit, pull request, CI, deploy.
 
-## PM runs the CLI vs PM asks on a preview
+## PM runs Claude Code vs PM asks on a preview
 
 | | PM runs Claude Code or Cursor | PM asks on a Butterneck preview |
 |---|---|---|
-| What the PM needs | Repo access, a local setup, a terminal, git basics | A browser and the share link |
+| What the PM needs | Repo access, git basics, Claude Code or Cursor (terminal, IDE, desktop app or web), and a way to run the app | A browser and the share link |
 | Whose AI subscription | A seat for the PM | The CLI signed in on the connected computer (under its plan's terms) |
 | Where the change is checked | The PM's own local app | A live preview of the developer's running dev server |
 | What comes out | A pull request from the PM | Edited files on the developer's computer; no PR |
@@ -62,7 +63,7 @@ Butterneck never opens a pull request, never merges, and never deploys. You deci
 
 Be honest about your team. Giving the PM their own coding assistant is often the better call when:
 
-- The PM is comfortable in a terminal and with git, and wants to learn the codebase.
+- The PM is comfortable with git and a coding assistant (terminal, desktop app or web), and wants to learn the codebase.
 - They are prototyping something new, not changing a live product.
 - The work is in a separate repo, a script, or an internal tool that no developer needs to approve.
 - Your team already has a review process for PM-authored pull requests, and it works.
@@ -88,7 +89,7 @@ Starter is free for one developer and one person who asks for changes. Pro is US
 
 ### Can product managers use Claude Code without a terminal?
 
-Not on their own; Claude Code is a command-line tool. With Butterneck, the PM types the request in a chat on a live preview, and Claude Code runs on a developer's computer where it is already signed in.
+Yes. Claude Code works in a terminal, in IDE extensions, in a desktop app and on the web (claude.ai/code), so a terminal is optional. But in each of those it edits a copy of the code, not a live running app the PM can click through and check, and the PM still needs repository access. With Butterneck, the PM types the request in a chat beside a live preview of the app, and the developer's Claude Code does the work on their computer, where it is already signed in.
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 
