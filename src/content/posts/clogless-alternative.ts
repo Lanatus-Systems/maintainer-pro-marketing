@@ -20,6 +20,8 @@ If you are weighing Clogless and wondering whether an alternative fits your team
 
 Everything about Clogless below comes from its public website, [clogless.ai](https://clogless.ai), as read on 28 October 2026, mainly its home, how it works, ticket to pull request, security, and pricing pages. Clogless is a new product, and new products change fast. Check their site for the current details.
 
+> **Clogless vs Butterneck, in short:** Clogless works an idea or ticket in a disposable cloud sandbox, shows a live preview on your codebase, and then opens a pull request with your Git provider for engineering to review and merge. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, no pull request is opened, and a developer decides first what ships.
+
 ## What Clogless says it does
 
 Clogless calls itself an "AI workspace that turns tickets into pull requests". Its home page says its agents "take any idea from plan to live preview on your codebase in a secure cloud environment, then hand engineering a pull request instead of a request."
