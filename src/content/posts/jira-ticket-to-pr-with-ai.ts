@@ -16,7 +16,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Searching for "Jira ticket to pull request"? Here is the short, honest answer for Butterneck: a Jira label starts the work, an AI coding agent makes the change on a live copy of your app, the person who asked checks the preview, and then a developer decides whether a pull request is created. Butterneck never opens the PR by itself.
+Butterneck lets a product person turn a Jira ticket into a change to a live web app and check it on a live preview. No pull request is opened; a developer decides first. For "Jira ticket to pull request", that means a label starts the work, an AI coding agent makes the change on a private copy of your app on the developer's computer, the person who asked checks the preview, and then a developer decides whether to open a pull request. Butterneck never opens the PR itself.
 
 Plenty of tools now promise to turn a Jira ticket into a pull request with AI. The idea is good. Most tickets for small changes are clear enough that a coding agent can do the edit. The hard questions are about what happens around it: who sees the result, who checks it, and what reaches your main branch.
 
@@ -140,6 +140,6 @@ The Cursor, Claude Code, or Antigravity CLI already installed and signed in on t
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/#pricing): the Starter plan is free and includes one private copy at a time, and each labeled ticket opens its own copy, so regular Jira use needs Pro. More at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/#pricing): the Starter plan is free and allows one private copy at a time (so one ticket or one chat copy). Each labeled ticket opens its own copy, so regular Jira use needs Pro. More at [butterneck.com](/).
 `,
 };
