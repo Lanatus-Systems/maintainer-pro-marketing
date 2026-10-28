@@ -13,6 +13,8 @@ export const WORK = [
     src: "/aasaanweb/examples/parmanand.jpg",
     alt: "Parmanand Industries homepage. A headline about custom brass parts, a photo of a turning machine, and a note of 25 years in Jamnagar.",
     live: `${AASAANWEB_APP_URL}/p/mp_p_Qdbp-RzBxUTfEUg174cDV-aR/preview/`,
+    /** Link on this site; next.config redirects /p to the app. */
+    open: "/p/mp_p_Qdbp-RzBxUTfEUg174cDV-aR/preview/",
   },
   {
     name: "Shivam Industries",
@@ -25,6 +27,8 @@ export const WORK = [
     src: "/aasaanweb/examples/shivam.jpg",
     alt: "Shivam Industries homepage. A headline about eye bolts, a labeled photo of a bolt, and buttons to send a drawing or call.",
     live: `${AASAANWEB_APP_URL}/p/mp_p_lmz1hRegecakc8PiVg8Nro4c/preview/`,
+    /** Link on this site; next.config redirects /p to the app. */
+    open: "/p/mp_p_lmz1hRegecakc8PiVg8Nro4c/preview/",
   },
   {
     name: "EL360",
@@ -37,5 +41,7 @@ export const WORK = [
     src: "/aasaanweb/examples/el360.jpg",
     alt: "EL360 homepage on a dark background. A headline about seeing a product from every angle, and an exploded brass valve.",
     live: `${AASAANWEB_APP_URL}/p/mp_p_rZPhSb_gLhx2zsCrc0bmrfRh/preview/`,
+    /** Link on this site; next.config redirects /p to the app. */
+    open: "/p/mp_p_rZPhSb_gLhx2zsCrc0bmrfRh/preview/",
   },
 ];

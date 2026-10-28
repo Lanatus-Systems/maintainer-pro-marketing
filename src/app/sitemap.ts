@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { POSTS, postPath } from "@/content/blog";
 import { LEGAL_UPDATED, legalPages } from "@/content/legal";
 import { AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
+import { AASAANWEB_LEGAL, AASAANWEB_LEGAL_UPDATED } from "@/content/aasaanweb-legal";
 import { isAasaanWeb } from "@/lib/brand";
 import { siteUrl } from "@/lib/site";
 
@@ -18,10 +19,19 @@ function latestPostDate(): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // AasaanWeb has one public page.
+  // AasaanWeb: the same public pages as aasaan.butterneck.com.
   if (isAasaanWeb) {
+    const legalModified = new Date(`${AASAANWEB_LEGAL_UPDATED} 00:00:00 UTC`);
     return [
       { url: siteUrl("/"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 1 },
+      { url: siteUrl("/work"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 0.8 },
+      { url: siteUrl("/pricing"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 0.8 },
+      ...Object.values(AASAANWEB_LEGAL).map((page) => ({
+        url: siteUrl(page.path),
+        lastModified: legalModified,
+        changeFrequency: "yearly" as const,
+        priority: 0.3,
+      })),
     ];
   }
   const legal = Object.values(legalPages).map((page) => ({

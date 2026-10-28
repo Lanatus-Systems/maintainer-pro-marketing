@@ -125,3 +125,21 @@ export function aasaanWebJsonLd() {
     ],
   };
 }
+
+/**
+ * Metadata for an AasaanWeb page other than home: the original's document.title and meta
+ * description, a self-referencing canonical on this host, and matching Open Graph tags.
+ */
+export function aasaanWebSubpageMeta(opts: { title: string; description?: string; path: string }): Metadata {
+  const url = siteUrl(opts.path);
+  const title = `${opts.title} — ${brand.name}`;
+  const description = opts.description ?? brand.description;
+  return {
+    title: { absolute: title },
+    description,
+    robots: { index: true, follow: true },
+    alternates: { canonical: url },
+    openGraph: { ...openGraph(url), title, description },
+    twitter: { ...twitter, title, description },
+  };
+}

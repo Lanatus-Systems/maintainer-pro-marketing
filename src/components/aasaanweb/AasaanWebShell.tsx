@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { aasaanWebAppUrl } from "@/lib/aasaanweb";
 import { HeaderBar } from "./HeaderBar";
 import { StudioLogo } from "./Logo";
 
@@ -7,25 +6,29 @@ import { StudioLogo } from "./Logo";
 const FONTS_CSS =
   "https://fonts.googleapis.com/css2?family=Outfit:wght@500..700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap";
 
-/** The admin app's StudioShell START_URL, on the app's host. */
-export const START_URL = aasaanWebAppUrl(
-  "/site-form/c89547af-0752-4ab5-ab6a-4a47a51f49b3/8d47cc5e-6c3c-4fca-a79f-b14bcd3ffb71"
-);
+/** The admin app's StudioShell START_URL; next.config redirects /site-form to the app. */
+export const START_URL =
+  "/site-form/c89547af-0752-4ab5-ab6a-4a47a51f49b3/8d47cc5e-6c3c-4fca-a79f-b14bcd3ffb71";
 
-/** Same links as the admin app's StudioLinks, minus Pricing (no prices on this site). */
-function Links({ footer = false }: { footer?: boolean }) {
+export type AasaanWebPage = "home" | "work" | "pricing";
+
+/** Same links as the admin app's StudioLinks; the current page is marked like the original. */
+function Links({ footer = false, current }: { footer?: boolean; current?: AasaanWebPage }) {
+  const mark = (page: AasaanWebPage) =>
+    current === page ? { className: "is-current", "aria-current": "page" as const } : {};
   return (
     <>
-      <a href={aasaanWebAppUrl("/work")}>Our work</a>
+      <a href="/work" {...mark("work")}>Our work</a>
+      <a href="/pricing" {...mark("pricing")}>Pricing</a>
       <a href="/#how">How it works</a>
       <a href="/#who">Who it’s for</a>
       <a href="/#faq">Questions</a>
-      {footer ? <a href={aasaanWebAppUrl("/contact")}>Contact</a> : null}
+      {footer ? <a href="/contact">Contact</a> : null}
     </>
   );
 }
 
-export function AasaanWebShell({ children }: { children: ReactNode }) {
+export function AasaanWebShell({ children, current }: { children: ReactNode; current?: AasaanWebPage }) {
   return (
     <div className="studio">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,12 +39,12 @@ export function AasaanWebShell({ children }: { children: ReactNode }) {
       <noscript>
         <style>{".studio .studio-reveal{animation-play-state:running}"}</style>
       </noscript>
-      <HeaderBar logo={<StudioLogo />} links={<Links />} menuLinks={<Links footer />} startUrl={START_URL} />
+      <HeaderBar logo={<StudioLogo />} links={<Links current={current} />} menuLinks={<Links footer current={current} />} startUrl={START_URL} />
       {children}
       <footer className="studio-footer">
         <StudioLogo size={22} />
         <nav aria-label="Footer">
-          <Links footer />
+          <Links footer current={current} />
         </nav>
         <p>© {new Date().getFullYear()} AasaanWeb. All rights reserved.</p>
       </footer>

@@ -5,19 +5,19 @@ import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell } from "@/components/aasaanweb/AasaanWebShell";
 import { Reveal } from "@/components/aasaanweb/Reveal";
 import { WORK } from "@/components/aasaanweb/work";
-import { aasaanWebAppUrl, aasaanWebJsonLd, aasaanWebPageMeta, PageUrlTags } from "@/lib/aasaanweb";
+import { aasaanWebJsonLd, aasaanWebPageMeta, PageUrlTags } from "@/lib/aasaanweb";
 import { isAasaanWeb } from "@/lib/brand";
 import "./aasaanweb.css";
 
 /**
  * AasaanWeb home page (APP_NAME=maintainer-pro). next.config rewrites "/" here for that brand only.
  * Markup is a straight port of the admin app's client/src/pages/StudioLandingPage.tsx (branch
- * seo-fixes), so the page matches https://aasaan.butterneck.com/. Prices are left out.
+ * seo-fixes), so the page matches https://aasaan.butterneck.com/.
  */
 export const metadata: Metadata = aasaanWebPageMeta();
 
-const SIGNUP_URL = aasaanWebAppUrl("/signup");
-const WORK_URL = aasaanWebAppUrl("/work");
+const SIGNUP_URL = "/signup";
+const WORK_URL = "/work";
 
 function unsplash(photo: string, width: number) {
   return `https://images.unsplash.com/${photo}?auto=format&fit=crop&w=${width}&q=70`;
@@ -260,11 +260,8 @@ export default function AasaanWebHome() {
           <div className="studio-hero-copy">
             <p className="studio-kicker">For the page customers actually see</p>
             <h1>
-              Create or edit your business website <em>in plain words</em>
+              Create your own site. Update the one you have <em>on the go.</em>
             </h1>
-            <p className="studio-lead studio-lead-hi" lang="hi">
-              Apna business website banaiye — bas likhkar batayein.
-            </p>
             <p className="studio-lead">
               Tell us about your business. You get a page. When a photo, a
               price, or a Saturday hour changes, you fix it yourself — while
@@ -437,7 +434,7 @@ export default function AasaanWebHome() {
                     <h3>{item.name}</h3>
                     <p>{item.summary}</p>
                     <a
-                      href={item.live}
+                      href={item.open}
                       target="_blank"
                       rel="noreferrer"
                       className="studio-example-open"
