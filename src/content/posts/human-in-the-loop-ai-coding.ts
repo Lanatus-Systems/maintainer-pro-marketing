@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "human-in-the-loop-ai-coding",
   title: "Human-in-the-loop AI coding: why Butterneck never merges",
   description:
-    "Butterneck lets product teams hand AI change requests, but it never opens a pull request, merges or deploys. Here is why a developer stays in the loop.",
+    "Butterneck takes AI change requests from product teams but never opens a pull request, merges or deploys. Why a developer stays in the loop.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",

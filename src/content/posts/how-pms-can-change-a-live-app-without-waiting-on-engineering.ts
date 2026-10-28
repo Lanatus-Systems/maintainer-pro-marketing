@@ -68,7 +68,7 @@ Some PMs install Cursor or Claude Code and edit the repo. This can work for tech
 
 The PM asks for the change in a chat on a running copy of the app. A coding agent makes the edit. The preview updates. No pull request is opened; a developer reviews first and decides what ships. This is the approach Butterneck takes. Why the requester's check comes before any PR is covered in [live preview before the pull request](/blog/live-preview-before-pull-request).
 
-## How it works in Butterneck
+## How it works: make changes to your live app with AI, and a developer decides
 
 ![The live app with the Butterneck chat open next to it](/blog/product-app-with-chat.png "1280x720")
 

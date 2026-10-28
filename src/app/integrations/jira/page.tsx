@@ -14,7 +14,7 @@ const JIRA_FAQS = [
 
 const PAGE_TITLE = "Jira integration: label a ticket, get a live preview";
 const PAGE_DESCRIPTION =
-  "Label a Jira Cloud ticket butterneck and assign it. Butterneck opens a private copy named after the ticket, the AI works from the ticket, and a preview link is posted back. Nothing merges.";
+  "Label a Jira Cloud ticket butterneck and assign it. The AI works from the ticket in a private copy and posts a preview link back. Nothing merges.";
 
 export const metadata = pageMeta({
   title: PAGE_TITLE,

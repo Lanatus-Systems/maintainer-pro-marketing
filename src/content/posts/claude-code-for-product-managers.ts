@@ -3,13 +3,13 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "claude-code-for-product-managers",
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
-  seoTitle: "Claude Code for product managers, without a terminal",
+  seoTitle: "Claude Code for product managers, without a repo or terminal",
   description:
     "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
   date: "2026-10-28",
   updated: "2026-10-28",
   author: "The Butterneck team",
-  tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams"],
+  tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers"],
   cover: {
     src: "/blog/cover-claude-code-for-product-managers.png",
     alt: "Butterneck blog cover: Claude Code for product managers, without a terminal. The PM asks on a live preview, the developer's Claude Code, Cursor or Antigravity makes the change, and a developer decides",
@@ -27,7 +27,7 @@ The typical guide goes like this. The PM gets access to the repository, sets up 
 
 That works. The desktop app and the web version remove the terminal, but not the rest: the assistant still edits a copy of the code, and the PM still needs a way to run the app to see the result. With a local setup, the PM also owns the development environment: dependencies, environment variables, a dev server, branches, merge conflicts. The developer still reviews the change, but now reviews a pull request from someone who may not be able to answer questions about the diff. We looked at that trade-off in more depth in [should product managers ship code?](/blog/should-product-managers-ship-code).
 
-## The other way: the PM asks, the developer's CLI does the work
+## The other way: an AI coding agent for product managers that runs on the developer's computer
 
 Your team probably already has a coding assistant signed in on a developer's computer. Butterneck lets the rest of the product team use it, without a terminal and without a copy of the repo.
 
@@ -52,7 +52,7 @@ Butterneck never opens a pull request, never merges, and never deploys. You deci
 
 | | PM runs Claude Code or Cursor | PM asks on a Butterneck preview |
 |---|---|---|
-| What the PM needs | Repo access, git basics, Claude Code or Cursor (terminal, IDE, desktop app or web), and a way to run the app | A browser and the share link |
+| What the PM needs | Repo access, a paid AI seat, and usually a local setup (the desktop app or claude.ai/code removes the terminal, not the repo) | A browser and the share link |
 | Whose AI subscription | A seat for the PM | The CLI signed in on the connected computer (under its plan's terms) |
 | Where the change is checked | The PM's own local app | A live preview of the developer's running dev server |
 | What comes out | A pull request from the PM | Edited files on the developer's computer; no PR |
@@ -83,17 +83,17 @@ If your team needs written rules for who can ask the AI for what, start from our
 
 ## What it costs
 
-Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. Developers and people who request changes both count as seats; people who only open a share link to look do not. You keep paying for your own coding assistant subscription, on a plan that allows use on your team's behalf (see the note on plans and terms below). Details on [pricing](/pricing).
+Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. Developers and people who request changes both count as seats; people who only open a share link to look do not. You keep paying for your own coding assistant subscription, on a plan that allows use on your team's behalf (see the note on plans and terms below). A workspace owner on Starter can also start a one-month Pro trial from the Billing page, once per workspace. Details on [pricing](/pricing).
 
 ## FAQ
 
 ### Can product managers use Claude Code without a terminal?
 
-Yes. Claude Code works in a terminal, in IDE extensions, in a desktop app and on the web (claude.ai/code), so a terminal is optional. But in each of those it edits a copy of the code, not a live running app the PM can click through and check, and the PM still needs repository access. With Butterneck, the PM types the request in a chat beside a live preview of the app, and the developer's Claude Code does the work on their computer, where it is already signed in.
+Yes. Claude Code also runs in Anthropic's desktop app and in the browser at claude.ai/code, so a PM doesn't strictly need a terminal. They still need a paid Claude plan, access to the repository, and usually a way to run the app to check the change. With Butterneck the PM needs none of those: they type the request in a chat on a live preview, and Claude Code runs on a developer's computer where it is already signed in.
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 
-Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. Each person who sends requests needs a Butterneck seat on Pro.
+Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. On Pro, each person who sends requests counts as a seat; Starter includes one developer and one requester for free.
 
 **A note on plans and terms.** Butterneck runs requests through the AI coding tool your developer is already signed into, so that tool's terms apply. The signed-in plan must allow use on your team's behalf. Personal and consumer plans (Claude Pro or Max, Cursor Pro, personal Google AI plans) may not. Anthropic's consumer terms, for example, say you "may not make your Account available to anyone else," and Claude Code's docs say Pro and Max limits "assume ordinary, individual usage." Team, Business or Enterprise plans, where each person has a seat, or an organization API key (Anthropic Console, Gemini API / Vertex AI) are the safer fit. Check your plan's terms or ask your vendor. This is not legal advice.
 
