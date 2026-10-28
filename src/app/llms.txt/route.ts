@@ -20,7 +20,7 @@ export function GET() {
     `${brand.name} is for product teams. People ask on a live copy of the product. The AI edits the project on a computer the team connects. A developer decides what goes live.`,
     "",
     "## Key facts",
-    "- Who asks: product managers, designers, support leads and other non-technical teammates, from a link to a live copy of the app (no install), or by labeling a Jira Cloud ticket `butterneck` and assigning it to someone whose computer has the project.",
+    "- Who asks: product managers, designers, support leads and other non-technical teammates, from a link to a live copy of the app (no install), or by labeling a Jira Cloud ticket `butterneck` and assigning it to a teammate whose Jira account is mapped to a computer that has the project.",
     "- Who edits: the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity CLI), running on a computer the team connects (Node.js 22 or newer). Butterneck does not ship its own model.",
     "- What it never does: open a pull request, merge, or deploy. A developer decides what goes live and ships it the team's usual way.",
     "- Guardrails: the agent is limited to the connected folder and told to stay out of `.env` and any ignored paths; these are instructions plus the CLI's workspace setting, not an operating-system sandbox. Each turn is snapshotted so it can usually be undone.",

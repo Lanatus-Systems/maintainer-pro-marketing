@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import Link from "next/link";
 import {
   ANNUAL_DISCOUNT_PERCENT,
@@ -14,7 +14,10 @@ import {
 } from "@/lib/pricing";
 import { appUrl } from "@/lib/site";
 
-export function PricingSection({ standalone = false }: { standalone?: boolean } = {}) {
+export function PricingSection({
+  standalone = false,
+  intro,
+}: { standalone?: boolean; intro?: ReactNode } = {}) {
   const Heading = standalone ? "h1" : "h2";
   const [interval, setInterval] = useState<BillingInterval>("month");
   const [country, setCountry] = useState("US");
@@ -37,6 +40,7 @@ export function PricingSection({ standalone = false }: { standalone?: boolean } 
             Starter is free for one developer and one person who requests changes. Pro is priced
             per person each month. A larger team is a conversation with us.
           </p>
+          {intro}
         </div>
         <div className="landing-price-controls">
           <label>

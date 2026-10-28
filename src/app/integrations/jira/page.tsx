@@ -45,10 +45,13 @@ export default function JiraIntegrationPage() {
         <p className="landing-kicker">Jira Cloud integration</p>
         <h1>Label a ticket. Get a live preview.</h1>
         <p className="landing-section-lead">
-          Add the label <code>butterneck</code> to a ticket and assign it to a teammate whose Jira
-          account is mapped to a computer that has the project. The ticket becomes the request, and the change is built by the developer&apos;s
-          own AI agent on their computer. A live preview link comes back on the ticket, and the
-          requester can keep refining it in plain words. A developer decides what goes live.
+          Butterneck&apos;s Jira Cloud integration turns a labeled ticket into a live preview. Add the
+          label <code>butterneck</code> to a ticket and assign it to a teammate whose Jira account is
+          mapped to a computer that has the project. The ticket becomes the request, and the change is
+          built by the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity),
+          on their computer. A live preview link comes back on the ticket, and the requester can keep
+          refining it in plain words. No pull request is opened; a developer decides first what ships,
+          and Butterneck never merges or deploys.
         </p>
         <div className="landing-cta">
           <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="jira_page">
