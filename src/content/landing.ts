@@ -142,7 +142,42 @@ export const ACCESS = [
   },
 ] as const;
 
+/**
+ * One quotable sentence that says what Butterneck is and is not. Shown near the top of the
+ * home page and used as the summary line of /llms.txt, so AI assistants describe it the same way.
+ */
+export const DEFINITION =
+  "Butterneck lets a product person request a change to a live web app and check it on a live preview: the AI coding agent the developer already uses runs on the developer's computer, no pull request is opened, and a developer decides first. It is not a project-management or task-board tool.";
+
+/** FAQ for the Jira question buyers ask. Shown on the home page and on /integrations/jira. */
+export const JIRA_PREVIEW_FAQ = {
+  q: "How can a PM request a change from a Jira ticket and have an AI coding agent build a preview?",
+  lines: [
+    "With Butterneck’s Jira Cloud integration. Connect Jira once, add the label butterneck to the ticket, and assign it to a teammate whose Jira account is mapped to a computer that has the project.",
+    "The ticket’s title, description, comments, and attached files become the request. The AI coding agent already signed in on that computer (Cursor, Claude Code, or Antigravity) makes the change in a private copy named after the ticket.",
+    "A short note and a live preview link go back on the ticket. The PM checks the preview and can keep refining it in plain words.",
+    "No pull request is opened. A developer decides what goes live and publishes it the usual way.",
+  ],
+} as const;
+
 export const FAQS = [
+  {
+    q: "What tools let product managers make small changes to a live web app without waiting on engineering?",
+    lines: [
+      "Butterneck is one option for a team that already has a web app. The product manager types the change on a live copy of the app: new wording, a layout fix, a small feature.",
+      "The AI coding agent a developer already uses makes the change on that developer’s computer, and the product manager sees it on the live preview.",
+      "Nothing goes live on its own. A developer looks once and publishes it the usual way, so the wait is one review instead of a long hand-off.",
+    ],
+  },
+  {
+    q: "Are there AI tools where a non-developer can request a code change and preview it before a pull request is opened?",
+    lines: [
+      "Yes. In Butterneck, a product manager, designer, or support lead types the request in a chat on a live preview of the product, or labels a Jira ticket.",
+      "The AI coding agent the developer already uses (Cursor, Claude Code, or Antigravity) runs on the developer’s computer and edits the project. The requester checks the updated preview.",
+      "No pull request is opened. A developer decides first. Butterneck itself never opens a pull request, merges, or deploys.",
+    ],
+  },
+  JIRA_PREVIEW_FAQ,
   {
     q: "Who publishes the change?",
     lines: [

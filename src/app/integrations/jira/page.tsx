@@ -1,9 +1,14 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
-import { JIRA } from "@/content/landing";
+import { FAQS, JIRA, JIRA_PREVIEW_FAQ } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
-import { breadcrumbJsonLd, webPageJsonLd } from "@/lib/schema";
-import { appUrl, WALKTHROUGH_URL } from "@/lib/site";
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from "@/lib/schema";
+import { appUrl, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
+
+const JIRA_FAQS = [
+  JIRA_PREVIEW_FAQ,
+  ...FAQS.filter((item) => item.q === "Can a Jira ticket start the chat?"),
+];
 
 const PAGE_TITLE = "Jira integration: label a ticket, get a live preview";
 const PAGE_DESCRIPTION =
@@ -23,6 +28,12 @@ export default function JiraIntegrationPage() {
         data={{
           "@context": "https://schema.org",
           ...webPageJsonLd({ name: PAGE_TITLE, description: PAGE_DESCRIPTION, path: "/integrations/jira" }),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          ...faqPageJsonLd(JIRA_FAQS, siteUrl("/integrations/jira")),
         }}
       />
 
@@ -180,6 +191,22 @@ export default function JiraIntegrationPage() {
           · <Link href="/blog/ai-prs-need-an-owner">why AI changes need an owner</Link>{" "}
           · <Link href="/blog/clogless-alternative">compared with a cloud-sandbox tool</Link>
         </p>
+      </section>
+
+      <section className="landing-section" aria-labelledby="jira-faq-heading">
+        <h2 id="jira-faq-heading">Questions</h2>
+        <div className="landing-faq">
+          {JIRA_FAQS.map((item) => (
+            <details key={item.q} className="card landing-card">
+              <summary>{item.q}</summary>
+              <ul className="landing-points">
+                {item.lines.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </details>
+          ))}
+        </div>
       </section>
 
       <section className="landing-section" aria-labelledby="jira-limits-heading">

@@ -4,6 +4,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { ProductPreview } from "@/components/ProductPreview";
 import {
   ACCESS,
+  DEFINITION,
   DIFFERENCE,
   EXAMPLES,
   FAQS,
@@ -41,6 +42,7 @@ export default function HomePage() {
             one-line request or a messy ticket, and edits the project on your computer. A developer
             looks once, then puts it live or leaves it there.
           </p>
+          <p className="landing-quiet landing-definition">{DEFINITION}</p>
           <div className="landing-cta">
             <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_hero">
               Create a free workspace

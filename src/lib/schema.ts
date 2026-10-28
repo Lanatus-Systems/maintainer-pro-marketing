@@ -59,17 +59,7 @@ export function homeJsonLd() {
         ],
         publisher: { "@id": `${SITE_URL}/#organization` },
       },
-      {
-        "@type": "FAQPage",
-        mainEntity: FAQS.map((item) => ({
-          "@type": "Question",
-          name: item.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.lines.join(" "),
-          },
-        })),
-      },
+      faqPageJsonLd(FAQS, `${SITE_URL}/`),
     ],
   };
 }
@@ -124,5 +114,19 @@ export function webPageJsonLd(opts: { name: string; description: string; path: s
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#software` },
     publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
+/** FAQPage node built from the visible FAQ items on a page. */
+export function faqPageJsonLd(items: readonly { q: string; lines: readonly string[] }[], url: string) {
+  return {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    url,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.lines.join(" ") },
+    })),
   };
 }

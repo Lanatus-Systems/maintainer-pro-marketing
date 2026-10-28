@@ -1,5 +1,6 @@
 import { POSTS, postPath } from "@/content/blog";
 import { legalPages } from "@/content/legal";
+import { DEFINITION } from "@/content/landing";
 import { brand } from "@/lib/brand";
 import { siteUrl } from "@/lib/site";
 
@@ -10,7 +11,9 @@ export function GET() {
   const lines = [
     `# ${brand.name}`,
     "",
-    "> Let them ask. You decide what goes live.",
+    `> ${DEFINITION}`,
+    "",
+    "Let them ask. You decide what goes live.",
     "",
     `${brand.name} is for product teams. People ask on a live copy of the product. The AI edits the project on a computer the team connects. A developer decides what goes live.`,
     "",
