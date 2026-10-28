@@ -3,7 +3,8 @@ import { IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { brand } from "@/lib/brand";
+import { aasaanWebLayoutMetadata } from "@/lib/aasaanweb";
+import { brand, isAasaanWeb } from "@/lib/brand";
 import { SITE_OPEN_GRAPH } from "@/lib/meta";
 import {
   SITE_DESCRIPTION,
@@ -19,7 +20,7 @@ const plex = IBM_Plex_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+const butterneckMetadata: Metadata = {
   verification: { google: "EOVsihMwIiCq5RoRH3urwZL9tgCnsNHl1SZ7XLL_uGc" },
   metadataBase: new URL(SITE_URL),
   title: {
@@ -54,6 +55,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const metadata: Metadata = isAasaanWeb ? aasaanWebLayoutMetadata : butterneckMetadata;
+
 export const viewport: Viewport = {
   themeColor: brand.themeColor,
   width: "device-width",
@@ -63,7 +66,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
-      lang="en"
+      lang={isAasaanWeb ? "en-IN" : "en"}
       className={plex.className}
       data-app={brand.appName}
       style={{
@@ -73,6 +76,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         ["--accent-kicker" as string]: brand.accentKicker,
       }}
     >
+      {isAasaanWeb ? (
+        <body>
+          {/* The AasaanWeb page renders its own header and footer. GA only when an ID is set for it. */}
+          {children}
+          {process.env.NEXT_PUBLIC_GA_ID ? <Analytics /> : null}
+        </body>
+      ) : (
       <body>
         <a className="skip-link" href="#content">
           Skip to content
@@ -82,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteFooter />
         <Analytics />
       </body>
+      )}
     </html>
   );
 }

@@ -1,3 +1,5 @@
+import { isAasaanWeb } from "@/lib/brand";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { FAQS, JIRA, JIRA_PREVIEW_FAQ } from "@/content/landing";
@@ -21,6 +23,8 @@ export const metadata = pageMeta({
 });
 
 export default function JiraIntegrationPage() {
+  // Butterneck-only page: 404 on the AasaanWeb site.
+  if (isAasaanWeb) notFound();
   return (
     <main id="content" className="landing">
       <JsonLd data={breadcrumbJsonLd("Jira integration", "/integrations/jira")} />
