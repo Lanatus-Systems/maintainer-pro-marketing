@@ -49,7 +49,7 @@ Butterneck never opens a pull request, never merges, and never deploys. A develo
 2. They point it at the project and start the app. Butterneck creates a live preview with a share link.
 3. They choose who can send requests: a list of people, or anyone with the link. People who only look need no account.
 4. The PM opens the link and asks for the change in plain words, on the page it is about.
-5. The coding CLI makes the edit in that folder, and the PM checks it on the preview. If it is wrong, the turn can be stopped and its file changes rolled back.
+5. The coding CLI makes the edit in that folder, and the PM checks it on the preview. If it is wrong, the turn can be stopped and its file changes are usually rolled back (if not, the chat says so).
 6. A developer reviews the result and ships it through the normal process: commit, pull request, CI, deploy.
 
 ## PM runs Claude Code vs PM asks on a preview

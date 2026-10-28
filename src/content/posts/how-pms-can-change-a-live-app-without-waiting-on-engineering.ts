@@ -78,7 +78,7 @@ The PM asks for the change in a chat on a running copy of the app. A coding agen
 2. The PM opens the link. They see the live app with a chat beside it.
 3. The PM types the change: "Make the button say Book a call."
 4. A coding agent the developer already uses (Cursor, Claude Code, or Antigravity) edits the files in that folder. The app hot-reloads and the PM sees the change on the same screen.
-5. The PM keeps going until it is right. If a turn goes wrong, it can be stopped and its file changes rolled back.
+5. The PM keeps going until it is right. If a turn goes wrong, it can be stopped and its file changes usually rolled back.
 6. The developer reads the conversation, checks the diff in their own tools, and publishes it the usual way. Or discards it.
 
 Butterneck never merges, never opens a pull request, and never deploys. A developer decides what goes live.
@@ -135,7 +135,7 @@ No. The agent edits a copy in a folder on the developer's machine. Production ch
 
 ### What if the AI gets it wrong?
 
-Ask again in the chat, or stop the turn and its file changes are rolled back. The developer can also just discard the change.
+Ask again in the chat, or stop the turn and its file changes are usually rolled back (if not, the chat says so). The developer can also just discard the change.
 
 ### Can requests come from Jira instead of chat?
 

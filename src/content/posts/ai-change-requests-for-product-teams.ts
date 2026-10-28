@@ -106,7 +106,7 @@ These are the questions a CTO should ask any AI change request tool. Here are Bu
 - **Where does the agent write?** Only in the folder tied to the private copy. Git worktrees keep in-flight requests off the main checkout.
 - **Can it read secrets?** \`.env\` files and team-added globs are listed as off-limits in the agent's instructions. That is a guardrail, not an enforced block. Keep production secrets off the bridge machine.
 - **What leaves the machine?** The coding CLI sends code context to its own AI provider. Chat messages and preview traffic go through Butterneck's server.
-- **Can a bad change be undone?** Each turn records a baseline. Stopping a turn rolls its file changes back.
+- **Can a bad change be undone?** Each turn records a baseline. Stopping a turn usually rolls its file changes back; if it can't, the chat says so.
 - **Can it ship by itself?** No. There is no code path that pushes, merges, or deploys.
 
 The longer version is in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
