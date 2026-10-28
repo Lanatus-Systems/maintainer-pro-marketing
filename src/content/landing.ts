@@ -64,13 +64,15 @@ export const JIRA = [
       "Sign in with Jira Cloud and choose your site.",
       "Link a Jira project to your app.",
       "Paste Butterneck’s address into Jira, so Jira can tell Butterneck when a ticket is created or updated.",
+      "Map each developer’s Jira account to their computer.",
     ],
   },
   {
     title: "A labeled ticket starts the chat",
     lines: [
       "Add the label butterneck.",
-      "Assign the ticket to someone whose computer has the project.",
+      "Assign it to a teammate whose Jira account is mapped to a computer that has the project.",
+      "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
       "Butterneck opens a private copy of the project, named after the ticket.",
       "The title, description, comments, and attached files become the request.",
     ],
@@ -160,8 +162,9 @@ export const FAQS = [
   {
     q: "Can a Jira ticket start the chat?",
     lines: [
-      "Connect Jira Cloud, and give Jira Butterneck’s address so it can send ticket updates.",
-      "Add the label butterneck, and assign the ticket to someone whose computer has the project.",
+      "Connect Jira Cloud, give Jira Butterneck’s address so it can send ticket updates, and map each developer’s Jira account to their computer.",
+      "Add the label butterneck, and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project.",
+      "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
       "A private copy opens. The title, description, comments, and attached files become the request.",
       "When the AI is done, a short note and a link go back on the ticket.",
       "Updating that same ticket later does not open a second copy.",

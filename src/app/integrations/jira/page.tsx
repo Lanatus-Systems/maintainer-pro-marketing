@@ -30,8 +30,8 @@ export default function JiraIntegrationPage() {
         <p className="landing-kicker">Jira Cloud integration</p>
         <h1>Label a ticket. Get a live preview.</h1>
         <p className="landing-section-lead">
-          Add the label <code>butterneck</code> to a ticket and assign it to someone whose computer
-          has the project. The ticket becomes the request, and the change is built by the developer&apos;s
+          Add the label <code>butterneck</code> to a ticket and assign it to a teammate whose Jira
+          account is mapped to a computer that has the project. The ticket becomes the request, and the change is built by the developer&apos;s
           own AI agent on their computer. A live preview link comes back on the ticket, and the
           requester can keep refining it in plain words. A developer decides what goes live.
         </p>

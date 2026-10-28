@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "Jira to PR with AI, minus the auto-PR: label a ticket, an AI coding agent makes the change on a live copy, a preview link lands on the ticket, and your developer opens the PR.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
   cover: {
@@ -43,11 +44,12 @@ So a useful ticket-to-change flow should give the ticket author a live preview, 
 - Sign in with Jira Cloud and choose your site.
 - Link a Jira project to your app in Butterneck.
 - Paste Butterneck's address into Jira, so Jira can tell Butterneck when a ticket is created or updated.
+- Map each developer's Jira account to their computer.
 
 ### Label a ticket to start
 
 - Add the label \`butterneck\` to a ticket.
-- Assign it to someone whose computer has the project.
+- Assign it to a teammate whose Jira account is mapped to a computer that has the project. If the assignee isn't mapped, nothing starts; the Jira page in Butterneck shows why.
 - Butterneck opens a private copy of the project named after the ticket.
 - The ticket's title, description, comments, and attached files become the request.
 
@@ -110,7 +112,7 @@ It turns a labeled ticket into a working change on a live preview, and posts the
 
 ### How do I trigger it from Jira?
 
-Add the label \`butterneck\` and assign the ticket to someone whose computer has the project.
+Add the label \`butterneck\` and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project. Mapping each developer's Jira account to their computer is part of connecting Jira.
 
 ### Which Jira versions are supported?
 
