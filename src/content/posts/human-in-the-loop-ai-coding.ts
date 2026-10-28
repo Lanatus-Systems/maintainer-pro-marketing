@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "human-in-the-loop-ai-coding",
   title: "Human-in-the-loop AI coding: why Butterneck never merges",
   description:
-    "Butterneck takes AI change requests from product teams but never opens a pull request, merges or deploys. Why a developer stays in the loop.",
+    "Human-in-the-loop AI coding with a gate for the person who asked: they check the change on a live preview, and a developer decides. No auto PR or merge.",
   date: "2026-10-27",
   updated: "2026-10-28",
   author: "The Butterneck team",
@@ -37,6 +37,8 @@ A coding agent's work has four places where a person can step in:
 
 Butterneck puts the human at two of them. The person who asked (the requester) checks the change at the **preview**, on a live copy of the app. A developer decides at **ship**, and publishes it the usual way or leaves it. Butterneck itself never merges, opens a pull request, or deploys.
 
+Most human-in-the-loop setups for coding agents put every gate in the developer's workflow: approving the plan, the commands, the diff, the merge. Those gates matter, but the person who asked for the change usually can't use them. Butterneck adds a gate they can use: they look at the result on a live copy of the app and say whether it's what they meant, before a developer spends time on the code.
+
 ## What "human in the loop" means here
 
 "Human in the loop" gets used for a lot of things. In Butterneck it means one specific thing:
@@ -45,7 +47,7 @@ Butterneck puts the human at two of them. The person who asked (the requester) c
 
 Everything else follows from that line.
 
-- A product manager or another stakeholder types a request on a live copy of the app, or a Jira ticket labeled \`butterneck\` starts the chat.
+- A product manager or another stakeholder types a request on a live copy of the app, or a Jira ticket labeled \`butterneck\` and assigned to someone whose computer has the project starts the chat.
 - A coding assistant running on a developer's own computer edits the connected project folder.
 - The developer reads the conversation, looks at the running app, and publishes the change the way the team already does. Or leaves it.
 
@@ -87,7 +89,7 @@ Butterneck does neither. The change sits in the project on the developer's compu
 
 ### 4. Mistakes stay cheap
 
-When the AI gets it wrong, and sometimes it will, the wrong change stays on one computer. It doesn't land on a shared branch, it doesn't trigger a deploy, and nobody has to revert anything in public. You can stop a turn while it is running and roll back the file changes from that turn.
+When the AI gets it wrong, and sometimes it will, the wrong change stays on one computer. It doesn't land on a shared branch, it doesn't trigger a deploy, and nobody has to revert anything in public. You can stop a turn while it is running and roll back the file changes from that turn. If the rollback can't be completed, for example because a changed file was too large to snapshot, the chat says so.
 
 ![A product manager's request in the Butterneck chat, and the running app updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
@@ -95,7 +97,7 @@ When the AI gets it wrong, and sometimes it will, the wrong change stays on one 
 
 Leaving the merge to a person is the main safeguard. There are a few more, all on the developer's side:
 
-- **The AI stays in the folder you connected.** It works in the project you pointed the bridge at, not the rest of the computer.
+- **The AI is kept to the folder you connected.** Its working directory is the project you pointed the bridge at, and its instructions forbid touching anything outside it. Like the \`.env\` rule, that's a guardrail, not an operating-system sandbox.
 - **You can block paths.** Ignore rules keep the AI out of folders you choose.
 - **\`.env\` is on the ignore list.** The agent is told secret settings files are off limits. That is an instruction, not a hard block, so keep production secrets off the machine.
 - **You choose who can ask.** A list of people, or anyone with the link. Someone who is not allowed can request access, and you decide.
@@ -152,9 +154,27 @@ If you want the details of the sharing side, read [Share your local app with sta
 
 Why ownership matters for AI-written changes, with LinearB's 2026 data on AI PR merge rates and pickup times: [AI pull requests need an owner](/blog/ai-prs-need-an-owner).
 
+## FAQ
+
+### What is human-in-the-loop AI coding?
+
+An AI coding agent proposes and makes changes, and a person approves the steps that matter (the plan, risky actions, the result, the release) before anything reaches users.
+
+### Where does Butterneck put the human?
+
+At two points. The person who asked checks the change on a live preview of the running app. A developer decides whether it ships, and ships it the team's usual way.
+
+### Does Butterneck open pull requests or merge?
+
+No. It never opens a pull request, never merges and never deploys. The AI edits files in the connected project on a developer's computer; the developer decides whether to commit, open a PR, or throw the change away.
+
+### Can a non-developer approve a change on their own?
+
+They can confirm it looks right on the preview, but they can't ship it. Only a developer on your team can make the change live.
+
 ## Try it
 
-Starter is free for one developer and one person who asks for changes. Pro is priced per person per month, with 20% off annual billing. See [pricing](/pricing), or [the FAQ](/#faq) for who publishes and where file changes happen.
+Starter is free for one developer and one person who asks for changes. Pro is USD 19 per person per month, with 20% off annual billing. See [pricing](/pricing), or [the FAQ](/#faq) for who publishes and where file changes happen.
 
 Let them ask. You decide what goes live.
 `,
