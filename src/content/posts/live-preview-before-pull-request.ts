@@ -120,7 +120,7 @@ Butterneck is built around this order: the requester checks on a live preview, t
 - **AI replies carry a confidence label.** When the agent changes something, its reply is tagged from very low to very high, which tells the requester and the developer where to look harder.
 - **Refine, or stop and undo.** The requester keeps asking on the same preview until it's right. A run can be stopped, and that run's file changes are reverted.
 - **You choose who can ask.** Opening the preview and sending requests are separate. Requests can be limited to a list of people, or open to anyone with the link, and someone without access can ask for it.
-- **A developer can reply without starting the agent.** Developer messages in the chat are saved, never sent to the AI.
+- **A developer can reply without starting the agent.** A developer's reply is saved in the chat and doesn't start a run or change any files.
 - **Jira works the same way.** Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket, and a short note with the preview link is posted back. See the [Jira integration](/integrations/jira).
 - **There is no Butterneck pull request.** Butterneck never opens a pull request, never merges and never deploys. The developer reads the conversation, checks the change in their own tools, and publishes it the way the team already does, which can include your normal pull request and branch preview. Or they drop it.
 
