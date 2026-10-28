@@ -2,7 +2,7 @@ import type { BlogPost } from "@/content/blog";
 
 export const post: BlogPost = {
   slug: "jira-ticket-to-pr-with-ai",
-  title: "Jira ticket to pull request with AI, with a live preview first",
+  title: "Jira ticket to pull request with AI: check a live preview before anyone opens the PR",
   description:
     "Jira ticket to pull request with AI: label a ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether a PR is created.",
   date: "2026-10-27",
