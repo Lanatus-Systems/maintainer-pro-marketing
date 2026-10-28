@@ -2,7 +2,7 @@ import { isAasaanWeb } from "@/lib/brand";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
-import { FAQS, JIRA, JIRA_PREVIEW_FAQ } from "@/content/landing";
+import { FAQS, JIRA, JIRA_NO_PR_FAQ, JIRA_PREVIEW_FAQ } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
 import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from "@/lib/schema";
 import { appUrl, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
@@ -10,11 +10,12 @@ import { appUrl, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
 const JIRA_FAQS = [
   JIRA_PREVIEW_FAQ,
   ...FAQS.filter((item) => item.q === "Can a Jira ticket start the chat?"),
+  JIRA_NO_PR_FAQ,
 ];
 
 const PAGE_TITLE = "Jira integration: label a ticket, get a live preview";
 const PAGE_DESCRIPTION =
-  "Label a Jira Cloud ticket butterneck and assign it. The AI works from the ticket in a private copy and posts a preview link back. Nothing merges.";
+  "Label a Jira Cloud ticket and the developer's own AI coding agent builds it on a live preview. The link comes back on the ticket; no PR until a developer decides.";
 
 export const metadata = pageMeta({
   title: PAGE_TITLE,
@@ -51,7 +52,8 @@ export default function JiraIntegrationPage() {
           built by the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity),
           on their computer. A live preview link comes back on the ticket, and the requester can keep
           refining it in plain words. No pull request is opened; a developer decides first what ships,
-          and Butterneck never merges or deploys.
+          and Butterneck never merges or deploys. Each labeled ticket opens its own private copy:
+          Starter has one, Pro (USD 19 per person per month) has 50. A workspace owner on Starter can try Pro free for one month.
         </p>
         <div className="landing-cta">
           <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="jira_page">
@@ -139,8 +141,9 @@ export default function JiraIntegrationPage() {
         </p>
         <ul className="landing-points">
           <li>
-            Jira Coding Agent runs from a Jira automation, makes code changes on a branch, and opens a
-            draft pull request in the repository you pick, for your team to review and merge.
+            Jira Coding Agent runs in a cloud sandbox from a work item or a Jira automation. It can push
+            changes to a branch and open a draft pull request in the repository you pick (a setting), for
+            your team to review and merge.
           </li>
           <li>
             Butterneck gives the person who asked a live preview of the app that they can keep

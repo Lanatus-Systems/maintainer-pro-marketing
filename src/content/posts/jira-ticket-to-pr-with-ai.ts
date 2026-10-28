@@ -94,7 +94,7 @@ We get asked this a lot. Short version, from [human-in-the-loop AI coding](/blog
 
 - **The person asking is often not a developer.** They should approve what they see, not a diff.
 - **Your release process already exists.** Branch names, PR templates, reviewers, CI. A tool that creates PRs has to fit all of it. A developer opening the PR fits by default.
-- **Mistakes stay cheap.** A bad turn can be stopped and rolled back. A wrong change can be thrown away. Nothing has touched your remote.
+- **Mistakes stay cheap.** A bad turn can be stopped and, in most cases, rolled back. A wrong change can be thrown away. Nothing has touched your remote.
 
 There is no code path in Butterneck that pushes, opens a PR, merges, or deploys. If you want PRs created automatically, a PR-generating tool is a better fit. See our [Itera comparison](/blog/itera-alternative) for one example.
 
@@ -114,7 +114,7 @@ The agent reads the title, description, comments, and attachments. Tickets that 
 - \`.env\` files and team-defined globs are on an ignore list given to the agent as an instruction. It is not a hard sandbox, so keep production secrets off the bridge machine.
 - The coding CLI sends prompts and code context to its own AI provider, under your agreement with that provider.
 - Chat messages and preview traffic pass through Butterneck's server.
-- Every turn takes a baseline first, so a stopped turn rolls its file changes back.
+- Every turn takes a baseline first, so a stopped turn usually rolls its file changes back. If the rollback can't be completed, for example because a changed file was too large to snapshot, the chat says so.
 
 More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine) and [human-in-the-loop architecture for AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes).
 
@@ -127,6 +127,10 @@ It turns a labeled ticket into a working change on a live preview, and posts the
 ### How do I trigger it from Jira?
 
 Add the label \`butterneck\` and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project. Mapping each developer's Jira account to their computer is part of connecting Jira.
+
+### Does the AI read the ticket's comments and attachments?
+
+Yes. The ticket's title, description, latest comments and attached files become the request, so a screenshot on the ticket reaches the coding agent. Leave secrets and production data out of the ticket.
 
 ### Which Jira versions are supported?
 
@@ -142,6 +146,6 @@ The Cursor, Claude Code, or Antigravity CLI already installed and signed in on t
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/pricing): the Starter plan is free and allows one private copy at a time (so one ticket or one chat copy). Each labeled ticket opens its own copy, so regular Jira use needs Pro. More at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will label a real ticket together. Or see [pricing](/pricing): the Starter plan is free and allows one private copy at a time (so one ticket or one chat copy). Each labeled ticket opens its own copy, so regular Jira use needs Pro. Pro is USD 19 per person per month, and a workspace owner on Starter can try Pro free for one month. More at [butterneck.com](/).
 `,
 };

@@ -161,6 +161,16 @@ export const JIRA_PREVIEW_FAQ = {
   ],
 } as const;
 
+/** Page-only FAQ for /integrations/jira (K-25). Not shown on the home page. */
+export const JIRA_NO_PR_FAQ = {
+  q: "Can an AI coding agent work a Jira ticket without opening a pull request?",
+  lines: [
+    "Yes. With Butterneck, a labeled ticket goes to the AI coding agent already signed in on the assignee's computer (Cursor, Claude Code or Antigravity). It makes the change in a private copy of the project, and a live preview link is posted back on the ticket.",
+    "The person who wrote the ticket checks the running app and can keep refining it in plain words. Nothing is pushed and no pull request exists yet.",
+    "A developer then reads the conversation and the diff and decides whether to commit it and open a PR the usual way. Butterneck never opens pull requests, merges or deploys.",
+  ],
+} as const;
+
 export const FAQS = [
   {
     q: "What tools let product managers make small changes to a live web app without waiting on engineering?",
