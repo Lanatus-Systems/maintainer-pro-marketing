@@ -76,7 +76,6 @@ export const BILLING_PLANS: BillingPlan[] = [
       "50 GB of preview traffic a month",
       "1 connected computer per person",
       "Everything in Starter",
-      "Shared conversation history",
     ],
   },
   {
