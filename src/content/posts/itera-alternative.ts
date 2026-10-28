@@ -85,7 +85,7 @@ Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticke
 
 Itera lists two plans: Builder at €30 per seat per month with 5 iterations per month, and Unlimited at €100 per seat per month with unlimited iterations. Its site says "One seat per builder. Collaborators are always free." and that it is "Currently free for early partners".
 
-Butterneck has a free Starter plan for one developer and one requester with one private copy. Pro is USD 19 per person per month (also priced in INR, EUR, GBP, AUD, CAD, SGD, and AED), with 20% off annual billing, 50 private copies, and 50 GB of preview traffic per month. You also pay for your own coding agent subscription. Details on [pricing](/pricing).
+Butterneck has a free Starter plan for one developer and one requester with one private copy. Pro is USD 19 per person per month (also priced in INR, EUR, GBP, AUD, CAD, SGD, and AED), with 20% off annual billing, 50 private copies, and 50 GB of preview traffic per month. You also pay for your own coding agent subscription. Details on [pricing](/pricing). A workspace owner on Starter can also start a one-month Pro trial from the Billing page, once per workspace.
 
 ## When Itera is likely the better fit
 
@@ -102,7 +102,7 @@ Be honest with yourself about the kind of change you are shipping.
 - You want the person asking to see the change on the live app, not a ticket status.
 - You want the AI to edit files and stop there. No PRs, no merges, no deploys.
 - You already pay for Cursor, Claude Code, or Antigravity on a team or API plan and want the product team to use it through a connected developer computer.
-- Your requests already live in Jira and you want a label to start the work.
+- Your requests already live in Jira and you want a label and an assignee to start the work, with the preview link posted back on the ticket.
 
 ## When neither is a fit
 
@@ -128,7 +128,7 @@ Itera's site lists Claude Code, Codex, Cursor, and Copilot. Butterneck supports 
 
 ### Can I try Butterneck for free?
 
-Yes. Starter is free for one developer and one person asking for changes.
+Yes. Starter is free for one developer and one person asking for changes, and a workspace owner can start a one-month Pro trial from the Billing page.
 
 ## Try it
 

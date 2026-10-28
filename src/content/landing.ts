@@ -41,7 +41,7 @@ export const STEPS = [
     n: "02",
     title: "Hand the request to the AI",
     lines: [
-      "People on the product team describe the change in chat, on that live copy.",
+      "People on the product team, and other stakeholders you allow, describe the change in chat, on that live copy.",
       "Or add the label butterneck to a Jira ticket and assign it.",
       "That ticket starts the chat on its own.",
     ],
@@ -176,6 +176,7 @@ export const FAQS = [
       "The AI coding agent the developer already uses (Cursor, Claude Code, or Antigravity) runs on the developer’s computer and edits the project. The requester checks the updated preview.",
       "No pull request is opened. A developer decides first. Butterneck itself never opens a pull request, merges, or deploys.",
     ],
+    link: { href: "/blog/live-preview-before-pull-request", text: "How stakeholders review a change before the PR" },
   },
   JIRA_PREVIEW_FAQ,
   {

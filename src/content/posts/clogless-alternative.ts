@@ -75,7 +75,7 @@ Clogless covers more ground: six ticketing tools (Butterneck supports only Jira 
 
 Clogless lists Starter at $99 per month and Team at $489 per month, billed annually, plus Enterprise through sales. Starter includes 1 project or repo and 2 environments; Team includes 4 and 8. AI usage is listed as "Credit / BYOK". We did not see a per-seat price on the page.
 
-Butterneck has a free Starter plan for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. You also pay for your own coding assistant subscription. Details on [pricing](/pricing).
+Butterneck has a free Starter plan for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. You also pay for your own coding assistant subscription. Details on [pricing](/pricing). A workspace owner on Starter can also start a one-month Pro trial from the Billing page, once per workspace.
 
 ## Side by side
 
@@ -88,7 +88,7 @@ Butterneck has a free Starter plan for one developer and one person who asks for
 | Ticketing | Jira, Linear, Trello, monday.com, Notion, Asana | Jira Cloud only |
 | How a ticket starts | Open the ticket in Clogless | Label \`butterneck\` and assign it in Jira |
 | Back on the ticket | Not found on their public pages | A note and a preview link |
-| Pricing | $99/mo Starter, $489/mo Team, billed annually | Free Starter; Pro $19 per person per month |
+| Pricing | $99/mo Starter, $489/mo Team, billed annually | Free Starter; Pro $19 per person per month; one-month Pro trial |
 
 ## When Clogless fits better
 

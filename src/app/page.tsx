@@ -275,6 +275,11 @@ export default function HomePage() {
             <details key={item.q} className="card landing-card">
               <summary>{item.q}</summary>
               <Points lines={item.lines} />
+              {"link" in item && item.link ? (
+                <p>
+                  <a href={item.link.href}>{item.link.text}</a>
+                </p>
+              ) : null}
             </details>
           ))}
         </div>
