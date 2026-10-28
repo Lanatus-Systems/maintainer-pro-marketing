@@ -1,7 +1,7 @@
 import { brand } from "@/lib/brand";
 import { SUPPORT_EMAIL } from "@/lib/site";
 
-export const LEGAL_UPDATED = "September 25, 2026";
+export const LEGAL_UPDATED = "October 28, 2026";
 
 export type LegalBlock = {
   heading: string;
@@ -27,7 +27,7 @@ export const legalPages = {
       {
         heading: "Who we are",
         paragraphs: [
-          "Butterneck is operated by Lanatus. This policy covers the Butterneck app: accounts, workspaces, sandboxes, share previews, and chat.",
+          "Butterneck is operated by Lanatus Systems LLP. This policy covers the Butterneck app: accounts, workspaces, sandboxes, share previews, and chat.",
         ],
       },
       {
@@ -35,14 +35,15 @@ export const legalPages = {
         paragraphs: [
           "Account details you give us, such as your name, email, and workspace. If you sign in with Google, we receive the profile Google shares for that sign-in.",
           "Chat messages, attachments, and sandbox settings you create in the app. Project files stay on the computer you connect. We do not copy your repository to our servers to edit it.",
-          "A share link opens the preview. Who can send is set on each private copy: a chosen list, or anyone with the link. Website hosts start open.",
-          "On our public pages (the home page, our work, and pricing), Google Analytics uses cookies to count visits and see which pages people read. It does not run inside the app or on share previews.",
+          "A share link opens the preview. Who can send is set on each private copy: a chosen list, or anyone with the link. New private copies start with a chosen list.",
+          "On butterneck.com, including the blog, Google Analytics uses cookies to count visits and see which pages people read. It does not run inside the app or on share previews.",
         ],
       },
       {
         heading: "How we use it",
         paragraphs: [
           "To run your workspace, show the preview, and let the connected computer apply chat requests inside the folder you assigned. We do not merge to your repository or deploy for you.",
+          "If you connect an email inbox to a workspace, we read that inbox with the access you grant: Gmail through Google sign-in with read-only Gmail access, or a mailbox over IMAP with the address, server, and password you enter. We store the connection details encrypted, check messages from the senders you allow, and keep the subject and status of each email we act on.",
           "Payment details for a paid plan are handled by the payment provider. We keep the plan and billing status, not your full card number.",
         ],
       },
