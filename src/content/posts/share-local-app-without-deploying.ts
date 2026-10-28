@@ -47,7 +47,7 @@ A tunnel gives your local port a public address. That solves the "can they open 
 
 ### Preview deploys per branch
 
-Very good when you already have them. They still need a push and a build, and they still split the conversation: the preview is in one place, the comments are in another.
+Very good when you already have them. They still need a push and a build, and they still split the conversation: the preview is in one place, the comments are in another. We compare the two orders in [live preview before the PR](/blog/live-preview-before-pull-request).
 
 ## What a stakeholder actually needs
 

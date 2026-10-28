@@ -13,6 +13,7 @@ import { post as clogless } from "@/content/posts/clogless-alternative";
 import { post as claudeCodePms } from "@/content/posts/claude-code-for-product-managers";
 import { post as changeRequestTemplate } from "@/content/posts/how-to-write-a-change-request-for-ai";
 import { post as pmPilot } from "@/content/posts/pm-change-request-pilot-proposal";
+import { post as previewBeforePr } from "@/content/posts/live-preview-before-pull-request";
 
 export type BlogPost = {
   slug: string;
@@ -35,7 +36,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
