@@ -1,4 +1,4 @@
-import { SITE_OG_DESCRIPTION, SITE_TITLE, siteUrl, X_HANDLE } from "@/lib/site";
+import { SITE_DESCRIPTION, SITE_TITLE, siteUrl, X_HANDLE } from "@/lib/site";
 import type { Metadata } from "next";
 import { brand } from "@/lib/brand";
 
@@ -8,7 +8,8 @@ export const SITE_OPEN_GRAPH: NonNullable<Metadata["openGraph"]> = {
   siteName: brand.name,
   locale: "en_US",
   title: SITE_TITLE,
-  description: SITE_OG_DESCRIPTION,
+  // Same as the meta description, so link previews carry the quotable definition.
+  description: SITE_DESCRIPTION,
   images: [
     {
       url: "/og.png",

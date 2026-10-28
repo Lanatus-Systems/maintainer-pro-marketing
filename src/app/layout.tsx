@@ -7,7 +7,6 @@ import { brand } from "@/lib/brand";
 import { SITE_OPEN_GRAPH } from "@/lib/meta";
 import {
   SITE_DESCRIPTION,
-  SITE_OG_DESCRIPTION,
   SITE_TITLE,
   SITE_URL,
   X_HANDLE,
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
     site: X_HANDLE,
     creator: X_HANDLE,
     title: SITE_TITLE,
-    description: SITE_OG_DESCRIPTION,
+    description: SITE_DESCRIPTION,
     images: ["/og.png"],
   },
   icons: {

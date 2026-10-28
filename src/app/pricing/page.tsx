@@ -42,9 +42,9 @@ export default function PricingPage() {
           </li>
           <li>Butterneck doesn’t run its own model.</li>
           <li>
-            For startup and SaaS product teams: there’s nothing new to host or govern. Butterneck
-            runs on a developer’s computer, with your app as it already runs there and the coding
-            agent your developer already uses.
+            For startup and SaaS product teams: no new platform to adopt and nothing new to host.
+            The AI coding agent your developer already uses does the work on their computer, on your
+            app as it already runs there.
           </li>
         </ul>
         <div className="landing-cta">
