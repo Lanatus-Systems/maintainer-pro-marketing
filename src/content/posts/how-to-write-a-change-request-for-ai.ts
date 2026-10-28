@@ -3,6 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "how-to-write-a-change-request-for-ai",
   title: "How to write a change request for an AI coding agent: a template for PMs",
+  seoTitle: "AI change request template: 5 lines for PMs",
   description:
     "A five-line AI change request template for PMs and designers, with before-and-after examples and what to leave to a developer.",
   date: "2026-10-28",
@@ -16,11 +17,11 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
+> **In short:** a good change request for an AI coding agent fits in five lines. Where (the page and the element, by its visible text), Now (what it says today, quoted exactly), Want (the exact new text or behavior), Keep (what must not change) and Check (how you'll know it's right). Send one change per message, and leave login, billing, data and secrets to a developer. In Butterneck you type the request in a chat on a live preview, the Claude Code, Cursor or Antigravity CLI already signed in on a developer's computer makes the edit, and you check it on the same preview. No pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
+
 Most AI change requests that go wrong were not hard changes. The AI changed the wrong button, rewrote a sentence nobody asked it to touch, or made the page "cleaner" in a way nobody meant. The fix is usually in how the request was written, not in the model.
 
 This guide is for product managers, designers, support leads and anyone else who asks for changes to a product they don't code. It gives you a five-line template, before-and-after examples, and a short list of what to leave to a developer. We make Butterneck, where people type these requests into a chat on a live preview of the app, so the last section covers what Butterneck adds to a request for you. The template works with any AI coding agent.
-
-> **Writing a change request for an AI coding agent, in short:** Most requests that go wrong miss one of four things: where the change is, what it says now, what "better" means, or what must stay. Write five lines (Where, Now, Want, Keep, Check), send one change per message, and leave login, permissions, billing, data changes and secrets to a developer. In Butterneck you type the request in a chat on a live preview, the Claude Code, Cursor or Antigravity CLI already signed in on a developer's computer makes the edit, and you check it on the same preview. No pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
 
 ## Why AI change requests go wrong
 
@@ -65,7 +66,7 @@ The **Check** line is for you as much as for the agent. If you can't say how you
 
 | Request | Vague | Clear |
 |---|---|---|
-| Copy change | Make the hero text punchier. | Home page, the big heading at the top. Now: "Houseplants, pots, and advice from a corner shop on Elm Street." Want: "Houseplants and advice from a corner shop." Keep the font and size. |
+| Copy change | Make the hero text punchier. | Home page, the line under the shop name at the top. Now: "Houseplants, pots, and advice from a corner shop on Elm Street." Want: "Houseplants and advice from a corner shop." Keep the font and size. |
 | Button label | Fix the CTA. | Pricing page, the button under the Pro plan. Change "Start free trial" to "Book a call". Don't change the Starter button. |
 | Color | Make it look more premium. | Change the green accent color to deep navy everywhere it is used. Keep the text colors as they are. |
 | New item | Add the fig. | Add a fiddle-leaf fig for $54 in the indoor category, with the same layout as the other plants. Note: "Big leaves, likes bright light." |
@@ -109,7 +110,7 @@ In Butterneck you type the request into a chat on a live preview of the running 
 
 What Butterneck does not do: it doesn't know which element you mean unless you name it, and it doesn't know what you agreed in a meeting. Those parts are still yours to write.
 
-If the request is unclear, the agent is told it may ask one short question instead of guessing. If a turn goes wrong, it can be stopped and that turn's file changes rolled back.
+If the request is unclear, the agent is told it may ask one short question instead of guessing. If a turn goes wrong, it can be stopped and that turn's file changes are usually rolled back; if the rollback can't be completed, the chat says so.
 
 ## After you send it
 
@@ -135,7 +136,7 @@ No. The agent finds the code. Quote the exact text on the screen and say which p
 
 ### What if the AI changes the wrong thing?
 
-Say exactly what is wrong in your next message. In Butterneck, a turn can also be stopped and its file changes rolled back. Nothing goes live until a developer publishes it.
+Say exactly what is wrong in your next message. In Butterneck, a turn can also be stopped, and its file changes are usually rolled back. Nothing goes live until a developer publishes it.
 
 ### Can I use the same template in a Jira ticket?
 
