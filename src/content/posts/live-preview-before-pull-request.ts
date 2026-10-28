@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "Preview an AI-made change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams"],
   cover: {
@@ -21,6 +22,8 @@ A PM asks for a small change: shorter copy on the pricing page, a clearer empty 
 Everything before that sentence was done correctly, and it still has to be done again. The code review checked the code. Nobody had checked the thing the PM actually cared about, because there was nothing for the PM to look at until the pull request existed.
 
 This post is about moving that check earlier: the person who asked looks at the change on a live preview before anyone opens a pull request. We cover why it helps the PM and developer handoff, what to check on the preview, who decides what, and how it compares with PR preview environments. We make Butterneck, which works this way, so we describe its flow at the end. The checklist works with any setup.
+
+> **Live preview before the PR, in short:** The person who asked for a change checks it on a running copy of the app before anyone opens a pull request, so they can confirm "this is what I meant" while the change is still cheap, and code review comes after. It does not replace code review. In Butterneck, the preview is the app running on the developer's computer, the coding agent they already use makes the change, no pull request is opened, and a developer decides first what ships.
 
 ## What "live preview before the PR" means
 

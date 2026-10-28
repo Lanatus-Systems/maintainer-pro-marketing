@@ -23,6 +23,8 @@ Most teams have a list of these paper cuts: wrong labels, unclear empty states, 
 
 This post is about how a PM can change a live app without waiting on engineering, and without engineering losing control of what ships.
 
+> **Changing a live app as a PM, in short:** Small changes wait because of the relay around them (tickets, screenshots, sprints, staging deploys), not because of the code. With Butterneck, the PM asks in a chat on a live copy of the app, a coding agent the developer already uses edits the files on the developer's computer, and the PM sees the change on the same screen. No pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
+
 ## Why small product changes sit in the backlog (it isn't the code)
 
 The change usually takes a developer a few minutes. The wait comes from everything around it:

@@ -21,6 +21,8 @@ Search for "Claude Code for product managers" or "Cursor for PMs" and most guide
 
 This post covers both. We make Butterneck, which takes the second route, so we are not neutral. We have tried to be clear about when a PM should just run Claude Code themselves.
 
+> **Claude Code for product managers, in short:** A PM can run Claude Code or Cursor themselves, which means repo access, a paid AI seat, usually a local setup, and opening pull requests. The other way: the PM asks in plain words on a live preview, and the Claude Code, Cursor or Antigravity CLI already signed in on the developer's computer makes the change. With Butterneck no pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
+
 ## The usual advice: give the PM their own coding assistant
 
 The typical guide goes like this. The PM gets access to the repository, sets up Claude Code (in a terminal, an IDE, the desktop app or the web) or Cursor, runs the project, asks the assistant for a change, and then commits it and opens a pull request for a developer to review.

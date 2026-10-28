@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback and preview links.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
   cover: {
@@ -86,6 +87,20 @@ Worth being exact here, because "runs locally" is easy to over-read:
 - The coding CLI sends prompts and code context to its own AI provider, the same as when you use it directly. That is governed by your agreement with Cursor, Anthropic, or Google.
 - Preview traffic (the rendered app) passes through the Butterneck server so the share link works.
 - Chat messages travel through the Butterneck server to reach the bridge.
+
+## FAQ
+
+### Does Butterneck run the coding agent on its own servers?
+
+No. The agent runs on a developer's own computer, using the coding CLI already signed in there: Cursor (\`agent\`), Claude Code (\`claude\`) or Antigravity (\`agy\`). Butterneck does not run its own model.
+
+### Is it a real sandbox?
+
+Each private copy is tied to one folder the developer chooses, which can be a git worktree under \`.worktrees/\`. The folder boundary and the \`.env\` ignore list are guardrails: instructions to the agent plus the CLI's workspace setting, not an OS-level sandbox like a container or a separate user account. Keep production secrets off the machine that runs the bridge.
+
+### Can a bad turn be undone?
+
+In most cases, yes. Before each turn the folder's baseline is captured, with git in a git repo or by copying files otherwise. Stopping the turn aborts the agent and puts the files back to that baseline. If the restore can't be completed, the chat says so.
 
 ## Try it
 

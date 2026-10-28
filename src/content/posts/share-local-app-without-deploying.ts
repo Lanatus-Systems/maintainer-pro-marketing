@@ -135,6 +135,20 @@ It is not the right tool when:
 4. Send the link with one sentence on what to look at.
 5. When the change looks right, publish it the way you always do.
 
+## FAQ
+
+### Can I share a local app with stakeholders without deploying it?
+
+Yes. With Butterneck, the bridge on your computer starts the app and it gets a public share link. Requests to that link are relayed to the app on your computer, so there is no staging deploy, VPN or screen share, and hot reload keeps working.
+
+### Do stakeholders need an account to view the preview?
+
+No. Looking does not need an account. You decide separately who can ask for changes: a list of people, or anyone with the link. If the link is closed, a visitor can ask for access.
+
+### Does preview traffic go through Butterneck?
+
+Yes. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use. Nothing is merged, no pull request is opened, and nothing is deployed until someone on your team publishes the change the way you already do.
+
 ## Try it
 
 Starter is free for one developer and one person who asks for changes, with one private copy and 1 GB of preview traffic a month. Pro is USD 19 per person per month and adds more copies and more traffic, and a workspace owner on Starter can try Pro for one month from the Billing page. See [pricing](/pricing) for the details, or read [how it works](/#how-it-works) on the home page.

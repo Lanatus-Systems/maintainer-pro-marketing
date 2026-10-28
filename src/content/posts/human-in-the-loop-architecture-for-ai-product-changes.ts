@@ -6,6 +6,7 @@ export const post: BlogPost = {
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
+  updated: "2026-10-28",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
   cover: {
@@ -93,6 +94,20 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 - It needs a local project folder. Teams living only in cloud IDEs aren't a fit.
 - It doesn't replace developers. It assumes one is there and decides.
 - Your code context still goes to whichever AI provider your coding CLI uses, and preview traffic passes through Butterneck's relay. "Local" means the edits and the runtime are local, not that nothing leaves the machine.
+
+## FAQ
+
+### What is a human-in-the-loop architecture for AI product changes?
+
+People who can't read the diff ask a coding agent for changes on the running product and see the result on a live preview before it is real, but only a developer can make a change live. In Butterneck the agent edits files in a folder on the developer's computer, and there is no push, pull request, merge or deploy in the bridge or chat server.
+
+### Is the coding agent sandboxed?
+
+Not by the operating system. The file-access boundaries and the \`.env\` ignore list are guardrails: instructions to the agent plus the CLI's workspace setting, and the CLIs run with their interactive permission prompts skipped. If you need hard isolation, run the bridge on a machine or account that has no production secrets. Each turn is snapshotted first, so a stopped turn can be rolled back.
+
+### Does anything leave the developer's machine?
+
+Yes. Code context goes to whichever AI provider your coding CLI uses, and preview traffic and chat messages pass through Butterneck's server. The edits and the running app are on the developer's computer.
 
 ## Closing
 
