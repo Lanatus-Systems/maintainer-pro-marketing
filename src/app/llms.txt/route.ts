@@ -22,7 +22,7 @@ export function GET() {
     ...Object.values(legalPages).map((p) => `- ${p.title}: ${siteUrl(p.path)}`),
     "",
     "## Blog posts",
-    ...POSTS.map((p) => `- ${p.title}: ${siteUrl(postPath(p.slug))}`),
+    ...POSTS.map((p) => `- [${p.title}](${siteUrl(postPath(p.slug))}): ${p.description}`),
     "",
     "The product app (signup, login, workspaces) is at https://app.butterneck.com.",
     "",

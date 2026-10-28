@@ -14,15 +14,16 @@ import {
 import { SITE_OPEN_GRAPH } from "@/lib/meta";
 import { homeJsonLd } from "@/lib/schema";
 import { DemoVideo } from "@/components/DemoVideo";
-import { appUrl, SITE_DESCRIPTION, SITE_TITLE, WALKTHROUGH_URL } from "@/lib/site";
+import { appUrl, SITE_DESCRIPTION, SITE_TITLE, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: SITE_TITLE },
   description: SITE_DESCRIPTION,
-  alternates: { canonical: "/" },
+  // Absolute, with the trailing slash the sitemap uses for the home URL.
+  alternates: { canonical: siteUrl("/") },
   openGraph: {
     ...SITE_OPEN_GRAPH,
-    url: "https://www.butterneck.com",
+    url: siteUrl("/"),
   },
 };
 

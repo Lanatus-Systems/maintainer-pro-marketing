@@ -1,4 +1,4 @@
-import { SITE_OG_DESCRIPTION, SITE_TITLE, X_HANDLE } from "@/lib/site";
+import { SITE_OG_DESCRIPTION, SITE_TITLE, siteUrl, X_HANDLE } from "@/lib/site";
 import type { Metadata } from "next";
 import { brand } from "@/lib/brand";
 
@@ -29,16 +29,18 @@ export function pageMeta(opts: {
 }): Metadata {
   const image = opts.image ?? "/og.png";
   const ogTitle = `${opts.title} — ${brand.name}`;
+  // Self-referencing absolute canonical on the www host, same form as the sitemap URL.
+  const url = siteUrl(opts.path);
   return {
     title: opts.title,
     description: opts.description,
-    alternates: { canonical: opts.path },
+    alternates: { canonical: url },
     openGraph: {
       type: "website",
       siteName: brand.name,
       title: ogTitle,
       description: opts.description,
-      url: opts.path,
+      url,
       images: [{ url: image, alt: opts.imageAlt ?? ogTitle }],
     },
     twitter: {

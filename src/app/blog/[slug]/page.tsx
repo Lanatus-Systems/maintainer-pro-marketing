@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
-  const path = postPath(post.slug);
+  const path = siteUrl(postPath(post.slug));
   return {
     title: post.title,
     description: post.description,
