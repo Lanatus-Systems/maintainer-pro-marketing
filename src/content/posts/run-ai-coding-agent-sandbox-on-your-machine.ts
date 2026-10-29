@@ -28,7 +28,7 @@ This post walks through how that works and what the guardrails actually are. Whe
 - **The chat server.** Runs in-process with the bridge for each connected folder. When a request arrives, it builds a prompt and starts the coding CLI as a child process.
 - **The chat widget.** A script embedded on the live preview, so the person asking types next to the screen they mean.
 
-The coding CLI is invoked in non-interactive print mode, one turn at a time. Cursor's agent is started with \`--print\`, \`--trust\`, \`--force\` and \`--workspace <folder>\`. Claude Code gets \`--print\`, \`--dangerously-skip-permissions\` and its own \`--system-prompt\`. Antigravity runs with \`--mode accept-edits\`, \`--dangerously-skip-permissions\` and \`--add-dir <folder>\`.
+The coding CLI is invoked in non-interactive print mode, one turn at a time. For example, Cursor's agent is started with \`--print\`, \`--trust\`, \`--force\` and \`--workspace <folder>\`. Claude Code gets \`--print\`, \`--dangerously-skip-permissions\` and its own \`--system-prompt\`. Antigravity runs with \`--mode accept-edits\`, \`--dangerously-skip-permissions\` and \`--add-dir <folder>\`.
 
 Those flags matter. They skip the CLIs\' own permission prompts, because nobody is at the terminal to click "allow". Anthropic\'s own advice for Claude Code in this mode is to "Always run \`--dangerously-skip-permissions\` sessions inside a container, a VM, or the sandbox runtime" ([Claude Code docs](https://code.claude.com/docs/en/sandbox-environments)). Butterneck doesn\'t add that boundary for you, so the guardrails below keep a turn in its lane, and the computer you connect is the real boundary.
 
