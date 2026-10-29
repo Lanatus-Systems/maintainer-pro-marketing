@@ -18,7 +18,7 @@ export const post: BlogPost = {
   body: `
 If you are looking at Itera and wondering whether there is an alternative that fits your team better, this post compares Itera and Butterneck side by side. We make Butterneck, so we are not neutral. We have tried to stick to what each product says publicly, and to be clear about where Itera may be the better pick.
 
-Everything about Itera below comes from its public website, [iteradev.ai](https://iteradev.ai), and its [customer docs](https://docs.iteradev.ai/), as read on October 27–29, 2026. Products change. Check their site for the current details.
+Everything about Itera below comes from its public website, [iteradev.ai](https://iteradev.ai), and the customer docs it published, as read on October 27–29, 2026. Products change. Check their site for the current details.
 
 > **Itera vs Butterneck, in short:** Itera takes a change from idea through design and engineering scoping to a written brief, and a coding agent turns it into an AI-generated pull request. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, no pull request is opened, and a developer decides first what ships.
 
