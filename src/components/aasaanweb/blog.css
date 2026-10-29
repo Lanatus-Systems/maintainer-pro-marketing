@@ -1,0 +1,150 @@
+/* AasaanWeb blog (/blog on aasaanweb.butterneck.com). Uses the .studio tokens from aasaanweb.css. */
+.aw-blog-hero h1 {
+  max-width: 16ch;
+}
+
+.aw-blog-empty {
+  margin: 2rem auto 0;
+  max-width: 760px;
+  padding: 3rem 2rem 2.6rem;
+  border-radius: 32px;
+  text-align: center;
+  background:
+    radial-gradient(420px 180px at 50% 0%, rgb(0 201 175 / 14%), transparent 70%),
+    var(--card);
+  border: 1px solid rgb(0 201 175 / 18%);
+  box-shadow: 0 24px 60px rgb(9 31 65 / 8%);
+}
+.aw-blog-empty h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+.aw-blog-empty > p:not(.studio-kicker) {
+  margin: 0 auto 1.6rem;
+  max-width: 52ch;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.aw-blog-empty .studio-close-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.aw-blog-empty-art {
+  position: relative;
+  width: 168px;
+  height: 120px;
+  margin: 0 auto 1.6rem;
+}
+.aw-blog-empty-card {
+  position: absolute;
+  inset: 0 12px 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 28px rgb(9 31 65 / 10%);
+}
+.aw-blog-empty-card-back {
+  inset: 10px 0 0 14px;
+  background: var(--tint);
+  border-color: rgb(0 201 175 / 25%);
+  box-shadow: none;
+}
+.aw-blog-empty-dots {
+  display: flex;
+  gap: 5px;
+}
+.aw-blog-empty-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dot-red);
+}
+.aw-blog-empty-dots i:nth-child(2) { background: var(--dot-yellow); }
+.aw-blog-empty-dots i:nth-child(3) { background: var(--accent); }
+.aw-blog-empty-line {
+  display: block;
+  height: 8px;
+  width: 70%;
+  border-radius: 99px;
+  background: rgb(9 31 65 / 10%);
+}
+.aw-blog-empty-line-wide { width: 90%; height: 10px; background: var(--ink); opacity: 0.85; }
+.aw-blog-empty-line-short { width: 45%; }
+.aw-blog-empty-pen {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 1.2rem;
+  box-shadow: 0 8px 20px rgb(0 201 175 / 30%);
+}
+
+.aw-blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.studio a.aw-blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.studio a.aw-blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgb(9 31 65 / 10%);
+}
+.aw-blog-card h2 { margin: 0.2rem 0 0.6rem; font-size: 1.35rem; }
+.aw-blog-card p { margin: 0 0 1rem; color: var(--muted); line-height: 1.55; }
+.aw-blog-read { margin-top: auto; color: var(--accent-ink); font-weight: 650; }
+.aw-blog-meta { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
+.aw-blog-post article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.aw-blog-post article header { padding: 1.4rem 0 1.6rem; border-bottom: 1px solid var(--line); margin-bottom: 1.6rem; }
+.aw-blog-post h1 { margin: 0 0 0.8rem; font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.12; }
+.aw-blog-crumbs { max-width: 720px; margin: 2.6rem auto 0; color: var(--muted); font-size: 0.92rem; }
+.aw-blog-draft {
+  max-width: 720px;
+  margin: 1.6rem auto 0;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: #fff6dd;
+  border: 1px solid var(--dot-yellow);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.aw-post-body { font-size: 1.08rem; line-height: 1.75; color: var(--ink); }
+.aw-post-body h2 { margin: 2.2rem 0 0.8rem; font-size: 1.6rem; line-height: 1.25; }
+.aw-post-body h3 { margin: 1.8rem 0 0.6rem; font-size: 1.25rem; }
+.aw-post-body p, .aw-post-body ul, .aw-post-body ol { margin: 0 0 1.1rem; }
+.aw-post-body ul, .aw-post-body ol { padding-left: 1.4rem; }
+.aw-post-body li { margin: 0.35rem 0; }
+.aw-post-body li::marker { color: var(--accent-ink); font-weight: 700; }
+.aw-post-body a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
+.aw-post-body blockquote { margin: 0 0 1.1rem; padding: 0.6rem 1rem; border-left: 4px solid var(--accent); background: var(--tint); border-radius: 0 12px 12px 0; }
+.aw-blog-post .studio-close { max-width: 900px; margin-left: auto; margin-right: auto; }

@@ -4,6 +4,7 @@ import { LEGAL_UPDATED, legalPages } from "@/content/legal";
 import { AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
 import { AASAANWEB_LEGAL, AASAANWEB_LEGAL_UPDATED } from "@/content/aasaanweb-legal";
 import { isAasaanWeb } from "@/lib/brand";
+import { AASAANWEB_PUBLISHED_POSTS, aasaanWebPostPath } from "@/content/aasaanweb-blog";
 import { siteUrl } from "@/lib/site";
 
 /**
@@ -19,14 +20,31 @@ function latestPostDate(): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // AasaanWeb: the same public pages as aasaan.butterneck.com.
+  // AasaanWeb: the same public pages as aasaan.butterneck.com, minus the Jira legal pages,
+  // plus the blog. Drafts (draft: true in src/content/aasaanweb-blog.ts) never appear here.
   if (isAasaanWeb) {
     const legalModified = new Date(`${AASAANWEB_LEGAL_UPDATED} 00:00:00 UTC`);
+    const posts = AASAANWEB_PUBLISHED_POSTS;
+    const latestPost = posts.map((p) => p.updated ?? p.date).sort().at(-1);
     return [
       { url: siteUrl("/"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 1 },
       { url: siteUrl("/work"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 0.8 },
       { url: siteUrl("/pricing"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 0.8 },
-      ...Object.values(AASAANWEB_LEGAL).map((page) => ({
+      {
+        url: siteUrl("/blog"),
+        lastModified: new Date(latestPost ?? AASAANWEB_HOME_UPDATED),
+        changeFrequency: "weekly",
+        priority: 0.7,
+      },
+      ...posts.map((p) => ({
+        url: siteUrl(aasaanWebPostPath(p.slug)),
+        lastModified: new Date(p.updated ?? p.date),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      })),
+      ...Object.values(AASAANWEB_LEGAL)
+        .filter((page) => !page.path.startsWith("/jira/"))
+        .map((page) => ({
         url: siteUrl(page.path),
         lastModified: legalModified,
         changeFrequency: "yearly" as const,

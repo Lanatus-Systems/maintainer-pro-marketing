@@ -7,18 +7,26 @@ import { formatDate, formatUpdatedDate, getPost, POSTS, postPath, readingMinutes
 import { brand, isAasaanWeb } from "@/lib/brand";
 import { postFaqJsonLd } from "@/lib/schema";
 import { appUrl, SITE_URL, siteUrl, X_HANDLE } from "@/lib/site";
+import { AasaanWebBlogPost, aasaanWebPostMeta } from "@/components/aasaanweb/AasaanWebBlog";
+import { AASAANWEB_BLOG_PREVIEW, AASAANWEB_ROUTABLE_POSTS } from "@/content/aasaanweb-blog";
+import { getAasaanWebPost } from "@/lib/aasaanweb-blog";
 
 type Params = { params: Promise<{ slug: string }> };
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  if (isAasaanWeb) return [];
+  // AasaanWeb: published posts only (drafts too under `next dev` with AASAANWEB_BLOG_PREVIEW=1).
+  if (isAasaanWeb) return AASAANWEB_ROUTABLE_POSTS.map((p) => ({ slug: p.slug }));
   return POSTS.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
+  if (isAasaanWeb) {
+    const awPost = getAasaanWebPost(slug);
+    return awPost ? aasaanWebPostMeta(awPost, AASAANWEB_BLOG_PREVIEW) : {};
+  }
   const post = getPost(slug);
   if (!post) return {};
   const path = siteUrl(postPath(post.slug));
@@ -51,9 +59,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Params) {
-  // Butterneck-only page: 404 on the AasaanWeb site.
-  if (isAasaanWeb) notFound();
   const { slug } = await params;
+  if (isAasaanWeb) {
+    const awPost = getAasaanWebPost(slug);
+    if (!awPost) notFound();
+    return <AasaanWebBlogPost post={awPost} preview={AASAANWEB_BLOG_PREVIEW} />;
+  }
   const post = getPost(slug);
   if (!post) notFound();
   const url = siteUrl(postPath(post.slug));
