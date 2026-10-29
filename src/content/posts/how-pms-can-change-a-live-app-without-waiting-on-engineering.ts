@@ -139,7 +139,7 @@ Ask again in the chat, or stop the turn and its file changes are usually rolled 
 
 ### Can requests come from Jira instead of chat?
 
-Yes. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A preview link is posted back on the ticket. See [From Jira ticket to reviewable change with AI](/blog/jira-ticket-to-pr-with-ai).
+Yes. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A preview link is posted back on the ticket. See [Jira ticket to pull request with AI](/blog/jira-ticket-to-pr-with-ai).
 
 ### Why not use a tool that opens the pull request for you?
 
