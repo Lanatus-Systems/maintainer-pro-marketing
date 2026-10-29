@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table) (Hexby checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
@@ -79,7 +79,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 **Handle Studio** — "Design directly in production code." It's free, open source, needs no account, and works with the agents designers and developers already use. The trade-off is that the person making the change installs and runs it (Studio needs macOS 13+ on Apple Silicon). Good pick for designers who are comfortable running a local repo.
 
-**Hexby** — "Your codebase, turned into a design canvas — powered by your AI agents." A designer or PM opens the project in Hexby's desktop app on their own computer, with a coding agent installed and signed in there, and refines the real screens on a canvas. Teammates review the before-and-after in a browser without installing anything, and an approved change is handed to developers as a GitHub pull request. It's free during its beta, and AI usage stays on your own agent account. Good pick for designers and PMs who can run the project locally and want a visual review before the PR.
+**Hexby** — "Your codebase, turned into a design canvas — powered by your AI agents." A designer or PM opens the project in Hexby's desktop app on their own computer, with a coding agent installed and signed in there, and refines the real screens on a canvas. Teammates review the before-and-after in a browser without installing Hexby, and an approved change is handed to developers as a GitHub pull request. It's free during its beta, and it uses your own agent account, since Hexby doesn't include AI usage. Good pick for designers and PMs who can run the project locally and want a visual review before the PR.
 
 **Layrr** — "Point, click, and edit your running web app." A free, MIT-licensed proxy in front of your local dev server that uses Claude Code, Codex CLI or Gemini and "commits successful edits with a [layrr] prefix". Whoever runs it needs the repo, and its last release was in May 2026. Good pick for developers who want a free visual overlay on their own machine.
 
