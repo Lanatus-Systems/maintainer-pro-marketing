@@ -88,7 +88,7 @@ export function PageUrlTags({ path }: { path: string }) {
   );
 }
 
-const ORG_ID = "https://www.butterneck.com/#organization";
+export const ORG_ID = "https://www.butterneck.com/#organization";
 
 /** WebSite + SoftwareApplication, as in brand-data.ts. No offers block. */
 export function aasaanWebJsonLd() {

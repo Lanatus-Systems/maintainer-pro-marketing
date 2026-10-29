@@ -11,6 +11,8 @@ Most small business owners in India do not need a big website. You need one clea
 
 This guide walks through the whole thing in plain steps. You will not need to write code, and you will not need to learn design software.
 
+**Quick answer:** You can create a small business website in India without coding by starting with one clear page. Decide what visitors should do, gather your name, phone and WhatsApp number, address, hours and real photos, and have the page built from that. Check it on a preview on your phone, put it online, and keep it up to date.
+
 ## Step 1: Decide what the page is for
 
 Before you think about colours or fonts, answer one question: what should a visitor do after reading your page?
@@ -108,3 +110,17 @@ Once it is live, put the link everywhere customers already find you: your WhatsA
 ## Start with one page
 
 You do not need to know how websites are built to have a good one. You need clear information about your business and a way to keep it current. If you would like the page made from what you tell us, and to change it yourself on a preview, [start your page on AasaanWeb](/).
+
+## Questions
+
+### Can I make a business website without coding?
+
+Yes. You need clear information about your business and a way to keep it current, not knowledge of how websites are built. Tools like AasaanWeb take what you tell them about the business, in plain words, and turn it into a complete landing page.
+
+### What should a one-page small business website include?
+
+Your business name and a one-line description at the top, call and WhatsApp buttons that work on a phone, your address, landmark and opening hours, real photos, and your main products or services.
+
+### How do I keep my website up to date?
+
+Check the page whenever something changes: a product added or dropped, festival or seasonal timings, new photos of recent work, or a new phone number or address. Choose a setup where you can describe the fix yourself, see it on a preview, and publish when it looks right.

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell, START_URL } from "@/components/aasaanweb/AasaanWebShell";
 import { Reveal } from "@/components/aasaanweb/Reveal";
-import { aasaanWebSubpageMeta } from "@/lib/aasaanweb";
+import { ORG_ID, aasaanWebSubpageMeta } from "@/lib/aasaanweb";
 import { isAasaanWeb } from "@/lib/brand";
+import { siteUrl } from "@/lib/site";
 import "../../aasaanweb-home/aasaanweb.css";
 
 /**
@@ -38,10 +40,37 @@ const STEPS = [
   },
 ];
 
+/** Offer structured data; text is taken from the visible page. Keep the prices in step with the copy above. */
+function pricingJsonLd() {
+  const url = siteUrl("/pricing");
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: "AasaanWeb landing page with 15 days of chatbot changes",
+    provider: { "@id": ORG_ID },
+    areaServed: "IN",
+    description:
+      "We build the page, you use the chatbot for 15 days, and the ₹5,000 is due after that. Hosting and the domain name are not included; we help with the deployment.",
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Page plus 15 days of changes",
+        price: "5000",
+        priceCurrency: "INR",
+        description: "Paid at the end, after the page is finished and the 15 days are over.",
+        url,
+      },
+      { "@type": "Offer", name: "5 more days of chatbot changes", price: "500", priceCurrency: "INR", url },
+    ],
+  };
+}
+
 export default function AasaanWebPricingPage() {
   if (!isAasaanWeb) notFound();
   return (
     <AasaanWebShell current="pricing">
+      <JsonLd data={pricingJsonLd()} />
       <main id="content">
         <section className="studio-work-hero studio-price-hero">
           <p className="studio-kicker">Pricing</p>

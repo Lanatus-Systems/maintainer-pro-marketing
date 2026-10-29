@@ -11,6 +11,8 @@ A small business website has one job: help a visitor understand what you do and 
 
 Whether you run a shop, a salon, a tuition centre, a clinic or a small manufacturing unit, these seven things matter most. Use this as a checklist for a new page, or to review the one you already have.
 
+**Quick answer:** Every small business website needs seven things: a headline that says what you do and where, a reason to choose you, your products or services in plain words, real photos, real customer quotes, your opening hours and address, and a clear call or WhatsApp button. It should also work well on a phone and be kept up to date.
+
 ## 1. A headline that says what you do and where
 
 Visitors decide in seconds whether they are in the right place. Your headline should answer two questions straight away: what do you offer, and where?
@@ -114,3 +116,17 @@ Small business owners often worry about things that matter much less: a blog on 
 AasaanWeb makes a complete landing page from what you tell us about your business, in plain words, with the essentials above in place. When something changes, such as a price, a photo or a Saturday hour, you describe the fix in ordinary language, see it on a preview exactly as customers will, and publish only when it looks right.
 
 [See pages we have made for real businesses](/work), or [start your page on AasaanWeb](/).
+
+## Questions
+
+### What are the must-have sections of a small business website?
+
+A headline that says what you do and where, your offer, your products or services in plain words, real photos, real customer quotes, your opening hours and address, and a clear contact button. The page should also work well on a phone.
+
+### Should I use stock photos on my business website?
+
+Use real photos instead: the shop front, the inside or work area, your products or recent work, and your team if you are comfortable with that. Clear phone photos in daylight are fine. Avoid relying only on stock images that could belong to anyone.
+
+### What can I leave out of a small business website?
+
+A blog on day one, many separate pages, fancy effects, or a long About us history matter much less. Start with the seven items in this checklist, and add more only when customers ask for it.

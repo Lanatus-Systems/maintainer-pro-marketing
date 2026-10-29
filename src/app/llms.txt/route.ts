@@ -1,6 +1,8 @@
 import { POSTS, postPath } from "@/content/blog";
 import { legalPages } from "@/content/legal";
 import { DEFINITION } from "@/content/landing";
+import { AASAANWEB_PUBLISHED_POSTS, aasaanWebPostPath } from "@/content/aasaanweb-blog";
+import { getAasaanWebPosts } from "@/lib/aasaanweb-blog";
 import { brand, isAasaanWeb } from "@/lib/brand";
 import { siteUrl } from "@/lib/site";
 
@@ -59,6 +61,11 @@ function aasaanWebLlms() {
     `- [Pricing](${siteUrl("/pricing")})`,
     `- [Blog](${siteUrl("/blog")}): guides for small Indian businesses`,
     `- [Contact](${siteUrl("/contact")})`,
+    "",
+    "## Guides",
+    ...getAasaanWebPosts(AASAANWEB_PUBLISHED_POSTS).map(
+      (p) => `- [${p.title}](${siteUrl(aasaanWebPostPath(p.slug))}): ${p.description}`,
+    ),
     "",
   ];
   return new Response(lines.join("\n"), {

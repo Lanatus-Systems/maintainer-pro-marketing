@@ -6,9 +6,11 @@ import { aasaanWebSubpageMeta } from "@/lib/aasaanweb";
 import { isAasaanWeb } from "@/lib/brand";
 
 const page = AASAANWEB_LEGAL["privacy"];
+const DESCRIPTION =
+  "How AasaanWeb collects, uses and protects the information you share when you build or update your business website.";
 
 /** AasaanWeb only; next.config rewrites page.path here for that brand. */
-export const metadata: Metadata = isAasaanWeb ? aasaanWebSubpageMeta({ title: page.title, path: page.path }) : {};
+export const metadata: Metadata = isAasaanWeb ? aasaanWebSubpageMeta({ title: page.title, description: DESCRIPTION, path: page.path }) : {};
 
 export default function Page() {
   if (!isAasaanWeb) notFound();

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell } from "@/components/aasaanweb/AasaanWebShell";
 import { Reveal } from "@/components/aasaanweb/Reveal";
 import { WorkFrame } from "@/components/aasaanweb/WorkFrame";
 import { WORK } from "@/components/aasaanweb/work";
 import { aasaanWebSubpageMeta } from "@/lib/aasaanweb";
 import { isAasaanWeb } from "@/lib/brand";
+import { siteUrl } from "@/lib/site";
 import "../../aasaanweb-home/aasaanweb.css";
 
 /** AasaanWeb only: a port of the admin app's client/src/pages/WorkPage.tsx. */
@@ -20,10 +22,44 @@ export const metadata: Metadata = isAasaanWeb
 
 const SIGNUP_URL = "/signup";
 
+/** CollectionPage of the example pages shown below (names and links as on the page), plus breadcrumbs. */
+function workJsonLd() {
+  const url = siteUrl("/work");
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${url}#page`,
+        url,
+        name: "Our work",
+        isPartOf: { "@id": `${siteUrl("/")}#website` },
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: WORK.map((item, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: item.name,
+            url: siteUrl(item.open),
+          })),
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteUrl("/") },
+          { "@type": "ListItem", position: 2, name: "Our work", item: url },
+        ],
+      },
+    ],
+  };
+}
+
 export default function WorkPage() {
   if (!isAasaanWeb) notFound();
   return (
     <AasaanWebShell current="work">
+      <JsonLd data={workJsonLd()} />
       <main id="content">
         <section className="studio-work-hero">
           <p className="studio-kicker">Our work</p>

@@ -13,6 +13,8 @@ The short answer: they do different jobs. A Google Business Profile helps people
 
 Here is how to think about it.
 
+**Quick answer:** A Google Business Profile helps people find you on Google Search and Maps, with your phone number, hours and reviews. A website helps them decide to choose you, and gives you full control over what they read. Most local businesses in India do best with both, linked to each other and showing the same details.
+
 ## What a Google Business Profile does well
 
 A Google Business Profile is the listing that appears in Google Search and Google Maps when someone looks up your business name or searches for something like "saree shop near me". It is free to create and manage through Google.
@@ -86,3 +88,17 @@ If you already have a profile with good reviews, a website is the natural next s
 The main reason shop owners avoid a website is the fear of the technical work and of being stuck when something needs changing. That is the problem AasaanWeb is built around. You tell us about your business in plain words and get a complete landing page. When something changes, you describe the fix in ordinary language, check it on a preview, and publish when it looks right.
 
 If you would like a page to link from your Google Business Profile, [see the pages we have made](/work) or [start your page on AasaanWeb](/).
+
+## Questions
+
+### Do I need a website if I have a Google Business Profile?
+
+They do different jobs. A Google Business Profile helps people find you. A website helps them decide to choose you, and gives you full control over what they read. Most local businesses do best with both, linked to each other.
+
+### What can a website do that a Google Business Profile can't?
+
+A website lets you tell your full story in your own words, show your products and services in detail, answer common questions, and place a clear call or WhatsApp button where you want it. It is also one link you can share everywhere.
+
+### Which should a small business set up first?
+
+If you have neither, start with the Google Business Profile, because it is the quickest way to appear when people search nearby. Then add a website so that the people who find you have somewhere to learn more and get in touch.

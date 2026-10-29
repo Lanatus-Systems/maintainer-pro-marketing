@@ -9,6 +9,7 @@ import {
   getAasaanWebPosts,
   type AasaanWebPost,
 } from "@/lib/aasaanweb-blog";
+import { extractFaq } from "@/lib/markdown";
 import { siteUrl } from "@/lib/site";
 import type { Metadata } from "next";
 import "@/app/aasaanweb-home/aasaanweb.css";
@@ -140,9 +141,15 @@ export function AasaanWebBlogIndex() {
   );
 }
 
+/** Q&A pairs from a post's "## Questions" section, with the text exactly as the page shows it. */
+function postQuestions(body: string) {
+  return extractFaq(body.replace(/^## Questions[ \t]*$/m, "## FAQ"));
+}
+
 export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; preview: boolean }) {
   const path = aasaanWebPostPath(post.slug);
   const url = siteUrl(path);
+  const questions = postQuestions(post.body);
   return (
     <AasaanWebShell current="blog">
       <JsonLd
@@ -171,6 +178,19 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
                 { "@type": "ListItem", position: 3, name: post.title, item: url },
               ],
             },
+            ...(questions.length
+              ? [
+                  {
+                    "@type": "FAQPage",
+                    "@id": `${url}#faq`,
+                    mainEntity: questions.map(({ q, a }) => ({
+                      "@type": "Question",
+                      name: q,
+                      acceptedAnswer: { "@type": "Answer", text: a },
+                    })),
+                  },
+                ]
+              : []),
           ],
         }}
       />
