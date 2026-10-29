@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback and preview links.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
   cover: {
@@ -99,6 +99,10 @@ No. The agent runs on a developer's own computer, using the coding CLI already s
 ### Is it a real sandbox?
 
 Each private copy is tied to one folder the developer chooses, which can be a git worktree under \`.worktrees/\`. The folder boundary and the \`.env\` ignore list are guardrails: instructions to the agent plus the CLI's workspace setting, not an OS-level sandbox like a container or a separate user account. Keep production secrets off the machine that runs the bridge.
+
+### What if I need a harder boundary than a folder and an ignore list?
+
+Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. Tools that run an agent inside a micro-VM solve a different problem, containing one developer's own agent session. Butterneck is about who can ask for a change on a live preview and who decides what ships.
 
 ### Can a bad turn be undone?
 
