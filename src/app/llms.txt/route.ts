@@ -8,8 +8,7 @@ export const dynamic = "force-static";
 
 /** Generated from the post list so new posts appear automatically. */
 export function GET() {
-  // Butterneck-only route: 404 on the AasaanWeb site.
-  if (isAasaanWeb) return new Response("Not found", { status: 404 });
+  if (isAasaanWeb) return aasaanWebLlms();
   const lines = [
     `# ${brand.name}`,
     "",
@@ -37,6 +36,29 @@ export function GET() {
     ...POSTS.map((p) => `- [${p.title}](${siteUrl(postPath(p.slug))}): ${p.description}`),
     "",
     "The product app (signup, login, workspaces) is at https://app.butterneck.com.",
+    "",
+  ];
+  return new Response(lines.join("\n"), {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
+/** AasaanWeb build: its own llms.txt (the Butterneck text above is unchanged). */
+function aasaanWebLlms() {
+  const lines = [
+    "# AasaanWeb",
+    "",
+    "> AasaanWeb helps small Indian businesses (shops, studios, clinics, manufacturers) create a landing page and keep it up to date by describing changes in plain words, including in Hindi. Every change shows on a preview first, and the owner publishes it. A small change takes about 10 minutes.",
+    "",
+    "- Free to start. Custom domains are supported.",
+    "- The app is at https://aasaan.butterneck.com/. AasaanWeb is made by Butterneck (https://www.butterneck.com/).",
+    "",
+    "## Pages",
+    `- [Home](${siteUrl("/")}): what AasaanWeb does, how it works, questions`,
+    `- [Our work](${siteUrl("/work")}): live pages made for real businesses (Parmanand Industries, Shivam Industries, EL360)`,
+    `- [Pricing](${siteUrl("/pricing")})`,
+    `- [Blog](${siteUrl("/blog")}): guides for small Indian businesses`,
+    `- [Contact](${siteUrl("/contact")})`,
     "",
   ];
   return new Response(lines.join("\n"), {
