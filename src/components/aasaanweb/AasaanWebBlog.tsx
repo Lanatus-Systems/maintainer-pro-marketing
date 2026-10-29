@@ -2,7 +2,7 @@ import { AASAANWEB_PUBLISHED_POSTS, aasaanWebPostPath } from "@/content/aasaanwe
 import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell, START_URL } from "@/components/aasaanweb/AasaanWebShell";
 import { AasaanWebPostBody } from "@/components/aasaanweb/AasaanWebPostBody";
-import { AASAANWEB_OG_IMAGE, aasaanWebSubpageMeta } from "@/lib/aasaanweb";
+import { aasaanWebSubpageMeta } from "@/lib/aasaanweb";
 import {
   aasaanWebReadingMinutes,
   formatAasaanWebDate,
@@ -26,6 +26,7 @@ export const aasaanWebBlogIndexMeta: Metadata = aasaanWebSubpageMeta({
 });
 
 export function aasaanWebPostMeta(post: AasaanWebPost, preview: boolean): Metadata {
+  const image = siteUrl(post.coverSrc);
   const base = aasaanWebSubpageMeta({ title: post.title, description: post.description, path: aasaanWebPostPath(post.slug) });
   return {
     ...base,
@@ -34,12 +35,14 @@ export function aasaanWebPostMeta(post: AasaanWebPost, preview: boolean): Metada
     ...(preview ? { robots: { index: false, follow: false } } : {}),
     openGraph: {
       ...base.openGraph,
+      images: [{ url: image, secureUrl: image, type: "image/png", width: 1200, height: 630, alt: post.coverAltText }],
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
       authors: [post.author],
       tags: post.keywords,
     },
+    twitter: { ...base.twitter, images: [{ url: image, alt: post.coverAltText }] },
   };
 }
 
@@ -106,16 +109,27 @@ export function AasaanWebBlogIndex() {
           </section>
         ) : (
           <ul className="aw-blog-list">
-            {posts.map((post) => (
+            {posts.map((post, i) => (
               <li key={post.slug}>
                 <a href={aasaanWebPostPath(post.slug)} className="aw-blog-card">
-                  <p className="aw-blog-meta">
-                    <time dateTime={post.date}>{formatAasaanWebDate(post.date)}</time> · {aasaanWebReadingMinutes(post)} min
-                    read
-                  </p>
-                  <h2>{post.title}</h2>
-                  <p>{post.description}</p>
-                  <span className="aw-blog-read">Read the post →</span>
+                  <img
+                    className="aw-blog-card-cover"
+                    src={post.coverSrc}
+                    alt={post.coverAltText}
+                    width={1200}
+                    height={630}
+                    loading={i < 2 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
+                  <div className="aw-blog-card-body">
+                    <p className="aw-blog-meta">
+                      <time dateTime={post.date}>{formatAasaanWebDate(post.date)}</time> · {aasaanWebReadingMinutes(post)}{" "}
+                      min read
+                    </p>
+                    <h2>{post.title}</h2>
+                    <p>{post.description}</p>
+                    <span className="aw-blog-read">Read the post →</span>
+                  </div>
                 </a>
               </li>
             ))}
@@ -140,7 +154,7 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
               "@id": `${url}#article`,
               headline: post.title,
               description: post.description,
-              image: AASAANWEB_OG_IMAGE,
+              image: siteUrl(post.coverSrc),
               datePublished: post.date,
               dateModified: post.updated ?? post.date,
               author: { "@type": "Organization", name: post.author, url: siteUrl("/") },
@@ -177,6 +191,14 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
               <time dateTime={post.date}>{formatAasaanWebDate(post.date)}</time> · {post.author} ·{" "}
               {aasaanWebReadingMinutes(post)} min read
             </p>
+            <img
+              className="aw-blog-hero-image"
+              src={post.coverSrc}
+              alt={post.coverAltText}
+              width={1200}
+              height={630}
+              fetchPriority="high"
+            />
           </header>
           <AasaanWebPostBody body={post.body} />
         </article>
