@@ -1,7 +1,7 @@
 import { brand } from "@/lib/brand";
 import { SUPPORT_EMAIL } from "@/lib/site";
 
-export const LEGAL_UPDATED = "October 28, 2026";
+export const LEGAL_UPDATED = "October 29, 2026";
 
 export type LegalBlock = {
   heading: string;
@@ -37,6 +37,7 @@ export const legalPages = {
           "Chat messages, attachments, and sandbox settings you create in the app. Butterneck runs the coding agent on the computer you connect; that agent may send code context to its own AI provider under your plan with them. We do not copy your repository to our servers to edit it.",
           "A share link opens the preview. Who can send is set on each private copy: a chosen list, or anyone with the link. New private copies start with a chosen list.",
           "On butterneck.com, including the blog, Google Analytics uses cookies to count visits and see which pages people read. It does not run inside the app or on share previews.",
+          "Separately, our servers send Google Analytics a few product events: sign-up, workspace created, first change request, trial started, and paid. We use them to measure how many people go from sign-up to a paid plan. These events carry an anonymous ID and the event name, not the content of your change requests or any of your code.",
         ],
       },
       {

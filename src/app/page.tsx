@@ -47,16 +47,18 @@ export default function HomePage() {
             <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_hero">
               Create a free workspace
             </a>
-            <a
-              href={WALKTHROUGH_URL}
-              className="landing-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-ga-event="book_walkthrough_click"
-              data-ga-location="home_hero"
-            >
-              Book a walkthrough
-            </a>
+            {WALKTHROUGH_URL && (
+              <a
+                href={WALKTHROUGH_URL}
+                className="landing-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-ga-event="book_walkthrough_click"
+                data-ga-location="home_hero"
+              >
+                Book a walkthrough
+              </a>
+            )}
             <a href="#demo" className="landing-btn">
               Watch the demo
             </a>

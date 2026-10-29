@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import { useEffect } from "react";
-import { APP_URL } from "@/lib/site";
+import { APP_URL, WALKTHROUGH_URL } from "@/lib/site";
 
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-7WQMENB19Y";
 
@@ -45,6 +45,7 @@ function isContactLink(href: string, url: URL): boolean {
  *  - explicit `data-ga-event` (+ `data-ga-*` params), e.g. book_walkthrough_click, select_plan
  *  - app /signup link         -> sign_up_click { location }
  *  - /contact or mailto: link -> contact_click { location, method }
+ *  - link to WALKTHROUGH_URL   -> walkthrough_click { location }
  *  - any link inside a blog post body or the post CTA -> blog_cta_click
  *
  * Links that leave the site in the same tab (e.g. app.butterneck.com/signup) used to unload the
@@ -83,6 +84,9 @@ function onClick(e: MouseEvent) {
       "contact_click",
       { location, link_text: label, method: href.startsWith("mailto:") ? "email" : "contact_page" },
     ]);
+  }
+  if (WALKTHROUGH_URL && ds.gaEvent !== "walkthrough_click" && a.href.split("#")[0] === new URL(WALKTHROUGH_URL).href.split("#")[0]) {
+    events.push(["walkthrough_click", { location, link_text: label, link_url: a.href }]);
   }
   if (ds.gaEvent !== "blog_cta_click" && a.closest(".post-body, .blog-cta")) {
     events.push(["blog_cta_click", { post: window.location.pathname, link_text: label, link_url: a.href }]);

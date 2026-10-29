@@ -146,16 +146,18 @@ export default function PricingPage() {
           ))}
         </div>
         <div className="landing-cta">
-          <a
-            href={WALKTHROUGH_URL}
-            className="landing-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-ga-event="book_walkthrough_click"
-            data-ga-location="pricing_page"
-          >
-            Book a walkthrough
-          </a>
+          {WALKTHROUGH_URL && (
+            <a
+              href={WALKTHROUGH_URL}
+              className="landing-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ga-event="book_walkthrough_click"
+              data-ga-location="pricing_page"
+            >
+              Book a walkthrough
+            </a>
+          )}
         </div>
       </section>
     </main>
