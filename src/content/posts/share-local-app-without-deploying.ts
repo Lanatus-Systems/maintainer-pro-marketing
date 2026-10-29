@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Share localhost with a PM or stakeholder without deploying: a live link to the app on your computer, a chat to ask for changes, and AI edits on the preview.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -157,6 +157,10 @@ Yes. Chat messages and preview traffic go through Butterneck's server, and the c
 ### How is this different from a localhost tunnel like ngrok?
 
 A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on your computer makes the change, and hot reload shows it on the same link. Nothing is merged, no pull request is opened, and nothing is deployed.
+
+### Can a product manager comment on my local dev server and have the AI make the change?
+
+Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; they are built mainly for a developer reviewing their own agent's work on their machine. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on your computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Nothing is merged, no pull request is opened, and nothing is deployed until a developer publishes the change.
 
 ## Try it
 
