@@ -160,7 +160,7 @@ A tunnel gives your local port a public address, and some add a login or comment
 
 ### Can a product manager comment on my local dev server and have the AI make the change?
 
-Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; they are built mainly for a developer reviewing their own agent's work on their machine. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on your computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Nothing is merged, no pull request is opened, and nothing is deployed until a developer publishes the change.
+Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; most are designed mainly for a developer reviewing their own agent's work. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on your computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Nothing is merged, no pull request is opened, and nothing is deployed until a developer publishes the change.
 
 ## Try it
 
