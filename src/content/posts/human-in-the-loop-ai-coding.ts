@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Human-in-the-loop AI coding with a gate for the person who asked: they check the change on a live preview, and a developer decides. No auto PR or merge.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -112,6 +112,8 @@ Putting a person in the loop doesn't guarantee that person decides. In a study p
 
 So in Butterneck the check isn't the agent's account of what it did. The person who asked looks at the change themselves on a live preview of the running app, and the developer reads the diff in their own editor before anything is committed or becomes a pull request. Both are checking the actual result, not the AI's description of it.
 
+Code review shows the same drift. A June 2026 preprint followed 400 repeat reviewers across 11,429 reviews of AI-agent pull requests in open-source projects over seven months. As they reviewed more, their approval rate rose from 30.1% to 36.8% and their inline comments fell 22% ([arXiv 2606.22721](https://arxiv.org/abs/2606.22721)). The authors read this as habituation, though they say the agents' code may also have improved over that time. A requester checking the running app is one more check that doesn't depend on a tired reviewer.
+
 ## "Isn't this just slower than auto-merge?"
 
 For the one step at the end, yes, by a minute or two. For the whole request, no.
@@ -173,6 +175,10 @@ No. It never opens a pull request, never merges and never deploys. The AI edits 
 ### Should an AI coding agent merge its own pull request?
 
 For most product changes, no. Since 28 October 2026, GitHub's Agent Merge can watch a pull request, fix failing checks and merge conflicts, and, combined with auto-merge, let GitHub merge it as soon as all requirements are met. That works when a person has already decided the change is wanted and branch protection requires a human review. Butterneck puts that decision earlier: the person who asked checks the change on a live preview, and a developer decides whether it becomes a commit or a pull request at all. Butterneck itself never merges.
+
+### Is there an AI coding agent that waits for my approval before it merges?
+
+Many cloud coding agents stop at a pull request and leave the merge to a reviewer and your branch rules. Butterneck stops earlier. It never opens a pull request, merges or deploys. The AI edits the project on the developer's computer, the person who asked checks the result on a live preview, and the developer decides whether it becomes a commit or a pull request at all.
 
 ### Can a non-developer approve a change on their own?
 
