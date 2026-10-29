@@ -156,13 +156,15 @@ export default function JiraIntegrationPage() {
         </p>
         <ul className="landing-points">
           <li>
-            Jira Coding Agent runs in a cloud sandbox from a work item or a Jira automation. It can push
-            changes to a branch and open a draft pull request in the repository you pick (a setting), for
-            your team to review and merge.
+            Jira Coding Agent runs in a cloud sandbox that Atlassian hosts, started from a work item or a
+            Jira automation. Atlassian&apos;s demos show a preview of the change inside that sandbox while
+            the session runs. It can push changes to a branch and open a draft pull request in the
+            repository you pick (a setting), for your team to review and merge.
           </li>
           <li>
-            Butterneck gives the person who asked a live preview of the app that they can keep
-            refining in plain words.
+            Butterneck&apos;s preview is the app already running on the developer&apos;s computer, shared
+            by a link that goes back on the ticket, and the person who asked can keep refining it in plain
+            words.
           </li>
           <li>
             The change is built by the developer&apos;s own local AI agent on their computer, and the
@@ -179,7 +181,11 @@ export default function JiraIntegrationPage() {
           >
             Work with Jira Coding Agent in automations
           </a>{" "}
-          (Atlassian support).
+          (Atlassian support) ·{" "}
+          <a href="https://www.youtube.com/watch?v=AWxt9uxRTT0" target="_blank" rel="noopener noreferrer">
+            demo video
+          </a>{" "}
+          (Atlassian).
         </p>
       </section>
 
@@ -245,7 +251,9 @@ export default function JiraIntegrationPage() {
           <li>Updating the same ticket later does not open a second copy.</li>
         </ul>
         <p className="landing-quiet">
-          Read more: <Link href="/blog">the blog</Link> · <Link href="/jira/privacy">Jira privacy</Link>{" "}
+          Read more: <Link href="/blog/jira-ticket-to-pr-with-ai">from a Jira ticket to a reviewable change</Link>
+          · <Link href="/blog/live-preview-before-pull-request">checking a live preview before the pull request</Link>
+          · <Link href="/blog">the blog</Link> · <Link href="/jira/privacy">Jira privacy</Link>{" "}
           · <Link href="/jira/terms">Jira terms</Link> · <Link href="/pricing">Pricing</Link>
         </p>
       </section>
