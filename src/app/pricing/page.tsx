@@ -24,6 +24,7 @@ const PRICING_FAQS = [
     lines: [
       "Yes, on Starter. It is free for one developer and one person who requests changes, with one private copy of the product and 1 GB of preview traffic a month.",
       "Starter is free.",
+      "The Elm & Fern sample shop that a new workspace opens with doesn't count toward that copy.",
     ],
   },
   {
@@ -67,8 +68,8 @@ const PRICING_FAQS = [
 ] as const;
 
 export const metadata = pageMeta({
-  title: `Pricing: free Starter, Pro $${usd} per person`,
-  description: `Starter is free for one developer and one requester. Pro is $${usd} per person a month (${ANNUAL_DISCOUNT_PERCENT}% off yearly), with a one-month Pro trial. AI runs on your own coding agent.`,
+  title: `Pricing: free Starter, Pro $${usd}, one-month trial`,
+  description: `Starter is free for one developer and one requester. Pro is $${usd} per person a month (${ANNUAL_DISCOUNT_PERCENT}% off yearly), with a one-month Pro trial. AI runs on your own coding agent plan, no markup.`,
   path: "/pricing",
 });
 
