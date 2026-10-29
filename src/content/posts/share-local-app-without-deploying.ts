@@ -105,7 +105,7 @@ The coding assistant on the developer's computer reads the request and edits the
 
 If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
 
-## What stays on your computer, and what doesn't
+## What is edited on your computer, and what leaves it
 
 Sharing a local app is only comfortable if you know what the outside world can touch. With Butterneck:
 
@@ -113,7 +113,7 @@ Sharing a local app is only comfortable if you know what the outside world can t
 - Secret settings files (\`.env\`) are on the agent's ignore list (an instruction, not a hard block).
 - If a turn goes wrong, you can stop it and roll back that turn's file changes.
 - Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use.
-- Nothing is merged, no pull request is opened, and nothing is deployed. The change stays on the computer until someone on your team publishes it the way you already do.
+- Nothing is merged, no pull request is opened, and nothing is deployed. The change is not published until someone on your team publishes it the way you already do.
 
 That last point is the whole design. We wrote more about it in [Human-in-the-loop AI coding: why Butterneck never merges](/blog/human-in-the-loop-ai-coding).
 

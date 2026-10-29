@@ -115,7 +115,7 @@ The files are edited on the connected computer. But the coding CLI sends code co
 
 ### Is there a free plan?
 
-Yes. Starter is free for one developer and one person who asks for changes. Starter is free.
+Yes. Starter is free for one developer and one person who asks for changes.
 
 ## Try it
 
