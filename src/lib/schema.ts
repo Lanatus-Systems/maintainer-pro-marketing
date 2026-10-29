@@ -28,8 +28,10 @@ export function homeJsonLd() {
           DEV_URL,
           MEDIUM_URL,
           UNEED_URL,
-          // PEERLIST_URL, DEVHUNT_URL and SAASHUB_URL are excluded
-          // until their listings are fixed (SaaSHub is pending approval).
+          PEERLIST_URL,
+          DEVHUNT_URL,
+          // SAASHUB_URL is excluded until its listing is approved
+          // (SaaSHub listing is still pending approval).
         ],
         parentOrganization: {
           "@type": "Organization",
