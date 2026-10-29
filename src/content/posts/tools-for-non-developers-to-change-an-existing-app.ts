@@ -124,6 +124,10 @@ Yes, several. Most of the tools above let a PM, designer or operator describe a 
 
 Keep a developer in the decision. Look for three things: the change is shown on a preview before anything ships, a developer reviews it, and risky areas like login, billing and data stay with engineering. Our [AI change request policy template](/blog/ai-change-request-policy-template) lists what to fence off.
 
+### Can I change my existing web app with AI without a developer?
+
+On your own computer, yes, if you can run the project yourself: tools like Layrr and PulseDev put a point-and-edit overlay on your local dev server, and a coding agent such as Claude Code edits the source. If the app belongs to a team, someone still decides what ships. Tools like ronda and Revyse (in its cloud mode) turn your request into a pull request for the team to review. In Butterneck you don't need the project on your computer: you ask on a live copy of the app, the developer's own agent makes the change on a computer the team connects, and a developer decides what goes live. Butterneck never opens a pull request, merges or deploys.
+
 ### Does Butterneck open a pull request?
 
 No. Butterneck never opens a pull request, merges or deploys. The person who asked checks the change on a live preview, and a developer reviews the diff and ships it the team's usual way.
