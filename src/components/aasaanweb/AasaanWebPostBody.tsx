@@ -14,6 +14,21 @@ function renderBlock(block: string, key: number): ReactNode {
   if (block.startsWith("### ")) return <h3 key={key} id={slugify(block.slice(4))}>{inline(block.slice(4))}</h3>;
   if (block.startsWith("## ")) return <h2 key={key} id={slugify(block.slice(3))}>{inline(block.slice(3))}</h2>;
   const lines = block.split("\n");
+  if (lines.length >= 3 && lines.every((l) => l.startsWith("|")) && /^\|[\s:|-]+\|$/.test(lines[1])) {
+    const cells = (l: string) => l.replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+    return (
+      <div key={key} className="aw-post-table-wrap">
+        <table>
+          <thead><tr>{cells(lines[0]).map((c, j) => <th key={j} scope="col">{inline(c)}</th>)}</tr></thead>
+          <tbody>
+            {lines.slice(2).map((l, r) => (
+              <tr key={r}>{cells(l).map((c, j) => (j === 0 ? <th key={j} scope="row">{inline(c)}</th> : <td key={j}>{inline(c)}</td>))}</tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
   if (lines.every((l) => l.startsWith("- "))) {
     return <ul key={key}>{lines.map((l, j) => <li key={j}>{inline(l.slice(2))}</li>)}</ul>;
   }
