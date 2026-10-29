@@ -69,7 +69,7 @@ Open the preview on your own phone, because most of your customers will. Tap the
 
 ## Step 6: Put it online
 
-Your page needs a web address and somewhere to live (hosting). With AasaanWeb, you arrange the hosting and the domain name yourself, and the team helps with putting the finished site online.
+Your page needs a web address. With AasaanWeb you can connect your own domain, so customers see your business name in the address, and the team helps with putting the finished site online.
 
 When choosing a domain name, keep it short and close to your business name. Avoid hyphens and odd spellings that are hard to say over the phone.
 
@@ -84,7 +84,7 @@ Make a habit of checking the page whenever something changes:
 - New photos of recent work
 - A change in phone number or address
 
-This is where the build method matters most. If every edit depends on someone else, small fixes wait for weeks. With AasaanWeb you point at the part that is out of date and describe the fix in ordinary language, see it on the preview, and publish when it looks right.
+This is where the build method matters most. If every edit depends on someone else, small fixes wait for weeks. With AasaanWeb you point at the part that is out of date and describe the change in plain words, Hindi too, see it on the preview, and publish when it looks right. A small change takes about 10 minutes on the preview.
 
 ## Common mistakes to avoid
 
@@ -107,4 +107,4 @@ Once it is live, put the link everywhere customers already find you: your WhatsA
 
 ## Start with one page
 
-You do not need to know how websites are built to have a good one. You need clear information about your business and a way to keep it current. If you would like the page made from what you tell us, and to change it yourself on a preview, [start your page on AasaanWeb](/).
+You do not need to know how websites are built to have a good one. You need clear information about your business and a way to keep it current. If you would like the page made from what you tell us, and to change it yourself on a preview, [start your page on AasaanWeb](/). You can start free, with no upfront payment.

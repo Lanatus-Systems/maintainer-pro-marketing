@@ -111,6 +111,6 @@ Small business owners often worry about things that matter much less: a blog on 
 
 ## Getting these seven right with AasaanWeb
 
-AasaanWeb makes a complete landing page from what you tell us about your business, in plain words, with the essentials above in place. When something changes, such as a price, a photo or a Saturday hour, you describe the fix in ordinary language, see it on a preview exactly as customers will, and publish only when it looks right.
+AasaanWeb makes a complete landing page from what you tell us about your business, in plain words, with the essentials above in place. When something changes, such as a price, a photo or a Saturday hour, you describe the change in plain words, Hindi too, see it on a preview exactly as customers will, and publish only when it looks right. A small change takes about 10 minutes on the preview. You can connect your own domain, and you start free, with no upfront payment.
 
 [See pages we have made for real businesses](/work), or [start your page on AasaanWeb](/).
