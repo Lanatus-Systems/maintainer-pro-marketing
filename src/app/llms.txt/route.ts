@@ -48,9 +48,9 @@ function aasaanWebLlms() {
   const lines = [
     "# AasaanWeb",
     "",
-    "> AasaanWeb helps small Indian businesses (shops, studios, clinics, manufacturers) create a landing page and keep it up to date by describing changes in plain words, including in Hindi. Every change shows on a preview first, and the owner publishes it. A small change takes about 10 minutes.",
+    "> AasaanWeb helps small Indian businesses (shops, studios, clinics, manufacturers) create a landing page and keep it up to date by describing changes in plain words. Every change shows on a preview first, and the owner publishes it. A small change takes about ten minutes on the preview.",
     "",
-    "- Free to start. Custom domains are supported.",
+    "- Pricing: ₹5,000, paid at the end, after the page is built and 15 days of changes. Hosting and the domain name are not included; the team helps put the finished site online.",
     "- The app is at https://aasaan.butterneck.com/. AasaanWeb is made by Butterneck (https://www.butterneck.com/).",
     "",
     "## Pages",

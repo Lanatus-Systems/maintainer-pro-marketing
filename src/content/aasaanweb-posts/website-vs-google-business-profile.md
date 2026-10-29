@@ -83,6 +83,6 @@ If you already have a profile with good reviews, a website is the natural next s
 
 ## Making the website part easy
 
-The main reason shop owners avoid a website is the fear of the technical work and of being stuck when something needs changing. That is the problem AasaanWeb is built around. You tell us about your business in plain words and get a complete landing page. When something changes, you describe changes in plain words, Hindi too, check them on a preview, and publish when it looks right. A small change takes about 10 minutes on the preview, and you can connect your own domain so the link on your Google profile carries your business name.
+The main reason shop owners avoid a website is the fear of the technical work and of being stuck when something needs changing. That is the problem AasaanWeb is built around. You tell us about your business in plain words and get a complete landing page. When something changes, you describe the fix in ordinary language, check it on a preview, and publish when it looks right.
 
-If you would like a page to link from your Google Business Profile, [see the pages we have made](/work) or [start your page on AasaanWeb](/). You can start free, with no upfront payment.
+If you would like a page to link from your Google Business Profile, [see the pages we have made](/work) or [start your page on AasaanWeb](/).
