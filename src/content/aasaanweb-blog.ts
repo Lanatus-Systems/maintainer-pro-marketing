@@ -15,7 +15,13 @@ export type AasaanWebPostEntry = {
   /** BCP 47 language of the text, for <article lang> and JSON-LD inLanguage. */
   lang: string;
   author: string;
+  /** Cover image under /public (1200x630 PNG/JPG), used on the card, the post hero and og:image. */
+  cover?: string;
+  coverAlt?: string;
 };
+
+/** Branded navy/teal card with the AasaanWeb logo, for posts without their own cover. */
+export const AASAANWEB_BLOG_FALLBACK_COVER = "/aasaanweb/blog/cover-fallback.png";
 
 export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
   {
@@ -24,6 +30,35 @@ export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
     date: "2026-10-29",
     lang: "hi-Latn-IN",
     author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/dukan-ki-website-kaise-banaye.png",
+    coverAlt: "Cover for the guide: how to make a website for your shop, without coding.",
+  },
+  {
+    slug: "how-to-create-a-small-business-website-in-india-without-coding",
+    draft: false,
+    date: "2026-10-29",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/how-to-create-a-small-business-website-in-india-without-coding.png",
+    coverAlt: "Cover for the guide: how to create a website for your small business in India without coding.",
+  },
+  {
+    slug: "website-vs-google-business-profile",
+    draft: false,
+    date: "2026-10-29",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/website-vs-google-business-profile.png",
+    coverAlt: "Cover comparing a business website with a Google Business Profile for an Indian shop.",
+  },
+  {
+    slug: "small-business-website-must-haves",
+    draft: false,
+    date: "2026-10-29",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/small-business-website-must-haves.png",
+    coverAlt: "Cover for the checklist: 7 things every small business website must have.",
   },
 ];
 
@@ -33,7 +68,7 @@ export const AASAANWEB_BLOG_PREVIEW =
 
 /** Published posts, newest first. Drafts are never listed, not even in preview. */
 export const AASAANWEB_PUBLISHED_POSTS = AASAANWEB_POSTS.filter((p) => !p.draft).sort((a, b) =>
-  (b.date).localeCompare(a.date),
+  b.date.localeCompare(a.date) || AASAANWEB_POSTS.indexOf(a) - AASAANWEB_POSTS.indexOf(b),
 );
 
 /** Posts that get a page: published ones, plus drafts in preview mode. */

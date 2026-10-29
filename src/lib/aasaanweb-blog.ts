@@ -1,6 +1,11 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import { AASAANWEB_ROUTABLE_POSTS, type AasaanWebPostEntry } from "@/content/aasaanweb-blog";
+import { existsSync } from "node:fs";
+import {
+  AASAANWEB_BLOG_FALLBACK_COVER,
+  AASAANWEB_ROUTABLE_POSTS,
+  type AasaanWebPostEntry,
+} from "@/content/aasaanweb-blog";
 
 export type AasaanWebPost = AasaanWebPostEntry & {
   title: string;
@@ -8,6 +13,9 @@ export type AasaanWebPost = AasaanWebPostEntry & {
   keywords: string[];
   /** Markdown body without the frontmatter and the leading "# " title (the page renders the h1). */
   body: string;
+  /** Resolved cover: the post's own image when the file exists, else the branded fallback. */
+  coverSrc: string;
+  coverAltText: string;
 };
 
 function unquote(value: string): string {
@@ -35,6 +43,7 @@ function loadPost(entry: AasaanWebPostEntry): AasaanWebPost {
     description: front.meta_description ?? "",
     keywords,
     body,
+    ...resolveCover(entry, front.title ?? entry.slug),
   };
 }
 
@@ -59,4 +68,13 @@ export function formatAasaanWebDate(iso: string): string {
     year: "numeric",
     timeZone: "UTC",
   });
+}
+
+/** Covers come from the registry (or `cover`/`cover_alt` frontmatter); missing files fall back. */
+function resolveCover(entry: AasaanWebPostEntry, title: string) {
+  const src = entry.cover;
+  if (src && existsSync(path.join(process.cwd(), "public", src))) {
+    return { coverSrc: src, coverAltText: entry.coverAlt ?? title };
+  }
+  return { coverSrc: AASAANWEB_BLOG_FALLBACK_COVER, coverAltText: `AasaanWeb blog: ${title}` };
 }
