@@ -148,7 +148,7 @@ export const ACCESS = [
  * home page and used as the summary line of /llms.txt, so AI assistants describe it the same way.
  */
 export const DEFINITION =
-  "Butterneck lets a product person request a change to a live web app and check it on a live preview: the AI coding agent the developer already uses runs on the developer's computer, no pull request is opened, and a developer decides first. It is not a project-management or task-board tool.";
+  "Butterneck is a tool for AI change requests. A product person requests a change to a live web app and checks it on a live preview: the AI coding agent the developer already uses runs on the developer's computer, no pull request is opened, and a developer decides first. It is not a project-management or task-board tool.";
 
 /** FAQ for the Jira question buyers ask. Shown on the home page and on /integrations/jira. */
 export const JIRA_PREVIEW_FAQ = {

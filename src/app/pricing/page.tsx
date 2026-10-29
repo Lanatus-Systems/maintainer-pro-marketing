@@ -63,7 +63,7 @@ const PRICING_FAQS = [
 
 export const metadata = pageMeta({
   title: `Pricing: free Starter, Pro $${usd} per person, one-month trial`,
-  description: `Starter is free for one developer and one requester. Pro is $${usd} per person a month, ${ANNUAL_DISCOUNT_PERCENT}% off yearly, with a one-month Pro trial. AI runs on your own coding agent.`,
+  description: `Pricing for AI change requests. Starter is free for one developer and one requester. Pro is $${usd} per person a month, ${ANNUAL_DISCOUNT_PERCENT}% off yearly, with a one-month Pro trial. AI runs on your own coding agent.`,
   path: "/pricing",
 });
 

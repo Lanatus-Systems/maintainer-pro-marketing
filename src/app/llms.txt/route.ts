@@ -17,7 +17,7 @@ export function GET() {
     "",
     "Let them ask. You decide what goes live.",
     "",
-    `${brand.name} is for product teams. People ask on a live copy of the product. The AI edits the project on a computer the team connects. A developer decides what goes live.`,
+    `${brand.name} is AI change requests for product teams. People ask on a live copy of the product. The AI edits the project on a computer the team connects. A developer decides what goes live.`,
     "",
     "## Key facts",
     "- Who asks: product managers, designers, support leads and other non-technical teammates, from a link to a live copy of the app (no install), or by labeling a Jira Cloud ticket `butterneck` and assigning it to a teammate whose Jira account is mapped to a computer that has the project.",

@@ -35,7 +35,7 @@ export default function HomePage() {
 
       <section className="landing-hero">
         <div className="landing-hero-copy">
-          <p className="landing-kicker">For product teams</p>
+          <p className="landing-kicker">AI change requests for product teams</p>
           <h1>Let them ask. You decide what goes live.</h1>
           <p className="landing-lead">
             A product manager describes the change on a live copy of the product. The AI reads a

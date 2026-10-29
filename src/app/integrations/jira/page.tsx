@@ -13,9 +13,9 @@ const JIRA_FAQS = [
   JIRA_NO_PR_FAQ,
 ];
 
-const PAGE_TITLE = "Jira integration: label a ticket, get a live preview";
+const PAGE_TITLE = "Jira integration: AI change requests from a labeled ticket";
 const PAGE_DESCRIPTION =
-  "Label a Jira Cloud ticket and the developer's own AI coding agent builds it on a live preview. The link comes back on the ticket; no PR until a developer decides.";
+  "Turn a Jira Cloud ticket into an AI change request: label it and the developer's own AI coding agent builds it on a live preview. The link comes back on the ticket; no PR until a developer decides.";
 
 export const metadata = pageMeta({
   title: PAGE_TITLE,
@@ -46,7 +46,7 @@ export default function JiraIntegrationPage() {
         <p className="landing-kicker">Jira Cloud integration</p>
         <h1>Label a ticket. Get a live preview.</h1>
         <p className="landing-section-lead">
-          Butterneck&apos;s Jira Cloud integration turns a labeled ticket into a live preview. Add the
+          Butterneck&apos;s Jira Cloud integration turns a labeled ticket into an AI change request with a live preview. Add the
           label <code>butterneck</code> to a ticket and assign it to a teammate whose Jira account is
           mapped to a computer that has the project. The ticket becomes the request, and the change is
           built by the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity),
