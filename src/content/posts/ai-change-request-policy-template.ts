@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who request product changes with AI: what they can ask for, what needs an engineer, and who reviews.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -223,6 +223,10 @@ Auth and permissions, billing and pricing logic, data models and migrations, sha
 ### Can copy changes skip code review?
 
 Some teams let them skip human code review once automated checks pass. The Claude Code team's Low tier, which includes docs and copy, needs no human approvals once automated review and security checks are green. A copy change shouldn't skip the person who asked, though: they are the one who can tell whether the words are right. In this policy, copy changes get a requester check on the preview, and a developer still publishes them.
+
+### How should review tiers work when PMs and designers use an AI coding agent?
+
+Set the tier from what the change touches, not from who asked. The Claude Code team at Anthropic advises writing down risk tiers "set from the change rather than the author", starting strict, and using CODEOWNERS and branch protection so that auth, billing, CI and release workflows always need a person. In this policy, copy, messages and small visual fixes get a requester check on the preview; layout and form-field changes get a developer check; and auth, billing, data, shared APIs and infrastructure start with an engineer and need two developers. Every tier includes the requester's check, and a developer still decides what ships.
 
 ### Who should decide what ships?
 

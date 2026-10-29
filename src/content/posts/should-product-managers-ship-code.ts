@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "PMs shipping code with AI is the debate of the month. A calmer option: PMs ask for small changes on a live preview, and engineers keep control of what ships.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -106,6 +106,10 @@ Some technical PMs do, and it can work. But most PMs do not need to write code t
 ### Is it safe to let PMs ship code to production?
 
 Teams trying it, like H&B, keep engineers reviewing both the plan and the merge request. If you want PMs involved without that overhead, let them ask on [a live preview before the PR](/blog/live-preview-before-pull-request) and keep the release with engineering.
+
+### Can product managers vibe code on an existing codebase?
+
+Some teams do: a PM uses an AI coding tool on the real repository and opens a draft pull request for an engineer to review, usually for copy, layout and styling. [Built In's guide](https://builtin.com/articles/unlock-vibe-coding-designers-product-managers) recommends branch protection, required checks and a preview on every pull request before you try it, and most of these tools assume the PM can run the repository. Butterneck takes a different route: the PM asks on a live copy of the app, the developer's own coding agent makes the change on the developer's computer, and the PM checks it on the same preview. A developer then decides what ships. Butterneck never opens a pull request, merges or deploys.
 
 ### Should a product manager review the AI-generated code?
 
