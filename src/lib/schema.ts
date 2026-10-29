@@ -3,7 +3,7 @@ import { brand } from "@/lib/brand";
 import { extractFaq } from "@/lib/markdown";
 import {
   DEV_URL,
-  DEVHUNT_URL,
+  // DEVHUNT_URL,
   LINKEDIN_URL,
   MEDIUM_URL,
   PEERLIST_URL,
@@ -29,9 +29,8 @@ export function homeJsonLd() {
           MEDIUM_URL,
           UNEED_URL,
           PEERLIST_URL,
-          DEVHUNT_URL,
-          // SAASHUB_URL is excluded until its listing is approved
-          // (SaaSHub listing is still pending approval).
+          // DEVHUNT_URL and SAASHUB_URL are excluded until their listings are
+          // fixed (DevHunt launch date; SaaSHub pending approval).
         ],
         parentOrganization: {
           "@type": "Organization",
