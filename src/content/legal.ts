@@ -34,7 +34,7 @@ export const legalPages = {
         heading: "What we store",
         paragraphs: [
           "Account details you give us, such as your name, email, and workspace. If you sign in with Google, we receive the profile Google shares for that sign-in.",
-          "Chat messages, attachments, and sandbox settings you create in the app. Butterneck runs the coding agent on the computer you connect; that agent may send code context to its own AI provider under your plan with them. We do not copy your repository to our servers to edit it.",
+          "Chat messages, attachments, and sandbox settings you create in the app. Butterneck runs the coding agent on the computer you connect; Files are edited on that computer, but the coding agent sends code context to its own AI provider under your plan with them, and preview traffic is relayed through Butterneck's servers.",
           "A share link opens the preview. Who can send is set on each private copy: a chosen list, or anyone with the link. New private copies start with a chosen list.",
           "On butterneck.com, including the blog, Google Analytics uses cookies to count visits and see which pages people read. It does not run inside the app or on share previews.",
           "Separately, our servers send Google Analytics a few product events: sign-up, workspace created, first change request, trial started, and paid. We use them to measure how many people go from sign-up to a paid plan. These events carry an anonymous ID and the event name, not the content of your change requests or any of your code.",

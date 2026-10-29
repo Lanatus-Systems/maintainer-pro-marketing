@@ -88,7 +88,7 @@ export function PricingSection({
               ? interval === "year"
                 ? `${formatMoney(quote.totalMinor, quote.currency)} billed annually`
                 : "per person, billed monthly"
-              : "No credit card required";
+              : "Starter is free.";
           return (
             <article
               key={plan.id}

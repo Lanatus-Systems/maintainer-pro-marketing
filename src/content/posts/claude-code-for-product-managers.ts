@@ -109,13 +109,13 @@ No. It edits files in the connected project and stops. A developer decides wheth
 
 Yes. Butterneck is one option for a team that already has a web app. A developer connects a computer that already runs the product and has Claude Code, Cursor or Antigravity signed in. The product manager opens a live preview of the existing app, types the change in a chat, and checks the result on that preview. The agent edits the real project on the developer's computer. No pull request is opened: a developer decides first what ships, and Butterneck never merges or deploys. Tools such as Alloy, Clogless and Plusma instead connect your GitHub repository, run the change in a hosted preview and open a pull request.
 
-### Does my code stay on my machine?
+### Where are files edited, and what leaves the computer?
 
 The files are edited on the connected computer. But the coding CLI sends code context to its AI provider under that provider's terms, and chat and preview traffic are relayed through Butterneck.
 
 ### Is there a free plan?
 
-Yes. Starter is free for one developer and one person who asks for changes, with no card required.
+Yes. Starter is free for one developer and one person who asks for changes. Starter is free.
 
 ## Try it
 

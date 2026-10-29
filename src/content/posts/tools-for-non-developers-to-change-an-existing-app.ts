@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
   date: "2026-10-28",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -27,9 +27,8 @@ Product managers, designers, support staff and founders increasingly want to cha
 |---|---|---|---|---|---|
 | [Butterneck](https://www.butterneck.com) | Product teams: anyone who asks for a change, plus the developer who decides | The developer's agent, on a computer the team connects | A live preview the requester checks; no PR until a developer decides | Yes (label and assign a ticket) | Free Starter; Pro $19 per person; one-month Pro trial |
 | [ronda](https://useronda.com/) | "Marketing, design, and product" | An isolated live sandbox running your dev server | "ronda writes the code and opens a pull request. Engineering reviews and merges." | Not on the pages we read | Free $0; Starter $9/month; bring your own Anthropic key |
-| [Refinar](https://refinar.ai/en/for/product-managers) | Product managers (its /for/product-managers page) | "A copy of the live app" | "Publish it or send it to engineering"; risky changes go to a developer first as a draft PR | Not checked | "From $50 a month for 500 credits" |
-| [Fixdog](https://fix.dog/) | "PMs, designers, operators" | "Directly on their live product" | It "auto-generates a PR. Eng reviews and merges." | Not checked | No public price found |
-| [Itera](https://iteradev.ai/) | Product teams: builders, plus free collaborators | Your live web product, through chat | AI-generated pull requests (GitHub, GitLab, Bitbucket) for engineering review | Not checked | Builder €30 and Unlimited €100 per seat/month; collaborators free; "Currently free for early partners" |
+| [Refinar](https://refinar.ai/en/for/product-managers) | Product managers (its /for/product-managers page) | "A copy of the live app" | "Publish it or send it to engineering"; risky changes go to a developer first as a draft PR | Not on the pages we read | "From $25 a month for 250 credits" (checked 29 Oct 2026, [pricing](https://refinar.ai/en/pricing)) |
+| [Fixdog](https://fix.dog/) | "PMs, designers, operators" | "Directly on their live product" | It "auto-generates a PR. Eng reviews and merges." | Not on the page we read | No public price found |
 | [Clogless](https://clogless.ai/) | Product teams handing work to engineering | "A live sandbox on your real codebase", in its cloud | A pull request it opens with your Git provider | Yes (one of six ticketing tools) | $99/month Starter, $489/month Team, billed annually |
 | [Revyse](https://www.revyse.dev/) | Developers locally; in the cloud, "anyone on the team" | Your running Next.js app (local), or an isolated cloud sandbox | A diff to review (local), or a pull request it opens with a Vercel preview (cloud) | Not on the pages we read | Pilot pricing: Starter $19, Pro $49, Agency $149 a month (credits, billed by invoice) |
 | [Plusma](https://plusma.ai/) | PMs and designers ("No terminal, no IDE") | "An instant preview environment" built from your GitHub repo | "A clean pull request… ready for your engineering team to review and merge" | Not on the page we read | No public price found |

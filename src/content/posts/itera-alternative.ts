@@ -118,7 +118,7 @@ Partly. Both let non-engineers drive changes on a real product with AI. Itera co
 
 No. Butterneck edits files in the connected folder. The developer decides whether to commit, open a PR, or discard the change.
 
-### Does my code stay on my machine with Butterneck?
+### Where are files edited with Butterneck, and what leaves the computer?
 
 The files are edited on your machine and Butterneck does not run its own model. But the coding CLI sends code context to its AI provider, and chat and preview traffic pass through Butterneck's server.
 

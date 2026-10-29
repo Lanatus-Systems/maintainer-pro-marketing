@@ -205,7 +205,7 @@ export const FAQS = [
     lines: [
       "Someone on your team.",
       "The AI changes only the project you connected, then stops.",
-      "If the change is wrong, it stays on that computer. It does not go live.",
+      "If the change is wrong, it is not published. A developer leaves or reverts it.",
     ],
   },
   {

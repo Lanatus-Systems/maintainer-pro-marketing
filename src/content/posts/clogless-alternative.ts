@@ -128,7 +128,7 @@ No. Butterneck edits files in the connected project. The developer decides wheth
 
 No. Butterneck's ticket integration is Jira Cloud only. Without Jira, people ask for changes in the chat on the live copy.
 
-### Does my code stay on my machine with Butterneck?
+### Where are files edited with Butterneck, and what leaves the computer?
 
 The files are edited on the connected computer, and Butterneck does not run its own model. But the coding assistant sends code context to its AI provider, and chat and preview traffic pass through Butterneck's server.
 

@@ -264,7 +264,7 @@ export default function HomePage() {
             <strong>Your team publishes</strong>
             <span>
               When the change looks right, you publish it the way you already do. Until then it
-              stays on the computer.
+              is not published.
             </span>
           </li>
         </ul>
@@ -308,8 +308,8 @@ export default function HomePage() {
         <div>
           <h2>Let them ask.</h2>
           <p>
-            Create a free workspace and connect your project. You decide what goes live. No credit
-            card.
+            Create a free workspace and connect your project. You decide what goes live. Starter is
+            free.
           </p>
         </div>
         <div className="landing-cta">

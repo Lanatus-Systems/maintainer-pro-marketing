@@ -23,7 +23,7 @@ const PRICING_FAQS = [
     q: "Is Butterneck free?",
     lines: [
       "Yes, on Starter. It is free for one developer and one person who requests changes, with one private copy of the product and 1 GB of preview traffic a month.",
-      "No credit card is required.",
+      "Starter is free.",
     ],
   },
   {
