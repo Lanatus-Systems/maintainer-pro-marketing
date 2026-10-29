@@ -106,7 +106,7 @@ Being clear about limits helps adoption.
 
 To write these limits down for your team, use our [policy template for non-engineers requesting changes with AI](/blog/ai-change-request-policy-template).
 
-## A simple way to start
+## A simple way to start clearing the small-change backlog
 
 - Pick one app and one developer.
 - Agree on the kind of changes PMs can request: copy, layout, small UI fixes.
@@ -120,6 +120,10 @@ To write these limits down for your team, use our [policy template for non-engin
 ### Why do small product changes sit in the backlog?
 
 Usually not because the code is hard. The time goes into the relay around it: writing the ticket, finding the right screenshot, waiting for a sprint, answering a clarifying question, checking a staging deploy. Small fixes also lose prioritisation calls to features and bugs, so they wait.
+
+### How do you clear a backlog of small copy and UI changes?
+
+Put the small copy, layout and UI tickets in one list, close the stale ones, and write each remaining one as "where, what it says now, what it should say". Then take them out of the sprint queue: the person who raised each one asks for it on a live copy of the app and checks the result there, and a developer reviews the finished changes and decides what ships. Keep pricing logic, permissions and data-model changes in the normal engineering flow.
 
 ### Can a PM change a live app without engineering?
 
