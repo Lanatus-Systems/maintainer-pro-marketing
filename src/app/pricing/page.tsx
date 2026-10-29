@@ -4,7 +4,12 @@ import { JsonLd } from "@/components/JsonLd";
 import { PricingSection } from "@/components/PricingSection";
 import { pageMeta } from "@/lib/meta";
 import { ANNUAL_DISCOUNT_PERCENT, PRO_MONTHLY_PRICE } from "@/lib/pricing";
-import { breadcrumbJsonLd, faqPageJsonLd } from "@/lib/schema";
+import {
+  breadcrumbJsonLd,
+  faqPageJsonLd,
+  organizationJsonLd,
+  softwareApplicationJsonLd,
+} from "@/lib/schema";
 import { siteUrl, WALKTHROUGH_URL } from "@/lib/site";
 
 const usd = PRO_MONTHLY_PRICE.USD;
@@ -62,8 +67,8 @@ const PRICING_FAQS = [
 ] as const;
 
 export const metadata = pageMeta({
-  title: `Pricing: free Starter, Pro $${usd} per person, one-month trial`,
-  description: `Pricing for AI change requests. Starter is free for one developer and one requester. Pro is $${usd} per person a month, ${ANNUAL_DISCOUNT_PERCENT}% off yearly, with a one-month Pro trial. AI runs on your own coding agent.`,
+  title: `Pricing: free Starter, Pro $${usd} per person`,
+  description: `Starter is free for one developer and one requester. Pro is $${usd} per person a month (${ANNUAL_DISCOUNT_PERCENT}% off yearly), with a one-month Pro trial. AI runs on your own coding agent.`,
   path: "/pricing",
 });
 
@@ -73,6 +78,12 @@ export default function PricingPage() {
   return (
     <main id="content" className="landing">
       <JsonLd data={breadcrumbJsonLd("Pricing", "/pricing")} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [organizationJsonLd(), softwareApplicationJsonLd()],
+        }}
+      />
       <JsonLd
         data={{
           "@context": "https://schema.org",

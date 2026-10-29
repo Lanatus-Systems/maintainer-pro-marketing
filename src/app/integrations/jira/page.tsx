@@ -4,7 +4,13 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { FAQS, JIRA, JIRA_NO_PR_FAQ, JIRA_PREVIEW_FAQ } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
-import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from "@/lib/schema";
+import {
+  breadcrumbJsonLd,
+  faqPageJsonLd,
+  organizationJsonLd,
+  softwareApplicationJsonLd,
+  webPageJsonLd,
+} from "@/lib/schema";
 import { appUrl, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
 
 const JIRA_FAQS = [
@@ -13,9 +19,9 @@ const JIRA_FAQS = [
   JIRA_NO_PR_FAQ,
 ];
 
-const PAGE_TITLE = "Jira integration: AI change requests from a labeled ticket";
+const PAGE_TITLE = "Jira integration: AI change requests from a ticket";
 const PAGE_DESCRIPTION =
-  "Turn a Jira Cloud ticket into an AI change request: label it and the developer's own AI coding agent builds it on a live preview. The link comes back on the ticket; no PR until a developer decides.";
+  "Label a Jira Cloud ticket and the developer's own AI coding agent builds the change on a live preview. The link comes back on the ticket; a developer decides first.";
 
 export const metadata = pageMeta({
   title: PAGE_TITLE,
@@ -29,6 +35,12 @@ export default function JiraIntegrationPage() {
   return (
     <main id="content" className="landing">
       <JsonLd data={breadcrumbJsonLd("Jira integration", "/integrations/jira")} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [organizationJsonLd(), softwareApplicationJsonLd()],
+        }}
+      />
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -110,22 +122,24 @@ export default function JiraIntegrationPage() {
         <h2 id="jira-screens-heading">What it looks like</h2>
         <figure>
           <img
-            src="/integrations/jira-settings.png"
+            src="/integrations/jira-settings.webp"
             alt="Butterneck workspace settings with the Jira Cloud integration ready to connect"
             width={1024}
             height={594}
             loading="lazy"
+            decoding="async"
             style={{ width: "100%", height: "auto", borderRadius: 12 }}
           />
           <figcaption className="muted">Connect Jira Cloud once from your workspace.</figcaption>
         </figure>
         <figure>
           <img
-            src="/blog/product-app-with-chat.png"
+            src="/blog/product-app-with-chat.webp"
             alt="A live preview of the product with the Butterneck chat open beside it"
             width={1280}
             height={720}
             loading="lazy"
+            decoding="async"
             style={{ width: "100%", height: "auto", borderRadius: 12 }}
           />
           <figcaption className="muted">

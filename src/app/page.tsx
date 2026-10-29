@@ -15,11 +15,19 @@ import {
 import { SITE_OPEN_GRAPH } from "@/lib/meta";
 import { homeJsonLd } from "@/lib/schema";
 import { DemoVideo } from "@/components/DemoVideo";
-import { appUrl, SITE_DESCRIPTION, SITE_TITLE, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
+import { HeroStage, ToolMarquee } from "@/components/ButterneckTheme";
+import { appUrl, SITE_TITLE, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
+
+/** Search snippet for the home page (under ~160 characters; same claims as the site description). */
+const HOME_DESCRIPTION =
+  "AI change requests on a live preview: a product person asks for a change to your live web app and checks it there. No pull request is opened; a developer decides first.";
+
+/** Tools the site already names: the developer's own AI coding agent, and Jira Cloud. */
+const TOOLS = ["Cursor", "Claude Code", "Antigravity", "Jira Cloud"] as const;
 
 export const metadata: Metadata = {
   title: { absolute: SITE_TITLE },
-  description: SITE_DESCRIPTION,
+  description: HOME_DESCRIPTION,
   // Absolute, with the trailing slash the sitemap uses for the home URL.
   alternates: { canonical: siteUrl("/") },
   openGraph: {
@@ -36,7 +44,12 @@ export default function HomePage() {
       <section className="landing-hero">
         <div className="landing-hero-copy">
           <p className="landing-kicker">AI change requests for product teams</p>
-          <h1>Let them ask. You decide what goes live.</h1>
+          <h1 className="bn-headline">
+            <HeadlineWords text="Let them ask." from={0} />{" "}
+            <span className="bn-headline-accent">
+              <HeadlineWords text="You decide what goes live." from={3} />
+            </span>
+          </h1>
           <p className="landing-lead">
             A product manager describes the change on a live copy of the product. The AI reads a
             one-line request or a messy ticket, and edits the project on your computer. A developer
@@ -70,8 +83,12 @@ export default function HomePage() {
             <li>You decide what goes live</li>
           </ul>
         </div>
-        <ProductPreview />
+        <HeroStage>
+          <ProductPreview />
+        </HeroStage>
       </section>
+
+      <ToolMarquee label="The AI coding agent the developer already uses, and Jira Cloud" items={TOOLS} />
 
       <section id="demo" className="landing-section landing-demo" aria-labelledby="demo-heading">
         <h2 id="demo-heading">See a request go from chat to preview</h2>
@@ -80,7 +97,7 @@ export default function HomePage() {
         </p>
         <DemoVideo
           src="/media/hero-demo.mp4"
-          poster="/media/hero-demo-poster.png"
+          poster="/media/hero-demo-poster.webp"
           width={1920}
           height={1080}
           label="Butterneck demo: a change request typed on a live preview and the AI updating the app"
@@ -167,7 +184,7 @@ export default function HomePage() {
         <h2 id="steps-heading">How it works</h2>
         <DemoVideo
           src="/media/how-it-works.mp4"
-          poster="/media/how-it-works-poster.png"
+          poster="/media/how-it-works-poster.webp"
           width={1200}
           height={674}
           label="Butterneck in four steps: ask for a change in chat on the live preview, the developer's AI builds it locally, the preview updates, and the developer decides what ships"
@@ -305,6 +322,20 @@ export default function HomePage() {
         </div>
       </section>
     </main>
+  );
+}
+
+/** Splits a headline into words for the staggered reveal; screen readers still get plain text. */
+function HeadlineWords({ text, from }: { text: string; from: number }) {
+  return (
+    <>
+      {text.split(" ").map((word, i) => (
+        <span key={`${word}-${i}`} className="bn-w" style={{ ["--i" as string]: from + i }}>
+          {word}
+          {i < text.split(" ").length - 1 ? " " : ""}
+        </span>
+      ))}
+    </>
   );
 }
 

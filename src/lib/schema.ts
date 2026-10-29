@@ -11,33 +11,71 @@ import {
   UNEED_URL,
   X_URL, SITE_DESCRIPTION, SITE_URL, SUPPORT_EMAIL } from "@/lib/site";
 
+/** The Organization node shared by the home page graph and the product pages. */
+export function organizationJsonLd() {
+  return {
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
+    name: brand.name,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo-512.png`,
+    email: SUPPORT_EMAIL,
+    sameAs: [
+      LINKEDIN_URL,
+      X_URL,
+      DEV_URL,
+      MEDIUM_URL,
+      UNEED_URL,
+      PEERLIST_URL,
+      // DEVHUNT_URL and SAASHUB_URL are excluded until their listings are
+      // fixed (DevHunt launch date; SaaSHub pending approval).
+    ],
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Lanatus Systems LLP",
+      url: "https://lanatussystems.com",
+    },
+  };
+}
+
+/** The SoftwareApplication node (Starter free, Pro USD 19 per person a month). No ratings or reviews. */
+export function softwareApplicationJsonLd() {
+  return {
+    "@type": "SoftwareApplication",
+    "@id": `${SITE_URL}/#software`,
+    name: brand.name,
+    applicationCategory: "BusinessApplication",
+    applicationSubCategory: "DeveloperApplication",
+    operatingSystem: "Web",
+    image: `${SITE_URL}/og.png`,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Starter",
+        price: "0",
+        priceCurrency: "USD",
+        description: "Free for one developer and one person who requests changes.",
+      },
+      {
+        "@type": "Offer",
+        name: "Pro",
+        price: "19",
+        priceCurrency: "USD",
+        unitText: "person / month",
+        description: "Per person, billed monthly. Annual billing saves 20%.",
+      },
+    ],
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
 export function homeJsonLd() {
   return {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": `${SITE_URL}/#organization`,
-        name: brand.name,
-        url: SITE_URL,
-        logo: `${SITE_URL}/logo-512.png`,
-        email: SUPPORT_EMAIL,
-        sameAs: [
-          LINKEDIN_URL,
-          X_URL,
-          DEV_URL,
-          MEDIUM_URL,
-          UNEED_URL,
-          PEERLIST_URL,
-          // DEVHUNT_URL and SAASHUB_URL are excluded until their listings are
-          // fixed (DevHunt launch date; SaaSHub pending approval).
-        ],
-        parentOrganization: {
-          "@type": "Organization",
-          name: "Lanatus Systems LLP",
-          url: "https://lanatussystems.com",
-        },
-      },
+      organizationJsonLd(),
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
@@ -47,35 +85,7 @@ export function homeJsonLd() {
         inLanguage: "en",
         publisher: { "@id": `${SITE_URL}/#organization` },
       },
-      {
-        "@type": "SoftwareApplication",
-        "@id": `${SITE_URL}/#software`,
-        name: brand.name,
-        applicationCategory: "BusinessApplication",
-        applicationSubCategory: "DeveloperApplication",
-        operatingSystem: "Web",
-        image: `${SITE_URL}/og.png`,
-        url: SITE_URL,
-        description: SITE_DESCRIPTION,
-        offers: [
-          {
-            "@type": "Offer",
-            name: "Starter",
-            price: "0",
-            priceCurrency: "USD",
-            description: "Free for one developer and one person who requests changes.",
-          },
-          {
-            "@type": "Offer",
-            name: "Pro",
-            price: "19",
-            priceCurrency: "USD",
-            unitText: "person / month",
-            description: "Per person, billed monthly. Annual billing saves 20%.",
-          },
-        ],
-        publisher: { "@id": `${SITE_URL}/#organization` },
-      },
+      softwareApplicationJsonLd(),
       faqPageJsonLd(FAQS, `${SITE_URL}/`),
     ],
   };
