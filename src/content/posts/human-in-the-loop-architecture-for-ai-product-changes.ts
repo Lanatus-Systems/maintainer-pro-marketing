@@ -59,7 +59,7 @@ Why local? The project already runs there, with its real dependencies, data and 
 There are two entry points:
 
 - A chat widget embedded on the live preview. It sends the page URL along with the message, so "this button" has a referent.
-- A Jira Cloud ticket with a \`butterneck\` label, assigned to someone whose computer has the project. Title, description, comments and attachments become the request. A note with the preview link is posted back to the ticket.
+- A Jira Cloud ticket with a \`butterneck\` label, assigned to someone whose computer has the project. Title, description, latest comments and attachments become the request. A note with the preview link is posted back to the ticket.
 
 Developer replies in the thread don't trigger the agent, so the developer can talk to the requester without kicking off another edit.
 

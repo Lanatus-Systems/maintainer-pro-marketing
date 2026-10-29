@@ -67,7 +67,7 @@ Butterneck ends in edited files in the connected project and a running preview. 
 
 In Clogless, you connect your ticketing system and open the ticket in Clogless.
 
-In Butterneck, the work starts inside Jira. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket, and the title, description, comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. We did not find a description of posting results back to the ticket on Clogless's public pages. Ask them if that matters to you. Details on the [Jira integration page](/integrations/jira).
+In Butterneck, the work starts inside Jira. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket, and the title, description, latest comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. We did not find a description of posting results back to the ticket on Clogless's public pages. Ask them if that matters to you. Details on the [Jira integration page](/integrations/jira).
 
 ### Breadth
 
