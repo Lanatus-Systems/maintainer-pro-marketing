@@ -137,7 +137,7 @@ export const legalPages = {
         heading: "What we access",
         paragraphs: [
           "When a workspace admin connects a Jira Cloud site, Atlassian asks them to approve read and write access to Jira work, read access to Jira users, and offline access so the connection can be refreshed.",
-          "We read the sites they grant, project names, and and Jira users on the connected site, found by name or email through Jira's free-text user search, so each one can be matched to a computer. For each ticket that starts work, we read its key, summary, description, status, type, priority, assignee, reporter, labels, recent comments with their author names, and attachments up to 8 MB.",
+          "We read the sites they grant, project names, and Jira users on the connected site, found by name or email through Jira's free-text user search, so each one can be matched to a computer. For each ticket that starts work, we read its key, summary, description, status, type, priority, assignee, reporter, labels, recent comments with their author names, and attachments up to 8 MB.",
         ],
       },
       {
