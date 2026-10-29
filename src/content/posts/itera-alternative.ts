@@ -79,7 +79,7 @@ Butterneck's preview is the app running on the developer's machine, with real lo
 
 ### Jira
 
-Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket. The title, description, comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. Itera's MCP documentation lets a new Itera task be linked to a Jira ticket (\`ticketProvider: JIRA\`). We didn't find a Jira trigger like a label or assignee, or a preview link posted back to the ticket, in its public docs. Check with them if that matters to you.
+Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket. The title, description, latest comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. Itera's MCP documentation lets a new Itera task be linked to a Jira ticket (\`ticketProvider: JIRA\`). We didn't find a Jira trigger like a label or assignee, or a preview link posted back to the ticket, in its public docs. Check with them if that matters to you.
 
 ### Pricing
 

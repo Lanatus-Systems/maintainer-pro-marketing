@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Preview an AI-made change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams"],
   cover: {
@@ -58,7 +58,7 @@ Preview environments are not new. Most hosting and CI tools offer them, and they
 - Netlify's [Deploy Previews](https://docs.netlify.com/deploy/deploy-types/deploy-previews/) are built automatically when you "open pull / merge requests in a connected site repository", and the preview URL follows the pull request number. Netlify also builds a Deploy Preview when one of its Agent Runners makes a file change.
 - GitLab's [review apps](https://docs.gitlab.com/ci/review_apps/) are "temporary testing environments that are created automatically for each branch or merge request". Its prerequisites include CI/CD pipelines and that you "set up the infrastructure to host and deploy the review apps".
 
-Both are good at what they do: a stable URL per branch that stakeholders can open. The catch for small product changes is the order of events. A developer has already interpreted the request, written the code, committed it, pushed it and waited for a build before the requester sees anything. The preview arrives after the handoff, not during it.
+Both are good at what they do: a stable URL per branch that stakeholders can open. The catch with PR and branch previews, for small product changes, is the order of events. A developer has already interpreted the request, written the code, committed it, pushed it and waited for a build before the requester sees anything. The preview arrives after the handoff, not during it.
 
 | | Preview before the PR | PR or branch preview environment |
 |---|---|---|
@@ -153,6 +153,10 @@ Yes. In Butterneck the PM types the request in a chat on a live copy of the app,
 ### How is this different from a PR preview environment?
 
 PR or branch preview environments are built after a branch is pushed or a pull request is opened, usually through a CI pipeline and a deploy. A preview before the PR exists while the change is being made, so the requester can ask for adjustments before anyone reviews the code.
+
+### Isn't this what an AI agent's own preview does, like Netlify Agent Runners?
+
+Partly. Netlify's Agent Runners build a Deploy Preview when an agent run changes a file, and the preview shows next to the prompt before any pull request. Butterneck is for a different person: the requester types the change on the live preview of the app, the coding agent already signed in on the developer's computer makes it, nothing is deployed to show it, and a developer decides what ships.
 
 ### Does a preview before the PR replace code review?
 

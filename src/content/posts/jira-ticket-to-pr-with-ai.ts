@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
   cover: {
@@ -65,7 +65,7 @@ So a useful ticket-to-change flow should give the ticket author a live preview, 
 - Add the label \`butterneck\` to a ticket.
 - Assign it to a teammate whose Jira account is mapped to a computer that has the project. If the assignee isn't mapped, nothing starts; the Jira page in Butterneck shows why.
 - Butterneck opens a private copy of the project named after the ticket.
-- The ticket's title, description, comments, and attached files become the request.
+- The ticket's title, description, latest comments, and attached files become the request.
 
 ### The agent makes the change
 
@@ -100,7 +100,7 @@ There is no code path in Butterneck that pushes, opens a PR, merges, or deploys.
 
 ## What to put in a ticket so the AI does well
 
-The agent reads the title, description, comments, and attachments. Tickets that work well:
+The agent reads the title, description, latest comments, and attachments. Tickets that work well:
 
 - Name the page or screen: "Checkout, step 2".
 - Say what is there now and what it should be: "Button says Continue. Should say Review order."

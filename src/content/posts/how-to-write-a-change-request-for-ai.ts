@@ -106,7 +106,7 @@ In Butterneck you type the request into a chat on a live preview of the running 
 - **The page you have open.** Each message carries the preview's page address, the route and the page title. The agent is told to prefer changing that screen unless you clearly mean another. So "on this page" works. You still need to say which element.
 - **Your attachments.** You can attach up to five files per message (images, PDF, Word or Excel, up to 8 MB each), or paste a screenshot straight into the chat box. Images go to the agent as files to inspect; for documents, the extracted text goes along with the file. A screenshot with the problem circled is often the fastest "Where" line.
 - **Recent conversation.** The agent sees the most recent messages in the chat, not necessarily the whole history. If you're following up on something from much earlier, use "Reply to this message" on it, or restate the detail.
-- **A Jira ticket, if that's where the request starts.** Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. The title, description, comments and attached files become the request, so the same template works in the ticket description. See the [Jira integration](/integrations/jira).
+- **A Jira ticket, if that's where the request starts.** Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. The title, description, latest comments and attached files become the request, so the same template works in the ticket description. See the [Jira integration](/integrations/jira).
 
 What Butterneck does not do: it doesn't know which element you mean unless you name it, and it doesn't know what you agreed in a meeting. Those parts are still yours to write.
 
@@ -140,7 +140,7 @@ Say exactly what is wrong in your next message. In Butterneck, a turn can also b
 
 ### Can I use the same template in a Jira ticket?
 
-Yes. With Butterneck's Jira integration, the ticket's title, description, comments and attached files become the request, so put the five lines in the description.
+Yes. With Butterneck's Jira integration, the ticket's title, description, latest comments and attached files become the request, so put the five lines in the description.
 
 ## Try it
 

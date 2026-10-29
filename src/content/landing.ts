@@ -155,7 +155,7 @@ export const JIRA_PREVIEW_FAQ = {
   q: "How can a PM request a change from a Jira ticket and have an AI coding agent build a preview?",
   lines: [
     "With Butterneck’s Jira Cloud integration. Connect Jira once, add the label butterneck to the ticket, and assign it to a teammate whose Jira account is mapped to a computer that has the project.",
-    "The ticket’s title, description, comments, and attached files become the request. The AI coding agent already signed in on that computer (Cursor, Claude Code, or Antigravity) makes the change in a private copy named after the ticket.",
+    "The ticket’s title, description, latest comments, and attached files become the request. The AI coding agent already signed in on that computer (Cursor, Claude Code, or Antigravity) makes the change in a private copy named after the ticket.",
     "A short note and a live preview link go back on the ticket. The PM checks the preview and can keep refining it in plain words.",
     "No pull request is opened. A developer decides what goes live and publishes it the usual way.",
   ],
@@ -222,7 +222,7 @@ export const FAQS = [
       "Connect Jira Cloud, give Jira Butterneck’s address so it can send ticket updates, and map each developer’s Jira account to their computer.",
       "Add the label butterneck, and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project.",
       "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
-      "A private copy opens. The title, description, comments, and attached files become the request.",
+      "A private copy opens. The title, description, latest comments, and attached files become the request.",
       "When the AI is done, a short note and a link go back on the ticket.",
       "Updating that same ticket later does not open a second copy.",
       "You can still paste a ticket number into an existing chat to load that ticket.",
