@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { HeaderBar } from "./HeaderBar";
 import { StudioLogo } from "./Logo";
+import { AASAANWEB_PUBLISHED_POSTS } from "@/content/aasaanweb-blog";
 
 /** The admin app's Google Fonts request (client/index.html), loaded only by AasaanWeb pages. */
 const FONTS_CSS =
@@ -10,7 +11,10 @@ const FONTS_CSS =
 export const START_URL =
   "/site-form/c89547af-0752-4ab5-ab6a-4a47a51f49b3/8d47cc5e-6c3c-4fca-a79f-b14bcd3ffb71";
 
-export type AasaanWebPage = "home" | "work" | "pricing";
+export type AasaanWebPage = "home" | "work" | "pricing" | "blog";
+
+/** The Blog link appears once at least one post is published. */
+const SHOW_BLOG_LINK = AASAANWEB_PUBLISHED_POSTS.length > 0;
 
 /** Same links as the admin app's StudioLinks; the current page is marked like the original. */
 function Links({ footer = false, current }: { footer?: boolean; current?: AasaanWebPage }) {
@@ -20,6 +24,7 @@ function Links({ footer = false, current }: { footer?: boolean; current?: Aasaan
     <>
       <a href="/work" {...mark("work")}>Our work</a>
       <a href="/pricing" {...mark("pricing")}>Pricing</a>
+      {SHOW_BLOG_LINK ? <a href="/blog" {...mark("blog")}>Blog</a> : null}
       <a href="/#how">How it works</a>
       <a href="/#who">Who it’s for</a>
       <a href="/#faq">Questions</a>

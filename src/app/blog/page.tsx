@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
@@ -8,11 +7,12 @@ import { breadcrumbJsonLd } from "@/lib/schema";
 import { DEFINITION } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
 import { siteUrl } from "@/lib/site";
+import { AasaanWebBlogIndex, aasaanWebBlogIndexMeta } from "@/components/aasaanweb/AasaanWebBlog";
 
 const title = "Blog";
 const description = `Notes from the ${brand.name} team on AI coding with a human in the loop, live previews, and getting change requests from the product team to the project.`;
 
-export const metadata: Metadata = pageMeta({
+export const metadata: Metadata = isAasaanWeb ? aasaanWebBlogIndexMeta : pageMeta({
   title,
   description,
   path: "/blog",
@@ -22,8 +22,8 @@ export const metadata: Metadata = pageMeta({
 });
 
 export default function BlogIndex() {
-  // Butterneck-only page: 404 on the AasaanWeb site.
-  if (isAasaanWeb) notFound();
+  // The AasaanWeb site has its own blog (src/content/aasaanweb-blog.ts).
+  if (isAasaanWeb) return <AasaanWebBlogIndex />;
   return (
     <main id="content" className="blog-page">
       <JsonLd data={breadcrumbJsonLd(title, "/blog")} />

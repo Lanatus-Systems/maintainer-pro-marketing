@@ -66,6 +66,17 @@ const nextConfig: NextConfig = {
   agentRules: false,
   allowedDevOrigins: ["127.0.0.1"],
   poweredByHeader: false,
+  // Butterneck builds swap the AasaanWeb blog module for a stub, so the shared /blog routes never
+  // pull AasaanWeb styles into www.butterneck.com.
+  ...(isAasaanWeb
+    ? {}
+    : {
+        turbopack: {
+          resolveAlias: {
+            "@/components/aasaanweb/AasaanWebBlog": "./src/components/aasaanweb/AasaanWebBlog.stub.tsx",
+          },
+        },
+      }),
   env: isAasaanWeb
     ? { APP_NAME: appName, NEXT_PUBLIC_AASAANWEB_APP_URL: aasaanWebAppUrl }
     : { APP_NAME: appName },
