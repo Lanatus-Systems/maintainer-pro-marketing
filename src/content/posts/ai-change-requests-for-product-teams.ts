@@ -145,6 +145,10 @@ Track one number: time from request to reviewed change. Compare it with your nor
 
 Yes. With Butterneck, a PM, designer or support lead asks for a change in a chat beside a live preview of the app, and the developer's own coding agent (Cursor, Claude Code or Antigravity) makes it on a computer that has the project. The person who asked checks the preview. A developer decides whether it ships, and Butterneck never opens a pull request, merges or deploys.
 
+### What should a product manager look for in an AI change request tool?
+
+Four things. You ask on the real screen, not from memory. The AI edits the project's own code, not a mockup. You see the result on a running copy right away. And a developer decides what ships. Then ask the questions in the guardrails list above: where the agent writes, what it can read, what leaves the machine, and whether it can ship by itself. In Butterneck, the developer's own Cursor, Claude Code or Antigravity CLI makes the change on a computer that has the project, and Butterneck never opens a pull request, merges or deploys. For a side-by-side of tools that change an existing app, see [AI tools that let non-developers change an existing app](/blog/tools-for-non-developers-to-change-an-existing-app).
+
 ### What are AI change requests?
 
 They let non-developers, like product managers and designers, ask for a change to an existing app in plain words. An AI coding agent edits the real code, the requester checks the result on a live preview, and a developer decides what ships.
@@ -167,7 +171,7 @@ Starter is free for one developer and one requester. Pro is USD 19 per person pe
 
 ### How is this different from tools that open pull requests?
 
-Butterneck stops at a reviewable change on a live preview. For a comparison with a PR-generating tool, read our [Itera alternative](/blog/itera-alternative) post, and for the reasoning, [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding).
+Butterneck stops at a reviewable change on a live preview. For a comparison with a PR-generating tool, read our [Itera alternative](/blog/itera-alternative) or [Clogless alternative](/blog/clogless-alternative) post, and for the reasoning, [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding).
 
 ## Try it
 
