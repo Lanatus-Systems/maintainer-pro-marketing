@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who request product changes with AI: what they can ask for, what needs an engineer, and who reviews.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -242,6 +242,6 @@ No. Butterneck never opens a pull request, never merges and never deploys. A dev
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring your draft policy. Or check [pricing](/pricing): Starter is free for one developer and one requester, and Pro is $19 per person per month. For the wider debate, read [should product managers ship code?](/blog/should-product-managers-ship-code)
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring your draft policy. Or check [pricing](/pricing): Starter is free for one developer and one requester, and Pro is $19 per person per month; a workspace owner on Starter can try Pro free for one month. For the wider debate, read [should product managers ship code?](/blog/should-product-managers-ship-code)
 `,
 };

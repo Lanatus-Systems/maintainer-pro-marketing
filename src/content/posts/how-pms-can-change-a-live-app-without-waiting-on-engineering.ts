@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI agent makes the edit, a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
@@ -147,6 +147,6 @@ Butterneck runs on a developer's computer, where the project already runs, so th
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/pricing): Starter is free for one developer and one requester. Learn more at [butterneck.com](/).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real change your team has been waiting on. Or check [pricing](/pricing): Starter is free for one developer and one requester, and a workspace owner on Starter can try Pro free for one month. Learn more at [butterneck.com](/).
 `,
 };

@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
   cover: {
@@ -115,6 +115,6 @@ Yes. Code context goes to whichever AI provider your coding CLI uses, and previe
 
 Human-in-the-loop is often treated as a temporary crutch until the models get better. I think for product changes it's a permanent design choice: ask freely, preview instantly, ship deliberately.
 
-If that's how you want your team to work with coding agents, Butterneck has a free Starter plan; see [pricing](/pricing).
+If that's how you want your team to work with coding agents, Butterneck has a free Starter plan, and a workspace owner on Starter can try Pro free for one month; see [pricing](/pricing).
 `,
 };

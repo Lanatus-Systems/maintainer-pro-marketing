@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A five-line AI change request template for PMs and designers, with before-and-after examples and what to leave to a developer.",
   date: "2026-10-28",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -144,6 +144,6 @@ Yes. With Butterneck's Jira integration, the ticket's title, description, commen
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real request your team has been waiting on. We will run it on a live copy. Or see [pricing](/pricing) and start on the free plan.
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real request your team has been waiting on. We will run it on a live copy. Or see [pricing](/pricing) and start on the free plan; a workspace owner on Starter can also try Pro free for one month.
 `,
 };

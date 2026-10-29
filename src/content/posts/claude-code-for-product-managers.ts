@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers"],
   cover: {
@@ -104,6 +104,10 @@ Butterneck uses the coding CLI that is already signed in on the connected comput
 ### Does Butterneck open pull requests for the PM's change?
 
 No. It edits files in the connected project and stops. A developer decides whether to commit it, open a pull request, or discard it. Butterneck never merges and never deploys.
+
+### Is there an AI coding agent for product managers that works on our existing codebase?
+
+Yes. Butterneck is one option for a team that already has a web app. A developer connects a computer that already runs the product and has Claude Code, Cursor or Antigravity signed in. The product manager opens a live preview of the existing app, types the change in a chat, and checks the result on that preview. The agent edits the real project on the developer's computer. No pull request is opened: a developer decides first what ships, and Butterneck never merges or deploys. Tools such as Alloy, Clogless and Plusma instead connect your GitHub repository, run the change in a hosted preview and open a pull request.
 
 ### Does my code stay on my machine?
 
