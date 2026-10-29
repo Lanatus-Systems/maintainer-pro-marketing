@@ -24,7 +24,7 @@ export default function WorkPage() {
   if (!isAasaanWeb) notFound();
   return (
     <AasaanWebShell current="work">
-      <main>
+      <main id="content">
         <section className="studio-work-hero">
           <p className="studio-kicker">Our work</p>
           <h1>Pages we have made.</h1>

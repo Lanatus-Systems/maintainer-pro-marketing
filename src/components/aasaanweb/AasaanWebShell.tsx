@@ -2,9 +2,12 @@ import type { ReactNode } from "react";
 import { HeaderBar } from "./HeaderBar";
 import { StudioLogo } from "./Logo";
 
-/** The admin app's Google Fonts request (client/index.html), loaded only by AasaanWeb pages. */
+/**
+ * Fonts, loaded only by AasaanWeb pages: Archivo (a variable-width grotesque, the display face the
+ * client sites built by AasaanWeb use) for headings, Instrument Sans for text.
+ */
 const FONTS_CSS =
-  "https://fonts.googleapis.com/css2?family=Outfit:wght@500..700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap";
+  "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap";
 
 /** The admin app's StudioShell START_URL; next.config redirects /site-form to the app. */
 export const START_URL =
@@ -40,14 +43,42 @@ export function AasaanWebShell({ children, current }: { children: ReactNode; cur
       <noscript>
         <style>{".studio .studio-reveal{animation-play-state:running}"}</style>
       </noscript>
-      <HeaderBar logo={<StudioLogo />} links={<Links current={current} />} menuLinks={<Links footer current={current} />} startUrl={START_URL} />
+      <a href="#content" className="studio-skip">
+        Skip to content
+      </a>
+      <HeaderBar
+        logo={<StudioLogo />}
+        links={<Links current={current} />}
+        menuLinks={<Links footer current={current} />}
+        startUrl={START_URL}
+      />
       {children}
       <footer className="studio-footer">
-        <StudioLogo size={22} />
-        <nav aria-label="Footer">
-          <Links footer current={current} />
-        </nav>
-        <p>© {new Date().getFullYear()} AasaanWeb. All rights reserved.</p>
+        <div className="studio-footer-top">
+          <div className="studio-footer-brand">
+            <StudioLogo size={26} />
+            <p>Create a landing page for your business, or update the site you already have, directly on the preview.</p>
+            <a href={START_URL} className="studio-btn studio-btn-small">
+              Get started
+            </a>
+          </div>
+          <nav aria-label="Footer" className="studio-footer-col">
+            <p className="studio-footer-head">Site</p>
+            <Links footer current={current} />
+          </nav>
+          <nav aria-label="Legal" className="studio-footer-col">
+            <p className="studio-footer-head">Legal</p>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="mailto:support@butterneck.com">support@butterneck.com</a>
+          </nav>
+        </div>
+        <div className="studio-footer-base">
+          <p>© {new Date().getFullYear()} AasaanWeb. All rights reserved.</p>
+          <p>
+            Made by <a href="https://www.butterneck.com/">Butterneck</a>
+          </p>
+        </div>
       </footer>
     </div>
   );

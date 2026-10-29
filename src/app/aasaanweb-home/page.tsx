@@ -12,8 +12,10 @@ import "./aasaanweb.css";
 
 /**
  * AasaanWeb home page (APP_NAME=maintainer-pro). next.config rewrites "/" here for that brand only.
- * Markup is a straight port of the admin app's client/src/pages/StudioLandingPage.tsx (branch
- * seo-fixes), so the page matches https://aasaan.butterneck.com/.
+ * Copy comes from the admin app's client/src/pages/StudioLandingPage.tsx. The 2026-10 redesign
+ * follows the look of the client sites AasaanWeb builds (see /work): a large display headline,
+ * the product as the hero, full-bleed navy bands, numbered steps on hairline rules, and calm CSS
+ * motion that respects prefers-reduced-motion.
  */
 export const metadata: Metadata = aasaanWebPageMeta();
 
@@ -162,14 +164,92 @@ const STUDIO_DAY = [
   { t: "9:20", d: "You publish. The counter is still quiet." },
 ];
 
-function Icon({ children }: { children: ReactNode }) {
+/** Facts shown on the live site today: the home page bars and the pricing page. */
+const FACTS = [
+  { value: "10 min", label: "A small change, made on the preview" },
+  { value: "4 days", label: "The same change, the usual way" },
+  { value: "15 days", label: "Of chatbot changes after we build the page" },
+  { value: "₹5,000", label: "Paid at the end, after that work is done" },
+];
+
+const HOW = [
+  { n: "01", title: "Tell us", body: "What you sell, a photo or two, and how a customer should reach you." },
+  { n: "02", title: "See the page", body: "Your offer, your hours, and a button. A real page a customer can read." },
+  { n: "03", title: "Change it yourself", body: "Say what is wrong, in normal words. You see it change, then you put it live." },
+];
+
+function Icon({ children, size = 22 }: { children: ReactNode; size?: number }) {
   return (
-    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" fill="none">
+    <svg viewBox="0 0 32 32" width={size} height={size} aria-hidden="true" fill="none">
       {children}
     </svg>
   );
 }
 
+const S = { stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
+
+const BITS: { label: string; icon: ReactNode }[] = [
+  { label: "Headline", icon: <path d="M7 10h18M7 16h14M7 22h10" {...S} /> },
+  {
+    label: "Photo",
+    icon: (
+      <>
+        <rect x="6" y="8" width="20" height="16" rx="2" {...S} />
+        <circle cx="12" cy="14" r="2" {...S} />
+        <path d="m8 22 6-5 4 3 3-2 3 4" {...S} />
+      </>
+    ),
+  },
+  {
+    label: "Hours",
+    icon: (
+      <>
+        <circle cx="16" cy="16" r="8" {...S} />
+        <path d="M16 12v4.5l3 2" {...S} />
+      </>
+    ),
+  },
+  {
+    label: "Phone",
+    icon: <path d="M11 8h3.2l1.2 3.2-2 .9a8.5 8.5 0 0 0 4.5 4.5l.9-2 3.2 1.2V19a2 2 0 0 1-2.2 2A12.2 12.2 0 0 1 9 11.2 2 2 0 0 1 11 8Z" {...S} />,
+  },
+  {
+    label: "Price",
+    icon: (
+      <>
+        <path d="M14.5 8H23v8.5L15 24.5 6.5 16 14.5 8Z" {...S} />
+        <circle cx="19.2" cy="12.8" r="1.2" fill="currentColor" />
+      </>
+    ),
+  },
+  {
+    label: "Button",
+    icon: (
+      <>
+        <rect x="6" y="12" width="20" height="8" rx="4" {...S} />
+        <path d="M11 16h6" {...S} />
+      </>
+    ),
+  },
+];
+
+function Arrow() {
+  return (
+    <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" className="studio-arrow">
+      <path d="M5 11 11 5M6 5h5v5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function Check() {
+  return (
+    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" className="studio-check">
+      <path d="m3.5 8.5 3 3 6-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/** The product moment: a business page on the preview, with the owner's change request beside it. */
 function PreviewStage() {
   return (
     <div className="studio-stage" aria-hidden="true">
@@ -179,12 +259,13 @@ function PreviewStage() {
           <span />
           <span />
           <div className="studio-url">harbor-bake.example</div>
+          <p className="studio-preview-tag">Preview</p>
         </div>
         <article className="studio-site">
           <img
-            src={unsplash("photo-1509440159596-0249088772ff", 720)}
+            src={unsplash("photo-1509440159596-0249088772ff", 960)}
             srcSet={unsplashSrcSet("photo-1509440159596-0249088772ff", PHOTO_WIDTHS)}
-            sizes="(max-width: 980px) 94vw, 480px"
+            sizes="(max-width: 980px) 94vw, 600px"
             alt=""
             width={1600}
             height={1066}
@@ -194,9 +275,7 @@ function PreviewStage() {
           <div className="studio-site-copy">
             <p>Harbor Bake · East Market</p>
             <h3>Saturday loaves, out by two.</h3>
-            <p className="studio-site-note">
-              Open today until 6. Weekend bread sells through early afternoon.
-            </p>
+            <p className="studio-site-note">Open today until 6. Weekend bread sells through early afternoon.</p>
             <div className="studio-site-actions">
               <span className="studio-site-btn">Order for pickup</span>
               <span className="studio-hours-chip">
@@ -213,9 +292,18 @@ function PreviewStage() {
           “Saturday hours are wrong. We close at 2, not 6. And use the new photo of the counter.”
         </p>
         <ul>
-          <li>Hours line updated</li>
-          <li>Counter photo swapped</li>
-          <li>Waiting on you to publish</li>
+          <li>
+            <Check />
+            Hours line updated
+          </li>
+          <li>
+            <Check />
+            Counter photo swapped
+          </li>
+          <li className="is-waiting">
+            <span className="studio-pulse" />
+            Waiting on you to publish
+          </li>
         </ul>
       </aside>
       <div className="studio-float studio-float-a">Swap the storefront photo</div>
@@ -228,183 +316,132 @@ export default function AasaanWebHome() {
   // Butterneck builds never serve this page.
   if (!isAasaanWeb) notFound();
   return (
-    <AasaanWebShell>
+    <AasaanWebShell current="home">
       <main id="content">
         <PageUrlTags path="/" />
         <JsonLd data={aasaanWebJsonLd()} />
-        <section className="studio-hero">
-          <div className="studio-hero-copy">
-            <p className="studio-kicker">For the page customers actually see</p>
-            <h1>
-              Create your own site. Update the one you have <em>on the go.</em>
-            </h1>
-            <p className="studio-lead">
-              Tell us about your business. You get a page. When a photo, a
-              price, or a Saturday hour changes, you fix it yourself — while
-              you are looking at it.
-            </p>
-          </div>
 
-          <div className="studio-choices">
-            <article className="studio-choice">
-              <p className="studio-choice-index">01</p>
-              <h2>Create your own site</h2>
-              <p>
-                Start from the business, not a blank file. Get a full landing
-                page — offer, photos, services, hours, and a way to get in
-                touch — then keep changing it yourself.
+        <section className="studio-hero">
+          <div className="studio-wrap studio-hero-grid">
+            <p className="studio-kicker studio-hero-in studio-hero-kicker">For the page customers actually see</p>
+            <h1 className="studio-hero-title">
+                <span className="studio-line">
+                  <span>Create your own site.</span>
+                </span>{" "}
+                <span className="studio-line">
+                  <span>Update the one you have</span>
+                </span>{" "}
+                <span className="studio-line">
+                  <span>
+                    <em>on the go.</em>
+                  </span>
+                </span>
+              </h1>
+            <div className="studio-hero-copy">
+              <p className="studio-lead studio-hero-in">
+                Tell us about your business. You get a page. When a photo, a price, or a Saturday hour changes, you fix
+                it yourself — while you are looking at it.
               </p>
-              <a href={SIGNUP_URL} className="studio-btn">
-                Create your site
-              </a>
-            </article>
-            <article className="studio-choice studio-choice-alt">
-              <p className="studio-choice-index">02</p>
-              <h2>Update your existing site</h2>
-              <p>
-                The page is already live. Point at what is stale and describe
-                the fix in plain language. See it on the preview before
-                anything public changes.
+              <div className="studio-hero-actions studio-hero-in">
+                <a href={SIGNUP_URL} className="studio-btn">
+                  Create your site
+                </a>
+                <a href={SIGNUP_URL} className="studio-btn studio-btn-ghost">
+                  Update your existing site
+                </a>
+              </div>
+              <p className="studio-hero-proof studio-hero-in">
+                Live pages for{" "}
+                {WORK.map((item, i) => (
+                  <span key={item.name}>
+                    <a href={WORK_URL}>{item.name}</a>
+                    {i < WORK.length - 2 ? ", " : i === WORK.length - 2 ? " and " : ""}
+                  </span>
+                ))}
+                .
               </p>
-              <a href={SIGNUP_URL} className="studio-btn studio-btn-ghost">
-                Update your site
-              </a>
-            </article>
+            </div>
+            <div className="studio-hero-visual">
+              <PreviewStage />
+            </div>
           </div>
         </section>
 
-        <PreviewStage />
+        <section className="studio-facts" aria-label="At a glance">
+          <dl className="studio-wrap studio-facts-grid">
+            {FACTS.map((fact) => (
+              <div key={fact.value}>
+                <dt>{fact.value}</dt>
+                <dd>{fact.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
 
         <section id="how" className="studio-section" aria-labelledby="plain-heading">
-          <Reveal>
-            <div className="studio-section-head">
-              <p className="studio-kicker">How it works</p>
-              <h2 id="plain-heading">You tell us. You see the page. You change it.</h2>
+          <div className="studio-wrap">
+            <Reveal>
+              <div className="studio-section-head studio-head-split">
+                <div>
+                  <p className="studio-kicker">How it works</p>
+                  <h2 id="plain-heading">You tell us. You see the page. You change it.</h2>
+                </div>
+                <p>
+                  Two paths, one preview. Start a new landing page from what your business already is, or open the site
+                  you have and correct it on the spot.
+                </p>
+              </div>
+            </Reveal>
+            <ol className="studio-numbered">
+              {HOW.map((step) => (
+                <li key={step.n}>
+                  <span className="studio-num">{step.n}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.body}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="studio-marquee" aria-label="What you can change yourself">
+            <p className="studio-wrap studio-marquee-label">What you can change yourself</p>
+            <div className="studio-marquee-track">
+              {[0, 1].map((copy) => (
+                <ul key={copy} className="studio-bits" aria-hidden={copy === 1 ? true : undefined}>
+                  {[...BITS, ...BITS].map((bit, i) => (
+                    <li key={`${bit.label}-${i}`}>
+                      <Icon>{bit.icon}</Icon>
+                      {bit.label}
+                    </li>
+                  ))}
+                </ul>
+              ))}
             </div>
-          </Reveal>
-          <ol className="studio-steps-pic">
-            <li>
-              <span className="studio-step-mark">
-                <Icon>
-                  <path d="M6 14.5 16 7l10 7.5V26a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-11.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                  <path d="M13 27v-7h6v7" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                </Icon>
-              </span>
-              <h3>Tell us</h3>
-              <p>What you sell, a photo or two, and how a customer should reach you.</p>
-            </li>
-            <li>
-              <span className="studio-step-mark">
-                <Icon>
-                  <rect x="5" y="7" width="22" height="18" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M5 12h22" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M9 18h8M9 21.5h5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                </Icon>
-              </span>
-              <h3>See the page</h3>
-              <p>Your offer, your hours, and a button. A real page a customer can read.</p>
-            </li>
-            <li>
-              <span className="studio-step-mark">
-                <Icon>
-                  <path d="M18.5 7.5 24.5 13.5 12 26H6v-6L18.5 7.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                  <path d="m16 10 6 6" stroke="currentColor" strokeWidth="1.6" />
-                </Icon>
-              </span>
-              <h3>Change it yourself</h3>
-              <p>Say what is wrong, in normal words. You see it change, then you put it live.</p>
-            </li>
-          </ol>
-
-          <figure className="studio-bars">
-            <figcaption>How long a small change takes</figcaption>
-            <div className="studio-bar-row">
-              <div className="studio-bar-label">
-                <strong>4 days</strong>
-                <span>The usual way</span>
-              </div>
-              <div className="studio-bar-track" aria-hidden="true">
-                <span />
-              </div>
-              <p>You send a message. You wait. It goes live later in the week.</p>
-            </div>
-            <div className="studio-bar-row is-fast">
-              <div className="studio-bar-label">
-                <strong>10 min</strong>
-                <span>On your page</span>
-              </div>
-              <div className="studio-bar-track" aria-hidden="true">
-                <span />
-              </div>
-              <p>You open the page, say the fix, and put it live when it looks right.</p>
-            </div>
-          </figure>
-
-          <div className="studio-bits-wrap">
-            <h3>What you can change yourself</h3>
-            <ul className="studio-bits">
-              <li>
-                <Icon>
-                  <path d="M7 10h18M7 16h14M7 22h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                </Icon>
-                Headline
-              </li>
-              <li>
-                <Icon>
-                  <rect x="6" y="8" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                  <circle cx="12" cy="14" r="2" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="m8 22 6-5 4 3 3-2 3 4" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                </Icon>
-                Photo
-              </li>
-              <li>
-                <Icon>
-                  <circle cx="16" cy="16" r="8" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M16 12v4.5l3 2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                </Icon>
-                Hours
-              </li>
-              <li>
-                <Icon>
-                  <path d="M11 8h3.2l1.2 3.2-2 .9a8.5 8.5 0 0 0 4.5 4.5l.9-2 3.2 1.2V19a2 2 0 0 1-2.2 2A12.2 12.2 0 0 1 9 11.2 2 2 0 0 1 11 8Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                </Icon>
-                Phone
-              </li>
-              <li>
-                <Icon>
-                  <path d="M14.5 8H23v8.5L15 24.5 6.5 16 14.5 8Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                  <circle cx="19.2" cy="12.8" r="1.2" fill="currentColor" />
-                </Icon>
-                Price
-              </li>
-              <li>
-                <Icon>
-                  <rect x="6" y="12" width="20" height="8" rx="4" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M11 16h6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                </Icon>
-                Button
-              </li>
-            </ul>
           </div>
         </section>
 
-        <section id="examples" className="studio-section" aria-labelledby="examples-heading">
-          <Reveal>
-            <div className="studio-section-head">
-              <p className="studio-kicker">Our work</p>
-              <h2 id="examples-heading">Pages for real businesses.</h2>
-              <p>
-                A customer can see what they do, and how to get in touch.
-              </p>
-            </div>
-          </Reveal>
-          <div className="studio-examples">
-            {WORK.filter((item) => item.src).map((item) => (
-              <Reveal key={item.name}>
-                <figure className="studio-example">
-                  <div className="studio-example-frame">
-                    <img src={item.src} alt={item.alt ?? item.name} width={1440} height={900} loading="lazy" />
-                  </div>
+        <section id="examples" className="studio-section studio-section-white" aria-labelledby="examples-heading">
+          <div className="studio-wrap">
+            <Reveal>
+              <div className="studio-section-head studio-head-split">
+                <div>
+                  <p className="studio-kicker">Our work</p>
+                  <h2 id="examples-heading">Pages for real businesses.</h2>
+                </div>
+                <p>A customer can see what they do, and how to get in touch.</p>
+              </div>
+            </Reveal>
+            <div className="studio-examples">
+              {WORK.filter((item) => item.src).map((item) => (
+                <figure className="studio-example" key={item.name}>
+                  <a
+                    href={item.open}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="studio-example-frame"
+                    aria-label={`Open the ${item.name} website in a new tab`}
+                  >
+                    <img src={item.src} alt={item.alt ?? item.name} width={1024} height={580} loading="lazy" />
+                  </a>
                   <figcaption>
                     <p className="studio-example-meta">{item.meta}</p>
                     <h3>{item.name}</h3>
@@ -416,268 +453,250 @@ export default function AasaanWebHome() {
                       className="studio-example-open"
                       aria-label={`Open the ${item.name} website in a new tab`}
                     >
-                      Open the website ↗
+                      Open the website <Arrow />
                     </a>
                   </figcaption>
                 </figure>
-              </Reveal>
-            ))}
-          </div>
-          <a href={WORK_URL} className="studio-more">
-            See our work →
-          </a>
-        </section>
-
-        <section id="problem" className="studio-section" aria-labelledby="problem-heading">
-          <Reveal>
-            <div className="studio-section-head">
-              <p className="studio-kicker">What we are solving</p>
-              <h2 id="problem-heading">
-                The change is small. The waiting is not.
-              </h2>
-              <p>
-                Owners rarely need a redesign. They need the homepage to tell
-                the truth this week. That request still travels through a
-                message, a developer’s calendar, a review, and another message.
-                Both sides pay for it: the owner waits while customers see the
-                old page, and the developer loses a block of real work to a
-                ten-minute edit.
-              </p>
+              ))}
             </div>
-          </Reveal>
-          <div className="studio-waste">
-            {WASTE.map((item) => (
-              <Reveal key={item.title}>
-                <article className="studio-waste-card">
-                  <p>{item.time}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                </article>
-              </Reveal>
-            ))}
+            <a href={WORK_URL} className="studio-btn studio-btn-ghost studio-more">
+              See our work
+            </a>
           </div>
         </section>
 
-        <section className="studio-band" aria-labelledby="answer-heading">
-          <Reveal className="studio-band-inner">
-            <div>
-              <p className="studio-kicker">The other way</p>
-              <h2 id="answer-heading">Edit the site directly, on the preview.</h2>
-            </div>
+        <section id="problem" className="studio-dark" aria-labelledby="problem-heading">
+          <div className="studio-wrap studio-problem">
+            <Reveal>
+              <div className="studio-problem-head">
+                <p className="studio-kicker">What we are solving</p>
+                <h2 id="problem-heading">The change is small. The waiting is not.</h2>
+                <p>
+                  Owners rarely need a redesign. They need the homepage to tell the truth this week. That request still
+                  travels through a message, a developer’s calendar, a review, and another message. Both sides pay for
+                  it: the owner waits while customers see the old page, and the developer loses a block of real work to
+                  a ten-minute edit.
+                </p>
+              </div>
+            </Reveal>
+            <ol className="studio-rows">
+              {WASTE.map((item) => (
+                <li key={item.title}>
+                  <p className="studio-row-tag">{item.time}</p>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section className="studio-statement" aria-labelledby="answer-heading">
+          <Reveal className="studio-wrap">
+            <p className="studio-kicker">The other way</p>
+            <h2 id="answer-heading">
+              Edit the site directly, <em>on the preview.</em>
+            </h2>
             <p>
-              Open the page the way a customer sees it. Say what should be
-              different. Watch that part change. Publish when you are satisfied
-              — not when a ticket reaches the top of someone else’s list. The
-              developer stays available for work that actually needs them.
+              Open the page the way a customer sees it. Say what should be different. Watch that part change. Publish
+              when you are satisfied — not when a ticket reaches the top of someone else’s list. The developer stays
+              available for work that actually needs them.
             </p>
           </Reveal>
         </section>
 
-        <section id="create" className="studio-section" aria-labelledby="create-heading">
-          <div className="studio-split">
-            <Reveal>
-              <figure className="studio-photo">
-                <img
-                  src={unsplash("photo-1554118811-1e0d58224f24", 960)}
-                  srcSet={unsplashSrcSet("photo-1554118811-1e0d58224f24", PHOTO_WIDTHS)}
-                  sizes="(max-width: 980px) 94vw, 620px"
-                  alt="A small cafe counter, the kind of business a landing page has to explain in one screen."
-                  width={1400}
-                  height={933}
-                  loading="lazy"
-                />
-                <figcaption>A first page, built from the shop you already run.</figcaption>
-              </figure>
-            </Reveal>
-            <Reveal>
-              <div className="studio-split-copy">
-                <p className="studio-kicker">Path one</p>
-                <h2 id="create-heading">Create your own site</h2>
-                <p>
-                  You should not need a project plan to have a page. Bring what
-                  you would tell a good customer: what you do, why someone
-                  should pick you, a few true photos, and the next step — call,
-                  book, visit, or buy.
-                </p>
-                <p>
-                  The result is a landing page with a clear offer, your
-                  services, proof, hours, and contact. It is meant to be
-                  edited the week something changes, with the same preview you
-                  used to approve it.
-                </p>
-                <ol className="studio-steps">
-                  {CREATE_STEPS.map((step) => (
-                    <li key={step.n}>
-                      <span>{step.n}</span>
-                      <div>
-                        <h3>{step.title}</h3>
-                        <p>{step.body}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ol>
-                <a href={SIGNUP_URL} className="studio-btn">
-                  Create your site
-                </a>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        <section id="update" className="studio-section studio-section-tight" aria-labelledby="update-heading">
-          <div className="studio-split studio-split-reverse">
-            <Reveal className="studio-media">
-              <figure className="studio-photo">
-                <img
-                  src={unsplash("photo-1441986300917-64674bd600d8", 960)}
-                  srcSet={unsplashSrcSet("photo-1441986300917-64674bd600d8", PHOTO_WIDTHS)}
-                  sizes="(max-width: 980px) 94vw, 620px"
-                  alt="A clothing shop interior, already open, with a page that has to keep up with what is on the floor."
-                  width={1400}
-                  height={933}
-                  loading="lazy"
-                />
-                <figcaption>The site is live. The details still drift.</figcaption>
-              </figure>
-            </Reveal>
-            <Reveal>
-              <div className="studio-split-copy">
-                <p className="studio-kicker">Path two</p>
-                <h2 id="update-heading">Update your existing site, very easily</h2>
-                <p>
-                  The menu changed. The sale ended. The photo is three years
-                  old. The phone number is wrong on mobile. None of that is a
-                  redesign. It is still how most owners spend a week they do
-                  not have.
-                </p>
-                <p>
-                  Connect the site you already have, open the preview, and
-                  describe the correction. You stay in the page. Your developer
-                  stays out of the queue for edits that were never worth a
-                  meeting.
-                </p>
-                <ol className="studio-steps">
-                  {UPDATE_STEPS.map((step) => (
-                    <li key={step.n}>
-                      <span>{step.n}</span>
-                      <div>
-                        <h3>{step.title}</h3>
-                        <p>{step.body}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ol>
-                <a href={SIGNUP_URL} className="studio-btn studio-btn-teal">
-                  Update your site
-                </a>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        <section className="studio-section" aria-labelledby="say-heading">
-          <Reveal>
-            <div className="studio-section-head">
-              <p className="studio-kicker">How an edit sounds</p>
-              <h2 id="say-heading">Say it the way you would say it out loud.</h2>
+        <section id="create" className="studio-section studio-section-white" aria-labelledby="create-heading">
+          <div className="studio-wrap studio-split">
+            <figure className="studio-photo">
+              <img
+                src={unsplash("photo-1554118811-1e0d58224f24", 960)}
+                srcSet={unsplashSrcSet("photo-1554118811-1e0d58224f24", PHOTO_WIDTHS)}
+                sizes="(max-width: 980px) 94vw, 600px"
+                alt="A small cafe counter, the kind of business a landing page has to explain in one screen."
+                width={1400}
+                height={933}
+                loading="lazy"
+              />
+              <figcaption>A first page, built from the shop you already run.</figcaption>
+            </figure>
+            <div className="studio-split-copy">
+              <p className="studio-kicker">Path one</p>
+              <h2 id="create-heading">Create your own site</h2>
               <p>
-                You do not write a specification. You point at the part that is
-                wrong and describe the fix. These are the requests that used to
-                become tickets.
+                You should not need a project plan to have a page. Bring what you would tell a good customer: what you
+                do, why someone should pick you, a few true photos, and the next step — call, book, visit, or buy.
               </p>
+              <p>
+                The result is a landing page with a clear offer, your services, proof, hours, and contact. It is meant
+                to be edited the week something changes, with the same preview you used to approve it.
+              </p>
+              <ol className="studio-steps">
+                {CREATE_STEPS.map((step) => (
+                  <li key={step.n}>
+                    <span>{step.n}</span>
+                    <div>
+                      <h3>{step.title}</h3>
+                      <p>{step.body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <a href={SIGNUP_URL} className="studio-btn">
+                Create your site
+              </a>
             </div>
-          </Reveal>
-          <ul className="studio-prompts">
-            {PROMPTS.map((line) => (
-              <li key={line}>
-                <span aria-hidden="true">“</span>
-                {line}
-              </li>
-            ))}
-          </ul>
+          </div>
+        </section>
+
+        <section id="update" className="studio-section" aria-labelledby="update-heading">
+          <div className="studio-wrap studio-split studio-split-reverse">
+            <figure className="studio-photo">
+              <img
+                src={unsplash("photo-1441986300917-64674bd600d8", 960)}
+                srcSet={unsplashSrcSet("photo-1441986300917-64674bd600d8", PHOTO_WIDTHS)}
+                sizes="(max-width: 980px) 94vw, 600px"
+                alt="A clothing shop interior, already open, with a page that has to keep up with what is on the floor."
+                width={1400}
+                height={933}
+                loading="lazy"
+              />
+              <figcaption>The site is live. The details still drift.</figcaption>
+            </figure>
+            <div className="studio-split-copy">
+              <p className="studio-kicker">Path two</p>
+              <h2 id="update-heading">Update your existing site, very easily</h2>
+              <p>
+                The menu changed. The sale ended. The photo is three years old. The phone number is wrong on mobile.
+                None of that is a redesign. It is still how most owners spend a week they do not have.
+              </p>
+              <p>
+                Connect the site you already have, open the preview, and describe the correction. You stay in the page.
+                Your developer stays out of the queue for edits that were never worth a meeting.
+              </p>
+              <ol className="studio-steps">
+                {UPDATE_STEPS.map((step) => (
+                  <li key={step.n}>
+                    <span>{step.n}</span>
+                    <div>
+                      <h3>{step.title}</h3>
+                      <p>{step.body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <a href={SIGNUP_URL} className="studio-btn studio-btn-teal">
+                Update your site
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="studio-section studio-section-white" aria-labelledby="say-heading">
+          <div className="studio-wrap studio-say">
+            <Reveal>
+              <div className="studio-section-head">
+                <p className="studio-kicker">How an edit sounds</p>
+                <h2 id="say-heading">Say it the way you would say it out loud.</h2>
+                <p>
+                  You do not write a specification. You point at the part that is wrong and describe the fix. These are
+                  the requests that used to become tickets.
+                </p>
+              </div>
+            </Reveal>
+            <ul className="studio-prompts">
+              {PROMPTS.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </div>
         </section>
 
         <section className="studio-section" aria-labelledby="edits-heading">
-          <Reveal>
-            <div className="studio-section-head">
-              <p className="studio-kicker">What you change yourself</p>
-              <h2 id="edits-heading">The pieces that go stale first.</h2>
+          <div className="studio-wrap">
+            <Reveal>
+              <div className="studio-section-head">
+                <p className="studio-kicker">What you change yourself</p>
+                <h2 id="edits-heading">The pieces that go stale first.</h2>
+              </div>
+            </Reveal>
+            <div className="studio-edits">
+              {EDITS.map((item, i) => (
+                <article key={item.title} className="studio-edit-tile">
+                  <span className="studio-num">{String(i + 1).padStart(2, "0")}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </article>
+              ))}
             </div>
-          </Reveal>
-          <div className="studio-edits">
-            {EDITS.map((item) => (
-              <article key={item.title} className="studio-edit-tile">
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
           </div>
         </section>
 
-        <section className="studio-section" aria-labelledby="tuesday-heading">
-          <Reveal>
-            <div className="studio-section-head">
-              <p className="studio-kicker">The same Tuesday</p>
-              <h2 id="tuesday-heading">One small correction. Two calendars.</h2>
+        <section className="studio-section studio-section-white" aria-labelledby="tuesday-heading">
+          <div className="studio-wrap">
+            <Reveal>
+              <div className="studio-section-head">
+                <p className="studio-kicker">The same Tuesday</p>
+                <h2 id="tuesday-heading">One small correction. Two calendars.</h2>
+              </div>
+            </Reveal>
+            <div className="studio-days">
+              <article>
+                <header className="studio-day-head">
+                  <h3>The usual way</h3>
+                  <p>Four days</p>
+                </header>
+                <ol className="studio-timeline">
+                  {USUAL_DAY.map((row, index) => (
+                    <li key={row.t} className={index === USUAL_DAY.length - 1 ? "is-last" : undefined}>
+                      <time>{row.t}</time>
+                      <span className="studio-node" aria-hidden="true" />
+                      <span>{row.d}</span>
+                    </li>
+                  ))}
+                </ol>
+                <div className="studio-meter">
+                  <div className="studio-meter-track" aria-hidden="true">
+                    <span />
+                  </div>
+                  <p>Live on Thursday. The weekend rush already started.</p>
+                </div>
+              </article>
+              <article className="is-studio">
+                <header className="studio-day-head">
+                  <h3>On the preview</h3>
+                  <p>Ten minutes</p>
+                </header>
+                <ol className="studio-timeline">
+                  {STUDIO_DAY.map((row, index) => (
+                    <li key={row.t} className={index === STUDIO_DAY.length - 1 ? "is-last" : undefined}>
+                      <time>{row.t}</time>
+                      <span className="studio-node" aria-hidden="true" />
+                      <span>{row.d}</span>
+                    </li>
+                  ))}
+                </ol>
+                <div className="studio-meter">
+                  <div className="studio-meter-track" aria-hidden="true">
+                    <span />
+                  </div>
+                  <p>Published at 9:20. The counter is still quiet.</p>
+                </div>
+              </article>
             </div>
-          </Reveal>
-          <div className="studio-days">
-            <article>
-              <header className="studio-day-head">
-                <h3>The usual way</h3>
-                <p>Four days</p>
-              </header>
-              <ol className="studio-timeline">
-                {USUAL_DAY.map((row, index) => (
-                  <li key={row.t} className={index === USUAL_DAY.length - 1 ? "is-last" : undefined}>
-                    <time>{row.t}</time>
-                    <span className="studio-node" aria-hidden="true" />
-                    <span>{row.d}</span>
-                  </li>
-                ))}
-              </ol>
-              <div className="studio-meter">
-                <div className="studio-meter-track" aria-hidden="true">
-                  <span />
-                </div>
-                <p>Live on Thursday. The weekend rush already started.</p>
-              </div>
-            </article>
-            <article className="is-studio">
-              <header className="studio-day-head">
-                <h3>On the preview</h3>
-                <p>Ten minutes</p>
-              </header>
-              <ol className="studio-timeline">
-                {STUDIO_DAY.map((row, index) => (
-                  <li key={row.t} className={index === STUDIO_DAY.length - 1 ? "is-last" : undefined}>
-                    <time>{row.t}</time>
-                    <span className="studio-node" aria-hidden="true" />
-                    <span>{row.d}</span>
-                  </li>
-                ))}
-              </ol>
-              <div className="studio-meter">
-                <div className="studio-meter-track" aria-hidden="true">
-                  <span />
-                </div>
-                <p>Published at 9:20. The counter is still quiet.</p>
-              </div>
-            </article>
           </div>
         </section>
 
         <section id="who" className="studio-section" aria-labelledby="who-heading">
-          <div className="studio-who">
+          <div className="studio-wrap studio-who">
             <Reveal>
-              <div>
+              <div className="studio-who-head">
                 <p className="studio-kicker">Who it is for</p>
                 <h2 id="who-heading">Anyone who has waited on a tiny change.</h2>
                 <p>
-                  If the page represents a real business, it will need small
-                  edits forever. This is for the people who feel that cost —
-                  and for the people who have been paying it in interrupted
-                  hours.
+                  If the page represents a real business, it will need small edits forever. This is for the people who
+                  feel that cost — and for the people who have been paying it in interrupted hours.
                 </p>
               </div>
             </Reveal>
@@ -690,34 +709,48 @@ export default function AasaanWebHome() {
               ))}
             </div>
           </div>
+          <div className="studio-wrap">
+            <div className="studio-control">
+              <h2 id="control-heading">You still decide what the public sees.</h2>
+              <ul aria-labelledby="control-heading">
+                <li>
+                  <Check />
+                  Every change shows on the preview before it is public.
+                </li>
+                <li>
+                  <Check />
+                  Publishing stays with you. A request is not a release.
+                </li>
+                <li>
+                  <Check />
+                  Everyday edits leave the developer’s queue.
+                </li>
+                <li>
+                  <Check />
+                  Larger work can still go to your team. This is for the changes that were never a project.
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
 
-        <section className="studio-control" aria-labelledby="control-heading">
-          <Reveal>
-            <h2 id="control-heading">You still decide what the public sees.</h2>
-            <ul>
-              <li>Every change shows on the preview before it is public.</li>
-              <li>Publishing stays with you. A request is not a release.</li>
-              <li>Everyday edits leave the developer’s queue.</li>
-              <li>Larger work can still go to your team. This is for the changes that were never a project.</li>
-            </ul>
-          </Reveal>
-        </section>
-
-        <section id="faq" className="studio-section" aria-labelledby="faq-heading">
-          <Reveal>
-            <div className="studio-section-head">
+        <section id="faq" className="studio-section studio-section-white" aria-labelledby="faq-heading">
+          <div className="studio-wrap studio-faq-grid">
+            <div className="studio-faq-head">
               <p className="studio-kicker">Questions</p>
               <h2 id="faq-heading">Before you start either path.</h2>
+              <p>
+                Something else on your mind? Write to <a href="mailto:support@butterneck.com">support@butterneck.com</a>.
+              </p>
             </div>
-          </Reveal>
-          <div className="studio-faq">
-            {FAQS.map((item) => (
-              <details key={item.q}>
-                <summary>{item.q}</summary>
-                <p>{item.a}</p>
-              </details>
-            ))}
+            <div className="studio-faq">
+              {FAQS.map((item) => (
+                <details key={item.q}>
+                  <summary>{item.q}</summary>
+                  <p>{item.a}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -725,8 +758,8 @@ export default function AasaanWebHome() {
           <p className="studio-kicker">Start with the page</p>
           <h2 id="close-heading">Stop spending a day on a ten-minute change.</h2>
           <p>
-            Create a landing page from what your business already is, or open
-            the site you have and correct it on the spot.
+            Create a landing page from what your business already is, or open the site you have and correct it on the
+            spot.
           </p>
           <div className="studio-close-actions">
             <a href={SIGNUP_URL} className="studio-btn">

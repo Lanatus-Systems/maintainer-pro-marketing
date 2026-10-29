@@ -42,8 +42,8 @@ export default function AasaanWebPricingPage() {
   if (!isAasaanWeb) notFound();
   return (
     <AasaanWebShell current="pricing">
-      <main>
-        <section className="studio-work-hero">
+      <main id="content">
+        <section className="studio-work-hero studio-price-hero">
           <p className="studio-kicker">Pricing</p>
           <h1>₹5,000. Paid at the end.</h1>
           <p className="studio-lead">

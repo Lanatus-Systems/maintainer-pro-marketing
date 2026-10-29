@@ -23,7 +23,7 @@ export const AASAANWEB_OG_IMAGE = `${SITE_URL}${AASAANWEB_ASSETS}/og.png`;
 const OG_IMAGE_ALT = "AasaanWeb logo on navy: Create or edit your business website in plain words.";
 
 /** Bump when home page copy changes (used by the sitemap). */
-export const AASAANWEB_HOME_UPDATED = "2026-10-28";
+export const AASAANWEB_HOME_UPDATED = "2026-10-29";
 
 const openGraph = (url?: string): NonNullable<Metadata["openGraph"]> => ({
   type: "website",

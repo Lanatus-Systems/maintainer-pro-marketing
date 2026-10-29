@@ -21,6 +21,8 @@ export function WorkFrame({
 }) {
   // null until mounted: the server HTML has the picture, so no iframe loads on a phone.
   const [isPhone, setIsPhone] = useState<boolean | null>(null);
+  // The picture stays underneath until the live page has loaded, so the frame is never blank.
+  const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     const query = window.matchMedia(PHONE_QUERY);
     const onChange = () => setIsPhone(query.matches);
@@ -31,12 +33,17 @@ export function WorkFrame({
 
   return (
     <figure className="studio-study-frame">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt ?? `${name} website`} width={1024} height={580} loading={eager ? "eager" : "lazy"} />
       {isPhone === false ? (
-        <iframe src={live} title={`${name} website`} loading={eager ? "eager" : "lazy"} />
-      ) : (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt ?? `${name} website`} width={1024} height={580} loading={eager ? "eager" : "lazy"} />
-      )}
+        <iframe
+          src={live}
+          title={`${name} website`}
+          loading={eager ? "eager" : "lazy"}
+          className={loaded ? "is-loaded" : undefined}
+          onLoad={() => setLoaded(true)}
+        />
+      ) : null}
     </figure>
   );
 }

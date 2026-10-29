@@ -66,7 +66,7 @@ export function AasaanWebBlogIndex() {
           })),
         }}
       />
-      <main className="aw-blog">
+      <main id="content" className="aw-blog">
         <section className="studio-work-hero aw-blog-hero">
           <p className="studio-kicker">Blog</p>
           <h1>Website tips for your business.</h1>
@@ -103,7 +103,7 @@ export function AasaanWebBlogIndex() {
                 See our work
               </a>
               <a href={START_URL} className="studio-btn studio-btn-ghost">
-                Start your page, free
+                Start your page
               </a>
             </div>
           </section>
@@ -128,7 +128,7 @@ export function AasaanWebBlogIndex() {
                     </p>
                     <h2>{post.title}</h2>
                     <p>{post.description}</p>
-                    <span className="aw-blog-read">Read the post →</span>
+                    <span className="aw-blog-read">Read the post</span>
                   </div>
                 </a>
               </li>
@@ -174,7 +174,7 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
           ],
         }}
       />
-      <main className="aw-blog aw-blog-post">
+      <main id="content" className="aw-blog aw-blog-post">
         {preview && post.draft ? (
           <p className="aw-blog-draft" role="status">
             Draft preview: this post is not published. It is not on /blog or in the sitemap, and it returns 404 in

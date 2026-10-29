@@ -66,14 +66,15 @@ const nextConfig: NextConfig = {
   agentRules: false,
   allowedDevOrigins: ["127.0.0.1"],
   poweredByHeader: false,
-  // Butterneck builds swap the AasaanWeb blog module for a stub, so the shared /blog routes never
-  // pull AasaanWeb styles into www.butterneck.com.
+  // Butterneck builds swap the AasaanWeb blog and legal modules for stubs, so the shared /blog routes
+  // never pull AasaanWeb styles into www.butterneck.com and the AasaanWeb-only routes stay inert there.
   ...(isAasaanWeb
     ? {}
     : {
         turbopack: {
           resolveAlias: {
             "@/components/aasaanweb/AasaanWebBlog": "./src/components/aasaanweb/AasaanWebBlog.stub.tsx",
+            "@/components/aasaanweb/LegalDocument": "./src/components/aasaanweb/LegalDocument.stub.tsx",
           },
         },
       }),

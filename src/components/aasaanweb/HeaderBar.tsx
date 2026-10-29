@@ -8,13 +8,13 @@ function MenuIcon({ open }: { open: boolean }) {
       {open ? (
         <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       ) : (
-        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M4 8h16M4 16h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       )}
     </svg>
   );
 }
 
-/** Header with the mobile menu toggle, ported from the admin app's StudioShell. */
+/** Sticky header with the mobile menu toggle, ported from the admin app's StudioShell. */
 export function HeaderBar({
   logo,
   links,
@@ -27,7 +27,15 @@ export function HeaderBar({
   startUrl: string;
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const barRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -46,7 +54,10 @@ export function HeaderBar({
   }, [menuOpen]);
 
   return (
-    <div className="studio-header-bar" ref={barRef}>
+    <div
+      className={`studio-header-bar${scrolled ? " is-scrolled" : ""}${menuOpen ? " is-open" : ""}`}
+      ref={barRef}
+    >
       <header className="studio-header">
         {logo}
         <nav className="studio-nav" aria-label="Page">
@@ -71,6 +82,9 @@ export function HeaderBar({
       {menuOpen ? (
         <nav id="studio-mobile-menu" className="studio-mobile-menu" aria-label="Menu" onClick={() => setMenuOpen(false)}>
           {menuLinks}
+          <a href={startUrl} className="studio-btn studio-mobile-cta">
+            Get started
+          </a>
         </nav>
       ) : null}
     </div>
