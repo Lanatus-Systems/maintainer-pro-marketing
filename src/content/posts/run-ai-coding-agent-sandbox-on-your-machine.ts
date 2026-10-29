@@ -28,9 +28,9 @@ This post walks through how that works and what the guardrails actually are. Whe
 - **The chat server.** Runs in-process with the bridge for each connected folder. When a request arrives, it builds a prompt and starts the coding CLI as a child process.
 - **The chat widget.** A script embedded on the live preview, so the person asking types next to the screen they mean.
 
-The coding CLI is invoked in non-interactive print mode, one turn at a time. For example, Cursor's agent is started with \`--print\`, \`--trust\`, \`--force\`, and \`--workspace <folder>\`. Claude Code gets \`--print\` and its own \`--system-prompt\`. Antigravity runs with \`--mode accept-edits\` and \`--add-dir <folder>\`.
+The coding CLI is invoked in non-interactive print mode, one turn at a time. Cursor's agent is started with \`--print\`, \`--trust\`, \`--force\` and \`--workspace <folder>\`. Claude Code gets \`--print\`, \`--dangerously-skip-permissions\` and its own \`--system-prompt\`. Antigravity runs with \`--mode accept-edits\`, \`--dangerously-skip-permissions\` and \`--add-dir <folder>\`.
 
-Those flags matter. The CLIs run with their own permission prompts skipped, because nobody is at the terminal to click "allow". So the boundaries below are what keep a turn in its lane.
+Those flags matter. They skip the CLIs\' own permission prompts, because nobody is at the terminal to click "allow". Anthropic\'s own advice for Claude Code in this mode is to "Always run \`--dangerously-skip-permissions\` sessions inside a container, a VM, or the sandbox runtime" ([Claude Code docs](https://code.claude.com/docs/en/sandbox-environments)). Butterneck doesn\'t add that boundary for you, so the guardrails below keep a turn in its lane, and the computer you connect is the real boundary.
 
 ## Isolation: one folder per request stream
 
@@ -102,7 +102,7 @@ Each private copy is tied to one folder the developer chooses, which can be a gi
 
 ### What if I need a harder boundary than a folder and an ignore list?
 
-Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. Tools that run an agent inside a micro-VM solve a different problem, containing one developer's own agent session. Butterneck is about who can ask for a change on a live preview and who decides what ships.
+Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. A container, a VM or Anthropic's sandbox runtime is the kind of boundary Anthropic recommends for sessions without permission prompts. Butterneck doesn't provide one. Butterneck is about who can ask for a change on a live preview and who decides what ships.
 
 ### Can a bad turn be undone?
 
