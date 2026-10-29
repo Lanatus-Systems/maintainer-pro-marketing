@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -94,6 +94,8 @@ All of them come with the same caveat as LinearB. The MSR study's authors note t
 **Update, 28 October 2026: Jellyfish.** Jellyfish's [AI Engineering Trends](https://jellyfish.co/ai-engineering-trends/) report (October 2026) shows agents writing a growing share of the code while people still sign off on nearly all of it. At the median company, 28% of merged PRs now involve an agent (58% at leading companies), but only 0.5% merge with AI-only review; lead adopters of that workflow merge 9% with no human review. Over the past year the median company's cost per merged PR fell from $1,202 to $820, and it ended the third quarter at 98% of its first-quarter headcount while spending 3.8x as much per engineer. So humans still own the merge. The useful question is whether that sign-off is a real decision. Butterneck moves it earlier: the person who asked checks the change on a live preview, and a developer decides before there's a PR at all. Jellyfish didn't measure Butterneck either.
 
 **Update, 28 October 2026: GitHub Universe.** GitHub's Octoverse 2026 report says that by September 2026, "more than 40% of pull requests on GitHub started with an agent's first draft, up from 17% in March" ([GitHub](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/)). The same day, Copilot approvals became generally available: when an admin turns them on, Copilot can approve a pull request, and "that approval counts toward your repository's required approvals" ([GitHub changelog](https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals)). More of the review can now be done by agents. What an agent can't confirm is whether the change is what the person who asked meant, and that check still needs an owner.
+
+**Update, 29 October 2026: GitLab.** In GitLab's AI Accountability Report (an April 2026 survey of 1,528 DevSecOps professionals, summarised in its [AI-native engineering playbook post](https://about.gitlab.com/blog/redesign-how-your-team-ships-software-with-ai-agents/)), 85% agreed that AI has shifted the bottleneck from writing code to reviewing and validating it, and 78% agreed that existing code review processes were not designed for the scale of code AI tools enable. GitLab's advice starts with diagnosis: "Take one small, real change and trace it from request to production, marking every wait and every handoff." It's a survey of agreement, not measured review times, so read it alongside the data above.
 
 ## How teams reduce the AI PR review bottleneck
 

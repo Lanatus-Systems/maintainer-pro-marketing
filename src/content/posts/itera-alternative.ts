@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "How Itera and Butterneck compare for product teams: workflow scope, where the AI agent runs, PRs vs previews, Jira, and pricing, based on public information.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["Itera alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -18,7 +18,7 @@ export const post: BlogPost = {
   body: `
 If you are looking at Itera and wondering whether there is an alternative that fits your team better, this post compares Itera and Butterneck side by side. We make Butterneck, so we are not neutral. We have tried to stick to what each product says publicly, and to be clear about where Itera may be the better pick.
 
-Everything about Itera below comes from its public website, [iteradev.ai](https://iteradev.ai), as read on October 27, 2026. Products change. Check their site for the current details.
+Everything about Itera below comes from its public website, [iteradev.ai](https://iteradev.ai), and its [customer docs](https://docs.iteradev.ai/), as read on October 27–29, 2026. Products change. Check their site for the current details.
 
 > **Itera vs Butterneck, in short:** Itera takes a change from idea through design and engineering scoping to a written brief, and a coding agent turns it into an AI-generated pull request. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, no pull request is opened, and a developer decides first what ships.
 
@@ -79,7 +79,7 @@ Butterneck's preview is the app running on the developer's machine, with real lo
 
 ### Jira
 
-Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket. The title, description, comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. We did not find a Jira integration listed on Itera's homepage. Check with them if that matters to you.
+Butterneck has a Jira Cloud integration. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A private copy opens, named after the ticket. The title, description, comments, and attachments become the request. When the AI is done, a short note and a preview link are posted back to the ticket. Itera's MCP documentation lets a new Itera task be linked to a Jira ticket (\`ticketProvider: JIRA\`). We didn't find a Jira trigger like a label or assignee, or a preview link posted back to the ticket, in its public docs. Check with them if that matters to you.
 
 ### Pricing
 
