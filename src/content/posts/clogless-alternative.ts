@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Clogless vs Butterneck for product teams: cloud sandbox vs a connected computer, pull requests vs previews, Jira tickets and pricing, from public information.",
   date: "2026-10-28",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -75,7 +75,7 @@ Clogless covers more ground: six ticketing tools (Butterneck supports only Jira 
 
 ### Pricing
 
-Clogless lists Starter at $99 per month and Team at $489 per month, billed annually, plus Enterprise through sales. Starter includes 1 project or repo and 2 environments; Team includes 4 and 8. AI usage is listed as "Credit / BYOK". We did not see a per-seat price on the page.
+Clogless lists Starter at $99 per month and Team at $489 per month, billed annually (as of Oct 29, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)), plus Enterprise through sales. Starter includes 1 project or repo and 2 environments; Team includes 4 and 8. AI usage is listed as "Credit / BYOK". We did not see a per-seat price on the page.
 
 Butterneck has a free Starter plan for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. You also pay for your own coding assistant subscription. Details on [pricing](/pricing). A workspace owner on Starter can also start a one-month Pro trial from the Billing page, once per workspace.
 
@@ -91,6 +91,8 @@ Butterneck has a free Starter plan for one developer and one person who asks for
 | How a ticket starts | Open the ticket in Clogless | Label \`butterneck\` and assign it in Jira |
 | Back on the ticket | Not found on their public pages | A note and a preview link |
 | Pricing | $99/mo Starter, $489/mo Team, billed annually | Free Starter; Pro $19 per person per month; one-month Pro trial |
+
+Clogless prices: $99/mo Starter and $489/mo Team, billed annually (as of Oct 29, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)).
 
 ## When Clogless fits better
 
