@@ -91,7 +91,7 @@ Butterneck does neither. The change sits in the project on the developer's compu
 
 ### 4. Mistakes stay cheap
 
-When the AI gets it wrong, and sometimes it will, the wrong change is not published: the files were edited only on the connected computer. It doesn't land on a shared branch, it doesn't trigger a deploy, and nobody has to revert anything in public. You can stop a turn while it is running and roll back the file changes from that turn. If the rollback can't be completed, for example because a changed file was too large to snapshot, the chat says so.
+When the AI gets it wrong, and sometimes it will, the wrong change is not published; the files were edited on the connected computer. It doesn't land on a shared branch, it doesn't trigger a deploy, and nobody has to revert anything in public. You can stop a turn while it is running and roll back the file changes from that turn. If the rollback can't be completed, for example because a changed file was too large to snapshot, the chat says so.
 
 ![A product manager's request in the Butterneck chat, and the running app updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
