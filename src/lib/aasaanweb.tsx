@@ -1,3 +1,4 @@
+import { AASAANWEB_FAQS } from "@/content/aasaanweb-faqs";
 import type { Metadata } from "next";
 import { brand } from "@/lib/brand";
 import { SITE_URL, siteUrl } from "@/lib/site";
@@ -121,6 +122,15 @@ export function aasaanWebJsonLd() {
           name: "Butterneck",
           url: "https://www.butterneck.com/",
         },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${home}#faq`,
+        mainEntity: AASAANWEB_FAQS.map(({ q, a }) => ({
+          "@type": "Question",
+          name: q,
+          acceptedAnswer: { "@type": "Answer", text: a },
+        })),
       },
     ],
   };
