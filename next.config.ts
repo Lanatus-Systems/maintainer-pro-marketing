@@ -68,13 +68,21 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Butterneck builds swap the AasaanWeb blog and legal modules for stubs, so the shared /blog routes
   // never pull AasaanWeb styles into www.butterneck.com and the AasaanWeb-only routes stay inert there.
+  // AasaanWeb builds swap the Butterneck theme for a stub, so its stylesheet never ships there.
   ...(isAasaanWeb
-    ? {}
+    ? {
+        turbopack: {
+          resolveAlias: {
+            "@/components/ButterneckTheme": "./src/components/ButterneckTheme.stub.tsx",
+          },
+        },
+      }
     : {
         turbopack: {
           resolveAlias: {
             "@/components/aasaanweb/AasaanWebBlog": "./src/components/aasaanweb/AasaanWebBlog.stub.tsx",
             "@/components/aasaanweb/LegalDocument": "./src/components/aasaanweb/LegalDocument.stub.tsx",
+            "@/components/SiteHeader": "./src/components/ButterneckSiteHeader.tsx",
           },
         },
       }),

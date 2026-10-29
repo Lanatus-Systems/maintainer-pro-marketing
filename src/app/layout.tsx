@@ -13,6 +13,8 @@ import {
   X_HANDLE,
 } from "@/lib/site";
 import "./globals.css";
+// After globals.css so the Butterneck theme layers on top of the shared base styles.
+import { ButterneckTheme } from "@/components/ButterneckTheme";
 
 const plex = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -84,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </body>
       ) : (
       <body>
+        <ButterneckTheme />
         <a className="skip-link" href="#content">
           Skip to content
         </a>
