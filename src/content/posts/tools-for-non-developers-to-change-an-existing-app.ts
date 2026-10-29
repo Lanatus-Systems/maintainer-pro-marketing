@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
   date: "2026-10-28",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table) (Hexby checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
@@ -39,6 +39,7 @@ Butterneck isn't affiliated with, endorsed by or sponsored by any other tool lis
 | [Flex](https://www.flexenv.com/product-changes) | "Product, operations, and engineering teams" | A self-hosted runner "in infrastructure your team controls", on your connected repository (a hosted cloud option is "Coming soon") | "Isolated branches and live previews"; engineers "control the merge" | Not on the pages we read (Slack, Linear and GitHub are) | Hobby free (1 member, 3 previews); Starter $60/month (£50) and Team $240/month (£200), unlimited members; your own model keys (as of Oct 29, 2026, per [Flex's pricing page](https://www.flexenv.com/pricing)) |
 | [PinAppAI](https://pinappai.com/) | Solo founders who "build with v0, Claude Code, or Cursor"; agencies collecting client feedback | Reviewers pin on the live site; the developer's own agent applies changes | Edits your agent applies, which reviewers approve or reject on a generated /changes/ page | Not on the pages we read | $0 / $9 / $15 per seat (Team, 2-seat min); reviewers free (as of Oct 29, 2026, per [PinAppAI's pricing page](https://pinappai.com/pricing/)) |
 | [Handle Studio](https://gethandle.ai/studio) | Designers, design engineers, solo founders | A Mac app (macOS 13+ on Apple Silicon) with your Claude Code, Codex or Rovo Dev agent, on your local repos | "A clean commit to a remote branch for your team to review" | Not on the pages we read | Free and open source |
+| [Hexby](https://hexby.ai/) (Locofy) | "Designers, PMs, and developers working on existing codebases" | A desktop app that starts your project on your own computer (React, Next.js 13+ or Angular 17+), with your Claude Code, Codex, Cursor, Gemini CLI or GitHub Copilot agent signed in there | A visual before-and-after review that teammates open "without installing Hexby"; once approved, a hand-off to developers that opens a GitHub pull request | Not on the pages we read | Free during beta (as of Oct 30, 2026, per [Hexby's pricing page](https://hexby.ai/pricing/)) |
 | [Layrr](https://narnia.sh/layrr/) | Developers running a local web app | A proxy in front of your local dev server, using Claude Code, Codex CLI or Gemini (via Pi) | It "commits successful edits with a [layrr] prefix" | Not on the page we read | Free, open source (MIT, per its [GitHub repo](https://github.com/narnia-sh/layrr)) |
 | [PulseDev](https://pulsedev.app/) | People running a site on their own machine ("On any site you run locally") | A macOS app on your running local site, using Claude Code, Codex, Gemini CLI or OpenCode | Source edits that touch your files only after you "approve the diff" | Not on the page we read | Free to start; Pro $18/month, or a $12/month launch price ("Lock it in before Nov 3"); a separate Founder Lifetime offer is $149 once for the first 200 buyers (as of Oct 29, 2026, per the pricing section on [PulseDev's homepage](https://pulsedev.app/)) |
 | [Modeinspect](https://modeinspect.com/) | Design engineers and product designers | Cloud design canvas connected to your codebase | "Every change opens as a normal pull request on a branch" | Not on the pages we read | Hobby $0; Pro $20/month per person (as of Oct 29, 2026, per [Modeinspect's pricing page](https://modeinspect.com/pricing)) |
@@ -78,6 +79,8 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 **Handle Studio** — "Design directly in production code." It's free, open source, needs no account, and works with the agents designers and developers already use. The trade-off is that the person making the change installs and runs it (Studio needs macOS 13+ on Apple Silicon). Good pick for designers who are comfortable running a local repo.
 
+**Hexby** — "Your codebase, turned into a design canvas — powered by your AI agents." A designer or PM opens the project in Hexby's desktop app on their own computer, with a coding agent installed and signed in there, and refines the real screens on a canvas. Teammates review the before-and-after in a browser without installing anything, and an approved change is handed to developers as a GitHub pull request. It's free during its beta, and AI usage stays on your own agent account. Good pick for designers and PMs who can run the project locally and want a visual review before the PR.
+
 **Layrr** — "Point, click, and edit your running web app." A free, MIT-licensed proxy in front of your local dev server that uses Claude Code, Codex CLI or Gemini and "commits successful edits with a [layrr] prefix". Whoever runs it needs the repo, and its last release was in May 2026. Good pick for developers who want a free visual overlay on their own machine.
 
 **PulseDev** — "Point at your site. Approve the fix." Click an element on your running site, say what's wrong, and Claude Code, Codex, Gemini or OpenCode edits the source; "nothing touches your files until you approve the diff". It uses the agent plan you already pay for and "Runs on your machine, no PulseDev cloud". Like Layrr, whoever uses it runs the project locally. Pro is $18/month. As of 29 October 2026, PulseDev's homepage offered a $12/month launch price to anyone signing up "before Nov 3"; check its site for the current price. Good pick for a technical founder or designer who wants a visual fix loop on their own Mac.
@@ -109,7 +112,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 - **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless.
 - **You want the requester to publish small changes themselves:** Refinar.
 - **You want better review once a PR exists:** Else.
-- **You're a designer or developer who'll run the tool yourself, with your own coding agent:** Handle Studio, Layrr, PulseDev, Modeinspect.
+- **You're a designer or developer who'll run the tool yourself, with your own coding agent:** Handle Studio, Hexby, Layrr, PulseDev, Modeinspect.
 - **You want the person who asked to check the change before any PR exists, without installing anything:** PinAppAI, Butterneck.
 
 Prices last checked 29 October 2026, as published on each tool's own pages that day. Tell us if something here is out of date and we'll fix it.

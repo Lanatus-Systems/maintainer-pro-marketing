@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Preview an AI-made change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams"],
   cover: {
@@ -149,6 +149,10 @@ A running copy of the app with the change in it, checked by the person who asked
 ### Can a PM preview AI code changes before a pull request is opened?
 
 Yes. In Butterneck the PM types the request in a chat on a live copy of the app, the coding agent on a developer's computer edits the project, and the PM checks the result on the same preview. No pull request exists at that point. A developer then decides whether the change ships, and opens a pull request in your normal process if your team uses one.
+
+### Which tools let a product manager preview an AI code change before a pull request is opened?
+
+Several AI tools let a PM describe a change, check it on a preview of the app, and then send engineering a pull request; many of them build that preview in the cloud from your repository. We compare them, with their prices, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app). Butterneck works differently: the preview is the app running on a developer's computer, the coding assistant already signed in there makes the change, and no pull request is opened at all. A developer reads the conversation, checks the change, and publishes it the way the team already does.
 
 ### How is this different from a PR preview environment?
 
