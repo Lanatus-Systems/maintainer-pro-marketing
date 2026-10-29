@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
   cover: {
@@ -96,7 +96,7 @@ We get asked this a lot. Short version, from [human-in-the-loop AI coding](/blog
 - **Your release process already exists.** Branch names, PR templates, reviewers, CI. A tool that creates PRs has to fit all of it. A developer opening the PR fits by default.
 - **Mistakes stay cheap.** A bad turn can be stopped and, in most cases, rolled back. A wrong change can be thrown away. Nothing has touched your remote.
 
-There is no code path in Butterneck that pushes, opens a PR, merges, or deploys. If you want PRs created automatically, a PR-generating tool is a better fit. See our [Itera comparison](/blog/itera-alternative) for one example.
+There is no code path in Butterneck that pushes, opens a PR, merges, or deploys. If you want PRs created automatically, a PR-generating tool is a better fit. See our [Clogless comparison](/blog/clogless-alternative) or [Itera comparison](/blog/itera-alternative) for examples.
 
 ## What to put in a ticket so the AI does well
 
@@ -123,6 +123,10 @@ More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/b
 ### Can Butterneck turn a Jira ticket into a pull request?
 
 It turns a labeled ticket into a working change on a live preview, and posts the preview link back to the ticket. A developer then opens the PR. Butterneck does not open PRs itself.
+
+### Which AI tools turn a Jira ticket into a pull request?
+
+Several do. Atlassian's own Jira Coding Agent can generate code from a work item and open a draft pull request for your team to review and merge, and Clogless opens a pull request with your Git provider when the change is ready. Butterneck stops one step earlier: a labeled ticket opens a private copy of the app, the developer's own coding agent makes the change, and a preview link goes back on the ticket. A developer then decides whether to commit it and open a PR. Butterneck never opens a pull request, merges or deploys.
 
 ### How do I trigger it from Jira?
 
