@@ -95,6 +95,10 @@ Starter is free for one developer and one person who asks for changes. Pro is US
 
 Yes. Claude Code also runs in Anthropic's desktop app and in the browser at claude.ai/code, so a PM doesn't strictly need a terminal. They still need a paid Claude plan, access to the repository, and usually a way to run the app to check the change. With Butterneck the PM needs none of those: they type the request in a chat on a live preview, and Claude Code runs on a developer's computer where it is already signed in.
 
+### Does a product manager need repository access to use Claude Code or Cursor?
+
+To run it themselves, yes. Claude Code and Cursor work on code the PM can reach: a local clone, or, for Cursor's Cloud Agents, only repositories the PM's own Git account can already reach ([Cursor's security docs](https://cursor.com/docs/cloud-agent/security)). With Butterneck the PM doesn't need repository access. They open a share link to the app running on a developer's computer and type the request, and the Claude Code, Cursor or Antigravity CLI signed in there edits the project. The developer chooses who can send requests, and a developer decides what ships.
+
 ### Does each PM need their own Claude Code or Cursor subscription?
 
 Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. On Pro, each person who sends requests counts as a seat; Starter includes one developer and one requester for free.
