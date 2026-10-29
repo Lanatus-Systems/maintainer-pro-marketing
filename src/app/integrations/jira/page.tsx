@@ -2,7 +2,7 @@ import { isAasaanWeb } from "@/lib/brand";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
-import { FAQS, JIRA, JIRA_NO_PR_FAQ, JIRA_PREVIEW_FAQ } from "@/content/landing";
+import { FAQS, JIRA, JIRA_NO_PR_FAQ, JIRA_PREVIEW_FAQ, JIRA_TICKET_CONTENT_FAQ } from "@/content/landing";
 import { pageMeta } from "@/lib/meta";
 import {
   breadcrumbJsonLd,
@@ -17,6 +17,7 @@ const JIRA_FAQS = [
   JIRA_PREVIEW_FAQ,
   ...FAQS.filter((item) => item.q === "Can a Jira ticket start the chat?"),
   JIRA_NO_PR_FAQ,
+  JIRA_TICKET_CONTENT_FAQ,
 ];
 
 const PAGE_TITLE = "Jira integration: AI change requests from a ticket";

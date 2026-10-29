@@ -3,10 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "share-local-app-without-deploying",
   title: "Share your local app with stakeholders without deploying it",
+  seoTitle: "Share localhost with stakeholders without deploying",
   description:
-    "Give a PM or stakeholder a live link to the app running on your computer so they can ask for changes, without a staging deploy, VPN or screen share.",
+    "Share localhost with a PM or stakeholder without deploying: a live link to the app on your computer, a chat to ask for changes, and AI edits on the preview.",
   date: "2026-10-27",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -46,6 +47,8 @@ Good for a walkthrough. Bad for "I'll look later". Everyone has to be free at th
 ### Tunnels
 
 A tunnel gives your local port a public address. That solves the "can they open it" part. It does not solve who is allowed to open it, where the feedback goes, or what happens after someone says "make the heading shorter". You still collect the request in Slack, find the right file, and change it yourself.
+
+Some newer share-localhost tools add a feedback layer on top: pinned comments on the page, or a voice note turned into a transcript you can hand to your coding agent. That gets the request to you faster. Someone still has to read it, find the file and make the change.
 
 ### Preview deploys per branch
 
@@ -100,7 +103,7 @@ The coding assistant on the developer's computer reads the request and edits the
 
 ![A request typed in the chat, and the app in the preview updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
-If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
+If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
 
 ## What stays on your computer, and what doesn't
 
@@ -150,6 +153,10 @@ No. Looking does not need an account. You decide separately who can ask for chan
 ### Does preview traffic go through Butterneck?
 
 Yes. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use. Nothing is merged, no pull request is opened, and nothing is deployed until someone on your team publishes the change the way you already do.
+
+### How is this different from a localhost tunnel like ngrok?
+
+A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on your computer makes the change, and hot reload shows it on the same link. Nothing is merged, no pull request is opened, and nothing is deployed.
 
 ## Try it
 

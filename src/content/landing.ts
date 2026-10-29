@@ -75,7 +75,7 @@ export const JIRA = [
       "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
       "Butterneck opens a private copy of the project, named after the ticket.",
       "Each ticket’s copy counts toward your plan’s private copies: 1 on Starter (one ticket or one chat copy at a time), 50 on Pro.",
-      "The title, description, comments, and attached files become the request.",
+      "The title, description, latest comments, and attached files become the request.",
     ],
   },
   {
@@ -168,6 +168,16 @@ export const JIRA_NO_PR_FAQ = {
     "Yes. With Butterneck, a labeled ticket goes to the AI coding agent already signed in on the assignee's computer (Cursor, Claude Code or Antigravity). It makes the change in a private copy of the project, and a live preview link is posted back on the ticket.",
     "The person who wrote the ticket checks the running app and can keep refining it in plain words. Nothing is pushed and no pull request exists yet.",
     "A developer then reads the conversation and the diff and decides whether to commit it and open a PR the usual way. Butterneck never opens pull requests, merges or deploys.",
+  ],
+} as const;
+
+/** Page-only FAQ for /integrations/jira (K-33). Not shown on the home page. */
+export const JIRA_TICKET_CONTENT_FAQ = {
+  q: "What does the AI read from the Jira ticket?",
+  lines: [
+    "The ticket's key, summary, description, type, status, priority, assignee, reporter and labels, plus its latest 8 comments with author names.",
+    "Attachments up to 8 MB each: images, PDFs, Word and Excel files are added to the chat as files (up to 5 per chat), text files such as .txt, .md, .csv and .json are read in, and other files are listed by name only. So a screenshot on the ticket reaches the coding agent.",
+    "The coding agent on the connected computer reads all of this and may send it to its own AI provider. Leave secrets and production data out of the ticket.",
   ],
 } as const;
 
