@@ -7,7 +7,7 @@ import { isAasaanWeb } from "@/lib/brand";
 
 const page = AASAANWEB_LEGAL["privacy"];
 const DESCRIPTION =
-  "How AasaanWeb collects, uses and protects the information you share when you build or update your business website.";
+  "How Butterneck, which runs AasaanWeb, collects, uses, shares and keeps your account details, chat messages and preview links, and how to ask us to delete your data.";
 
 /** AasaanWeb only; next.config rewrites page.path here for that brand. */
 export const metadata: Metadata = isAasaanWeb ? aasaanWebSubpageMeta({ title: page.title, description: DESCRIPTION, path: page.path }) : {};

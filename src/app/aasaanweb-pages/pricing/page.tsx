@@ -61,7 +61,14 @@ function pricingJsonLd() {
         description: "Paid at the end, after the page is finished and the 15 days are over.",
         url,
       },
-      { "@type": "Offer", name: "5 more days of chatbot changes", price: "500", priceCurrency: "INR", url },
+      {
+        "@type": "Offer",
+        name: "5 more days of chatbot changes",
+        price: "500",
+        priceCurrency: "INR",
+        description: "After the 15 days. Add again for more time.",
+        url,
+      },
     ],
   };
 }

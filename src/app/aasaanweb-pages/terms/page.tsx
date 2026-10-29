@@ -7,7 +7,7 @@ import { isAasaanWeb } from "@/lib/brand";
 
 const page = AASAANWEB_LEGAL["terms"];
 const DESCRIPTION =
-  "The terms for using AasaanWeb to create and update a landing page for your business.";
+  "The terms for using Butterneck, which runs AasaanWeb: your account, live previews and share links, acceptable use, paid plans and liability.";
 
 /** AasaanWeb only; next.config rewrites page.path here for that brand. */
 export const metadata: Metadata = isAasaanWeb ? aasaanWebSubpageMeta({ title: page.title, description: DESCRIPTION, path: page.path }) : {};
