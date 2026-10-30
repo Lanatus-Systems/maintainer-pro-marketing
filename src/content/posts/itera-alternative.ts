@@ -4,9 +4,9 @@ export const post: BlogPost = {
   slug: "itera-alternative",
   title: "Itera alternative: an honest comparison with Butterneck",
   description:
-    "How Itera and Butterneck compare for product teams: workflow scope, where the AI agent runs, PRs vs previews, Jira, and pricing, based on public information.",
+    "How Itera and Butterneck compare for product teams: scope, where the agent runs, PRs vs previews, Jira and pricing. Plus other Itera alternatives.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["Itera alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -107,6 +107,17 @@ Be honest with yourself about the kind of change you are shipping.
 ## When neither is a fit
 
 Butterneck needs a local project folder on a developer's computer, and it does not replace a cloud IDE or a staff augmentation contract. If you want changes to merge themselves, it is not for you.
+
+## Other Itera alternatives
+
+If what you like about Itera is the whole team shaping a change on the real product and ending in a pull request, these tools work that way too (quotes from each tool's own site, checked 31 October 2026):
+
+- **Alloy**: cloud agents for "PMs, designers, and engineers together". "Prompt your idea, share a link for feedback, and push to GitHub." ([alloy.app](https://alloy.app/cloud-agents))
+- **Plusma**: "Describe a change, preview it live, iterate until it's right, and hand your team a clean PR." ([plusma.ai](https://plusma.ai/))
+- **Refinar**: describe a change, watch it in a live preview, "then publish it or send it to engineering as a pull request." ([refinar.ai](https://refinar.ai/en/for/product-managers))
+- **Builder.io**: "Point Builder at the Slack thread, Jira ticket, or PRD, and the context comes with it." ([builder.io](https://www.builder.io/for/product-managers))
+
+For prices, where each one runs and who it's for, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ## FAQ
 
