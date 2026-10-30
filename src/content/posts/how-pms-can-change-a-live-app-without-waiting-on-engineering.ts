@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI agent makes the edit, a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
@@ -128,6 +128,10 @@ Put the small copy, layout and UI tickets in one list, close the stale ones, and
 ### Can a PM change a live app without engineering?
 
 A PM can make the change happen and see it on a live copy without waiting. A developer still reviews it and decides whether it ships. That is deliberate.
+
+### Can designers use this for small visual fixes, not only PMs?
+
+Yes. Anyone the developer lets send requests can use it: a designer, a support lead or a PM. A designer opens the same share link, goes to the screen with the problem, and types the fix, for example "add more space above the Save button" or "use the smaller heading style on this card". Each message carries the page address and route they have open, and they can attach up to five screenshots or files, so a screenshot with the problem circled works well. Name the element by its visible text, as in our [change request template](/blog/how-to-write-a-change-request-for-ai). The preview reloads with the change, the designer checks it there, and a developer reviews it and decides what ships.
 
 ### Does the PM need a dev environment or git?
 
