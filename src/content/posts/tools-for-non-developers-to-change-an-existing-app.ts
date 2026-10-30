@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026; Vision checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026; Vision checked 30 October 2026; Remix checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
@@ -49,6 +49,7 @@ Butterneck isn't affiliated with, endorsed by or sponsored by any other tool lis
 | [Synlets](https://synlets.com/) | PMs, founders, engineering leads | Its cloud, with your repo cloned at runtime | "A reviewable pull request"; "nothing is merged without your approval" | Yes (Jira and Asana integration) | $79–$999/month (credits), no per-seat fees; free tier (as of Oct 29, 2026, per the pricing section on [Synlets' homepage](https://synlets.com/)) |
 | [Inspect](https://inspect.com/) (by Ramp; early access) | Ramp's "engineering, design, and product teams" (Ramp's own use) | Ramp's cloud ("Inspect runs in the cloud") | "A visually validated and fully reviewed pull request" | Not on the pages we read (tasks come from Slack, GitHub, Linear or the web) | No public price found; early access by application (as of Oct 30, 2026, per [Ramp's launch post](https://ramp.com/blog/introducing-inspect)) |
 | [Vision](https://vson.ai/) | "Technical and nontechnical teammates" building together (its pricing FAQ) | "An isolated environment" for every change, from your connected GitHub repo, in a shared live session | "Readable pull requests" an engineer reviews; approved changes ship "with one click" | Not on the pages we read | Free $0 ($20 in credits); Individual $25/month; Teams $50 per member per month, usage-based (as of Oct 30, 2026, per [its pricing page](https://vson.ai/pricing)) |
+| [Remix](https://remix.one/) | Product teams ("multiplayer AI for product teams"); "your team and AI PM" work together | "A live copy of your real app", from your connected GitHub repo (or a clone of your website until you connect it) | Variants that each become "a pull request anyone can review", with the prompts behind it and "a link to run it live" | Not on the pages we read | Free (up to 2 collaborators); Pro $29 per seat/month; Teams $99 per seat/month (as of Oct 30, 2026, per [its pricing page](https://remix.one/pricing)) |
 | [Specship](https://specship.dev/) | Founders and small teams | Connected GitHub repo | Acceptance criteria, failing tests, code and "review-ready pull requests"; optional auto-merge (beta) | Planned or in beta (GitHub and ClickUp today) | "Pricing TBD" (waitlist) |
 | [CoderHelm](https://coderhelm.com/) | Engineering teams on GitHub, Jira and AWS | Hosted, or in your own AWS account | A pull request on a \`coderhelm/\` branch; auto-merge off by default | Yes (label or assign) | Closed beta; bring your own Anthropic key |
 | [Epicraft](https://www.epicraft.dev/) | "The PM is the user, not the developer" | From a Jira ticket assigned to its bot | A branch and a pull request; "You review the PR in GitHub, approve, merge" | Yes (assign the ticket to its bot) | No public price found |
@@ -102,6 +103,8 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 **Vision** (vson.ai) — teammates "build in the same room, not in silos": one shared live session with the same chat and the same preview, live cursors, and comments pinned to the preview. Every change runs in an isolated preview and arrives as a pull request an engineer reviews, and the team can set "free zones and review zones", for example an admin area anyone can change while anything touching the database needs approval. Good pick if several non-developers want to build together on one GitHub repo, with engineers reviewing pull requests.
 
+**Remix** — "Your AI Product Manager": the team and an AI PM work "on a working copy of your website or product: analyze your data, propose changes, prompt new variants, test them, and ship the winner." Teammates branch variants of a live copy and comment on the canvas ("Like Figma, for your live app"). When a variant is ready it goes to GitHub as a pull request with the prompts behind it, a link to run it live, and "security checks that pass before anything merges." Good pick if a product team wants to compare several variants of a screen before engineering reviews a PR.
+
 **Specship** — Ticket-to-PR automation that starts from acceptance criteria and failing tests, with an optional auto-merge for low-risk PRs in private beta. Pricing isn't published yet. Good pick for small teams that want test-first automation.
 
 **CoderHelm** — "Assign a GitHub issue or Jira ticket and get a pull request", plus CI fixing, PR review and alerts-to-fixes, hosted or in your own AWS account. In closed beta. Good pick for engineering teams that want an engineering-ops agent.
@@ -117,7 +120,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 - **You want a prototype to explore an idea:** Workshop, Modeinspect.
 - **You want a ticket turned into a pull request automatically:** Synlets, Specship, CoderHelm, CodeHerder (Jira's built-in options are worth a look too).
 - **You want a ticket in Jira turned into a PR, with the PM as the user:** Epicraft, Synlets, CoderHelm.
-- **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change).
+- **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change), Remix (several variants side by side).
 - **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless.
 - **You want the requester to publish small changes themselves:** Refinar.
 - **You want better review once a PR exists:** Else.
