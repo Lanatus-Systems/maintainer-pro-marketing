@@ -175,7 +175,7 @@ export const JIRA_NO_PR_FAQ = {
 export const JIRA_OTHER_AGENTS_FAQ = {
   q: "Jira can already assign tickets to Cursor or Claude. How is Butterneck different?",
   lines: [
-    "Cursor's Jira integration runs Cursor Cloud Agents when you assign a work item to Cursor or mention @Cursor, and it can link a pull request on the ticket. It needs a Cursor Teams or Enterprise plan. Claude for Jira runs on Anthropic's Claude Managed Agents with your organisation's API key. Both are good when you want a pull request back from the cloud.",
+    "Cursor's Jira integration runs Cursor Cloud Agents when you assign a work item to Cursor or mention @Cursor, and it can link a pull request on the ticket. It needs a Cursor Teams or Enterprise plan. Atlassian's Claude Agent for Jira (Beta) runs on Anthropic's Claude Managed Agents and needs a Claude Managed Agents API key. Both are good when you want a pull request back from the cloud.",
     "Butterneck covers the step before that. The coding agent already signed in on the developer's computer (Cursor, Claude Code or Antigravity) makes the change in a private copy, and the person who wrote the ticket checks it on a live preview of the app running there and keeps refining it in plain words.",
     "No pull request is opened. A developer decides what ships and publishes it the usual way.",
   ],
