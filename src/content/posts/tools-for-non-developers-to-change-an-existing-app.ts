@@ -105,7 +105,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 **Builder.io** — "Ship the changes that can't wait." A PM points Builder at a Slack thread, Jira ticket or PRD, builds a first version from the product's own components, and stakeholders comment on the live preview; the result reaches engineering as code to review and merge. Its Jira and Slack agent is on the Team plan. Good pick for a PM who wants to build the first version themselves in a visual editor.
 
-**Netlify Agent Runners** — "Prototypes that become the product." A PM describes the change in a prompt; the agent writes the code in the team's repository, deploys a preview and opens a pull request that developers finish and merge. It fits teams whose site already deploys on Netlify. Good pick for a PM who wants a shareable preview URL and is happy for the hand-off to be a PR.
+**Netlify Agent Runners** — "Prototypes that become the product." A PM describes the change in a prompt; the agent writes the code in the team's repository, deploys a preview and opens a pull request that developers finish and merge. Good pick if your site already deploys on Netlify. Good pick for a PM who wants a shareable preview URL and is happy for the hand-off to be a PR.
 
 **Workshop** — "Go from idea to clickable prototype in minutes." Its Desktop app can pull in your codebase, but the output is a prototype with mocked data, which engineering "can pick up where Workshop left off". Good pick for exploring an idea before committing to a real change.
 
