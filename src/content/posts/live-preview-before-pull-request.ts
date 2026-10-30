@@ -166,6 +166,10 @@ Partly. Netlify's Agent Runners build a Deploy Preview when an agent run changes
 
 No. The requester checks the result on the screen. A developer still reviews the code and decides whether and how it ships.
 
+### How is this different from AI code review before the pull request?
+
+AI code review before the PR checks the code. Tools such as [Claude Code's /code-review](https://code.claude.com/docs/en/code-review-local) review the changes on a developer's branch and look for bugs before anyone opens a pull request. A live preview before the PR checks the result: the person who asked opens the running app and confirms the change is what they meant. They answer different questions and work well together. With Butterneck, the requester checks the change on the live preview, then a developer reviews the code (with or without an AI reviewer) and decides what ships. Butterneck doesn't open a pull request; the developer opens one if they choose.
+
 ### What should a PM check on a preview?
 
 The exact change on the screen it was asked from, the wording, empty, loading and error states, a narrow window, long text, the rest of the page, and that the preview uses test data. Then sign off in writing where the request was made.
