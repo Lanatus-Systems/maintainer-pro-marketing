@@ -121,7 +121,7 @@ If you want changes to merge themselves, neither tool is built for that. Both ke
 If the pull request at the end is what you like about Clogless, these tools also end in a PR for engineering to review (quotes from each tool's own site, checked 30 October 2026):
 
 - **ronda**: "ronda writes the code and opens a pull request. Engineering reviews and merges." ([useronda.com](https://useronda.com/))
-- **Plusma**: "Describe a change, preview it live, iterate until it’s right, and hand your team a clean PR." ([plusma.ai](https://plusma.ai/))
+- **Plusma**: "Describe a change, preview it live, iterate until it's right, and hand your team a clean PR." ([plusma.ai](https://plusma.ai/))
 - **Refinar**: describe a change, watch it in a live preview, "then publish it or send it to engineering as a pull request." ([refinar.ai](https://refinar.ai/en/for/product-managers))
 - **Synlets**: "Tickets in. Pull requests out." You assign a ticket to its agent. ([synlets.com](https://synlets.com/))
 

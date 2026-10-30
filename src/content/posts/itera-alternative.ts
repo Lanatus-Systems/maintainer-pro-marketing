@@ -112,7 +112,7 @@ Butterneck needs a local project folder on a developer's computer, and it does n
 
 If what you like about Itera is the whole team shaping a change on the real product and ending in a pull request, these tools work that way too (quotes from each tool's own site, checked 31 October 2026):
 
-- **Alloy**: cloud agents for "PMs, designers, and engineers together". "Prompt your idea, share a link for feedback, and push to GitHub." ([alloy.app](https://alloy.app/cloud-agents))
+- **Alloy**: "Product managers and designers use cloud agents to propose real changes as pull requests." "Prompt your idea, share a link for feedback, and push to GitHub." ([alloy.app](https://alloy.app/cloud-agents))
 - **Plusma**: "Describe a change, preview it live, iterate until it's right, and hand your team a clean PR." ([plusma.ai](https://plusma.ai/))
 - **Refinar**: describe a change, watch it in a live preview, "then publish it or send it to engineering as a pull request." ([refinar.ai](https://refinar.ai/en/for/product-managers))
 - **Builder.io**: "Point Builder at the Slack thread, Jira ticket, or PRD, and the context comes with it." ([builder.io](https://www.builder.io/for/product-managers))
