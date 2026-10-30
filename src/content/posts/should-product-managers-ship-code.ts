@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "PMs shipping code with AI is the debate of the month. A calmer option: PMs ask for small changes on a live preview, and engineers keep control of what ships.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -39,11 +39,11 @@ Some tools now go a step further and pitch that whoever spots a problem ships th
 
 ## What the data says about review
 
-The engineers' worry has numbers behind it now. A [Harvard study by Fiona Chen and James Stratton](https://fion.ac/jellyfish.pdf) ("Artificial Intelligence in the Firm: Bottlenecks in Software Production", version of 4 Aug 2026) looked at 718 firms using data from the Jellyfish platform; [InfoQ covered it](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/) on 22 Oct. According to the paper:
+The engineers' worry has numbers behind it now. A [Harvard study by Fiona Chen and James Stratton](https://fion.ac/jellyfish.pdf) ("Artificial Intelligence in the Firm: Bottlenecks in Software Production", version of 28 Oct 2026) looked at 720,542 workers at 655 firms using data from the Jellyfish platform; [InfoQ covered an earlier version](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/) on 22 Oct. According to the paper:
 
-- AI agents increased lines of code by 30%, commits by 20% and pull requests by 23%.
-- Jira issues resolved per worker showed no statistically significant change with agents; the paper's estimates rule out an increase larger than 12%.
-- Average PR time to review went up 49%, review comments per PR rose 35%, and the share of PRs with changes requested nearly doubled.
+- AI agents increased lines of code by 44.0%, commits by 36.0% and pull requests opened by 35.7%.
+- Jira issues resolved rose 13.7% with agents, a borderline-significant estimate, and the paper's estimates rule out an increase larger than 30.7%.
+- The time from a pull request's submission to its approval went up 56.1%, and review comments per PR rose 38.6%.
 
 The authors' explanation is that writing code is only part of the job. Engineers spend 30–40% of their time writing code; the rest is planning, review, testing and deployment. Speed up the writing and the other steps become the bottleneck.
 
@@ -117,7 +117,7 @@ Not line by line. The PM is the right person to check the result: does the butto
 
 ### Does AI make code review the bottleneck?
 
-The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: pull requests went up 23% with AI agents, while average PR time to review rose 49%. Adding PM-authored PRs to that queue makes it bigger.
+The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: with AI agents, pull requests opened went up 35.7%, while the time from a pull request's submission to its approval rose 56.1%. Adding PM-authored PRs to that queue makes it bigger.
 
 ### Does Butterneck open pull requests for PMs?
 
@@ -128,5 +128,7 @@ No. Butterneck never opens a pull request, never merges and never deploys. The d
 [Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a small change your PMs have been waiting on. Or check [pricing](/pricing): Starter is free for one developer and one requester, and Pro is $19 per person per month. A workspace owner on Starter can also try Pro free for one month. Learn more at [butterneck.com](/).
 
 Correction (27 Oct 2026): an earlier version misstated two figures from the study (Jira issues resolved and comments per PR); they now match the [paper](https://fion.ac/jellyfish.pdf).
+
+Update (31 Oct 2026): the authors revised the paper on 28 Oct 2026. The figures above follow that version; an earlier version reported 718 firms, 23% more pull requests and 49% longer review time.
 `,
 };
