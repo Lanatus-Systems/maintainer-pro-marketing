@@ -126,7 +126,7 @@ It turns a labeled ticket into a working change on a live preview, and posts the
 
 ### Which AI tools turn a Jira ticket into a pull request?
 
-Several do. Atlassian's own Jira Coding Agent can generate code from a work item and open a draft pull request for your team to review and merge, and Clogless opens a pull request with your Git provider when the change is ready. Butterneck stops one step earlier: a labeled ticket opens a private copy of the app, the developer's own coding agent makes the change, and a preview link goes back on the ticket. A developer then decides whether to commit it and open a PR. Butterneck never opens a pull request, merges or deploys.
+Several do. Atlassian's own Jira Coding Agent can generate code from a work item and open a draft pull request for your team to review and merge. In Jira you can also assign a work item to Cursor, which starts a Cursor Cloud Agent and links the pull request on the ticket, or to Atlassian's Claude Agent for Jira (Beta), which typically opens a draft GitHub pull request. Clogless opens a pull request with your Git provider when the change is ready. Butterneck stops one step earlier: a labeled ticket opens a private copy of the app, the developer's own coding agent makes the change, and a preview link goes back on the ticket. A developer then decides whether to commit it and open a PR. Butterneck never opens a pull request, merges or deploys. Our [Jira integration page](/integrations/jira) explains how this differs from assigning the ticket to Cursor or Claude.
 
 ### How do I trigger it from Jira?
 
