@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
@@ -47,6 +47,7 @@ Butterneck isn't affiliated with, endorsed by or sponsored by any other tool lis
 | [Workshop](https://docs.workshop.ai/solutions/prototyping) | PMs, designers, founders, researchers | Cloud, or Desktop with your codebase via GitHub | "A clickable prototype… with mocked data" | Not in the docs index | $0 / $20 / $50 / $200 a month (credits; as of Oct 29, 2026, per [Workshop's pricing page](https://workshop.ai/pricing)) |
 | [Else](https://www.somethingelse.ai/) | Teams reviewing a PR (engineer, QA, designer, PM) | A hosted preview environment running your full stack | Edits in the preview of a PR an engineer already opened | Not on the homepage | No public price ("Start for free") |
 | [Synlets](https://synlets.com/) | PMs, founders, engineering leads | Its cloud, with your repo cloned at runtime | "A reviewable pull request"; "nothing is merged without your approval" | Yes (Jira and Asana integration) | $79–$999/month (credits), no per-seat fees; free tier (as of Oct 29, 2026, per the pricing section on [Synlets' homepage](https://synlets.com/)) |
+| [Inspect](https://inspect.com/) (by Ramp; early access) | Ramp's "engineering, design, and product teams" (Ramp's own use) | Ramp's cloud ("Inspect runs in the cloud") | "A visually validated and fully reviewed pull request" | Not on the pages we read (tasks come from Slack, GitHub, Linear or the web) | No public price found; early access by application (as of Oct 30, 2026, per [Ramp's launch post](https://ramp.com/blog/introducing-inspect)) |
 | [Specship](https://specship.dev/) | Founders and small teams | Connected GitHub repo | Acceptance criteria, failing tests, code and "review-ready pull requests"; optional auto-merge (beta) | Planned or in beta (GitHub and ClickUp today) | "Pricing TBD" (waitlist) |
 | [CoderHelm](https://coderhelm.com/) | Engineering teams on GitHub, Jira and AWS | Hosted, or in your own AWS account | A pull request on a \`coderhelm/\` branch; auto-merge off by default | Yes (label or assign) | Closed beta; bring your own Anthropic key |
 | [Epicraft](https://www.epicraft.dev/) | "The PM is the user, not the developer" | From a Jira ticket assigned to its bot | A branch and a pull request; "You review the PR in GitHub, approve, merge" | Yes (assign the ticket to its bot) | No public price found |
@@ -95,6 +96,8 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 **Else** — "Preview environments with AI editing." An engineer opens a PR, Else spins up a live environment of the full stack, and PMs, QA and designers fix things in place. It works after a PR exists, so it can sit alongside tools that work before one. Good pick for teams that want richer PR review.
 
 **Synlets** — "Tickets in. Pull requests out." Assign a ticket and its agent writes the change and opens a PR, then iterates on review comments. Credit-based plans with no per-seat fees. Good pick if you want tickets turned straight into PRs in the cloud.
+
+**Inspect** (Ramp): a cloud coding agent you give a task "from wherever you do your work: Slack, GitHub, Linear, on the web", which returns "a visually validated and fully reviewed pull request". Sessions are shared, so teammates can add context before review. Early access only. Good pick if your team lives in Slack and wants a cloud agent that ends in a pull request.
 
 **Specship** — Ticket-to-PR automation that starts from acceptance criteria and failing tests, with an optional auto-merge for low-risk PRs in private beta. Pricing isn't published yet. Good pick for small teams that want test-first automation.
 
