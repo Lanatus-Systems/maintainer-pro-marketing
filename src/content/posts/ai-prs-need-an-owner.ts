@@ -156,7 +156,7 @@ Give every AI PR a named human owner, keep AI changes small, sort changes into r
 
 ### Who should own an AI-generated pull request?
 
-A named person on your team, not the agent or a bot account. Make it the developer who started the agent's task or the one who will merge the change, and put their name on the PR. LinearB's 2026 report links part of the AI merge gap to AI PRs lacking "a natural human owner", and in a [2026 survey of 239 code reviewers](https://arxiv.org/abs/2610.11179), 41.8% said they require evidence that a known human will maintain the code. In Butterneck there is no bot PR: the developer who checked the preview commits the change as their own work and decides whether to open a PR.
+A named person on your team, not the agent or a bot account. Make it the developer who started the agent's task or the one who will merge the change, and put their name on the PR. LinearB's 2026 report links part of the AI merge gap to AI PRs lacking "a natural human owner", and in a [2026 survey of 239 practitioners](https://arxiv.org/abs/2610.11179), 41.8% said they require evidence that a known human will maintain the code. In Butterneck there is no bot PR: the developer who checked the preview commits the change as their own work and decides whether to open a PR.
 
 ### Why do AI pull requests take longer to review?
 
