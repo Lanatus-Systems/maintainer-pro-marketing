@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Share localhost with a PM or stakeholder without deploying: a live link to the app on your computer, a chat to ask for changes, and AI edits on the preview.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -111,7 +111,7 @@ Sharing a local app is only comfortable if you know what the outside world can t
 
 - The AI edits only the folder you connected. You can block other paths with ignore rules.
 - Secret settings files (\`.env\`) are on the agent's ignore list (an instruction, not a hard block).
-- If a turn goes wrong, you can stop it and roll back that turn's file changes.
+- If a turn goes wrong, you can stop it, and that turn's file changes are usually rolled back; if the rollback can't be completed, the chat says so.
 - Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use.
 - Nothing is merged, no pull request is opened, and nothing is deployed. The change is not published until someone on your team publishes it the way you already do.
 
