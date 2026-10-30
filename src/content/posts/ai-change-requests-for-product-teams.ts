@@ -137,7 +137,7 @@ For how to word a single request so the agent gets it right, see [how to write a
 - **Week 3:** Add more requesters through the named list. Keep one developer reviewing.
 - **After that:** Decide which apps and request types are in scope, and write it down.
 
-Track one number: time from request to reviewed change. Compare it with your normal ticket flow.
+Track one number: time from request to reviewed change. Compare it with your normal ticket flow. If you need your engineering lead's agreement first, send them the [4-week pilot proposal](/blog/pm-change-request-pilot-proposal): a one-page plan with the scope, guardrails, what to measure and when to stop.
 
 ## FAQ
 
