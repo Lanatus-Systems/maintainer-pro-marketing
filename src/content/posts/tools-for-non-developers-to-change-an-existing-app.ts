@@ -135,6 +135,10 @@ Keep a developer in the decision. Look for three things: the change is shown on 
 
 On your own computer, yes, if you can run the project yourself: tools like Layrr and PulseDev put a point-and-edit overlay on your local dev server, and a coding agent such as Claude Code edits the source. If the app belongs to a team, someone still decides what ships. Tools like ronda and Revyse (in its cloud mode) turn your request into a pull request for the team to review. In Butterneck you don't need the project on your computer: you ask on a live copy of the app, the developer's own agent makes the change on a computer the team connects, and a developer decides what goes live. Butterneck never opens a pull request, merges or deploys.
 
+### Is there a Figma Make alternative for PMs who aren't on a Mac or can't get into the beta?
+
+Figma Make on your codebase is a closed beta for now: access is by waitlist, it runs in the Figma Beta desktop app for Mac (Figma says Windows support is planned), and the person using it needs access to the repository (as of 30 October 2026, per [Figma's help article](https://help.figma.com/hc/en-us/articles/40789739982871-Make-in-your-local-codebase-Setup-gotchas-and-troubleshooting)). ronda and Refinar connect a GitHub repository, run the app in a sandbox and send the change as a pull request. With Butterneck, the person asking opens a link in a browser, with no repository, desktop app or Mac on their side: a developer connects a computer that already has the project, the coding assistant already signed in there makes the change, and the person asking checks it on the live preview. No pull request is opened; a developer decides what ships.
+
 ### Does Butterneck open a pull request?
 
 No. Butterneck never opens a pull request, merges or deploys. The person who asked checks the change on a live preview, and a developer reviews the diff and ships it the team's usual way.
