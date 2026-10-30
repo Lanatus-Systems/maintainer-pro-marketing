@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
   date: "2026-10-28",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026; Vision checked 30 October 2026; Remix checked 30 October 2026; Lightsprint checked 30 October 2026; Sparkles checked 30 October 2026; Alloy checked 30 October 2026; medit checked 30 October 2026; Builder.io checked 31 October 2026; Netlify Agent Runners checked 31 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026; Vision checked 30 October 2026; Remix checked 30 October 2026; Lightsprint checked 30 October 2026; Sparkles checked 30 October 2026; Alloy checked 30 October 2026; medit checked 30 October 2026; Builder.io checked 31 October 2026; Netlify Agent Runners checked 31 October 2026; Kosuke checked 31 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 > **In short:** AI tools that let non-developers change an existing web app connect an AI coding agent to the code a team already runs, so a product manager or designer can ask for a change in plain words. They differ in where the agent runs, what comes back (a prototype, a pull request or a live preview) and who decides what ships. Butterneck runs the developer's own agent on a computer the team connects; the person who asked checks the change on a live preview, and no pull request exists until a developer decides.
 
@@ -58,6 +58,7 @@ Butterneck isn't affiliated with, endorsed by or sponsored by any other tool lis
 | [Lightsprint](https://lightsprint.ai/) | "PMs, designers and ops" (its homepage) | "a live, shared sandbox" inside its "shared cloud workspace", on your existing codebase | A PR to GitHub, GitLab or Bitbucket; "engineering controls every merge" | Yes, on Pro (start a task from Linear, Jira or Slack) | Free $0 ("5 free tasks and plans weekly"); Pro $40 per seat/month, up to 20 seats (as of Oct 30, 2026, per [Lightsprint's pricing page](https://lightsprint.ai/pricing)) |
 | [Sparkles](https://sparkles.dev/) | "anyone on your team" | "an isolated cloud sandbox" from your connected GitHub repo, with Claude Code, Codex or OpenCode | "a pull request your team reviews"; you can merge from its app "when everything is green" | Not on the page we read (Jira is listed among its integrations, as a tool agents can use) | 100 free credits; plans from $50/month (as of Oct 30, 2026, per [Sparkles' homepage](https://sparkles.dev/)) |
 | [Alloy](https://alloy.app/cloud-agents) | Product teams ("Product managers and designers use cloud agents to propose real changes as pull requests", per its FAQ) | "Your product codebase running in the cloud", from your connected GitHub repo; you can "share a link for feedback" | A pull request you open from the session | Yes (a Jira integration is listed on every plan, per its pricing page) | Free $0 (unlimited users, $5 credits per user/month); Pro $20 per user/month (as of Oct 30, 2026, per [Alloy's pricing page](https://alloy.app/pricing)) |
+| [Kosuke](https://docs.kosuke.ai/guides/change-without-code) | People on the team who don't write code ("You can change your product without writing code"), once an engineer has imported and deployed the project | Kosuke's cloud sandboxes, running "your preferred coding agent with your subscription" (Claude Code, Codex, GLM Coding Plan or Kimi Code) | A pull request: "check it in the Preview, and press Open PR"; "Your engineers review and merge the pull request as usual" | Not on the pages we read (Jira is listed among the integrations its chat sessions can use) | Starter $20/month and Pro $190/month billed monthly, each with monthly sandbox credits; priced by sandbox hours, and your own coding-agent subscription is required (as of Oct 31, 2026, per [Kosuke's pricing page](https://kosuke.ai/pricing)) |
 | [Specship](https://specship.dev/) | Founders and small teams | Connected GitHub repo | Acceptance criteria, failing tests, code and "review-ready pull requests"; optional auto-merge (beta) | Planned or in beta (GitHub and ClickUp today) | "Pricing TBD" (waitlist) |
 | [CoderHelm](https://coderhelm.com/) | Engineering teams on GitHub, Jira and AWS | Hosted, or in your own AWS account | A pull request on a \`coderhelm/\` branch; auto-merge off by default | Yes (label or assign) | Closed beta; bring your own Anthropic key |
 | [Epicraft](https://www.epicraft.dev/) | "The PM is the user, not the developer" | From a Jira ticket assigned to its bot | A branch and a pull request; "You review the PR in GitHub, approve, merge" | Yes (assign the ticket to its bot) | No public price found |
@@ -119,6 +120,8 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 **Remix** — "Your AI Product Manager": the team and an AI PM work "on a working copy of your website or product: analyze your data, propose changes, prompt new variants, test them, and ship the winner." Teammates branch variants of a live copy and comment on the canvas ("Like Figma, for your live app"). When a variant is ready it goes to GitHub as a pull request with the prompts behind it, a link to run it live, and "security checks that pass before anything merges." Good pick if a product team wants to compare several variants of a screen before engineering reviews a PR.
 
+**Kosuke** — "Describe the change in a chat session, check it in the Preview, and press Open PR." An engineer imports and deploys the project once; after that, people who don't write code can start sessions, and engineers "review and merge the pull request as usual". Changes come back with "a prototype, a recording, a verdict" to judge. It runs your own Claude Code or Codex subscription in its cloud sandboxes and charges for sandbox hours. Good pick if you want each PR to arrive with a recorded check of the change.
+
 **Specship** — Ticket-to-PR automation that starts from acceptance criteria and failing tests, with an optional auto-merge for low-risk PRs in private beta. Pricing isn't published yet. Good pick for small teams that want test-first automation.
 
 **CoderHelm** — "Assign a GitHub issue or Jira ticket and get a pull request", plus CI fixing, PR review and alerts-to-fixes, hosted or in your own AWS account. In closed beta. Good pick for engineering teams that want an engineering-ops agent.
@@ -134,7 +137,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 - **You want a prototype to explore an idea:** Workshop, Modeinspect.
 - **You want a ticket turned into a pull request automatically:** Synlets, Specship, CoderHelm, CodeHerder (Jira's built-in options are worth a look too).
 - **You want a ticket in Jira turned into a PR, with the PM as the user:** Epicraft, Synlets, CoderHelm.
-- **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change), Remix (variants of "a live copy of your real app"), Lightsprint, Sparkles, Alloy, Builder.io, Netlify Agent Runners.
+- **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change), Remix (variants of "a live copy of your real app"), Lightsprint, Sparkles, Alloy, Builder.io, Netlify Agent Runners, Kosuke.
 - **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless.
 - **You want the requester to publish small changes themselves:** Refinar.
 - **You want better review once a PR exists:** Else.
