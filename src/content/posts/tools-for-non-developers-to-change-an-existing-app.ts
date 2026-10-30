@@ -19,6 +19,8 @@ export const post: BlogPost = {
   body: `
 Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026; Vision checked 30 October 2026; Remix checked 30 October 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
+> **In short:** AI tools that let non-developers change an existing web app connect an AI coding agent to the code a team already runs, so a product manager or designer can ask for a change in plain words. They differ in where the agent runs, what comes back (a prototype, a pull request or a live preview) and who decides what ships. Butterneck runs the developer's own agent on a computer the team connects; the person who asked checks the change on a live preview, and no pull request exists until a developer decides.
+
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
 Butterneck isn't affiliated with, endorsed by or sponsored by any other tool listed here. Product names and trademarks belong to their owners and are used only to identify the products.
