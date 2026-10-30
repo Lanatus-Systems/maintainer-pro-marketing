@@ -4,9 +4,9 @@ export const post: BlogPost = {
   slug: "clogless-alternative",
   title: "Clogless alternative: an honest comparison with Butterneck",
   description:
-    "Clogless vs Butterneck for product teams: cloud sandbox vs a connected computer, pull requests vs previews, Jira tickets and pricing, from public information.",
+    "Clogless vs Butterneck for product teams: cloud sandbox and PR vs a preview your developer publishes. Plus other Clogless alternatives, from public info.",
   date: "2026-10-28",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -75,7 +75,7 @@ Clogless covers more ground: six ticketing tools (Butterneck supports only Jira 
 
 ### Pricing
 
-Clogless lists Starter at $99 per month and Team at $489 per month, billed annually (as of Oct 29, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)), plus Enterprise through sales. Starter includes 1 project or repo and 2 environments; Team includes 4 and 8. AI usage is listed as "Credit / BYOK". We did not see a per-seat price on the page.
+Clogless lists Starter at $99 per month and Team at $489 per month, billed annually (as of Oct 30, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)), plus Enterprise through sales. Starter includes 1 project or repo and 2 environments; Team includes 4 and 8. AI usage is listed as "Credit / BYOK". We did not see a per-seat price on the page.
 
 Butterneck has a free Starter plan for one developer and one person who asks for changes. Pro is USD 19 per person per month, billed monthly, with 20% off annual billing. You also pay for your own coding assistant subscription. Details on [pricing](/pricing). A workspace owner on Starter can also start a one-month Pro trial from the Billing page, once per workspace.
 
@@ -92,7 +92,7 @@ Butterneck has a free Starter plan for one developer and one person who asks for
 | Back on the ticket | Not found on their public pages | A note and a preview link |
 | Pricing | $99/mo Starter, $489/mo Team, billed annually | Free Starter; Pro $19 per person per month; one-month Pro trial |
 
-Clogless prices: $99/mo Starter and $489/mo Team, billed annually (as of Oct 29, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)).
+Clogless prices: $99/mo Starter and $489/mo Team, billed annually (as of Oct 30, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)).
 
 ## When Clogless fits better
 
@@ -115,6 +115,17 @@ Be honest about how your team ships.
 ## When neither is a fit
 
 If you want changes to merge themselves, neither tool is built for that. Both keep engineering in charge of what ships. And if your request is a new feature that needs design and architecture work, start with your team, not a chat box.
+
+## Other Clogless alternatives
+
+If the pull request at the end is what you like about Clogless, these tools also end in a PR for engineering to review (quotes from each tool's own site, checked 30 October 2026):
+
+- **ronda**: "ronda writes the code and opens a pull request. Engineering reviews and merges." ([useronda.com](https://useronda.com/))
+- **Plusma**: "Describe a change, preview it live, iterate until it's right, and hand your team a clean PR." ([plusma.ai](https://plusma.ai/))
+- **Refinar**: describe a change, watch it in a live preview, "then publish it or send it to engineering as a pull request." ([refinar.ai](https://refinar.ai/en/for/product-managers))
+- **Synlets**: "Tickets in. Pull requests out." You assign a ticket to its agent. ([synlets.com](https://synlets.com/))
+
+For prices, where each one runs and who it's for, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ## FAQ
 
