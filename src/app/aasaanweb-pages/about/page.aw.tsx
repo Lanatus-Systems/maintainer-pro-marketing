@@ -20,7 +20,7 @@ const DESCRIPTION =
   "What AasaanWeb is and who makes it: a website maker for small Indian businesses. Describe your business or a change in plain words, check the preview, publish.";
 /** Quotable definition (site-fixes/07), without the Hindi-input clause, which is not yet verified on the live site. */
 const AASAANWEB_DEFINITION =
-  "AasaanWeb is a website maker for small Indian businesses – shops, studios, clinics and manufacturers. The owner describes the business, or a change, in plain words, sees it on a preview, and publishes it; a small change takes about 10 minutes.";
+  "AasaanWeb is a website maker for small Indian businesses – shops, studios, clinics and manufacturers. The owner describes the business, or a change, in plain words, sees it on a preview, and publishes it; small changes go live in about 10 minutes.";
 
 export function generateMetadata(): Metadata {
   if (!isAasaanWeb) return {};
@@ -85,10 +85,10 @@ export default function AboutPage() {
               details. Or, for a page you already have, describe the fix in plain language.
             </li>
             <li>
-              <strong>Preview.</strong> Every change shows on a preview first, exactly as customers will see it.
+              <strong>Preview.</strong> Every change shows on a preview first, as customers will see it.
             </li>
             <li>
-              <strong>Publish.</strong> You decide when it goes live. A small change takes about 10 minutes.
+              <strong>Publish.</strong> You decide when it goes live. Small changes go live in about 10 minutes.
             </li>
           </ol>
           <p>
