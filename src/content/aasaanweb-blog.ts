@@ -34,6 +34,13 @@ export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
     coverAlt: "Cover for the guide: how to make a website for your shop, without coding.",
   },
   {
+    slug: "business-website-kaise-banaye",
+    draft: false,
+    date: "2026-10-30",
+    lang: "hi-Latn-IN",
+    author: "AasaanWeb team",
+  },
+  {
     slug: "how-to-create-a-small-business-website-in-india-without-coding",
     draft: false,
     date: "2026-10-29",
