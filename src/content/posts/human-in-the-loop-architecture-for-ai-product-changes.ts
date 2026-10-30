@@ -61,6 +61,8 @@ There are two entry points:
 - A chat widget embedded on the live preview. It sends the page URL along with the message, so "this button" has a referent.
 - A Jira Cloud ticket with a \`butterneck\` label, assigned to a teammate whose Jira account is mapped to a computer that has the project. Title, description, latest comments and attachments become the request. A note with the preview link is posted back to the ticket.
 
+Jira setup, including how each developer's Jira account is mapped to their computer, is on the [Jira integration page](/integrations/jira).
+
 Developer replies in the thread don't trigger the agent, so the developer can talk to the requester without kicking off another edit.
 
 ### 3. The preview is the running dev server
@@ -68,6 +70,8 @@ Developer replies in the thread don't trigger the agent, so the developer can ta
 The bridge starts the app and the server issues a public share URL that relays traffic over the bridge's WebSocket, including hot-reload sockets. When the agent saves a file, the dev server reloads and the requester sees it.
 
 That gives you property 2 with no deploy step. It also means the agent is told not to run a production build mid-turn unless the person asking explicitly requests one; the dev server is the preview.
+
+More on how the share link works, and what passes through it, in [Share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
 
 ### 4. Guardrails in layers
 
@@ -79,11 +83,15 @@ That gives you property 2 with no deploy step. It also means the agent is told n
 
 An honest note on layer one and two: they are instructions to the agent plus the CLI's workspace setting, and the CLIs run with their interactive permission prompts skipped. That is not the same as an OS sandbox. If you need hard isolation, run the bridge on a machine or account that has no production secrets. We'd rather say that plainly than overclaim.
 
+The exact CLI flags, and what to do if you need a harder boundary, are in [how Butterneck runs an AI coding agent in a sandbox on your own machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+
 ### 5. The merge button doesn't exist
 
 There is no push, no pull request, no merge and no deploy in the bridge or chat server. The output of a turn is edited files in a folder plus a conversation and a live preview.
 
 The developer reviews all three, then commits and ships through the team's normal pipeline, with its tests, CI and code review intact. Or discards it.
+
+Why we keep that last step with a person is in [Human-in-the-loop AI coding: why Butterneck never merges](/blog/human-in-the-loop-ai-coding).
 
 ## "Isn't the human the bottleneck now?"
 

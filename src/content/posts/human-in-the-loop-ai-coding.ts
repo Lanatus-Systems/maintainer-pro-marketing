@@ -156,6 +156,8 @@ Butterneck does not ship its own model. It uses the coding assistant the develop
 
 If you want the details of the sharing side, read [Share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
 
+For the architecture behind this, layer by layer, read [Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes).
+
 Why ownership matters for AI-written changes, with LinearB's 2026 data on AI PR merge rates and pickup times: [AI pull requests need an owner](/blog/ai-prs-need-an-owner).
 
 ## FAQ
