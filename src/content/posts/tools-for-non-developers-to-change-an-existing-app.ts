@@ -97,7 +97,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 **Synlets** — "Tickets in. Pull requests out." Assign a ticket and its agent writes the change and opens a PR, then iterates on review comments. Credit-based plans with no per-seat fees. Good pick if you want tickets turned straight into PRs in the cloud.
 
-**Inspect** (Ramp): a cloud coding agent you give a task "from wherever you do your work: Slack, GitHub, Linear, on the web", which returns "a visually validated and fully reviewed pull request". Sessions are shared, so teammates can add context before review. Early access only. Good pick if your team lives in Slack and wants a cloud agent that ends in a pull request.
+**Inspect** (Ramp) — a cloud coding agent you give a task "from wherever you do your work: Slack, GitHub, Linear, on the web, or on the run", which returns "a visually validated and fully reviewed pull request". Sessions are shared, so teammates can add context before review. Early access only. Good pick if your team lives in Slack and wants a cloud agent that ends in a pull request.
 
 **Specship** — Ticket-to-PR automation that starts from acceptance criteria and failing tests, with an optional auto-merge for low-risk PRs in private beta. Pricing isn't published yet. Good pick for small teams that want test-first automation.
 
