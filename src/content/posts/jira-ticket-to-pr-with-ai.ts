@@ -108,6 +108,8 @@ The agent reads the title, description, latest comments, and attachments. Ticket
 - Keep one change per ticket. Small tickets give small, reviewable diffs.
 - Leave out anything that needs secrets or production data.
 
+For a copy-ready version, put the five-line template from [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai) in the ticket description.
+
 ## Security notes for CTOs
 
 - The agent works only in the folder tied to the private copy.
