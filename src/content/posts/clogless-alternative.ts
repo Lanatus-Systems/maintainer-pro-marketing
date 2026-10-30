@@ -90,7 +90,7 @@ Butterneck has a free Starter plan for one developer and one person who asks for
 | Ticketing | Jira, Linear, Trello, monday.com, Notion, Asana | Jira Cloud only |
 | How a ticket starts | Open the ticket in Clogless | Label \`butterneck\` and assign it in Jira |
 | Back on the ticket | Not found on their public pages | A note and a preview link |
-| Pricing | $99/mo Starter, $489/mo Team, billed annually | Free Starter; Pro $19 per person per month; one-month Pro trial |
+| Pricing | $99/mo Starter, $489/mo Team, billed monthly on an annual commitment | Free Starter; Pro $19 per person per month; one-month Pro trial |
 
 Clogless prices: $99/mo Starter and $489/mo Team, billed monthly on an annual commitment (as of Oct 30, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)).
 
