@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { POSTS, postPath } from "@/content/blog";
 import { LEGAL_UPDATED, legalPages } from "@/content/legal";
-import { AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
+import { AASAANWEB_ABOUT_UPDATED, AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
 import { AASAANWEB_LEGAL, AASAANWEB_LEGAL_UPDATED } from "@/content/aasaanweb-legal";
 import { isAasaanWeb } from "@/lib/brand";
 import { AASAANWEB_PUBLISHED_POSTS, aasaanWebPostPath } from "@/content/aasaanweb-blog";
@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: siteUrl("/"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 1 },
       { url: siteUrl("/work"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 0.8 },
       { url: siteUrl("/pricing"), lastModified: new Date(AASAANWEB_HOME_UPDATED), changeFrequency: "monthly", priority: 0.8 },
+      { url: siteUrl("/about"), lastModified: new Date(AASAANWEB_ABOUT_UPDATED), changeFrequency: "monthly", priority: 0.7 },
       {
         url: siteUrl("/blog"),
         lastModified: new Date(latestPost ?? AASAANWEB_HOME_UPDATED),

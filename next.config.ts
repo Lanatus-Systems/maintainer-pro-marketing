@@ -54,7 +54,7 @@ const aasaanWebRedirects = [
 /** Public AasaanWeb pages that share a path with a Butterneck page are served from src/app/aasaanweb-pages. */
 const aasaanWebRewrites = [
   { source: "/", destination: "/aasaanweb-home" },
-  ...["work", "pricing", "contact", "privacy", "terms"].map((page) => ({
+  ...["work", "pricing", "contact", "privacy", "terms", "about"].map((page) => ({
     source: `/${page}`,
     destination: `/aasaanweb-pages/${page}`,
   })),
@@ -64,6 +64,9 @@ const aasaanWebRewrites = [
 
 const nextConfig: NextConfig = {
   agentRules: false,
+  // AasaanWeb-only pages (e.g. src/app/aasaanweb-pages/about/page.aw.tsx) use the ".aw.tsx" extension,
+  // which only the AasaanWeb build treats as a page, so they never exist in the Butterneck build.
+  ...(isAasaanWeb ? { pageExtensions: ["aw.tsx", "tsx", "ts", "jsx", "js"] } : {}),
   allowedDevOrigins: ["127.0.0.1"],
   poweredByHeader: false,
   // Butterneck builds swap the AasaanWeb blog and legal modules for stubs, so the shared /blog routes

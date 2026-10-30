@@ -52,6 +52,13 @@ export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
     coverAlt: "Cover comparing a business website with a Google Business Profile for an Indian shop.",
   },
   {
+    slug: "how-to-update-website-content",
+    draft: false,
+    date: "2026-10-30",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+  },
+  {
     slug: "small-business-website-must-haves",
     draft: false,
     date: "2026-10-29",

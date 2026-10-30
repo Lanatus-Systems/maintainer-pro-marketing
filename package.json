@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev --port 3010",
     "build": "next build",
-    "start": "next start --port 3010"
+    "start": "next start --port 3010",
+    "indexnow:aasaanweb": "node scripts/indexnow-aasaanweb.mjs"
   },
   "dependencies": {
     "next": "^16.2.9",

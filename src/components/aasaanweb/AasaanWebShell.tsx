@@ -27,6 +27,7 @@ function Links({ footer = false, current }: { footer?: boolean; current?: Aasaan
       <a href="/#how">How it works</a>
       <a href="/#who">Who it’s for</a>
       <a href="/#faq">Questions</a>
+      {footer ? <a href="/about">About</a> : null}
       {footer ? <a href="/contact">Contact</a> : null}
     </>
   );

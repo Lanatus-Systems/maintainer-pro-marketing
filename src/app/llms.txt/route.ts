@@ -60,6 +60,7 @@ function aasaanWebLlms() {
     `- [Our work](${siteUrl("/work")}): live pages made for real businesses (Parmanand Industries, Shivam Industries, EL360)`,
     `- [Pricing](${siteUrl("/pricing")})`,
     `- [Blog](${siteUrl("/blog")}): guides for small Indian businesses`,
+    `- [About](${siteUrl("/about")}): what AasaanWeb is, who it is for, and who makes it`,
     `- [Contact](${siteUrl("/contact")})`,
     "",
     "## Guides",

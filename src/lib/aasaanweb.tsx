@@ -25,6 +25,9 @@ const OG_IMAGE_ALT = "AasaanWeb logo on navy: Create or edit your business websi
 /** Bump when home page copy changes (used by the sitemap). */
 export const AASAANWEB_HOME_UPDATED = "2026-10-29";
 
+/** Bump when /about copy changes (used by the sitemap). */
+export const AASAANWEB_ABOUT_UPDATED = "2026-10-30";
+
 const openGraph = (url?: string): NonNullable<Metadata["openGraph"]> => ({
   type: "website",
   siteName: brand.name,
@@ -90,7 +93,17 @@ export function PageUrlTags({ path }: { path: string }) {
 
 export const ORG_ID = "https://www.butterneck.com/#organization";
 
-/** WebSite + SoftwareApplication, as in brand-data.ts. No offers block. */
+/**
+ * featureList for the #app node: only claims verified on the live site
+ * (aasaanweb-growth research/accuracy-list.md). No price, no Hindi-input claim.
+ */
+export const AASAANWEB_FEATURES = [
+  "Create a landing page by describing your business in plain words",
+  "Edit text, photos, hours, prices and buttons in plain words",
+  "Review a preview before you publish",
+];
+
+/** WebSite + SoftwareApplication, as in brand-data.ts. No offers block (no price in AasaanWeb copy). */
 export function aasaanWebJsonLd() {
   const home = siteUrl("/");
   return {
@@ -116,6 +129,7 @@ export function aasaanWebJsonLd() {
         description: brand.description,
         image: AASAANWEB_OG_IMAGE,
         inLanguage: ["en-IN", "hi-IN"],
+        featureList: AASAANWEB_FEATURES,
         publisher: {
           "@type": "Organization",
           "@id": ORG_ID,
