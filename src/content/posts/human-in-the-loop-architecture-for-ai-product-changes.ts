@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
   cover: {
@@ -59,7 +59,7 @@ Why local? The project already runs there, with its real dependencies, data and 
 There are two entry points:
 
 - A chat widget embedded on the live preview. It sends the page URL along with the message, so "this button" has a referent.
-- A Jira Cloud ticket with a \`butterneck\` label, assigned to someone whose computer has the project. Title, description, latest comments and attachments become the request. A note with the preview link is posted back to the ticket.
+- A Jira Cloud ticket with a \`butterneck\` label, assigned to a teammate whose Jira account is mapped to a computer that has the project. Title, description, latest comments and attachments become the request. A note with the preview link is posted back to the ticket.
 
 Developer replies in the thread don't trigger the agent, so the developer can talk to the requester without kicking off another edit.
 

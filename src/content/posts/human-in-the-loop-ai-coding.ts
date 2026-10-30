@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Human-in-the-loop AI coding with a gate for the person who asked: they check the change on a live preview, and a developer decides. No auto PR or merge.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-10-30",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -49,7 +49,7 @@ Most human-in-the-loop setups for coding agents put every gate in the developer'
 
 Everything else follows from that line.
 
-- A product manager or another stakeholder types a request on a live copy of the app, or a Jira ticket labeled \`butterneck\` and assigned to someone whose computer has the project starts the chat.
+- A product manager or another stakeholder types a request on a live copy of the app, or a Jira ticket labeled \`butterneck\` and assigned to a teammate whose Jira account is mapped to a computer that has the project starts the chat.
 - A coding assistant running on a developer's own computer edits the connected project folder.
 - The developer reads the conversation, looks at the running app, and publishes the change the way the team already does. Or leaves it.
 
@@ -179,6 +179,10 @@ For most product changes, no. Since 28 October 2026, GitHub's Agent Merge can wa
 ### Is there an AI coding agent that waits for my approval before it merges?
 
 Many cloud coding agents stop at a pull request and leave the merge to a reviewer and your branch rules. Butterneck stops earlier. It never opens a pull request, merges or deploys. The AI edits the project on the developer's computer, the person who asked checks the result on a live preview, and the developer decides whether it becomes a commit or a pull request at all.
+
+### How is this different from a merge gate for agent pull requests?
+
+A merge gate stops an agent's pull request at the end. Anthropic's [Agent Approval Check](https://github.com/anthropics/claude-code-action/blob/main/agent-approval-check/README.md), for example, is a GitHub Action that requires a set number of human approvals on any pull request with commits authored by an AI agent. Gates like that work in the developer's workflow, once the code is already a pull request. Butterneck adds a check before that, for the person who asked: they look at the change on a live preview, then a developer decides whether it becomes a commit or a pull request at all. If the developer does open a pull request, your existing merge gates and branch rules still apply.
 
 ### Can a non-developer approve a change on their own?
 
