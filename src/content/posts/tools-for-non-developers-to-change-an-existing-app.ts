@@ -135,7 +135,7 @@ Yes, several. Most of the tools above let a PM, designer or operator describe a 
 
 ### Can a non-developer change an existing app without breaking it?
 
-Keep a developer in the decision. Look for three things: the change is shown on a preview before anything ships, a developer reviews it, and risky areas like login, billing and data stay with engineering. Our [AI change request policy template](/blog/ai-change-request-policy-template) lists what to fence off.
+Keep a developer in the decision. Look for three things: the change is shown on a preview before anything ships, a developer reviews it, and risky areas like login, billing and data stay with engineering. Our [AI change request policy template](/blog/ai-change-request-policy-template) lists what to fence off. For the whole process, from asking on a live preview to who decides what ships, see our guide to [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 
 ### Can I change my existing web app with AI without a developer?
 
