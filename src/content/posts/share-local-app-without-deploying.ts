@@ -103,7 +103,7 @@ The coding assistant on the developer's computer reads the request and edits the
 
 ![A request typed in the chat, and the app in the preview updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
-If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket.
+If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket. Setup, including how each developer's Jira account is mapped to their computer, is on the [Jira integration page](/integrations/jira).
 
 ## What is edited on your computer, and what leaves it
 
@@ -116,6 +116,8 @@ Sharing a local app is only comfortable if you know what the outside world can t
 - Nothing is merged, no pull request is opened, and nothing is deployed. The change is not published until someone on your team publishes it the way you already do.
 
 That last point is the whole design. We wrote more about it in [Human-in-the-loop AI coding: why Butterneck never merges](/blog/human-in-the-loop-ai-coding).
+
+For how the whole flow fits together, layer by layer, read [Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes).
 
 ## When sharing a local app is the right call
 
