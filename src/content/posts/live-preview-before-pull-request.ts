@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "Preview an AI-made change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
-  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams"],
+  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments"],
   cover: {
     src: "/blog/cover-live-preview-before-pull-request.png",
     alt: "Butterneck blog cover: Live preview before the PR. The requester checks it is what they meant, then the developer decides what ships",
@@ -57,8 +57,9 @@ Preview environments are not new. Most hosting and CI tools offer them, and they
 
 - Netlify's [Deploy Previews](https://docs.netlify.com/deploy/deploy-types/deploy-previews/) are built automatically when you "open pull / merge requests in a connected site repository", and the preview URL follows the pull request number. Netlify also builds a Deploy Preview when one of its Agent Runners makes a file change.
 - GitLab's [review apps](https://docs.gitlab.com/ci/review_apps/) are "temporary testing environments that are created automatically for each branch or merge request". Its prerequisites include CI/CD pipelines and that you "set up the infrastructure to host and deploy the review apps".
+- Vercel's [preview deployments](https://vercel.com/docs/deployments/environments) are created by default when you "push a commit to a branch that is not your production branch" or "create a pull request (PR)" on a connected Git provider.
 
-Both are good at what they do: a stable URL per branch that stakeholders can open. The catch with PR and branch previews, for small product changes, is the order of events. A developer has already interpreted the request, written the code, committed it, pushed it and waited for a build before the requester sees anything. The preview arrives after the handoff, not during it.
+All three are good at what they do: a stable URL per branch that stakeholders can open. The catch with PR and branch previews, for small product changes, is the order of events. A developer has already interpreted the request, written the code, committed it, pushed it and waited for a build before the requester sees anything. The preview arrives after the handoff, not during it.
 
 | | Preview before the PR | PR or branch preview environment |
 |---|---|---|
