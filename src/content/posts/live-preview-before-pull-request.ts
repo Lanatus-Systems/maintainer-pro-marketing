@@ -112,7 +112,7 @@ A preview before the PR works only if everyone knows which decision is theirs.
 | Does it ship, and how? | A developer, using the team's normal process |
 | Should this kind of change go through this flow at all? | The engineering lead, in your team's policy |
 
-The requester's sign-off is necessary, not sufficient. A developer still checks what the requester can't see: shared components, translations, tests, anything near sign-in, billing or data. And the developer decides whether the change ships at all. If your team wants this written down, our [AI change request policy template](/blog/ai-change-request-policy-template) has sections on who reviews and decides what ships, and on how previews are checked.
+The requester's sign-off is necessary, not sufficient. A developer still checks what the requester can't see: shared components, translations, tests, anything near sign-in, billing or data. And the developer decides whether the change ships at all. If your team wants this written down, our [AI change request policy template](/blog/ai-change-request-policy-template) has sections on who reviews and decides what ships, and on how previews are checked. For the wider process, from the request-to-preview handoff to guardrails and a rollout plan, see our guide to [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 
 ## How Butterneck lets you preview AI code changes before a pull request
 
