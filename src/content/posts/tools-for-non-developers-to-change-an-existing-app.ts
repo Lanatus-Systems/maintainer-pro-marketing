@@ -117,7 +117,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 - **You want a prototype to explore an idea:** Workshop, Modeinspect.
 - **You want a ticket turned into a pull request automatically:** Synlets, Specship, CoderHelm, CodeHerder (Jira's built-in options are worth a look too).
 - **You want a ticket in Jira turned into a PR, with the PM as the user:** Epicraft, Synlets, CoderHelm.
-- **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), ronda, Ovren, Flex, Vision.
+- **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change).
 - **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless.
 - **You want the requester to publish small changes themselves:** Refinar.
 - **You want better review once a PR exists:** Else.
