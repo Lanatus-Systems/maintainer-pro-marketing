@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "should-product-managers-ship-code",
   title: "Should product managers ship code? A better middle ground",
   description:
-    "Should PMs ship code with AI? Harvard data says code review becomes the bottleneck. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
+    "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
   updated: "2026-10-31",
   author: "The Butterneck team",
