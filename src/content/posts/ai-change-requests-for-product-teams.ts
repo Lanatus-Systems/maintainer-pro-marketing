@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams"],
   cover: {
@@ -35,7 +35,7 @@ The useful version has four parts:
 3. **Requester sees the result.** On a running copy, right away.
 4. **Developer decides.** A developer reviews and publishes, or discards.
 
-Leave out step 3 and the requester is back to waiting. Leave out step 4 and engineering will not let it near the product.
+Leave out step 3 and the requester is back to waiting. Leave out step 4 and engineering will not let it near the product. For the PM side of this, and the other ways teams handle it, see [how PMs can change a live app without waiting on engineering](/blog/how-pms-can-change-a-live-app-without-waiting-on-engineering).
 
 ## What the requester checks, and what the developer checks
 
