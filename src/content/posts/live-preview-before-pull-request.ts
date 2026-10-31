@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Live preview before the PR: how PMs can review a change before anyone opens a pull request",
   seoTitle: "Live preview before the PR: how PMs review AI changes",
   description:
-    "Preview an AI-made change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
+    "Preview an AI coding agent's change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
   updated: "2026-10-31",
   author: "The Butterneck team",
