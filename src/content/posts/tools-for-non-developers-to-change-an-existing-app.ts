@@ -3,7 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "tools-for-non-developers-to-change-an-existing-app",
   title: "AI tools that let non-developers change an existing web app (2026)",
-  seoTitle: "AI tools that let non-developers change an existing app",
+  seoTitle: "AI tools that let PMs and non-developers change an existing app",
   description:
     "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
   date: "2026-10-28",
