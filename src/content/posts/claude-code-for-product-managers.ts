@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-10-29",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers"],
   cover: {
@@ -101,7 +101,7 @@ To run it themselves, yes. Claude Code and Cursor work on code the PM can reach:
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 
-Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. On Pro, each person who sends requests counts as a seat; Starter includes one developer and one requester for free.
+They don't run or sign in to a coding tool themselves. Requests from the live preview run on the coding CLI already signed in on the developer's connected computer (Claude Code, Cursor's agent CLI, or Antigravity), so that plan must allow use on your team's behalf; whether that means extra seats with your AI vendor depends on its terms (see the note below). Butterneck uses the coding CLI that is already signed in on the connected computer: Claude Code, Cursor's agent CLI, or Antigravity. On Pro, each person who sends requests counts as a seat; Starter includes one developer and one requester for free.
 
 **A note on plans and terms.** Butterneck runs requests through the AI coding tool your developer is already signed into, so that tool's terms apply. The signed-in plan must allow use on your team's behalf. Personal and consumer plans (Claude Pro or Max, Cursor's individual plans, personal Google AI plans) may not. Anthropic's consumer terms, for example, say you "may not make your Account available to anyone else," and Claude Code's docs say Pro and Max limits "assume ordinary, individual usage." Team, Business or Enterprise plans, where each person has a seat, or an organization API key (Anthropic Console, Gemini API / Vertex AI) are the safer fit. Check your plan's terms or ask your vendor. This is not legal advice.
 
