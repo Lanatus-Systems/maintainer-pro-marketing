@@ -4,9 +4,9 @@ export const post: BlogPost = {
   slug: "ai-change-request-policy-template",
   title: "What non-engineers can ask AI to change: a policy template for product teams",
   description:
-    "A copyable policy for PMs, designers and support leads who request product changes with AI: what they can ask for, what needs an engineer, and who reviews.",
+    "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -161,6 +161,7 @@ Owner: [engineering lead]. Last reviewed: [date].
 - Copy, labels, headings, help text
 - Empty states, error and confirmation messages
 - Spacing and layout within the design system
+- Showing or hiding a form field the backend already supports
 - Reordering or hiding existing items
 - Small visual fixes (color, link, hover state)
 
