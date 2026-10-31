@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "How to write a change request for an AI coding agent: a template for PMs",
   seoTitle: "AI change request template: 5 lines for PMs",
   description:
-    "A five-line AI change request template for PMs and designers, with before-and-after examples and what to leave to a developer.",
+    "A five-line AI change request template: how PMs and designers can prompt an AI coding agent to change an existing app, and what to leave to a developer.",
   date: "2026-10-28",
   updated: "2026-10-29",
   author: "The Butterneck team",
