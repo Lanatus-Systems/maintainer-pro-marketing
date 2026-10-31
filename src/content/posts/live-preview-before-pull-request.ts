@@ -153,7 +153,7 @@ Yes. In Butterneck the PM types the request in a chat on a live copy of the app,
 
 ### Which tools let a product manager preview an AI code change before a pull request is opened?
 
-Several AI tools, such as Plusma, ronda and medit, let a PM describe a change, check it on a preview of the app, and then send engineering a pull request; many of them build that preview in the cloud from your repository. We compare them, with their prices, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app). Butterneck works differently: the preview is the app running on a developer's computer, the coding assistant already signed in there makes the change, and no pull request is opened at all. A developer reads the conversation, checks the change, and publishes it the way the team already does.
+Several AI tools, such as Plusma, ronda and medit, let a PM describe a change, check it on a preview of the app, and hand engineering a branch or pull request; some, like ronda, build that preview in the cloud from your repository, while medit runs it on the machine where your app runs. We compare them, with their prices, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app). Butterneck works differently: the preview is the app running on a developer's computer, the coding assistant already signed in there makes the change, and no pull request is opened at all. A developer reads the conversation, checks the change, and publishes it the way the team already does.
 
 ### How is this different from a PR preview environment?
 
