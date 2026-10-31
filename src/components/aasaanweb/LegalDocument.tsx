@@ -3,6 +3,8 @@ import { AasaanWebShell } from "./AasaanWebShell";
 import "../../app/aasaanweb-home/aasaanweb.css";
 
 const SUPPORT_EMAIL = "support@butterneck.com";
+const WHATSAPP_URL = "https://wa.me/918469175299";
+const WHATSAPP_LABEL = "+91 84691 75299";
 
 /**
  * Legal and contact pages. Text from the admin app's LegalPage; since the 2026-10 redesign they use
@@ -24,6 +26,17 @@ export function AasaanWebLegalDocument({ kind }: { kind: AasaanWebLegalKind }) {
             ))}
           </section>
         ))}
+        {kind === "contact" ? (
+          <section>
+            <h2>WhatsApp</h2>
+            <p>
+              Message us on WhatsApp:{" "}
+              <a href={WHATSAPP_URL} className="studio-whatsapp">
+                {WHATSAPP_LABEL}
+              </a>
+            </p>
+          </section>
+        ) : null}
         <p className="studio-legal-foot">
           Questions: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
           {" · "}

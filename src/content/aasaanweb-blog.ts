@@ -25,6 +25,13 @@ export const AASAANWEB_BLOG_FALLBACK_COVER = "/aasaanweb/blog/cover-fallback.png
 
 export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
   {
+    slug: "google-par-apni-dukan-kaise-daalein",
+    draft: false,
+    date: "2026-10-31",
+    lang: "hi-Latn-IN",
+    author: "AasaanWeb team",
+  },
+  {
     slug: "dukan-ki-website-kaise-banaye",
     draft: true,
     date: "2026-10-29",
