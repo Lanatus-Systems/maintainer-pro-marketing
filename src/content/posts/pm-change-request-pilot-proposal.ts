@@ -5,7 +5,7 @@ export const post: BlogPost = {
   seoTitle: "PM pilot proposal for AI change requests (4 weeks)",
   title: "A 4-week pilot to let PMs request live changes: the proposal to send your engineering lead",
   description:
-    "A copyable one-page proposal for a 4-week pilot where PMs request small changes on a live preview and a developer decides what ships.",
+    "A copyable one-page proposal for a 4-week pilot where PMs ask an AI coding agent for small changes on a live preview and a developer decides what ships.",
   date: "2026-10-28",
   updated: "2026-10-28",
   author: "The Butterneck team",

@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI coding agent edits it, a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
@@ -64,7 +64,7 @@ Fine for marketing pages built in a CMS. Not useful when the change is in the pr
 
 ### Give the PM an AI coding tool
 
-Some PMs install Cursor or Claude Code and edit the repo. This can work for technical PMs, but it means a local dev setup, git, and a PM opening pull requests. Many teams do not want that. We compare the main options, from prototype tools to ticket-to-PR agents, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
+Some PMs install Cursor or Claude Code and edit the repo. This can work for technical PMs, but it means a local dev setup, git, and a PM opening pull requests. Many teams do not want that. If you want PMs to use your team's Claude Code or Cursor without a terminal, see [Claude Code for product managers](/blog/claude-code-for-product-managers). We compare the main options, from prototype tools to ticket-to-PR agents, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ### Let the PM ask on a live copy
 
