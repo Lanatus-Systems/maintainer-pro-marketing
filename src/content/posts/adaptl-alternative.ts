@@ -46,7 +46,7 @@ Butterneck does not commit, push, open a pull request, merge or deploy. To be ex
 
 ## The main differences
 
-| | Adaptl | Butterneck |
+| | Adaptl (as of 3 Nov 2026) | Butterneck |
 |---|---|---|
 | Who opens the pull request | Adaptl opens the issue, branch and draft PR on GitHub | Nobody, automatically. The developer decides whether to commit and open a PR |
 | Code host | GitHub repo, or start a project from scratch | Any project folder that runs on the developer's computer |
@@ -54,7 +54,7 @@ Butterneck does not commit, push, open a pull request, merge or deploy. To be ex
 | Agents | Claude Code, Codex, Aider, or an agent mentioned on the PR | Cursor, Claude Code or Antigravity CLI |
 | Where it runs | Online (EU-hosted) or on your own computer | The connector runs on the developer's computer; share link relayed by Butterneck |
 | Jira | Not mentioned on its home page | Label a ticket \`butterneck\`; the preview link is posted back to the ticket |
-| Try before setup | Playground with a shared project | Sample shop after a free sign-up |
+| Try before setup | Playground with a shared project | Sample shop (app.butterneck.com/trial), before connecting a computer |
 | Price | "Signing up is free"; no public pricing page found | Starter free; Pro USD 19 per person per month |
 
 ### The pull request
@@ -63,7 +63,7 @@ This is the clearest fork. Adaptl puts the change on a branch and a draft PR fro
 
 ### Preview data
 
-Adaptl's made-up customers let you try a change as an admin, a new user or a locked-out account without touching real records. That is a real strength for apps with many roles. Butterneck previews whatever the developer's local app already has, which is quick to set up but only as good as that local data.
+Adaptl's made-up customers let you try a change as an admin, a new user or a locked-out account without touching real records. That is a real strength for apps with many roles. Butterneck previews whatever the app already has on the developer's computer, which is quick to set up but only as good as that data.
 
 **See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
