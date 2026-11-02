@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { PricingSection } from "@/components/PricingSection";
 import { ProductPreview } from "@/components/ProductPreview";
@@ -247,27 +248,34 @@ export default function HomePage() {
             The AI edits the project on your computer. Your team publishes it.
           </p>
         </div>
-        <ul className="landing-safety-list">
-          <li>
-            <strong>Your project only</strong>
-            <span>
-              The AI works in the project you connected. Secret settings files (.env) are on its ignore list. That is an instruction, not a hard block, so keep production secrets off that computer.
-            </span>
-          </li>
-          <li>
-            <strong>The conversation stays with the change</strong>
-            <span>
-              The request, the screenshots, and the replies stay on the live copy of the app.
-            </span>
-          </li>
-          <li>
-            <strong>Your team publishes</strong>
-            <span>
-              When the change looks right, you publish it the way you already do. Until then it
-              is not published.
-            </span>
-          </li>
-        </ul>
+        <div>
+          <ul className="landing-safety-list">
+            <li>
+              <strong>Your project only</strong>
+              <span>
+                The AI works in the project you connected. Secret settings files (.env) are on its ignore list. That is an instruction, not a hard block, so keep production secrets off that computer.
+              </span>
+            </li>
+            <li>
+              <strong>The conversation stays with the change</strong>
+              <span>
+                The request, the screenshots, and the replies stay on the live copy of the app.
+              </span>
+            </li>
+            <li>
+              <strong>Your team publishes</strong>
+              <span>
+                When the change looks right, you publish it the way you already do. Until then it
+                is not published.
+              </span>
+            </li>
+          </ul>
+          <p className="landing-quiet">
+            <Link href="/security">Security note</Link>
+            {" — "}
+            the computer, the folder, and who sees the project.
+          </p>
+        </div>
       </section>
 
       <section className="landing-section" aria-labelledby="fit-heading">

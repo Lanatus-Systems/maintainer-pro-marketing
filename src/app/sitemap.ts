@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { POSTS, postPath } from "@/content/blog";
 import { LEGAL_UPDATED, legalPages } from "@/content/legal";
+import { SECURITY } from "@/content/security";
 import { AASAANWEB_ABOUT_UPDATED, AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
 import { AASAANWEB_LEGAL, AASAANWEB_LEGAL_UPDATED } from "@/content/aasaanweb-legal";
 import { isAasaanWeb } from "@/lib/brand";
@@ -75,6 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: siteUrl("/pricing"), lastModified: new Date(PRODUCT_PAGES_UPDATED), changeFrequency: "monthly", priority: 0.8 },
     { url: siteUrl("/integrations/jira"), lastModified: new Date(PRODUCT_PAGES_UPDATED), changeFrequency: "monthly", priority: 0.8 },
+    { url: siteUrl(SECURITY.path), lastModified: new Date("2026-11-02"), changeFrequency: "yearly", priority: 0.4 },
     ...legal,
   ];
 }

@@ -278,6 +278,7 @@ export const FOOTER_NAV = [
   { href: "/pricing", label: "Pricing" },
   { href: "/#faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
+  { href: "/security", label: "Security" },
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
   { href: "/contact", label: "Contact" },

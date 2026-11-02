@@ -25,6 +25,8 @@ export function LegalDocument({ page }: { page: LegalPage }) {
         {" · "}
         <Link href="/contact">Contact</Link>
         {" · "}
+        <Link href="/security">Security</Link>
+        {" · "}
         <Link href="/privacy">Privacy</Link>
         {" · "}
         <Link href="/terms">Terms</Link>
