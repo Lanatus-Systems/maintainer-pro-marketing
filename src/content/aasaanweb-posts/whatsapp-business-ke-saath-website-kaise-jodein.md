@@ -1,6 +1,6 @@
 ---
 title: "WhatsApp Business ke saath website kaise jodein (button + profile link)"
-meta_description: "WhatsApp Business aur website kaise jodein? wa.me link banaiye, website par WhatsApp button lagaiye, aur WhatsApp profile ke Website field mein apna page daaliye." (≤160 chars)
+meta_description: "WhatsApp Business aur website kaise jodein? wa.me link banaiye, website par WhatsApp button lagaiye, aur WhatsApp profile ke Website field mein apna page daaliye."
 target_keyword: whatsapp business website kaise banaye
 secondary: website par whatsapp button kaise lagaye, whatsapp link kaise banaye, wa.me link
 ---
