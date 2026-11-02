@@ -3,6 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "human-in-the-loop-architecture-for-ai-product-changes",
   title: "Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes",
+  seoTitle: "Human-in-the-loop architecture for AI product changes",
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
@@ -93,6 +94,8 @@ The developer reviews all three, then commits and ships through the team's norma
 
 Why we keep that last step with a person is in [Human-in-the-loop AI coding: why Butterneck never merges](/blog/human-in-the-loop-ai-coding).
 
+The folder isolation and undo pieces of this architecture are described in [how Butterneck runs the coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine). Requests work best when they're written like [a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai), and the requester checks them on [a live preview before the PR](/blog/live-preview-before-pull-request).
+
 ## "Isn't the human the bottleneck now?"
 
 The developer's job changes from "find, edit, send link, wait, repeat" to "look, decide". That's the trade. The expensive loop moves to the agent and the requester, who iterate on the preview until it's right. The developer sees it once, at the end.
@@ -104,6 +107,8 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 - It needs a local project folder. Teams living only in cloud IDEs aren't a fit.
 - It doesn't replace developers. It assumes one is there and decides.
 - Your code context still goes to whichever AI provider your coding CLI uses, and preview traffic passes through Butterneck's relay. "Local" means the edits and the runtime are local, not that nothing leaves the machine.
+
+**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

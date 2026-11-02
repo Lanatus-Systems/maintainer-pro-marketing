@@ -2,9 +2,9 @@ import type { BlogPost } from "@/content/blog";
 
 export const post: BlogPost = {
   slug: "human-in-the-loop-ai-coding",
-  title: "Human-in-the-loop AI coding: why Butterneck never merges",
+  title: "Human-in-the-loop AI coding: a developer decides what ships",
   description:
-    "Human-in-the-loop AI coding with a gate for the person who asked: they check the change on a live preview, and a developer decides. No auto PR or merge.",
+    "The edit runs on your computer. Your team still decides what goes live. How human review fits AI code changes, from request to live preview.",
   date: "2026-10-27",
   updated: "2026-10-30",
   author: "The Butterneck team",
@@ -95,6 +95,8 @@ When the AI gets it wrong, and sometimes it will, the wrong change is not publis
 
 ![A product manager's request in the Butterneck chat, and the running app updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
+For the folder, ignore-list and undo details, see [how Butterneck runs the coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+
 ## The guardrails around the AI
 
 Leaving the merge to a person is the main safeguard. There are a few more, all on the developer's side:
@@ -134,6 +136,8 @@ Compare the two flows for "make the button say Book a call":
 3. The developer opens the page and decides whether it goes live.
 
 The developer's time goes from "find, change, send, wait" to "look and decide". That is the trade we care about.
+
+**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## Who this is for, and who it is not for
 

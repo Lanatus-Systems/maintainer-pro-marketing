@@ -131,6 +131,8 @@ WHAT WE NEED
   developer reviewer.
 \`\`\`
 
+Before you send it, write the first requests with [the change request template for AI coding agents](/blog/how-to-write-a-change-request-for-ai), and decide how the PM will check each result on [a live preview before the PR](/blog/live-preview-before-pull-request).
+
 ## How to fill it in
 
 **Goal.** Keep it to one or two sentences. The goal is to learn something, not to prove the idea works. "Find out whether" is more convincing to an engineering lead than "show that".
@@ -173,6 +175,8 @@ WHAT WE NEED
 - Keep going at normal volume.
 - Before the final meeting, fill in the numbers for all four weeks next to the baseline.
 - Final review: the developer reviewer speaks first. Then decide: stop, keep going as is, or widen.
+
+If your engineering lead asks where the agent runs and what it can touch, send [how Butterneck runs the coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
 ## What to measure, and how
 
@@ -217,6 +221,8 @@ The guardrails in the proposal map to the product:
 For writing the requests themselves, give your requesters [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai). Its five-line template (where, now, want, keep, check) makes requests easier to review, and the **Check** line doubles as the requester's sign-off on the preview.
 
 On cost: the Starter plan is free for one developer and one requester, with one private copy, which is enough to try the chat flow with one PM. Each Jira ticket opens its own private copy, and each extra requester needs a seat, so a pilot that uses Jira or more than one PM needs Pro ($19 per person per month). A one-month Pro trial fits the 4-week pilot: a workspace owner on Starter can start it from the Billing page, once per workspace, and when it ends the workspace goes back to Starter unless you subscribe. AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
+
+**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

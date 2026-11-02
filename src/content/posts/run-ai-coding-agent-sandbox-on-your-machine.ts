@@ -81,6 +81,8 @@ The bridge starts the app (it detects the dev command and the port) and the Butt
 
 So the person asking sees the change appear on the same screen they asked from, without a VPN, a staging deploy, or a localhost link. The developer controls who can send requests: a named list, or anyone with the link. Viewers do not need an account.
 
+Why the AI stops here, and who holds each decision, is covered in [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding) and the [human-in-the-loop architecture for AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes). The person who asked checks the result on [a live preview before the PR](/blog/live-preview-before-pull-request), and your team can set the boundaries with [a policy template for what non-engineers can ask AI to change](/blog/ai-change-request-policy-template).
+
 ## What leaves your machine
 
 Worth being exact here, because "runs locally" is easy to over-read:
@@ -89,6 +91,8 @@ Worth being exact here, because "runs locally" is easy to over-read:
 - The coding CLI sends prompts and code context to its own AI provider, the same as when you use it directly. That is governed by your agreement with Cursor, Anthropic, or Google.
 - Preview traffic (the rendered app) passes through the Butterneck server so the share link works.
 - Chat messages travel through the Butterneck server to reach the bridge.
+
+**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

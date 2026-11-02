@@ -3,6 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "jira-ticket-to-pr-with-ai",
   title: "Jira ticket to pull request with AI: check a live preview before anyone opens the PR",
+  seoTitle: "Jira ticket to pull request with AI, via a live preview",
   description:
     "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
   date: "2026-10-27",
@@ -112,6 +113,8 @@ For a copy-ready version, put the five-line template from [how to write a change
 
 ## Security notes for CTOs
 
+For the full picture of folders, the ignore list and what leaves the machine, read [how Butterneck runs the coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+
 - The agent works only in the folder tied to the private copy.
 - \`.env\` files and team-defined globs are on an ignore list given to the agent as an instruction. It is not a hard sandbox, so keep production secrets off the bridge machine.
 - The coding CLI sends prompts and code context to its own AI provider, under your agreement with that provider.
@@ -119,6 +122,8 @@ For a copy-ready version, put the five-line template from [how to write a change
 - Every turn takes a baseline first, so a stopped turn usually rolls its file changes back. If the rollback can't be completed, for example because a changed file was too large to snapshot, the chat says so.
 
 More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine) and [human-in-the-loop architecture for AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes).
+
+**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

@@ -136,6 +136,8 @@ This is the section to be strict about.
 - **Requesters don't paste secrets, customer data or credentials into chat.** If a request needs real data to reproduce, it goes to an engineer.
 - **Know where the text goes.** Requests and code context may be sent to your AI provider and to any tool in the middle. Check their terms before you roll this out.
 
+How the ignore list and folder limits work in practice: [how Butterneck runs the coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+
 ## 6. Size, volume and undo
 
 A few habits keep this calm:
@@ -144,6 +146,8 @@ A few habits keep this calm:
 - Agree a weekly limit at first, so review doesn't pile up.
 - Make sure every AI turn can be stopped and its changes rolled back before anything is reviewed.
 - Discarding is a normal outcome. Not every request should ship.
+
+**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## The template
 
