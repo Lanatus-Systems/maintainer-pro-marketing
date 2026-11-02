@@ -92,7 +92,7 @@ Worth being exact here, because "runs locally" is easy to over-read:
 - Preview traffic (the rendered app) passes through the Butterneck server so the share link works.
 - Chat messages travel through the Butterneck server to reach the bridge.
 
-**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

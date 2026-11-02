@@ -131,7 +131,7 @@ Butterneck is built around this order: the requester checks on a live preview, t
 
 On secrets: \`.env\` files are on the agent's ignore list. That's a guardrail, an instruction to the agent, not a hard block, so keep production secrets off the computer the previews run on. More detail on the setup in [share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
 
-**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## When a PR preview is the better tool
 

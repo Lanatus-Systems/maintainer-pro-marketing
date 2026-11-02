@@ -147,7 +147,7 @@ A few habits keep this calm:
 - Make sure every AI turn can be stopped and its changes rolled back before anything is reviewed.
 - Discarding is a normal outcome. Not every request should ship.
 
-**See it before you set anything up:** after signing up, you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## The template
 
