@@ -1,0 +1,76 @@
+diff --git a/src/app/blog/[slug]/page.tsx b/src/app/blog/[slug]/page.tsx
+index c6e2d82..5853c47 100644
+--- a/src/app/blog/[slug]/page.tsx
++++ b/src/app/blog/[slug]/page.tsx
+@@ -143,11 +143,10 @@ export default async function BlogPostPage({ params }: Params) {
+         </a>
+         {!isAasaanWeb && (
+           <p className="landing-quiet landing-trial-note">
+-            Not ready to connect a computer?{" "}
+             <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="blog_post_cta">
+-              Try a request on a sample shop
++              Create a free account and try a request on a sample shop
+             </a>{" "}
+-            first. Your own project still needs a connected computer; Starter is free.
++            before you connect a computer. Your own project still needs a connected computer; Starter is free.
+           </p>
+         )}
+       </aside>
+diff --git a/src/app/llms.txt/route.ts b/src/app/llms.txt/route.ts
+index 6686147..2171399 100644
+--- a/src/app/llms.txt/route.ts
++++ b/src/app/llms.txt/route.ts
+@@ -39,7 +39,7 @@ export function GET() {
+     ...POSTS.map((p) => `- [${p.title}](${siteUrl(postPath(p.slug))}): ${p.description}`),
+     "",
+     "The product app (signup, login, workspaces) is at https://app.butterneck.com.",
+-    "Sample shop: https://app.butterneck.com/trial lets you send a request on a sample shop before you connect a computer. Your own project needs a connected computer; Starter is free.",
++    "Sample shop: create a free account at https://app.butterneck.com/trial and try a request on a sample shop before you connect a computer. Your own project needs a connected computer; Starter is free.",
+     "",
+   ];
+   return new Response(lines.join("\n"), {
+diff --git a/src/app/page.tsx b/src/app/page.tsx
+index 2e712f3..e30400c 100644
+--- a/src/app/page.tsx
++++ b/src/app/page.tsx
+@@ -78,11 +78,10 @@ export default function HomePage() {
+             </a>
+           </div>
+           <p className="landing-quiet landing-trial-note">
+-            Not ready to connect a computer?{" "}
+             <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_hero">
+-              Try a request on a sample shop
++              Create a free account and try a request on a sample shop
+             </a>{" "}
+-            first. Your own project still needs a connected computer; Starter is free.
++            before you connect a computer. Your own project still needs a connected computer; Starter is free.
+           </p>
+           <ul className="landing-trust">
+             <li>They ask on the live product</li>
+@@ -336,11 +335,10 @@ export default function HomePage() {
+           </a>
+         </div>
+         <p className="landing-quiet landing-trial-note">
+-          Not ready to connect a computer?{" "}
+           <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_footer_cta">
+-            Try a request on a sample shop
++            Create a free account and try a request on a sample shop
+           </a>{" "}
+-          first. Your own project still needs a connected computer; Starter is free.
++          before you connect a computer. Your own project still needs a connected computer; Starter is free.
+         </p>
+       </section>
+     </main>
+diff --git a/src/app/sitemap.ts b/src/app/sitemap.ts
+index 5500c48..5b17fe9 100644
+--- a/src/app/sitemap.ts
++++ b/src/app/sitemap.ts
+@@ -13,7 +13,7 @@ import { siteUrl } from "@/lib/site";
+  * "Last updated" date they show, and the product pages use the date their copy last changed.
+  * Bump PRODUCT_PAGES_UPDATED when home, /pricing or /integrations/jira copy changes.
+  */
+-const PRODUCT_PAGES_UPDATED = "2026-10-30";
++const PRODUCT_PAGES_UPDATED = "2026-11-03";
+ const LEGAL_LAST_MODIFIED = new Date(`${LEGAL_UPDATED} 00:00:00 UTC`);
+ 
+ function latestPostDate(): string {
