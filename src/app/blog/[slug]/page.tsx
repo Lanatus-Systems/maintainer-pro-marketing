@@ -145,7 +145,7 @@ export default async function BlogPostPage({ params }: Params) {
           <p className="landing-quiet landing-trial-note">
             Not ready to connect a computer?{" "}
             <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="blog_post_cta">
-              Try a request on a sample preview
+              Try a request on a sample shop
             </a>{" "}
             first. Your own project still needs a connected computer; Starter is free.
           </p>

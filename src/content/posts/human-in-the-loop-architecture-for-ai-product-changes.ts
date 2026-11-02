@@ -108,7 +108,7 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 - It doesn't replace developers. It assumes one is there and decides.
 - Your code context still goes to whichever AI provider your coding CLI uses, and preview traffic passes through Butterneck's relay. "Local" means the edits and the runtime are local, not that nothing leaves the machine.
 
-**See it before you set anything up:** you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

@@ -222,7 +222,7 @@ For writing the requests themselves, give your requesters [how to write a change
 
 On cost: the Starter plan is free for one developer and one requester, with one private copy, which is enough to try the chat flow with one PM. Each Jira ticket opens its own private copy, and each extra requester needs a seat, so a pilot that uses Jira or more than one PM needs Pro ($19 per person per month). A one-month Pro trial fits the 4-week pilot: a workspace owner on Starter can start it from the Billing page, once per workspace, and when it ends the workspace goes back to Starter unless you subscribe. AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
 
-**See it before you set anything up:** you can [try a request on a sample preview](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

@@ -80,7 +80,7 @@ export default function HomePage() {
           <p className="landing-quiet landing-trial-note">
             Not ready to connect a computer?{" "}
             <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_hero">
-              Try a request on a sample preview
+              Try a request on a sample shop
             </a>{" "}
             first. Your own project still needs a connected computer; Starter is free.
           </p>
@@ -338,7 +338,7 @@ export default function HomePage() {
         <p className="landing-quiet landing-trial-note">
           Not ready to connect a computer?{" "}
           <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_footer_cta">
-            Try a request on a sample preview
+            Try a request on a sample shop
           </a>{" "}
           first. Your own project still needs a connected computer; Starter is free.
         </p>

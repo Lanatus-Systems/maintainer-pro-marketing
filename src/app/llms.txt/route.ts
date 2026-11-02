@@ -39,7 +39,7 @@ export function GET() {
     ...POSTS.map((p) => `- [${p.title}](${siteUrl(postPath(p.slug))}): ${p.description}`),
     "",
     "The product app (signup, login, workspaces) is at https://app.butterneck.com.",
-    "Trial: https://app.butterneck.com/trial lets you send a request on a sample preview before you connect a computer. Your own project needs a connected computer; Starter is free.",
+    "Trial: https://app.butterneck.com/trial lets you send a request on a sample shop before you connect a computer. Your own project needs a connected computer; Starter is free.",
     "",
   ];
   return new Response(lines.join("\n"), {
