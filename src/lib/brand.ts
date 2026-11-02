@@ -31,7 +31,7 @@ const butterneck: ProductBrand = {
   name: "Butterneck",
   title: "Butterneck — AI change requests on a live preview of your app",
   description:
-    "Butterneck handles AI change requests: a product person asks for a change to a live web app and checks it on a live preview. Butterneck does not commit, push or open a pull request; a developer decides first.",
+    "A PM asks for a change on a live preview. Your coding agent edits it on your computer; you decide what ships. Butterneck does not commit, push or open a PR.",
   ogDescription: "Let them ask. You decide what goes live.",
   wordmarkSrc: "/logo-wordmark-butterneck.svg",
   themeColor: "#0084FF",
