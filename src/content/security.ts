@@ -29,7 +29,7 @@ export const SECURITY = {
     {
       title: "You publish",
       paragraphs: [
-        "Butterneck does not merge and does not deploy. When the preview looks right, your team publishes the way you already do. Until then the edit stays on the computer.",
+        "Butterneck does not merge and does not deploy. When the preview looks right, your team publishes the way you already do. Until then the change isn't published.",
       ],
     },
     {
@@ -53,7 +53,7 @@ export const SECURITY = {
       href: "/blog/run-ai-coding-agent-sandbox-on-your-machine",
     },
     {
-      label: "Why Butterneck never merges",
+      label: "Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes",
       href: "/blog/human-in-the-loop-architecture-for-ai-product-changes",
     },
   ],
