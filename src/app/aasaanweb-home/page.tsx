@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell } from "@/components/aasaanweb/AasaanWebShell";
 import { Reveal } from "@/components/aasaanweb/Reveal";
 import { WORK } from "@/components/aasaanweb/work";
+import { AASAANWEB_WHATSAPP_LABEL, AASAANWEB_WHATSAPP_URL } from "@/components/aasaanweb/whatsapp";
 import { aasaanWebJsonLd, aasaanWebPageMeta, PageUrlTags } from "@/lib/aasaanweb";
 import { isAasaanWeb } from "@/lib/brand";
 import "./aasaanweb.css";
@@ -350,6 +351,12 @@ export default function AasaanWebHome() {
                   Update your existing site
                 </a>
               </div>
+              <p className="studio-hero-whatsapp studio-hero-in">
+                Questions? WhatsApp us:{" "}
+                <a href={AASAANWEB_WHATSAPP_URL} className="studio-whatsapp">
+                  {AASAANWEB_WHATSAPP_LABEL}
+                </a>
+              </p>
               <p className="studio-hero-proof studio-hero-in">
                 Live pages for{" "}
                 {WORK.map((item, i) => (

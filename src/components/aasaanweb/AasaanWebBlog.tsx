@@ -2,6 +2,7 @@ import { AASAANWEB_PUBLISHED_POSTS, aasaanWebPostPath } from "@/content/aasaanwe
 import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell, START_URL } from "@/components/aasaanweb/AasaanWebShell";
 import { AasaanWebPostBody } from "@/components/aasaanweb/AasaanWebPostBody";
+import { AASAANWEB_WHATSAPP_LABEL, AASAANWEB_WHATSAPP_URL } from "@/components/aasaanweb/whatsapp";
 import { aasaanWebSubpageMeta } from "@/lib/aasaanweb";
 import {
   aasaanWebReadingMinutes,
@@ -75,6 +76,12 @@ export function AasaanWebBlogIndex() {
             Simple guides on making a page for your dukan, studio or clinic, and keeping it up to date in your own
             words.
           </p>
+          <p className="studio-hero-whatsapp">
+                Questions? WhatsApp us:{" "}
+                <a href={AASAANWEB_WHATSAPP_URL} className="studio-whatsapp">
+                  {AASAANWEB_WHATSAPP_LABEL}
+                </a>
+              </p>
         </section>
 
         {posts.length === 0 ? (
@@ -150,6 +157,8 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
   const path = aasaanWebPostPath(post.slug);
   const url = siteUrl(path);
   const questions = postQuestions(post.body);
+  const hinglish = post.lang.startsWith("hi");
+  const moreGuides = getAasaanWebPosts(AASAANWEB_PUBLISHED_POSTS).filter((p) => p.slug !== post.slug);
   return (
     <AasaanWebShell current="blog">
       <JsonLd
@@ -222,6 +231,20 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
           </header>
           <AasaanWebPostBody body={post.body} />
         </article>
+        {moreGuides.length ? (
+          <nav className="aw-more-guides" aria-labelledby="more-guides-heading">
+            <h2 id="more-guides-heading">{hinglish ? "Aur guides" : "More guides"}</h2>
+            <ul>
+              {moreGuides.map((g) => (
+                <li key={g.slug}>
+                  <a href={aasaanWebPostPath(g.slug)} lang={g.lang}>
+                    {g.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ) : null}
         <section className="studio-close" aria-labelledby="post-close-heading">
           <p className="studio-kicker">Your page</p>
           <h2 id="post-close-heading">A page like this, for your business.</h2>
@@ -234,6 +257,12 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
               See our work
             </a>
           </div>
+          <p className="studio-hero-whatsapp">
+            Questions? WhatsApp us:{" "}
+            <a href={AASAANWEB_WHATSAPP_URL} className="studio-whatsapp">
+              {AASAANWEB_WHATSAPP_LABEL}
+            </a>
+          </p>
         </section>
       </main>
     </AasaanWebShell>

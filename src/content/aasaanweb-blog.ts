@@ -25,6 +25,13 @@ export const AASAANWEB_BLOG_FALLBACK_COVER = "/aasaanweb/blog/cover-fallback.png
 
 export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
   {
+    slug: "whatsapp-business-ke-saath-website-kaise-jodein",
+    draft: false,
+    date: "2026-11-02",
+    lang: "hi-Latn-IN",
+    author: "AasaanWeb team",
+  },
+  {
     slug: "google-par-apni-dukan-kaise-daalein",
     draft: false,
     date: "2026-10-31",
