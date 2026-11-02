@@ -1990,3 +1990,12 @@ a:hover > .studio-arrow {
     padding-inline: var(--gutter);
   }
 }
+.studio-hero-whatsapp {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.studio-close .studio-hero-whatsapp {
+  text-align: center;
+}

@@ -168,3 +168,15 @@
 .aw-post-table-wrap th, .aw-post-table-wrap td { padding: 0.65rem 0.85rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
 .aw-post-table-wrap thead th { background: var(--tint); color: var(--ink); }
 .aw-post-table-wrap tbody tr:last-child > * { border-bottom: 0; }
+
+/* Checklist, rule, "More guides" block (site fixes 14/15) */
+.aw-post-body hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+.aw-post-checklist { list-style: none; padding-left: 0; }
+.aw-post-checklist li { position: relative; padding-left: 1.9rem; }
+.aw-post-checklist li::before { content: ""; position: absolute; left: 0; top: 0.2em; width: 1.05rem; height: 1.05rem; border: 2px solid var(--accent); border-radius: 4px; }
+.aw-more-guides { max-width: 46rem; width: calc(100% - 2 * var(--gutter)); margin: clamp(40px, 6vw, 72px) auto 0; padding: clamp(20px, 3vw, 32px); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--card); }
+.aw-more-guides h2 { margin: 0 0 0.9rem; font-size: 1.35rem; }
+.aw-more-guides ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.15rem; }
+.aw-more-guides a { display: block; padding: 0.7rem 0; min-height: 44px; color: var(--ink); font-weight: 600; line-height: 1.4; border-bottom: 1px solid var(--line); text-decoration: none; overflow-wrap: anywhere; }
+.aw-more-guides li:last-child a { border-bottom: 0; }
+.aw-more-guides a:hover, .aw-more-guides a:focus-visible { color: var(--accent-ink); text-decoration: underline; }
