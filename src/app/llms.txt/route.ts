@@ -31,6 +31,7 @@ export function GET() {
     `- Home: ${siteUrl("/")}`,
     `- Pricing: ${siteUrl("/pricing")}`,
     `- Jira integration: ${siteUrl("/integrations/jira")}`,
+    `- Security: ${siteUrl("/security")}`,
     `- Blog: ${siteUrl("/blog")}`,
     ...Object.values(legalPages).map((p) => `- ${p.title}: ${siteUrl(p.path)}`),
     "",
