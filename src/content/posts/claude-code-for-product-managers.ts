@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers"],
   cover: {
@@ -21,7 +21,7 @@ Search for "Claude Code for product managers" or "Cursor for PMs" and most guide
 
 This post covers both. We make Butterneck, which takes the second route, so we are not neutral. We have tried to be clear about when a PM should just run Claude Code themselves.
 
-> **Claude Code for product managers, in short:** A PM can run Claude Code or Cursor themselves, which means repo access, a paid AI seat, usually a local setup, and opening pull requests. The other way: the PM asks in plain words on a live preview, and the Claude Code, Cursor or Antigravity CLI already signed in on the developer's computer makes the change. With Butterneck no pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
+> **Claude Code for product managers, in short:** A PM can run Claude Code or Cursor themselves, which means repo access, a paid AI seat, usually a local setup, and opening pull requests. The other way: the PM asks in plain words on a live preview, and the Claude Code, Cursor or Antigravity CLI already signed in on the developer's computer makes the change. Butterneck does not commit, push or open a pull request; a developer decides first what ships, and Butterneck never merges or deploys.
 
 ## The usual advice: give the PM their own coding assistant
 
@@ -59,7 +59,7 @@ Butterneck never opens a pull request, never merges, and never deploys. A develo
 | What the PM needs | Repo access, a paid AI seat, and usually a local setup (the desktop app or claude.ai/code removes the terminal, not the repo) | A browser and the share link |
 | Whose AI subscription | A seat for the PM | The CLI signed in on the connected computer (under its plan's terms) |
 | Where the change is checked | The PM's own local app | A live preview of the developer's running dev server |
-| What comes out | A pull request from the PM | Edited files on the developer's computer; no PR |
+| What comes out | A pull request from the PM | Edited files on the developer's computer; the developer opens the PR |
 | Who decides what ships | A developer reviewing the PR | A developer reviewing the change and the conversation |
 | Good for | PMs who want to build and own changes | Small changes on a product that already runs |
 
@@ -111,7 +111,7 @@ No. It edits files in the connected project and stops. A developer decides wheth
 
 ### Is there an AI coding agent for product managers that works on our existing codebase?
 
-Yes. Butterneck is one option for a team that already has a web app. A developer connects a computer that already runs the product and has Claude Code, Cursor or Antigravity signed in. The product manager opens a live preview of the existing app, types the change in a chat, and checks the result on that preview. The agent edits the real project on the developer's computer. No pull request is opened: a developer decides first what ships, and Butterneck never merges or deploys. Tools such as Alloy, Clogless and Plusma instead connect your GitHub repository, run the change in a hosted preview and open a pull request.
+Yes. Butterneck is one option for a team that already has a web app. A developer connects a computer that already runs the product and has Claude Code, Cursor or Antigravity signed in. The product manager opens a live preview of the existing app, types the change in a chat, and checks the result on that preview. The agent edits the real project on the developer's computer. Butterneck does not commit, push or open a pull request: a developer decides first what ships, and Butterneck never merges or deploys. Tools such as Alloy, Clogless and Plusma instead connect your GitHub repository, run the change in a hosted preview and open a pull request.
 
 ### Where are files edited, and what leaves the computer?
 

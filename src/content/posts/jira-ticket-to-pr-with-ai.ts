@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
   cover: {
@@ -16,13 +16,13 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Butterneck lets a product person turn a Jira ticket into a change to a live web app and check it on a live preview. No pull request is opened; a developer decides first. For "Jira ticket to pull request", that means a label starts the work, an AI coding agent makes the change on a private copy of your app on the developer's computer, the person who asked checks the preview, and then a developer decides whether to open a pull request. Butterneck never opens the PR itself.
+Butterneck lets a product person turn a Jira ticket into a change to a live web app and check it on a live preview. Butterneck does not commit, push or open a pull request; a developer decides first. For "Jira ticket to pull request", that means a label starts the work, an AI coding agent makes the change on a private copy of your app on the developer's computer, the person who asked checks the preview, and then a developer decides whether to open a pull request. Butterneck never opens the PR itself.
 
 Plenty of tools now promise to turn a Jira ticket into a pull request with AI. The idea is good. Most tickets for small changes are clear enough that a coding agent can do the edit. The hard questions are about what happens around it: who sees the result, who checks it, and what reaches your main branch.
 
 This post walks through a ticket-to-change workflow for product teams, and how Butterneck handles it. One honest note up front: Butterneck does not open the PR itself. It turns the ticket into a reviewable change on a live preview. Your developer opens the PR. We explain why below.
 
-> **Jira ticket to pull request, in short:** Add the \`butterneck\` label to a Jira ticket assigned to a mapped teammate, and an AI coding agent makes the change on a private copy of your app on that developer's computer, with the coding agent they already use (Cursor, Claude Code or Antigravity). A preview link goes back on the ticket and the person who asked checks it. No pull request is opened; a developer decides first whether to open one, and Butterneck never merges or deploys.
+> **Jira ticket to pull request, in short:** Add the \`butterneck\` label to a Jira ticket assigned to a mapped teammate, and an AI coding agent makes the change on a private copy of your app on that developer's computer, with the coding agent they already use (Cursor, Claude Code or Antigravity). A preview link goes back on the ticket and the person who asked checks it. Butterneck does not commit, push or open a pull request; a developer decides first whether to open one, and Butterneck never merges or deploys.
 
 ## Jira ticket to pull request: where Butterneck fits
 

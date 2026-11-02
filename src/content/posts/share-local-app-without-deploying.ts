@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Share localhost with a PM or stakeholder without deploying: a live link to the app on your computer, a chat to ask for changes, and AI edits on the preview.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -21,7 +21,7 @@ You changed the pricing page. It runs on your computer at \`localhost:3000\`. Th
 
 This post is about that gap: getting a running local app in front of the people who asked for it, and getting their feedback back to the project, without deploying first.
 
-> **Sharing a local app without deploying, in short:** With Butterneck, a bridge on the developer's computer starts the app and gives it a public share link, so a PM or stakeholder opens the real running app with no staging deploy, VPN or screen share, and no account just to look. They ask for changes in a chat on that preview, the coding assistant already signed in on the developer's computer edits the project, and hot reload shows the result. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider. No pull request is opened; a developer decides first what ships.
+> **Sharing a local app without deploying, in short:** With Butterneck, a bridge on the developer's computer starts the app and gives it a public share link, so a PM or stakeholder opens the real running app with no staging deploy, VPN or screen share, and no account just to look. They ask for changes in a chat on that preview, the coding assistant already signed in on the developer's computer edits the project, and hot reload shows the result. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider. Butterneck does not commit, push or open a pull request; a developer decides first what ships.
 
 ## Why "just deploy it to staging" is slow
 
@@ -113,7 +113,7 @@ Sharing a local app is only comfortable if you know what the outside world can t
 - Secret settings files (\`.env\`) are on the agent's ignore list (an instruction, not a hard block).
 - If a turn goes wrong, you can stop it, and that turn's file changes are usually rolled back; if the rollback can't be completed, the chat says so.
 - Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use.
-- Nothing is merged, no pull request is opened, and nothing is deployed. The change is not published until someone on your team publishes it the way you already do.
+- Butterneck does not commit, push, open a pull request, merge or deploy. The change is not published until someone on your team publishes it the way you already do.
 
 That last point is the whole design. We wrote more about it in [Human-in-the-loop AI coding: why Butterneck never merges](/blog/human-in-the-loop-ai-coding).
 
@@ -154,15 +154,15 @@ No. Looking does not need an account. You decide separately who can ask for chan
 
 ### Does preview traffic go through Butterneck?
 
-Yes. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use. Nothing is merged, no pull request is opened, and nothing is deployed until someone on your team publishes the change the way you already do.
+Yes. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use. Butterneck does not commit, push, open a pull request, merge or deploy; nothing ships until someone on your team publishes the change the way you already do.
 
 ### How is this different from a localhost tunnel like ngrok?
 
-A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on your computer makes the change, and hot reload shows it on the same link. Nothing is merged, no pull request is opened, and nothing is deployed.
+A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on your computer makes the change, and hot reload shows it on the same link. Butterneck does not commit, push, open a pull request, merge or deploy.
 
 ### Can a product manager comment on my local dev server and have the AI make the change?
 
-Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; most are designed mainly for a developer reviewing their own agent's work. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on your computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Nothing is merged, no pull request is opened, and nothing is deployed until a developer publishes the change.
+Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; most are designed mainly for a developer reviewing their own agent's work. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on your computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Butterneck does not commit, push, open a pull request, merge or deploy; nothing ships until a developer publishes the change.
 
 ## Try it
 

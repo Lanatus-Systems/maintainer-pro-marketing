@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Clogless vs Butterneck for product teams: cloud sandbox and PR vs a live preview your developer reviews. Plus other Clogless alternatives, from public info.",
   date: "2026-10-28",
-  updated: "2026-10-30",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -20,7 +20,7 @@ If you are weighing Clogless and wondering whether an alternative fits your team
 
 Everything about Clogless below comes from its public website, [clogless.ai](https://clogless.ai), as read on 28 October 2026, mainly its home, how it works, ticket to pull request, security, and pricing pages. Clogless is a new product, and new products change fast. Check their site for the current details.
 
-> **Clogless vs Butterneck, in short:** Clogless works an idea or ticket in a disposable cloud sandbox, shows a live preview on your codebase, and then opens a pull request with your Git provider for engineering to review and merge. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, no pull request is opened, and a developer decides first what ships.
+> **Clogless vs Butterneck, in short:** Clogless works an idea or ticket in a disposable cloud sandbox, shows a live preview on your codebase, and then opens a pull request with your Git provider for engineering to review and merge. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, Butterneck does not commit, push or open a pull request, and a developer decides first what ships.
 
 ## What Clogless says it does
 
@@ -85,7 +85,7 @@ Butterneck has a free Starter plan for one developer and one person who asks for
 |---|---|---|
 | Where the AI works | A cloud sandbox per idea, ticket, or PR | A connected computer that already runs the project |
 | AI engine | Clogless agents; usage by credit or your own key | Your signed-in Cursor, Claude Code, or Antigravity |
-| End result | A pull request with GitHub or Bitbucket | Edited files and a live preview; no PR |
+| End result | A pull request with GitHub or Bitbucket | Edited files and a live preview; the developer opens the PR |
 | Who publishes | Engineering reviews and merges the PR | The developer publishes the usual way |
 | Ticketing | Jira, Linear, Trello, monday.com, Notion, Asana | Jira Cloud only |
 | How a ticket starts | Open the ticket in Clogless | Label \`butterneck\` and assign it in Jira |

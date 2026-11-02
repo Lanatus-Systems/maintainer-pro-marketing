@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A five-line AI change request template: how PMs and designers can prompt an AI coding agent to change an existing app, and what to leave to a developer.",
   date: "2026-10-28",
-  updated: "2026-10-29",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-> **In short:** a good change request for an AI coding agent fits in five lines. Where (the page and the element, by its visible text), Now (what it says today, quoted exactly), Want (the exact new text or behavior), Keep (what must not change) and Check (how you'll know it's right). Send one change per message, and leave login, billing, data and secrets to a developer. In Butterneck you type the request in a chat on a live preview, the Claude Code, Cursor or Antigravity CLI already signed in on a developer's computer makes the edit, and you check it on the same preview. No pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
+> **In short:** a good change request for an AI coding agent fits in five lines. Where (the page and the element, by its visible text), Now (what it says today, quoted exactly), Want (the exact new text or behavior), Keep (what must not change) and Check (how you'll know it's right). Send one change per message, and leave login, billing, data and secrets to a developer. In Butterneck you type the request in a chat on a live preview, the Claude Code, Cursor or Antigravity CLI already signed in on a developer's computer makes the edit, and you check it on the same preview. Butterneck does not commit, push or open a pull request; a developer decides first what ships, and Butterneck never merges or deploys.
 
 Most AI change requests that go wrong were not hard changes. The AI changed the wrong button, rewrote a sentence nobody asked it to touch, or made the page "cleaner" in a way nobody meant. The fix is usually in how the request was written, not in the model.
 

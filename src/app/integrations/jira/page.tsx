@@ -65,7 +65,7 @@ export default function JiraIntegrationPage() {
           mapped to a computer that has the project. The ticket becomes the request, and the change is
           built by the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity),
           on their computer. A live preview link comes back on the ticket, and the requester can keep
-          refining it in plain words. No pull request is opened; a developer decides first what ships,
+          refining it in plain words. Butterneck does not commit, push or open a pull request; a developer decides first what ships,
           and Butterneck never merges or deploys. Each labeled ticket opens its own private copy:
           Starter has one, Pro (USD 19 per person per month) has 50. A workspace owner on Starter can try Pro free for one month.
         </p>

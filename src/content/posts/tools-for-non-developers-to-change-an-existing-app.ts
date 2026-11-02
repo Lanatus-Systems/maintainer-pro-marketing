@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
   date: "2026-10-28",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -163,7 +163,7 @@ On your own computer, yes, if you can run the project yourself: tools like Layrr
 
 ### Is there a Figma Make alternative for PMs who aren't on a Mac or can't get into the beta?
 
-Figma Make on your codebase is a closed beta for now: access is by waitlist, it runs in the Figma Beta desktop app for Mac (Figma says Windows support is planned), and the person using it needs access to the repository (as of 30 October 2026, per [Figma's help article](https://help.figma.com/hc/en-us/articles/40789739982871-Make-in-your-local-codebase-Setup-gotchas-and-troubleshooting)). ronda builds the change in an isolated live sandbox and opens a pull request; Refinar builds it on a copy of the live app, and the requester publishes it or sends it to engineering. With Butterneck, the person asking opens a link in a browser, with no repository, desktop app or Mac on their side: a developer connects a computer that already has the project, the coding assistant already signed in there makes the change, and the person asking checks it on the live preview. No pull request is opened; a developer decides what ships.
+Figma Make on your codebase is a closed beta for now: access is by waitlist, it runs in the Figma Beta desktop app for Mac (Figma says Windows support is planned), and the person using it needs access to the repository (as of 30 October 2026, per [Figma's help article](https://help.figma.com/hc/en-us/articles/40789739982871-Make-in-your-local-codebase-Setup-gotchas-and-troubleshooting)). ronda builds the change in an isolated live sandbox and opens a pull request; Refinar builds it on a copy of the live app, and the requester publishes it or sends it to engineering. With Butterneck, the person asking opens a link in a browser, with no repository, desktop app or Mac on their side: a developer connects a computer that already has the project, the coding assistant already signed in there makes the change, and the person asking checks it on the live preview. Butterneck does not commit, push or open a pull request; a developer decides what ships.
 
 ### Does Butterneck open a pull request?
 

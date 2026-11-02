@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "How Itera and Butterneck compare for product teams: scope, where the agent runs, PRs vs previews, Jira and pricing. Plus other Itera alternatives.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["Itera alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -20,7 +20,7 @@ If you are looking at Itera and wondering whether there is an alternative that f
 
 Everything about Itera below comes from its public website, [iteradev.ai](https://iteradev.ai), and the customer docs it published, as read on October 27–29, 2026. Products change. Check their site for the current details.
 
-> **Itera vs Butterneck, in short:** Itera takes a change from idea through design and engineering scoping to a written brief, and a coding agent turns it into an AI-generated pull request. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, no pull request is opened, and a developer decides first what ships.
+> **Itera vs Butterneck, in short:** Itera takes a change from idea through design and engineering scoping to a written brief, and a coding agent turns it into an AI-generated pull request. Butterneck handles small changes on a live copy of the app: it runs on the developer's computer with the coding agent they already use, Butterneck does not commit, push or open a pull request, and a developer decides first what ships.
 
 ## What Itera says it does
 
@@ -69,7 +69,7 @@ In Butterneck, the agent runs on a developer's computer, in a folder the develop
 
 Itera's output is an AI-generated pull request.
 
-Butterneck's output is edited files in a folder and a running preview. There is no PR. The developer commits, opens a PR, or throws it away. Some teams want the PR made for them. Others want the AI kept out of the release pipeline entirely. That is the clearest fork between the two tools.
+Butterneck's output is edited files in a folder and a running preview. Butterneck does not open a PR. The developer reviews the diff, then commits, opens a PR, or throws it away. Some teams want the PR made for them. Others want the AI kept out of the release pipeline entirely. That is the clearest fork between the two tools.
 
 ### Previews
 

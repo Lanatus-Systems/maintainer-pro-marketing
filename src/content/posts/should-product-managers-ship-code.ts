@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -20,7 +20,7 @@ AI coding tools have made a new question very real: should product managers ship
 
 This post looks at what the current debate is actually about, what recent data says about the review side, and a middle ground that gets PMs their small changes without handing them commit access.
 
-> **PMs shipping code, in short:** Building is getting cheap, but deciding what ships is still the hard part, and most PMs do not need to write code to get small changes made. With Butterneck, which runs on the developer's computer with the coding agent they already use, a PM asks for a change on a live copy of the app, no pull request is opened, and a developer decides first what ships; Butterneck never merges or deploys.
+> **PMs shipping code, in short:** Building is getting cheap, but deciding what ships is still the hard part, and most PMs do not need to write code to get small changes made. With Butterneck, which runs on the developer's computer with the coding agent they already use, a PM asks for a change on a live copy of the app, Butterneck does not commit, push or open a pull request, and a developer decides first what ships; Butterneck never merges or deploys.
 
 ## The debate, in plain terms
 

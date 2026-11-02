@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Preview an AI coding agent's change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments"],
   cover: {
@@ -23,7 +23,7 @@ Everything before that sentence was done correctly, and it still has to be done 
 
 This post is about moving that check earlier: the person who asked looks at the change on a live preview before anyone opens a pull request. We cover why it helps the PM and developer handoff, what to check on the preview, who decides what, and how it compares with PR preview environments. We make Butterneck, which works this way, so we describe its flow at the end. The checklist works with any setup.
 
-> **Live preview before the PR, in short:** The person who asked for a change checks it on a running copy of the app before anyone opens a pull request, so they can confirm "this is what I meant" while the change is still cheap, and code review comes after. It does not replace code review. In Butterneck, the preview is the app running on the developer's computer, the coding agent they already use makes the change, no pull request is opened, and a developer decides first what ships.
+> **Live preview before the PR, in short:** The person who asked for a change checks it on a running copy of the app before anyone opens a pull request, so they can confirm "this is what I meant" while the change is still cheap, and code review comes after. It does not replace code review. In Butterneck, the preview is the app running on the developer's computer, the coding agent they already use makes the change, Butterneck does not commit, push or open a pull request, and a developer decides first what ships.
 
 ## What "live preview before the PR" means
 
@@ -153,7 +153,7 @@ Yes. In Butterneck the PM types the request in a chat on a live copy of the app,
 
 ### Which tools let a product manager preview an AI code change before a pull request is opened?
 
-Several AI tools, such as Plusma, ronda and medit, let a PM describe a change, check it on a preview of the app, and hand engineering a branch or pull request; some, like ronda, build that preview in the cloud from your repository, while medit runs it on the machine where your app runs. We compare them, with their prices, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app). Butterneck works differently: the preview is the app running on a developer's computer, the coding assistant already signed in there makes the change, and no pull request is opened at all. A developer reads the conversation, checks the change, and publishes it the way the team already does.
+Several AI tools, such as Plusma, ronda and medit, let a PM describe a change, check it on a preview of the app, and hand engineering a branch or pull request; some, like ronda, build that preview in the cloud from your repository, while medit runs it on the machine where your app runs. We compare them, with their prices, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app). Butterneck works differently: the preview is the app running on a developer's computer, the coding assistant already signed in there makes the change, and Butterneck does not commit, push or open a pull request. A developer reads the conversation, checks the change, and publishes it the way the team already does.
 
 ### How is this different from a PR preview environment?
 

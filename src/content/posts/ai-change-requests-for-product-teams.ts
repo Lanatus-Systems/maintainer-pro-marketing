@@ -16,7 +16,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-> **In short:** AI change requests let product managers and designers ask for a change to an existing app in plain words. An AI coding agent edits the real code, the requester checks the result on a live preview, and a developer decides what ships. In Butterneck, the agent is the Claude Code, Cursor or Antigravity CLI a developer already uses, running on the developer's computer. No pull request is opened; a developer decides first, and Butterneck never merges or deploys.
+> **In short:** AI change requests let product managers and designers ask for a change to an existing app in plain words. An AI coding agent edits the real code, the requester checks the result on a live preview, and a developer decides what ships. In Butterneck, the agent is the Claude Code, Cursor or Antigravity CLI a developer already uses, running on the developer's computer. Butterneck does not commit, push or open a pull request; a developer decides first, and Butterneck never merges or deploys.
 
 Every product team has a queue of small change requests. Fix this label. Move that field. Update the copy on the pricing card. Each one is minor. Together they eat a surprising amount of a team's week, mostly in handoffs.
 

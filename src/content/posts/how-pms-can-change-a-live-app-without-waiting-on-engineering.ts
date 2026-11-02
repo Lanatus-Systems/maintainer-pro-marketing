@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI coding agent edits it, a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
@@ -23,7 +23,7 @@ Most teams have a list of these paper cuts: wrong labels, unclear empty states, 
 
 This post is about how a PM can change a live app without waiting on engineering, and without engineering losing control of what ships.
 
-> **Changing a live app as a PM, in short:** Small changes wait because of the relay around them (tickets, screenshots, sprints, staging deploys), not because of the code. With Butterneck, the PM asks in a chat on a live copy of the app, a coding agent the developer already uses edits the files on the developer's computer, and the PM sees the change on the same screen. No pull request is opened; a developer decides first what ships, and Butterneck never merges or deploys.
+> **Changing a live app as a PM, in short:** Small changes wait because of the relay around them (tickets, screenshots, sprints, staging deploys), not because of the code. With Butterneck, the PM asks in a chat on a live copy of the app, a coding agent the developer already uses edits the files on the developer's computer, and the PM sees the change on the same screen. Butterneck does not commit, push or open a pull request; a developer decides first what ships, and Butterneck never merges or deploys.
 
 ## Why small product changes sit in the backlog (it isn't the code)
 
@@ -68,7 +68,7 @@ Some PMs install Cursor or Claude Code and edit the repo. This can work for tech
 
 ### Let the PM ask on a live copy
 
-The PM asks for the change in a chat on a running copy of the app. A coding agent makes the edit. The preview updates. No pull request is opened; a developer reviews first and decides what ships. This is the approach Butterneck takes. Why the requester's check comes before any PR is covered in [live preview before the pull request](/blog/live-preview-before-pull-request).
+The PM asks for the change in a chat on a running copy of the app. A coding agent makes the edit. The preview updates. Butterneck does not commit, push or open a pull request; a developer reviews first and decides what ships. This is the approach Butterneck takes. Why the requester's check comes before any PR is covered in [live preview before the pull request](/blog/live-preview-before-pull-request).
 
 ## How it works: make changes to your live app with AI, and a developer decides
 

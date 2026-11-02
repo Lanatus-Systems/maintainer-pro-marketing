@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A copyable one-page proposal for a 4-week pilot where PMs ask an AI coding agent for small changes on a live preview and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-10-28",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["PM pilot proposal", "AI change requests", "AI for product managers", "engineering leads", "product teams"],
   cover: {
@@ -21,7 +21,7 @@ Your team has a backlog of small changes: a button label, a confusing empty stat
 
 This post gives you a one-page pilot proposal you can copy, fill in and send. It runs for four weeks, keeps a developer in charge of what ships, fences off the risky parts of the codebase, and says up front what you will measure and how you will decide whether to continue. We make Butterneck, a tool for exactly this kind of request, so the proposal describes that flow. The structure works with any setup where a PM asks and a developer decides.
 
-> **A PM change request pilot, in short:** A one-page, four-week proposal in which 1-3 named PMs or designers ask for small changes (copy, labels, empty states, small UI tweaks) on a live preview, while authentication, permissions, billing, data and secrets stay engineering-only. One named developer reviews every change, decides what ships and can pause the pilot at any time. The team tracks time from ask to preview, developer minutes per change, shipped vs dropped and reverts, then decides to stop, keep going or widen. In Butterneck the coding agent runs on the developer's computer with the CLI already signed in there; no pull request is opened, and Butterneck never merges or deploys.
+> **A PM change request pilot, in short:** A one-page, four-week proposal in which 1-3 named PMs or designers ask for small changes (copy, labels, empty states, small UI tweaks) on a live preview, while authentication, permissions, billing, data and secrets stay engineering-only. One named developer reviews every change, decides what ships and can pause the pilot at any time. The team tracks time from ask to preview, developer minutes per change, shipped vs dropped and reverts, then decides to stop, keep going or widen. In Butterneck the coding agent runs on the developer's computer with the CLI already signed in there; Butterneck does not commit, push or open a pull request, and Butterneck never merges or deploys.
 
 ## Why propose a pilot, not a policy
 

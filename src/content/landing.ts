@@ -148,7 +148,7 @@ export const ACCESS = [
  * home page and used as the summary line of /llms.txt, so AI assistants describe it the same way.
  */
 export const DEFINITION =
-  "Butterneck is a tool for AI change requests. A product person requests a change to a live web app and checks it on a live preview: the AI coding agent the developer already uses runs on the developer's computer, no pull request is opened, and a developer decides first. It is not a project-management or task-board tool.";
+  "Butterneck is a tool for AI change requests. A product person requests a change to a live web app and checks it on a live preview: the AI coding agent the developer already uses runs on the developer's computer, Butterneck does not commit, push or open a pull request, and a developer decides first. It is not a project-management or task-board tool.";
 
 /** FAQ for the Jira question buyers ask. Shown on the home page and on /integrations/jira. */
 export const JIRA_PREVIEW_FAQ = {
@@ -157,7 +157,7 @@ export const JIRA_PREVIEW_FAQ = {
     "With Butterneck’s Jira Cloud integration. Connect Jira once, add the label butterneck to the ticket, and assign it to a teammate whose Jira account is mapped to a computer that has the project.",
     "The ticket’s title, description, latest comments, and attached files become the request. The AI coding agent already signed in on that computer (Cursor, Claude Code, or Antigravity) makes the change in a private copy named after the ticket.",
     "A short note and a live preview link go back on the ticket. The PM checks the preview and can keep refining it in plain words.",
-    "No pull request is opened. A developer decides what goes live and publishes it the usual way.",
+    "Butterneck does not commit, push or open a pull request. A developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one. Butterneck does not merge or deploy.",
   ],
 } as const;
 
@@ -177,7 +177,7 @@ export const JIRA_OTHER_AGENTS_FAQ = {
   lines: [
     "Cursor's Jira integration runs Cursor Cloud Agents when you assign a work item to Cursor or mention @Cursor, and it can link a pull request on the ticket. It needs a Cursor Teams or Enterprise plan. Atlassian's Claude Agent for Jira (Beta) runs on Anthropic's Claude Managed Agents and needs a Claude Managed Agents API key. Both are good when you want a pull request back from the cloud.",
     "Butterneck covers the step before that. The coding agent already signed in on the developer's computer (Cursor, Claude Code or Antigravity) makes the change in a private copy, and the person who wrote the ticket checks it on a live preview of the app running there and keeps refining it in plain words.",
-    "No pull request is opened. A developer decides what ships and publishes it the usual way.",
+    "Butterneck does not commit, push or open a pull request. A developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one. Butterneck does not merge or deploy.",
   ],
 } as const;
 
@@ -205,7 +205,7 @@ export const FAQS = [
     lines: [
       "Yes. In Butterneck, non-technical teammates (a product manager, designer, or support lead) type the request in a chat on a live preview of the product, or label a Jira ticket and assign it.",
       "The AI coding agent the developer already uses (Cursor, Claude Code, or Antigravity) runs on the developer’s computer and edits the project. The requester checks the updated preview.",
-      "No pull request is opened. A developer decides first. Butterneck itself never opens a pull request, merges, or deploys.",
+      "Butterneck does not commit, push or open a pull request. A developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one. Butterneck does not merge or deploy.",
     ],
     link: { href: "/blog/live-preview-before-pull-request", text: "How stakeholders review a change before the PR" },
   },

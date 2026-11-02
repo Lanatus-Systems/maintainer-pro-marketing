@@ -21,7 +21,7 @@ import { appUrl, SITE_TITLE, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
 
 /** Search snippet for the home page (under ~160 characters; same claims as the site description). */
 const HOME_DESCRIPTION =
-  "AI change requests on a live preview: a product person asks for a change to your live web app and checks it there. No pull request is opened; a developer decides first.";
+  "AI change requests on a live preview: a product person asks for a change to your live web app and checks it there. Butterneck does not commit, push or open a pull request; a developer decides first.";
 
 /** Tools the site already names: the developer's own AI coding agent, and Jira Cloud. */
 const TOOLS = ["Cursor", "Claude Code", "Antigravity", "Jira Cloud"] as const;

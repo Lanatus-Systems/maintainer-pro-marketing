@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -27,7 +27,7 @@ AI coding agents can now open pull requests faster than teams can review them. P
 
 This post goes through what the report found, what it does and doesn't show, and one practical response: make sure every AI-written change has a human owner before it reaches review. We build Butterneck, so we say how it fits near the end. The idea applies whatever tools you use.
 
-> **The AI PR review bottleneck, in short:** In LinearB's 2026 benchmarks, AI PRs merged within 30 days 32.7% of the time against 84.4% for manual PRs, and the report says AI PRs often lack "a natural human owner"; it frames its findings as correlation, not causation. Butterneck's answer is to leave no bot PR to own: it runs on the developer's computer with the coding agent they already use, the person who asked checks a live preview, no pull request is opened, and a developer decides first what ships.
+> **The AI PR review bottleneck, in short:** In LinearB's 2026 benchmarks, AI PRs merged within 30 days 32.7% of the time against 84.4% for manual PRs, and the report says AI PRs often lack "a natural human owner"; it frames its findings as correlation, not causation. Butterneck's answer is to leave no bot PR to own: it runs on the developer's computer with the coding agent they already use, the person who asked checks a live preview, Butterneck does not commit, push or open a pull request, and a developer decides first what ships.
 
 ## What is the AI PR review bottleneck?
 
