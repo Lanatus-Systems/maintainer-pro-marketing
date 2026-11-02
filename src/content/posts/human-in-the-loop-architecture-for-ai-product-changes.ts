@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
   cover: {
@@ -81,7 +81,7 @@ More on how the share link works, and what passes through it, in [Share your loc
 - **Confidence.** The agent ends each change with a hidden confidence level (very low to very high), shown to the team as a tag, so reviewers know where to look harder.
 - **Access.** The developer chooses who may send requests: a named list or anyone with the link.
 
-An honest note on layer one and two: they are instructions to the agent plus the CLI's workspace setting, and the CLIs run with their interactive permission prompts skipped. That is not the same as an OS sandbox. If you need hard isolation, run the bridge on a machine or account that has no production secrets. We'd rather say that plainly than overclaim.
+An honest note on layer one and two: they are instructions to the agent plus the CLI's workspace setting, and the CLIs run with their interactive permission prompts skipped. That is not the same as an OS sandbox. If you need hard isolation, run the bridge on a machine or account that has no production secrets. We'd rather say that plainly than overclaim. The one-page summary for a security review: [Security](/security).
 
 The exact CLI flags, and what to do if you need a harder boundary, are in [how Butterneck runs an AI coding agent in a sandbox on your own machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 

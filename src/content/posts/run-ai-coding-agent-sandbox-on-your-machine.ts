@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback and preview links.",
   date: "2026-10-27",
-  updated: "2026-10-29",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
   cover: {
@@ -59,7 +59,7 @@ Teams can add their own globs on top (for example \`config/secrets/\` or \`*.pem
 
 The merged list goes into the system prompt: never touch these paths, and refuse the part of a request that needs them. The same matcher (\`isPathAllowed\`) is exported by the CLI package for checks in code.
 
-Same caveat as above: the agent is told not to touch those files. If you need a hard guarantee, keep production secrets off the machine that runs the bridge. That is good practice anyway.
+Same caveat as above: the agent is told not to touch those files. If you need a hard guarantee, keep production secrets off the machine that runs the bridge. That is good practice anyway. The one-page version for a security review is on [Security](/security).
 
 ## Every turn can be undone
 

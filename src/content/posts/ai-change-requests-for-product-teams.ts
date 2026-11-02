@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-02",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams"],
   cover: {
@@ -110,6 +110,8 @@ These are the questions a CTO should ask any AI change request tool. Here are Bu
 - **What leaves the machine?** The coding CLI sends code context to its own AI provider. Chat messages and preview traffic go through Butterneck's server.
 - **Can a bad change be undone?** Each turn records a baseline. Stopping a turn usually rolls its file changes back; if it can't, the chat says so.
 - **Can it ship by itself?** No. There is no code path that pushes, merges, or deploys.
+
+Who can send a request, and what the share link exposes, are on the [Security](/security) page.
 
 The longer version is in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 

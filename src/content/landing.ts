@@ -214,7 +214,8 @@ export const FAQS = [
     q: "Who publishes the change?",
     lines: [
       "Someone on your team.",
-      "The AI changes only the project you connected, then stops.",
+      "The AI changes only the project you connected, then stops. The edit waits there as file changes; Butterneck does not commit, push or open a pull request.",
+      "A developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one.",
       "If the change is wrong, it is not published. A developer leaves or reverts it.",
     ],
   },
