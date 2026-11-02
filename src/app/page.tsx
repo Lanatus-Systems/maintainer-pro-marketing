@@ -77,6 +77,13 @@ export default function HomePage() {
               Watch the demo
             </a>
           </div>
+          <p className="landing-quiet landing-trial-note">
+            Not ready to connect a computer?{" "}
+            <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_hero">
+              Try a request on a sample preview
+            </a>{" "}
+            first. Your own project still needs a connected computer; Starter is free.
+          </p>
           <ul className="landing-trust">
             <li>They ask on the live product</li>
             <li>You choose who can ask</li>
@@ -328,6 +335,13 @@ export default function HomePage() {
             Log in
           </a>
         </div>
+        <p className="landing-quiet landing-trial-note">
+          Not ready to connect a computer?{" "}
+          <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_footer_cta">
+            Try a request on a sample preview
+          </a>{" "}
+          first. Your own project still needs a connected computer; Starter is free.
+        </p>
       </section>
     </main>
   );

@@ -141,6 +141,15 @@ export default async function BlogPostPage({ params }: Params) {
         <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="blog_post_cta">
           Create a free workspace
         </a>
+        {!isAasaanWeb && (
+          <p className="landing-quiet landing-trial-note">
+            Not ready to connect a computer?{" "}
+            <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="blog_post_cta">
+              Try a request on a sample preview
+            </a>{" "}
+            first. Your own project still needs a connected computer; Starter is free.
+          </p>
+        )}
       </aside>
       {others.length > 0 && (
         <section className="blog-more" aria-labelledby="more-heading">

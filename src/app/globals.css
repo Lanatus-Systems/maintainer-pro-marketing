@@ -1233,3 +1233,17 @@ h3 {
   aspect-ratio: 16 / 9;
 }
 .landing-demo .landing-cta { justify-content: center; }
+
+/* Trial link under CTAs (try a request before connecting a computer) */
+.landing-trial-note {
+  margin-top: 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.landing-trial-note a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0.35rem 0;
+}
