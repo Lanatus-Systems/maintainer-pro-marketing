@@ -1,6 +1,7 @@
 import { post as pmNoEng } from "@/content/posts/let-product-managers-change-the-app-without-engineering";
 import { post as aiJira } from "@/content/posts/ai-change-requests-in-jira";
 import { post as nonEngPr } from "@/content/posts/how-non-engineers-can-ship-frontend-changes-as-pull-requests";
+import { post as adaptl } from "@/content/posts/adaptl-alternative";
 import { post as itera } from "@/content/posts/itera-alternative";
 import { post as pms } from "@/content/posts/how-pms-can-change-a-live-app-without-waiting-on-engineering";
 import { post as jira } from "@/content/posts/jira-ticket-to-pr-with-ai";
@@ -42,7 +43,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
