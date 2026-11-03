@@ -256,6 +256,7 @@ export const FAQS = [
       "Butterneck itself never opens a pull request, merges, or deploys.",
       "A tool that opens pull requests can suit teams who want a PR as the hand-off. Butterneck suits teams who want a developer to decide before anything becomes a PR.",
     ],
+    link: { href: "/blog/live-preview-before-pull-request", text: "Live preview before the PR" },
   },
   {
     q: "Can I try it without installing anything?",
