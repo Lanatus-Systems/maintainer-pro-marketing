@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "live-preview-before-pull-request",
   title: "Live preview before the PR: how PMs can review a change before anyone opens a pull request",
-  seoTitle: "Live preview before the PR: how PMs review AI changes",
+  seoTitle: "Live preview before the PR: AI change requests PMs can check",
   description:
-    "Preview an AI coding agent's change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
+    "AI change requests with a live preview before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
   updated: "2026-11-03",
   author: "The Butterneck team",
