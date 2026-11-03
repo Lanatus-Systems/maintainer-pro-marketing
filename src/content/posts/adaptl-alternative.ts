@@ -24,7 +24,7 @@ Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai) and its 
 
 ## What Adaptl says it does
 
-Adaptl's home page headline now says: "AI made software cheap to build. Adaptl makes it safe to own." Its flow, in its own words:
+Adaptl's home page describes it as: "Adaptl makes a product that AI builds safe to own." Its flow, in its own words:
 
 - You describe the change "the way a customer would notice it". Adaptl asks about cases you missed, "then opens the issue, branch and draft pull request on GitHub".
 - It hands the brief to "Claude Code, Codex or Aider on your computer, or any agent you mention on the pull request". You use your own AI key.
@@ -32,7 +32,7 @@ Adaptl's home page headline now says: "AI made software cheap to build. Adaptl m
 
 Its FAQ says: "Adaptl prepares a normal pull request on GitHub. Nothing merges until a person on your team approves it." It also says the preview never uses your customers' records: "Every person and record in a preview is made up."
 
-Other things on the site: a plain-English history of how the product evolved from merged pull requests ("lineage"), a list of what a change does for users before it merges, helper agents (some marked "Coming"), and a playground for exploring a shared project first (the playground page it linked returned 404 when we re-checked on 4 Nov 2026). It lists PostgreSQL, Django, Prisma, SQLAlchemy and GitHub, with MySQL "soon", and says it is tested on Saleor and Cal.com.
+Other things on the site: a plain-English history of how the product evolved from merged pull requests ("lineage"), a list of what a change does for users before it merges, helper agents (some marked "Coming"), and a playground for exploring a shared project first. It lists PostgreSQL, Django, Prisma, SQLAlchemy and GitHub, with MySQL "soon", and says it is tested on Saleor and Cal.com.
 
 On price and hosting it says: "Signing up is free. Adaptl runs online at inloop.adaptl.ai, hosted in the EU, or on your own computer." We did not find a public pricing page.
 
@@ -54,7 +54,7 @@ Butterneck does not commit, push, open a pull request, merge or deploy. To be ex
 | Agents | Claude Code, Codex, Aider, or an agent mentioned on the PR | Cursor, Claude Code or Antigravity CLI |
 | Where it runs | Online (EU-hosted) or on your own computer | The connector runs on the developer's computer; share link relayed by Butterneck |
 | Jira | Not mentioned on its home page | Label a ticket \`butterneck\`; the preview link is posted back to the ticket |
-| Try before setup | Advertises a playground; the linked page returned 404 when re-checked (4 Nov 2026) | Sample shop (app.butterneck.com/trial), before connecting a computer |
+| Try before setup | Playground with a shared project (advertised) | Sample shop (app.butterneck.com/trial), before connecting a computer |
 | Price | "Signing up is free"; no public pricing page found | Starter free; Pro USD 19 per person per month |
 
 ### The pull request
