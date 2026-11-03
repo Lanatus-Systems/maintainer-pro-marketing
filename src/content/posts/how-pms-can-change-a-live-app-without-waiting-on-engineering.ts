@@ -3,11 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "how-pms-can-change-a-live-app-without-waiting-on-engineering",
   title: "Small changes stuck in the backlog? How PMs can change a live app without waiting on engineering",
-  seoTitle: "How PMs can change a live app without waiting on engineering",
+  seoTitle: "How PMs make AI change requests on a live app",
   description:
-    "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI coding agent edits it, a developer decides what ships.",
+    "AI change requests for product managers: ask on a live preview, an AI coding agent edits the project, a developer decides what ships — without waiting on the backlog relay.",
   date: "2026-10-27",
-  updated: "2026-11-03",
+  updated: "2026-11-04",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
