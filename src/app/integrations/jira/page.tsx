@@ -253,6 +253,7 @@ export default function JiraIntegrationPage() {
         </ul>
         <p className="landing-quiet">
           Read more: <Link href="/blog/jira-ticket-to-pr-with-ai">from a Jira ticket to a reviewable change</Link>{" "}
+          · <Link href="/blog/ai-change-requests-in-jira">AI change requests in Jira</Link>{" "}
           · <Link href="/blog/live-preview-before-pull-request">checking a live preview before the pull request</Link>{" "}
           · <Link href="/blog">the blog</Link> · <Link href="/jira/privacy">Jira privacy</Link>{" "}
           · <Link href="/jira/terms">Jira terms</Link> · <Link href="/pricing">Pricing</Link>
