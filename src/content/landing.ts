@@ -238,6 +238,7 @@ export const FAQS = [
       "Updating that same ticket later does not open a second copy.",
       "You can still paste a ticket number into an existing chat to load that ticket.",
     ],
+    link: { href: "/blog/ai-change-requests-in-jira", text: "AI change requests in Jira" },
   },
   {
     q: "Where do the file changes happen?",
