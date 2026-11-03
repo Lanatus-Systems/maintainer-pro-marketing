@@ -65,7 +65,7 @@ This is the clearest fork. Adaptl puts the change on a branch and a draft PR fro
 
 Adaptl's made-up customers let you try a change as an admin, a new user or a locked-out account without touching real records. That is a real strength for apps with many roles. Butterneck previews whatever the app already has on the developer's computer, which is quick to set up but only as good as that data.
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## When Adaptl is likely the better fit
 

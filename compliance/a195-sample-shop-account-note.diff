@@ -74,3 +74,248 @@ index 5500c48..5b17fe9 100644
  const LEGAL_LAST_MODIFIED = new Date(`${LEGAL_UPDATED} 00:00:00 UTC`);
  
  function latestPostDate(): string {
+diff --git a/src/content/landing.ts b/src/content/landing.ts
+index 40b3550..a9a613b 100644
+--- a/src/content/landing.ts
++++ b/src/content/landing.ts
+@@ -256,6 +256,12 @@ export const FAQS = [
+       "A tool that opens pull requests can suit teams who want a PR as the hand-off. Butterneck suits teams who want a developer to decide before anything becomes a PR.",
+     ],
+   },
++  {
++    q: "Can I try it without installing anything?",
++    lines: [
++      "Yes. Create a free account and open the Elm & Fern sample shop at https://app.butterneck.com/signup?trial=1 (same as /trial). It runs on our computer, so you can ask for a change and see the live preview. That is not the one-month Pro trial on Pricing — Pro trial upgrades seat limits on your own workspace. To use Butterneck on your own product, a developer installs the connector on a computer that already has the project.",
++    ],
++  },
+ ] as const;
+ 
+ export const NAV = [
+diff --git a/src/content/posts/adaptl-alternative.ts b/src/content/posts/adaptl-alternative.ts
+index 8b7679f..1978c96 100644
+--- a/src/content/posts/adaptl-alternative.ts
++++ b/src/content/posts/adaptl-alternative.ts
+@@ -65,7 +65,7 @@ This is the clearest fork. Adaptl puts the change on a branch and a draft PR fro
+ 
+ Adaptl's made-up customers let you try a change as an admin, a new user or a locked-out account without touching real records. That is a real strength for apps with many roles. Butterneck previews whatever the app already has on the developer's computer, which is quick to set up but only as good as that data.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## When Adaptl is likely the better fit
+ 
+diff --git a/src/content/posts/ai-change-request-policy-template.ts b/src/content/posts/ai-change-request-policy-template.ts
+index 197476c..994b6c2 100644
+--- a/src/content/posts/ai-change-request-policy-template.ts
++++ b/src/content/posts/ai-change-request-policy-template.ts
+@@ -6,7 +6,7 @@ export const post: BlogPost = {
+   description:
+     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
+   date: "2026-10-27",
+-  updated: "2026-10-31",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: [
+     "AI change request policy",
+@@ -147,7 +147,7 @@ A few habits keep this calm:
+ - Make sure every AI turn can be stopped and its changes rolled back before anything is reviewed.
+ - Discarding is a normal outcome. Not every request should ship.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## The template
+ 
+diff --git a/src/content/posts/ai-change-requests-in-jira.ts b/src/content/posts/ai-change-requests-in-jira.ts
+index 835edac..266e499 100644
+--- a/src/content/posts/ai-change-requests-in-jira.ts
++++ b/src/content/posts/ai-change-requests-in-jira.ts
+@@ -27,7 +27,7 @@ export const post: BlogPost = {
+ 
+ Butterneck does not commit, push, open a pull request or deploy. The ticket stays the record; the preview is where the change gets checked.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## Tips
+ 
+diff --git a/src/content/posts/how-non-engineers-can-ship-frontend-changes-as-pull-requests.ts b/src/content/posts/how-non-engineers-can-ship-frontend-changes-as-pull-requests.ts
+index ecf03c4..c2f6e6f 100644
+--- a/src/content/posts/how-non-engineers-can-ship-frontend-changes-as-pull-requests.ts
++++ b/src/content/posts/how-non-engineers-can-ship-frontend-changes-as-pull-requests.ts
+@@ -30,7 +30,7 @@ Some tools do open a PR for a PM or designer. That can work. But a PR is a poor
+ 
+ This is how [Butterneck](/) works. Butterneck itself does not commit, push or open the pull request; the developer does.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## What makes this go smoothly
+ 
+diff --git a/src/content/posts/how-pms-can-change-a-live-app-without-waiting-on-engineering.ts b/src/content/posts/how-pms-can-change-a-live-app-without-waiting-on-engineering.ts
+index ce8f7b7..422cf5a 100644
+--- a/src/content/posts/how-pms-can-change-a-live-app-without-waiting-on-engineering.ts
++++ b/src/content/posts/how-pms-can-change-a-live-app-without-waiting-on-engineering.ts
+@@ -7,7 +7,7 @@ export const post: BlogPost = {
+   description:
+     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI coding agent edits it, a developer decides what ships.",
+   date: "2026-10-27",
+-  updated: "2026-11-02",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
+   cover: {
+@@ -85,7 +85,7 @@ Butterneck never merges, never opens a pull request, and never deploys. A develo
+ 
+ The share link needs no VPN or staging deploy, and viewers do not need an account. The developer chooses who can send requests: a named list, or anyone with the link. A developer can reply in the chat without starting the agent: the reply is saved and changes no files, though it can be included as context on the requester's next turn. More detail in [how to share a local app without deploying](/blog/share-local-app-without-deploying).
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## What engineering keeps control of
+ 
+diff --git a/src/content/posts/human-in-the-loop-ai-coding.ts b/src/content/posts/human-in-the-loop-ai-coding.ts
+index c15d81f..c4b53d7 100644
+--- a/src/content/posts/human-in-the-loop-ai-coding.ts
++++ b/src/content/posts/human-in-the-loop-ai-coding.ts
+@@ -6,7 +6,7 @@ export const post: BlogPost = {
+   description:
+     "The edit runs on your computer. Your team still decides what goes live. How human review fits AI code changes, from request to live preview.",
+   date: "2026-10-27",
+-  updated: "2026-10-30",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
+   cover: {
+@@ -137,7 +137,7 @@ Compare the two flows for "make the button say Book a call":
+ 
+ The developer's time goes from "find, change, send, wait" to "look and decide". That is the trade we care about.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## Who this is for, and who it is not for
+ 
+diff --git a/src/content/posts/human-in-the-loop-architecture-for-ai-product-changes.ts b/src/content/posts/human-in-the-loop-architecture-for-ai-product-changes.ts
+index f28330c..065325a 100644
+--- a/src/content/posts/human-in-the-loop-architecture-for-ai-product-changes.ts
++++ b/src/content/posts/human-in-the-loop-architecture-for-ai-product-changes.ts
+@@ -7,7 +7,7 @@ export const post: BlogPost = {
+   description:
+     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
+   date: "2026-10-27",
+-  updated: "2026-11-02",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
+   cover: {
+@@ -108,7 +108,7 @@ Teams that want ticket-to-merge automation exist, and there are tools for them.
+ - It doesn't replace developers. It assumes one is there and decides.
+ - Your code context still goes to whichever AI provider your coding CLI uses, and preview traffic passes through Butterneck's relay. "Local" means the edits and the runtime are local, not that nothing leaves the machine.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## FAQ
+ 
+diff --git a/src/content/posts/jira-ticket-to-pr-with-ai.ts b/src/content/posts/jira-ticket-to-pr-with-ai.ts
+index 6dc7e5e..422548d 100644
+--- a/src/content/posts/jira-ticket-to-pr-with-ai.ts
++++ b/src/content/posts/jira-ticket-to-pr-with-ai.ts
+@@ -7,7 +7,7 @@ export const post: BlogPost = {
+   description:
+     "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
+   date: "2026-10-27",
+-  updated: "2026-11-02",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
+   cover: {
+@@ -123,7 +123,7 @@ For the full picture of folders, the ignore list and what leaves the machine, re
+ 
+ More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine) and [human-in-the-loop architecture for AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes).
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## FAQ
+ 
+diff --git a/src/content/posts/let-product-managers-change-the-app-without-engineering.ts b/src/content/posts/let-product-managers-change-the-app-without-engineering.ts
+index 02bd207..78d6ebc 100644
+--- a/src/content/posts/let-product-managers-change-the-app-without-engineering.ts
++++ b/src/content/posts/let-product-managers-change-the-app-without-engineering.ts
+@@ -32,7 +32,7 @@ The useful goal is the first one: the PM does the back-and-forth on a preview, a
+ 
+ That is how [Butterneck](/) works. Butterneck does not commit, push, open a pull request or deploy.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## What to watch for
+ 
+diff --git a/src/content/posts/live-preview-before-pull-request.ts b/src/content/posts/live-preview-before-pull-request.ts
+index 4f4c19e..47a346a 100644
+--- a/src/content/posts/live-preview-before-pull-request.ts
++++ b/src/content/posts/live-preview-before-pull-request.ts
+@@ -7,7 +7,7 @@ export const post: BlogPost = {
+   description:
+     "Preview an AI coding agent's change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
+   date: "2026-10-28",
+-  updated: "2026-11-02",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments"],
+   cover: {
+@@ -131,7 +131,7 @@ Butterneck is built around this order: the requester checks on a live preview, t
+ 
+ On secrets: \`.env\` files are on the agent's ignore list. That's a guardrail, an instruction to the agent, not a hard block, so keep production secrets off the computer the previews run on. More detail on the setup in [share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## When a PR preview is the better tool
+ 
+diff --git a/src/content/posts/pm-change-request-pilot-proposal.ts b/src/content/posts/pm-change-request-pilot-proposal.ts
+index dc54a05..a0636ae 100644
+--- a/src/content/posts/pm-change-request-pilot-proposal.ts
++++ b/src/content/posts/pm-change-request-pilot-proposal.ts
+@@ -7,7 +7,7 @@ export const post: BlogPost = {
+   description:
+     "A copyable one-page proposal for a 4-week pilot where PMs ask an AI coding agent for small changes on a live preview and a developer decides what ships.",
+   date: "2026-10-28",
+-  updated: "2026-11-02",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["PM pilot proposal", "AI change requests", "AI for product managers", "engineering leads", "product teams"],
+   cover: {
+@@ -222,7 +222,7 @@ For writing the requests themselves, give your requesters [how to write a change
+ 
+ On cost: the Starter plan is free for one developer and one requester, with one private copy, which is enough to try the chat flow with one PM. Each Jira ticket opens its own private copy, and each extra requester needs a seat, so a pilot that uses Jira or more than one PM needs Pro ($19 per person per month). A one-month Pro trial fits the 4-week pilot: a workspace owner on Starter can start it from the Billing page, once per workspace, and when it ends the workspace goes back to Starter unless you subscribe. AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## FAQ
+ 
+diff --git a/src/content/posts/run-ai-coding-agent-sandbox-on-your-machine.ts b/src/content/posts/run-ai-coding-agent-sandbox-on-your-machine.ts
+index cb85c21..be43cc7 100644
+--- a/src/content/posts/run-ai-coding-agent-sandbox-on-your-machine.ts
++++ b/src/content/posts/run-ai-coding-agent-sandbox-on-your-machine.ts
+@@ -6,7 +6,7 @@ export const post: BlogPost = {
+   description:
+     "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback and preview links.",
+   date: "2026-10-27",
+-  updated: "2026-11-02",
++  updated: "2026-11-03",
+   author: "The Butterneck team",
+   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
+   cover: {
+@@ -92,7 +92,7 @@ Worth being exact here, because "runs locally" is easy to over-read:
+ - Preview traffic (the rendered app) passes through the Butterneck server so the share link works.
+ - Chat messages travel through the Butterneck server to reach the bridge.
+ 
+-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
++**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+ 
+ ## FAQ
+ 

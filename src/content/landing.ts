@@ -256,6 +256,12 @@ export const FAQS = [
       "A tool that opens pull requests can suit teams who want a PR as the hand-off. Butterneck suits teams who want a developer to decide before anything becomes a PR.",
     ],
   },
+  {
+    q: "Can I try it without installing anything?",
+    lines: [
+      "Yes. Create a free account and open the Elm & Fern sample shop at https://app.butterneck.com/signup?trial=1 (same as /trial). It runs on our computer, so you can ask for a change and see the live preview. That is not the one-month Pro trial on Pricing — Pro trial upgrades seat limits on your own workspace. To use Butterneck on your own product, a developer installs the connector on a computer that already has the project.",
+    ],
+  },
 ] as const;
 
 export const NAV = [

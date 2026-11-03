@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-03",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
   cover: {
@@ -108,7 +108,7 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 - It doesn't replace developers. It assumes one is there and decides.
 - Your code context still goes to whichever AI provider your coding CLI uses, and preview traffic passes through Butterneck's relay. "Local" means the edits and the runtime are local, not that nothing leaves the machine.
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

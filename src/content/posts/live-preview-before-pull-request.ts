@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Preview an AI coding agent's change on a live copy before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-11-02",
+  updated: "2026-11-03",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments"],
   cover: {
@@ -131,7 +131,7 @@ Butterneck is built around this order: the requester checks on a live preview, t
 
 On secrets: \`.env\` files are on the agent's ignore list. That's a guardrail, an instruction to the agent, not a hard block, so keep production secrets off the computer the previews run on. More detail on the setup in [share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## When a PR preview is the better tool
 

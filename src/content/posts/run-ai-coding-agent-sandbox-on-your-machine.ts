@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer: folder isolation, .env guardrails, per-turn rollback and preview links.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-03",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
   cover: {
@@ -92,7 +92,7 @@ Worth being exact here, because "runs locally" is easy to over-read:
 - Preview traffic (the rendered app) passes through the Butterneck server so the share link works.
 - Chat messages travel through the Butterneck server to reach the bridge.
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## FAQ
 

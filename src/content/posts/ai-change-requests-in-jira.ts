@@ -27,7 +27,7 @@ export const post: BlogPost = {
 
 Butterneck does not commit, push, open a pull request or deploy. The ticket stays the record; the preview is where the change gets checked.
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## Tips
 

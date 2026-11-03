@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "The edit runs on your computer. Your team still decides what goes live. How human review fits AI code changes, from request to live preview.",
   date: "2026-10-27",
-  updated: "2026-10-30",
+  updated: "2026-11-03",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -137,7 +137,7 @@ Compare the two flows for "make the button say Book a call":
 
 The developer's time goes from "find, change, send, wait" to "look and decide". That is the trade we care about.
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## Who this is for, and who it is not for
 

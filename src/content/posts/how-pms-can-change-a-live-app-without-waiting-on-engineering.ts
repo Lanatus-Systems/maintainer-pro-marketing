@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Small product changes sit in the backlog because of the relay, not the code. Ask on a live preview, an AI coding agent edits it, a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-03",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
   cover: {
@@ -85,7 +85,7 @@ Butterneck never merges, never opens a pull request, and never deploys. A develo
 
 The share link needs no VPN or staging deploy, and viewers do not need an account. The developer chooses who can send requests: a named list, or anyone with the link. A developer can reply in the chat without starting the agent: the reply is saved and changes no files, though it can be included as context on the requester's next turn. More detail in [how to share a local app without deploying](/blog/share-local-app-without-deploying).
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## What engineering keeps control of
 

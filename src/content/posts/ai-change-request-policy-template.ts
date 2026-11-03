@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-10-31",
+  updated: "2026-11-03",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -147,7 +147,7 @@ A few habits keep this calm:
 - Make sure every AI turn can be stopped and its changes rolled back before anything is reviewed.
 - Discarding is a normal outcome. Not every request should ship.
 
-**See it before you set anything up:** you can [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
 
 ## The template
 
