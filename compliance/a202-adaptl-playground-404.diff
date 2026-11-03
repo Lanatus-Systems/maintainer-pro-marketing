@@ -1,0 +1,47 @@
+diff --git a/src/content/posts/adaptl-alternative.ts b/src/content/posts/adaptl-alternative.ts
+index 4e2adc8..a93c43e 100644
+--- a/src/content/posts/adaptl-alternative.ts
++++ b/src/content/posts/adaptl-alternative.ts
+@@ -18,13 +18,13 @@ export const post: BlogPost = {
+   body: `
+ Adaptl and Butterneck both start from the same idea: the person who asked for a change should try it on a running app before it ships, and the team's own coding agent should do the work. They make different choices after that. We make Butterneck, so we are not neutral. We have stuck to what Adaptl says on its public site, and we say where Adaptl may be the better pick.
+ 
+-Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai) and its [compare page](https://adaptl.ai/compare.html), as read on November 3, 2026. Adaptl is a young product and is changing fast. Check its site for the current details.
++Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai) and its [compare page](https://adaptl.ai/compare.html), as read on November 4, 2026. Adaptl is a young product and is changing fast. Check its site for the current details.
+ 
+ > **Adaptl vs Butterneck, in short:** Adaptl opens the GitHub issue, branch and draft pull request itself, hands the brief to your agent, and fills the preview with made-up customers. Butterneck works on the app as it already runs on a developer's computer, can start from a Jira label, and does not commit, push or open a pull request. The edit runs on your computer. Your team still decides what goes live.
+ 
+ ## What Adaptl says it does
+ 
+-Adaptl's home page describes it as: "Adaptl makes a product that AI builds safe to own." Its flow, in its own words:
++Adaptl's home page headline now says: "AI made software cheap to build. Adaptl makes it safe to own." Its flow, in its own words:
+ 
+ - You describe the change "the way a customer would notice it". Adaptl asks about cases you missed, "then opens the issue, branch and draft pull request on GitHub".
+ - It hands the brief to "Claude Code, Codex or Aider on your computer, or any agent you mention on the pull request". You use your own AI key.
+@@ -32,7 +32,7 @@ Adaptl's home page describes it as: "Adaptl makes a product that AI builds safe
+ 
+ Its FAQ says: "Adaptl prepares a normal pull request on GitHub. Nothing merges until a person on your team approves it." It also says the preview never uses your customers' records: "Every person and record in a preview is made up."
+ 
+-Other things on the site: a plain-English history of how the product evolved from merged pull requests ("lineage"), a list of what a change does for users before it merges, helper agents (some marked "Coming"), and a playground for exploring a shared project first. It lists PostgreSQL, Django, Prisma, SQLAlchemy and GitHub, with MySQL "soon", and says it is tested on Saleor and Cal.com.
++Other things on the site: a plain-English history of how the product evolved from merged pull requests ("lineage"), a list of what a change does for users before it merges, helper agents (some marked "Coming"), and a playground linked from its home for exploring a shared project first (that playground URL returned 404 when we re-checked on 4 Nov 2026). It lists PostgreSQL, Django, Prisma, SQLAlchemy and GitHub, with MySQL "soon", and says it is tested on Saleor and Cal.com.
+ 
+ On price and hosting it says: "Signing up is free. Adaptl runs online at inloop.adaptl.ai, hosted in the EU, or on your own computer." We did not find a public pricing page.
+ 
+@@ -46,7 +46,7 @@ Butterneck does not commit, push, open a pull request, merge or deploy. To be ex
+ 
+ ## The main differences
+ 
+-| | Adaptl (as of 3 Nov 2026) | Butterneck |
++| | Adaptl (as of 4 Nov 2026) | Butterneck |
+ |---|---|---|
+ | Who opens the pull request | Adaptl opens the issue, branch and draft PR on GitHub | Nobody, automatically. The developer decides whether to commit and open a PR |
+ | Code host | GitHub repo, or start a project from scratch | Any project folder that runs on the developer's computer |
+@@ -54,7 +54,7 @@ Butterneck does not commit, push, open a pull request, merge or deploy. To be ex
+ | Agents | Claude Code, Codex, Aider, or an agent mentioned on the PR | Cursor, Claude Code or Antigravity CLI |
+ | Where it runs | Online (EU-hosted) or on your own computer | The connector runs on the developer's computer; share link relayed by Butterneck |
+ | Jira | Not mentioned on its home page | Label a ticket \`butterneck\`; the preview link is posted back to the ticket |
+-| Try before setup | Playground with a shared project (advertised) | Sample shop (app.butterneck.com/trial), before connecting a computer |
++| Try before setup | Playground linked from home (URL 404 on 4 Nov 2026 re-check) | Sample shop (app.butterneck.com/trial), before connecting a computer |
+ | Price | "Signing up is free"; no public pricing page found | Starter free; Pro USD 19 per person per month |
+ 
+ ### The pull request
