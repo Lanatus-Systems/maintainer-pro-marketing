@@ -10,10 +10,10 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["agentic coding", "AI coding agents", "AI change requests", "product teams", "Claude Code", "Cursor"],
   cover: {
-    src: "/blog/product-app-with-chat.png",
-    alt: "Butterneck product screenshot: a running app on a live preview with a chat beside it for change requests",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-agentic-coding-for-product-teams.png",
+    alt: "Butterneck blog cover: Agentic coding for product teams. Ask a developer's coding agent on a live preview, and a developer decides what ships",
+    width: 1200,
+    height: 630,
   },
   body: `
 "Agentic coding" is the word for AI that doesn't just suggest the next line, but takes a task, reads the codebase, edits several files, runs commands and checks its own work. Claude Code, Cursor's agent and Antigravity all work this way. For developers it changes how work gets done. For the rest of the product team, it raises a new question: if the agent can do the edit, does a PM or designer still have to wait in the backlog for a small change?
@@ -57,7 +57,7 @@ A developer connects a computer that already has the project and a coding CLI si
 
 Butterneck does not commit, push or open a pull request, and it never merges or deploys. We call these requests AI change requests; see [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. No card is needed; if you sign out, you're asked to create a free account. On your own project, the edit runs on your computer, and your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 
