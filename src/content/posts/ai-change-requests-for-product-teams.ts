@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-05",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams"],
   cover: {
@@ -140,6 +140,8 @@ For how to word a single request so the agent gets it right, see [how to write a
 - **After that:** Decide which apps and request types are in scope, and write it down.
 
 Track one number: time from request to reviewed change. Compare it with your normal ticket flow. If you need your engineering lead's agreement first, send them the [4-week pilot proposal](/blog/pm-change-request-pilot-proposal): a one-page plan with the scope, guardrails, what to measure and when to stop.
+
+For a product manager who wants to try Claude Code without setting up the repo, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
 ## FAQ
 

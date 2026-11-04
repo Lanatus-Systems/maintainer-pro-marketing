@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
   date: "2026-10-27",
-  updated: "2026-11-03",
+  updated: "2026-11-05",
   author: "The Butterneck team",
-  tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety"],
+  tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety", "human in the loop AI governance"],
   cover: {
     src: "/blog/product-app-with-chat.png",
     alt: "A live app preview with the Butterneck chat open beside it",
@@ -115,6 +115,10 @@ Teams that want ticket-to-merge automation exist, and there are tools for them. 
 ### What is a human-in-the-loop architecture for AI product changes?
 
 People who can't read the diff ask a coding agent for changes on the running product and see the result on a live preview before it is real, but only a developer can make a change live. In Butterneck the agent edits files in a folder on the developer's computer, and there is no push, pull request, merge or deploy in the bridge or chat server.
+
+### What is human in the loop AI governance?
+
+It means writing down where a person, not the model, has to decide. For AI product changes that usually covers who may ask a coding agent for changes, what they may ask for, who checks the result, and who decides what ships. In this architecture the requester checks a live preview and a developer still decides what ships; for the written rules, start from our [AI change request policy template](/blog/ai-change-request-policy-template).
 
 ### Is the coding agent sandboxed?
 

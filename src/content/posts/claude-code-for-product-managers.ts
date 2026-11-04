@@ -3,11 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "claude-code-for-product-managers",
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
-  seoTitle: "Claude Code for product managers, without a repo or terminal",
+  seoTitle: "Claude Code for product managers: no repo or terminal needed",
   description:
-    "PMs don't need a terminal: ask for a change on a live preview, your developer's own Claude Code or Cursor makes it, and a developer decides what ships.",
+    "Claude Code for product managers, without a terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits it, a developer decides.",
   date: "2026-10-28",
-  updated: "2026-11-02",
+  updated: "2026-11-05",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers"],
   cover: {
@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Search for "Claude Code for product managers" or "Cursor for PMs" and most guides give similar advice: get Claude Code or Cursor (Claude Code now also runs in a desktop app and on the web at claude.ai/code, so a terminal is optional), connect the repo, learn enough git, and open pull requests yourself. For some product managers that is the right move. For many product teams it is not, and there is another way to get the same coding assistant working on a PM's request.
+Search for "Claude Code for product managers" or "Cursor for PMs" and most guides give similar advice: get Claude Code or Cursor (Claude Code now also runs in a desktop app and on the web at claude.ai/code, so a terminal is optional), connect the repo, learn enough git, and open pull requests yourself. For some product managers that is the right move. For many product teams it is not, and there is another way to get the same coding assistant working on a PM's request. This guide covers both: when a product manager should run Claude Code themselves, and when it is simpler to ask for the change on a live preview and let a developer's Claude Code do the edit.
 
 This post covers both. We make Butterneck, which takes the second route, so we are not neutral. We have tried to be clear about when a PM should just run Claude Code themselves.
 

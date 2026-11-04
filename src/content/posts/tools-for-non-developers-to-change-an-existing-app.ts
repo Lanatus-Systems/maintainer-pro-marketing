@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
   date: "2026-10-28",
-  updated: "2026-11-02",
+  updated: "2026-11-05",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -146,6 +146,8 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 - **You want the person who asked to check the change before any PR exists, without installing anything:** PinAppAI, Butterneck.
 
 Prices last checked 29 October 2026, as published on each tool's own pages that day. Tell us if something here is out of date and we'll fix it.
+
+For a product manager who wants to try Claude Code without setting up the repo, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
 ## FAQ
 

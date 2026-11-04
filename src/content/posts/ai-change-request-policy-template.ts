@@ -6,10 +6,11 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-11-03",
+  updated: "2026-11-05",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
+    "human in the loop AI governance",
     "product change request template",
     "PM code change policy",
     "review UI changes from non-engineers",
@@ -232,6 +233,14 @@ Some teams let them skip human code review once automated checks pass. The Claud
 ### How should review tiers work when PMs and designers use an AI coding agent?
 
 Set the tier from what the change touches, not from who asked. The Claude Code team at Anthropic advises writing down risk tiers "set from the change rather than the author", starting strict, and using CODEOWNERS and branch protection so that auth, billing, CI and release workflows always need a person. In this policy, copy, messages and small visual fixes get a requester check on the preview; layout and form-field changes get a developer check; and auth, billing, data, shared APIs and infrastructure start with an engineer and need two developers. Every tier includes the requester's check, and a developer still decides what ships.
+
+### What does human in the loop AI governance look like for a product team?
+
+A short written policy plus a process that enforces it: a named list of who can send requests to the AI, a list of changes that need an engineer from the start, a requester who checks every change on a preview, and a developer who reviews the diff and decides what ships. The template above covers each of these. For how the review step fits the system design, see [human-in-the-loop architecture for AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes).
+
+### Is human in the loop AI governance the same as AI code review?
+
+No. An AI code review tool can comment on or approve a diff, but governance decides who is accountable. In this policy an AI review can add to a developer's review, and a developer still decides what ships.
 
 ### Who should decide what ships?
 

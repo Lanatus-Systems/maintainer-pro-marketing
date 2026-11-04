@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
   date: "2026-10-27",
-  updated: "2026-11-03",
+  updated: "2026-11-05",
   author: "The Butterneck team",
-  tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review"],
+  tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR"],
   cover: {
     src: "/blog/cover-jira-ticket-to-reviewable-change-v2.png",
     alt: "Butterneck blog cover: from a labeled Jira ticket to a live preview that a developer reviews and ships",
@@ -89,6 +89,16 @@ Once the change looks right, the developer:
 
 If the private copy is a git worktree, the change is already on its own branch and checkout, separate from the main working copy.
 
+## How to link a Jira ticket to a PR
+
+Once a developer opens the pull request, you will want it to show up on the Jira ticket. Butterneck doesn't do this step, because it doesn't open the PR. Jira's own development integrations do. With Jira Cloud connected to GitHub (through the GitHub for Jira app), Bitbucket or GitLab, Jira links development work to an issue when the issue key appears in it ([Atlassian: reference issues in your development work](https://support.atlassian.com/jira-software-cloud/docs/reference-issues-in-your-development-work/)):
+
+- **Branch name:** for example \`PROJ-123-update-pricing-copy\`.
+- **Commit message:** for example \`PROJ-123 Update pricing copy\`.
+- **Pull request title:** for example \`PROJ-123: Update pricing copy\`.
+
+Use the key in capitals, exactly as Jira shows it. Once linked, the PR appears in the ticket's Development panel. So the full path for a labelled ticket is: the AI coding agent makes the change on a live copy, the requester checks the preview, and the developer commits on a branch named with the ticket key and opens the PR. The ticket then shows the preview link Butterneck posted and the PR your Git provider linked.
+
 ## Why Butterneck stops before the PR
 
 We get asked this a lot. Short version, from [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding):
@@ -130,6 +140,10 @@ More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/b
 ### Can Butterneck turn a Jira ticket into a pull request?
 
 It turns a labeled ticket into a working change on a live preview, and posts the preview link back to the ticket. A developer then opens the PR. Butterneck does not open PRs itself.
+
+### How do I link a Jira ticket to a pull request in GitHub?
+
+Connect Jira Cloud to GitHub with the GitHub for Jira app, then put the issue key (for example PROJ-123) in the branch name, a commit message or the PR title. Jira then shows the PR in the ticket's Development panel. With Butterneck, a developer opens that PR after the requester has checked the change on a live preview; Butterneck doesn't open it.
 
 ### Which AI tools turn a Jira ticket into a pull request?
 

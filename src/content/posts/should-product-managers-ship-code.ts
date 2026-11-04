@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-05",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -96,6 +96,8 @@ A few honest details. \`.env\` files are on an ignore list the agent is told to 
 - You want AI to open pull requests or merge on its own. Butterneck deliberately does neither.
 - There is no developer with a local project folder to connect.
 - You are looking for a cloud IDE or a replacement for engineers.
+
+For a product manager who wants to try Claude Code without setting up the repo, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
 ## FAQ
 

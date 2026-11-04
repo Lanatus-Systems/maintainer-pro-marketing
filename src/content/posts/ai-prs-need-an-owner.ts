@@ -6,12 +6,13 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-05",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
     "AI PR review bottleneck",
     "AI pull requests",
+    "AI code review tools",
     "AI PR merge rate",
     "code review",
     "LinearB benchmarks",
@@ -110,6 +111,12 @@ Faros puts the problem plainly: "the code arriving for review is often not revie
 - **Have the person who asked check the result before review.** If a PM or designer asked for the change, they look at it running and confirm it's what they meant before a developer spends time on the diff. A clear request makes that check easier: see [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai).
 - **Agree on what AI should be asked for.** We wrote a [policy template for AI change requests](/blog/ai-change-request-policy-template) that says who can ask, for what, and who decides what ships.
 
+## Where AI code review tools fit
+
+A common answer to the review bottleneck is more AI: AI code review tools and AI code review agents that comment on a pull request before a human looks at it. On GitHub, for example, Copilot can review pull requests, and Copilot approvals can count toward required approvals if a repository admin turns them on (they are off by default). These tools can catch issues earlier and shorten the first pass.
+
+They don't answer the question the LinearB report raises, though: who owns the change. An AI reviewer can tell you a diff looks fine; it can't tell you the change is what the person asking wanted, or take responsibility for shipping it. That is why we treat AI code review as one input to a developer's review, not a replacement for it. A developer still reviews and decides what ships.
+
 ## How Butterneck handles ownership
 
 Butterneck takes a different route: there is no bot PR to own.
@@ -165,6 +172,10 @@ In LinearB's 2026 data, most of the delay is before review starts. At P75, Agent
 ### What is the AI PR merge rate in LinearB's benchmarks?
 
 LinearB measures Acceptance Rate as the share of PRs merged within 30 days. In the 2026 report, manual PRs merged at 84.4% and AI PRs at 32.7%.
+
+### Do AI code review tools fix the AI PR review bottleneck?
+
+They can speed up the first pass, by commenting on a diff before a person reads it. They don't give the PR an owner. The data above points to ownership, not review speed alone, so a team still needs a person who asked for the change, checks that it does what they meant, and a developer who decides what ships.
 
 ### Does Butterneck improve merge rates or pickup time?
 
