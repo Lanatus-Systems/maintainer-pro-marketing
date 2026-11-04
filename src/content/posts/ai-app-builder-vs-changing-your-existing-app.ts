@@ -10,13 +10,13 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["ai app builder", "no code app builder", "AI change requests", "product teams", "existing codebase", "AI coding agents"],
   cover: {
-    src: "/blog/product-app-with-chat.png",
-    alt: "Butterneck product screenshot: a running app on a live preview with a chat beside it for change requests",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-ai-app-builder-vs-changing-your-existing-app.png",
+    alt: "Butterneck blog cover: AI app builder or change the app you already have",
+    width: 1200,
+    height: 630,
   },
   body: `
-AI app builders are one of the fastest-growing kinds of AI tool. You describe an app, and the builder generates it, hosts it and lets you keep refining it by chat. For a new idea, a prototype or an internal tool, that is often the quickest path there is.
+AI app builders have become a popular kind of AI tool. You describe an app, and the builder generates it, hosts it and lets you keep refining it by chat. For a new idea, a prototype or an internal tool, that is often the quickest path there is.
 
 Many product teams have a different problem. They already have an app, with customers, a codebase, tests and a release process. What they need is not a new app but small changes to the one they ship. This post compares the two paths and helps you pick. We make Butterneck, which is built for the second one, so we are not neutral.
 
@@ -57,7 +57,7 @@ Check each builder's own docs for how it handles code ownership, Git and hosting
 
 Butterneck does not commit, push or open a pull request, and it never merges or deploys. For more tools in this category, see [tools for non-developers to change an existing app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. No card is needed; if you sign out, you're asked to create a free account. On your own project, the edit runs on your computer, and your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 
