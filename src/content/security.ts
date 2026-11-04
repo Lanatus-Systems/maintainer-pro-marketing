@@ -1,9 +1,9 @@
 export const SECURITY = {
   path: "/security",
   title: "Security",
-  seoTitle: "AI coding agent security: where edits run",
+  seoTitle: "Security for AI change requests: where edits run",
   description:
-    "Where a Butterneck edit happens, which folder it can touch, what is on the ignore list, who can send a request, and who sees the project.",
+    "Where an AI change request is edited (on the connected computer), which folder it can touch, what is on the ignore list, who can send a request, and who sees the project.",
   lead: "A reviewer usually asks six things. Here they are.",
   facts: [
     {
