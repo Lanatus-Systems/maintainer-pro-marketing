@@ -199,6 +199,7 @@ export const FAQS = [
       "The AI coding agent a developer already uses makes the change on that developer’s computer, and the product manager sees it on the live preview.",
       "Nothing goes live on its own. A developer looks once and publishes it the usual way, so the wait is one review instead of a long hand-off.",
     ],
+    link: { href: "/blog/how-pms-can-change-a-live-app-without-waiting-on-engineering", text: "How PMs change a live app" },
   },
   {
     q: "Are there AI tools where a non-developer can request a code change and preview it before a pull request is opened?",
