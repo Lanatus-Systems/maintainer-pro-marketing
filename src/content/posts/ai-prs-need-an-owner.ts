@@ -113,7 +113,7 @@ Faros puts the problem plainly: "the code arriving for review is often not revie
 
 ## Where AI code review tools fit
 
-A common answer to the review bottleneck is more AI: AI code review tools and AI code review agents that comment on a pull request before a human looks at it. On GitHub, for example, Copilot can review pull requests, and Copilot approvals can count toward required approvals if a repository admin turns them on (they are off by default). These tools can catch issues earlier and shorten the first pass.
+A common answer to the review bottleneck is more AI: AI code review tools and AI code review agents that comment on a pull request before a human looks at it. On GitHub, for example, Copilot can review pull requests, and Copilot approvals can count toward required approvals if an admin turns them on (they are off by default). These tools can catch issues earlier and shorten the first pass.
 
 They don't answer the question the LinearB report raises, though: who owns the change. An AI reviewer can tell you a diff looks fine; it can't tell you the change is what the person asking wanted, or take responsibility for shipping it. That is why we treat AI code review as one input to a developer's review, not a replacement for it. A developer still reviews and decides what ships.
 

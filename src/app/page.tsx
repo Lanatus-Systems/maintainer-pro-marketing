@@ -21,7 +21,7 @@ import { appUrl, SITE_TITLE, siteUrl, WALKTHROUGH_URL } from "@/lib/site";
 
 /** Search snippet for the home page (under ~160 characters; same claims as the site description). */
 const HOME_DESCRIPTION =
-  "A PM asks for a change on a live preview. The AI coding agents you use edit it on your computer; a developer decides what ships. Butterneck opens no PRs.";
+  "A PM asks for a change on a live preview. Your coding agent edits it on the connected computer; a developer decides what ships. Butterneck opens no PRs.";
 
 /** Tools the site already names: the developer's own AI coding agent, and Jira Cloud. */
 const TOOLS = ["Cursor", "Claude Code", "Antigravity", "Jira Cloud"] as const;
