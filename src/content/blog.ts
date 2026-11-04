@@ -19,6 +19,7 @@ import { post as changeRequestTemplate } from "@/content/posts/how-to-write-a-ch
 import { post as pmPilot } from "@/content/posts/pm-change-request-pilot-proposal";
 import { post as toolsLandscape } from "@/content/posts/tools-for-non-developers-to-change-an-existing-app";
 import { post as previewBeforePr } from "@/content/posts/live-preview-before-pull-request";
+import { post as vibeTeams } from "@/content/posts/vibe-coding-for-teams";
 
 export type BlogPost = {
   slug: string;
@@ -43,7 +44,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
