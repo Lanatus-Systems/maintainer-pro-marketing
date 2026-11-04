@@ -10,10 +10,10 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["vibe coding for teams", "vibe coding", "vibe coding tools", "AI change requests", "product teams", "human in the loop"],
   cover: {
-    src: "/blog/product-app-with-chat.png",
-    alt: "Butterneck product screenshot: a running app on a live preview with a chat beside it for change requests",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-vibe-coding-for-teams.png",
+    alt: "Butterneck blog cover: Vibe coding for teams. Anyone asks on a live preview, and a developer decides what ships",
+    width: 1200,
+    height: 630,
   },
   body: `
 "Vibe coding" started as a solo habit: describe what you want, let an AI coding agent write it, look at the result, and keep going without reading every line. For a weekend project that is fine. For a product a team already ships to customers, it raises fair questions. Who is allowed to ask? Who checks the result? Who decides what goes live?
@@ -63,7 +63,7 @@ Butterneck calls these requests AI change requests. A developer connects a compu
 
 Butterneck does not commit, push or open a pull request, and it never merges or deploys. A developer decides what ships.
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. No card is needed; if you sign out, you're asked to create a free account. On your own project, the edit runs on your computer, and your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 
