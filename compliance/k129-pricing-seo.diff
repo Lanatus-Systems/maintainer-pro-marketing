@@ -1,0 +1,15 @@
+diff --git a/src/app/pricing/page.tsx b/src/app/pricing/page.tsx
+index 250d3ad..be0d474 100644
+--- a/src/app/pricing/page.tsx
++++ b/src/app/pricing/page.tsx
+@@ -67,8 +67,8 @@ const PRICING_FAQS = [
+ ] as const;
+ 
+ export const metadata = pageMeta({
+-  title: `Pricing: free Starter, Pro $${usd}, one-month trial`,
+-  description: `Starter is free for 1 developer and 1 requester. Pro is $${usd} per person a month, with a one-month trial. AI runs on your own coding agent plan, no markup.`,
++  title: `Pricing for AI change requests: free Starter, Pro $${usd}`,
++  description: `AI change requests for product teams: Starter free for 1 developer + 1 requester; Pro $${usd}/person/month with a one-month trial. AI runs on your own coding agent plan.`,
+   path: "/pricing",
+ });
+ 
