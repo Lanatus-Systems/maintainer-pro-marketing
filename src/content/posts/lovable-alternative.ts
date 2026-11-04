@@ -10,10 +10,10 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams"],
   cover: {
-    src: "/blog/product-app-with-chat.png",
-    alt: "Butterneck product screenshot: a running app on a live preview with a chat beside it for change requests",
-    width: 1280,
-    height: 720,
+    src: "/blog/cover-lovable-alternative.png",
+    alt: "Butterneck blog cover: Lovable alternative for teams with an existing app, an honest comparison",
+    width: 1200,
+    height: 630,
   },
   body: `
 If you're looking at Lovable and wondering whether an alternative fits your team better, this post compares Lovable and Butterneck. We make Butterneck, so we are not neutral. The two products mostly solve different problems, and for many teams Lovable is the better choice. We've tried to stick to what Lovable says publicly and to be clear about where each one fits.
@@ -63,7 +63,7 @@ Butterneck does not host your app, and it does not commit, push, open pull reque
 | Git | Two-way sync with a new GitHub repo; its GitHub app can open PRs | Edits files only; a developer commits and opens the PR |
 | Who decides what ships | Depends on your setup | A developer |
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. No card is needed; if you sign out, you're asked to create a free account. On your own project, the edit runs on your computer, and your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 
