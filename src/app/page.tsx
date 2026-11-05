@@ -53,7 +53,7 @@ export default function HomePage() {
           </h1>
           <p className="landing-lead">
             A product manager describes the change on a live copy of the product. The AI reads a
-            one-line request or a messy ticket, and edits the project on your computer. A developer
+            one-line request or a messy ticket, and edits the project on a developer's connected computer. A developer
             looks once, then puts it live or leaves it there.
           </p>
           <p className="landing-quiet landing-definition">{DEFINITION}</p>
@@ -251,7 +251,7 @@ export default function HomePage() {
           <p className="landing-kicker">Your call</p>
           <h2 id="safety-heading">You decide what goes live.</h2>
           <p className="landing-section-lead">
-            The AI edits the project on your computer. Your team publishes it.
+            The AI edits the project on a developer's connected computer. Your team publishes it.
           </p>
         </div>
         <div>
