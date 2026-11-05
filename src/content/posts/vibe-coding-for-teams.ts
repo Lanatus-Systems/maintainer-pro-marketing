@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "vibe-coding-for-teams",
   title: "Vibe coding for teams: how to let the whole product team ask for changes, safely",
-  seoTitle: "Vibe coding for teams: ship it safely with a review step",
+  seoTitle: "AI change requests: vibe coding for teams with a review step",
   description:
-    "Vibe coding for teams: let PMs and designers describe changes on a live preview, have an AI coding agent make them, and keep a developer deciding what ships.",
+    "AI change requests for teams doing vibe coding: PMs and designers ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["vibe coding for teams", "vibe coding", "vibe coding tools", "AI change requests", "product teams", "human in the loop"],
