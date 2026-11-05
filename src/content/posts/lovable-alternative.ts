@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "lovable-alternative",
   title: "Lovable alternative for teams with an existing app: an honest comparison with Butterneck",
-  seoTitle: "Lovable alternative for existing apps: Butterneck compared",
+  seoTitle: "AI change requests: Lovable alternative for existing apps",
   description:
-    "Lovable vs Butterneck, from Lovable's public site: building new apps in Lovable vs asking for changes on your existing app with your own coding agent.",
+    "AI change requests as a Lovable alternative: PMs ask on a live preview of your existing app, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams"],

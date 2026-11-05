@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "ai-app-builder-vs-changing-your-existing-app",
   title: "AI app builder or change the app you already have? How product teams should choose",
-  seoTitle: "AI app builder vs changing the app you already have",
+  seoTitle: "AI change requests: AI app builder vs your existing app",
   description:
-    "AI app builders start new apps from a prompt. If your product already runs, here's when to change the existing app with your own coding agent instead.",
+    "AI change requests vs AI app builders: PMs ask on a live preview of the app you already have, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["ai app builder", "no code app builder", "AI change requests", "product teams", "existing codebase", "AI coding agents"],
