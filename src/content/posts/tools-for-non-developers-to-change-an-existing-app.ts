@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "tools-for-non-developers-to-change-an-existing-app",
   title: "AI tools that let non-developers change an existing web app (2026)",
-  seoTitle: "AI tools that let PMs and non-developers change an existing app",
+  seoTitle: "AI change requests: tools for non-developers to change an existing app",
   description:
-    "Compare AI tools that let PMs and designers change an existing web app: who asks, where the agent runs, PR or no PR, Jira, and published prices (Oct 2026).",
+    "AI change requests: tools for non-developers to change an existing app — PMs ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-10-28",
   updated: "2026-11-05",
   author: "The Butterneck team",
