@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "agentic-coding-for-product-teams",
   title: "Agentic coding for product teams: what it is, and how non-developers can use it",
-  seoTitle: "Agentic coding for product teams and non-developers",
+  seoTitle: "AI change requests: agentic coding for product teams",
   description:
-    "What agentic coding means, how it differs from autocomplete, and how PMs and designers can use a developer's coding agent on a live preview without a terminal.",
+    "AI change requests for agentic coding: PMs and non-developers ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["agentic coding", "AI coding agents", "AI change requests", "product teams", "Claude Code", "Cursor"],
