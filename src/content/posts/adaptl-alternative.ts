@@ -19,7 +19,7 @@ export const post: BlogPost = {
   body: `
 Adaptl and Butterneck both start from the same idea: the person who asked for a change should try it on a running app before it ships, and the team's own coding agent should do the work. They make different choices after that. We make Butterneck, so we are not neutral. We have stuck to what Adaptl says on its public site, and we say where Adaptl may be the better pick.
 
-Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai), its [compare page](https://adaptl.ai/compare.html), and its [llms.txt](https://adaptl.ai/llms.txt), as read on November 5, 2026. Adaptl is a young product and is changing fast. Check its site for the current details.
+Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai), its [compare page](https://adaptl.ai/compare.html), and its [llms.txt](https://adaptl.ai/llms.txt), and its [llms-full.txt](https://adaptl.ai/llms-full.txt), as read on November 5, 2026. Adaptl is a young product and is changing fast. Check its site for the current details.
 
 > **Adaptl vs Butterneck, in short:** Adaptl asks you to confirm a plan, then opens the GitHub issue, branch and draft pull request itself, hands the brief to your agent, and fills the preview with made-up customers. Butterneck works on the app as it already runs on a developer's connected computer, can start from a Jira label, and does not commit, push or open a pull request. The edit runs on a developer's connected computer. Your team still decides what goes live.
 
@@ -33,7 +33,7 @@ Adaptl's home page title and H1 now say it makes AI-built software **easier to o
 - You try it as your customers: sign in as made-up customers, or describe it and AI tries it ("on your own computer for now" on Adaptl's site). Pin what's wrong; the agent fixes it. Clients can review by link without joining the team.
 - Your team merges. Adaptl "never merges by itself."
 
-Its FAQ still says Adaptl prepares a normal pull request on GitHub and that the preview never uses your customers' records: "Every person and record in a preview is made up." Its \`llms.txt\` (5 Nov 2026) also says Adaptl opens the issue, branch and draft pull request for each change after the plan is confirmed.
+Its FAQ still says Adaptl prepares a normal pull request on GitHub and that the preview never uses your customers' records: "Every person and record in a preview is made up." Its \`llms-full.txt\` (5 Nov 2026) also says that once a person confirms the plan, Adaptl opens the issue, branch and draft pull request on GitHub.
 
 Other things on the site and in \`llms.txt\`: **Map** (what the product does), **Lineage** (how it got here), **What changes for users** before merge, helper agents (**Product** and **Speed and memory** marked Working; code review, architecture, errors, cloud and cost marked Coming), and client review links. A playground for exploring a shared project is still linked from marketing, but \`https://inloop.adaptl.ai/playground\` returned **404** when we checked on 4 Nov and again on 5 Nov 2026. Stack detail (PostgreSQL; Django, Prisma, SQLAlchemy or SQL; GitHub; Saleor and Cal.com mentioned for assistants) lives mainly in \`llms.txt\` / \`llms-full.txt\` rather than as a long homepage list.
 
