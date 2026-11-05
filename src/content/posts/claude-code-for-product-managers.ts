@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "claude-code-for-product-managers",
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
-  seoTitle: "Claude Code for product managers: no repo or terminal needed",
+  seoTitle: "AI change requests: Claude Code for product managers, no terminal",
   description:
-    "Claude Code for product managers, without a terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits it, a developer decides.",
+    "AI change requests for product managers using Claude Code, without a terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits it, a developer decides.",
   date: "2026-10-28",
   updated: "2026-11-05",
   author: "The Butterneck team",
