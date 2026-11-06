@@ -19,7 +19,7 @@ export const post: BlogPost = {
   body: `
 Adaptl and Butterneck both start from the same idea: the person who asked for a change should try it on a running app before it ships, and the team's own coding agent should do the work. They make different choices after that. We make Butterneck, so we are not neutral. We have stuck to what Adaptl says on its public site, and we say where Adaptl may be the better pick.
 
-Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai), its [compare page](https://adaptl.ai/compare.html), and its [llms.txt](https://adaptl.ai/llms.txt), and its [llms-full.txt](https://adaptl.ai/llms-full.txt), as read on November 5, 2026. Adaptl is a young product and is changing fast. Check its site for the current details.
+Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai), its [compare page](https://adaptl.ai/compare.html), and its [llms.txt](https://adaptl.ai/llms.txt) and its [llms-full.txt](https://adaptl.ai/llms-full.txt), as read on November 5, 2026. Adaptl is a young product and is changing fast. Check its site for the current details.
 
 > **Adaptl vs Butterneck, in short:** Adaptl asks you to confirm a plan, then opens the GitHub issue, branch and draft pull request itself, hands the brief to your agent, and fills the preview with made-up customers. Butterneck works on the app as it already runs on a developer's connected computer, can start from a Jira label, and does not commit, push or open a pull request. The edit runs on a developer's connected computer. Your team still decides what goes live.
 
@@ -51,7 +51,7 @@ Butterneck does not commit, push, open a pull request, merge or deploy. To be ex
 
 | | Adaptl (as of 5 Nov 2026) | Butterneck |
 |---|---|---|
-| Who opens the pull request | After plan confirm, Adaptl opens the issue, branch and draft PR on GitHub | Nobody, automatically. The developer decides whether to commit and open a PR |
+| Who opens the pull request | After you confirm the plan, Adaptl opens the issue, branch and draft PR on GitHub | Nobody, automatically. The developer decides whether to commit and open a PR |
 | Code host | GitHub repo, or start a project from scratch | Any project folder that runs on the developer's connected computer |
 | Data in the preview | Made-up customers written through your app's models | The app as it runs on the developer's connected computer, with whatever data it has there |
 | Agents | Claude Code, Codex, Aider, or an agent mentioned on the PR | Cursor, Claude Code or Antigravity CLI |
