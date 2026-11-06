@@ -23,10 +23,10 @@ export const AASAANWEB_OG_IMAGE = `${SITE_URL}${AASAANWEB_ASSETS}/og.png`;
 const OG_IMAGE_ALT = "AasaanWeb logo on navy: Create or edit your business website in plain words.";
 
 /** Bump when home page copy changes (used by the sitemap). */
-export const AASAANWEB_HOME_UPDATED = "2026-10-29";
+export const AASAANWEB_HOME_UPDATED = "2026-11-06";
 
 /** Bump when /about copy changes (used by the sitemap). */
-export const AASAANWEB_ABOUT_UPDATED = "2026-10-30";
+export const AASAANWEB_ABOUT_UPDATED = "2026-11-06";
 
 const openGraph = (url?: string): NonNullable<Metadata["openGraph"]> => ({
   type: "website",
@@ -54,7 +54,7 @@ export const aasaanWebLayoutMetadata: Metadata = {
   title: { default: brand.title, template: `%s – ${brand.name}` },
   description: brand.description,
   applicationName: brand.name,
-  publisher: "Butterneck",
+  publisher: "AasaanWeb",
   openGraph: openGraph(),
   twitter,
   icons: {
@@ -91,7 +91,11 @@ export function PageUrlTags({ path }: { path: string }) {
   );
 }
 
-export const ORG_ID = "https://www.butterneck.com/#organization";
+/** AasaanWeb Organization: publisher of AasaanWeb marketing pages (site-fix 19). */
+export const ORG_ID = "https://aasaanweb.butterneck.com/#organization";
+
+/** Butterneck remains the maker / parentOrganization; never the AasaanWeb page publisher. */
+export const BUTTERNECK_ORG_ID = "https://www.butterneck.com/#organization";
 
 /**
  * featureList for the #app node: only claims verified on the live site
@@ -103,12 +107,27 @@ export const AASAANWEB_FEATURES = [
   "Review a preview before you publish",
 ];
 
-/** WebSite + SoftwareApplication, as in brand-data.ts. No offers block (no price in AasaanWeb copy). */
+/** WebSite + SoftwareApplication + AasaanWeb Organization. No offers block (no price in AasaanWeb copy). */
 export function aasaanWebJsonLd() {
   const home = siteUrl("/");
   return {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "Organization",
+        "@id": ORG_ID,
+        name: "AasaanWeb",
+        url: home,
+        alternateName: ["Aasaan Web", "आसान वेब"],
+        parentOrganization: { "@id": BUTTERNECK_ORG_ID },
+        maker: { "@id": BUTTERNECK_ORG_ID },
+      },
+      {
+        "@type": "Organization",
+        "@id": BUTTERNECK_ORG_ID,
+        name: "Butterneck",
+        url: "https://www.butterneck.com/",
+      },
       {
         "@type": "WebSite",
         "@id": `${home}#website`,
@@ -130,12 +149,8 @@ export function aasaanWebJsonLd() {
         image: AASAANWEB_OG_IMAGE,
         inLanguage: ["en-IN", "hi-IN"],
         featureList: AASAANWEB_FEATURES,
-        publisher: {
-          "@type": "Organization",
-          "@id": ORG_ID,
-          name: "Butterneck",
-          url: "https://www.butterneck.com/",
-        },
+        publisher: { "@id": ORG_ID },
+        maker: { "@id": BUTTERNECK_ORG_ID },
       },
       {
         "@type": "FAQPage",

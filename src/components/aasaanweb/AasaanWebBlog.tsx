@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { AasaanWebShell, START_URL } from "@/components/aasaanweb/AasaanWebShell";
 import { AasaanWebPostBody } from "@/components/aasaanweb/AasaanWebPostBody";
 import { AASAANWEB_WHATSAPP_LABEL, AASAANWEB_WHATSAPP_URL } from "@/components/aasaanweb/whatsapp";
-import { aasaanWebSubpageMeta } from "@/lib/aasaanweb";
+import { ORG_ID, aasaanWebSubpageMeta } from "@/lib/aasaanweb";
 import {
   aasaanWebReadingMinutes,
   formatAasaanWebDate,
@@ -16,7 +16,6 @@ import type { Metadata } from "next";
 import "@/app/aasaanweb-home/aasaanweb.css";
 import "./blog.css";
 
-const ORG_ID = "https://www.butterneck.com/#organization";
 const BLOG_TITLE = "Blog";
 const BLOG_DESCRIPTION =
   "AasaanWeb blog: simple guides for small Indian businesses on making a website, keeping it up to date, and getting customers to call, visit or WhatsApp.";
@@ -175,6 +174,7 @@ export function AasaanWebBlogPost({ post, preview }: { post: AasaanWebPost; prev
               dateModified: post.updated ?? post.date,
               author: { "@type": "Organization", name: post.author, url: siteUrl("/") },
               publisher: { "@id": ORG_ID },
+              isPartOf: { "@id": `${siteUrl("/")}#website` },
               mainEntityOfPage: url,
               keywords: post.keywords.join(", "),
               inLanguage: post.lang,
