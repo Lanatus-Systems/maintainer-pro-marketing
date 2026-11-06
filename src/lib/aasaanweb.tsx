@@ -120,7 +120,6 @@ export function aasaanWebJsonLd() {
         url: home,
         alternateName: ["Aasaan Web", "आसान वेब"],
         parentOrganization: { "@id": BUTTERNECK_ORG_ID },
-        maker: { "@id": BUTTERNECK_ORG_ID },
       },
       {
         "@type": "Organization",
