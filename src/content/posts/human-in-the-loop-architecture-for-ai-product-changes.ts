@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "human-in-the-loop-architecture-for-ai-product-changes",
   title: "Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes",
-  seoTitle: "Human-in-the-loop architecture for AI product changes",
+  seoTitle: "AI change requests: human-in-the-loop architecture for AI product changes",
   description:
-    "Why non-developer requests to coding agents should stop short of auto-merge, and the live-preview, no-merge architecture Butterneck uses.",
+    "AI change requests with a human-in-the-loop architecture: PMs ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-10-27",
   updated: "2026-11-05",
   author: "The Butterneck team",

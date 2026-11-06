@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "jira-ticket-to-pr-with-ai",
   title: "Jira ticket to pull request with AI: check a live preview before anyone opens the PR",
-  seoTitle: "Jira ticket to pull request with AI, via a live preview",
+  seoTitle: "AI change requests: Jira ticket to pull request with AI",
   description:
-    "Label a Jira ticket, an AI coding agent makes the change on a live copy, the requester checks the preview, and a developer decides whether to open a PR.",
+    "AI change requests from a Jira ticket: label starts work, an AI coding agent edits on a developer's connected computer, the requester checks a live preview, Butterneck opens no PRs, and a developer decides whether to open a PR.",
   date: "2026-10-27",
   updated: "2026-11-05",
   author: "The Butterneck team",

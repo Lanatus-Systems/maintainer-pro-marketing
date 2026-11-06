@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "share-local-app-without-deploying",
   title: "Share your local app with stakeholders without deploying it",
-  seoTitle: "Share localhost with stakeholders without deploying",
+  seoTitle: "AI change requests: share local app without deploying",
   description:
-    "Share localhost with a PM or stakeholder without deploying: a live link to the app on your computer, a chat to ask for changes, and AI edits on the preview.",
+    "AI change requests on a shared local app: PMs open a live link to the app on a developer's connected computer, ask in chat, an AI coding agent edits, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-10-27",
   updated: "2026-11-02",
   author: "The Butterneck team",
