@@ -43,7 +43,7 @@ Homepage ke "Say it the way you would say it out loud" examples jaisi lines kaaf
 Jo aap khud badal sakte ho: headline, photo, hours, phone, price, button, aur FAQ/proof sections. Har badlaav pehle preview par aata hai; sirf request se public nahi hota — publish aap karte ho. Chhote badlaav lagbhag 10 minute mein live. Website kaise banti hai yeh jaanna zaroori nahi. Agar Hindi mein madad aasaan ho, to business ya badlaav batate waqt Hindi help available hai.
 
 ## Pehle se site hai? Update bhi isi tarah
-Agar page pehle se live hai: jo page pehle se live hai use connect karke customer view kholo, jo stale hai woh batao, preview par dekho, phir publish. Menu badla, sale khatam, teen saal purani photo, mobile pe galat number — yeh redesign nahi, chhote corrections hain. Aise chhote badlaav bhi lagbhag 10 minute mein live.
+Agar page pehle se live hai: use connect karke customer view kholo, jo stale hai woh batao, preview par dekho, phir publish. Menu badla, sale khatam, teen saal purani photo, mobile pe galat number — yeh redesign nahi, chhote corrections hain. Aise chhote badlaav bhi lagbhag 10 minute mein live.
 
 ## Asli pages dekhiye
 Parmanand Industries (Jamnagar), Shivam Industries (Rajkot) aur EL360 — [Our work](https://aasaanweb.butterneck.com/work) par. Har page batata hai business kya karta hai aur customer kaise contact kare.

@@ -25,7 +25,7 @@ AasaanWeb par flow aisa hai:
 Website kaise banti hai yeh jaanna zaroori nahi. Har badlaav pehle preview par aata hai; sirf request se public nahi hota.
 
 ## Landing page pe kya hona chahiye
-Live "must-haves" soch ke short checklist:
+Page par yeh cheezein zaroor rakhiye:
 
 - **Headline** jo pehli nazar mein business bataye (kya + kahan / kis ke liye).
 - **Services / offer** short lines mein — sirf jo aap sach mein dete ho.
