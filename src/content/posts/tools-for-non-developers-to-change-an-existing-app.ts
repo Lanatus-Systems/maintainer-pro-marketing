@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "AI tools that let non-developers change an existing web app (2026)",
   seoTitle: "AI change requests: tools for non-developers to change an existing app",
   description:
-    "AI change requests: tools for non-developers to change an existing app — PMs ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
+    "AI change requests: compare tools that let PMs and non-developers change an existing app — who asks, where the agent runs, whether it opens a PR, Jira support and published prices.",
   date: "2026-10-28",
   updated: "2026-11-05",
   author: "The Butterneck team",
