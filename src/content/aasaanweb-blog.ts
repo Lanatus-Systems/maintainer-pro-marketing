@@ -24,6 +24,64 @@ export type AasaanWebPostEntry = {
 export const AASAANWEB_BLOG_FALLBACK_COVER = "/aasaanweb/blog/cover-fallback.png";
 
 export const AASAANWEB_POSTS: AasaanWebPostEntry[] = [
+
+  {
+    slug: "landing-page-kaise-banaye",
+    draft: false,
+    date: "2026-11-06",
+    lang: "hi-Latn-IN",
+    author: "AasaanWeb team",
+  },
+  {
+    slug: "website-for-salon-business",
+    draft: false,
+    date: "2026-11-06",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+  },
+  {
+    slug: "mobile-se-website-kaise-banaye",
+    draft: false,
+    date: "2026-11-06",
+    lang: "hi-Latn-IN",
+    author: "AasaanWeb team",
+  },
+  {
+    slug: "website-for-dental-clinic",
+    draft: false,
+    date: "2026-11-06",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/website-for-dental-clinic.png",
+    coverAlt: "Cover for the guide: website for a dental clinic with hours, services and a call button.",
+  },
+  {
+    slug: "website-for-tuition-centre",
+    draft: false,
+    date: "2026-11-06",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/website-for-tuition-centre.png",
+    coverAlt: "Cover for the guide: website for a tuition centre with batches, timings and an enquiry button.",
+  },
+  {
+    slug: "one-page-website-for-small-business",
+    draft: false,
+    date: "2026-11-06",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/one-page-website-for-small-business.png",
+    coverAlt: "Cover for the guide: why a one page website is often enough for a small business.",
+  },
+  {
+    slug: "website-for-manufacturers-india",
+    draft: false,
+    date: "2026-11-06",
+    lang: "en-IN",
+    author: "AasaanWeb team",
+    cover: "/aasaanweb/blog/website-for-manufacturers-india.png",
+    coverAlt: "Cover for the guide: website for manufacturers in India beyond a marketplace listing.",
+  },
   {
     slug: "whatsapp-business-ke-saath-website-kaise-jodein",
     draft: false,
