@@ -5,8 +5,9 @@ export const post: BlogPost = {
   title: "Can product managers change the app without engineering?",
   description: "Short answer: PMs can make and check small app changes themselves with an AI agent, but engineering should still decide what ships. Here is a setup that works.",
   date: "2026-11-03",
+  updated: "2026-11-10",
   author: "The Butterneck team",
-  tags: ["product managers", "AI change requests", "answer"],
+  tags: ["product managers", "AI change requests", "answer", "AI app builder"],
   cover: {
     src: "/blog/cover-how-pms-can-change-a-live-app.png",
     alt: "Butterneck blog cover: Can product managers change the app without engineering?",
@@ -43,6 +44,10 @@ That is how [Butterneck](/) works. Butterneck does not commit, push, open a pull
 For the longer version, read [how PMs can change a live app without waiting on engineering](/blog/how-pms-can-change-a-live-app-without-waiting-on-engineering).
 
 ## FAQ
+
+### Can product managers build apps without engineering or writing code?
+
+A new app, often yes: AI app builders can generate a prototype or an internal tool from a plain-language description, and many also host it. The product your customers already use is different. It has a codebase, tests and a release process, so the realistic version is the setup above: the PM describes the change and checks it on a live copy, the team's own coding agent edits the existing project, and a developer decides what ships. See [AI app builder or change the app you already have?](/blog/ai-app-builder-vs-changing-your-existing-app)
 
 ### Do product managers need to learn to code?
 

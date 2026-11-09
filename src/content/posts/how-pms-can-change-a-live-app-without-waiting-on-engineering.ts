@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask on a live preview, an AI coding agent edits the project, and a developer decides what ships. No backlog relay.",
   date: "2026-10-27",
-  updated: "2026-11-09",
+  updated: "2026-11-10",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts"],
   cover: {
@@ -125,7 +125,7 @@ Usually not because the code is hard. The time goes into the relay around it: wr
 
 ### How do you clear a backlog of UI papercuts (small copy and UI changes)?
 
-UI papercuts are the small copy, layout and visual fixes everyone agrees on and nobody schedules. Put the small copy, layout and UI tickets in one list, close the stale ones, and write each remaining one as "where, what it says now, what it should say". Then take them out of the sprint queue: the person who raised each one asks for it on a live copy of the app and checks the result there, and a developer reviews the finished changes and decides what ships. Keep pricing logic, permissions and data-model changes in the normal engineering flow.
+UI papercuts are the small copy, layout and visual fixes everyone agrees on and nobody schedules. Put those tickets in one list, close the stale ones, and write each remaining one as "where, what it says now, what it should say". Then take them out of the sprint queue: the person who raised each one asks for it on a live copy of the app and checks the result there, and a developer reviews the finished changes and decides what ships. Keep pricing logic, permissions and data-model changes in the normal engineering flow.
 
 ### Can a PM change a live app without engineering?
 
