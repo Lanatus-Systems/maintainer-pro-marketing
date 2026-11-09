@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
-  updated: "2026-11-05",
+  updated: "2026-11-10",
   author: "The Butterneck team",
-  tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR"],
+  tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
     src: "/blog/cover-jira-ticket-to-reviewable-change-v2.png",
     alt: "Butterneck blog cover: from a labeled Jira ticket to a live preview that a developer reviews and ships",
@@ -156,6 +156,10 @@ Add the label \`butterneck\` and assign the ticket to a teammate whose Jira acco
 ### Does the AI read the ticket's comments and attachments?
 
 Yes. The ticket's title, description, latest comments and attached files become the request, so a screenshot on the ticket reaches the coding agent. Leave secrets and production data out of the ticket.
+
+### Which Jira tickets should you give an AI coding agent?
+
+Small, visible changes that the person who asked can check on screen: copy and labels, spacing and layout, an empty state, a new column or filter. Write the ticket as where it is, what it says now, what it should say and what must stay the same. Keep login and permissions, billing, database changes and secrets with a developer. More in [how to write a change request for AI](/blog/how-to-write-a-change-request-for-ai).
 
 ### Which Jira versions are supported?
 
