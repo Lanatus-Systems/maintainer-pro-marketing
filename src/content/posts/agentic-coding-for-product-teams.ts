@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Agentic coding for product teams: what it is, and how non-developers can use it",
   seoTitle: "AI change requests: agentic coding for product teams",
   description:
-    "AI change requests for agentic coding: PMs and non-developers ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
+    "AI change requests for agentic coding: PMs and non-developers ask on a live preview, an AI coding agent edits the project, a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["agentic coding", "AI coding agents", "AI change requests", "product teams", "Claude Code", "Cursor"],

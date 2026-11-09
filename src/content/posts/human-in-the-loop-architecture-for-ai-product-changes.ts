@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes",
   seoTitle: "AI change requests: human-in-the-loop architecture for AI product changes",
   description:
-    "AI change requests with a human-in-the-loop architecture: PMs ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
+    "AI change requests with a human-in-the-loop architecture: the requester checks a live preview, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-10-27",
   updated: "2026-11-05",
   author: "The Butterneck team",

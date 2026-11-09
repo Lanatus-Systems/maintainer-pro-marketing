@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "How Butterneck runs an AI coding agent in a sandbox on your own machine",
   seoTitle: "AI change requests: coding agent sandbox on your machine",
   description:
-    "How Butterneck runs Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback and preview links. A developer decides what ships.",
+    "Run Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback, preview links.",
   date: "2026-10-27",
   updated: "2026-11-03",
   author: "The Butterneck team",

@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Jira ticket to pull request with AI: check a live preview before anyone opens the PR",
   seoTitle: "AI change requests: Jira ticket to pull request with AI",
   description:
-    "AI change requests from a Jira ticket: label starts work, an AI coding agent edits on a developer's connected computer, the requester checks a live preview, Butterneck opens no PRs, and a developer decides whether to open a PR.",
+    "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
   updated: "2026-11-05",
   author: "The Butterneck team",

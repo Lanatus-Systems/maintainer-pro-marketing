@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Vibe coding for teams: how to let the whole product team ask for changes, safely",
   seoTitle: "AI change requests: vibe coding for teams with a review step",
   description:
-    "AI change requests for teams doing vibe coding: PMs and designers ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
+    "AI change requests for teams doing vibe coding: PMs and designers ask on a live preview, an AI coding agent edits, and a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["vibe coding for teams", "vibe coding", "vibe coding tools", "AI change requests", "product teams", "human in the loop"],

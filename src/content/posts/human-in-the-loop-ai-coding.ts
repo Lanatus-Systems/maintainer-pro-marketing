@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Human-in-the-loop AI coding: a developer decides what ships",
   seoTitle: "AI change requests: human-in-the-loop AI coding",
   description:
-    "AI change requests with human-in-the-loop AI coding: PMs ask on a live preview, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
+    "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
   updated: "2026-11-03",
   author: "The Butterneck team",

@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Lovable alternative for teams with an existing app: an honest comparison with Butterneck",
   seoTitle: "AI change requests: Lovable alternative for existing apps",
   description:
-    "AI change requests as a Lovable alternative: PMs ask on a live preview of your existing app, an AI coding agent edits on a developer's connected computer, Butterneck opens no PRs, and a developer decides what ships.",
+    "AI change requests as a Lovable alternative for the app you already have: PMs ask on a live preview, an AI coding agent edits, a developer decides what ships.",
   date: "2026-11-05",
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams"],

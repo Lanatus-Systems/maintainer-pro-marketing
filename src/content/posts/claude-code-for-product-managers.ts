@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
   seoTitle: "AI change requests: Claude Code for product managers, no terminal",
   description:
-    "AI change requests for product managers using Claude Code, without a terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits it, a developer decides.",
+    "AI change requests for PMs using Claude Code, no terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits, a developer decides.",
   date: "2026-10-28",
   updated: "2026-11-05",
   author: "The Butterneck team",
@@ -108,6 +108,10 @@ They don't run or sign in to a coding tool themselves. Requests from the live pr
 ### Does Butterneck open pull requests for the PM's change?
 
 No. It edits files in the connected project and stops. A developer decides whether to commit it, open a pull request, or discard it. Butterneck never merges and never deploys.
+
+### Can product managers use Google Antigravity this way?
+
+Yes. Google's [Antigravity for product management](https://antigravity.google/use-cases/product-management/) page covers a PM running Antigravity themselves, for example to draft PRDs grounded in the codebase or put together prototypes. With Butterneck the PM doesn't open Antigravity at all: a developer connects a computer that has the project and the Antigravity CLI (\`agy\`) signed in, the PM types the change in a chat on a live preview of the existing app, and Antigravity makes the edit on that computer. The plan note above applies to Antigravity too. Butterneck does not commit, push or open a pull request, and a developer decides what ships.
 
 ### Is there an AI coding agent for product managers that works on our existing codebase?
 
