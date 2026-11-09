@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask on a live preview, an AI coding agent edits the project, and a developer decides what ships. No backlog relay.",
   date: "2026-10-27",
-  updated: "2026-11-04",
+  updated: "2026-11-09",
   author: "The Butterneck team",
-  tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow"],
+  tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts"],
   cover: {
     src: "/blog/cover-how-pms-can-change-a-live-app.png",
     alt: "Butterneck blog cover: Let PMs change a live app. They ask in chat, the developer's AI builds it, and you publish",
@@ -123,9 +123,9 @@ To write these limits down for your team, use our [policy template for non-engin
 
 Usually not because the code is hard. The time goes into the relay around it: writing the ticket, finding the right screenshot, waiting for a sprint, answering a clarifying question, checking a staging deploy. Small fixes also lose prioritisation calls to features and bugs, so they wait.
 
-### How do you clear a backlog of small copy and UI changes?
+### How do you clear a backlog of UI papercuts (small copy and UI changes)?
 
-Put the small copy, layout and UI tickets in one list, close the stale ones, and write each remaining one as "where, what it says now, what it should say". Then take them out of the sprint queue: the person who raised each one asks for it on a live copy of the app and checks the result there, and a developer reviews the finished changes and decides what ships. Keep pricing logic, permissions and data-model changes in the normal engineering flow.
+UI papercuts are the small copy, layout and visual fixes everyone agrees on and nobody schedules. Put the small copy, layout and UI tickets in one list, close the stale ones, and write each remaining one as "where, what it says now, what it should say". Then take them out of the sprint queue: the person who raised each one asks for it on a live copy of the app and checks the result there, and a developer reviews the finished changes and decides what ships. Keep pricing logic, permissions and data-model changes in the normal engineering flow.
 
 ### Can a PM change a live app without engineering?
 
