@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests: tools that let PMs and non-developers change an existing app, compared on where the agent runs, PRs, Jira support and prices.",
   date: "2026-10-28",
-  updated: "2026-11-06",
+  updated: "2026-11-09",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October 2026 (prices and quotes re-read on each tool's own pages that day, except Itera; see the note under the table; Hexby checked 30 October 2026; Figma Make checked 30 October 2026; Inspect checked 30 October 2026; Vision checked 30 October 2026; Remix checked 30 October 2026; Lightsprint checked 30 October 2026; Sparkles checked 30 October 2026; Alloy checked 30 October 2026; medit checked 30 October 2026; Builder.io checked 31 October 2026; Netlify Agent Runners checked 31 October 2026; Kosuke checked 31 October 2026; PulseDev checked 31 October 2026; Revise checked 6 November 2026). Prices and features change; each row links to the page we read. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October to 6 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 > **In short:** AI tools that let non-developers change an existing web app connect an AI coding agent to the code a team already runs, so a product manager or designer can ask for a change in plain words. They differ in where the agent runs, what comes back (a prototype, a pull request or a live preview) and who decides what ships. Butterneck runs the developer's own agent on a computer the team connects; the person who asked checks the change on a live preview, and no pull request exists until a developer decides.
 
@@ -148,7 +148,7 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 - **You're a designer already working in Figma, on a Mac, with access to the repo:** Figma Make (closed beta).
 - **You want the person who asked to check the change before any PR exists, without installing anything:** PinAppAI, Butterneck.
 
-Prices last checked 29 October 2026, as published on each tool's own pages that day. Tell us if something here is out of date and we'll fix it.
+Check dates: prices and quotes were re-read on each tool's own pages on 29 October 2026, except Itera (see the note under the table). Hexby, Figma Make, Inspect, Vision, Remix, Lightsprint, Sparkles, Alloy and medit were checked on 30 October 2026; Builder.io, Netlify Agent Runners, Kosuke and PulseDev on 31 October 2026; Revise on 6 November 2026. Prices and features change. Tell us if something here is out of date and we'll fix it.
 
 For a product manager who wants to try Claude Code without setting up the repo, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
