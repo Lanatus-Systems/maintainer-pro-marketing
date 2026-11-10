@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "AI change requests with a live preview before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-11-03",
+  updated: "2026-11-11",
   author: "The Butterneck team",
-  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments"],
+  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off"],
   cover: {
     src: "/blog/cover-live-preview-before-pull-request.png",
     alt: "Butterneck blog cover: Live preview before the PR. The requester checks it is what they meant, then the developer decides what ships",
@@ -180,6 +180,10 @@ The exact change on the screen it was asked from, the wording, empty, loading an
 ### Who decides whether the change ships?
 
 A developer, using the team's normal release process. The requester's sign-off means "this is what I asked for", not "ship it".
+
+### How do you get stakeholder sign-off on a UI change before it merges?
+
+Put the sign-off where the stakeholder can see the running change. For work a developer builds, that's usually a preview link on each pull request, with the stakeholder's approval required before merge. For small changes the stakeholder asked for, Butterneck moves it earlier: they check the change on a live preview of the app running on a developer's connected computer, before any pull request exists, and sign off in writing where they asked. A developer then reads the diff and decides whether to commit it and open a pull request. Either way, the sign-off means "this is what I asked for", not "ship it".
 
 ### Does Butterneck open a pull request after the preview?
 
