@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with a human-in-the-loop architecture: the requester checks a live preview, Butterneck opens no PRs, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-05",
+  updated: "2026-11-11",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety", "human in the loop AI governance"],
   cover: {
@@ -119,6 +119,10 @@ People who can't read the diff ask a coding agent for changes on the running pro
 ### What is human in the loop AI governance?
 
 It means writing down where a person, not the model, has to decide. For AI product changes that usually covers who may ask a coding agent for changes, what they may ask for, who checks the result, and who decides what ships. In this architecture the requester checks a live preview and a developer still decides what ships; for the written rules, start from our [AI change request policy template](/blog/ai-change-request-policy-template).
+
+### How can a PM review an AI-written change without reading the code?
+
+Review the running change, not the diff. In Butterneck the person who asked checks the change on a live preview of the app: the screen they asked about, the wording, empty and error states, and a narrow window. If something is off, they say so in the same chat and the agent changes it again. When it is right, they sign off in writing where they asked. A developer still reads the diff and decides whether it ships, so the sign-off means "this is what I asked for", not "ship it".
 
 ### Is the coding agent sandboxed?
 
