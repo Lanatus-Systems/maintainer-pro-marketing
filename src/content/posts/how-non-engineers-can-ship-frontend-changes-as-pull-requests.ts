@@ -7,7 +7,7 @@ export const post: BlogPost = {
   date: "2026-11-03",
   updated: "2026-11-10",
   author: "The Butterneck team",
-  tags: ["pull requests", "non-developers", "answer"],
+  tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
     src: "/blog/cover-live-preview-before-pull-request.png",
     alt: "Butterneck blog cover: How can non-engineers ship frontend changes as pull requests?",
@@ -40,6 +40,10 @@ This is how [Butterneck](/) works. Butterneck itself does not commit, push or op
 - For other tools that do open PRs for non-developers, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ## FAQ
+
+### Can designers make UI changes to the live app without an engineer?
+
+Up to the last step, yes. A designer can ask for a copy, spacing, color or layout change on a live copy of the app and check it on the screen they mean, without waiting for an engineer. The production app only changes when a developer reviews the diff and ships it. Keep it to changes inside your existing design system; new features still start with design and scoping. The [AI change request policy template](/blog/ai-change-request-policy-template) lists what designers and PMs can ask for directly.
 
 ### Can a designer open the pull request themselves?
 

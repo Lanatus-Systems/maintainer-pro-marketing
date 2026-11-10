@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Small changes stuck in the backlog? How PMs can change a live app without waiting on engineering",
   seoTitle: "How PMs make AI change requests on a live app",
   description:
-    "AI change requests for product managers: ask on a live preview, an AI coding agent edits the project, and a developer decides what ships. No backlog relay.",
+    "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
   updated: "2026-11-10",
   author: "The Butterneck team",
