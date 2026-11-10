@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "AI change requests for PMs using Claude Code, no terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits, a developer decides.",
   date: "2026-10-28",
-  updated: "2026-11-05",
+  updated: "2026-11-10",
   author: "The Butterneck team",
-  tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers"],
+  tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers"],
   cover: {
     src: "/blog/cover-claude-code-for-product-managers.png",
     alt: "Butterneck blog cover: Claude Code for product managers, without a terminal. The PM asks on a live preview, the developer's Claude Code, Cursor or Antigravity makes the change, and a developer decides",
@@ -124,6 +124,10 @@ The files are edited on the connected computer. But the coding CLI sends code co
 ### Is there a free plan?
 
 Yes. Starter is free for one developer and one person who asks for changes.
+
+### Can designers use Claude Code this way too?
+
+Yes. A designer can type a copy, spacing, color or layout change in the chat on the live preview and check it on the screen they mean, without setting up Claude Code or the repository. Claude Code still runs on the developer's computer, and the developer still decides what ships. Anyone who sends requests counts as a seat on Pro; people who only open the share link to look don't. More in [how designers and PMs can ship frontend changes](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
 ## Try it
 
