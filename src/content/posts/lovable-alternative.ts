@@ -63,7 +63,7 @@ Butterneck does not host your app, and it does not commit, push, open pull reque
 | Git | Two-way sync with a new GitHub repo; its GitHub app can open PRs | Edits files only; a developer commits and opens the PR |
 | Who decides what ships | Depends on your setup | A developer |
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you're not signed in, you're asked to create a free account first. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 

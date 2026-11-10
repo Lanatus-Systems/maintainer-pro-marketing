@@ -57,6 +57,10 @@ No. They describe the change in plain words and check the result on the preview.
 
 Not with Butterneck. It edits files on the developer's computer and stops. A developer decides what becomes a commit and what goes live.
 
+### What if the AI gets the change wrong?
+
+Ask again on the same preview until it's right, or stop the turn. Each turn records a baseline first, so a stopped turn's file changes are usually rolled back; if the rollback can't be completed, the chat says so. Nothing reaches your users until a developer decides it ships. More in [how Butterneck runs the coding agent in a sandbox](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+
 ### What does it cost?
 
 Butterneck Starter is free for one developer and one person requesting changes. Pro is USD 19 per person per month. You also pay for your own coding agent. See [pricing](/pricing).

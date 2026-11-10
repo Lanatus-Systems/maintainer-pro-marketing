@@ -57,7 +57,7 @@ Check each builder's own docs for how it handles code ownership, Git and hosting
 
 Butterneck does not commit, push or open a pull request, and it never merges or deploys. For more tools in this category, see [tools for non-developers to change an existing app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you're not signed in, you're asked to create a free account first. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 

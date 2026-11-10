@@ -6,9 +6,9 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-05",
+  updated: "2026-11-10",
   author: "The Butterneck team",
-  tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams"],
+  tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
     src: "/blog/cover-ai-change-requests-for-product-teams.png",
     alt: "Butterneck blog cover: AI change requests for product teams. Teammates ask, AI builds locally, developers decide what goes live",
@@ -160,6 +160,10 @@ They let non-developers, like product managers and designers, ask for a change t
 ### Do requesters need technical skills?
 
 No. They use a share link in a browser, or a Jira label.
+
+### Can support teams use AI change requests?
+
+Yes, for the small fixes behind repeat tickets: a confusing label, a missing hint on a form, an unclear error message. The support lead opens the share link, types the change in the chat beside the live preview (a customer's screenshot can be attached), and checks the result on screen. A developer still reviews it and decides whether it ships. Keep anything that touches billing, refunds, permissions or customer data with a developer.
 
 ### Is the AI allowed to deploy?
 

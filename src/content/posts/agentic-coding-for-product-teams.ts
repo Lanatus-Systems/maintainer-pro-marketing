@@ -57,7 +57,7 @@ A developer connects a computer that already has the project and a coding CLI si
 
 Butterneck does not commit, push or open a pull request, and it never merges or deploys. We call these requests AI change requests; see [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you sign out, you're asked to create a free account. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you're not signed in, you're asked to create a free account first. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 
