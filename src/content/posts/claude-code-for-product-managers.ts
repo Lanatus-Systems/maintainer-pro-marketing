@@ -129,6 +129,10 @@ Yes. Starter is free for one developer and one person who asks for changes.
 
 Yes. A designer can type a copy, spacing, color or layout change in the chat on the live preview and check it on the screen they mean, without setting up Claude Code or the repository. Claude Code still runs on the developer's connected computer, and the developer still decides what ships. Anyone who sends requests counts as a seat on Pro; people who only open the share link to look don't. More in [how designers and PMs can ship frontend changes](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
+### Does this work with OpenAI Codex?
+
+Not today. The connector runs Claude Code (\`claude\`), Cursor's CLI (\`agent\`) or Antigravity (\`agy\`), signed in on the developer's connected computer. If your team only uses Codex, Butterneck isn't a fit for now.
+
 ## Try it
 
 If your PMs keep asking for small changes that sit in the backlog, [book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and we will run a real request on a live copy. Or see [pricing](/pricing) and start on the free plan.
