@@ -19,7 +19,7 @@ export const post: BlogPost = {
   body: `
 If you're looking at Lovable and wondering whether an alternative fits your team better, this post compares Lovable and Butterneck. We make Butterneck, so we are not neutral. The two products mostly solve different problems, and for many teams Lovable is the better choice. We've tried to stick to what Lovable says publicly and to be clear about where each one fits.
 
-Everything about Lovable below comes from its public website, [lovable.dev](https://lovable.dev), and its [GitHub integration docs](https://docs.lovable.dev/integrations/github), as read on 11 November 2026. Lovable changes quickly, so check its site for current details.
+Everything about Lovable below comes from its public website, [lovable.dev](https://lovable.dev), and its [GitHub integration docs](https://docs.lovable.dev/integrations/github) and its [import guide](https://docs.lovable.dev/features/projects/import-project), as read on 11 November 2026. Lovable changes quickly, so check its site for current details.
 
 > **Lovable vs Butterneck, in short:** Lovable is an AI app builder: you describe what you want and it builds, hosts and runs the app, with optional two-way sync to a new GitHub repository. Butterneck is for teams whose app already exists: a PM asks for a change on a live preview of the running app, the coding agent a developer already uses edits the existing project on their computer, Butterneck does not commit, push or open a pull request, and a developer decides what ships.
 
