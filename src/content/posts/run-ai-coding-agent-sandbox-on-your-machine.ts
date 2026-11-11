@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "Run Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback, preview links.",
   date: "2026-10-27",
-  updated: "2026-11-03",
+  updated: "2026-11-11",
   author: "The Butterneck team",
-  tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links"],
+  tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links", "AI coding governance"],
   cover: {
     src: "/blog/cover-run-ai-coding-agent-sandbox-on-your-machine.png",
     alt: "How Butterneck runs an AI coding agent in a sandbox on your own machine",
@@ -108,6 +108,10 @@ Each private copy is tied to one folder the developer chooses, which can be a gi
 ### What if I need a harder boundary than a folder and an ignore list?
 
 Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. A container, a VM or Anthropic's sandbox runtime is the kind of boundary Anthropic recommends for sessions without permission prompts. Butterneck doesn't provide one. Butterneck is about who can ask for a change on a live preview and who decides what ships.
+
+### How do you let product managers use Claude Code or Cursor on the company codebase safely?
+
+There are two routes. If each PM gets their own seat and repository access, treat them like any new engineer: use the admin and sandbox settings your coding tool provides and keep production credentials out of reach. Or keep the coding agent with the developer. In Butterneck the PM asks in a chat on a live preview, and the agent runs on a computer the team connects, in one folder, with \`.env\` files on its ignore list (an instruction, not a hard block), and a stopped turn can be rolled back in most cases. The developer chooses who can send requests, and nothing in Butterneck opens a pull request, merges or deploys, so a developer still decides what ships. The PM doesn't need a coding-assistant seat, the repository or a terminal.
 
 ### Can a bad turn be undone?
 
