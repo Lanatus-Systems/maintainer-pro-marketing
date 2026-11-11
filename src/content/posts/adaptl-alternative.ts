@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "How Adaptl and Butterneck compare: who opens the pull request, what data the preview shows, where it runs, Jira, and pricing. Written by the Butterneck team.",
   date: "2026-11-03",
-  updated: "2026-11-05",
+  updated: "2026-11-11",
   author: "The Butterneck team",
   tags: ["Adaptl alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -25,7 +25,7 @@ Everything about Adaptl below comes from [adaptl.ai](https://adaptl.ai), its [co
 
 ## What Adaptl says it does
 
-Adaptl's home page title and H1 now say it makes AI-built software **easier to own** (not "safe to own"). The lead line is: "AI made software cheap to build. Adaptl makes it easier to own." Its flow, in its own words:
+Adaptl's home page H1 says it makes AI-built software **easier to own**. The lead line is: "AI made software cheap to build. Adaptl makes it easier to own." Its flow, in its own words:
 
 - You talk the change through in your users' words. Adaptl knows the product and asks what's missing.
 - You **confirm the plan** in plain English. Nothing is built until a person says yes.

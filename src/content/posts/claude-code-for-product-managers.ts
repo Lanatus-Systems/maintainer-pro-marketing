@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for PMs using Claude Code, no terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits, a developer decides.",
   date: "2026-10-28",
-  updated: "2026-11-10",
+  updated: "2026-11-11",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers"],
   cover: {
@@ -27,7 +27,7 @@ This post covers both. We make Butterneck, which takes the second route, so we a
 
 The typical guide goes like this. The PM gets access to the repository, sets up Claude Code (in a terminal, an IDE, the desktop app or the web) or Cursor, runs the project, asks the assistant for a change, and then commits it and opens a pull request for a developer to review.
 
-That works. The desktop app and the web version remove the terminal, but not the rest: the assistant still edits a copy of the code, and the PM still needs a way to run the app to see the result. With a local setup, the PM also owns the development environment: dependencies, environment variables, a dev server, branches, merge conflicts. The developer still reviews the change, but now reviews a pull request from someone who may not be able to answer questions about the diff. We looked at that trade-off in more depth in [should product managers ship code?](/blog/should-product-managers-ship-code).
+That works. The desktop app and the web version remove the terminal, but not the rest: the assistant still edits a copy of the code, and while the desktop app can start the dev server and show the app in a preview pane, the project still has to be set up on the PM's own computer to run. With a local setup, the PM also owns the development environment: dependencies, environment variables, a dev server, branches, merge conflicts. The developer still reviews the change, but now reviews a pull request from someone who may not be able to answer questions about the diff. We looked at that trade-off in more depth in [should product managers ship code?](/blog/should-product-managers-ship-code).
 
 Cursor's own [page for product managers](https://cursor.com/for/product-managers) describes this path well: PMs prototype features and ship small changes directly, starting with Cloud Agents. It works when the PM wants to drive the agent themselves. If the PM would rather ask in plain words on the running app and leave the agent, the diff and the release to a developer, that is the other way below. With Butterneck the developer's own Cursor (or Claude Code, or Antigravity) does the edit on their computer.
 

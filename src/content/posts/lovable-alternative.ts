@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests as a Lovable alternative for the app you already have: PMs ask on a live preview, an AI coding agent edits, a developer decides what ships.",
   date: "2026-11-05",
+  updated: "2026-11-11",
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams"],
   cover: {
@@ -18,7 +19,7 @@ export const post: BlogPost = {
   body: `
 If you're looking at Lovable and wondering whether an alternative fits your team better, this post compares Lovable and Butterneck. We make Butterneck, so we are not neutral. The two products mostly solve different problems, and for many teams Lovable is the better choice. We've tried to stick to what Lovable says publicly and to be clear about where each one fits.
 
-Everything about Lovable below comes from its public website, [lovable.dev](https://lovable.dev), and its [GitHub integration docs](https://docs.lovable.dev/integrations/github), as read on 5 November 2026. Lovable changes quickly, so check its site for current details.
+Everything about Lovable below comes from its public website, [lovable.dev](https://lovable.dev), and its [GitHub integration docs](https://docs.lovable.dev/integrations/github), as read on 11 November 2026. Lovable changes quickly, so check its site for current details.
 
 > **Lovable vs Butterneck, in short:** Lovable is an AI app builder: you describe what you want and it builds, hosts and runs the app, with optional two-way sync to a new GitHub repository. Butterneck is for teams whose app already exists: a PM asks for a change on a live preview of the running app, the coding agent a developer already uses edits the existing project on their computer, Butterneck does not commit, push or open a pull request, and a developer decides what ships.
 
@@ -29,7 +30,7 @@ Lovable's home page says "If you can describe it, you can build it" and describe
 On code, its GitHub docs say that "your project code is stored and managed inside the Lovable platform", and that you can export and two-way sync it with GitHub. A few details from those docs matter for teams with an existing codebase:
 
 - Git sync "always creates a new repository"; connecting a project to a repository that already exists isn't supported.
-- To start from code you already have, the docs say to download the repository as a ZIP and import it, which "copies the code into a new project".
+- To start from code you already have, the docs say to download the repository as a ZIP and import it, which "copies the code into a new project". Lovable's import guide says it then rebuilds the app "on TanStack Start" and moves the database and the app's users to Lovable's built-in backend; passwords and sessions don't carry over.
 - Lovable "only edits and syncs one branch at a time", and its commits are authored by the Lovable GitHub app identity.
 - Its GitHub app can open and update pull requests.
 
@@ -57,7 +58,7 @@ Butterneck does not host your app, and it does not commit, push, open pull reque
 | | Lovable (per its public site and docs) | Butterneck |
 |---|---|---|
 | Starting point | A plain-language description; projects start in Lovable | The app your team already runs |
-| Existing code | Import copies the code into a new project; Git sync creates a new repo | Works on the existing project on the developer's computer |
+| Existing code | Import rebuilds the code as a new Lovable project (TanStack Start) and moves the database and users to Lovable's backend; Git sync creates a new repo | Works on the existing project on the developer's computer |
 | Who makes the edit | Lovable's AI | The developer's own Claude Code, Cursor or Antigravity |
 | Hosting | Lovable handles hosting, SSL and backend infrastructure | None; your team deploys as it already does |
 | Git | Two-way sync with a new GitHub repo; its GitHub app can open PRs | Edits files only; a developer commits and opens the PR |
