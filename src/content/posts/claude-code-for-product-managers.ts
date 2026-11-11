@@ -12,7 +12,7 @@ export const post: BlogPost = {
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers"],
   cover: {
     src: "/blog/cover-claude-code-for-product-managers.png",
-    alt: "Butterneck blog cover: Claude Code for product managers, without a terminal. The PM asks on a live preview, the developer's Claude Code, Cursor or Antigravity makes the change, and a developer decides",
+    alt: "Butterneck blog cover: An AI coding agent, for product managers — Use your team's coding agent without a terminal.",
     width: 1200,
     height: 630,
   },

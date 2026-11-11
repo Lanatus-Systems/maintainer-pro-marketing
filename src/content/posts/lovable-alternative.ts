@@ -12,7 +12,7 @@ export const post: BlogPost = {
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams"],
   cover: {
     src: "/blog/cover-lovable-alternative.png",
-    alt: "Butterneck blog cover: Lovable alternative for teams with an existing app, an honest comparison",
+    alt: "Butterneck blog cover: An alternative for teams with an existing app — Change the app you already have.",
     width: 1200,
     height: 630,
   },
