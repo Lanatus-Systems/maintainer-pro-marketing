@@ -11,7 +11,7 @@ export const post: BlogPost = {
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],
   cover: {
     src: "/blog/cover-clogless-alternative.png",
-    alt: "Butterneck blog cover: Clogless alternative, an honest comparison. Cloud sandbox and a pull request, or a connected computer and a preview your developer publishes",
+    alt: "Butterneck blog cover: A live preview your developer reviews — An honest comparison for product teams.",
     width: 1200,
     height: 630,
   },

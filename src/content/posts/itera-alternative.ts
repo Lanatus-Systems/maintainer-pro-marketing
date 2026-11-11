@@ -11,7 +11,7 @@ export const post: BlogPost = {
   tags: ["Itera alternative", "comparison", "AI change requests", "product teams"],
   cover: {
     src: "/blog/cover-itera-alternative.png",
-    alt: "Butterneck blog cover: Itera alternative. Plain-words change requests on a live preview, and your developers approve what ships",
+    alt: "Butterneck blog cover: Plain-words change requests on a live preview — Your devs approve what ships.",
     width: 1200,
     height: 630,
   },

@@ -19,7 +19,7 @@ export const post: BlogPost = {
   ],
   cover: {
     src: "/blog/cover-ai-prs-need-an-owner.png",
-    alt: "Butterneck blog cover: AI PRs need an owner. 32.7% of AI PRs vs 84.4% of manual PRs merged within 30 days. Source: LinearB 2026 Software Engineering Benchmarks Report",
+    alt: "Butterneck blog cover: Why AI pull requests need an owner — The AI PR review bottleneck.",
     width: 1200,
     height: 630,
   },

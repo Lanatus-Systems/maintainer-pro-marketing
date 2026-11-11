@@ -8,8 +8,8 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["Jira", "AI change requests", "answer"],
   cover: {
-    src: "/blog/cover-jira-ticket-to-reviewable-change-v2.png",
-    alt: "Butterneck blog cover: AI change requests in Jira: how to start one from a ticket",
+    src: "/blog/cover-ai-change-requests-in-jira.png",
+    alt: "Butterneck blog cover: AI change requests from a ticket — How to start one from a ticket.",
     width: 1200,
     height: 630,
   },

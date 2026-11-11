@@ -11,8 +11,8 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
-    src: "/blog/cover-jira-ticket-to-reviewable-change-v2.png",
-    alt: "Butterneck blog cover: from a labeled Jira ticket to a live preview that a developer reviews and ships",
+    src: "/blog/cover-jira-ticket-to-pr-with-ai.png",
+    alt: "Butterneck blog cover: From a ticket to a pull request with AI — Check a live preview before anyone opens the PR.",
     width: 1200,
     height: 630,
   },

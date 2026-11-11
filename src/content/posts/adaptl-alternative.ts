@@ -11,8 +11,8 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["Adaptl alternative", "comparison", "AI change requests", "product teams"],
   cover: {
-    src: "/blog/cover-live-preview-before-pull-request.png",
-    alt: "Butterneck blog cover: try the change on a live preview before anyone opens a pull request",
+    src: "/blog/cover-adaptl-alternative.png",
+    alt: "Butterneck blog cover: Try the change on a running app first — An honest comparison.",
     width: 1200,
     height: 630,
   },
