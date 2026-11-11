@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests vs AI app builders: change the app you already have. PMs ask on a live preview, an AI coding agent edits, a developer decides what ships.",
   date: "2026-11-05",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["ai app builder", "no code app builder", "AI change requests", "product teams", "existing codebase", "AI coding agents"],
   cover: {
@@ -75,6 +76,10 @@ A tool that generates an app from a plain-language description and lets you refi
 ### Should we use an AI app builder for an app we already have?
 
 Usually not for small changes. Rebuilding an existing product in a builder creates a second codebase. Changing the app where it already lives keeps your codebase, tests and release process.
+
+### What are alternatives to Replit or Lovable for changing an existing company codebase, with a developer approving the change?
+
+Look for a tool that works on the code your team already ships instead of starting a new project, and that leaves the final decision with a developer. Butterneck is one option. A PM or designer asks for the change on a live preview of the running app, the coding agent a developer already uses (Claude Code, Cursor or Antigravity) edits the existing project on a developer's connected computer, and a developer reviews the diff and decides what ships. Butterneck doesn't commit, push, open a pull request or deploy. Other tools in this space open a pull request for you; see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app) for a side-by-side.
 
 ### Is there a no code way to change an existing app?
 
