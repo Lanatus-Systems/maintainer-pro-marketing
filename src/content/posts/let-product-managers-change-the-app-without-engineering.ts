@@ -9,8 +9,8 @@ export const post: BlogPost = {
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder"],
   cover: {
-    src: "/blog/cover-how-pms-can-change-a-live-app.png",
-    alt: "Butterneck blog cover: Can product managers change the app without engineering?",
+    src: "/blog/cover-let-product-managers-change-the-app-without-engineering.png",
+    alt: "Butterneck blog cover: Can product managers change the app without engineering? — A developer still decides what ships.",
     width: 1200,
     height: 630,
   },

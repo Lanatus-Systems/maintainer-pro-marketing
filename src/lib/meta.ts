@@ -13,9 +13,9 @@ export const SITE_OPEN_GRAPH: NonNullable<Metadata["openGraph"]> = {
   images: [
     {
       url: "/og.png",
-      width: 1280,
-      height: 720,
-      alt: `${brand.name}: let them ask. You decide what goes live.`,
+      width: 1200,
+      height: 630,
+      alt: `${brand.name}: Let them ask. You decide what goes live. — AI change requests on a live preview of your app.`,
     },
   ],
 };

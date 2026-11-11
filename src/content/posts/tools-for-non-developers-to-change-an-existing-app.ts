@@ -12,7 +12,7 @@ export const post: BlogPost = {
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
     src: "/blog/cover-tools-for-non-developers-to-change-an-existing-app.png",
-    alt: "Butterneck blog cover: AI tools that let non-developers change an existing web app, compared",
+    alt: "Butterneck blog cover: AI tools that let non-developers change an existing web app — A 2026 guide.",
     width: 1200,
     height: 630,
   },
