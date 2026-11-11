@@ -31,7 +31,7 @@ Some tools do open a PR for a PM or designer. That can work. But a PR is a poor 
 
 This is how [Butterneck](/) works. Butterneck itself does not commit, push or open the pull request; the developer does.
 
-**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## What makes this go smoothly
 

@@ -21,7 +21,7 @@ Butterneck lets a product manager ask for a change on a live copy of an app, and
 
 This post walks through how that works and what the guardrails actually are. Where a guardrail is a prompt instruction rather than a hard block, we say so.
 
-> **How Butterneck runs a coding agent on your machine, in short:** The agent runs on the developer's own computer with the CLI already signed in there (Cursor, Claude Code or Antigravity), one turn at a time, in a folder the developer chooses, such as a git worktree under \`.worktrees/\`. The folder boundary and the always-on \`.env\` ignore list are guardrails (instructions to the agent plus the CLI's workspace setting), not an OS-level sandbox, so keep production secrets off that machine. Each turn's baseline is captured first so a stopped turn can be undone, and there is no code path that pushes, opens a pull request, merges or deploys: the developer decides what ships.
+> **How Butterneck runs a coding agent on a developer's connected computer, in short:** The agent runs on the developer's own computer with the CLI already signed in there (Cursor, Claude Code or Antigravity), one turn at a time, in a folder the developer chooses, such as a git worktree under \`.worktrees/\`. The folder boundary and the always-on \`.env\` ignore list are guardrails (instructions to the agent plus the CLI's workspace setting), not an OS-level sandbox, so keep production secrets off that machine. Each turn's baseline is captured first so a stopped turn can be undone, and there is no code path that pushes, opens a pull request, merges or deploys: the developer decides what ships.
 
 ## The pieces
 
@@ -84,16 +84,16 @@ So the person asking sees the change appear on the same screen they asked from, 
 
 Why the AI stops here, and who holds each decision, is covered in [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding) and the [human-in-the-loop architecture for AI product changes](/blog/human-in-the-loop-architecture-for-ai-product-changes). The person who asked checks the result on [a live preview before the PR](/blog/live-preview-before-pull-request), and your team can set the boundaries with [a policy template for what non-engineers can ask AI to change](/blog/ai-change-request-policy-template).
 
-## What leaves your machine
+## What leaves a developer's connected computer
 
 Worth being exact here, because "runs locally" is easy to over-read:
 
-- Your source files are edited on your machine. Butterneck does not run its own model.
+- Source files are edited on a developer's connected computer. Butterneck does not run its own model.
 - The coding CLI sends prompts and code context to its own AI provider, the same as when you use it directly. That is governed by your agreement with Cursor, Anthropic, or Google.
 - Preview traffic (the rendered app) passes through the Butterneck server so the share link works.
 - Chat messages travel through the Butterneck server to reach the bridge.
 
-**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## FAQ
 

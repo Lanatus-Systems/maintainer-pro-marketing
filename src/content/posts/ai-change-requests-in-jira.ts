@@ -27,7 +27,7 @@ export const post: BlogPost = {
 
 Butterneck does not commit, push, open a pull request or deploy. The ticket stays the record; the preview is where the change gets checked.
 
-**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on your computer. Your team still decides what goes live.
+**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## Tips
 
@@ -49,6 +49,6 @@ A run starts only in a linked Jira project, when the ticket has the \`butterneck
 
 ### Does it open a pull request from the ticket?
 
-No. The edit runs on your computer and a preview link goes back to the ticket. A developer decides whether to commit and open a PR.
+No. The edit runs on a developer's connected computer and a preview link goes back to the ticket. A developer decides whether to commit and open a PR.
 `,
 };

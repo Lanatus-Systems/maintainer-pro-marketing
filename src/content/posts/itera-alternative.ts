@@ -131,7 +131,7 @@ No. Butterneck edits files in the connected folder. The developer decides whethe
 
 ### Where are files edited with Butterneck, and what leaves the computer?
 
-The files are edited on your machine and Butterneck does not run its own model. But the coding CLI sends code context to its AI provider, and chat and preview traffic pass through Butterneck's server.
+The files are edited on a developer's connected computer and Butterneck does not run its own model. But the coding CLI sends code context to its AI provider, and chat and preview traffic pass through Butterneck's server.
 
 ### Which coding agents does each support?
 
