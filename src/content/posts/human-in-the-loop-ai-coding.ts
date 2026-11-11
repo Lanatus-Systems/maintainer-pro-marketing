@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-03",
+  updated: "2026-11-11",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -194,6 +194,10 @@ A merge gate stops an agent's pull request at the end. Anthropic's [Agent Approv
 ### Can a non-developer approve a change on their own?
 
 They can confirm it looks right on the preview, but they can't ship it. Only a developer on your team can make the change live.
+
+### How should a developer review a change a product manager asked an AI coding agent to make?
+
+Start from the request, not the code. Read what the person asked for and the conversation, and check they have already accepted the result on the live preview. Then read the diff in your own editor: it should touch only what the request needed; check shared components, translations, tests and emails that reuse the same text; run your tests, lint and build; and treat anything near secrets, sign-in, billing or data as a normal engineering change. If it's right, commit it and ship it your usual way. If not, discard it, or ask for another change on the same request. Butterneck doesn't commit, push or open a pull request, so nothing is committed or becomes a pull request until you do it. A fuller checklist is in [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 
 ## Try it
 

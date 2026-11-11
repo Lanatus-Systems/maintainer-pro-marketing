@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "AI tools that let non-developers change an existing web app (2026)",
   seoTitle: "AI tools that let non-developers change an existing web app (2026)",
   description:
-    "AI tools that let PMs and non-developers change an existing web app (2026): where the agent runs, a pull request or a live preview, who decides what ships, and prices.",
+    "AI tools that let PMs and non-developers change an existing web app (2026): prices, where the agent runs, PR or live preview, and who decides what ships.",
   date: "2026-10-28",
   updated: "2026-11-11",
   author: "The Butterneck team",

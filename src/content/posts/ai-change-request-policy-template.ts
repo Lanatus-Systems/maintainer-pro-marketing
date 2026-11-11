@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-11-05",
+  updated: "2026-11-11",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -245,6 +245,10 @@ No. An AI code review tool can comment on or approve a diff, but governance deci
 ### Who should decide what ships?
 
 A developer, through your normal release process. The requester accepts the change on the preview, and the developer reviews the diff and decides whether it ships. Neither the requester nor the AI should ship on their own.
+
+### How do you keep a record of who asked for an AI change and who approved it?
+
+Keep it where your team already keeps release history. The request is the record of who asked: with Butterneck, the conversation stays on the live copy, and a change started from a Jira ticket gets a short note and a preview link posted back to that ticket. The requester then writes one line saying what they asked for and that they accepted it on the preview (step 2 of the template's review and release section). The approval is the developer's own commit or pull request in your Git host, because Butterneck doesn't commit, push or open a pull request. Put the ticket key or a link to the request in the commit message or pull request description so the two are joined.
 
 ### Can an AI reviewer's approval count as the developer's decision?
 
