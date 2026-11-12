@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for agentic coding: PMs and non-developers ask on a live preview, an AI coding agent edits the project, a developer decides what ships.",
   date: "2026-11-05",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["agentic coding", "AI coding agents", "AI change requests", "product teams", "Claude Code", "Cursor"],
   cover: {
@@ -75,6 +76,10 @@ Agentic coding is when an AI coding agent takes a task in plain words, reads the
 ### Can non-developers use agentic coding?
 
 Yes. They can run an agent themselves if they have repo access and a seat, or ask for a change on a running copy of the app and let a developer's agent do the edit. Either way, a developer should still review the change and decide what ships.
+
+### Is there an AI coding agent for PMs and designers, not only developers?
+
+Yes, if the agent stays with a developer. With Butterneck, a PM or designer opens a share link to the running app, asks for the change in plain words, and sees it on the live preview. The edit is made by the coding agent signed in on a developer's connected computer (Claude Code, Cursor's agent CLI or Antigravity), and a developer reviews the change and decides what ships. Butterneck does not commit, push, open a pull request, merge or deploy. For the designer's side, see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
 ### Does agentic coding replace code review?
 
