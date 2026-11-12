@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests on a shared local app: PMs open a live link to the app on a developer's computer, ask in chat, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-02",
+  updated: "2026-11-13",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -155,6 +155,10 @@ No. Looking does not need an account. You decide separately who can ask for chan
 ### Does preview traffic go through Butterneck?
 
 Yes. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its AI provider, as it does in normal use. Butterneck does not commit, push, open a pull request, merge or deploy; nothing ships until someone on your team publishes the change the way you already do.
+
+### Do we need a staging environment for every change so a PM can review it?
+
+Not for small changes. With Butterneck, the person who asked reviews the change on a share link to the app already running on a developer's connected computer, where the coding agent signed in there (Cursor, Claude Code or Antigravity) made the edit. Nothing has to be pushed first, and no CI pipeline, build or deploy runs before they can look; hot reload shows each edit on the same link. The trade-off is that the connected computer has to be on for the preview to load. For QA sign-off, load tests or anything that needs a production-like build, keep using your branch preview or staging environment. Butterneck does not commit, push, open a pull request, merge or deploy; a developer decides what ships.
 
 ### How is this different from a localhost tunnel like ngrok?
 
