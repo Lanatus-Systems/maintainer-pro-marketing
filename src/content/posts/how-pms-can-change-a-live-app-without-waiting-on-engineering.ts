@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-12",
+  updated: "2026-11-13",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts"],
   cover: {
@@ -146,6 +146,10 @@ No. The agent edits a copy in a folder on the developer's machine. Production ch
 ### What if the AI gets it wrong?
 
 Ask again in the chat, or stop the turn and its file changes are usually rolled back (if not, the chat says so). The developer can also just discard the change.
+
+### Can a PM ship a small UI change without filing an engineering ticket?
+
+Yes, for the small ones: a label, a hint on a form, spacing, an empty state. With Butterneck the PM types the change in the chat on a live preview of the app, the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity) makes it on the developer's computer, and the PM checks the result on screen and keeps refining in the same chat. No ticket is needed to start, though teams that track work in Jira can start the same request from a labeled ticket instead. A developer then reads the conversation and the diff and decides whether it ships. Butterneck doesn't commit, push, open a pull request, merge or deploy, so skipping the ticket never means skipping the developer.
 
 ### Can requests come from Jira instead of chat?
 
