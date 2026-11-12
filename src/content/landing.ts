@@ -171,6 +171,16 @@ export const JIRA_NO_PR_FAQ = {
   ],
 } as const;
 
+/** Page-only FAQ for /integrations/jira (K-170). Not shown on the home page. */
+export const JIRA_PER_TICKET_FAQ = {
+  q: "Does every Jira ticket get its own preview?",
+  lines: [
+    "Yes. Each ticket labeled butterneck opens its own private copy of the project, named after the ticket, and that copy's live preview link is posted back on the ticket. Two tickets in progress don't share one staging site.",
+    "Unlike a pull request preview environment, nothing has to be pushed first and no CI pipeline or deploy runs. The copy is on the assignee's connected computer, where the app already runs, and the coding agent signed in there (Cursor, Claude Code or Antigravity) makes the change in it.",
+    "Private copies count toward your plan: 1 on Starter, 50 on Pro, so regular Jira use needs Pro. Butterneck does not commit, push, open a pull request, merge or deploy; a developer decides what ships.",
+  ],
+} as const;
+
 /** Page-only FAQ for /integrations/jira (K-53). Not shown on the home page. */
 export const JIRA_OTHER_AGENTS_FAQ = {
   q: "Jira can already assign tickets to Cursor or Claude. How is Butterneck different?",

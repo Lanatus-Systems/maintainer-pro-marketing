@@ -43,6 +43,8 @@ That is how [Butterneck](/) works. Butterneck does not commit, push, open a pull
 
 For the longer version, read [how PMs can change a live app without waiting on engineering](/blog/how-pms-can-change-a-live-app-without-waiting-on-engineering).
 
+Designers can use the same setup; see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests). To compare tools for this, including ones that open a pull request for you, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
+
 ## FAQ
 
 ### Can product managers build apps without engineering or writing code?

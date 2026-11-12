@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-05",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -103,7 +103,7 @@ For a product manager who wants to try Claude Code without setting up the repo, 
 
 ### Should product managers write code?
 
-Some technical PMs do, and it can work. But most PMs do not need to write code to get small changes made. What they need is to describe the change where they see it, see the result on the real app, and hand it to an engineer who decides whether it ships.
+Some technical PMs do, and it can work. But most PMs do not need to write code to get small changes made. What they need is to describe the change where they see it, see the result on the real app, and hand it to an engineer who decides whether it ships. For the short version with a setup that works, see [can product managers change the app without engineering?](/blog/let-product-managers-change-the-app-without-engineering)
 
 ### Is it safe to let PMs ship code to production?
 

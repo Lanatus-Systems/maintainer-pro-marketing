@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-10",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts"],
   cover: {
@@ -133,7 +133,7 @@ A PM can make the change happen and see it on a live copy without waiting. A dev
 
 ### Can designers use this for small visual fixes, not only PMs?
 
-Yes. Anyone the developer lets send requests can use it: a designer, a support lead or a PM. A designer opens the same share link, goes to the screen with the problem, and types the fix, for example "add more space above the Save button" or "use the smaller heading style on this card". Each message carries the page address and route they have open, and they can attach up to five screenshots or files, so a screenshot with the problem circled works well. Name the element by its visible text, as in our [change request template](/blog/how-to-write-a-change-request-for-ai). The preview reloads with the change, the designer checks it there, and a developer reviews it and decides what ships.
+Yes. Anyone the developer lets send requests can use it: a designer, a support lead or a PM. A designer opens the same share link, goes to the screen with the problem, and types the fix, for example "add more space above the Save button" or "use the smaller heading style on this card". Each message carries the page address and route they have open, and they can attach up to five screenshots or files, so a screenshot with the problem circled works well. Name the element by its visible text, as in our [change request template](/blog/how-to-write-a-change-request-for-ai). The preview reloads with the change, the designer checks it there, and a developer reviews it and decides what ships. For the designer's side, from a fix on the preview to the pull request a developer opens, see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
 ### Does the PM need a dev environment or git?
 

@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "How can non-engineers ship frontend changes as pull requests?",
   description: "A 5-step workflow for designers and PMs: make the frontend change on a live preview, then a developer reviews it and opens the pull request.",
   date: "2026-11-03",
-  updated: "2026-11-10",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -44,6 +44,10 @@ This is how [Butterneck](/) works. Butterneck itself does not commit, push or op
 ### Can designers make UI changes to the live app without an engineer?
 
 Up to the last step, yes. A designer can ask for a copy, spacing, color or layout change on a live copy of the app and check it on the screen they mean, without waiting for an engineer. The production app only changes when a developer reviews the diff and ships it. Keep it to changes inside your existing design system; new features still start with design and scoping. The [AI change request policy template](/blog/ai-change-request-policy-template) lists what designers and PMs can ask for directly.
+
+### Can designers prototype in the real codebase instead of Figma?
+
+For changes to screens that already exist, yes. The designer opens the share link to the running app and asks for the change in plain words. The team's coding agent edits the real project on a developer's connected computer, and the preview updates on the same link, so what they hand over is a working version in the app's own code, not a mockup. Nothing reaches production until a developer reviews the diff and ships it, and a version nobody wants is simply discarded. New flows and features still start with design and scoping.
 
 ### Can a designer open the pull request themselves?
 
