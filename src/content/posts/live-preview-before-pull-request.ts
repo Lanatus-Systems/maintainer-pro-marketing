@@ -9,7 +9,7 @@ export const post: BlogPost = {
   date: "2026-10-28",
   updated: "2026-11-11",
   author: "The Butterneck team",
-  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off"],
+  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off", "design QA"],
   cover: {
     src: "/blog/cover-live-preview-before-pull-request.png",
     alt: "Butterneck blog cover: Live preview before the PR. The requester checks it is what they meant, then the developer decides what ships",
@@ -184,6 +184,10 @@ A developer, using the team's normal release process. The requester's sign-off m
 ### How do you get stakeholder sign-off on a UI change before it merges?
 
 Put the sign-off where the stakeholder can see the running change. For work a developer builds, that's usually a preview link on each pull request, with the stakeholder's approval required before merge. For small changes the stakeholder asked for, Butterneck moves it earlier: they check the change on a live preview of the app running on a developer's connected computer, before any pull request exists, and sign off in writing where they asked. A developer then reads the diff and decides whether to commit it and open a pull request. Either way, the sign-off means "this is what I asked for", not "ship it".
+
+### Can designers use a live preview for design QA?
+
+Yes, for small visual fixes. Instead of filing a ticket with a screenshot, the designer opens the live preview, goes to the screen with the problem, and types the fix in the chat: the spacing, font weight, color or wording they expect, and what must not change. The request carries the page they have open, and they can attach a screenshot. The coding assistant on a developer's connected computer edits the project, and the designer checks the result on the same preview, including a narrow window, then signs off in writing where they asked. A developer still reviews the code, especially shared components and styles other screens use, and decides what ships. Butterneck doesn't commit, push or open a pull request. For a full QA pass on a production-like build, use your staging environment or branch preview.
 
 ### Does Butterneck open a pull request after the preview?
 

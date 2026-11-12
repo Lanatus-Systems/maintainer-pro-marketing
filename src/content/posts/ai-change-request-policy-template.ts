@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-11-11",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -16,6 +16,7 @@ export const post: BlogPost = {
     "review UI changes from non-engineers",
     "AI coding governance",
     "code review tiers",
+    "accessibility",
   ],
   cover: {
     src: "/blog/cover-ai-change-request-policy-template.png",
@@ -225,6 +226,10 @@ Visible, low-risk changes where they can judge the result on a preview: copy, la
 ### What should always go to an engineer first?
 
 Auth and permissions, billing and pricing logic, data models and migrations, shared APIs, infrastructure and deploy config, legal or compliance copy, and new features. These can look right on a preview and still be wrong.
+
+### Can PMs and designers ask the AI for accessibility fixes?
+
+Yes, for small, clear fixes on a screen they can check: missing alt text on an image, a button or form field without a label, an error message that doesn't say which field is wrong, or text that is too faint, fixed with a darker color from the existing palette. The requester names the element and the fix, checks the result on the preview, and writes one line saying what they accepted. Some of these fixes, like labels that screen readers announce, don't show on screen, so the developer checks them in the code and with the team's usual accessibility checks before deciding what ships. A small fix like this isn't an accessibility audit. Changes that alter the design, and full accessibility reviews, start with a designer or an engineer.
 
 ### Can copy changes skip code review?
 

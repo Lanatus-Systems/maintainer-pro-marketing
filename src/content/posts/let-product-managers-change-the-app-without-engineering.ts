@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Can product managers change the app without engineering?",
   description: "Short answer: PMs can make and check small app changes themselves with an AI agent, but engineering should still decide what ships. Here is a setup that works.",
   date: "2026-11-03",
-  updated: "2026-11-10",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder"],
   cover: {
@@ -52,6 +52,10 @@ A new app, often yes: AI app builders can generate a prototype or an internal to
 ### Do product managers need to learn to code?
 
 No. They describe the change in plain words and check the result on the preview. A developer reads the code.
+
+### Do product managers or designers need GitHub or repository access?
+
+No. They don't clone the code, open the repository or sign in to a coding tool. A developer connects the project on their own computer, and the requester opens the share link to the running app and types the change in the chat. The developer chooses whose messages start the AI: a list of people, or anyone with the link. Someone who only looks at the preview doesn't need an account. The coding agent already signed in on a developer's connected computer (Claude Code, Cursor or Antigravity) edits the project, and a developer reviews the diff and decides what ships, through the team's usual Git process. Butterneck doesn't commit, push or open a pull request.
 
 ### Will the AI push changes to production?
 
