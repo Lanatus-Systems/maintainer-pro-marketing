@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-10",
+  updated: "2026-11-12",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -160,6 +160,10 @@ They let non-developers, like product managers and designers, ask for a change t
 ### Do requesters need technical skills?
 
 No. They use a share link in a browser, or a Jira label.
+
+### How should a non-technical stakeholder review an AI-generated UI change?
+
+On the running app, not in the code. Open the changed screen on the live preview and check it against what you asked for: the exact wording, the spacing next to the elements around it, the empty, loading and error states, and a phone-sized width. Make sure nothing else on the page moved. If something is off, ask again on the same request instead of starting a new one, and when it is right, say so in writing where you asked. With Butterneck the preview is the app running on a developer's connected computer, so this happens before any pull request exists. A developer then reads the diff and decides what ships; Butterneck doesn't commit, push, open a pull request, merge or deploy. The full checklist is in [what to check on a live preview before the PR](/blog/live-preview-before-pull-request).
 
 ### Can support teams use AI change requests?
 
