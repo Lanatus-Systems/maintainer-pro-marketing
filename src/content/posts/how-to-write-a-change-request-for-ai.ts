@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A five-line AI change request template: how PMs and designers can prompt an AI coding agent to change an existing app, and what to leave to a developer.",
   date: "2026-10-28",
-  updated: "2026-11-02",
+  updated: "2026-11-13",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -129,6 +129,10 @@ Say where the change is (page and element, by its visible text), what it says or
 ### Should I attach a screenshot?
 
 Yes, when the element is hard to name or the problem is visual. In Butterneck you can paste a screenshot straight into the chat. Still write the request in words; the screenshot shows where, and the text says what to change.
+
+### Can I click the element I want changed instead of describing it?
+
+Not with a click-to-select tool. Some developer tools put an overlay on a local dev server so you can click an element and send it to a coding agent. In Butterneck you type the request in the chat on the live preview, on the screen you mean, and each request carries the page URL and route you have open, so the coding agent starts from that screen. Name the element by its visible text ("the Start free trial button under the Pro plan") and paste a screenshot if it is hard to name. A developer still reviews the change and decides what ships; Butterneck never opens a pull request, merges or deploys.
 
 ### Do I need to tell the AI which file to change?
 
