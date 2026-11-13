@@ -83,7 +83,7 @@ For the requester, yes. With Butterneck a PM or designer types the change in pla
 
 ### Is there an AI coding assistant for product managers that changes the existing app instead of building a prototype?
 
-Yes. AI app builders generate a new app or a prototype, and assistants such as Claude Code and Cursor expect you to work in the repository yourself. With Butterneck, a PM opens a share link to the app the team already runs, asks for the change in plain words, and the coding agent a developer already uses (Cursor, Claude Code or Antigravity) edits the existing project on a developer's connected computer. The PM checks the result on the live preview. Butterneck does not commit, push or open a pull request; a developer reviews the change and decides what ships. If you want to run Claude Code yourself, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
+Yes. AI app builders usually generate a new app or a prototype, and coding assistants are usually run by someone working in the repository. With Butterneck, a PM opens a share link to the app the team already runs, asks for the change in plain words, and the coding agent a developer already uses (Cursor, Claude Code or Antigravity) edits the existing project on a developer's connected computer. The PM checks the result on the live preview. Butterneck does not commit, push or open a pull request; a developer reviews the change and decides what ships. If you want to run Claude Code yourself, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
 ### Does Butterneck host or deploy the app?
 
