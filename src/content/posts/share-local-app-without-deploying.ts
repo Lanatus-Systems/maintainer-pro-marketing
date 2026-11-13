@@ -160,6 +160,10 @@ Yes. Chat messages and preview traffic go through Butterneck's server, and the c
 
 Not for small changes. With Butterneck, the person who asked reviews the change on a share link to the app already running on a developer's connected computer, where the coding agent signed in there (Cursor, Claude Code or Antigravity) made the edit. Nothing has to be pushed first, and no CI pipeline, build or deploy runs before they can look; hot reload shows each edit on the same link. The trade-off is that the connected computer has to be on for the preview to load. For QA sign-off, load tests or anything that needs a production-like build, keep using your branch preview or staging environment. Butterneck does not commit, push, open a pull request, merge or deploy; a developer decides what ships.
 
+### Can I share a native mobile app this way?
+
+Not a native iOS or Android build. Butterneck shares web apps: the bridge starts the project's app on the connected computer, finds the port it runs on, and the share link opens it in a browser. A native app doesn't run behind a web link, so there is nothing for a stakeholder to open. If your product is a web app, the person who asked can still check the phone layout by narrowing the browser window to phone width. Butterneck does not commit, push, open a pull request, merge or deploy.
+
 ### How is this different from a localhost tunnel like ngrok?
 
 A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on your computer makes the change, and hot reload shows it on the same link. Butterneck does not commit, push, open a pull request, merge or deploy.
