@@ -109,6 +109,10 @@ Each private copy is tied to one folder the developer chooses, which can be a gi
 
 Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. A container, a VM or Anthropic's sandbox runtime is the kind of boundary Anthropic recommends for sessions without permission prompts. Butterneck doesn't provide one. Butterneck is about who can ask for a change on a live preview and who decides what ships.
 
+### Does Butterneck need a GitHub app or access to our Git host?
+
+No. There is no GitHub, GitLab or Bitbucket app to install, and Butterneck never needs write access to your repository host, because it does not commit, push, open a pull request, merge or deploy. The project is a folder on a developer's connected computer. If a developer sets up a private copy from a repository URL, the connector on that computer clones it with the Git access that computer already has. Committing, pushing and opening the pull request stay with the developer, through your team's usual Git process.
+
 ### How do you let product managers use Claude Code or Cursor on the company codebase safely?
 
 There are two routes. If each PM gets their own seat and repository access, treat them like any new engineer: use the admin and sandbox settings your coding tool provides and keep production credentials out of reach. Or keep the coding agent with the developer. In Butterneck the PM asks in a chat on a live preview, and the agent runs on a computer the team connects, in one folder, with \`.env\` files on its ignore list (an instruction, not a hard block), and a stopped turn can be rolled back in most cases. The developer chooses who can send requests, and nothing in Butterneck opens a pull request, merges or deploys, so a developer still decides what ships. The PM doesn't need a coding-assistant seat, the repository or a terminal.
