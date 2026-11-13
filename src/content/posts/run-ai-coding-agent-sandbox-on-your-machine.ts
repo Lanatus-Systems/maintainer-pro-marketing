@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Run Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback, preview links.",
   date: "2026-10-27",
-  updated: "2026-11-11",
+  updated: "2026-11-14",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links", "AI coding governance"],
   cover: {
@@ -99,7 +99,7 @@ Worth being exact here, because "runs locally" is easy to over-read:
 
 ### Does Butterneck run the coding agent on its own servers?
 
-No. The agent runs on a developer's own computer, using the coding CLI already signed in there: Cursor (\`agent\`), Claude Code (\`claude\`) or Antigravity (\`agy\`). Butterneck does not run its own model.
+No. The agent runs on a developer's own computer, using the coding CLI already signed in there: Cursor (\`agent\`), Claude Code (\`claude\`) or Antigravity (\`agy\`). Butterneck does not run its own model. Chat messages and preview traffic do pass through the Butterneck server so the share link works. For the trade-off against tools that run each task in a cloud sandbox, see [why a connected computer instead of a cloud sandbox](/blog/ai-prs-need-an-owner#why-a-connected-computer-instead-of-a-cloud-sandbox).
 
 ### Is it a real sandbox?
 
