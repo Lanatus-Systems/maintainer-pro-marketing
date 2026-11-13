@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-11-12",
+  updated: "2026-11-13",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -234,6 +234,10 @@ Yes, for small, clear fixes on a screen they can check: missing alt text on an i
 ### Can copy changes skip code review?
 
 Some teams let them skip human code review once automated checks pass. The Claude Code team's Low tier, which includes docs and copy, needs no human approvals once automated review and security checks are green. A copy change shouldn't skip the person who asked, though: they are the one who can tell whether the words are right. In this policy, copy changes get a requester check on the preview, and a developer still publishes them.
+
+### Can UX writers or content designers change microcopy in the live app themselves?
+
+They can ask for it directly, and they are usually the best judge of it. Labels, button and help text, empty states, and error and confirmation messages are on the "ask directly" list in this policy. The writer names the screen and the new words, then checks the result on a live preview of the running app, in the real layout rather than in a doc or a mockup. That is a requester check; a developer still publishes it the usual way. Legal or compliance copy starts with an engineer and the content owner. With Butterneck, the edit is made by the coding agent on a developer's connected computer, and Butterneck never opens a pull request, merges or deploys.
 
 ### How should review tiers work when PMs and designers use an AI coding agent?
 
