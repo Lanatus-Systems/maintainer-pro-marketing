@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-13",
+  updated: "2026-11-15",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts"],
   cover: {
@@ -154,6 +154,10 @@ Yes, for the small ones: a label, a hint on a form, spacing, an empty state. Wit
 ### Can requests come from Jira instead of chat?
 
 Yes. Add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. A preview link is posted back on the ticket. See [Jira ticket to pull request with AI](/blog/jira-ticket-to-pr-with-ai).
+
+### Can requests come from Slack?
+
+Not from Slack itself: Butterneck has no Slack integration today. What teams do instead is paste the preview's share link into the Slack thread where the ask came up. Teammates open the running app in a browser, without an account, and the people the developer allows to send requests type the change in the chat next to the screen they mean, then check it on that same preview. A developer still reads the conversation and the diff and decides what ships; Butterneck doesn't commit, push, open a pull request, merge or deploy.
 
 ### Why not use a tool that opens the pull request for you?
 
