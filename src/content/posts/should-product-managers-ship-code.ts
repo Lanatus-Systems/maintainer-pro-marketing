@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-12",
+  updated: "2026-11-15",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -33,7 +33,9 @@ He is honest that it is not simple. Two questions stood out:
 
 Jeff Gothelf comes at it from the other side in [How to manage the inevitable mess of running a company where everyone is a builder](https://jeffgothelf.com/blog/how-to-manage-the-inevitable-mess-of-running-a-company-where-everyone-is-a-builder/). His first suggestion: "Keep the right to build separate from the right to ship." Anyone can build and show a prototype. Getting it in front of customers follows a path with evidence at each step.
 
-Both pieces land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
+At SDLCAI 2026, Viljami Kuosmanen described how epilot [let non-engineers use coding agents on its production codebase](https://sdlcai.org/2026/talks/non-engineers-vibe-code-production/). People tag an agent in a Slack thread, get a pull request and a preview link, and an engineer reviews it; product, design, support and QA all contributed. According to the conference's summary of the talk, an attempted production deployment was caught by monitoring, after which the team separated contribution, merge, CI and production permissions. More proposals also meant more review and testing, and he said he doesn't yet have strong data that delivery got faster.
+
+All three land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
 
 Some tools now go a step further and pitch that whoever spots a problem ships the fix, even from a phone. Our view is different. The PM asks and sees the change on a live preview. A developer decides whether it ships, and anything touching data models, permissions or payments goes to an engineer from the start.
 
