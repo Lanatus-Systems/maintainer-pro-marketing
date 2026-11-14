@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests on a shared local app: PMs open a live link to the app on a developer's computer, ask in chat, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-13",
+  updated: "2026-11-14",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -163,6 +163,10 @@ Not for small changes. With Butterneck, the person who asked reviews the change 
 ### Can I share a native mobile app this way?
 
 Not a native iOS or Android build. Butterneck shares web apps: the bridge starts the project's app on the connected computer, finds the port it runs on, and the share link opens it in a browser. A native app doesn't run behind a web link, so there is nothing for a stakeholder to open. If your product is a web app, the person who asked can still check the phone layout by narrowing the browser window to phone width. Butterneck does not commit, push, open a pull request, merge or deploy.
+
+### Does it work with our stack, for example Rails, Django or Laravel?
+
+Butterneck doesn't depend on a particular framework or language. It works with a web app that the connected computer can start with a command and that serves pages on a local port. Each app in the project has its own start command and port, which the developer sets up once (detection can fill them in from the project's files), and the share link opens that app in a browser. If your dev server reloads the page when a file changes, that keeps working on the share link. The bridge itself needs Node.js 22 or newer on that computer, whatever your app is written in. Butterneck does not commit, push, open a pull request, merge or deploy.
 
 ### How is this different from a localhost tunnel like ngrok?
 
