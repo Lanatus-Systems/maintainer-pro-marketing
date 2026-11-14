@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for PMs using Claude Code, no terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits, a developer decides.",
   date: "2026-10-28",
-  updated: "2026-11-11",
+  updated: "2026-11-14",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers"],
   cover: {
@@ -98,6 +98,10 @@ Yes. Claude Code also runs in Anthropic's desktop app and in the browser at clau
 ### Does a product manager need repository access to use Claude Code or Cursor?
 
 To run it themselves, yes. Claude Code and Cursor work on code the PM can reach: a local clone, or, for Cursor's Cloud Agents, only repositories the PM's own Git account can already reach ([Cursor's security docs](https://cursor.com/docs/cloud-agent/security)). With Butterneck the PM doesn't need repository access. They open a share link to the app running on a developer's computer and type the request, and the Claude Code, Cursor or Antigravity CLI signed in there edits the project. The developer chooses who can send requests, and a developer decides what ships.
+
+### Can't a developer just share their Claude Code session with the PM instead?
+
+They can, and for pairing with another developer that often works well. A shared session shows the other person the agent's chat, commands and diffs, and the host usually approves what runs. Butterneck is built for the person who doesn't read those: the PM opens a share link to the running app, types the change in a chat next to the screen they mean, and checks the result on that same preview. They never see a terminal or the code. The developer chooses who can send requests on each private copy, either chosen people or anyone with the link. Requests don't stop for a prompt on every tool call: the coding CLI runs with its interactive permission prompts skipped, and the workspace is snapshotted before each turn so a stopped turn can usually be rolled back. Butterneck does not commit, push, open a pull request, merge or deploy, so a developer still reviews and publishes the change the usual way.
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 
