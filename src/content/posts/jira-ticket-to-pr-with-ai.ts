@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
-  updated: "2026-11-10",
+  updated: "2026-11-15",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
@@ -163,7 +163,11 @@ Small, visible changes that the person who asked can check on screen: copy and l
 
 ### Which Jira versions are supported?
 
-Jira Cloud.
+Jira Cloud only. Jira Data Center and Jira Server aren't supported.
+
+### Can requests start from Linear, GitHub Issues or another tracker?
+
+Not automatically. Jira Cloud is the only issue tracker Butterneck connects to today; there is no Linear or GitHub Issues integration. Teams on another tracker paste the live preview's share link into the issue instead. The person who asked opens the running app in a browser, without an account, and, if the developer has allowed them to send requests, types the change in the chat next to the screen they mean. Nothing is posted back to that issue automatically, so the developer links the change when they commit or open the pull request. Butterneck doesn't commit, push, open a pull request, merge or deploy.
 
 ### What happens if the ticket is edited later?
 
