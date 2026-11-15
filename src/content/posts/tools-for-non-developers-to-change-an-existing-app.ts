@@ -5,9 +5,9 @@ export const post: BlogPost = {
   title: "AI tools that let non-developers change an existing web app (2026)",
   seoTitle: "AI tools that let non-developers change an existing web app (2026)",
   description:
-    "AI tools that let PMs and non-developers change an existing web app (2026): prices, where the agent runs, PR or live preview, and who decides what ships.",
+    "37 AI tools that let PMs and designers change an existing web app, compared: ronda, Revyse, Modeinspect, Builder.io and more. Prices, PR or preview, who ships.",
   date: "2026-10-28",
-  updated: "2026-11-11",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -17,9 +17,9 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Last checked: 29 October to 11 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
-
 > **In short:** AI tools that let non-developers change an existing web app connect an AI coding agent to the code a team already runs, so a product manager or designer can ask for a change in plain words. They differ in where the agent runs, what comes back (a prototype, a pull request or a live preview) and who decides what ships. Butterneck runs the developer's own agent on a computer the team connects; the person who asked checks the change on a live preview, and no pull request exists until a developer decides.
+
+Last checked: 29 October to 11 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
