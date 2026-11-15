@@ -5,6 +5,7 @@ export const post: BlogPost = {
   title: "AI change requests in Jira: how to start one from a ticket",
   description: "How to turn a Jira ticket into an AI-made change the requester can check on a live preview, with a developer deciding what ships.",
   date: "2026-11-03",
+  updated: "2026-11-15",
   author: "The Butterneck team",
   tags: ["Jira", "AI change requests", "answer"],
   cover: {
@@ -50,5 +51,9 @@ A run starts only in a linked Jira project, when the ticket has the \`butterneck
 ### Does it open a pull request from the ticket?
 
 No. The edit runs on a developer's connected computer and a preview link goes back to the ticket. A developer decides whether to commit and open a PR.
+
+### Does Butterneck read the ticket's acceptance criteria?
+
+Yes, if they are in the ticket's description or a comment. The request starts from the ticket's title and description, and the AI also gets the latest comments and attached files. A separate acceptance-criteria custom field is not read, so paste the criteria into the description. Write each one as something the person who asked can check on the live preview, such as "the button says Book a call on mobile and desktop". Butterneck doesn't turn them into a test checklist or mark them as passed. The person who asked checks the preview, and a developer reviews the change before anything ships.
 `,
 };
