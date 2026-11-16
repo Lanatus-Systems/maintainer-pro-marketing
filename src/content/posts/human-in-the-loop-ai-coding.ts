@@ -3,11 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "human-in-the-loop-ai-coding",
   title: "Human-in-the-loop AI coding: a developer decides what ships",
-  seoTitle: "AI change requests: human-in-the-loop AI coding",
+  seoTitle: "Human-in-the-loop AI coding: a developer decides what ships",
   description:
     "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-11",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
