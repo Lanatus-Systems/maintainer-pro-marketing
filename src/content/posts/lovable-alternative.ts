@@ -3,11 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "lovable-alternative",
   title: "Lovable alternative for teams with an existing app: an honest comparison with Butterneck",
-  seoTitle: "AI change requests: Lovable alternative for existing apps",
+  seoTitle: "Lovable alternative for an existing codebase: an honest comparison",
   description:
     "AI change requests as a Lovable alternative for the app you already have: PMs ask on a live preview, an AI coding agent edits, a developer decides what ships.",
   date: "2026-11-05",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams", "Lovable for existing codebase"],
   cover: {
