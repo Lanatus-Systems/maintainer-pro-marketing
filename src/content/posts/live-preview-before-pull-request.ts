@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "AI change requests with a live preview before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-11-11",
+  updated: "2026-11-16",
   author: "The Butterneck team",
-  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off", "design QA"],
+  tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off", "design QA", "ephemeral preview environments"],
   cover: {
     src: "/blog/cover-live-preview-before-pull-request.png",
     alt: "Butterneck blog cover: Live preview before the PR. The requester checks it is what they meant, then the developer decides what ships",
@@ -157,9 +157,9 @@ Yes. In Butterneck the PM types the request in a chat on a live copy of the app,
 
 Several AI tools, such as Plusma, ronda and medit, let a PM describe a change, check it on a preview of the app, and hand engineering a branch or pull request; some, like ronda, build that preview in the cloud from your repository, while medit runs it on the machine where your app runs. We compare them, with their prices, in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app). Butterneck works differently: the preview is the app running on a developer's computer, the coding assistant already signed in there makes the change, and Butterneck does not commit, push or open a pull request. A developer reads the conversation, checks the change, and publishes it the way the team already does.
 
-### How is this different from a PR preview environment?
+### How is this different from a PR preview or ephemeral preview environment?
 
-PR or branch preview environments are built after a branch is pushed or a pull request is opened, usually through a CI pipeline and a deploy. A preview before the PR exists while the change is being made, so the requester can ask for adjustments before anyone reviews the code.
+PR or branch preview environments are built after a branch is pushed or a pull request is opened, usually through a CI pipeline and a deploy. A preview before the PR exists while the change is being made, so the requester can ask for adjustments before anyone reviews the code. Most ephemeral preview environments, one short-lived environment per branch or pull request, are the same: they show the change after a developer has written and pushed it.
 
 ### Isn't this what an AI agent's own preview does, like Netlify Agent Runners?
 
