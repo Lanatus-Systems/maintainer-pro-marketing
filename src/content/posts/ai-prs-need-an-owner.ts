@@ -3,10 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "ai-prs-need-an-owner",
   title: "The AI PR review bottleneck: why AI pull requests need an owner (2026 data)",
+  seoTitle: "Agentic AI PRs wait 5.3x longer to be picked up: who owns them (2026)",
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-05",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
