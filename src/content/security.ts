@@ -5,6 +5,8 @@ export const SECURITY = {
   description:
     "Where an AI change request is edited (on the connected computer), which folder it can touch, what is on the ignore list, who can send a request, and who sees the project.",
   lead: "A reviewer usually asks six things. Here they are.",
+  definition:
+    "In short: Butterneck edits on your connected computer, inside the folder you pick, with .env files on an ignore list as a guardrail. It does not copy the repository to its servers to edit it, and it does not merge or deploy. Your team publishes.",
   facts: [
     {
       title: "The bridge runs on your computer",
@@ -44,6 +46,35 @@ export const SECURITY = {
       paragraphs: [
         "The edit is made by Cursor, Claude Code, or Antigravity, whichever is signed in on that computer. That provider receives what the assistant reads in order to make the change.",
         "Butterneck does not copy the repository to its servers to edit it. The preview is the app running on your computer. The share link relays that page so someone else can open it. Chat messages and attachments are stored in the workspace.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      q: "Does Butterneck upload my code to its servers?",
+      lines: [
+        "Butterneck does not copy the repository to its servers to edit it. The edit happens on the connected computer, made by the coding assistant signed in there (Cursor, Claude Code, or Antigravity).",
+        "That provider receives what the assistant reads in order to make the change. Chat messages and attachments are stored in the workspace.",
+      ],
+    },
+    {
+      q: "Can the AI read my .env files?",
+      lines: [
+        "Files named .env are on an ignore list, including .env.local and the same names in subfolders, and the assistant is told to refuse a request that needs one of them.",
+        "That is a guardrail, not a hard block: the assistant runs with its own permission prompts turned off. Connect a development computer that has no production secrets.",
+      ],
+    },
+    {
+      q: "Does Butterneck merge or deploy changes?",
+      lines: [
+        "No. Butterneck does not merge and does not deploy. When the preview looks right, your team publishes the way you already do.",
+      ],
+    },
+    {
+      q: "Who can open the preview link and send requests?",
+      lines: [
+        "Each connected computer starts with a chosen list of people who can send requests. \"Anyone with the link\" is a setting you turn on.",
+        "The share link is unlisted, not private. Anyone who has it can open the preview.",
       ],
     },
   ],
