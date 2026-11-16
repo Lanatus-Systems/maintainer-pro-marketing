@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "37 AI tools that let PMs and designers change an existing web app, compared side by side: prices, where the agent runs, PR or live preview, who ships.",
   date: "2026-10-28",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -71,75 +71,145 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 
 ## The tools, one by one
 
-**ronda** — "Small changes shouldn't wait on engineering." Marketing, design and product describe the change in plain English, it runs in an isolated live sandbox on your dev server, and "ronda writes the code and opens a pull request. Engineering reviews and merges." You can use it from ChatGPT or Claude with no key to add, or in its web editor with your own Anthropic key. Good pick if you want a pull request from a plain-English request on a small budget.
+### ronda
 
-**Refinar** — "Describe a change to your product, watch it built on a copy of the live app, then publish it or send it to engineering. No terminal or GitHub account." Risky changes go to a developer first as a draft PR. The clearest difference from Butterneck: Refinar lets the person who asked publish small changes themselves. Good pick if that is what you want.
+"Small changes shouldn't wait on engineering." Marketing, design and product describe the change in plain English, it runs in an isolated live sandbox on your dev server, and "ronda writes the code and opens a pull request. Engineering reviews and merges." You can use it from ChatGPT or Claude with no key to add, or in its web editor with your own Anthropic key. Good pick if you want a pull request from a plain-English request on a small budget.
 
-**Fixdog** — It "lets PMs, designers, operators make changes directly on their live product and auto-generates a PR. Eng reviews and merges." We couldn't find a public price. Good pick if you want an auto-generated PR from a change made on the live product.
+### Refinar
 
-**Itera** — (From its site as we read it on 28 October 2026; we couldn't reach it on 29 October.) Lets the team "propose changes to your live web product through chat" and "submit it for engineering review" as AI-generated pull requests. Builders pay per seat; "Collaborators are always free". Good pick for teams that want a PR from a chat on the live product. We compare it in more detail in our [Itera alternative](/blog/itera-alternative) post.
+"Describe a change to your product, watch it built on a copy of the live app, then publish it or send it to engineering. No terminal or GitHub account." Risky changes go to a developer first as a draft PR. The clearest difference from Butterneck: Refinar lets the person who asked publish small changes themselves. Good pick if that is what you want.
 
-**Clogless** — "A live sandbox on your real codebase. Ship changes as pull requests that engineering reviews." It runs in its own cloud sandbox and connects to six ticketing tools, Jira included. Good pick if you want a cloud workspace that turns tickets into PRs. More in our [Clogless alternative](/blog/clogless-alternative) post.
+### Fixdog
 
-**Revyse** — "Click what you want different, or describe something new. Revyse writes the code, checks it and shows it to you. Ship it when it looks right." A developer connects the app once with \`npx revyse init\`; after that, anyone on the team can ask for changes on the live site, in the dev server or from the dashboard. Each change gets its own branch, a pull request and a preview, and reaches production the way the project chose: promoted from the preview, straight away once the checks pass, or after named reviewers approve ("Revyse merges; your host deploys"). It supports Next.js 14 to 16 (Vite and Create React App are "experimental"), and labels changes to authentication, payments and database schemas so a reviewer looks closely. Good pick for Next.js teams that want the person who asked to ship changes, with or without a reviewer.
+It "lets PMs, designers, operators make changes directly on their live product and auto-generates a PR. Eng reviews and merges." We couldn't find a public price. Good pick if you want an auto-generated PR from a change made on the live product.
 
-**Revise** (revise.build; a different product from Revyse) — "Edit your existing website without writing code. Connect your repository, change the real interface on phone or web, and send it to your developer for review." You select an element and adjust it, or describe the change to AI, in "a separate preview" that runs in its cloud, and "Your developers decide which parts are yours to change." Choosing Send for review "creates a pull or merge request", and Revise "does not automatically publish the change." Good pick for designers and marketers who want visual edits on an existing website repo and a pull request for the developer.
+### Itera
 
-**Plusma** — "Describe a change, preview it live, iterate until it's right, and hand your team a clean PR." It connects to your GitHub repo and "Every change spins up an instant preview environment" in its cloud. Good pick for PMs and designers who want to iterate on a cloud preview and then hand engineering a PR.
+(From its site as we read it on 28 October 2026; we couldn't reach it on 29 October.) Lets the team "propose changes to your live web product through chat" and "submit it for engineering review" as AI-generated pull requests. Builders pay per seat; "Collaborators are always free". Good pick for teams that want a PR from a chat on the live product. We compare it in more detail in our [Itera alternative](/blog/itera-alternative) post.
 
-**Productmind** — "Produtyping: production-ready prototyping." You "describe the change in plain words and watch the app update" in an isolated sandbox, either in Productmind's cloud or on your own machine with its CLI, which runs your own Claude Code or Codex. Each change is saved to the session's branch; when it looks right, "the agent opens a pull request", and "Productmind never merges a pull request on its own." It works with GitHub, GitLab and Bitbucket, and sits inside a wider suite (specs, feature requests, customer feedback). If you have no engineers, a Productmind Architect, a person from its team, can review the code, billed by the hour. Good pick if you want a product-engineering suite that ends in a pull request.
+### Clogless
 
-**Vixentio** — "Many agents. One team." Vixentio is "a multiplayer coding environment where a team runs AI coding agents (Claude Code, Codex and Gemini CLI) in parallel, in cloud sandboxes or on its own Macs." Reviewers sign off as Design, Product or Technical; "Technical sign-off is required whenever an agent changed code." Approving a version does not publish it: an editor chooses Publish to GitHub, and "The Vixentio GitHub App opens the pull request. Merging stays your team's decision on GitHub." Starting a task needs a Team editor seat ($39.99 a month; viewers and commenters are free). A Jira logo appears on the home page among tools it "works with"; we didn't find a Jira integration on the pages we read. Good pick if you want named sign-offs and a pull request the team merges itself.
+"A live sandbox on your real codebase. Ship changes as pull requests that engineering reviews." It runs in its own cloud sandbox and connects to six ticketing tools, Jira included. Good pick if you want a cloud workspace that turns tickets into PRs. More in our [Clogless alternative](/blog/clogless-alternative) post.
 
-**Fei Studio (AutonomyAI)** — "Describe a change and it opens a merge-ready pull request in your real codebase — your engineers approve every merge." A PM describes the change in plain language, a screenshot or a Figma file; it builds it with your own components and design tokens, renders it, and opens a pull request. Since July 2026 a PM can also start a task from Claude Code, Cursor or another MCP client and check it on a link to its live sandbox. It can pull in a Jira issue by ID or URL as the instructions, and it's priced per task rather than per seat. Good pick for product teams with a design system who want PM requests to arrive as pull requests.
+### Revyse
 
-**Ovren** — "Ship Coding Tasks Without Waiting on Developers." A developer installs its GitHub App once; then anyone on the team describes a change, Ovren works on "a safe copy of your project", shows "a live preview of every frontend change", and opens a pull request "into the branch your team already merges into", with a report of what it changed. You pay per change from a balance you top up. Good pick if you want occasional changes delivered as PRs without a subscription.
+"Click what you want different, or describe something new. Revyse writes the code, checks it and shows it to you. Ship it when it looks right." A developer connects the app once with \`npx revyse init\`; after that, anyone on the team can ask for changes on the live site, in the dev server or from the dashboard. Each change gets its own branch, a pull request and a preview, and reaches production the way the project chose: promoted from the preview, straight away once the checks pass, or after named reviewers approve ("Revyse merges; your host deploys"). It supports Next.js 14 to 16 (Vite and Create React App are "experimental"), and labels changes to authentication, payments and database schemas so a reviewer looks closely. Good pick for Next.js teams that want the person who asked to ship changes, with or without a reviewer.
 
-**Flex** — "Give every teammate an AI software developer." A request from Slack, Linear or Flex itself becomes an isolated branch and a live preview, and engineers "review the code, control the merge, and decide what reaches production." Previews run on a self-hosted runner in infrastructure your team controls, using your own model keys. It also builds internal tools. Good pick for a team that wants previews on its own infrastructure and a pull-request flow.
+### Revise (revise.build)
 
-**PinAppAI** — A "visual change-request layer for AI-built sites". Reviewers drop pins on the live site, the developer's agent applies them, and reviewers approve or reject on a generated page. It's the closest to Butterneck in spirit: reviewers are free on every plan, and the developer's own agent applies the changes. Good pick if you're a solo builder collecting client feedback on a deployed site.
+A different product from Revyse. "Edit your existing website without writing code. Connect your repository, change the real interface on phone or web, and send it to your developer for review." You select an element and adjust it, or describe the change to AI, in "a separate preview" that runs in its cloud, and "Your developers decide which parts are yours to change." Choosing Send for review "creates a pull or merge request", and Revise "does not automatically publish the change." Good pick for designers and marketers who want visual edits on an existing website repo and a pull request for the developer.
 
-**Handle Studio** — "Design directly in production code." It's free, open source, needs no account, and works with the agents designers and developers already use. The trade-off is that the person making the change installs and runs it (Studio needs macOS 13+ on Apple Silicon). Good pick for designers who are comfortable running a local repo.
+### Plusma
 
-**Hexby** — "Your codebase, turned into a design canvas — powered by your AI agents." A designer or PM opens the project in Hexby's desktop app on their own computer, with a coding agent installed and signed in there, and refines the real screens on a canvas. Teammates review the before-and-after in a browser without installing Hexby, and an approved change is handed to developers as a GitHub pull request. It's free during its beta, and it uses your own agent account, since Hexby doesn't include AI usage. Good pick for designers and PMs who can run the project locally and want a visual review before the PR.
+"Describe a change, preview it live, iterate until it's right, and hand your team a clean PR." It connects to your GitHub repo and "Every change spins up an instant preview environment" in its cloud. Good pick for PMs and designers who want to iterate on a cloud preview and then hand engineering a PR.
 
-**Figma Make (on your codebase)** — "You can use Figma Make to ship the UI changes you want directly into your team's real codebase." In a closed beta that started on 28 May 2026, a designer or PM uses the Figma Beta desktop app for Mac to open a local repository (or clone one from GitHub) and change the running app by adjusting properties, annotating elements on screen or chatting. Each prompt is saved as a local commit, and when the work is ready they open a pull request for engineering. An engineer sets up each repository once, and for now Figma says designers who already have access to the codebase are the best fit. Good pick for design teams already working in Figma who can run the project on a Mac.
+### Productmind
 
-**Layrr** — "Point, click, and edit your running web app." A free, MIT-licensed proxy in front of your local dev server that uses Claude Code, Codex CLI or Gemini and "commits successful edits with a [layrr] prefix". Whoever runs it needs the repo, and its last release was in May 2026. Good pick for developers who want a free visual overlay on their own machine.
+"Produtyping: production-ready prototyping." You "describe the change in plain words and watch the app update" in an isolated sandbox, either in Productmind's cloud or on your own machine with its CLI, which runs your own Claude Code or Codex. Each change is saved to the session's branch; when it looks right, "the agent opens a pull request", and "Productmind never merges a pull request on its own." It works with GitHub, GitLab and Bitbucket, and sits inside a wider suite (specs, feature requests, customer feedback). If you have no engineers, a Productmind Architect, a person from its team, can review the code, billed by the hour. Good pick if you want a product-engineering suite that ends in a pull request.
 
-**PulseDev** — "Point at your site. Approve the fix." Click an element on your running site, say what's wrong, and Claude Code, Codex, Gemini or OpenCode edits the source; "nothing touches your files until you approve the diff". It uses the agent plan you already pay for and "Runs on your machine, no PulseDev cloud". Like Layrr, whoever uses it runs the project locally. Pro is regularly $12 a month or $96 a year (as of 11 November 2026, when a promo code was lowering it). Good pick for a technical founder or designer who wants a visual fix loop on their own Mac.
+### Vixentio
 
-**medit** — "Point at your app. Say the change. Watch it ship." An overlay inside your running app: click an element, describe the change, and your own coding agent writes the code on its own branch, with a per-branch preview; with a GitHub token it opens the pull request. Like Layrr and PulseDev, someone runs it on the machine where the app runs; the overlay also opens on other devices on the same network.
+"Many agents. One team." Vixentio is "a multiplayer coding environment where a team runs AI coding agents (Claude Code, Codex and Gemini CLI) in parallel, in cloud sandboxes or on its own Macs." Reviewers sign off as Design, Product or Technical; "Technical sign-off is required whenever an agent changed code." Approving a version does not publish it: an editor chooses Publish to GitHub, and "The Vixentio GitHub App opens the pull request. Merging stays your team's decision on GitHub." Starting a task needs a Team editor seat ($39.99 a month; viewers and commenters are free). A Jira logo appears on the home page among tools it "works with"; we didn't find a Jira integration on the pages we read. Good pick if you want named sign-offs and a pull request the team merges itself.
 
-**Modeinspect** — "A design canvas with your live product, components and tokens built in", aimed at "the last 20%" after vibe coding. It runs in the cloud, so no local dev machine is needed, and every change becomes a pull request. Good pick for design engineers polishing UI.
+### Fei Studio (AutonomyAI)
 
-**Builder.io** — "Ship the changes that can't wait." A PM points Builder at a Slack thread, Jira ticket or PRD, builds a first version from the product's own components, and stakeholders comment on the live preview; the result reaches engineering as code to review and merge. Its Jira and Slack agent is on the Team plan. Good pick for a PM who wants to build the first version themselves in a visual editor.
+"Describe a change and it opens a merge-ready pull request in your real codebase — your engineers approve every merge." A PM describes the change in plain language, a screenshot or a Figma file; it builds it with your own components and design tokens, renders it, and opens a pull request. Since July 2026 a PM can also start a task from Claude Code, Cursor or another MCP client and check it on a link to its live sandbox. It can pull in a Jira issue by ID or URL as the instructions, and it's priced per task rather than per seat. Good pick for product teams with a design system who want PM requests to arrive as pull requests.
 
-**Netlify Agent Runners** — "Prototypes that become the product." A PM describes the change in a prompt; the agent writes the code in the team's repository, deploys a preview and opens a pull request that developers finish and merge. Good pick for a PM who wants a shareable preview URL and is happy for the hand-off to be a PR, especially if your site already deploys on Netlify.
+### Ovren
 
-**Workshop** — "Go from idea to clickable prototype in minutes." Its Desktop app can pull in your codebase, but the output is a prototype with mocked data, which engineering "can pick up where Workshop left off". Good pick for exploring an idea before committing to a real change.
+"Ship Coding Tasks Without Waiting on Developers." A developer installs its GitHub App once; then anyone on the team describes a change, Ovren works on "a safe copy of your project", shows "a live preview of every frontend change", and opens a pull request "into the branch your team already merges into", with a report of what it changed. You pay per change from a balance you top up. Good pick if you want occasional changes delivered as PRs without a subscription.
 
-**Else** — "Preview environments with AI editing." An engineer opens a PR, Else spins up a live environment of the full stack, and PMs, QA and designers fix things in place. It works after a PR exists, so it can sit alongside tools that work before one. Good pick for teams that want richer PR review.
+### Flex
 
-**Synlets** — "Tickets in. Pull requests out." Assign a ticket and its agent writes the change and opens a PR, then iterates on review comments. Credit-based plans with no per-seat fees. Good pick if you want tickets turned straight into PRs in the cloud.
+"Give every teammate an AI software developer." A request from Slack, Linear or Flex itself becomes an isolated branch and a live preview, and engineers "review the code, control the merge, and decide what reaches production." Previews run on a self-hosted runner in infrastructure your team controls, using your own model keys. It also builds internal tools. Good pick for a team that wants previews on its own infrastructure and a pull-request flow.
 
-**Inspect** (Ramp) — a cloud coding agent you give a task "from wherever you do your work: Slack, GitHub, Linear, on the web, or on the run", which returns "a visually validated and fully reviewed pull request". Sessions are shared, so teammates can add context before review. Early access only. Good pick if your team lives in Slack and wants a cloud agent that ends in a pull request.
+### PinAppAI
 
-**Vision** (vson.ai) — teammates "build in the same room, not in silos": one shared live session with the same chat and the same preview, live cursors, and comments pinned to the preview. Every change runs in an isolated preview and arrives as a pull request an engineer reviews, and the team can set "free zones and review zones", for example an admin area anyone can change while anything touching the database needs approval. Good pick if several non-developers want to build together on one GitHub repo, with engineers reviewing pull requests.
+A "visual change-request layer for AI-built sites". Reviewers drop pins on the live site, the developer's agent applies them, and reviewers approve or reject on a generated page. It's the closest to Butterneck in spirit: reviewers are free on every plan, and the developer's own agent applies the changes. Good pick if you're a solo builder collecting client feedback on a deployed site.
 
-**Remix** — "Your AI Product Manager": the team and an AI PM work "on a working copy of your website or product: analyze your data, propose changes, prompt new variants, test them, and ship the winner." Teammates branch variants of a live copy and comment on the canvas ("Like Figma, for your live app"). When a variant is ready it goes to GitHub as a pull request with the prompts behind it, a link to run it live, and "security checks that pass before anything merges." Good pick if a product team wants to compare several variants of a screen before engineering reviews a PR.
+### Handle Studio
 
-**Kosuke** — "Describe the change in a chat session, check it in the Preview, and press Open PR." An engineer imports and deploys the project once; after that, people who don't write code can start sessions, and engineers "review and merge the pull request as usual". Changes come back with "a prototype, a recording, a verdict" to judge. It runs your own Claude Code or Codex subscription in its cloud sandboxes and charges for sandbox hours. Good pick if you want each PR to arrive with a recorded check of the change.
+"Design directly in production code." It's free, open source, needs no account, and works with the agents designers and developers already use. The trade-off is that the person making the change installs and runs it (Studio needs macOS 13+ on Apple Silicon). Good pick for designers who are comfortable running a local repo.
 
-**Specship** — Ticket-to-PR automation that starts from acceptance criteria and failing tests, with an optional auto-merge for low-risk PRs in private beta. Pricing isn't published yet. Good pick for small teams that want test-first automation.
+### Hexby
 
-**CoderHelm** — "Assign a GitHub issue or Jira ticket and get a pull request", plus CI fixing, PR review and alerts-to-fixes, hosted or in your own AWS account. In closed beta. Good pick for engineering teams that want an engineering-ops agent.
+"Your codebase, turned into a design canvas — powered by your AI agents." A designer or PM opens the project in Hexby's desktop app on their own computer, with a coding agent installed and signed in there, and refines the real screens on a canvas. Teammates review the before-and-after in a browser without installing Hexby, and an approved change is handed to developers as a GitHub pull request. It's free during its beta, and it uses your own agent account, since Hexby doesn't include AI usage. Good pick for designers and PMs who can run the project locally and want a visual review before the PR.
 
-**Epicraft** — "Your AI developer lives inside Jira. Create a ticket. Assign the bot. Watch it write code, push a branch, and open a PR — all from Jira comments." It "posts an implementation plan, and waits for your 👍", and says "The PM is the user, not the developer". We couldn't find a public price. Good pick if you want PMs to turn Jira tickets into PRs.
+### Figma Make (on your codebase)
 
-**CodeHerder** — An engineer connects "a device and a repository" once, then product people file tasks and its agents plan, build, review and merge them, each in its own git worktree, on a machine you already have or in your AWS account. By default, "no person approves the plan, the code or the result"; teams can add approval gates or a required human approval on the git host. Plans are priced by concurrent agents, not seats. Good pick if you want agents to take a task all the way to merge on your own hardware.
+"You can use Figma Make to ship the UI changes you want directly into your team's real codebase." In a closed beta that started on 28 May 2026, a designer or PM uses the Figma Beta desktop app for Mac to open a local repository (or clone one from GitHub) and change the running app by adjusting properties, annotating elements on screen or chatting. Each prompt is saved as a local commit, and when the work is ready they open a pull request for engineering. An engineer sets up each repository once, and for now Figma says designers who already have access to the codebase are the best fit. Good pick for design teams already working in Figma who can run the project on a Mac.
 
-**Butterneck** — The person who asks opens a link (or labels a Jira ticket and assigns it) and chats beside a live running copy of the app while the developer's own agent makes the edit on a computer the team connects. They check the change in the preview and keep refining. Butterneck doesn't open pull requests, merge or deploy: a developer reads the conversation and the diff and decides whether it becomes a PR through the team's usual process. The agent edits the files on the connected computer, the code context it reads goes to that agent's AI provider, and the preview and the chat reach it through Butterneck's servers, so this isn't an "everything stays local" tool. Starting from a Jira ticket isn't unique to Butterneck either: Synlets, CoderHelm, Clogless and Epicraft (which is also built for PMs) start from tickets too, and CodeHerder also runs agents on a machine the team connects; Productmind's CLI can run its sessions on your own machine. Since 28 October 2026, GitHub's own [Copilot Automations](https://github.blog/changelog/2026-10-28-new-tools-triggers-and-cost-controls-for-copilot-automations) can also start when an issue is labeled or assigned. The difference is what comes back: a live preview on the developer's own running app, and no pull request until a developer decides. The person asking doesn't install anything or need the project on their own computer: the developer's connected computer runs the app and the agent, and the requester only needs the link. Not the right pick if you want a tool that creates the PR for you; several above do that well. To see the flow before connecting a computer, [create a free account and try a request on a sample shop](https://app.butterneck.com/trial).
+### Layrr
+
+"Point, click, and edit your running web app." A free, MIT-licensed proxy in front of your local dev server that uses Claude Code, Codex CLI or Gemini and "commits successful edits with a [layrr] prefix". Whoever runs it needs the repo, and its last release was in May 2026. Good pick for developers who want a free visual overlay on their own machine.
+
+### PulseDev
+
+"Point at your site. Approve the fix." Click an element on your running site, say what's wrong, and Claude Code, Codex, Gemini or OpenCode edits the source; "nothing touches your files until you approve the diff". It uses the agent plan you already pay for and "Runs on your machine, no PulseDev cloud". Like Layrr, whoever uses it runs the project locally. Pro is regularly $12 a month or $96 a year (as of 11 November 2026, when a promo code was lowering it). Good pick for a technical founder or designer who wants a visual fix loop on their own Mac.
+
+### medit
+
+"Point at your app. Say the change. Watch it ship." An overlay inside your running app: click an element, describe the change, and your own coding agent writes the code on its own branch, with a per-branch preview; with a GitHub token it opens the pull request. Like Layrr and PulseDev, someone runs it on the machine where the app runs; the overlay also opens on other devices on the same network.
+
+### Modeinspect
+
+"A design canvas with your live product, components and tokens built in", aimed at "the last 20%" after vibe coding. It runs in the cloud, so no local dev machine is needed, and every change becomes a pull request. Good pick for design engineers polishing UI.
+
+### Builder.io
+
+"Ship the changes that can't wait." A PM points Builder at a Slack thread, Jira ticket or PRD, builds a first version from the product's own components, and stakeholders comment on the live preview; the result reaches engineering as code to review and merge. Its Jira and Slack agent is on the Team plan. Good pick for a PM who wants to build the first version themselves in a visual editor.
+
+### Netlify Agent Runners
+
+"Prototypes that become the product." A PM describes the change in a prompt; the agent writes the code in the team's repository, deploys a preview and opens a pull request that developers finish and merge. Good pick for a PM who wants a shareable preview URL and is happy for the hand-off to be a PR, especially if your site already deploys on Netlify.
+
+### Workshop
+
+"Go from idea to clickable prototype in minutes." Its Desktop app can pull in your codebase, but the output is a prototype with mocked data, which engineering "can pick up where Workshop left off". Good pick for exploring an idea before committing to a real change.
+
+### Else
+
+"Preview environments with AI editing." An engineer opens a PR, Else spins up a live environment of the full stack, and PMs, QA and designers fix things in place. It works after a PR exists, so it can sit alongside tools that work before one. Good pick for teams that want richer PR review.
+
+### Synlets
+
+"Tickets in. Pull requests out." Assign a ticket and its agent writes the change and opens a PR, then iterates on review comments. Credit-based plans with no per-seat fees. Good pick if you want tickets turned straight into PRs in the cloud.
+
+### Inspect (Ramp)
+
+a cloud coding agent you give a task "from wherever you do your work: Slack, GitHub, Linear, on the web, or on the run", which returns "a visually validated and fully reviewed pull request". Sessions are shared, so teammates can add context before review. Early access only. Good pick if your team lives in Slack and wants a cloud agent that ends in a pull request.
+
+### Vision (vson.ai)
+
+teammates "build in the same room, not in silos": one shared live session with the same chat and the same preview, live cursors, and comments pinned to the preview. Every change runs in an isolated preview and arrives as a pull request an engineer reviews, and the team can set "free zones and review zones", for example an admin area anyone can change while anything touching the database needs approval. Good pick if several non-developers want to build together on one GitHub repo, with engineers reviewing pull requests.
+
+### Remix
+
+"Your AI Product Manager": the team and an AI PM work "on a working copy of your website or product: analyze your data, propose changes, prompt new variants, test them, and ship the winner." Teammates branch variants of a live copy and comment on the canvas ("Like Figma, for your live app"). When a variant is ready it goes to GitHub as a pull request with the prompts behind it, a link to run it live, and "security checks that pass before anything merges." Good pick if a product team wants to compare several variants of a screen before engineering reviews a PR.
+
+### Kosuke
+
+"Describe the change in a chat session, check it in the Preview, and press Open PR." An engineer imports and deploys the project once; after that, people who don't write code can start sessions, and engineers "review and merge the pull request as usual". Changes come back with "a prototype, a recording, a verdict" to judge. It runs your own Claude Code or Codex subscription in its cloud sandboxes and charges for sandbox hours. Good pick if you want each PR to arrive with a recorded check of the change.
+
+### Specship
+
+Ticket-to-PR automation that starts from acceptance criteria and failing tests, with an optional auto-merge for low-risk PRs in private beta. Pricing isn't published yet. Good pick for small teams that want test-first automation.
+
+### CoderHelm
+
+"Assign a GitHub issue or Jira ticket and get a pull request", plus CI fixing, PR review and alerts-to-fixes, hosted or in your own AWS account. In closed beta. Good pick for engineering teams that want an engineering-ops agent.
+
+### Epicraft
+
+"Your AI developer lives inside Jira. Create a ticket. Assign the bot. Watch it write code, push a branch, and open a PR — all from Jira comments." It "posts an implementation plan, and waits for your 👍", and says "The PM is the user, not the developer". We couldn't find a public price. Good pick if you want PMs to turn Jira tickets into PRs.
+
+### CodeHerder
+
+An engineer connects "a device and a repository" once, then product people file tasks and its agents plan, build, review and merge them, each in its own git worktree, on a machine you already have or in your AWS account. By default, "no person approves the plan, the code or the result"; teams can add approval gates or a required human approval on the git host. Plans are priced by concurrent agents, not seats. Good pick if you want agents to take a task all the way to merge on your own hardware.
+
+### Butterneck
+
+The person who asks opens a link (or labels a Jira ticket and assigns it) and chats beside a live running copy of the app while the developer's own agent makes the edit on a computer the team connects. They check the change in the preview and keep refining. Butterneck doesn't open pull requests, merge or deploy: a developer reads the conversation and the diff and decides whether it becomes a PR through the team's usual process. The agent edits the files on the connected computer, the code context it reads goes to that agent's AI provider, and the preview and the chat reach it through Butterneck's servers, so this isn't an "everything stays local" tool. Starting from a Jira ticket isn't unique to Butterneck either: Synlets, CoderHelm, Clogless and Epicraft (which is also built for PMs) start from tickets too, and CodeHerder also runs agents on a machine the team connects; Productmind's CLI can run its sessions on your own machine. Since 28 October 2026, GitHub's own [Copilot Automations](https://github.blog/changelog/2026-10-28-new-tools-triggers-and-cost-controls-for-copilot-automations) can also start when an issue is labeled or assigned. The difference is what comes back: a live preview on the developer's own running app, and no pull request until a developer decides. The person asking doesn't install anything or need the project on their own computer: the developer's connected computer runs the app and the agent, and the requester only needs the link. Not the right pick if you want a tool that creates the PR for you; several above do that well. To see the flow before connecting a computer, [create a free account and try a request on a sample shop](https://app.butterneck.com/trial).
 
 ## How to choose
 
