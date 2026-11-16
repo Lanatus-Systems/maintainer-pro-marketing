@@ -137,7 +137,7 @@ Yes. Anyone the developer lets send requests can use it: a designer, a support l
 
 ### Does the PM need a local dev setup, git or Docker?
 
-No. Nothing is installed on the PM's side: no git, no Docker, no coding agent. The PM opens a share link in the browser, and signs in to Butterneck only if the developer limits who can send requests to a list of people. The developer's computer runs the app and the coding agent: it needs Node.js 22 or newer and Cursor, Claude Code or Antigravity already signed in.
+No. Nothing is installed on the PM's side: no git, no Docker, no coding agent. The PM opens a share link in the browser, and signs in to Butterneck unless the developer has turned on "Anyone with the link". The developer's connected computer runs the app and the coding agent: it needs Node.js 22 or newer and Cursor, Claude Code or Antigravity already signed in.
 
 ### Does this change the production app directly?
 
