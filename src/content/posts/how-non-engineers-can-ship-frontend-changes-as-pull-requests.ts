@@ -3,7 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "how-non-engineers-can-ship-frontend-changes-as-pull-requests",
   title: "How can non-engineers ship frontend changes as pull requests?",
-  description: "A 5-step workflow for designers and PMs: make the frontend change on a live preview, then a developer reviews it and opens the pull request.",
+  description: "Let designers and PMs change copy, layout and styling on a live preview. A developer reviews the diff and opens the PR, and branch rules keep main safe.",
   date: "2026-11-03",
   updated: "2026-11-16",
   author: "The Butterneck team",
