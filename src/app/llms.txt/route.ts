@@ -1,6 +1,7 @@
 import { POSTS, postPath } from "@/content/blog";
 import { legalPages } from "@/content/legal";
 import { DEFINITION } from "@/content/landing";
+import { SECURITY } from "@/content/security";
 import { AASAANWEB_PUBLISHED_POSTS, aasaanWebPostPath } from "@/content/aasaanweb-blog";
 import { getAasaanWebPosts } from "@/lib/aasaanweb-blog";
 import { brand, isAasaanWeb } from "@/lib/brand";
@@ -31,7 +32,7 @@ export function GET() {
     `- Home: ${siteUrl("/")}`,
     `- Pricing: ${siteUrl("/pricing")}`,
     `- Jira integration: ${siteUrl("/integrations/jira")}`,
-    `- Security: ${siteUrl("/security")}`,
+    `- [Security](${siteUrl(SECURITY.path)}): ${SECURITY.description}`,
     `- Blog: ${siteUrl("/blog")}`,
     ...Object.values(legalPages).map((p) => `- ${p.title}: ${siteUrl(p.path)}`),
     "",
