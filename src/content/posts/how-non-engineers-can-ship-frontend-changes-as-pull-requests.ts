@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "How can non-engineers ship frontend changes as pull requests?",
   description: "A 5-step workflow for designers and PMs: make the frontend change on a live preview, then a developer reviews it and opens the pull request.",
   date: "2026-11-03",
-  updated: "2026-11-12",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -20,6 +20,8 @@ export const post: BlogPost = {
 ## Why not let them open the PR directly?
 
 Some tools do open a PR for a PM or designer. That can work. But a PR is a poor place to iterate on small visual tweaks, and someone still has to own the code it contains. See [AI PRs need an owner](/blog/ai-prs-need-an-owner).
+
+Some design leaders go further and train designers to work in production code. David Siren Eisner, VP of Product Design at Datadog, makes that case in [an interview with Rosenfeld Media](https://rosenfeldmedia.com/from-designing-to-building-the-rise-of-product-design-engineering-with-david-siren-eisner/) about his book *Product Design Engineering*, due from Rosenfeld Media in November 2026. Even he says "the goal is not to turn every designer into an engineer." For designers who don't want to own a branch, the workflow below keeps the pull request with a developer.
 
 ## A workflow that works
 
@@ -52,6 +54,10 @@ For changes to screens that already exist, yes. The designer opens the share lin
 ### Can a designer open the pull request themselves?
 
 They can if your Git setup allows it, but with Butterneck the developer opens it after reviewing the change. Butterneck doesn't open PRs.
+
+### How do we make sure a non-engineer's change can't reach main without review?
+
+Use your Git host's rules. Protect the main branch so changes only land through a pull request with an approving review, and add a CODEOWNERS file so the right developer is asked to review the frontend files. GitHub documents both: [protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) and [code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners). Butterneck works inside those rules: it edits files on the developer's connected computer and stops. It does not commit, push or open a pull request, so the developer's own branch, review and checks stay the only path to production.
 
 ### Does the code have to be on GitHub?
 
