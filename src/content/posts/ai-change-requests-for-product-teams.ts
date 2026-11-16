@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-12",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -147,7 +147,7 @@ For a product manager who wants to try Claude Code without setting up the repo, 
 
 ### Is there an AI coding agent for product teams?
 
-Yes. With Butterneck, a PM, designer or support lead asks for a change in a chat beside a live preview of the app, and the developer's own coding agent (Cursor, Claude Code or Antigravity) makes it on a computer that has the project. The person who asked checks the preview. A developer decides whether it ships, and Butterneck never opens a pull request, merges or deploys.
+Yes. With Butterneck, a PM, designer or support lead asks for a change in a chat beside a live preview of the app, and the developer's own coding agent (Cursor, Claude Code or Antigravity) makes it on a computer that has the project. The person who asked checks the preview. A developer decides whether it ships, and Butterneck never opens a pull request, merges or deploys. For how agentic coding works when the person asking isn't a developer, see [agentic coding for product teams](/blog/agentic-coding-for-product-teams).
 
 ### What should a product manager look for in an AI change request tool?
 

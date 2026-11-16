@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Can product managers change the app without engineering?",
   description: "Yes, for small changes: a PM describes it in plain words and an AI coding agent makes it on a private preview of the app, no code needed. A developer decides what ships.",
   date: "2026-11-03",
-  updated: "2026-11-15",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder"],
   cover: {
@@ -49,7 +49,7 @@ Designers can use the same setup; see [how non-engineers can ship frontend chang
 
 ### Can product managers build apps without engineering or writing code?
 
-A new app, often yes: AI app builders can generate a prototype or an internal tool from a plain-language description, and many also host it. The product your customers already use is different. It has a codebase, tests and a release process, so the realistic version is the setup above: the PM describes the change and checks it on a live copy, the team's own coding agent edits the existing project, and a developer decides what ships. See [AI app builder or change the app you already have?](/blog/ai-app-builder-vs-changing-your-existing-app)
+A new app, often yes: AI app builders can generate a prototype or an internal tool from a plain-language description, and many also host it. The product your customers already use is different. It has a codebase, tests and a release process, so the realistic version is the setup above: the PM describes the change and checks it on a live copy, the team's own coding agent edits the existing project, and a developer decides what ships. See [AI app builder or change the app you already have?](/blog/ai-app-builder-vs-changing-your-existing-app). If you are weighing Lovable for this, see [our comparison for teams with an existing app](/blog/lovable-alternative).
 
 ### Do product managers need to learn to code?
 

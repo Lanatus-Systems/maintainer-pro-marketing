@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-15",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -113,7 +113,7 @@ Teams trying it, like H&B, keep engineers reviewing both the plan and the merge 
 
 ### Can product managers vibe code on an existing codebase?
 
-Some teams do: a PM uses an AI coding tool on the real repository and opens a draft pull request for an engineer to review, usually for copy, layout and styling. [Built In's guide](https://builtin.com/articles/unlock-vibe-coding-designers-product-managers) recommends branch protection, required checks and a preview on every pull request before you try it, and most of these tools assume the PM can run the repository. Butterneck takes a different route: the PM asks on a live copy of the app, the developer's own coding agent makes the change on the developer's computer, and the PM checks it on the same preview. A developer then decides what ships. Butterneck never opens a pull request, merges or deploys.
+Some teams do: a PM uses an AI coding tool on the real repository and opens a draft pull request for an engineer to review, usually for copy, layout and styling. [Built In's guide](https://builtin.com/articles/unlock-vibe-coding-designers-product-managers) recommends branch protection, required checks and a preview on every pull request before you try it, and most of these tools assume the PM can run the repository. Butterneck takes a different route: the PM asks on a live copy of the app, the developer's own coding agent makes the change on the developer's computer, and the PM checks it on the same preview. A developer then decides what ships. Butterneck never opens a pull request, merges or deploys. For the whole-team version, with one person deciding what ships, see [vibe coding for teams](/blog/vibe-coding-for-teams).
 
 ### Should a product manager review the AI-generated code?
 
