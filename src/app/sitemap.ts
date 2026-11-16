@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { POSTS, postPath } from "@/content/blog";
 import { LEGAL_UPDATED, legalPages } from "@/content/legal";
-import { SECURITY } from "@/content/security";
+import { SECURITY, SECURITY_UPDATED } from "@/content/security";
 import { AASAANWEB_ABOUT_UPDATED, AASAANWEB_HOME_UPDATED } from "@/lib/aasaanweb";
 import { AASAANWEB_LEGAL, AASAANWEB_LEGAL_UPDATED } from "@/content/aasaanweb-legal";
 import { isAasaanWeb } from "@/lib/brand";
@@ -12,6 +12,7 @@ import { siteUrl } from "@/lib/site";
  * Real per-page modified dates. Posts use their own date (or `updated`), legal pages use the
  * "Last updated" date they show, and the product pages use the date their copy last changed.
  * Bump PRODUCT_PAGES_UPDATED when home, /pricing or /integrations/jira copy changes.
+ * Bump SECURITY_UPDATED in src/content/security.ts when /security copy changes.
  */
 const PRODUCT_PAGES_UPDATED = "2026-11-12";
 const LEGAL_LAST_MODIFIED = new Date(`${LEGAL_UPDATED} 00:00:00 UTC`);
@@ -76,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: siteUrl("/pricing"), lastModified: new Date(PRODUCT_PAGES_UPDATED), changeFrequency: "monthly", priority: 0.8 },
     { url: siteUrl("/integrations/jira"), lastModified: new Date(PRODUCT_PAGES_UPDATED), changeFrequency: "monthly", priority: 0.8 },
-    { url: siteUrl(SECURITY.path), lastModified: new Date("2026-11-02"), changeFrequency: "yearly", priority: 0.4 },
+    { url: siteUrl(SECURITY.path), lastModified: new Date(SECURITY_UPDATED), changeFrequency: "yearly", priority: 0.4 },
     ...legal,
   ];
 }
