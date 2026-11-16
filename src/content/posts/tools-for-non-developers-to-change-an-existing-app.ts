@@ -180,6 +180,10 @@ Figma Make on your codebase is a closed beta for now: access is by waitlist, it 
 
 The "What you get back" column shows what each tool hands over for review: a prototype, a pull request or a live preview. Whether a merge can skip review depends on each tool's settings and your repository rules, so check its own page. Butterneck itself doesn't commit anything: the person who asked checks the change on a live preview, then a developer reviews the diff in their own tools and decides whether to commit it, open a pull request and merge.
 
+### Which tools on this list are alternatives to each other?
+
+Tools on the same line of "How to choose" above do the same job, so they are the closest alternatives to each other. If you are looking at ronda, the other tools that turn a plain-English request into a pull request are Fixdog, Itera and Clogless. If you like that Revyse can let the person who asked publish small changes, Refinar does that too. For a prototype to explore an idea, as with Modeinspect, look at Workshop. If you'd rather the person who asked check the change before any pull request exists, PinAppAI and Butterneck work that way.
+
 ### Does Butterneck open a pull request?
 
 No. Butterneck never opens a pull request, merges or deploys. The person who asked checks the change on a live preview, and a developer reviews the diff and ships it the team's usual way.
