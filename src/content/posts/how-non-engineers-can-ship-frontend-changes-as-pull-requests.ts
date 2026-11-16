@@ -35,9 +35,18 @@ This is how [Butterneck](/) works. Butterneck itself does not commit, push or op
 
 **See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
+## Which frontend changes to start with
+
+Start with changes the person asking can judge by looking at the screen:
+
+- Copy, labels, headings, button text and help text.
+- Spacing, alignment and layout inside your existing design system.
+- Small visual fixes: a wrong color, a broken link, a missing hover state.
+
+Keep these with an engineer from the start, even when they look small: sign-in and permissions, billing and pricing logic, data and migrations, APIs other teams depend on, and build or deploy config. Our [policy template for AI change requests](/blog/ai-change-request-policy-template) has the full list, and the [pilot proposal](/blog/pm-change-request-pilot-proposal) shows how to agree on it with your engineering lead.
+
 ## What makes this go smoothly
 
-- Agree on which changes are in scope (copy, layout, styling, small fields). Our [pilot proposal](/blog/pm-change-request-pilot-proposal) helps.
 - Read [why a live preview before the pull request](/blog/live-preview-before-pull-request) helps reviewers.
 - For other tools that do open PRs for non-developers, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
