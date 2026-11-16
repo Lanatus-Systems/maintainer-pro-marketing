@@ -7,7 +7,7 @@ export const post: BlogPost = {
   date: "2026-11-03",
   updated: "2026-11-16",
   author: "The Butterneck team",
-  tags: ["product managers", "AI change requests", "answer", "AI app builder"],
+  tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
     src: "/blog/cover-let-product-managers-change-the-app-without-engineering.png",
     alt: "Butterneck blog cover: Can product managers change the app without engineering? — A developer still decides what ships.",
@@ -50,6 +50,10 @@ Designers can use the same setup; see [how non-engineers can ship frontend chang
 ### Can product managers build apps without engineering or writing code?
 
 A new app, often yes: AI app builders can generate a prototype or an internal tool from a plain-language description, and many also host it. The product your customers already use is different. It has a codebase, tests and a release process, so the realistic version is the setup above: the PM describes the change and checks it on a live copy, the team's own coding agent edits the existing project, and a developer decides what ships. See [AI app builder or change the app you already have?](/blog/ai-app-builder-vs-changing-your-existing-app). If you are weighing Lovable for this, see [our comparison for teams with an existing app](/blog/lovable-alternative).
+
+### Can product managers prototype in the real codebase instead of a mockup?
+
+For changes to screens that already exist, yes. The PM opens the share link to the running app and describes the change in plain words. The team's coding agent edits the real project on a developer's connected computer, and the preview updates on the same link, so the PM can show stakeholders a working version in the app's own code, not a mockup. Nothing reaches production until a developer reviews the diff and ships it, and a version nobody wants is simply discarded. A brand-new product or flow is a different job: start it with design and scoping, or an AI app builder.
 
 ### Do product managers need to learn to code?
 
