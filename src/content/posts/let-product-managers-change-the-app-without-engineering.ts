@@ -3,9 +3,10 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "let-product-managers-change-the-app-without-engineering",
   title: "Can product managers change the app without engineering?",
+  seoTitle: "Can product managers build or change apps without engineering?",
   description: "Yes, for small changes. A PM describes the change in plain words, an AI coding agent makes it on a live preview, and a developer decides what ships.",
   date: "2026-11-03",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
