@@ -36,6 +36,10 @@ function isSignupUrl(url: URL): boolean {
   return url.origin === new URL(APP_URL).origin && /^\/signup\b/.test(url.pathname);
 }
 
+function isTrialUrl(url: URL): boolean {
+  return url.origin === new URL(APP_URL).origin && /^\/trial\b/.test(url.pathname);
+}
+
 function isContactLink(href: string, url: URL): boolean {
   return href.startsWith("mailto:") || (url.origin === window.location.origin && /^\/contact\/?$/.test(url.pathname));
 }
@@ -44,6 +48,7 @@ function isContactLink(href: string, url: URL): boolean {
  * Delegated click tracking. Every matching rule fires (they are not exclusive):
  *  - explicit `data-ga-event` (+ `data-ga-*` params), e.g. book_walkthrough_click, select_plan
  *  - app /signup link         -> sign_up_click { location }
+ *  - app /trial link          -> trial_click { location }
  *  - /contact or mailto: link -> contact_click { location, method }
  *  - link to WALKTHROUGH_URL   -> walkthrough_click { location }
  *  - any link inside a blog post body or the post CTA -> blog_cta_click
@@ -78,6 +83,9 @@ function onClick(e: MouseEvent) {
   }
   if (ds.gaEvent !== "sign_up_click" && isSignupUrl(url)) {
     events.push(["sign_up_click", { location, link_text: label }]);
+  }
+  if (ds.gaEvent !== "trial_click" && isTrialUrl(url)) {
+    events.push(["trial_click", { location, link_text: label, link_url: a.href }]);
   }
   if (ds.gaEvent !== "contact_click" && isContactLink(href, url)) {
     events.push([
