@@ -75,6 +75,8 @@ Be honest about your team. Giving the PM their own coding assistant is often the
 
 In those cases, a PM with their own Claude Code or Cursor seat is simpler than routing requests through someone else's setup.
 
+It works best when engineering treats the PM's setup as a product of its own. Needl.ai, for example, describes PMs working in its production codebase with Claude Code, using reusable skills its engineers built to enforce authentication, the design system and deployment ([The Repo Is the New PRD](https://vikramsrinivasan.substack.com/p/the-repo-is-the-new-prd), April 2026).
+
 ## What to know before you try this
 
 - **Your AI provider's terms apply.** The coding CLI sends code context to its own provider, under that provider's terms. Butterneck does not run its own model.
