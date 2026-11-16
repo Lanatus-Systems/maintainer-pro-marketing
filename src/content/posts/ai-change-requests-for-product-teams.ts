@@ -181,6 +181,10 @@ Whichever model the developer's Cursor, Claude Code, or Antigravity CLI is set t
 
 Starter is free for one developer and one requester. Pro is USD 19 per person per month, with 20% off annual billing and local-currency pricing, and a workspace owner on Starter can try Pro for one month. See [pricing](/pricing).
 
+### Can AI automate small change requests from the product backlog?
+
+Yes, for small, clearly described changes: copy and labels, layout and spacing, and small UI fixes. Keep sign-in, billing, data and permissions with an engineer. Some tools turn a ticket straight into a draft pull request. In Butterneck, a chat message on the live preview, or a Jira ticket labelled \`butterneck\` and assigned to a teammate whose Jira account is mapped to a computer that has the project, starts the coding agent on a developer's connected computer. The person who asked checks the change on the preview, and a developer decides what ships. Butterneck does not open the pull request.
+
 ### How is this different from tools that open pull requests?
 
 Butterneck stops at a reviewable change on a live preview. For a comparison with a PR-generating tool, read our [Itera alternative](/blog/itera-alternative) or [Clogless alternative](/blog/clogless-alternative) post, and for the reasoning, [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding).
