@@ -3,11 +3,11 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "claude-code-for-product-managers",
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
-  seoTitle: "AI change requests: Claude Code for product managers, no terminal",
+  seoTitle: "Claude Code for product managers, without the terminal",
   description:
     "AI change requests for PMs using Claude Code, no terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits, a developer decides.",
   date: "2026-10-28",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers", "IDE for product managers"],
   cover: {
