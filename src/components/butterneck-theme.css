@@ -1061,8 +1061,8 @@ html[data-app="butterneck"] {
   & .bn-mini {
     position: absolute;
     left: -2.25rem;
-    /* Hang off the top-left corner, just clear of the chat header (~2px gap at rest). */
-    top: -7.8rem;
+    /* Hang off the top-left corner, overlapping the AI assistant header, clear of the first message. */
+    top: -3.75rem;
     width: 13.5rem;
     border: 1px solid rgb(10 19 36 / 10%);
     border-radius: 14px;
@@ -1260,13 +1260,13 @@ html[data-app="butterneck"] {
   html[data-app="butterneck"] {
     & .bn-mini {
       left: -0.5rem;
-      top: -7.8rem;
+      top: -3.75rem;
       width: 12rem;
     }
 
     & .bn-stage {
       /* gap (2.5rem) plus this margin clears the hanging card and the 10px float. */
-      margin-top: 6.25rem;
+      margin-top: 2.25rem;
     }
 
     & .bn-stage-glow {
