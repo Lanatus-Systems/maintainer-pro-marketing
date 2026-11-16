@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests on a shared local app: PMs open a live link to the app on a developer's computer, ask in chat, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-14",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -167,6 +167,10 @@ Not a native iOS or Android build. Butterneck shares web apps: the bridge starts
 ### Does it work with our stack, for example Rails, Django or Laravel?
 
 Butterneck doesn't depend on a particular framework or language. It works with a web app that the connected computer can start with a command and that serves pages on a local port. Each app in the project has its own start command and port, which the developer sets up once (detection can fill them in from the project's files), and the share link opens that app in a browser. If your dev server reloads the page when a file changes, that keeps working on the share link. The bridge itself needs Node.js 22 or newer on that computer, whatever your app is written in. Butterneck does not commit, push, open a pull request, merge or deploy.
+
+### What if our app needs Docker Compose or a local database?
+
+That works, as long as the app runs on the connected computer. When the developer sets up the project, Butterneck reads its files, including a Docker Compose file, and lists what the computer needs, such as Docker Compose services running or a database to create. The developer confirms that list once. Each private copy then follows its setup steps, which can include starting the database services from the compose file, for example \`docker compose up db -d\`, before the app starts. The app itself still needs a start command and a local port, which is what the share link opens. Use local or test data for previews, not production data. Butterneck does not commit, push, open a pull request, merge or deploy.
 
 ### How is this different from a localhost tunnel like ngrok?
 
