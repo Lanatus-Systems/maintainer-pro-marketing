@@ -1037,8 +1037,6 @@ html[data-app="butterneck"] {
   /* Hero stage: chat mockup plus a floating live-preview card. */
   & .bn-stage {
     position: relative;
-    /* Room under the chat for the hanging live-preview card, plus a little gap. */
-    margin-bottom: 9.5rem;
     transform: perspective(1100px) rotateX(var(--bn-rx, 0deg)) rotateY(var(--bn-ry, 0deg));
     transform-style: preserve-3d;
     transition: transform 0.4s var(--ease);
@@ -1063,8 +1061,8 @@ html[data-app="butterneck"] {
   & .bn-mini {
     position: absolute;
     left: -2.25rem;
-    /* Sit below the chat composer; 9rem leaves a small gap under the panel. */
-    bottom: -9rem;
+    /* Hang off the top-left corner, just clear of the chat header (~2px gap at rest). */
+    top: -7.8rem;
     width: 13.5rem;
     border: 1px solid rgb(10 19 36 / 10%);
     border-radius: 14px;
@@ -1262,12 +1260,13 @@ html[data-app="butterneck"] {
   html[data-app="butterneck"] {
     & .bn-mini {
       left: -0.5rem;
-      bottom: -8.5rem;
+      top: -7.8rem;
       width: 12rem;
     }
 
     & .bn-stage {
-      margin-bottom: 9rem;
+      /* gap (2.5rem) plus this margin clears the hanging card and the 10px float. */
+      margin-top: 6.25rem;
     }
 
     & .bn-stage-glow {
