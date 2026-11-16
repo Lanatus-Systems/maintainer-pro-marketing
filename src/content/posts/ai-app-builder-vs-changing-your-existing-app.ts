@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests vs AI app builders: change the app you already have. PMs ask on a live preview, an AI coding agent edits, a developer decides what ships.",
   date: "2026-11-05",
-  updated: "2026-11-13",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["ai app builder", "no code app builder", "AI change requests", "product teams", "existing codebase", "AI coding agents"],
   cover: {
@@ -31,7 +31,7 @@ Many product teams have a different problem. They already have an app, with cust
 
 ## Where an AI app builder is a poor fit
 
-- **You already have the app.** Rebuilding it inside a builder means a second codebase, or a migration.
+- **You already have the app.** Rebuilding it inside a builder means a second codebase, or a migration. Some builders can now import an existing repository and work on a branch of it; check who reviews each change and whether the builder can merge it for you.
 - **Your release process matters.** Branch rules, CI, code review and a deploy pipeline belong to the app you already run.
 - **The change is small.** A copy change or layout fix on a live product doesn't need a new project.
 
@@ -75,7 +75,7 @@ A tool that generates an app from a plain-language description and lets you refi
 
 ### Should we use an AI app builder for an app we already have?
 
-Usually not for small changes. Rebuilding an existing product in a builder creates a second codebase. Changing the app where it already lives keeps your codebase, tests and release process.
+Usually not for small changes. Rebuilding an existing product in a builder creates a second codebase. A few builders can import your repository instead and work on a branch; then the question is who checks each change and who merges it. Changing the app where it already lives keeps your codebase, tests and release process.
 
 ### Is there a no code way to change an existing app?
 
