@@ -102,11 +102,18 @@ const nextConfig: NextConfig = {
   async redirects() {
     if (isAasaanWeb) return aasaanWebRedirects;
     return [
+      { source: "/features", destination: "/", statusCode: 301 },
       { source: "/butterneck-vs-clickup", destination: "/", statusCode: 301 },
+      { source: "/butterneck-vs-basecamp", destination: "/", statusCode: 301 },
       { source: "/signup", destination: "https://app.butterneck.com/signup", statusCode: 301 },
       {
         source: "/blog/butterneck-vs-jira-coding-agent",
         destination: "/integrations/jira",
+        statusCode: 301,
+      },
+      {
+        source: "/blog/looking-for-an-affordable-clickup-alternative",
+        destination: "/blog",
         statusCode: 301,
       },
       { source: "/blogs", destination: "/blog", statusCode: 301 },
