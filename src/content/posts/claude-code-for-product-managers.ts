@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Claude Code for product managers: use your team's Claude Code or Cursor without a terminal",
   seoTitle: "Claude Code for product managers, without the terminal",
   description:
-    "AI change requests for PMs using Claude Code, no terminal or repo: ask on a live preview, your developer's Claude Code or Cursor edits, a developer decides.",
+    "Use your team's Claude Code or Cursor with no terminal or repo: ask on a live preview, the developer's agent edits, and a developer decides what ships.",
   date: "2026-10-28",
   updated: "2026-11-17",
   author: "The Butterneck team",
