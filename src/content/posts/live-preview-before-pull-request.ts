@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with a live preview before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off", "design QA", "ephemeral preview environments"],
   cover: {
@@ -184,6 +184,10 @@ A developer, using the team's normal release process. The requester's sign-off m
 ### How do you get stakeholder sign-off on a UI change before it merges?
 
 Put the sign-off where the stakeholder can see the running change. For work a developer builds, that's usually a preview link on each pull request, with the stakeholder's approval required before merge. For small changes the stakeholder asked for, Butterneck moves it earlier: they check the change on a live preview of the app running on a developer's connected computer, before any pull request exists, and sign off in writing where they asked. A developer then reads the diff and decides whether to commit it and open a pull request. Either way, the sign-off means "this is what I asked for", not "ship it".
+
+### Can stakeholders comment on the preview instead of filing a ticket?
+
+Yes, and in Butterneck the comment is the request. The person types it in the chat next to the screen they mean, and the request carries the page URL and route they have open, so the coding agent on a developer's connected computer starts from that screen. The change shows up on the same preview, and they keep replying in the same chat until it's right. A developer can answer in the chat without starting the agent, and a developer still decides what ships. Butterneck doesn't commit, push or open a pull request.
 
 ### Can designers use a live preview for design QA?
 
