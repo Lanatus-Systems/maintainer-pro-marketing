@@ -6,7 +6,7 @@ export const SECURITY = {
     "Where an AI change request is edited (on the connected computer), which folder it can touch, what is on the ignore list, who can send a request, and who sees the project.",
   lead: "A reviewer usually asks six things. Here they are.",
   definition:
-    "In short: Butterneck edits on your connected computer, inside the folder you pick, with .env files on an ignore list as a guardrail. It does not copy the repository to its servers to edit it, and it does not merge or deploy. Your team publishes.",
+    "In short: Butterneck runs the coding assistant on your connected computer and tells it to stay in the folder you pick and to leave .env files alone. These are guardrails, not hard blocks. It does not copy the repository to its servers to edit it, and it does not merge or deploy. Your team publishes.",
   facts: [
     {
       title: "The bridge runs on your computer",
@@ -54,7 +54,7 @@ export const SECURITY = {
       q: "Does Butterneck upload my code to its servers?",
       lines: [
         "Butterneck does not copy the repository to its servers to edit it. The edit happens on the connected computer, made by the coding assistant signed in there (Cursor, Claude Code, or Antigravity).",
-        "That provider receives what the assistant reads in order to make the change. Chat messages and attachments are stored in the workspace.",
+        "That provider receives what the assistant reads in order to make the change. The preview is relayed through Butterneck so the share link works, and chat messages and attachments are stored in the workspace.",
       ],
     },
     {
@@ -74,7 +74,7 @@ export const SECURITY = {
       q: "Who can open the preview link and send requests?",
       lines: [
         "Each connected computer starts with a chosen list of people who can send requests. \"Anyone with the link\" is a setting you turn on.",
-        "The share link is unlisted, not private. Anyone who has it can open the preview.",
+        "The share link is unlisted, not private. Anyone who has it can open the preview. Every request runs the coding assistant on your connected computer, so keep the list unless that computer holds nothing you would mind.",
       ],
     },
   ],
