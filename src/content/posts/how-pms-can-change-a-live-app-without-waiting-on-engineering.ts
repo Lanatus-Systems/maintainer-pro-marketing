@@ -7,9 +7,9 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-15",
+  updated: "2026-11-16",
   author: "The Butterneck team",
-  tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts"],
+  tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts", "no local dev setup"],
   cover: {
     src: "/blog/cover-how-pms-can-change-a-live-app.png",
     alt: "Butterneck blog cover: Let PMs change a live app. They ask in chat, the developer's AI builds it, and you publish",
@@ -135,9 +135,9 @@ A PM can make the change happen and see it on a live copy without waiting. A dev
 
 Yes. Anyone the developer lets send requests can use it: a designer, a support lead or a PM. A designer opens the same share link, goes to the screen with the problem, and types the fix, for example "add more space above the Save button" or "use the smaller heading style on this card". Each message carries the page address and route they have open, and they can attach up to five screenshots or files, so a screenshot with the problem circled works well. Name the element by its visible text, as in our [change request template](/blog/how-to-write-a-change-request-for-ai). The preview reloads with the change, the designer checks it there, and a developer reviews it and decides what ships. For the designer's side, from a fix on the preview to the pull request a developer opens, see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
-### Does the PM need a dev environment or git?
+### Does the PM need a local dev setup, git or Docker?
 
-No. The PM uses a share link in the browser. The developer's computer runs the app and the coding agent.
+No. Nothing is installed on the PM's side: no git, no Docker, no coding agent. The PM opens a share link in the browser, and signs in to Butterneck only if the developer limits who can send requests to a list of people. The developer's computer runs the app and the coding agent: it needs Node.js 22 or newer and Cursor, Claude Code or Antigravity already signed in.
 
 ### Does this change the production app directly?
 
