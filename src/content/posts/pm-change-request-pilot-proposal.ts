@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A copyable one-page proposal for a 4-week pilot where PMs ask an AI coding agent for small changes on a live preview and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-11-03",
+  updated: "2026-11-16",
   author: "The Butterneck team",
   tags: ["PM pilot proposal", "AI change requests", "AI for product managers", "engineering leads", "product teams"],
   cover: {
@@ -215,7 +215,7 @@ The guardrails in the proposal map to the product:
 - **Folders.** The agent works in the connected project folder, and you can add folders or files inside it to an ignore list the agent is told to stay out of.
 - **Secrets.** \`.env\` files are on an ignore list the agent is told to stay out of. That's a guardrail, not a hard block, so keep production secrets off the pilot computer.
 - **Stop and undo.** A run can be stopped, and its file changes are usually reverted; if the rollback can't be completed (for example, a changed file was too large to snapshot), the chat says so.
-- **Who can ask.** You choose who can send requests: a list of people, or anyone with the link. For a pilot, use the list.
+- **Who can ask.** Each connected computer starts with a chosen list of people who can send requests. "Anyone with the link" is a setting you turn on. For a pilot, keep the list.
 - **Developer replies.** A developer can reply in the chat without starting the agent.
 
 For writing the requests themselves, give your requesters [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai). Its five-line template (where, now, want, keep, check) makes requests easier to review, and the **Check** line doubles as the requester's sign-off on the preview.
