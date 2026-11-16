@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "How can non-engineers ship frontend changes as pull requests?",
   description: "Let designers and PMs change copy, layout and styling on a live preview. A developer reviews the diff and opens the PR, and branch rules keep main safe.",
   date: "2026-11-03",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -34,6 +34,17 @@ Some design leaders go further and train designers to work in production code. D
 This is how [Butterneck](/) works. Butterneck itself does not commit, push or open the pull request; the developer does.
 
 **See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+
+## What the developer checks before opening the PR
+
+The person who asked has already checked how the change looks. The developer's review is about the code:
+
+- **Scope.** The files that changed match the request. The developer sees the conversation, and each request carries the page URL and route the person had open.
+- **Nothing out of bounds.** No edits to sign-in, billing, data or build config unless your team agreed to it (see the list below).
+- **Your usual checks.** Build, tests and lint run the way they always do before the commit.
+- **A clean undo.** If a turn goes wrong while it's running, stopping it puts the files back to the baseline captured before that turn, in most cases. After that, your own git tools apply. See [how Butterneck runs the coding agent in a sandbox](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+
+Then the developer commits and opens the pull request, and your normal code review and branch rules apply.
 
 ## Which frontend changes to start with
 
