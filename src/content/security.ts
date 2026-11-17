@@ -97,5 +97,9 @@ export const SECURITY = {
       label: "Ask freely, ship deliberately: an architecture for human-in-the-loop AI product changes",
       href: "/blog/human-in-the-loop-architecture-for-ai-product-changes",
     },
+    {
+      label: "Why a connected computer instead of a cloud sandbox",
+      href: "/blog/ai-prs-need-an-owner#why-a-connected-computer-instead-of-a-cloud-sandbox",
+    },
   ],
 } as const;
