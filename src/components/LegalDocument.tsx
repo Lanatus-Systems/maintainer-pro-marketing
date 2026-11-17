@@ -11,13 +11,30 @@ export function LegalDocument({ page }: { page: LegalPage }) {
       <JsonLd data={breadcrumbJsonLd(page.title, page.path)} />
       <p className="legal-kicker">{page.kicker}</p>
       <h1>{page.title}</h1>
-      <p className="muted">Last updated {LEGAL_UPDATED}</p>
+      <p className="muted">Last updated {page.updated ?? LEGAL_UPDATED}</p>
       {page.blocks.map((block) => (
         <section key={block.heading}>
           <h2>{block.heading}</h2>
-          {block.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{linkKnownPhrases(paragraph)}</p>
-          ))}
+          {block.paragraphs.map((paragraph, index) => {
+            const links = index === block.paragraphs.length - 1 ? block.links : undefined;
+            return (
+              <p key={paragraph}>
+                {linkKnownPhrases(paragraph)}
+                {links && links.length > 0 ? (
+                  <>
+                    {" "}
+                    {links.map((link, j) => (
+                      <span key={link.href}>
+                        {j > 0 ? " or " : null}
+                        <a href={link.href}>{link.label}</a>
+                      </span>
+                    ))}
+                    .
+                  </>
+                ) : null}
+              </p>
+            );
+          })}
         </section>
       ))}
       <p className="muted legal-links">

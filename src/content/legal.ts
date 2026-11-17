@@ -3,9 +3,16 @@ import { SUPPORT_EMAIL } from "@/lib/site";
 
 export const LEGAL_UPDATED = "October 29, 2026";
 
+export type LegalLink = {
+  label: string;
+  href: string;
+};
+
 export type LegalBlock = {
   heading: string;
   paragraphs: string[];
+  /** Optional links rendered after the last paragraph, joined with "or". */
+  links?: LegalLink[];
 };
 
 export type LegalPage = {
@@ -13,6 +20,8 @@ export type LegalPage = {
   kicker: string;
   title: string;
   description: string;
+  /** If set, shown as "Last updated" instead of LEGAL_UPDATED (used when only this page changed). */
+  updated?: string;
   blocks: LegalBlock[];
 };
 
@@ -109,13 +118,24 @@ export const legalPages = {
     kicker: "Support",
     title: "Contact",
     description:
-      "Email Butterneck about an account, a preview link, or a Jira site you connected.",
+      "Email Butterneck about an account, a preview link or a Jira site you connected. To see it first, book a 30-minute demo or try the sample shop.",
+    updated: "November 17, 2026",
     blocks: [
       {
         heading: "How to reach us",
         paragraphs: [
           `Email ${SUPPORT_EMAIL}. Use this address for Butterneck and for the Jira connection: account questions, a preview link, or a site you connected by mistake.`,
           "Include the workspace name and, for a Jira issue, the issue key. We read mail on business days.",
+        ],
+      },
+      {
+        heading: "See Butterneck first",
+        paragraphs: [
+          "Want to see it on a product like yours before you connect anything?",
+        ],
+        links: [
+          { label: "Book a 30-minute demo", href: "https://calendar.app.google/p2McAaz4ZwXBiG5m9" },
+          { label: "try a request on the sample shop", href: "https://app.butterneck.com/trial" },
         ],
       },
     ],
