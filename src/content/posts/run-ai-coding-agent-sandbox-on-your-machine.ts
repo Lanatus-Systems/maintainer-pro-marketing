@@ -97,6 +97,10 @@ Worth being exact here, because "runs locally" is easy to over-read:
 
 ## FAQ
 
+### Is it safe to run an AI coding agent on a developer's laptop?
+
+It depends on what else that laptop can reach. With Butterneck the coding CLI runs as the user who runs the bridge, with its own permission prompts skipped (for example Claude Code with \`--dangerously-skip-permissions\`), so it has that user's access. The folder boundary and the \`.env\` ignore list are instructions, not a hard block. If the laptop holds production secrets or projects you'd rather the agent never saw, connect a dedicated development computer instead. Butterneck never pushes, opens a pull request, merges or deploys, so a developer still decides what ships.
+
 ### Does Butterneck run the coding agent on its own servers?
 
 No. The agent runs on a developer's own computer, using the coding CLI already signed in there: Cursor (\`agent\`), Claude Code (\`claude\`) or Antigravity (\`agy\`). Butterneck does not run its own model. Chat messages and preview traffic do pass through the Butterneck server so the share link works. For the trade-off against tools that run each task in a cloud sandbox, see [why a connected computer instead of a cloud sandbox](/blog/ai-prs-need-an-owner#why-a-connected-computer-instead-of-a-cloud-sandbox).
