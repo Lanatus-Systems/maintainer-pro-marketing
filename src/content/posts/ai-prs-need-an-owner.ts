@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -169,6 +169,10 @@ Give every AI PR a named human owner, keep AI changes small, sort changes into r
 ### Who should own an AI-generated pull request?
 
 A named person on your team, not the agent or a bot account. Make it the developer who started the agent's task or the one who will merge the change, and put their name on the PR. LinearB's 2026 report links part of the AI merge gap to AI PRs lacking "a natural human owner", and in a [2026 survey of 239 practitioners](https://arxiv.org/abs/2610.11179), 41.8% said they require evidence that a known human will maintain the code. In Butterneck there is no bot PR: the developer who checked the preview commits the change as their own work and decides whether to open a PR.
+
+### Should an AI coding agent merge its own pull request?
+
+It depends on what your team is willing to answer for. Some agents can now merge their own pull requests once checks pass, and on GitHub, Copilot approvals can count toward required approvals if an admin turns them on (they are off by default) ([GitHub changelog](https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals)). If you allow it, write down which kinds of change qualify and which person answers for them; our [policy template for AI change requests](/blog/ai-change-request-policy-template) has a review-tier table for that. Butterneck can't merge anything: it never opens a pull request, and the developer who checked the preview decides what ships.
 
 ### Why do AI pull requests take longer to review?
 
