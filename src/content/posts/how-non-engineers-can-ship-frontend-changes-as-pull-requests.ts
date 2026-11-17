@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "How to let non-engineers ship frontend changes as pull requests",
   description: "Let designers and PMs change copy, layout and styling on a live preview. A developer reviews the diff and opens the PR, and branch rules keep main safe.",
   date: "2026-11-03",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -56,6 +56,8 @@ Start with changes the person asking can judge by looking at the screen:
 - Copy, labels, headings, button text and help text.
 - Spacing, alignment and layout inside your existing design system.
 - Small visual fixes: a wrong color, a broken link, a missing hover state.
+
+Babbel's product designers, who now design directly in the app's code with Claude Code, draw the line in the same place: "Only presentational changes qualify: UI built from design-system components and tokens, with no changes to data, state or APIs. Everything else stays with engineering." Ralf Chille, a product designer there, also writes that "Engineers are right to push back on becoming reviewers of code a designer prompted" ([We moved design into the repo](https://medium.com/@ralfchille/we-moved-design-into-the-repo-the-hard-part-wasnt-the-tooling-938406febbaa), 16 November 2026). Having the person who asked check the change on a preview first means the developer reviews a change that already does what was meant.
 
 Be careful with visual bugs whose cause isn't on the screen. Plotly's engineering team found bug fixes "have not been a good fit" for designers working with an LLM: a text box border that looked too thin was really being cut off, and the right fix was the spacing around it ([Plotly](https://plotly.com/blog/what-i-learned-integrating-designers-wielding-llms-into-our-codebase/), October 2025). If the fix isn't obvious from looking, hand it to the developer.
 
