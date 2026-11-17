@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "ai-change-request-policy-template",
   title: "What non-engineers can ask AI to change: a policy template for product teams",
   description:
-    "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
+    "A copyable AI change policy for PMs, designers and support leads: what they can ask an AI coding agent for, what needs an engineer, and who merges.",
   date: "2026-10-27",
   updated: "2026-11-17",
   author: "The Butterneck team",
