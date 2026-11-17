@@ -1,5 +1,5 @@
 /** Bump SECURITY_UPDATED when /security copy changes. */
-export const SECURITY_UPDATED = "2026-11-16";
+export const SECURITY_UPDATED = "2026-11-17";
 
 export const SECURITY = {
   path: "/security",
@@ -78,6 +78,13 @@ export const SECURITY = {
       lines: [
         "Each connected computer starts with a chosen list of people who can send requests. \"Anyone with the link\" is a setting you turn on.",
         "The share link is unlisted, not private. Anyone who has it can open the preview. Every request runs the coding assistant on your connected computer, so keep the list unless that computer holds nothing you would mind.",
+      ],
+    },
+    {
+      q: "Whose access does the coding assistant run with?",
+      lines: [
+        "It runs as the user who runs the bridge, on a developer's connected computer. Butterneck doesn't add a container, a virtual machine or a separate user account around it.",
+        "For a harder boundary, connect a dedicated development computer that has the project and a signed-in coding assistant, but no production secrets and no other projects you'd rather it never saw.",
       ],
     },
   ],
