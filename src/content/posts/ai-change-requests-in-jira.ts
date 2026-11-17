@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "AI change requests in Jira: how to start one from a ticket",
   description: "How to turn a Jira ticket into an AI-made change the requester can check on a live preview, with a developer deciding what ships.",
   date: "2026-11-03",
-  updated: "2026-11-15",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["Jira", "AI change requests", "answer"],
   cover: {
@@ -47,6 +47,10 @@ The integration is for Jira Cloud.
 ### Who can start a run?
 
 A run starts only in a linked Jira project, when the ticket has the \`butterneck\` label and is assigned to a mapped user.
+
+### Can several tickets be worked on at once?
+
+Yes. Each ticket labelled \`butterneck\` opens its own copy, named after the ticket, and that copy's preview link goes back on the same ticket, so two tickets in progress don't share one staging site. Updating the same ticket later doesn't open a second copy. Copies count toward your plan; see [pricing](/pricing).
 
 ### Does it open a pull request from the ticket?
 
