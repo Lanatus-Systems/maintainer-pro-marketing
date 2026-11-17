@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -111,6 +111,8 @@ Faros puts the problem plainly: "the code arriving for review is often not revie
 - **Sort changes into review lanes.** Not every change needs the same depth of review. A small, low-risk change (copy, a label, a color) can take a light path, most changes get a standard developer review, and anything touching auth, billing, data or infrastructure gets a deep review. Our [policy template](/blog/ai-change-request-policy-template) has a review-tier table you can adapt.
 - **Have the person who asked check the result before review.** If a PM or designer asked for the change, they look at it running and confirm it's what they meant before a developer spends time on the diff. A clear request makes that check easier: see [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai).
 - **Agree on what AI should be asked for.** We wrote a [policy template for AI change requests](/blog/ai-change-request-policy-template) that says who can ask, for what, and who decides what ships.
+
+Review isn't the only queue, either. As DevOps.com's Mike Vizard put it on 13 November 2026, "Adding reviewers may clear one handoff without changing who can propose, implement and deliver a feature" ([DevOps.com](https://devops.com/ai-codings-real-bottleneck-isnt-code-review)). Letting the person who asked check the change before review is one way to change who proposes it, without changing who decides what ships.
 
 ## Where AI code review tools fit
 
