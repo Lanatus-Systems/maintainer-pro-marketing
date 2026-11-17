@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "Can product managers build or change apps without engineering?",
   description: "New app: an AI app builder gets you a prototype. The app your team runs: yes for small changes, on a live preview, and a developer decides what ships.",
   date: "2026-11-03",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
@@ -25,7 +25,7 @@ export const post: BlogPost = {
 
 The useful goal is the first one: the PM does the back-and-forth on a preview, and the developer gets a change that has already been checked by the person who asked for it.
 
-PMs who have done this at work describe the same split. At Remote, a senior product manager used Claude Code to prepare a production change and open the merge request, and wrote: "The human involvement is reviewing the merge request and approving it, which is where it should be" ([Remote, 20 August 2026](https://remote.com/blog/people/shipping-to-production-as-a-non-engineer)). At Tipalti, a PM's engineering Team Lead "reviewed the plan before a single line of code was written", and the feature "went through all the regular testing and review cadences with the engineering team" ([Tipalti, 12 August 2026](https://tipalti.com/blog/non-technical-pm-ships-feature-ai/)). Both PMs used AI to make the change themselves. With Butterneck the agent runs on a developer's connected computer instead, but the last step is the same: a developer decides what ships.
+PMs who have done this at work describe the same split. At Remote, a senior product manager used Claude Code to prepare a production change and open the merge request, and wrote: "The human involvement is reviewing the merge request and approving it, which is where it should be" ([Remote, 20 August 2026](https://remote.com/blog/people/shipping-to-production-as-a-non-engineer)). At Tipalti, a PM's engineering Team Lead "reviewed the plan before a single line of code was written", and the feature "went through all the regular testing and review cadences with the engineering team" ([Tipalti, 12 August 2026](https://tipalti.com/blog/non-technical-pm-ships-feature-ai/)). Atlassian reports the same split at scale: in an internal initiative, "PMs and designers who had never written production code used AI to take small customer-facing improvements all the way to production. Engineers helped scope the changes, reviewed the code, and upheld technical standards." In three months, "more than 50 PMs and designers shipped over 100 engineering-approved production changes" ([Atlassian, 10 November 2026](https://www.atlassian.com/blog/how-we-build/3-lessons-from-rebuilding-atlassians-product-development-lifecycle-for-people-and-agents)). In all three cases, people outside engineering used AI to make the change themselves. With Butterneck the agent runs on a developer's connected computer instead, but the last step is the same: a developer decides what ships.
 
 ## A setup that works
 
