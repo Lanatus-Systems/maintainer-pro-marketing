@@ -22,6 +22,7 @@ import { post as previewBeforePr } from "@/content/posts/live-preview-before-pul
 import { post as vibeTeams } from "@/content/posts/vibe-coding-for-teams";
 import { post as agenticCoding } from "@/content/posts/agentic-coding-for-product-teams";
 import { post as aiAppBuilder } from "@/content/posts/ai-app-builder-vs-changing-your-existing-app";
+import { post as reporterChecks } from "@/content/posts/reporter-checks-the-fix";
 import { post as lovableAlt } from "@/content/posts/lovable-alternative";
 
 export type BlogPost = {
@@ -47,7 +48,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [lovableAlt, aiAppBuilder, agenticCoding, vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [reporterChecks, lovableAlt, aiAppBuilder, agenticCoding, vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 

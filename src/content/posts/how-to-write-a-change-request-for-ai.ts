@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A five-line AI change request template: how PMs and designers can prompt an AI coding agent to change an existing app, and what to leave to a developer.",
   date: "2026-10-28",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -140,7 +140,7 @@ No. The agent finds the code. Quote the exact text on the screen and say which p
 
 ### Can I report a bug this way?
 
-Yes, if you can see it on a screen you can open in the preview: a broken link, a cut-off label, a wrong total on one page. Write what you see, what you expected and where, and attach a screenshot. If the cause isn't on the screen (data from another system, payments, permissions, something that only happens sometimes), leave it to a developer; see [What to leave to a developer](#what-to-leave-to-a-developer). Either way, you check the fix on the preview and a developer decides whether it ships.
+Yes, if you can see it on a screen you can open in the preview: a broken link, a cut-off label, a wrong total on one page. Write what you see, what you expected and where, and attach a screenshot. If the cause isn't on the screen (data from another system, payments, permissions, something that only happens sometimes), leave it to a developer; see [What to leave to a developer](#what-to-leave-to-a-developer). Either way, you check the fix on the preview and a developer decides whether it ships. There's a longer note on [letting the reporter check the fix before it ships](/blog/reporter-checks-the-fix).
 
 ### What if the AI changes the wrong thing?
 
