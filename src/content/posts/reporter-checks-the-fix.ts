@@ -26,7 +26,7 @@ This post is about moving that check earlier. The reporter looks at the fix on a
 
 ## The reporter is the acceptance test
 
-A pull request is good at asking "is this safe to ship?" It is a poor way to ask "is this actually fixed?", because the person who can answer that question is usually not reading the diff. The first time they see the running screen is often after the change has already gone through review, or after it has already shipped. By then, "not quite" costs another full loop.
+A pull request is good at asking "is this safe to ship?" It is a poor way to ask "is this actually fixed?", because the person who can answer that question is usually not reading the diff. The first time they see the running screen is often after the change has already gone through review, or after it has already shipped. By then, "not quite" costs another full loop. Julia Pottinger, who writes about QA release work, puts the same point plainly: "Do not accept a fix because the code changed and a unit test went green. A passing unit test tells you the unit behaves as the developer expected. It does not tell you the user-visible bug is gone." ([From bug report to beta build](https://juliapottinger.com/from-bug-report-to-beta-build-practical-qa-release-workflow/), October 2026)
 
 The cheaper order is the other way around. The reporter checks the fix on a running copy of the app. If it's wrong, they say so while the change is still cheap. A developer then reviews the code and decides whether it ships. The reporter's sign-off means "this is the fix I was asking for", not "ship it".
 
