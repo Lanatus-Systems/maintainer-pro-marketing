@@ -125,7 +125,7 @@ Not line by line. The PM is the right person to check the result: does the butto
 
 ### Does AI make code review the bottleneck?
 
-The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: with AI agents, pull requests opened went up 35.7%, while the time from a pull request's submission to its approval rose 56.1%. Adding PM-authored PRs to that queue makes it bigger. Nash, whose in-house agent opens pull requests for support, customer-success and operations staff, found the same thing once "anyone can ship": "the bottleneck moves to review, particularly plan review" ([Nash, June 2026](https://www.nash.ai/blog/everyone-ships)). Over 700 of its agent's pull requests have merged, each reviewed by a human.
+The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: with AI agents, pull requests opened went up 35.7%, while the time from a pull request's submission to its approval rose 56.1%. Adding PM-authored PRs to that queue makes it bigger. Nash, whose in-house agent opens pull requests for support, customer-success and operations staff, found the same thing once "anyone can ship": "the bottleneck moves to review, particularly plan review" ([Nash, June 2026](https://www.nash.ai/blog/everyone-ships)). Over 700 of its agent's pull requests have merged, and 97% of what it merges carries a human co-author who signed off on it.
 
 ### Does Butterneck open pull requests for PMs?
 
