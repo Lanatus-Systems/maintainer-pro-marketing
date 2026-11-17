@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -125,7 +125,7 @@ Not line by line. The PM is the right person to check the result: does the butto
 
 ### Does AI make code review the bottleneck?
 
-The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: with AI agents, pull requests opened went up 35.7%, while the time from a pull request's submission to its approval rose 56.1%. Adding PM-authored PRs to that queue makes it bigger.
+The [Harvard study](https://fion.ac/jellyfish.pdf) suggests it can: with AI agents, pull requests opened went up 35.7%, while the time from a pull request's submission to its approval rose 56.1%. Adding PM-authored PRs to that queue makes it bigger. Nash, whose in-house agent opens pull requests for support, customer-success and operations staff, found the same thing once "anyone can ship": "the bottleneck moves to review, particularly plan review" ([Nash, June 2026](https://www.nash.ai/blog/everyone-ships)). Over 700 of its agent's pull requests have merged, each reviewed by a human.
 
 ### Does Butterneck open pull requests for PMs?
 
