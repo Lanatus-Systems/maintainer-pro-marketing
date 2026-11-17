@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable policy for PMs, designers and support leads who ask an AI coding agent for changes: what they can ask for, what needs an engineer, and review tiers.",
   date: "2026-10-27",
-  updated: "2026-11-13",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -254,6 +254,10 @@ No. An AI code review tool can comment on or approve a diff, but governance deci
 ### Who should decide what ships?
 
 A developer, through your normal release process. The requester accepts the change on the preview, and the developer reviews the diff and decides whether it ships. Neither the requester nor the AI should ship on their own.
+
+### Should non-engineers be allowed to merge AI changes themselves?
+
+Not under this policy. Some tools now let a non-engineer approve and merge a change from inside the tool. If yours can, turn that off, or require an approving developer review on the main branch so merge rights stay with a developer. epilot learned this the hard way: after a non-engineer with full push access bypassed CI and deployed to production without review, the team changed the rule to "non-engineers and agents create PRs; engineers review and merge" ([epilot, April 2026](https://dev.to/epilot/our-entire-company-ships-code-now-40-prs-from-non-engineers-in-60-days-jo5)). With Butterneck the requester checks the change on a live preview, and Butterneck doesn't commit, push, open a pull request, merge or deploy: a developer does.
 
 ### How do you keep a record of who asked for an AI change and who approved it?
 
