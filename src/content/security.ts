@@ -6,7 +6,7 @@ export const SECURITY = {
   title: "Security",
   seoTitle: "Security for AI change requests: where edits run",
   description:
-    "Where an AI change request is edited (on the connected computer), which folder it can touch, what is on the ignore list, who can send a request, and who sees the project.",
+    "Where an AI change request is edited (on the connected computer), which folder it can touch, the ignore list, who can send a request, and who sees the project.",
   lead: "A reviewer usually asks six things. Here they are.",
   definition:
     "In short: Butterneck runs the coding assistant on your connected computer and tells it to stay in the folder you pick and to leave .env files alone. These are guardrails, not hard blocks. It does not copy the repository to its servers to edit it, and it does not merge or deploy. Your team publishes.",
