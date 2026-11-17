@@ -24,7 +24,7 @@ const JIRA_FAQS = [
 
 const PAGE_TITLE = "Jira integration: AI change requests from a ticket";
 const PAGE_DESCRIPTION =
-  "Label a Jira Cloud ticket and the developer's own AI coding agent builds the change on a live preview. The link comes back on the ticket; a developer decides first.";
+  "Label a Jira Cloud ticket; the developer's own AI coding agent builds the change on a live preview, linked on the ticket. A developer decides first.";
 
 export const metadata = pageMeta({
   title: PAGE_TITLE,
