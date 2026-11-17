@@ -25,6 +25,8 @@ export const post: BlogPost = {
 
 The useful goal is the first one: the PM does the back-and-forth on a preview, and the developer gets a change that has already been checked by the person who asked for it.
 
+PMs who have done this at work describe the same split. At Remote, a senior product manager used Claude Code to prepare a production change and open the merge request, and wrote: "The human involvement is reviewing the merge request and approving it, which is where it should be" ([Remote, 20 August 2026](https://remote.com/blog/people/shipping-to-production-as-a-non-engineer)). At Tipalti, a PM's engineering Team Lead "reviewed the plan before a single line of code was written", and the feature "went through all the regular testing and review cadences with the engineering team" ([Tipalti, 12 August 2026](https://tipalti.com/blog/non-technical-pm-ships-feature-ai/)). Both PMs ran the coding tool themselves. With Butterneck the agent runs on a developer's connected computer instead, but the last step is the same: a developer decides what ships.
+
 ## A setup that works
 
 1. A developer connects a computer where the app already runs and picks who can send requests.
