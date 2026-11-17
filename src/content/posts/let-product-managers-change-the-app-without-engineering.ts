@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "let-product-managers-change-the-app-without-engineering",
   title: "Can product managers change the app without engineering?",
   seoTitle: "Can product managers build or change apps without engineering?",
-  description: "Yes, for small changes. A PM describes the change in plain words, an AI coding agent makes it on a live preview, and a developer decides what ships.",
+  description: "New app: an AI app builder gets you a prototype. The app your team runs: yes for small changes, on a live preview, and a developer decides what ships.",
   date: "2026-11-03",
   updated: "2026-11-17",
   author: "The Butterneck team",
@@ -16,7 +16,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-**Short answer:** for small changes, yes, mostly. A product manager can describe a change in plain words, have an AI coding agent make it on a live copy of the app, and check the result, without waiting in the engineering queue. What a PM should not do alone is decide what ships. Keep a developer on the last step.
+**Short answer:** for a new app, often yes: an AI app builder can get a PM a working prototype. For small changes to the app your team already runs, yes, mostly. A product manager can describe a change in plain words, have an AI coding agent make it on a live copy of the app, and check the result, without waiting in the engineering queue. What a PM should not do alone is decide what ships. Keep a developer on the last step.
 
 ## What "without engineering" can mean
 
