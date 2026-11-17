@@ -19,6 +19,8 @@ export const post: BlogPost = {
   body: `
 > **In short:** AI tools that let non-developers change an existing web app connect an AI coding agent to the code a team already runs, so a product manager or designer can ask for a change in plain words. They differ in where the agent runs, what comes back (a prototype, a pull request or a live preview) and who decides what ships. Butterneck runs the developer's own agent on a computer the team connects; the person who asked checks the change on a live preview, and no pull request exists until a developer decides.
 
+**Jump to:** [At a glance](#at-a-glance) · [How to choose](#how-to-choose) · [The tools, one by one](#the-tools-one-by-one) · [Butterneck](#butterneck) · [FAQ](#faq)
+
 Last checked: 29 October to 11 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
