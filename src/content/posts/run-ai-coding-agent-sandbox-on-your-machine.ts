@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Run Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback, preview links.",
   date: "2026-10-27",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links", "AI coding governance"],
   cover: {
@@ -107,7 +107,7 @@ Each private copy is tied to one folder the developer chooses, which can be a gi
 
 ### What if I need a harder boundary than a folder and an ignore list?
 
-Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. A container, a VM or Anthropic's sandbox runtime is the kind of boundary Anthropic recommends for sessions without permission prompts. Butterneck doesn't provide one. Butterneck is about who can ask for a change on a live preview and who decides what ships.
+Choose the computer you connect with that in mind. Butterneck doesn't add a container or virtual machine of its own: the coding CLI runs as the user who runs the bridge, on that computer. If you want a stronger boundary, connect a dedicated development computer that has the project and a signed-in coding CLI, but no production secrets and no other projects you'd rather the agent never saw. That is the risk OWASP's Secure Coding with AI cheat sheet describes: "Without sandboxing, a compromised agent context has the same privileges as the developer." ([OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Coding_with_AI_Cheat_Sheet.html)). In CSO Online, Marina Moore puts the practical version plainly: "If an available credential helps accomplish the task, the agent uses it." ([CSO Online, Opinion, 12 Nov 2026](https://www.csoonline.com/article/4247458/the-developer-laptop-just-became-production-now-what.html)). So the computer you connect should hold only what you're happy for the agent to use. A container, a VM or Anthropic's sandbox runtime is the kind of boundary Anthropic recommends for sessions without permission prompts. Butterneck doesn't provide one. Butterneck is about who can ask for a change on a live preview and who decides what ships.
 
 ### Does Butterneck need a GitHub app or access to our Git host?
 
