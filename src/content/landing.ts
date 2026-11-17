@@ -261,6 +261,15 @@ export const FAQS = [
     ],
   },
   {
+    q: "Can several people request changes at the same time?",
+    lines: [
+      "Yes. Each request stream is its own copy with its own live preview link, and each Jira ticket labeled butterneck opens its own copy, named after the ticket.",
+      "A developer chooses the folder for each copy. Make it a git worktree under .worktrees/ and each copy gets its own checkout and branch, so several requests can be in flight without touching the main working copy.",
+      "Copies count toward your plan (see Pricing). Butterneck does not commit, push, open a pull request, merge or deploy, so a developer reviews each change and decides what ships.",
+    ],
+    link: { href: "/blog/run-ai-coding-agent-sandbox-on-your-machine#isolation-one-folder-per-request-stream", text: "How each copy is isolated" },
+  },
+  {
     q: "Why not use a tool that opens the pull request for you?",
     lines: [
       "Butterneck runs on a developer’s computer, where the project already runs. There is no new cloud environment to set up and no need to copy secrets into a hosted machine.",
