@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-16",
+  updated: "2026-11-17",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -35,7 +35,9 @@ Jeff Gothelf comes at it from the other side in [How to manage the inevitable me
 
 At SDLCAI 2026, Viljami Kuosmanen described how epilot [let non-engineers use coding agents on its production codebase](https://sdlcai.org/2026/talks/non-engineers-vibe-code-production/). People tag an agent in a Slack thread, get a pull request and a preview link, and an engineer reviews it; product, design, support and QA all contributed. According to the conference's summary of the talk, an attempted production deployment was caught by monitoring, after which the team separated contribution, merge, CI and production permissions. More proposals also meant more review and testing, and he said he doesn't yet have strong data that delivery got faster.
 
-All three land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
+The same tension shows up outside the product codebase. In [Everyone's a software engineer now](https://leaddev.com/management/everyones-a-software-engineer-now) (LeadDev, 16 November 2026), Chris Stokel-Walker cites a Retool survey of 817 people building software: 60% had built something outside IT oversight in the previous year. Christina Troy of Tines puts the answer plainly: "Employees need guardrails and frameworks within which to build, and IT teams need to have visibility from the outset of these builds."
+
+They all land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
 
 Some tools now go a step further and pitch that whoever spots a problem ships the fix, even from a phone. Our view is different. The PM asks and sees the change on a live preview. A developer decides whether it ships, and anything touching data models, permissions or payments goes to an engineer from the start.
 
