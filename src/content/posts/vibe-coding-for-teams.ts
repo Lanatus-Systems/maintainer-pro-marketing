@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for teams doing vibe coding: PMs and designers ask on a live preview, an AI coding agent edits, and a developer decides what ships.",
   date: "2026-11-05",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["vibe coding for teams", "vibe coding", "vibe coding tools", "AI change requests", "product teams", "human in the loop"],
   cover: {
@@ -31,6 +32,8 @@ When one developer vibe codes, the person asking, the person checking and the pe
 - **The person shipping** is a developer who knows the codebase, the tests and the release process.
 
 Most problems with vibe coding on teams come from merging those roles by accident: a non-developer's change going live with nobody reading it, or a developer reviewing a diff with no idea whether it is what the requester meant.
+
+Atlassian sees the cost of that from the developer side. Its 2026 developer experience research found that 26% of developers say AI saves them 10 or more hours a week, down from 68% in 2025, and 49% now spend four or more hours a week managing AI. Its conclusion: "When agents can generate code, designs, and prototypes in minutes, the bottleneck moves to deciding what’s worth building and whether it’s good enough" ([Atlassian, 10 November 2026](https://www.atlassian.com/blog/how-we-build/3-lessons-from-rebuilding-atlassians-product-development-lifecycle-for-people-and-agents)). Keeping the three roles apart is how a team puts each of those decisions with the right person.
 
 ## Four rules for team vibe coding
 
