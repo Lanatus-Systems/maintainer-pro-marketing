@@ -26,6 +26,7 @@ export function GET() {
     "- Who edits: the AI coding agent the developer already uses (Cursor, Claude Code or Antigravity CLI), running on a computer the team connects (Node.js 22 or newer). Butterneck does not ship its own model.",
     "- What it never does: open a pull request, merge, or deploy. A developer decides what goes live and ships it the team's usual way.",
     "- Guardrails: the agent is limited to the connected folder and told to stay out of `.env` and any ignored paths; these are instructions plus the CLI's workspace setting, not an operating-system sandbox. Each turn is snapshotted so it can usually be undone.",
+    "- Several requests at once: each chat request stream or labeled Jira ticket gets its own copy and live preview link. A copy's folder can be a git worktree under `.worktrees/`, with its own checkout and branch. Copies count toward the plan (see Pricing).",
     "- Pricing: Starter is free (1 developer and 1 person who requests changes, 1 private copy). Pro is USD 19 per person per month, 20% off annual billing; a workspace owner on Starter can try Pro for one month. Custom plans by email.",
     "",
     "## Pages",
