@@ -257,7 +257,7 @@ A developer, through your normal release process. The requester accepts the chan
 
 ### Should non-engineers be allowed to merge AI changes themselves?
 
-Not under this policy. Some tools now let a non-engineer approve and merge a change from inside the tool. If yours can, turn that off, or require an approving developer review on the main branch so merge rights stay with a developer. epilot learned this the hard way: after a non-engineer with full push access bypassed CI and deployed to production without review, the team changed the rule to "non-engineers and agents create PRs; engineers review and merge" ([epilot, April 2026](https://dev.to/epilot/our-entire-company-ships-code-now-40-prs-from-non-engineers-in-60-days-jo5)). With Butterneck the requester checks the change on a live preview, and Butterneck doesn't commit, push, open a pull request, merge or deploy: a developer does.
+Not under this policy. If a tool you use lets a non-engineer approve and merge a change from inside it, turn that off, or require an approving developer review on the main branch so merge rights stay with a developer. epilot learned this the hard way: after a non-engineer with full push access bypassed CI and deployed to production without review, the team changed the rule to "non-engineers and agents create PRs; engineers review and merge" ([epilot, April 2026](https://dev.to/epilot/our-entire-company-ships-code-now-40-prs-from-non-engineers-in-60-days-jo5)). With Butterneck the requester checks the change on a live preview, and Butterneck doesn't commit, push, open a pull request, merge or deploy: a developer does.
 
 ### How do you keep a record of who asked for an AI change and who approved it?
 
