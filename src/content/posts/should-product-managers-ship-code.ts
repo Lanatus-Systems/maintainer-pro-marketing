@@ -37,6 +37,8 @@ At SDLCAI 2026, Viljami Kuosmanen described how epilot [let non-engineers use co
 
 The same tension shows up outside the product codebase. In [Everyone's a software engineer now](https://leaddev.com/management/everyones-a-software-engineer-now) (LeadDev, 16 November 2026), Chris Stokel-Walker cites a Retool survey of 817 people building software: 60% had built something outside IT oversight in the previous year. Christina Troy of Tines puts the answer plainly: "Employees need guardrails and frameworks within which to build, and IT teams need to have visibility from the outset of these builds."
 
+Product analytics companies describe the same shift. Mixpanel's CEO Jen Taylor, on its A/NZ Product Intelligence Index 2026: "three in four now say deciding what to build takes longer than building it" ([ARN, 17 November 2026](https://www.arnnet.com.au/article/4249377/ai-speed-to-product-process-creating-decision-making-challenges.html)). Amplitude's Wave agent turns product data into plans for coding agents, and even there, "most teams send bug fixes straight to coding agents, while new features and bigger bets get a human review" ([OpenAI, 12 November 2026](https://openai.com/business/customer-stories/amplitude)).
+
 They all land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
 
 Some tools now go a step further and pitch that whoever spots a problem ships the fix, even from a phone. Our view is different. The PM asks and sees the change on a live preview. A developer decides whether it ships, and anything touching data models, permissions or payments goes to an engineer from the start.
