@@ -84,6 +84,8 @@ The product manager checks that the button now says the right thing. The develop
 
 Both checks are needed. Butterneck puts the first one on [a live preview before the pull request](/blog/live-preview-before-pull-request), where the person asking can see it, and leaves the second one with the developer.
 
+That second check is getting heavier, not lighter. In SlashData's developer survey (11,099 developers, [published 12 November 2026](https://www.slashdata.co/research/faster-code-heavier-checks)), 81% said AI reduces repetitive work but increases the need for review and validation. When the person who asked has already confirmed the first check, the developer only has the second one left.
+
 ### 3. Your release process already exists
 
 Most teams already have a way to ship: a branch policy, CI, a review rule, a deploy step. A tool that merges for you has to either copy that process or go around it.
