@@ -172,7 +172,7 @@ A named person on your team, not the agent or a bot account. Make it the develop
 
 ### Should an AI coding agent merge its own pull request?
 
-It depends on what your team is willing to answer for. Some agents can now merge their own pull requests once checks pass, and on GitHub, Copilot approvals can count toward required approvals if an admin turns them on (they are off by default) ([GitHub changelog](https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals)). If you allow it, write down which kinds of change qualify and which person answers for them; our [policy template for AI change requests](/blog/ai-change-request-policy-template) has a review-tier table for that. Butterneck can't merge anything: it never opens a pull request, and the developer who checked the preview decides what ships.
+It depends on what your team is willing to answer for. If you let an agent merge its own pull requests once checks pass, decide that on purpose. On GitHub, Copilot approvals can count toward required approvals if an admin turns them on (they are off by default) ([GitHub changelog](https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals)). If you allow it, write down which kinds of change qualify and which person answers for them; our [policy template for AI change requests](/blog/ai-change-request-policy-template) has a review-tier table for that. Butterneck never merges: it never commits, pushes or opens a pull request, and a developer decides what ships after the person who asked has checked the preview.
 
 ### Why do AI pull requests take longer to review?
 
