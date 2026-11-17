@@ -77,6 +77,10 @@ A tool that generates an app from a plain-language description and lets you refi
 
 Usually not for small changes. Rebuilding an existing product in a builder creates a second codebase. A few builders can import your repository instead and work on a branch; then the question is who checks each change and who merges it. Changing the app where it already lives keeps your codebase, tests and release process.
 
+### If an AI app builder has branches and a merge button, isn't that the same review?
+
+Not quite. A branch can give a bigger change its own preview so it doesn't hold up smaller fixes. If the person building can also merge that branch and deploy it from inside the builder, that is a different review from a developer reading the diff before anything merges. That suits an app that lives in the builder. For the app your team already runs, the question is who reads the diff before anything merges. In Butterneck each copy can be a git worktree with its own checkout and branch, the person who asked checks the change on a live preview, and a developer reviews the diff, then commits it and opens a pull request through your usual review. Butterneck never merges or deploys.
+
 ### Is there a no code way to change an existing app?
 
 For the requester, yes. With Butterneck a PM or designer types the change in plain words on a live preview, and a developer's coding agent edits the code. A developer still reviews the change and decides what ships.
