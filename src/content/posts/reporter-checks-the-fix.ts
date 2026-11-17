@@ -105,7 +105,7 @@ No. If the cause isn't on a screen you can open in the preview (data from anothe
 
 ### How should I write the bug as a request?
 
-Write what you see, what you expected and where, and attach a screenshot. The five-line template in [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai) works for this: the "Now" line is the bug, the "Want" line is what you expected, and the "Check" line is how you'll know it's fixed.
+Write what you see, what you expected and where, and attach a screenshot. The five-line template in [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai) works for this: the "Now" line is the bug, the "Want" line is what you expected, and the "Check" line is how you'll know it's fixed. Nash, which lets support and customer-success staff send bugs to an AI agent in plain English, puts the same rule this way: the agent "does its best work when the person asking knows what “done” looks like" ([Nash](https://www.nash.ai/blog/everyone-ships)). The "Check" line is where you write that down.
 
 ## Try it
 
