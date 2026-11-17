@@ -57,6 +57,8 @@ Start with changes the person asking can judge by looking at the screen:
 - Spacing, alignment and layout inside your existing design system.
 - Small visual fixes: a wrong color, a broken link, a missing hover state.
 
+Be careful with visual bugs whose cause isn't on the screen. Plotly's engineering team found bug fixes "have not been a good fit" for designers working with an LLM: a text box border that looked too thin was really being cut off, and the right fix was the spacing around it ([Plotly](https://plotly.com/blog/what-i-learned-integrating-designers-wielding-llms-into-our-codebase/), October 2025). If the fix isn't obvious from looking, hand it to the developer.
+
 Keep these with an engineer from the start, even when they look small: sign-in and permissions, billing and pricing logic, data and migrations, APIs other teams depend on, and build or deploy config. Our [policy template for AI change requests](/blog/ai-change-request-policy-template) has the full list, and the [pilot proposal](/blog/pm-change-request-pilot-proposal) shows how to agree on it with your engineering lead.
 
 ## What makes this go smoothly
