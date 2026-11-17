@@ -42,6 +42,8 @@ A pull request is very good at the second question. It shows a diff to someone w
 
 When the first question is only asked after the PR, every "not quite" costs a full loop: change the code, push, wait for review again, wait for the build again. When it is asked first, on a preview, the requester can say "shorter" or "move it above the form" while the change is still cheap, and the pull request carries a change that the requester already agreed to.
 
+**A public example.** In July 2026, Gumroad's support agent fixed a creator's mobile chart bug. The first fix passed human review and CI, but its new design was wrong, and the creator who reported it said so. The ruling that followed: "Going fwd get confirmation from jordi before merging." The second version ([pull request #6076](https://github.com/antiwork/gumroad/pull/6076)) merged a minute after the reporter replied "Yeah super clean, I like it 👍" ([Gumclaw's write-up](https://gumclaw.github.io/how-i-work/gumclaw-loop.html)). Gumroad's flow still opens pull requests; the check is the same one: the person who asked confirms the change before it ships.
+
 ## Why it matters for the PM and developer handoff
 
 The slow part of a small change is rarely the coding. It is the handoff: the request gets typed into a ticket, a developer interprets it, the PM sees the result days later, and the round trip starts again. A preview before the PR shortens that loop in a few ways.
