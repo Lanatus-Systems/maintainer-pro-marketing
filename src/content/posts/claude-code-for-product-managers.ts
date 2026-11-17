@@ -52,7 +52,7 @@ Butterneck never opens a pull request, never merges, and never deploys. A develo
 5. The coding CLI makes the edit in that folder, and the PM checks it on the preview. If it is wrong, the turn can be stopped and its file changes are usually rolled back (if not, the chat says so).
 6. A developer reviews the result and ships it through the normal process: commit, pull request, CI, deploy.
 
-## PM runs Claude Code vs PM asks on a preview
+## PM runs Claude Code or Cursor vs PM asks on a preview
 
 | | PM runs Claude Code or Cursor | PM asks on a Butterneck preview |
 |---|---|---|
@@ -100,6 +100,10 @@ Yes. Claude Code also runs in Anthropic's desktop app and in the browser at clau
 ### Does a product manager need repository access to use Claude Code or Cursor?
 
 To run it themselves, yes. Claude Code and Cursor work on code the PM can reach: a local clone, or, for Cursor's Cloud Agents, only repositories the PM's own Git account can already reach ([Cursor's security docs](https://cursor.com/docs/cloud-agent/security)). With Butterneck the PM doesn't need repository access. They open a share link to the app running on a developer's computer and type the request, and the Claude Code, Cursor or Antigravity CLI signed in there edits the project. The developer chooses who can send requests, and a developer decides what ships.
+
+### What does "Cursor for product managers" mean if the PM has no repo access?
+
+Cursor's own [page for product managers](https://cursor.com/for/product-managers) describes PMs prototyping and shipping small changes themselves, starting with Cloud Agents. Those agents connect to the PM's repositories, and you can ask questions and kick off tasks from Slack. If the PM has no repository access or Cursor seat, the other path is to ask on a Butterneck live preview: Cursor's CLI (\`agent\`), signed in on the developer's connected computer, makes the edit, the PM checks the preview, and a developer decides what ships.
 
 ### Can't a developer just share their Claude Code session with the PM instead?
 
