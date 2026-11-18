@@ -83,6 +83,7 @@ export default function HomePage() {
             </a>{" "}
             before you connect a computer. Your own project still needs a connected computer; Starter is free.
           </p>
+          <OnboardingCallNote location="home_hero" />
           <ul className="landing-trust">
             <li>They ask on the live product</li>
             <li>You choose who can ask</li>
@@ -334,14 +335,38 @@ export default function HomePage() {
             Log in
           </a>
         </div>
-        <p className="landing-quiet landing-trial-note">
-          <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_footer_cta">
-            Create a free account and try a request on a sample shop
-          </a>{" "}
-          before you connect a computer. Your own project still needs a connected computer; Starter is free.
-        </p>
+        <div className="landing-cta-notes">
+          <p className="landing-quiet landing-trial-note">
+            <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_footer_cta">
+              Create a free account and try a request on a sample shop
+            </a>{" "}
+            before you connect a computer. Your own project still needs a connected computer; Starter is free.
+          </p>
+          <OnboardingCallNote location="home_footer_cta" />
+        </div>
       </section>
     </main>
+  );
+}
+
+
+/** Quiet secondary link under the try-it-free note. Same 30-minute booking URL as "Book a walkthrough". */
+function OnboardingCallNote({ location }: { location: string }) {
+  if (!WALKTHROUGH_URL) return null;
+  return (
+    <p className="landing-quiet landing-onboarding-note">
+      Need help setting up your project?{" "}
+      <a
+        href={WALKTHROUGH_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ga-event="book_onboarding_click"
+        data-ga-location={location}
+      >
+        Book a free onboarding call
+      </a>
+      .
+    </p>
   );
 }
 

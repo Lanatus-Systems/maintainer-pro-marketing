@@ -1247,3 +1247,31 @@ h3 {
   text-underline-offset: 3px;
   padding: 0.35rem 0;
 }
+.landing-onboarding-note {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.landing-onboarding-note a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0.35rem 0;
+}
+.landing-cta-notes {
+  flex: 1 1 100%;
+}
+.landing-cta-notes .landing-trial-note {
+  margin-top: 0;
+}
+.landing-bottom {
+  flex-wrap: wrap;
+}
+.landing-bottom .landing-cta-notes {
+  flex: 1 1 100%;
+  margin-top: 0.35rem;
+}
+.landing-bottom .landing-onboarding-note {
+  margin-top: 0.4rem;
+}
