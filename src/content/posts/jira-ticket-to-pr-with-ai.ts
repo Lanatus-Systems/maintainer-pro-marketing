@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
@@ -148,6 +148,10 @@ Connect Jira Cloud to GitHub with the GitHub for Jira app, then put the issue ke
 ### Which AI tools turn a Jira ticket into a pull request?
 
 Several do. Atlassian's own Jira Coding Agent can generate code from a work item and open a draft pull request for your team to review and merge. In Jira you can also assign a work item to Cursor, which starts a Cursor Cloud Agent and, if it opens a pull request, links it on the ticket, or to Atlassian's Claude Agent for Jira (Beta), which typically opens a draft GitHub pull request. Clogless opens a pull request with your Git provider when the change is ready. Butterneck stops one step earlier: a labeled ticket opens a private copy of the app, the developer's own coding agent makes the change, and a preview link goes back on the ticket. A developer then decides whether to commit it and open a PR. Butterneck never opens a pull request, merges or deploys. Our [Jira integration page](/integrations/jira) explains how this differs from assigning the ticket to Cursor or Claude.
+
+### Should approving the preview also merge the pull request?
+
+Some ticket-to-pull-request tools put a live preview in front of the pull request, and one Approve click merges it. That is quick, but it turns two questions into one: does the change look right, and is the code fit to merge? In Butterneck they stay separate. The person who asked approves what they see on the live preview. A developer then reads the diff and decides whether to commit it and open a pull request, and your usual review and branch rules take it from there. Butterneck never opens a pull request, merges or deploys.
 
 ### How do I trigger it from Jira?
 
