@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "AI app builder or change the app you already have? How product teams should choose",
   seoTitle: "AI app builder or change the app you already have?",
   description:
-    "AI change requests vs AI app builders: change the app you already have. PMs ask on a live preview, an AI coding agent edits, a developer decides what ships.",
+    "Build a new app with an AI app builder, or change the one you already have? How product teams choose, and how PMs ask for changes on a live preview.",
   date: "2026-11-05",
   updated: "2026-11-17",
   author: "The Butterneck team",
