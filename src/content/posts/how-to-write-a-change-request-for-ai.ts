@@ -132,7 +132,7 @@ Yes, when the element is hard to name or the problem is visual. In Butterneck yo
 
 ### Can I click the element I want changed instead of describing it?
 
-Not with a click-to-select tool. Some developer tools put an overlay on a local dev server so you can click an element and send it to a coding agent. In Butterneck you type the request in the chat on the live preview, on the screen you mean, and each request carries the page URL and route you have open, so the coding agent starts from that screen. Name the element by its visible text ("the Start free trial button under the Pro plan") and paste a screenshot if it is hard to name. A developer still reviews the change and decides what ships; Butterneck never opens a pull request, merges or deploys.
+Not with a click-to-select tool. Some developer tools put an overlay on a local dev server so you can click an element and send it to a coding agent. In Butterneck you type the request in the chat on the live preview, on the screen you mean, and each request carries the page URL and route you have open, so the coding agent starts from that screen. Name the element by its visible text ("the Start free trial button under the Pro plan") and paste a screenshot if it is hard to name. A developer still reviews the change and decides what ships; Butterneck never opens a pull request, merges or deploys. For what pinned comments fix, what they leave open and who should check the result, see [click-to-comment feedback for AI coding agents](/blog/click-to-comment-feedback-for-ai-coding-agents).
 
 ### Do I need to tell the AI which file to change?
 

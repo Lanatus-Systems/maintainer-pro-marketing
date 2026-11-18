@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "click-to-comment-feedback-for-ai-coding-agents",
   title: "Click-to-comment feedback for AI coding agents: what it fixes, and who checks the result",
-  seoTitle: "Click-to-comment feedback for AI coding agents",
+  seoTitle: "Click-to-comment and visual feedback for AI coding agents",
   description:
-    "What click-to-comment feedback for AI coding agents fixes, what it leaves open, and who should check the result on a live preview.",
+    "What click-to-comment and visual feedback for AI coding agents fixes, what it leaves open, and who should check the result on a live preview.",
   date: "2026-11-18",
   author: "The Butterneck team",
   tags: ["click-to-comment", "visual feedback", "live preview", "AI coding agents", "product teams", "human in the loop"],

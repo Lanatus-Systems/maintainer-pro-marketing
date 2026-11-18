@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "37 AI tools that let PMs and designers change an existing web app, compared side by side: prices, where the agent runs, PR or live preview, who ships.",
   date: "2026-10-28",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -238,7 +238,7 @@ Yes, several. Most of the tools above let a PM, designer or operator describe a 
 
 ### Can a non-developer change an existing app without breaking it?
 
-Keep a developer in the decision. Look for three things: the change is shown on a preview before anything ships, a developer reviews it, and risky areas like login, billing and data stay with engineering. Our [AI change request policy template](/blog/ai-change-request-policy-template) lists what to fence off. For the whole process, from asking on a live preview to who decides what ships, see our guide to [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
+Keep a developer in the decision. Look for three things: the change is shown on a preview before anything ships, a developer reviews it, and risky areas like login, billing and data stay with engineering. Our [AI change request policy template](/blog/ai-change-request-policy-template) lists what to fence off. On the Git side, protect the main branch so changes only land through a reviewed pull request; [how to let non-engineers ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests) covers branch rules and CODEOWNERS. For the whole process, from asking on a live preview to who decides what ships, see our guide to [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 
 ### Can I change my existing web app with AI without a developer?
 
