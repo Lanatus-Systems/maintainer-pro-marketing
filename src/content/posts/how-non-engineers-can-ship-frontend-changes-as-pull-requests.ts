@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "How to let non-engineers ship frontend changes as pull requests",
   description: "Let designers and PMs change copy, layout and styling on a live preview. A developer reviews the diff and opens the PR, and branch rules keep main safe.",
   date: "2026-11-03",
-  updated: "2026-11-18",
+  updated: "2026-11-19",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -79,7 +79,7 @@ Up to the last step, yes. A designer can ask for a copy, spacing, color or layou
 
 ### Can designers prototype in the real codebase instead of Figma?
 
-For changes to screens that already exist, yes. The designer opens the share link to the running app and asks for the change in plain words. The team's coding agent edits the real project on a developer's connected computer, and the preview updates on the same link, so what they hand over is a working version in the app's own code, not a mockup. Nothing reaches production until a developer reviews the diff and ships it, and a version nobody wants is simply discarded. New flows and features still start with design and scoping.
+For changes to screens that already exist, yes. The designer opens the share link to the running app and asks for the change in plain words. The team's coding agent edits the real project on a developer's connected computer, and the preview updates on the same link, so what they hand over is a working version in the app's own code, not a mockup. Nothing reaches production until a developer reviews the diff and ships it, and a version nobody wants is simply discarded. New flows and features still start with design and scoping. Jacquelyn Halpern, who works on product design and AI at Salesforce Trailhead, describes the same shift: her team uses "the code and components that underpin the product to build our prototypes", and "Designers are starting to create PRs for review that then get merged into production" ([From Prototype to Pull Request](https://uxmag.com/articles/from-prototype-to-pull-request), UX Magazine, 18 November 2026).
 
 ### Can a designer open the pull request themselves?
 
