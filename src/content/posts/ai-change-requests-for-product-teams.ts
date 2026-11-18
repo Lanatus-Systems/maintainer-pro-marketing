@@ -11,7 +11,7 @@ export const post: BlogPost = {
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
     src: "/blog/cover-ai-change-requests-for-product-teams.png",
-    alt: "Butterneck blog cover: AI change requests for product teams. Teammates ask, AI builds locally, developers decide what goes live",
+    alt: "Butterneck blog cover: AI change requests for product teams. Teammates ask, AI builds on a live copy, developers decide what goes live",
     width: 1200,
     height: 630,
   },
