@@ -45,7 +45,7 @@ Some tools now go a step further and pitch that whoever spots a problem ships th
 
 ## What the data says about review
 
-The engineers' worry has numbers behind it now. A [Harvard study by Fiona Chen and James Stratton](https://fion.ac/jellyfish.pdf) ("Artificial Intelligence in the Firm: Bottlenecks in Software Production", version of 28 Oct 2026) looked at 720,542 workers at 655 firms using data from the Jellyfish platform; [InfoQ covered an earlier version](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/) on 22 Oct. According to the paper:
+The engineers' worry has numbers behind it now. A [Harvard study by Fiona Chen and James Stratton](https://fion.ac/jellyfish.pdf) ("Artificial Intelligence in the Firm: Bottlenecks in Software Production", version of 14 Nov 2026) looked at 720,542 workers at 655 firms using data from the Jellyfish platform; [InfoQ covered an earlier version](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/) on 22 Oct. According to the paper:
 
 - AI agents increased lines of code by 44.0%, commits by 36.0% and pull requests opened by 35.7%.
 - Jira issues resolved rose 13.7% with agents, a borderline-significant estimate, and the paper's estimates rule out an increase larger than 30.7%.
