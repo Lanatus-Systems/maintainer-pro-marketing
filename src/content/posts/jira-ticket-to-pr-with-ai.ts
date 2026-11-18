@@ -151,7 +151,7 @@ Several do. Atlassian's own Jira Coding Agent can generate code from a work item
 
 ### Should approving the preview also merge the pull request?
 
-Some ticket-to-pull-request tools put a live preview in front of the pull request, and one Approve click merges it. That is quick, but it turns two questions into one: does the change look right, and is the code fit to merge? In Butterneck they stay separate. The person who asked approves what they see on the live preview. A developer then reads the diff and decides whether to commit it and open a pull request, and your usual review and branch rules take it from there. Butterneck never opens a pull request, merges or deploys.
+Approving a preview and merging code are two different decisions: does the change look right, and is the code fit to merge? In Butterneck they stay separate. The person who asked approves what they see on the live preview. A developer then reads the diff and decides whether to commit it and open a pull request, and your usual review and branch rules take it from there. Butterneck never opens a pull request, merges or deploys.
 
 ### How do I trigger it from Jira?
 
