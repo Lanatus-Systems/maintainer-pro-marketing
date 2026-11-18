@@ -131,7 +131,7 @@ export const DIFFERENCE = [
 export const ACCESS = [
   {
     title: "You choose who can ask",
-    body: "The link opens the preview. You decide whose message starts the AI: a list of people, or anyone with the link.",
+    body: "The link opens the preview. You decide whose message starts the AI: a list of people, or anyone with the link. Share links are unlisted, not a private vault. Anyone with the link can open that preview.",
   },
   {
     title: "Looking does not create an account",
