@@ -87,7 +87,7 @@ They can if your Git setup allows it, but with Butterneck the developer opens it
 
 ### Who should review a pull request that a PM or designer made with AI?
 
-A developer who owns the code it touches, not the person who asked. The requester checks that the change is what they meant, on the preview. The developer checks whether it is safe to ship: shared components, tests, translations, and anything near sign-in, billing or data. In Butterneck that developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, so the pull request starts with an owner who can answer questions about it. Butterneck doesn't commit, push, open a pull request, merge or deploy. More on ownership in [why AI pull requests need an owner](/blog/ai-prs-need-an-owner).
+A developer who owns the code it touches, not the person who asked. The requester checks that the change is what they meant, on the preview. The developer checks whether it is safe to ship: shared components, tests, translations, and anything near sign-in, billing or data. In Butterneck that developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one, so the pull request starts with an owner who can answer questions about it. Butterneck doesn't commit, push, open a pull request, merge or deploy. More on ownership in [why AI pull requests need an owner](/blog/ai-prs-need-an-owner).
 
 ### How do we make sure a non-engineer's change can't reach main without review?
 
