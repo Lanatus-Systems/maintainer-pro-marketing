@@ -363,7 +363,7 @@ function OnboardingCallNote({ location }: { location: string }) {
         data-ga-event="book_onboarding_click"
         data-ga-location={location}
       >
-        Book a free onboarding call
+        Book an onboarding call
       </a>
       .
     </p>
