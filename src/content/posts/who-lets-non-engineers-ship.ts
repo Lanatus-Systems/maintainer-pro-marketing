@@ -84,7 +84,7 @@ For a request that is still vague, [how to write a change request for an AI codi
 
 ## What stays with engineering
 
-This is for small, visible changes: copy, layout, spacing, empty states, a wrong color, a button on the wrong screen. Auth, payments, data models, permissions and anything security-related still need an engineer from the start. Shared components and styles that other screens use still need a developer to read the diff.
+This is for small, visible changes: copy, layout, spacing, empty states, a wrong color, a button on the wrong screen. Auth, payments, data models, permissions and anything security-related still need an engineer from the start. Shared components and styles that other screens use still need a developer to read the diff. For which frontend changes to start with, and what the developer checks before opening the pull request, see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
 A sign-off from the person who asked means "this is what I meant." It does not mean "ship it." The developer still decides.
 

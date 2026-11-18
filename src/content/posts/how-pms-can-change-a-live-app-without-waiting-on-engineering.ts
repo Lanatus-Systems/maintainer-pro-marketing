@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-16",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts", "no local dev setup"],
   cover: {
@@ -129,7 +129,7 @@ UI papercuts are the small copy, layout and visual fixes everyone agrees on and 
 
 ### Can a PM change a live app without engineering?
 
-A PM can make the change happen and see it on a live copy without waiting. A developer still reviews it and decides whether it ships. That is deliberate.
+A PM can make the change happen and see it on a live copy without waiting. A developer still reviews it and decides whether it ships. That is deliberate. For what "without engineering" can and can't mean, with examples from PMs who have done it, see [can product managers change the app without engineering?](/blog/let-product-managers-change-the-app-without-engineering)
 
 ### Can designers use this for small visual fixes, not only PMs?
 

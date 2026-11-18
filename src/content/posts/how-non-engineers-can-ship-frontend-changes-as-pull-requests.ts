@@ -67,6 +67,7 @@ Keep these with an engineer from the start, even when they look small: sign-in a
 
 ## What makes this go smoothly
 
+- For four companies that already do this, see [who lets non-engineers ship](/blog/who-lets-non-engineers-ship): how Atlassian, Nash, Fieldguide and Carcará let non-engineers ship with engineers involved, from their own posts.
 - Read [why a live preview before the pull request](/blog/live-preview-before-pull-request) helps reviewers.
 - For other tools that do open PRs for non-developers, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
