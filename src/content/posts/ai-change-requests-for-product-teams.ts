@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-18",
+  updated: "2026-11-19",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -165,9 +165,9 @@ No. They use a share link in a browser, or a Jira label.
 
 On the running app, not in the code. Open the changed screen on the live preview and check it against what you asked for: the exact wording, the spacing next to the elements around it, the empty, loading and error states, and a phone-sized width. Make sure nothing else on the page moved. If something is off, ask again on the same request instead of starting a new one, and when it is right, say so in writing where you asked. With Butterneck the preview is the app running on a developer's connected computer, so this happens before any pull request exists. A developer then reads the diff and decides what ships; Butterneck doesn't commit, push, open a pull request, merge or deploy. The full checklist is in [what to check on a live preview before the PR](/blog/live-preview-before-pull-request).
 
-### Can support teams use AI change requests?
+### Can support teams use AI change requests to fix confusing labels and error messages?
 
-Yes, for the small fixes behind repeat tickets: a confusing label, a missing hint on a form, an unclear error message. The support lead opens the share link, types the change in the chat beside the live preview (a customer's screenshot can be attached), and checks the result on screen. A developer still reviews it and decides whether it ships. Keep anything that touches billing, refunds, permissions or customer data with a developer.
+Yes, for the small fixes behind repeat tickets: a confusing label, a missing hint on a form, an unclear error message. The support lead opens the share link, types the change in the chat beside the live preview (a customer's screenshot can be attached), and checks the result on screen. A developer still reviews it and decides whether it ships. Keep anything that touches billing, refunds, permissions or customer data with a developer. When the ticket is a bug report, let the person who reported it check the fix on the preview before a developer ships it; see [let the reporter check the fix before it ships](/blog/reporter-checks-the-fix).
 
 ### Is the AI allowed to deploy?
 

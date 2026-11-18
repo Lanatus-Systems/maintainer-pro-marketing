@@ -29,8 +29,8 @@ export function organizationJsonLd() {
       UNEED_URL,
       PEERLIST_URL,
       YOUTUBE_URL,
-      // DEVHUNT_URL and SAASHUB_URL are excluded until their listings are
-      // fixed (DevHunt launch date; SaaSHub pending approval).
+      SAASHUB_URL,
+      // DEVHUNT_URL is excluded until its listing is fixed (DevHunt launch date).
     ],
     parentOrganization: {
       "@type": "Organization",
