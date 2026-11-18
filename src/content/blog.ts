@@ -24,6 +24,7 @@ import { post as agenticCoding } from "@/content/posts/agentic-coding-for-produc
 import { post as aiAppBuilder } from "@/content/posts/ai-app-builder-vs-changing-your-existing-app";
 import { post as reporterChecks } from "@/content/posts/reporter-checks-the-fix";
 import { post as lovableAlt } from "@/content/posts/lovable-alternative";
+import { post as clickToComment } from "@/content/posts/click-to-comment-feedback-for-ai-coding-agents";
 
 export type BlogPost = {
   slug: string;
@@ -48,7 +49,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [reporterChecks, lovableAlt, aiAppBuilder, agenticCoding, vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [clickToComment, reporterChecks, lovableAlt, aiAppBuilder, agenticCoding, vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
