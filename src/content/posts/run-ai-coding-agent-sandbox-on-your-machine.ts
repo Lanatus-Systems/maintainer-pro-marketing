@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Run Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback, preview links.",
   date: "2026-10-27",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["AI coding agents", "sandbox", "AI agent security", "developer workflow", "preview links", "AI coding governance"],
   cover: {
@@ -35,7 +35,7 @@ Those flags matter. They skip the CLIs\' own permission prompts, because nobody 
 
 ## Isolation: one folder per request stream
 
-Each private copy (we call it a sandbox) is tied to a folder on the developer's machine. The developer chooses it. It can be:
+Each copy (we call it a sandbox) is tied to a folder on the developer's machine. The developer chooses it. It can be:
 
 - an existing project folder,
 - a fresh clone of a repository, or
@@ -107,7 +107,7 @@ No. The agent runs on a developer's own computer, using the coding CLI already s
 
 ### Is it a real sandbox?
 
-Each private copy is tied to one folder the developer chooses, which can be a git worktree under \`.worktrees/\`. The folder boundary and the \`.env\` ignore list are guardrails: instructions to the agent plus the CLI's workspace setting, not an OS-level sandbox like a container or a separate user account. Keep production secrets off the machine that runs the bridge.
+Each copy is tied to one folder the developer chooses, which can be a git worktree under \`.worktrees/\`. The folder boundary and the \`.env\` ignore list are guardrails: instructions to the agent plus the CLI's workspace setting, not an OS-level sandbox like a container or a separate user account. Keep production secrets off the machine that runs the bridge.
 
 ### What if I need a harder boundary than a folder and an ignore list?
 
@@ -115,7 +115,7 @@ Choose the computer you connect with that in mind. Butterneck doesn't add a cont
 
 ### Does Butterneck need a GitHub app or access to our Git host?
 
-No. There is no GitHub, GitLab or Bitbucket app to install, and Butterneck never needs write access to your repository host, because it does not commit, push, open a pull request, merge or deploy. The project is a folder on a developer's connected computer. If a developer sets up a private copy from a repository URL, the connector on that computer clones it with the Git access that computer already has. Committing, pushing and opening the pull request stay with the developer, through your team's usual Git process.
+No. There is no GitHub, GitLab or Bitbucket app to install, and Butterneck never needs write access to your repository host, because it does not commit, push, open a pull request, merge or deploy. The project is a folder on a developer's connected computer. If a developer sets up a copy from a repository URL, the connector on that computer clones it with the Git access that computer already has. Committing, pushing and opening the pull request stay with the developer, through your team's usual Git process.
 
 ### How do you let product managers use Claude Code or Cursor on the company codebase safely?
 

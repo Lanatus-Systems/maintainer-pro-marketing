@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A copyable one-page proposal for a 4-week pilot where PMs ask an AI coding agent for small changes on a live preview and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-11-16",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["PM pilot proposal", "AI change requests", "AI for product managers", "engineering leads", "product teams"],
   cover: {
@@ -167,7 +167,7 @@ Before you send it, write the first requests with [the change request template f
 ### Week 3: normal volume
 
 - Requesters ask for changes as they come up, not saved for the pilot.
-- If you use Jira, try a few requests that start from a labeled ticket instead of the chat. Each ticket opens its own private copy, so this step needs Pro.
+- If you use Jira, try a few requests that start from a labeled ticket instead of the chat. Each ticket opens its own copy, so this step needs Pro.
 - Weekly review: look at the dropped requests. Were they out of scope, unclear, or did the agent get them wrong? Each has a different fix.
 
 ### Week 4: decide
@@ -220,7 +220,7 @@ The guardrails in the proposal map to the product:
 
 For writing the requests themselves, give your requesters [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai). Its five-line template (where, now, want, keep, check) makes requests easier to review, and the **Check** line doubles as the requester's sign-off on the preview.
 
-On cost: the Starter plan is free for one developer and one requester, with one private copy, which is enough to try the chat flow with one PM. Each Jira ticket opens its own private copy, and each extra requester needs a seat, so a pilot that uses Jira or more than one PM needs Pro ($19 per person per month). A one-month Pro trial fits the 4-week pilot: a workspace owner on Starter can start it from the Billing page, once per workspace, and when it ends the workspace goes back to Starter unless you subscribe. AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
+On cost: the Starter plan is free for one developer and one requester, with one private copy, which is enough to try the chat flow with one PM. Each Jira ticket opens its own copy, and each extra requester needs a seat, so a pilot that uses Jira or more than one PM needs Pro ($19 per person per month). A one-month Pro trial fits the 4-week pilot: a workspace owner on Starter can start it from the Billing page, once per workspace, and when it ends the workspace goes back to Starter unless you subscribe. AI usage runs on your team's own coding assistant plan, not on Butterneck. See [pricing](/pricing).
 
 **See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 

@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "AI change requests in Jira: how to start one from a ticket",
   description: "How to turn a Jira ticket into an AI-made change the requester can check on a live preview, with a developer deciding what ships.",
   date: "2026-11-03",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["Jira", "AI change requests", "answer"],
   cover: {
@@ -21,7 +21,7 @@ export const post: BlogPost = {
 
 1. Someone writes a normal Jira ticket: what should change, on which screen.
 2. They add the label \`butterneck\` and assign it to a mapped teammate.
-3. A private copy of the app opens on that teammate's computer, named after the ticket. The title, description, latest comments and attachments become the request.
+3. Its own copy of the app opens on that teammate's computer, named after the ticket. The title, description, latest comments and attachments become the request.
 4. The team's own coding agent (Cursor, Claude Code or Antigravity) makes the edit.
 5. When it's done, a short note and a preview link are posted back to the ticket.
 6. The requester checks the preview and can ask for tweaks. A developer reviews the diff and ships it the team's usual way.

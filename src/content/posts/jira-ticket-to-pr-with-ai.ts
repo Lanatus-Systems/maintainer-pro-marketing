@@ -17,19 +17,19 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Butterneck lets a product person turn a Jira ticket into a change to a live web app and check it on a live preview. Butterneck does not commit, push or open a pull request; a developer decides first. For "Jira ticket to pull request", that means a label starts the work, an AI coding agent makes the change on a private copy of your app on the developer's computer, the person who asked checks the preview, and then a developer decides whether to open a pull request. Butterneck never opens the PR itself.
+Butterneck lets a product person turn a Jira ticket into a change to a live web app and check it on a live preview. Butterneck does not commit, push or open a pull request; a developer decides first. For "Jira ticket to pull request", that means a label starts the work, an AI coding agent makes the change on its own copy of your app on the developer's computer, the person who asked checks the preview, and then a developer decides whether to open a pull request. Butterneck never opens the PR itself.
 
 Plenty of tools now promise to turn a Jira ticket into a pull request with AI. The idea is good. Most tickets for small changes are clear enough that a coding agent can do the edit. The hard questions are about what happens around it: who sees the result, who checks it, and what reaches your main branch.
 
 This post walks through a ticket-to-change workflow for product teams, and how Butterneck handles it. One honest note up front: Butterneck does not open the PR itself. It turns the ticket into a reviewable change on a live preview. Your developer opens the PR. We explain why below.
 
-> **Jira ticket to pull request, in short:** Add the \`butterneck\` label to a Jira ticket assigned to a mapped teammate, and an AI coding agent makes the change on a private copy of your app on that developer's computer, with the coding agent they already use (Cursor, Claude Code or Antigravity). A preview link goes back on the ticket and the person who asked checks it. Butterneck does not commit, push or open a pull request; a developer decides first whether to open one, and Butterneck never merges or deploys.
+> **Jira ticket to pull request, in short:** Add the \`butterneck\` label to a Jira ticket assigned to a mapped teammate, and an AI coding agent makes the change on its own copy of your app on that developer's computer, with the coding agent they already use (Cursor, Claude Code or Antigravity). A preview link goes back on the ticket and the person who asked checks it. Butterneck does not commit, push or open a pull request; a developer decides first whether to open one, and Butterneck never merges or deploys.
 
 ## Jira ticket to pull request: where Butterneck fits
 
 The path from a ticket to a PR has three steps, and Butterneck covers the first two:
 
-1. **The ticket starts the work.** Adding the \`butterneck\` label to a ticket assigned to a mapped teammate opens a private copy named after the ticket, and the agent works from the ticket's text and attachments.
+1. **The ticket starts the work.** Adding the \`butterneck\` label to a ticket assigned to a mapped teammate opens its own copy named after the ticket, and the agent works from the ticket's text and attachments.
 2. **The requester checks a live preview.** A link to the running app with the change goes back on the ticket. The requester looks at it and keeps refining in chat until it is right.
 3. **A developer decides about the PR.** The developer reads the conversation and the diff. If the change is worth keeping, they commit on a branch and open the PR with your usual process. If not, the change is thrown away and no PR ever exists.
 
@@ -65,12 +65,12 @@ So a useful ticket-to-change flow should give the ticket author a live preview, 
 
 - Add the label \`butterneck\` to a ticket.
 - Assign it to a teammate whose Jira account is mapped to a computer that has the project. If the assignee isn't mapped, nothing starts; the Jira page in Butterneck shows why.
-- Butterneck opens a private copy of the project named after the ticket.
+- Butterneck opens its own copy of the project named after the ticket.
 - The ticket's title, description, latest comments, and attached files become the request.
 
 ### The agent makes the change
 
-The coding agent runs on the assignee's computer, in that private copy's folder, using the CLI they are already signed in to: Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended). The app runs there too, and Butterneck gives it a share link.
+The coding agent runs on the assignee's computer, in that copy's folder, using the CLI they are already signed in to: Cursor, Claude Code, or Antigravity (team, enterprise or API plans recommended). The app runs there too, and Butterneck gives it a share link.
 
 ### The preview goes back on the ticket
 
@@ -87,7 +87,7 @@ Once the change looks right, the developer:
 3. Commits on a branch and opens a PR the way the team already does, with the Jira key in the branch name or title if that is your convention.
 4. Your normal review, CI, and deploy take over.
 
-If the private copy is a git worktree, the change is already on its own branch and checkout, separate from the main working copy.
+If the copy is a git worktree, the change is already on its own branch and checkout, separate from the main working copy.
 
 ## How to link a Jira ticket to a PR
 
@@ -125,7 +125,7 @@ For a copy-ready version, put the five-line template from [how to write a change
 
 For the full picture of folders, the ignore list and what leaves the machine, read [how Butterneck runs the coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
-- The agent works only in the folder tied to the private copy.
+- The agent works only in the folder tied to the copy.
 - \`.env\` files and team-defined globs are on an ignore list given to the agent as an instruction. It is not a hard sandbox, so keep production secrets off the bridge machine.
 - The coding CLI sends prompts and code context to its own AI provider, under your agreement with that provider.
 - Chat messages and preview traffic pass through Butterneck's server.
@@ -147,7 +147,7 @@ Connect Jira Cloud to GitHub with the GitHub for Jira app, then put the issue ke
 
 ### Which AI tools turn a Jira ticket into a pull request?
 
-Several do. Atlassian's own Jira Coding Agent can generate code from a work item and open a draft pull request for your team to review and merge. In Jira you can also assign a work item to Cursor, which starts a Cursor Cloud Agent and, if it opens a pull request, links it on the ticket, or to Atlassian's Claude Agent for Jira (Beta), which typically opens a draft GitHub pull request. Clogless opens a pull request with your Git provider when the change is ready. Butterneck stops one step earlier: a labeled ticket opens a private copy of the app, the developer's own coding agent makes the change, and a preview link goes back on the ticket. A developer then decides whether to commit it and open a PR. Butterneck never opens a pull request, merges or deploys. Our [Jira integration page](/integrations/jira) explains how this differs from assigning the ticket to Cursor or Claude.
+Several do. Atlassian's own Jira Coding Agent can generate code from a work item and open a draft pull request for your team to review and merge. In Jira you can also assign a work item to Cursor, which starts a Cursor Cloud Agent and, if it opens a pull request, links it on the ticket, or to Atlassian's Claude Agent for Jira (Beta), which typically opens a draft GitHub pull request. Clogless opens a pull request with your Git provider when the change is ready. Butterneck stops one step earlier: a labeled ticket opens its own copy of the app, the developer's own coding agent makes the change, and a preview link goes back on the ticket. A developer then decides whether to commit it and open a PR. Butterneck never opens a pull request, merges or deploys. Our [Jira integration page](/integrations/jira) explains how this differs from assigning the ticket to Cursor or Claude.
 
 ### Should approving the preview also merge the pull request?
 

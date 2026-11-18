@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Use your team's Claude Code or Cursor with no terminal or repo: ask on a live preview, the developer's agent edits, and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers", "IDE for product managers"],
   cover: {
@@ -107,7 +107,7 @@ Cursor's own [page for product managers](https://cursor.com/for/product-managers
 
 ### Can't a developer just share their Claude Code session with the PM instead?
 
-They can, and for pairing with another developer that often works well. A shared session shows the other person the agent's chat, commands and diffs, and the host usually approves what runs. Butterneck is built for the person who doesn't read those: the PM opens a share link to the running app, types the change in a chat next to the screen they mean, and checks the result on that same preview. They never see a terminal or the code. The developer chooses who can send requests on each private copy, either chosen people or anyone with the link. Requests don't stop for a prompt on every tool call: the coding CLI runs with its interactive permission prompts skipped, and the workspace is snapshotted before each turn so a stopped turn can usually be rolled back. Butterneck does not commit, push, open a pull request, merge or deploy, so a developer still reviews and publishes the change the usual way.
+They can, and for pairing with another developer that often works well. A shared session shows the other person the agent's chat, commands and diffs, and the host usually approves what runs. Butterneck is built for the person who doesn't read those: the PM opens a share link to the running app, types the change in a chat next to the screen they mean, and checks the result on that same preview. They never see a terminal or the code. The developer chooses who can send requests on each copy, either chosen people or anyone with the link. Requests don't stop for a prompt on every tool call: the coding CLI runs with its interactive permission prompts skipped, and the workspace is snapshotted before each turn so a stopped turn can usually be rolled back. Butterneck does not commit, push, open a pull request, merge or deploy, so a developer still reviews and publishes the change the usual way.
 
 ### Does each PM need their own Claude Code or Cursor subscription?
 

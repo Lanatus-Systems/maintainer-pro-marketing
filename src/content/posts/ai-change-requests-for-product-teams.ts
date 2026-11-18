@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-16",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -82,7 +82,7 @@ Most AI automation for product teams moves information: routing feedback, writin
 
 ### The agent runs on a developer's machine
 
-The coding agent is the CLI the developer already uses: Cursor, Claude Code, or Antigravity. It runs on their computer, in a folder they choose for that private copy. Butterneck does not run its own model.
+The coding agent is the CLI the developer already uses: Cursor, Claude Code, or Antigravity. It runs on their computer, in a folder they choose for that copy. Butterneck does not run its own model.
 
 ### The preview is the app itself
 
@@ -105,7 +105,7 @@ Access control matters once more than one person can send requests.
 
 These are the questions a CTO should ask any AI change request tool. Here are Butterneck's answers, stated plainly.
 
-- **Where does the agent write?** Only in the folder tied to the private copy. Make that folder a git worktree or a fresh clone, and in-flight requests stay off the main checkout.
+- **Where does the agent write?** Only in the folder tied to the copy. Make that folder a git worktree or a fresh clone, and in-flight requests stay off the main checkout.
 - **Can it read secrets?** \`.env\` files and team-added globs are listed as off-limits in the agent's instructions. That is a guardrail, not an enforced block. Keep production secrets off the bridge machine.
 - **What leaves the machine?** The coding CLI sends code context to its own AI provider. Chat messages and preview traffic go through Butterneck's server.
 - **Can a bad change be undone?** Each turn records a baseline. Stopping a turn usually rolls its file changes back; if it can't, the chat says so.

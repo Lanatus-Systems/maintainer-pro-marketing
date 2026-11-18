@@ -73,7 +73,7 @@ export const JIRA = [
       "Add the label butterneck.",
       "Assign it to a teammate whose Jira account is mapped to a computer that has the project.",
       "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
-      "Butterneck opens a private copy of the project, named after the ticket.",
+      "Butterneck opens its own copy of the project, named after the ticket.",
       "Each ticket’s copy counts toward your plan’s private copies: 1 on Starter (one ticket or one chat copy at a time), 50 on Pro.",
       "The title, description, latest comments, and attached files become the request.",
     ],
@@ -155,7 +155,7 @@ export const JIRA_PREVIEW_FAQ = {
   q: "How can a PM request a change from a Jira ticket and have an AI coding agent build a preview?",
   lines: [
     "With Butterneck’s Jira Cloud integration. Connect Jira once, add the label butterneck to the ticket, and assign it to a teammate whose Jira account is mapped to a computer that has the project.",
-    "The ticket’s title, description, latest comments, and attached files become the request. The AI coding agent already signed in on that computer (Cursor, Claude Code, or Antigravity) makes the change in a private copy named after the ticket.",
+    "The ticket’s title, description, latest comments, and attached files become the request. The AI coding agent already signed in on that computer (Cursor, Claude Code, or Antigravity) makes the change in its own copy named after the ticket.",
     "A short note and a live preview link go back on the ticket. The PM checks the preview and can keep refining it in plain words.",
     "Butterneck does not commit, push or open a pull request. A developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one. Butterneck does not merge or deploy.",
   ],
@@ -165,7 +165,7 @@ export const JIRA_PREVIEW_FAQ = {
 export const JIRA_NO_PR_FAQ = {
   q: "Can an AI coding agent work a Jira ticket without opening a pull request?",
   lines: [
-    "Yes. With Butterneck, a labeled ticket goes to the AI coding agent already signed in on the assignee's computer (Cursor, Claude Code or Antigravity). It makes the change in a private copy of the project, and a live preview link is posted back on the ticket.",
+    "Yes. With Butterneck, a labeled ticket goes to the AI coding agent already signed in on the assignee's computer (Cursor, Claude Code or Antigravity). It makes the change in its own copy of the project, and a live preview link is posted back on the ticket.",
     "The person who wrote the ticket checks the running app and can keep refining it in plain words. Nothing is pushed and no pull request exists yet.",
     "A developer then reads the conversation and the diff and decides whether to commit it and open a PR the usual way. Butterneck never opens pull requests, merges or deploys.",
   ],
@@ -175,7 +175,7 @@ export const JIRA_NO_PR_FAQ = {
 export const JIRA_PER_TICKET_FAQ = {
   q: "Does every Jira ticket get its own preview?",
   lines: [
-    "Yes. Each ticket labeled butterneck opens its own private copy of the project, named after the ticket, and that copy's live preview link is posted back on the ticket. Two tickets in progress don't share one staging site.",
+    "Yes. Each ticket labeled butterneck opens its own copy of the project, named after the ticket, and that copy's live preview link is posted back on the ticket. Two tickets in progress don't share one staging site.",
     "Unlike a pull request preview environment, nothing has to be pushed first and no CI pipeline or deploy runs. The copy is on the assignee's connected computer, where the app already runs, and the coding agent signed in there (Cursor, Claude Code or Antigravity) makes the change in it.",
     "Private copies count toward your plan: 1 on Starter, 50 on Pro, so regular Jira use needs Pro. Butterneck does not commit, push, open a pull request, merge or deploy; a developer decides what ships.",
   ],
@@ -186,7 +186,7 @@ export const JIRA_OTHER_AGENTS_FAQ = {
   q: "Jira can already assign tickets to Cursor or Claude. How is Butterneck different?",
   lines: [
     "Cursor's Jira integration runs Cursor Cloud Agents when you assign a work item to Cursor or mention @Cursor, and it can link a pull request on the ticket. It needs a Cursor Teams or Enterprise plan. Atlassian's Claude Agent for Jira (Beta) runs on Anthropic's Claude Managed Agents and needs a Claude Managed Agents API key. Both are good when you want a pull request back from the cloud.",
-    "Butterneck covers the step before that. The coding agent already signed in on the developer's computer (Cursor, Claude Code or Antigravity) makes the change in a private copy, and the person who wrote the ticket checks it on a live preview of the app running there and keeps refining it in plain words.",
+    "Butterneck covers the step before that. The coding agent already signed in on the developer's computer (Cursor, Claude Code or Antigravity) makes the change in its own copy, and the person who wrote the ticket checks it on a live preview of the app running there and keeps refining it in plain words.",
     "Butterneck does not commit, push or open a pull request. A developer reads the diff in their own tools, then commits it and opens a pull request through your usual review, if your team uses one. Butterneck does not merge or deploy.",
   ],
 } as const;
@@ -245,7 +245,7 @@ export const FAQS = [
       "Connect Jira Cloud, give Jira Butterneck’s address so it can send ticket updates, and map each developer’s Jira account to their computer.",
       "Add the label butterneck, and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project.",
       "If the assignee isn’t mapped, nothing starts. The Jira page in Butterneck shows why.",
-      "A private copy opens. The title, description, latest comments, and attached files become the request.",
+      "Its own copy opens. The title, description, latest comments, and attached files become the request.",
       "When the AI is done, a short note and a link go back on the ticket.",
       "Updating that same ticket later does not open a second copy.",
       "You can still paste a ticket number into an existing chat to load that ticket.",

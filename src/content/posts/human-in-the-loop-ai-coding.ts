@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -109,7 +109,7 @@ Leaving the merge to a person is the main safeguard. There are a few more, all o
 - **\`.env\` is on the ignore list.** The agent is told secret settings files are off limits. That is an instruction, not a hard block, so keep production secrets off the machine.
 - **You choose who can ask.** A list of people, or anyone with the link. Someone who is not allowed can request access, and you decide.
 - **Developer replies don't change files.** A developer can answer in the chat without triggering the AI.
-- **Each private copy is separate.** A Jira ticket gets its own copy named after the ticket, and updating the ticket later does not open a second one.
+- **Each copy is separate.** A Jira ticket gets its own copy named after the ticket, and updating the ticket later does not open a second one.
 
 ## A human in the loop can still defer
 

@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests on a shared local app: PMs open a live link to the app on a developer's computer, ask in chat, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["live preview", "localhost", "share link", "stakeholder review", "product teams"],
   cover: {
@@ -69,7 +69,7 @@ The fourth one is the part most tools skip.
 
 [Butterneck](/) is built around one idea: people on the product team ask for changes on a live copy of the product, and a developer decides what goes live. Sharing the running app is the first half of that.
 
-![The Butterneck workspace, where a developer sees each private copy of the project and its share link](/blog/product-sandbox-admin.png "1280x720")
+![The Butterneck workspace, where a developer sees each copy of the project and its share link](/blog/product-sandbox-admin.png "1280x720")
 
 ### 1. Connect the computer that already has the project
 
@@ -103,7 +103,7 @@ The coding assistant on the developer's computer reads the request and edits the
 
 ![A request typed in the chat, and the app in the preview updating after the AI edits the project](/blog/product-chat-updates-app.gif "1280x720")
 
-If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens a private copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket. Setup, including how each developer's Jira account is mapped to their computer, is on the [Jira integration page](/integrations/jira).
+If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens its own copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket. Setup, including how each developer's Jira account is mapped to their computer, is on the [Jira integration page](/integrations/jira).
 
 ## What is edited on your computer, and what leaves it
 
@@ -170,7 +170,7 @@ Butterneck doesn't depend on a particular framework or language. It works with a
 
 ### What if our app needs Docker Compose or a local database?
 
-That works, as long as the app runs on the connected computer. When the developer sets up the project, Butterneck reads its files, including a Docker Compose file, and lists what the computer needs, such as Docker Compose services running or a database to create. The developer confirms that list once. Each private copy then follows its setup steps, which can include starting the database services from the compose file, for example \`docker compose up db -d\`, before the app starts. The app itself still needs a start command and a local port, which is what the share link opens. Use local or test data for previews, not production data. Butterneck does not commit, push, open a pull request, merge or deploy.
+That works, as long as the app runs on the connected computer. When the developer sets up the project, Butterneck reads its files, including a Docker Compose file, and lists what the computer needs, such as Docker Compose services running or a database to create. The developer confirms that list once. Each copy then follows its setup steps, which can include starting the database services from the compose file, for example \`docker compose up db -d\`, before the app starts. The app itself still needs a start command and a local port, which is what the share link opens. Use local or test data for previews, not production data. Butterneck does not commit, push, open a pull request, merge or deploy.
 
 ### How is this different from a localhost tunnel like ngrok?
 

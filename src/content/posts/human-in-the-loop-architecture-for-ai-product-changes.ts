@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A human-in-the-loop architecture for AI coding agents: the requester checks a live preview, a developer reviews and ships, and Butterneck opens no PRs.",
   date: "2026-10-27",
-  updated: "2026-11-14",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "software architecture", "product management", "AI safety", "human in the loop AI governance"],
   cover: {
@@ -130,7 +130,7 @@ Not by the operating system. The file-access boundaries and the \`.env\` ignore 
 
 ### Does it work if our frontend and backend are in separate repositories?
 
-Yes. A private copy can have more than one project folder attached, for example the web app and the API it calls. The developer picks each folder, or each repository to clone, when setting up the project on the connected computer. The bridge starts each app in its own folder, and the share link opens the app the person who asked sees. The coding agent can work across all the attached folders in one request and is told to stay inside them. Butterneck does not commit, push, open a pull request, merge or deploy, so a developer reviews and publishes the change in each repository the usual way.
+Yes. A copy can have more than one project folder attached, for example the web app and the API it calls. The developer picks each folder, or each repository to clone, when setting up the project on the connected computer. The bridge starts each app in its own folder, and the share link opens the app the person who asked sees. The coding agent can work across all the attached folders in one request and is told to stay inside them. Butterneck does not commit, push, open a pull request, merge or deploy, so a developer reviews and publishes the change in each repository the usual way.
 
 ### Does anything leave the developer's machine?
 
