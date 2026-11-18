@@ -193,6 +193,10 @@ Put the sign-off where the stakeholder can see the running change. For work a de
 
 Yes, and in Butterneck the comment is the request. The person types it in the chat next to the screen they mean, and the request carries the page URL and route they have open, so the coding agent on a developer's connected computer starts from that screen. The change shows up on the same preview, and they keep replying in the same chat until it's right. A developer can answer in the chat without starting the agent, and a developer still decides what ships. Butterneck doesn't commit, push or open a pull request.
 
+### Is Butterneck a visual feedback tool for an AI coding agent?
+
+Partly. Visual feedback tools let a reviewer click an element on a staging site, leave a pinned comment, and hand it to a coding agent. Butterneck doesn't pin comments to elements. The reviewer types the request in the chat on the live preview, each message carries the page address, route and page title they have open, and they can paste or attach up to five screenshots or files. What it adds is the check: the coding agent on a developer's connected computer edits the project, the change shows up on the same preview, and the person who asked confirms it there before a developer decides what ships. Butterneck never commits, pushes or opens a pull request.
+
 ### Can designers use a live preview for design QA?
 
 Yes, for small visual fixes. Instead of filing a ticket with a screenshot, the designer opens the live preview, goes to the screen with the problem, and types the fix in the chat: the spacing, font weight, color or wording they expect, and what must not change. The request carries the page they have open, and they can attach a screenshot. The coding assistant on a developer's connected computer edits the project, and the designer checks the result on the same preview, including a narrow window, then signs off in writing where they asked.
