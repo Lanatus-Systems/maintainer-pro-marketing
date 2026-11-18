@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "Who lets non-engineers ship? What Atlassian, Nash, Fieldguide and Carcará changed",
   seoTitle: "Who lets non-engineers ship? Four company examples",
   description:
-    "How Atlassian, Nash, Fieldguide and Carcará let non-engineers ship while engineers review, from their own posts, and how a live preview keeps that split.",
+    "How Atlassian, Nash, Fieldguide and Carcará let non-engineers ship with engineers involved, from their own posts, and how a live preview keeps that split.",
   date: "2026-11-18",
   author: "The Butterneck team",
   tags: ["product teams", "AI change requests", "live preview", "code review", "human in the loop", "case studies"],
@@ -18,17 +18,17 @@ export const post: BlogPost = {
   body: `
 A product manager or designer has a small change. The wording is wrong, the spacing is off, or a button is on the wrong screen. They can describe it clearly. They still wait for an engineer to write it, review it and ship it.
 
-Four companies have now described, in their own words, how they let people outside engineering take that kind of change further, while engineers still review the work and own the release. This post is a reading of those posts, not a comparison of products. Atlassian, Nash, Fieldguide and Carcará are companies writing about their own practice. Nash's and Fieldguide's agents are in-house tools. None of the four is a product we compete with.
+Four companies have now described, in their own words, how they let people outside engineering take that kind of change further, while engineers stay involved in review and in the standards a change must meet. This post is a reading of those posts, not a comparison of products. Atlassian, Nash, Fieldguide and Carcará are companies writing about their own practice. Nash's and Fieldguide's agents are in-house tools.
 
 We make Butterneck, which keeps that same split but puts the check on a live preview before any pull request exists, so we describe its flow later. The idea works with any setup that lets the person who asked see the running change, and keeps a developer at the last step.
 
-> **In short:** The person who asks is the one who can tell you whether the change is right. In these four write-ups, that person checks the result, and engineers still scope, review and own the release. Some of their tools and processes open pull requests; Butterneck never commits, pushes or opens a pull request. In Butterneck, the person who asked checks the change on a live preview of its own copy of the app, the coding agent runs on a developer's connected computer, and a developer decides what ships.
+> **In short:** The person who asks is the one who can tell you whether the change is right. In these four write-ups, people outside engineering take a change further, and engineers still scope, review or keep the standard. Some of their tools and processes open pull requests; Butterneck never commits, pushes or opens a pull request. In Butterneck, the person who asked checks the change on a live preview of its own copy of the app, the coding agent runs on a developer's connected computer, and a developer decides what ships.
 
 ## The split is older than any one tool
 
 The useful split is not "can a non-engineer write code?" It is "who checks that the change is what was meant, and who decides that it is safe to ship?"
 
-A pull request is good at the second question. It is a poor way to ask the first, because the person who can answer it is often not the person reading the diff. The four posts below all keep a human review before anything is treated as done. They differ in when the person who asked gets to see the running result, and in whose tool opens the pull request.
+A pull request is good at the second question. It is a poor way to ask the first, because the person who can answer it is often not the person reading the diff. The four posts below all keep engineers involved, in review or in the standards a change must meet. They differ in when the person who asked gets to see the running result, and in whose tool opens the pull request.
 
 For a longer note on that first question, see [let product managers change the app without engineering](/blog/let-product-managers-change-the-app-without-engineering) and [should product managers ship code?](/blog/should-product-managers-ship-code).
 
@@ -54,11 +54,11 @@ Fieldguide's designers describe a small visual fix on a ticket. An internal tool
 
 The designer is the person who can tell whether the spacing, type or color is right. The internal tool is what opens the pull request. An engineer still does the code review. In Butterneck the preview comes before any pull request; see [live preview before the pull request](/blog/live-preview-before-pull-request).
 
-## Carcará: PMs and designers opening pull requests, engineers still the gate
+## Carcará: PMs and designers opening pull requests, engineers still keep the standard
 
 Carcará wrote in August 2026 about a mobile-app rewrite. "Alongside our six engineers, two product managers and two designers were opening pull requests and merging real features on their own." None of them had to become engineers to do it. The tooling they built around the AI "took on enough of the coding that their part was deciding what to build and confirming the result was right" ([Carcará, 27 August 2026](https://carcara.dev/blog/pms-designers-shipping-mobile/)).
 
-They checked a running build of the feature, then the change went through the same quality gates and review loop as any other change before it merged. "Engineers did not go away." Engineers still got pulled in for vocabulary and polish, and they "stay the gatekeepers of quality", owning the structure and the tooling that made the rest possible.
+In their pipeline a design feeds the AI, and the generated feature goes through "a test build, a quality gate, and an automated AI review" before the change merges. "Engineers did not go away." Engineers still got pulled in for vocabulary and polish, and they "stay the gatekeepers of quality", owning the structure and the tooling that made the rest possible.
 
 Again, it is Carcará's process that opens and merges pull requests. The check that mattered for the people asking was whether the result was right. The engineers kept the standard.
 
@@ -66,7 +66,7 @@ Again, it is Carcará's process that opens and merges pull requests. The check t
 
 Read together, the four posts agree on a short list:
 
-- The people who can describe a small change can take it further than a ticket, if someone shows them the running result.
+- The people who can describe a small change can take it further than a ticket.
 - Engineers still scope, review or keep the standard. "Engineering-approved" is the number Atlassian reported. Nash has a human review and merge. Fieldguide tags in an engineer for a final code review. Carcará keeps engineers as the gatekeepers of quality.
 - The team's own tools or processes are what open the pull request, where a pull request is part of the flow.
 
@@ -110,7 +110,7 @@ Small, visible ones: copy, layout, spacing, color, empty states, a control on th
 
 ### Is this a comparison of Butterneck with those companies' products?
 
-No. This is a reading of four companies' own posts about how they let non-engineers take a change further while engineers review. Nash's and Fieldguide's agents are in-house tools. We are not comparing Butterneck to a product those companies sell.
+No. This is a reading of four companies' own posts about how they let non-engineers take a change further while engineers stay involved. Nash's and Fieldguide's agents are in-house tools. We are not comparing Butterneck to a product those companies sell.
 
 ## Try it
 
