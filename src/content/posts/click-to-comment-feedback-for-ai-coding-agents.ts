@@ -28,7 +28,7 @@ This post is about that gap. We make Butterneck, which does not pin comments to 
 
 The hard part of a small visual request is often not the wording. It is the place. "The button" might mean the primary action, a ghost button next to it, or a control that only shows up on a narrow screen. "This heading" might mean the one in the hero, or the one in the card below it.
 
-A comment pinned to an element on a running page carries that place with the request. The person asking does not have to describe the selector, and the person (or agent) doing the work does not have to guess. For spacing, type, colour and copy on a screen you can already open, that is a genuine save.
+A comment pinned to an element on a running page carries that place with the request. The person asking does not have to describe the selector, and the person (or agent) doing the work does not have to guess. For spacing, type, color and copy on a screen you can already open, that is a genuine save.
 
 It is the same idea as attaching a screenshot, with the location built in.
 
@@ -65,7 +65,7 @@ For the words of the request itself, [how to write a change request for an AI co
 
 ## What stays with a developer
 
-This is for small, visible fixes: copy, spacing, font weight, colour, a control on the wrong screen. It is not the starting point for login, permissions, billing, data from another system, or anything that only happens sometimes.
+This is for small, visible fixes: copy, spacing, font weight, color, a control on the wrong screen. It is not the starting point for login, permissions, billing, data from another system, or anything that only happens sometimes.
 
 A developer still reads the diff, especially when the change touches a shared component or a style other screens use. Their sign-off is the release decision. The requester's sign-off means "this is what I asked for."
 
