@@ -32,6 +32,8 @@ The cheaper order is the other way around. The reporter checks the fix on a runn
 
 That split is the same one we described for product changes in [live preview before the PR](/blog/live-preview-before-pull-request). A bug report just makes the first question more obvious: the person who saw the problem is the acceptance test.
 
+The idea is older than AI coding. WebKit's bug life cycle says that once a fix is committed, verifying it "is done by the person who originally submitted the bug report" in the typical case ([WebKit](https://webkit.org/bug-life-cycle/)), and JetBrains documents a YouTrack workflow that assigns a fixed issue back to its reporter to approve or reopen ([YouTrack docs](https://www.jetbrains.com/help/youtrack/cloud/workflow-notify-reporter-to-approve-fix.html)). What a live preview changes is the timing: the reporter checks the fix before anyone commits it, not after.
+
 This is not a theoretical process. In July 2026, a Gumroad creator reported a mobile chart bug. The first fix ([pull request #6053](https://github.com/antiwork/gumroad/pull/6053)) passed human review and CI and was merged. Once it was live, the creator who reported it wrote back that the new design was wrong. The ruling that followed: "Going fwd get confirmation from jordi before merging." The next version ([pull request #6076](https://github.com/antiwork/gumroad/pull/6076)) was merged a minute after the reporter replied "Yeah super clean, I like it 👍", as [Gumclaw's write-up](https://gumclaw.github.io/how-i-work/gumclaw-loop.html) records. Gumroad's flow still opens pull requests and ships from there. The useful change was who had to look at the running fix before the second version shipped: the person who reported the bug.
 
 ## Which bugs fit, and which don't
