@@ -9,7 +9,8 @@ import {
   PEERLIST_URL,
   SAASHUB_URL,
   UNEED_URL,
-  X_URL, SITE_DESCRIPTION, SITE_URL, SUPPORT_EMAIL } from "@/lib/site";
+  X_URL,
+  YOUTUBE_URL, SITE_DESCRIPTION, SITE_URL, SUPPORT_EMAIL } from "@/lib/site";
 
 /** The Organization node shared by the home page graph and the product pages. */
 export function organizationJsonLd() {
@@ -27,6 +28,7 @@ export function organizationJsonLd() {
       MEDIUM_URL,
       UNEED_URL,
       PEERLIST_URL,
+      YOUTUBE_URL,
       // DEVHUNT_URL and SAASHUB_URL are excluded until their listings are
       // fixed (DevHunt launch date; SaaSHub pending approval).
     ],
