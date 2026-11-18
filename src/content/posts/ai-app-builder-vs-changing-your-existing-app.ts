@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Build a new app with an AI app builder, or change the one you already have? How product teams choose, and how PMs ask for changes on a live preview.",
   date: "2026-11-05",
-  updated: "2026-11-17",
+  updated: "2026-11-18",
   author: "The Butterneck team",
   tags: ["ai app builder", "no code app builder", "AI change requests", "product teams", "existing codebase", "AI coding agents"],
   cover: {
@@ -92,6 +92,10 @@ Yes. AI app builders usually generate a new app or a prototype, and coding assis
 ### Does Butterneck host or deploy the app?
 
 No. The app runs on the developer's computer for the preview, and your team deploys the way it already does.
+
+### Is there an alternative to Replit or Lovable for changing an existing company codebase, with a developer approving the change?
+
+Yes, if the tool works on the code your team already runs instead of starting a new project. With Butterneck, a PM or designer asks for the change on a live preview of your existing app, the coding agent your developer already uses (Cursor, Claude Code or Antigravity CLI) edits the project on a developer's connected computer, and a developer reviews the change and decides what ships. Butterneck never commits, pushes or opens a pull request, so approval stays with your developer and your usual review.
 
 ## Try it
 
