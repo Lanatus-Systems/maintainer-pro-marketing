@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with a live preview before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-11-19",
+  updated: "2026-11-20",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off", "design QA", "ephemeral preview environments"],
   cover: {
@@ -180,6 +180,10 @@ AI code review before the PR checks the code. Tools such as [Claude Code's /code
 ### What should a PM check on a preview?
 
 The exact change on the screen it was asked from, the wording, empty, loading and error states, a narrow window, long text, the rest of the page, and that the preview uses test data. Then sign off in writing where the request was made.
+
+### Which small UI changes suit a live preview before the PR?
+
+Changes the person who asked can judge by looking at the screen: copy, labels and button text, empty states and error messages, spacing and layout within the existing design system, and small visual fixes such as a wrong color or a broken link. Sign-in, permissions, billing, data models and anything security-related should start with an engineer, because they can look right on a preview and still be wrong. A change to a shared component or style also needs a developer to read the diff, since other screens use it. Our [AI change request policy template](/blog/ai-change-request-policy-template) has the full lists.
 
 ### Who decides whether the change ships?
 
