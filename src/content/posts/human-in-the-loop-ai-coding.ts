@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-18",
+  updated: "2026-11-19",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -188,6 +188,10 @@ For most product changes, no. Since 28 October 2026, GitHub's Agent Merge can wa
 ### Is there an AI coding agent that waits for my approval before it merges?
 
 Many cloud coding agents stop at a pull request and leave the merge to a reviewer and your branch rules. Butterneck stops earlier. It never opens a pull request, merges or deploys. The AI edits the project on the developer's computer, the person who asked checks the result on a live preview, and the developer decides whether it becomes a commit or a pull request at all.
+
+### Will the AI start changes nobody asked for?
+
+No. In Butterneck the AI only works when a person asks: a message in the chat beside the live preview, or a Jira ticket labeled butterneck and assigned to a teammate whose Jira account is mapped to a computer that has the project. A developer's reply in the same chat doesn't start it. Each request edits files on the developer's connected computer and stops there: the person who asked checks the result on the preview, and a developer decides what ships. Butterneck doesn't commit, push, open a pull request, merge or deploy. If your team also runs an agent that opens pull requests on its own, give each of those pull requests an owner too; see [why AI pull requests need an owner](/blog/ai-prs-need-an-owner).
 
 ### How is this different from a merge gate for agent pull requests?
 
