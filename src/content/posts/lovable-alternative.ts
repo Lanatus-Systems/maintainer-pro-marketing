@@ -17,7 +17,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-Most searches for a Lovable alternative are looking for another app builder: a tool that starts a new app from a description. This page is for teams changing an app they already have.
+If you want another app builder, a tool that starts a new app from a description, this page isn't that. It is for teams changing an app they already have.
 
 If you're looking at Lovable and wondering whether an alternative fits your team better, this post compares Lovable and Butterneck. We make Butterneck, so we are not neutral. The two products mostly solve different problems, and for many teams Lovable is the better choice. We've tried to stick to what Lovable says publicly and to be clear about where each one fits.
 
