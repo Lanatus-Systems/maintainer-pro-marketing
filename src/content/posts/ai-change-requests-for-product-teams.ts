@@ -130,7 +130,7 @@ Poor fits:
 - Changes to billing, permissions, or data models without close engineering review.
 - Anything that needs production data or secrets.
 
-GitHub's engineering blog draws the same line: "A change is not cheap just because the code was cheap to generate. It's cheap only if a human can confidently review and own the result." Adding a display field that already exists in the backend "is usually cheap"; changing authorization behavior "is not cheap, no matter how clean the diff" ([The cost of saying yes has changed](https://github.blog/engineering/the-cost-of-saying-yes-has-changed/), GitHub Blog, 17 July 2026).
+Dalia Abuadas draws the same line on GitHub's engineering blog: "A change is not cheap just because the code was cheap to generate. It's cheap only if a human can confidently review and own the result." Adding a display field that already exists in the backend "is usually cheap"; changing authorization behavior "is not cheap, no matter how clean the diff" ([The cost of saying yes has changed](https://github.blog/engineering/the-cost-of-saying-yes-has-changed/), GitHub Blog, 17 July 2026).
 
 For how to word a single request so the agent gets it right, see [how to write a change request for an AI coding agent](/blog/how-to-write-a-change-request-for-ai).
 
