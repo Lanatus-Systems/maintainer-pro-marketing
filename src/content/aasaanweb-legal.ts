@@ -55,7 +55,7 @@ export const AASAANWEB_LEGAL: Record<AasaanWebLegalKind, { path: string; kicker:
       {
         "heading": "The service",
         "paragraphs": [
-          "Butterneck connects a project folder on your computer, shares a live preview, and lets people you invite describe changes in chat. You review the preview and publish with your own process. Butterneck does not merge or deploy."
+          "Butterneck connects a project folder on a developer's connected computer, shares a live preview, and lets people you invite describe changes in chat. You review the preview and publish with your own process. Butterneck does not merge or deploy."
         ]
       },
       {
@@ -80,7 +80,7 @@ export const AASAANWEB_LEGAL: Record<AasaanWebLegalKind, { path: string; kicker:
       {
         "heading": "Liability",
         "paragraphs": [
-          "The preview is a working copy on your machine. You decide what ships. Butterneck is provided as available, without a warranty that a change is correct or that the preview stays online."
+          "The preview is a working copy on a developer's connected computer. You decide what ships. Butterneck is provided as available, without a warranty that a change is correct or that the preview stays online."
         ]
       }
     ]

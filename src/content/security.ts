@@ -12,7 +12,7 @@ export const SECURITY = {
     "In short: Butterneck runs the coding assistant on your connected computer and tells it to stay in the folder you pick and to leave .env files alone. These are guardrails, not hard blocks. It does not copy the repository to its servers to edit it, and it does not merge or deploy. Your team publishes.",
   facts: [
     {
-      title: "The bridge runs on your computer",
+      title: "The bridge runs on a developer's connected computer",
       paragraphs: [
         "You pair a computer from the workspace. The bridge stays on that computer. It starts the project there, and the edit happens there.",
         "It keeps an outbound connection to Butterneck, which relays the share link and the chat. It updates itself from Butterneck's server.",
@@ -41,14 +41,14 @@ export const SECURITY = {
       title: "Who can send a request",
       paragraphs: [
         "Each connected computer starts with a chosen list of people who can send requests. The person assigned to that computer is always on it. \"Anyone with the link\" is a setting you turn on.",
-        "The share link is unlisted, not private. Anyone who has it can open the preview. Every request runs the coding assistant on your computer, so keep the list unless that computer holds nothing you would mind.",
+        "The share link is unlisted, not private. Anyone who has it can open the preview. Every request runs the coding assistant on a developer's connected computer, so keep the list unless that computer holds nothing you would mind.",
       ],
     },
     {
       title: "The coding assistant sees the project",
       paragraphs: [
         "The edit is made by Cursor, Claude Code, or Antigravity, whichever is signed in on that computer. That provider receives what the assistant reads in order to make the change.",
-        "Butterneck does not copy the repository to its servers to edit it. The preview is the app running on your computer. The share link relays that page so someone else can open it. Chat messages and attachments are stored in the workspace.",
+        "Butterneck does not copy the repository to its servers to edit it. The preview is the app running on a developer's connected computer. The share link relays that page so someone else can open it. Chat messages and attachments are stored in the workspace.",
       ],
     },
   ],

@@ -83,7 +83,7 @@ export const legalPages = {
       {
         heading: "The service",
         paragraphs: [
-          "Butterneck connects a project folder on your computer, shares a live preview, and lets people you invite describe changes in chat. You review the preview and publish with your own process. Butterneck does not merge or deploy.",
+          "Butterneck connects a project folder on a developer's connected computer, shares a live preview, and lets people you invite describe changes in chat. You review the preview and publish with your own process. Butterneck does not merge or deploy.",
         ],
       },
       {
