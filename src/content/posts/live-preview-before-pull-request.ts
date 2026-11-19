@@ -183,7 +183,7 @@ The exact change on the screen it was asked from, the wording, empty, loading an
 
 ### Which small UI changes suit a live preview before the PR?
 
-Changes the person who asked can judge by looking at the screen: copy, labels and button text, empty states and error messages, spacing and layout within the existing design system, and small visual fixes such as a wrong color or a broken link. Sign-in, permissions, billing, data models and anything security-related should start with an engineer, because they can look right on a preview and still be wrong. A change to a shared component or style also needs a developer to read the diff, since other screens use it. Our [AI change request policy template](/blog/ai-change-request-policy-template) has the full lists.
+Changes the person who asked can judge by looking at the screen: copy, labels and button text, empty states and error messages, spacing and layout within the existing design system, and small visual fixes such as a wrong color or a broken link. Sign-in, permissions, billing, data models and anything security-related should start with an engineer, because they can look right on a preview and still be wrong. A change to a shared component or style also needs a developer to read the diff, since other screens use it. Our [AI change request policy template](/blog/ai-change-request-policy-template) has the full lists of what to ask for directly and what to keep with an engineer, and [who lets non-engineers ship](/blog/who-lets-non-engineers-ship) covers security and shared components.
 
 ### Who decides whether the change ships?
 
