@@ -15,7 +15,7 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
-**Short answer:** add a label to the ticket and assign it. With Butterneck's Jira Cloud integration, a ticket labelled \`butterneck\` and assigned to a teammate whose Jira account is mapped to a connected computer starts an AI change on that computer. A preview link is posted back to the ticket so the requester can check it.
+**Short answer:** add a label to the ticket and assign it. With Butterneck's Jira Cloud integration, a ticket labeled \`butterneck\` and assigned to a teammate whose Jira account is mapped to a connected computer starts an AI change on that computer. A preview link is posted back to the ticket so the requester can check it.
 
 ## What happens, step by step
 
@@ -50,7 +50,7 @@ A run starts only in a linked Jira project, when the ticket has the \`butterneck
 
 ### Can several tickets be worked on at once?
 
-Yes. Each ticket labelled \`butterneck\` opens its own copy, named after the ticket, and that copy's preview link goes back on the same ticket, so two tickets in progress don't share one staging site. Updating the same ticket later doesn't open a second copy. Copies count toward your plan; see [pricing](/pricing).
+Yes. Each ticket labeled \`butterneck\` opens its own copy, named after the ticket, and that copy's preview link goes back on the same ticket, so two tickets in progress don't share one staging site. Updating the same ticket later doesn't open a second copy. Copies count toward your plan; see [pricing](/pricing).
 
 ### Does it open a pull request from the ticket?
 
