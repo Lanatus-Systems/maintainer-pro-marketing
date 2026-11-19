@@ -1,5 +1,5 @@
 /** Bump SECURITY_UPDATED when /security copy changes. */
-export const SECURITY_UPDATED = "2026-11-17";
+export const SECURITY_UPDATED = "2026-11-19";
 
 export const SECURITY = {
   path: "/security",
