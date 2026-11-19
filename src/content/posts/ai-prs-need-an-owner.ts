@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-18",
+  updated: "2026-11-19",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -94,6 +94,8 @@ LinearB isn't the only source pointing at review and merge rather than writing. 
 **Faros: low vs high AI adoption.** Faros's [AI Engineering Report 2026](https://pages.faros.ai/hubfs/AI_Engineering_Report_2026_The_Acceleration_Whiplash_Faros.pdf) (PDF; 22,000 developers, 4,000 teams, two years of data) compares low and high AI adoption, not one year with the next. Moving from low to high adoption, median time to first PR review was 156.6% higher, median time in PR review 441.5% higher, and PRs merged without any review were up 31.3%.
 
 **Sonar: generated faster than it can be checked.** Sonar's [2027 State of Code Developer Survey](https://www.sonarsource.com/company/press-releases/sonar-releases-2027-developer-survey-report/) (1,026 developers and engineering managers, published 12 November 2026) found that 76% say they generate AI code faster than they can verify it, and 53% spend more time reviewing code than creating it, up from 18% before they adopted AI tools. Only 39% completely agree that AI-generated code is always checked before being committed, even though 94% don't fully trust it. These are survey answers, not measured PR timings.
+
+**Fin: most pull requests drafted by an agent, some approved without a person.** At #mtpcon London 2026, John Moriarty, Product Design Director at Fin (formerly Intercom), said 94% of Fin's pull requests are authored by Claude Code and 19% are auto-approved with no human reviewer, according to [Mind the Product's write-up of the talk](https://www.mindtheproduct.com/how-fin-builds-at-the-edges-when-agents-own-the-middle-john-moriarty-at-mtpcon-london-2026/) (17 August 2026). Fin puts its productivity gain at three times in a year, measured in pull requests per person per month. These are one company's own figures from a conference talk, not a study.
 
 All of them come with the same caveat as LinearB. The MSR study's authors note that correlation does not imply causation, and their data comes from open-source repositories. CircleCI's numbers describe pipelines, not who wrote the code. The Carnegie Mellon/Stanford study covers a single company. DX and Faros are vendor reports that compare teams by how much they use AI, and Sonar's is a vendor survey. Read together, they point the same way: the slow part is getting a change reviewed, trusted and merged, not writing it. None of them measured Butterneck.
 
