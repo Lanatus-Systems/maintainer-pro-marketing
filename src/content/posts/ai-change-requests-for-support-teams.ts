@@ -3,7 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "ai-change-requests-for-support-teams",
   title: "AI change requests for support teams: fix the labels behind repeat tickets",
-  seoTitle: "AI change requests for support teams: fix the labels behind repeat tickets",
+  seoTitle: "AI change requests for support teams: fix repeat-ticket labels",
   description:
     "Support leads can fix a confusing label or error message on a live preview of the app. A developer reviews the change and decides what ships.",
   date: "2026-11-19",

@@ -84,7 +84,7 @@ The product manager checks that the button now says the right thing. The develop
 
 Both checks are needed. Butterneck puts the first one on [a live preview before the pull request](/blog/live-preview-before-pull-request), where the person asking can see it, and leaves the second one with the developer.
 
-That second check is getting heavier, not lighter. In SlashData's developer survey (11,099 developers, [published 12 November 2026](https://www.slashdata.co/research/faster-code-heavier-checks)), 81% said AI reduces repetitive work but increases the need for review and validation. When the person who asked has already confirmed the first check, the developer only has the second one left.
+That second check is getting heavier, not lighter. In SlashData's developer survey (11,099 developers, [published 12 November 2026](https://www.slashdata.co/research/faster-code-heavier-checks)), 81% said AI reduces repetitive work but increases the need for review and validation. When the person who asked has already confirmed the first check, the developer only has the second one left. Atlassian's first [AI SDLC Index](https://www.atlassian.com/blog/company-news/introducing-the-atlassian-ai-sdlc-index) (18 November 2026), built on data from its DX platform, points the same way: across DX customers, AI-generated code went from 49% of merged code in April 2026 to 70% in October (a self-reported share, from 227 companies), and human pull request review volume grew faster in October than in previous months. In the words of Atlassian's CEO, Mike Cannon-Brookes: "Code is getting cheaper to write, but someone still has to read it, test it, and stand behind it."
 
 ### 3. Your release process already exists
 

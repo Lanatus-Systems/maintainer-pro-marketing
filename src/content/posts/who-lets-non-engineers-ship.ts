@@ -7,6 +7,7 @@ export const post: BlogPost = {
   description:
     "How Atlassian, Nash, Fieldguide and Carcará let non-engineers ship with engineers involved, from their own posts, and how a live preview keeps that split.",
   date: "2026-11-18",
+  updated: "2026-11-19",
   author: "The Butterneck team",
   tags: ["product teams", "AI change requests", "live preview", "code review", "human in the loop", "case studies"],
   cover: {
@@ -35,6 +36,8 @@ For a longer note on that first question, see [let product managers change the a
 ## Atlassian: PMs and designers, engineers still reviewing
 
 In November 2026 Atlassian wrote about an internal initiative. "PMs and designers who had never written production code used AI to take small customer-facing improvements all the way to production. Engineers helped scope the changes, reviewed the code, and upheld technical standards." In three months, "more than 50 PMs and designers shipped over 100 engineering-approved production changes" ([Atlassian, 10 November 2026](https://www.atlassian.com/blog/how-we-build/3-lessons-from-rebuilding-atlassians-product-development-lifecycle-for-people-and-agents)).
+
+Atlassian's [AI PDLC Playbook](https://www.atlassian.com/blog/guides-research/ai-product-development-lifecycle-playbook) (November 2026) gives the breakdown: "42 bug fixes, ~31 interface improvements, and 20+ logic and feature changes", from a challenge to "take a small, low-risk customer-facing change from idea to production". It adds: "Every change underwent engineering review and the standard deployment process."
 
 The people outside engineering used AI to make the change themselves. The number Atlassian chose to report is not how many drafts an agent produced. It is how many changes engineers approved for production. That is the split: people who know what the change should look like can take it a long way, and engineering still owns the standard.
 
