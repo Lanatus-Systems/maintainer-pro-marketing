@@ -21,7 +21,7 @@ AI app builders have become a popular kind of AI tool. You describe an app, and 
 
 Many product teams have a different problem. They already have an app, with customers, a codebase, tests and a release process. What they need is not a new app but small changes to the one they ship. This post compares the two paths and helps you pick. We make Butterneck, which is built for the second one, so we are not neutral.
 
-> **AI app builder vs changing your existing app, in short:** Use an AI app builder when you're starting something new and are happy for the builder to generate and host it. When the product already exists, change it where it lives: in Butterneck, a PM asks on a live preview of the running app, the coding agent a developer already uses edits the existing project on their computer, and a developer still decides what ships.
+> **AI app builder vs changing your existing app, in short:** Use an AI app builder when you're starting something new and are happy for the builder to generate and host it. When the product already exists, change it where it lives: in Butterneck, a PM asks on a live preview of the running app, the coding agent a developer already uses edits the existing project on a developer's connected computer, and a developer still decides what ships.
 
 ## What an AI app builder is good for
 
@@ -91,7 +91,7 @@ Yes. AI app builders usually generate a new app or a prototype, and coding assis
 
 ### Does Butterneck host or deploy the app?
 
-No. The app runs on the developer's computer for the preview, and your team deploys the way it already does.
+No. The app runs on a developer's connected computer for the preview, and your team deploys the way it already does.
 
 ### Is there an alternative to Replit or Lovable for changing an existing company codebase, with a developer approving the change?
 
