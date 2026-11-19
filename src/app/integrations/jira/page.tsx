@@ -220,7 +220,7 @@ export default function JiraIntegrationPage() {
           </li>
         </ul>
         <p className="landing-quiet">
-          More on this: <Link href="/blog/run-ai-coding-agent-sandbox-on-your-machine">how the agent runs on a developer's connected computer</Link>{" "}
+          More on this: <Link href="/blog/run-ai-coding-agent-sandbox-on-your-machine">how the agent runs on a developer&apos;s connected computer</Link>{" "}
           · <Link href="/blog/ai-prs-need-an-owner">why AI changes need an owner</Link>{" "}
           · <Link href="/blog/clogless-alternative">compared with a cloud-sandbox tool</Link>
         </p>
