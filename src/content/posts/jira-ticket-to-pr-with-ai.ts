@@ -97,7 +97,7 @@ Once a developer opens the pull request, you will want it to show up on the Jira
 - **Commit message:** for example \`PROJ-123 Update pricing copy\`.
 - **Pull request title:** for example \`PROJ-123: Update pricing copy\`.
 
-Use the key in capitals, exactly as Jira shows it. Once linked, the PR appears in the ticket's Development panel. So the full path for a labeled ticket is: the AI coding agent makes the change on a live copy, the requester checks the preview, and the developer commits on a branch named with the ticket key and opens the PR. The ticket then shows the preview link Butterneck posted and the PR your Git provider linked.
+Use the key in capitals, exactly as Jira shows it. Once linked, the PR appears in the ticket's Development panel. So the full path for a labelled ticket is: the AI coding agent makes the change on a live copy, the requester checks the preview, and the developer commits on a branch named with the ticket key and opens the PR. The ticket then shows the preview link Butterneck posted and the PR your Git provider linked.
 
 ## Why Butterneck stops before the PR
 
