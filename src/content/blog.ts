@@ -26,6 +26,7 @@ import { post as reporterChecks } from "@/content/posts/reporter-checks-the-fix"
 import { post as lovableAlt } from "@/content/posts/lovable-alternative";
 import { post as clickToComment } from "@/content/posts/click-to-comment-feedback-for-ai-coding-agents";
 import { post as whoLetsNonEng } from "@/content/posts/who-lets-non-engineers-ship";
+import { post as supportTeams } from "@/content/posts/ai-change-requests-for-support-teams";
 
 export type BlogPost = {
   slug: string;
@@ -50,7 +51,7 @@ export type BlogPost = {
   body: string;
 };
 
-export const POSTS: BlogPost[] = [clickToComment, whoLetsNonEng, reporterChecks, lovableAlt, aiAppBuilder, agenticCoding, vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
+export const POSTS: BlogPost[] = [supportTeams, clickToComment, whoLetsNonEng, reporterChecks, lovableAlt, aiAppBuilder, agenticCoding, vibeTeams, adaptl, pmNoEng, aiJira, nonEngPr, toolsLandscape, previewBeforePr, pmPilot, changeRequestTemplate, claudeCodePms, clogless, aiPrsOwner, policyTemplate, pmsShipCode, itera, pms, jira, aicr, sandboxOnYourMachine, hitlArchitecture, humanInTheLoop, shareLocalApp].sort((a, b) =>
   b.date.localeCompare(a.date)
 );
 
