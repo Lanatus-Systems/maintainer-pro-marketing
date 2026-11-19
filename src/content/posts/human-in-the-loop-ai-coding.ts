@@ -159,7 +159,7 @@ It is not a fit if:
 
 ## What it runs on
 
-Butterneck does not ship its own model. It uses the coding assistant the developer already has signed in on their computer: Cursor, Claude Code, or Antigravity. The computer needs Node.js 22 or newer. The developer installs a small connector, points it at the project, and starts the app. Everyone else opens the live copy.
+Butterneck does not ship its own model. It uses the coding assistant the developer already has signed in on the computer your team connects: Cursor, Claude Code, or Antigravity. The computer needs Node.js 22 or newer. The developer installs a small connector, points it at the project, and starts the app. Everyone else opens the live copy.
 
 If you want the details of the sharing side, read [Share your local app with stakeholders without deploying it](/blog/share-local-app-without-deploying).
 

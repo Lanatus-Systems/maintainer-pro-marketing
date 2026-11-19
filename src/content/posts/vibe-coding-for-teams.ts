@@ -21,7 +21,7 @@ export const post: BlogPost = {
 
 This post is about vibe coding for teams: keeping the fast "describe it and see it" loop, and adding the few rules a shared codebase needs. We make Butterneck, so we explain how it does this near the end. The rules work with any setup.
 
-> **Vibe coding for teams, in short:** Let anyone on the product team describe a change in plain words and see it on a running copy of the app, but keep one person who reads the change and decides whether it ships. In Butterneck the request is made on a live preview, the coding agent a developer already uses (Claude Code, Cursor or Antigravity) edits the project on their computer, and a developer still decides what ships.
+> **Vibe coding for teams, in short:** Let anyone on the product team describe a change in plain words and see it on a running copy of the app, but keep one person who reads the change and decides whether it ships. In Butterneck the request is made on a live preview, the coding agent a developer already uses (Claude Code, Cursor or Antigravity) edits the project on a developer's connected computer, and a developer still decides what ships.
 
 ## What changes when vibe coding moves from one person to a team
 
@@ -87,7 +87,7 @@ It can be, if the change is checked by the person who asked and reviewed by a de
 
 ### Which vibe coding tools work for teams?
 
-Look for tools that work on your existing app, let you choose who can send requests, show the change on a running copy, and leave the release decision to a developer. Butterneck is one option: requests are made on a live preview, and the developer's own Claude Code, Cursor or Antigravity makes the edit on their computer.
+Look for tools that work on your existing app, let you choose who can send requests, show the change on a running copy, and leave the release decision to a developer. Butterneck is one option: requests are made on a live preview, and the developer's own Claude Code, Cursor or Antigravity makes the edit on a developer's connected computer.
 
 ### Does Butterneck open pull requests?
 

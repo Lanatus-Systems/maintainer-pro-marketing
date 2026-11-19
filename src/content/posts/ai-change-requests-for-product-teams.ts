@@ -82,7 +82,7 @@ Most AI automation for product teams moves information: routing feedback, writin
 
 ### The agent runs on a developer's machine
 
-The coding agent is the CLI the developer already uses: Cursor, Claude Code, or Antigravity. It runs on their computer, in a folder they choose for that copy. Butterneck does not run its own model.
+The coding agent is the CLI the developer already uses: Cursor, Claude Code, or Antigravity. It runs on a developer's connected computer, in a folder they choose for that copy. Butterneck does not run its own model.
 
 ### The preview is the app itself
 

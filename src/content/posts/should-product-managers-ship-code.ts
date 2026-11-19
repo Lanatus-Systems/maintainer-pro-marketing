@@ -93,7 +93,7 @@ Agree the list with your engineering lead before anyone starts. It is much easie
 
 Butterneck is one way to set up the middle ground. A developer connects a project folder on their own computer. The app gets a share link to a private live copy. A PM or other stakeholder opens the link and types the change in a chat beside the app. Or they label a Jira ticket \`butterneck\` and assign it, and a preview link is posted back on the ticket.
 
-The developer's own coding agent (Cursor, Claude Code or Antigravity) edits the project locally on their machine. The developer reviews and publishes the usual way. Butterneck never merges, never opens a pull request and never deploys.
+The developer's own coding agent (Cursor, Claude Code or Antigravity) edits the project on a developer's connected computer. The developer reviews and publishes the usual way. Butterneck never merges, never opens a pull request and never deploys.
 
 A few honest details. \`.env\` files are on an ignore list the agent is told to stay out of. That is a guardrail, an instruction to the agent, not a hard block, so keep production secrets off that computer. Chat messages and preview traffic go through Butterneck's server, and the coding CLI sends code context to its provider as it does in normal use. More in [how Butterneck runs an AI coding agent in a sandbox on your machine](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 

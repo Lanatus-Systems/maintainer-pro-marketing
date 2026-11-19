@@ -105,7 +105,7 @@ The coding assistant on the developer's computer reads the request and edits the
 
 If your requests start in Jira instead, add the label \`butterneck\` to a ticket and assign it to a teammate whose Jira account is mapped to a computer that has the project. Butterneck opens its own copy named after the ticket, and the title, description, latest comments, and attached files become the request. When the AI is done, a short note and a link to the preview go back on the ticket. Setup, including how each developer's Jira account is mapped to their computer, is on the [Jira integration page](/integrations/jira).
 
-## What is edited on your computer, and what leaves it
+## What is edited on a developer's connected computer, and what leaves it
 
 Sharing a local app is only comfortable if you know what the outside world can touch. With Butterneck:
 
@@ -174,11 +174,11 @@ That works, as long as the app runs on the connected computer. When the develope
 
 ### How is this different from a localhost tunnel like ngrok?
 
-A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on your computer makes the change, and hot reload shows it on the same link. Butterneck does not commit, push, open a pull request, merge or deploy.
+A tunnel gives your local port a public address, and some add a login or comments on top. Butterneck also starts the app through the bridge, puts a chat on the preview, and lets you choose who can ask for changes. The coding assistant already signed in on a developer's connected computer makes the change, and hot reload shows it on the same link. Butterneck does not commit, push, open a pull request, merge or deploy.
 
 ### Can a product manager comment on my local dev server and have the AI make the change?
 
-Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; most are designed mainly for a developer reviewing their own agent's work. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on your computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Butterneck does not commit, push, open a pull request, merge or deploy; nothing ships until a developer publishes the change.
+Yes. Some open-source review tools proxy your dev server and add a comment layer that your coding agent reads; most are designed mainly for a developer reviewing their own agent's work. With Butterneck, the product manager opens the share link from wherever they are, with no account needed to look, and types the change in the chat on the page they mean. You choose who can ask. The coding assistant already signed in on a developer's connected computer edits the project, and hot reload shows the result on the same link, so they can keep asking until it is right. Butterneck does not commit, push, open a pull request, merge or deploy; nothing ships until a developer publishes the change.
 
 ## Try it
 

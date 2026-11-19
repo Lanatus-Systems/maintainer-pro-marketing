@@ -21,7 +21,7 @@ export const post: BlogPost = {
 
 This post explains agentic coding in plain terms, what it does well and badly, and how non-developers can use it without a terminal. We make Butterneck, so we say how it fits near the end.
 
-> **Agentic coding, in short:** An AI coding agent takes a goal in plain words, plans the steps, edits files across the project and checks the result, instead of completing one line at a time. In Butterneck, a PM or designer can give that goal on a live preview of the app, the coding agent a developer already uses makes the edit on their computer, and a developer still decides what ships.
+> **Agentic coding, in short:** An AI coding agent takes a goal in plain words, plans the steps, edits files across the project and checks the result, instead of completing one line at a time. In Butterneck, a PM or designer can give that goal on a live preview of the app, the coding agent a developer already uses makes the edit on a developer's connected computer, and a developer still decides what ships.
 
 ## Agentic coding vs AI autocomplete
 
