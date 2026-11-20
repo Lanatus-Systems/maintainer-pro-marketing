@@ -173,7 +173,7 @@ Partly. Netlify's Agent Runners build a Deploy Preview when an agent run changes
 
 No. The requester checks the result on the screen. A developer still reviews the code and decides whether and how it ships.
 
-Even a team that has cut back on human code review can keep a second look for visible changes. In October 2026, 53% of merged pull requests at Linear were reviewed by an agent and the author alone, but Linear lists "changes that visibly affect the user experience, where the review calls for product judgment as much as code correctness" among the changes more likely to get a second human review ([Code review at Linear](https://linear.app/data/code-review)). On a requested UI change, the person who asked brings that product judgment on the preview, and a developer still reviews the code.
+Even a team that has cut back on human code review can keep a second look for visible changes. In October 2026, 53% of merged pull requests at Linear were reviewed by an agent and the author alone, but Linear lists "changes that visibly affect the user experience, where the review calls for product judgment as much as code correctness" among the changes more likely to warrant a second human review ([Code review at Linear](https://linear.app/data/code-review)). On a requested UI change, the person who asked brings that product judgment on the preview, and a developer still reviews the code.
 
 ### How is this different from AI code review before the pull request?
 
