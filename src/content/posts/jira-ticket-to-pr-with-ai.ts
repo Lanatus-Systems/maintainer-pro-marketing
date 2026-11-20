@@ -155,7 +155,7 @@ Approving a preview and merging code are two different decisions: does the chang
 
 ### Should someone approve the AI's plan before it changes any code?
 
-Some ticket-to-PR tools pause until a person approves the agent's written plan, and then open a pull request themselves. That check happens before anyone has seen the result. In Butterneck, the check comes after the change, on the app itself: the person who asked looks at the live preview, keeps asking on the same preview until it's right, and can stop a run that's heading the wrong way. A developer then reads the diff and decides whether to commit it and open a pull request. Butterneck never opens a pull request, merges or deploys.
+Some ticket-to-PR tools pause until a person approves the agent's written plan, and then open a pull request themselves. That check happens before anyone has seen the result. In Butterneck, the check comes after the change, on the app itself: the person who asked looks at the live preview, keeps asking on the same preview until it's right, and a run that's heading the wrong way can be stopped. A developer then reads the diff and decides whether to commit it and open a pull request. Butterneck never opens a pull request, merges or deploys.
 
 ### How do I trigger it from Jira?
 
