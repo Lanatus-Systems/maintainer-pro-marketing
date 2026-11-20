@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
-  updated: "2026-11-18",
+  updated: "2026-11-20",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
@@ -152,6 +152,10 @@ Several do. Atlassian's own Jira Coding Agent can generate code from a work item
 ### Should approving the preview also merge the pull request?
 
 Approving a preview and merging code are two different decisions: does the change look right, and is the code fit to merge? In Butterneck they stay separate. The person who asked approves what they see on the live preview. A developer then reads the diff and decides whether to commit it and open a pull request, and your usual review and branch rules take it from there. Butterneck never opens a pull request, merges or deploys.
+
+### Should someone approve the AI's plan before it changes any code?
+
+Some ticket-to-PR tools pause until a person approves the agent's written plan, and then open a pull request themselves. That check happens before anyone has seen the result. In Butterneck, the check comes after the change, on the app itself: the person who asked looks at the live preview, keeps asking on the same preview until it's right, and can stop a run that's heading the wrong way. A developer then reads the diff and decides whether to commit it and open a pull request. Butterneck never opens a pull request, merges or deploys.
 
 ### How do I trigger it from Jira?
 
