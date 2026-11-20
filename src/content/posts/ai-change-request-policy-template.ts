@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "A copyable AI change policy for PMs, designers and support leads: what they can ask an AI coding agent for, what needs an engineer, and who merges.",
   date: "2026-10-27",
-  updated: "2026-11-19",
+  updated: "2026-11-20",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -85,6 +85,8 @@ If you use GitHub, branch protection can enforce part of this. Its [protected br
 ## Copy changes can skip code review. They shouldn't skip the person who asked.
 
 Teams that ship a lot of agent-written code are starting to drop human code review for the lowest-risk changes. The Claude Code team at Anthropic [describes its setup](https://claude.dev/blog/solving-code-review-at-anthropic/) as a risk table. Its Low tier covers "Docs, copy, internal-only features, additive changes behind a flag", and the human approvals it needs are "None required once automated review and security checks are green." Medium needs one person, High needs two. "The change sets the tier, not the author," and only authors on a repo's trusted list get the lighter paths.
+
+Assembled reports a similar policy. Its CTO, John Wang, [wrote](https://www.assembled.com/blog/code-review-bottlenecks-how-we-hill-climbed-our-way-to-higher-pr-throughput) (7 August 2026) that once an AI reviewer could auto-approve PRs that met the company's policy, "Non-engineers accounted for 13% of all PRs." Assembled kept "a stricter approval policy set up for designers, PM, and customer support, but we still allowed auto approval for small changes (updating copy, fixing bugs, etc.)." These are one company's figures from its first few weeks, and Assembled says the window is too short to be conclusive.
 
 For code, that makes sense. A one-line copy change is rarely where bugs hide. But a copy change can be wrong in ways no automated check sees: the wrong word, the wrong tone, the right text on the wrong screen. Only the person who asked knows what they meant. The same post keeps that person in the loop: "On an agent-written PR, the person directing the agent counts as one of the required reviewers, the same as if they'd typed the code themselves."
 
