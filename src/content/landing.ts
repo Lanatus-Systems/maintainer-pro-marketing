@@ -282,7 +282,7 @@ export const FAQS = [
   {
     q: "Can I try it without installing anything?",
     lines: [
-      "Yes. Open the sample shop at https://app.butterneck.com/trial; you don't need an account to try it. The sample shop is set up for you, so you can ask for a change and see the live preview. On the same page you can open the developer view, still without an account, to see how a developer reviews a change. That is separate from the one-month Pro trial on Pricing (Pro is USD 19 per person per month). To use Butterneck on your own product, a developer installs the connector on a computer that already has the project.",
+      "Yes. Open the sample shop at https://app.butterneck.com/trial, pick an example change and see it on the screen; you don't need an account. To ask for your own changes, create an account and connect your app. A developer view shows what the developer side looks like. That is separate from the one-month Pro trial on Pricing (Pro is USD 19 per person per month). To use Butterneck on your own product, a developer installs the connector on a computer that already has the project.",
     ],
   },
 ] as const;

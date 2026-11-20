@@ -140,7 +140,7 @@ Compare the two flows for "make the button say Book a call":
 
 The developer's time goes from "find, change, send, wait" to "look and decide". That is the trade we care about.
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+**See it before you set anything up:** [try an example change on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## Who this is for, and who it is not for
 

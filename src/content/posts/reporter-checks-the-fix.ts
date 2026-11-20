@@ -65,7 +65,7 @@ Butterneck is built around this order: the reporter checks the fix on a live pre
 - **Each connected computer starts with a chosen list of people who can send requests.** Opening the preview and sending requests are separate. "Anyone with the link" is a setting you turn on.
 - **A developer decides what ships.** Butterneck does not commit, push or open a pull request, and never merges or deploys. The developer reads the conversation, reviews the change in their own tools, and publishes it the way the team already does, or drops it.
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+**See it before you set anything up:** [try an example change on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## What stays with engineering
 

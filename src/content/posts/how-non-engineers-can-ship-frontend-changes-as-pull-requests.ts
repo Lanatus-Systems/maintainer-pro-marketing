@@ -36,7 +36,7 @@ Some design leaders go further and train designers to work in production code. D
 
 This is how [Butterneck](/) works. Butterneck itself does not commit, push or open the pull request; the developer does.
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+**See it before you set anything up:** [try an example change on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## What the developer checks before opening the PR
 
