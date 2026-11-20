@@ -5,7 +5,7 @@ export const post: BlogPost = {
   title: "AI change requests in Jira: how to start one from a ticket",
   description: "How to turn a Jira ticket into an AI-made change the requester can check on a live preview, with a developer deciding what ships.",
   date: "2026-11-03",
-  updated: "2026-11-18",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["Jira", "AI change requests", "answer"],
   cover: {
@@ -28,7 +28,7 @@ export const post: BlogPost = {
 
 Butterneck does not commit, push, open a pull request or deploy. The ticket stays the record; the preview is where the change gets checked.
 
-**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## Tips
 

@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for teams doing vibe coding: PMs and designers ask on a live preview, an AI coding agent edits, and a developer decides what ships.",
   date: "2026-11-05",
-  updated: "2026-11-18",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["vibe coding for teams", "vibe coding", "vibe coding tools", "AI change requests", "product teams", "human in the loop"],
   cover: {
@@ -66,7 +66,7 @@ Butterneck calls these requests AI change requests. A developer connects a compu
 
 Butterneck does not commit, push or open a pull request, and it never merges or deploys. A developer decides what ships.
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you're not signed in, you're asked to create a free account first. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. No account is needed. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 

@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "Can product managers build or change apps without engineering?",
   description: "New app: an AI app builder gets you a prototype. The app your team runs: yes for small changes, on a live preview, and a developer decides what ships.",
   date: "2026-11-03",
-  updated: "2026-11-18",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
@@ -36,7 +36,7 @@ PMs who have done this at work describe the same split. At Remote, a senior prod
 
 That is how [Butterneck](/) works. Butterneck does not commit, push, open a pull request or deploy.
 
-**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## What to watch for
 

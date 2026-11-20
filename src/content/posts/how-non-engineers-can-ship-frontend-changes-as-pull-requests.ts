@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "How to let non-engineers ship frontend changes as pull requests",
   description: "Let designers and PMs change copy, layout and styling on a live preview. A developer reviews the diff and opens the PR, and branch rules keep main safe.",
   date: "2026-11-03",
-  updated: "2026-11-20",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -36,7 +36,7 @@ Some design leaders go further and train designers to work in production code. D
 
 This is how [Butterneck](/) works. Butterneck itself does not commit, push or open the pull request; the developer does.
 
-**See it before you set anything up:** [create a free account and try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial), no account needed, before connecting a computer. On your own project, the edit runs on a developer's connected computer. Your team still decides what goes live.
 
 ## What the developer checks before opening the PR
 

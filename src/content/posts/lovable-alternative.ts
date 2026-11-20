@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Need a Lovable alternative for an existing codebase? How Lovable and Butterneck differ: PMs ask on a live preview, a developer decides what ships.",
   date: "2026-11-05",
-  updated: "2026-11-19",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams", "Lovable for existing codebase"],
   cover: {
@@ -66,7 +66,7 @@ Butterneck does not host your app, and it does not commit, push, open pull reque
 | Git | Two-way sync with a new GitHub repo; its GitHub app can open PRs | Edits files only; a developer commits and opens the PR |
 | Who decides what ships | Depends on your setup | A developer |
 
-**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. If you're not signed in, you're asked to create a free account first. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
+**See it before you set anything up:** [try a request on a sample shop](https://app.butterneck.com/trial) before connecting a computer. No account is needed. On your own project, the edit runs on a developer's connected computer, and a developer still decides what ships.
 
 ## What to know before you try this
 

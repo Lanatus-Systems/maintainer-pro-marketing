@@ -79,7 +79,7 @@ export default function HomePage() {
           </div>
           <p className="landing-quiet landing-trial-note">
             <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_hero">
-              Create a free account and try a request on a sample shop
+              Try a request on a sample shop, no account needed
             </a>{" "}
             before you connect a computer. Your own project still needs a connected computer; Starter is free.
           </p>
@@ -338,7 +338,7 @@ export default function HomePage() {
         <div className="landing-cta-notes">
           <p className="landing-quiet landing-trial-note">
             <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_footer_cta">
-              Create a free account and try a request on a sample shop
+              Try a request on a sample shop, no account needed
             </a>{" "}
             before you connect a computer. Your own project still needs a connected computer; Starter is free.
           </p>
