@@ -112,6 +112,6 @@ Write what you see, what you expected and where, and attach a screenshot. The fi
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real on-screen bug your team has been waiting on. We will run it on a live copy. Or see [pricing](/pricing) and try a request on the [sample shop](https://app.butterneck.com/trial) before connecting a computer.
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real on-screen bug your team has been waiting on. We will run it on a live copy. Or see [pricing](/pricing) and try an example change on the [sample shop](https://app.butterneck.com/trial) before connecting a computer.
 `,
 };

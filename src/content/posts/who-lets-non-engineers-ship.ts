@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "How Atlassian, Nash, Fieldguide and Carcará let non-engineers ship with engineers involved, from their own posts, and how a live preview keeps that split.",
   date: "2026-11-18",
-  updated: "2026-11-19",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["product teams", "AI change requests", "live preview", "code review", "human in the loop", "case studies"],
   cover: {
@@ -117,6 +117,6 @@ No. This is a reading of four companies' own posts about how they let non-engine
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring one small change from your backlog. We will run it on a live preview. Or see [pricing](/pricing) and try a request on the [sample shop](https://app.butterneck.com/trial) before connecting a computer.
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring one small change from your backlog. We will run it on a live preview. Or see [pricing](/pricing) and try an example change on the [sample shop](https://app.butterneck.com/trial) before connecting a computer.
 `,
 };

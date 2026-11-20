@@ -99,6 +99,6 @@ Leave it with a developer. If you cannot open the problem on the preview, you ca
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring one small visual fix from your backlog. We will run it on a live preview. Or see [pricing](/pricing) and try a request on the [sample shop](https://app.butterneck.com/trial) before connecting a computer.
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring one small visual fix from your backlog. We will run it on a live preview. Or see [pricing](/pricing) and try an example change on the [sample shop](https://app.butterneck.com/trial) before connecting a computer.
 `,
 };

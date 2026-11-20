@@ -135,7 +135,7 @@ export const legalPages = {
         ],
         links: [
           { label: "Book a 30-minute demo", href: "https://calendar.app.google/p2McAaz4ZwXBiG5m9" },
-          { label: "try a request on the sample shop", href: "https://app.butterneck.com/trial" },
+          { label: "try an example change on the sample shop", href: "https://app.butterneck.com/trial" },
         ],
       },
     ],

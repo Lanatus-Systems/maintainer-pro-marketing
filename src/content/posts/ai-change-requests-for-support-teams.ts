@@ -77,6 +77,6 @@ The preview is the app running on a developer's connected computer. Keep product
 
 ## Try it
 
-[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a repeat ticket about a label or error message. We will run it on a live copy. Or see [pricing](/pricing) and try a request on the [sample shop](https://app.butterneck.com/trial) before connecting a computer. The wider process is in [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
+[Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a repeat ticket about a label or error message. We will run it on a live copy. Or see [pricing](/pricing) and try an example change on the [sample shop](https://app.butterneck.com/trial) before connecting a computer. The wider process is in [AI change requests for product teams](/blog/ai-change-requests-for-product-teams).
 `,
 };
