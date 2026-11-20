@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-18",
+  updated: "2026-11-20",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts", "no local dev setup"],
   cover: {
@@ -126,6 +126,8 @@ Usually not because the code is hard. The time goes into the relay around it: wr
 ### How do you clear a backlog of UI papercuts (small copy and UI changes)?
 
 UI papercuts are the small copy, layout and visual fixes everyone agrees on and nobody schedules. Put those tickets in one list, close the stale ones, and write each remaining one as "where, what it says now, what it should say". Then take them out of the sprint queue: the person who raised each one asks for it on a live copy of the app and checks the result there, and a developer reviews the finished changes and decides what ships. Keep pricing logic, permissions and data-model changes in the normal engineering flow.
+
+Some teams run papercut programs as a standing habit. At Linear, engineers bring small quality fixes to a Wednesday team meeting, a ritual called Quality Wednesdays; "Many of these quality fixes take 30 minutes or less", and the team has logged "more than 1,000 small acts of polish" ([Quality Wednesdays](https://linear.app/now/quality-wednesdays), Tuomas Artman, 13 August 2025). WorkOS runs a similar program it calls UI Nits: "It took us five months to close our first hundred nits. Now we close almost a hundred a month." It says agents moved its people "to the two places where judgment actually matters: deciding what's worth fixing and caring whether the fix is right" ([Building an autonomous UI quality program](https://workos.com/blog/autonomous-ui-quality-program), WorkOS, 27 July 2026). In Butterneck, both of those calls stay with people: the person who raised the papercut checks the fix on a live preview, and a developer decides whether it ships.
 
 ### Can a PM change a live app without engineering?
 
