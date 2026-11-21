@@ -38,6 +38,8 @@ A coding agent's work has four places where a person can step in:
 - **Preview.** Someone checks the result on a running copy of the app.
 - **Ship.** Someone decides whether the change goes live.
 
+Tools put these gates in different places. Upsun Dispatch can be set to pause a run started from a Jira, Linear or GitHub issue until someone approves the agent's plan; its blog says that setting is off by default (17 November 2026). Since 19 November 2026, Lovable keeps building while you answer its questions, but waits for your answer before a step that is hard to undo, such as deleting data.
+
 Butterneck puts the human at two of them. The person who asked (the requester) checks the change at the **preview**, on a live copy of the app. A developer decides at **ship**, and publishes it the usual way or leaves it. Butterneck itself never merges, opens a pull request, or deploys.
 
 Most human-in-the-loop setups for coding agents put every gate in the developer's workflow: approving the plan, the commands, the diff, the merge. Those gates matter, but the person who asked for the change usually can't use them. Butterneck adds a gate they can use: they look at the result on a live copy of the app and say whether it's what they meant, before a developer spends time on the code.
