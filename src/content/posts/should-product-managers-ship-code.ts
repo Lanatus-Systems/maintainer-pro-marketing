@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-18",
+  updated: "2026-11-21",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -122,6 +122,8 @@ Some teams do: a PM uses an AI coding tool on the real repository and opens a dr
 ### Should a product manager review the AI-generated code?
 
 Not line by line. The PM is the right person to check the result: does the button say the right thing, does the page look right, is it what they meant. So they check it on the running app, where they asked for it. A developer then reads the diff in their own tools and decides whether it ships. With Butterneck the PM checks the change on a live copy of the app and keeps asking until it is right; the developer reviews the code and publishes it the usual way, or discards it. Butterneck never opens a pull request, merges or deploys.
+
+Josh Korr, a product director at 8th Light who isn't a developer, found the same split after shipping 39 pull requests to a production codebase with Claude Code in 2026 ([How I shipped 39 PRs to prod as a non-developer](https://8thlight.com/insights/how-i-shipped-39-prs-to-prod-as-a-non-dev-2), 20 November 2026): "I could validate whether something worked from a product and user-experience perspective, but I couldn't independently assess whether the implementation was sound." Some problems, like a hover overlay that "looked perfectly fine on screen but was hidden incorrectly in the underlying code", were caught only by developers reading the code.
 
 ### Does AI make code review the bottleneck?
 
