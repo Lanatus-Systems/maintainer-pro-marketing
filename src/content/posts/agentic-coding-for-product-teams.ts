@@ -81,6 +81,10 @@ Yes. They can run an agent themselves if they have repo access and a seat, or as
 
 Yes, if the agent stays with a developer. With Butterneck, a PM or designer opens a share link to the running app, asks for the change in plain words, and sees it on the live preview. The edit is made by the coding agent signed in on a developer's connected computer (Claude Code, Cursor's agent CLI or Antigravity), and a developer reviews the change and decides what ships. Butterneck does not commit, push, open a pull request, merge or deploy. For the designer's side, see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests).
 
+### Is it safe to let non-technical teammates use an AI coding agent on an existing codebase?
+
+It can be, if asking for a change and shipping it stay separate. Agree in writing which changes they can ask for directly (copy, labels, layout within your design system) and which go to an engineer (sign-in, billing, data, infrastructure). Our [policy template](/blog/ai-change-request-policy-template) has a starting list. In Butterneck, the person asking sees the change on a live preview, and the developer chooses who can send requests: a named list or anyone with the link. Each turn is snapshotted first, so a stopped turn can usually be rolled back. Butterneck does not commit, push, open a pull request, merge or deploy; a developer decides what ships. The folder limits and the \`.env\` ignore list are guardrails the agent is told to follow, not an operating-system sandbox, so keep production secrets off the connected computer.
+
 ### Does agentic coding replace code review?
 
 No. The agent can check its own work, but someone still needs to confirm the change is what was asked for and a developer needs to decide whether it ships.
