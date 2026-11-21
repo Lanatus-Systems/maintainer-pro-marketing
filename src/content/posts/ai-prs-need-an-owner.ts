@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-20",
+  updated: "2026-11-22",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -70,6 +70,8 @@ On pickup time, the report also says "there is often no clear owner for the PR w
 LinearB's own follow-up post puts the same benchmark this way: AI-generated pull requests are accepted at 32.7%, "compared with 84.4% for human-owned ones" ([LinearB, 13 Oct 2026](https://linearb.io/blog/move-prs-to-production)).
 
 That matches how review works in practice. A PR from a teammate comes with a person who answers questions, nudges the reviewer, fixes the nit and gets it over the line. A PR opened by a bot comes with nobody. Reviewers can tell, and it goes to the bottom of the pile.
+
+Pull requests from non-engineers run into the same problem. Anton Zaides, an engineering manager who writes the Manager.dev newsletter, described his first system for reviewing PRs from a designer and a PM as "whoever wants to": "A designer would drop the PR in a Slack channel, hoping someone would pick it up. Mostly, they didn't, and the PRs stayed open and forgotten." His current bet is "pairing each non-dev with a dev who'll be responsible for it" ([Manager.dev, 25 August 2026](https://www.manager.dev/newsletter/when-non-devs-open-prs)).
 
 ## Correlation, not causation
 
