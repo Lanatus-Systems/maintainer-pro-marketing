@@ -57,7 +57,7 @@ If your team wants this written down, start from the [AI change request policy t
 
 ## How it works in Butterneck
 
-Butterneck is built around this order: the reporter checks the fix on a live preview, then a developer decides. A support lead or QA teammate can do the check without a repository or a coding-tool seat.
+Butterneck is built around this order: the reporter checks the fix on a live preview, then a developer decides. A support lead or QA teammate can do the check without a repository or a coding-tool seat. For the support side in more detail, including the confusing labels behind repeat tickets, see [AI change requests for support teams](/blog/ai-change-requests-for-support-teams).
 
 - **The preview is a running copy of the app on a developer's connected computer.** A small connector, the bridge, runs on a computer that already has the project. The running app gets a share link. Nothing is deployed to show the preview.
 - **The report is written on that preview.** The person opens the screen with the bug, describes what they saw, what they expected and where, and attaches a screenshot. Each request also carries the page they have open, so the coding agent starts from that screen.
