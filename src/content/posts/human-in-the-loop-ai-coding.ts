@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-21",
+  updated: "2026-11-23",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -118,6 +118,8 @@ Putting a person in the loop doesn't guarantee that person decides. In a study p
 So in Butterneck the check isn't the agent's account of what it did. The person who asked looks at the change themselves on a live preview of the running app, and the developer reads the diff in their own editor before anything is committed or becomes a pull request. Both are checking the actual result, not the AI's description of it.
 
 Code review shows the same drift. A June 2026 preprint followed 400 repeat reviewers across 11,429 reviews of AI-agent pull requests in open-source projects over seven months. As they reviewed more, their approval rate rose from 30.1% to 36.8% and their inline comments fell 22% ([arXiv 2606.22721](https://arxiv.org/abs/2606.22721)). The authors read this as habituation, though they say the agents' code may also have improved over that time. A requester checking the running app is one more check that doesn't depend on a tired reviewer.
+
+**Update, 23 November 2026: push the check upstream.** A preprint from researchers who studied code review at one large multinational software company (24 interviews and a survey of 2,590 people; [Newman, Bird, Butler and Murphy-Hill, arXiv 2611.18939](https://arxiv.org/abs/2611.18939), 13 November 2026) found that "AI-assisted authoring results in increased burden for reviewers due to challenges such as a lack of author stewardship and PR volume and size", and that using AI for review "alone is not sufficient". The reviewer's role is shifting "toward high-level concerns (e.g., design and intent)", and one of the strategies developers found most useful was "pushing review burden upstream". Having the person who asked confirm the change on a live preview is one way to do that: by the time a developer reads the diff, whether it matches the request has already been answered.
 
 ## "Isn't this just slower than auto-merge?"
 
