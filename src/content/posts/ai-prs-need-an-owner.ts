@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "The AI PR review bottleneck in numbers: LinearB (8.1M PRs), CircleCI, DX and a 196,212-PR CMU/Stanford study. Why AI PRs wait, and what an owner changes.",
   date: "2026-10-27",
-  updated: "2026-11-22",
+  updated: "2026-11-23",
   author: "The Butterneck team",
   tags: [
     "AI code review bottleneck",
@@ -112,6 +112,8 @@ All of them come with the same caveat as LinearB. The MSR study's authors note t
 **Update, 20 November 2026: Rootly.** Rootly's CTO, Quentin Rousseau, [looked at what a human approval actually records](https://rootly.com/blog/when-should-ai-be-allowed-to-approve-a-pull-request) (17 November 2026). Rootly's main repository merged 2,053 pull requests in October 2026, up from 356 a year earlier. Of the 3,661 PRs merged between 1 August and 5 November, 90.5% were approved without a human review comment, and for 43.3% the last approval was attached to an earlier commit than the PR's final head. These are one company's own figures, not a study. They ask the same question as the Jellyfish numbers: a sign-off only helps if someone checked the change. In Butterneck, the person who asked checks it on a live preview first, and a developer decides before there's a PR.
 
 **Update, 22 November 2026: NBER.** A working paper by Mert Demirer, Leon Musolff and Liyuan Yang, "Writing Code vs. Shipping Code" ([NBER Working Paper 35275](https://www.nber.org/papers/w35275), May 2026, revised September 2026), uses data on more than 500,000 GitHub developers and their AI usage telemetry. Autocomplete, interactive coding agents and autonomous coding agents raised commits by a cumulative 30%, 180% and 240%. But the 240% "falls to 80% for the number of projects, and to 30% for actual releases." The authors read it as "human bottlenecks in the production chain": in [their VoxEU column](https://cepr.org/voxeu/columns/writing-code-versus-shipping-code-productivity-effects-across-generations-ai-coding), "AI-written code still needs to be reviewed, integrated, tested, and released by humans." It's a working paper, not peer reviewed, and it covers public repositories only. Writing got faster. Checking and shipping rose much less, which is the same shape as the data above. For a small product change, one of those checks is "is this what I asked for?", and in Butterneck the person who asked checks it on a live preview before a developer decides. NBER didn't measure Butterneck either.
+
+**Update, 23 November 2026: TestMu AI.** In TestMu AI's [State of AI in Quality Engineering 2026](https://www.testmuai.com/research/state-of-ai-in-quality-engineering/) (published 2 November 2026, from a survey fielded late July to early October 2026), 81% of teams said they have merged AI-written code or tests they didn't fully understand, and 19% do it regularly. Asked how AI-written product code is checked before merge, 55.1% said a person reviews and manually tests it, 14.1% said the coding agent verifies its own work in the app, and 5.4% said there is no check beyond the agent saying it works. The respondents come from TestMu AI's community, mostly testers and QA leads, and the report says the sample leans towards India-based organisations and SaaS companies, so read it as those teams, not the whole industry.
 
 ## How teams reduce the AI PR review bottleneck
 
