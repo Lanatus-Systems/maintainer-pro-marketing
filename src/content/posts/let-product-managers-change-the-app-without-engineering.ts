@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "let-product-managers-change-the-app-without-engineering",
   title: "Can product managers change the app without engineering?",
   seoTitle: "Can product managers build or change apps without engineering?",
-  description: "New app: an AI app builder gets you a prototype. The app your team runs: yes for small changes, on a live preview, and a developer decides what ships.",
+  description: "Yes, for small changes: a PM asks an AI coding agent on a live copy of the app and checks the result, and a developer decides what ships. Setup and cost.",
   date: "2026-11-03",
   updated: "2026-11-21",
   author: "The Butterneck team",
