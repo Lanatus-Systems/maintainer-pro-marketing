@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "How Atlassian, Nash, Fieldguide and Carcará let non-engineers ship with engineers involved, from their own posts, and how a live preview keeps that split.",
   date: "2026-11-18",
-  updated: "2026-11-21",
+  updated: "2026-11-22",
   author: "The Butterneck team",
   tags: ["product teams", "AI change requests", "live preview", "code review", "human in the loop", "case studies"],
   cover: {
@@ -74,6 +74,8 @@ Read together, the four posts agree on a short list:
 - The team's own tools or processes are what open the pull request, where a pull request is part of the flow.
 
 They do not agree on timing. Fieldguide's preview sits on a pull request that an internal tool already opened. Nash's review is a review of a pull request the in-house agent already opened. Atlassian's PMs and designers took small changes all the way to production, with engineers reviewing the code. The common thread is still the split, not the tooling.
+
+**A shorter example: Slite.** In a LinkedIn post in August 2026, Nils Jacobsen wrote: "At Slite, anyone can open a PR now: marketing, design, ops, PMs" ([LinkedIn](https://www.linkedin.com/posts/nils-jacobsen_the-hard-part-of-letting-non-engineers-ship-activity-7490663155430375427-OC5n)). What he lists is setup, not a new tool: branch protection so that "Everything goes through a PR", an "ask before" list "for anything touching env vars, migrations, auth, or API routes", preview deploys on every feature branch, and visual regression tests. On the preview: "The person opening the PR sees their change in a real browser before asking for review. Half the "does this look right?" questions answer themselves." Again, it's Slite's own process that opens the pull request, and the changes "still get reviewed by someone whose job title includes it." It's a short social post, not a write-up like the four above.
 
 ## How it works in Butterneck
 
