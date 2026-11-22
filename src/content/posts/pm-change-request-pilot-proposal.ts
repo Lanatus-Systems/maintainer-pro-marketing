@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A copyable one-page proposal for a 4-week pilot where PMs ask an AI coding agent for small changes on a live preview and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-11-21",
+  updated: "2026-11-22",
   author: "The Butterneck team",
   tags: ["PM pilot proposal", "AI change requests", "AI for product managers", "engineering leads", "product teams"],
   cover: {
@@ -241,6 +241,10 @@ One named developer reviews every change and decides what ships. They can drop a
 ### What should we measure?
 
 Time from ask to preview, developer minutes per change, the share of changes shipped versus dropped, and reverts. Compare them with a rough baseline from similar past changes. These are things to track, not targets.
+
+### How much developer review time will PM change requests add?
+
+Nobody publishes a reliable per-change figure, so measure it during the pilot instead of guessing. HighCircl's [guide to non-engineer pull requests](https://www.highcircl.com/en/blog/non-engineers-shipping-ai-code) (2 November 2026) makes the same point ("Nobody publishes it") and suggests timing the first 20: changes per week times the minutes each one takes, divided by 60, gives reviewer hours per week. The "Developer minutes per change" row in the table above is that number. Count the changes the developer dropped too, because deciding not to ship one still takes their time.
 
 ### What if the pilot doesn't work?
 
