@@ -4,7 +4,7 @@ export const post: BlogPost = {
   slug: "how-non-engineers-can-ship-frontend-changes-as-pull-requests",
   title: "How can non-engineers ship frontend changes as pull requests?",
   seoTitle: "How to let non-engineers ship frontend changes as pull requests",
-  description: "Let designers and PMs change copy, layout and styling on a live preview. A developer reviews the diff and opens the PR, and branch rules keep main safe.",
+  description: "Let PMs and designers check a change on a live preview, then a developer opens the PR. Plus the GitHub setup: protected main, CODEOWNERS, required review.",
   date: "2026-11-03",
   updated: "2026-11-21",
   author: "The Butterneck team",
