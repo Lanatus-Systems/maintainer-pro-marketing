@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
-  updated: "2026-11-21",
+  updated: "2026-11-23",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
