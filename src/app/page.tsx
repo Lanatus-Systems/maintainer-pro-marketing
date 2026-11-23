@@ -86,7 +86,7 @@ export default function HomePage() {
             </a>
           </div>
           <p className="landing-quiet landing-trial-note">
-            on a sample shop, no account needed, before you connect a computer. Your own project still
+            Try an example change on a sample shop, no account needed, before you connect a computer. Your own project still
             needs a connected computer; Starter is free.
           </p>
           <OnboardingCallNote location="home_hero" />
