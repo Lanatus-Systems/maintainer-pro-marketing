@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Use your team's Claude Code or Cursor with no terminal or repo: ask on a live preview, the developer's agent edits, and a developer decides what ships.",
   date: "2026-10-28",
-  updated: "2026-11-18",
+  updated: "2026-11-23",
   author: "The Butterneck team",
   tags: ["Claude Code for product managers", "Cursor for PMs", "AI for product managers", "AI change requests", "product teams", "AI coding agent for product managers", "Claude Code for designers", "IDE for product managers"],
   cover: {
@@ -125,7 +125,7 @@ Yes. Google's [Antigravity for product management](https://antigravity.google/us
 
 ### Is there an AI coding agent for product managers that works on our existing codebase?
 
-Yes. Butterneck is one option for a team that already has a web app. A developer connects a computer that already runs the product and has Claude Code, Cursor or Antigravity signed in. The product manager opens a live preview of the existing app, types the change in a chat, and checks the result on that preview. The agent edits the real project on the developer's computer. Butterneck does not commit, push or open a pull request: a developer decides first what ships, and Butterneck never merges or deploys. Tools such as Alloy, Clogless and Plusma instead connect your GitHub repository, run the change in a hosted preview and open a pull request. A third kind is a desktop app the PM installs, which runs the product and a coding agent on the PM's own laptop and usually needs tools such as git, Docker or Claude Code set up there first. With Butterneck the PM installs nothing; the app and the agent run on the developer's connected computer.
+Yes. Butterneck is one option for a team that already has a web app. A developer connects a computer that already runs the product and has Claude Code, Cursor or Antigravity signed in. The product manager opens a live preview of the existing app, types the change in a chat, and checks the result on that preview. The agent edits the real project on the developer's computer. Butterneck does not commit, push or open a pull request: a developer decides first what ships, and Butterneck never merges or deploys. Tools such as Alloy and Plusma instead connect your GitHub repository, run the change in a hosted preview and open a pull request. Clogless did the same, as its site described it until 21 November 2026; its site now describes a different product. A third kind is a desktop app the PM installs, which runs the product and a coding agent on the PM's own laptop and usually needs tools such as git, Docker or Claude Code set up there first. With Butterneck the PM installs nothing; the app and the agent run on the developer's connected computer.
 
 ### Where are files edited, and what leaves the computer?
 
