@@ -96,6 +96,8 @@ It "lets PMs, designers, operators make changes directly on their live product a
 
 ### Clogless
 
+The description below is as its site described it until 21 November 2026; its site now describes a different product.
+
 "A live sandbox on your real codebase. Ship changes as pull requests that engineering reviews." It runs in its own cloud sandbox and connects to six ticketing tools, Jira included. Good pick if you want a cloud workspace that turns tickets into PRs. More in our [Clogless alternative](/blog/clogless-alternative) post.
 
 ### Revyse
@@ -216,7 +218,7 @@ An engineer connects "a device and a repository" once, then product people file 
 
 ### Butterneck
 
-The person who asks opens a link (or labels a Jira ticket and assigns it) and chats beside a live running copy of the app while the developer's own agent makes the edit on a computer the team connects. They check the change in the preview and keep refining. Butterneck doesn't open pull requests, merge or deploy: a developer reads the conversation and the diff and decides whether it becomes a PR through the team's usual process. The agent edits the files on the connected computer, the code context it reads goes to that agent's AI provider, and the preview and the chat reach it through Butterneck's servers, so this isn't an "everything stays local" tool. Starting from a Jira ticket isn't unique to Butterneck either: Synlets, CoderHelm, Clogless and Epicraft (which is also built for PMs) start from tickets too, and CodeHerder also runs agents on a machine the team connects; Productmind's CLI can run its sessions on your own machine. Since 28 October 2026, GitHub's own [Copilot Automations](https://github.blog/changelog/2026-10-28-new-tools-triggers-and-cost-controls-for-copilot-automations) can also start when an issue is labeled or assigned. The difference is what comes back: a live preview on the developer's own running app, and no pull request until a developer decides. The person asking doesn't install anything or need the project on their own computer: the developer's connected computer runs the app and the agent, and the requester only needs the link. Not the right pick if you want a tool that creates the PR for you; several above do that well. To see the flow before connecting a computer, [try an example change on a sample shop](https://app.butterneck.com/trial), no account needed.
+The person who asks opens a link (or labels a Jira ticket and assigns it) and chats beside a live running copy of the app while the developer's own agent makes the edit on a computer the team connects. They check the change in the preview and keep refining. Butterneck doesn't open pull requests, merge or deploy: a developer reads the conversation and the diff and decides whether it becomes a PR through the team's usual process. The agent edits the files on the connected computer, the code context it reads goes to that agent's AI provider, and the preview and the chat reach it through Butterneck's servers, so this isn't an "everything stays local" tool. Starting from a Jira ticket isn't unique to Butterneck either: Synlets, CoderHelm and Epicraft (which is also built for PMs) start from tickets too, and Clogless did as well, as its site described it until 21 November 2026; its site now describes a different product, and CodeHerder also runs agents on a machine the team connects; Productmind's CLI can run its sessions on your own machine. Since 28 October 2026, GitHub's own [Copilot Automations](https://github.blog/changelog/2026-10-28-new-tools-triggers-and-cost-controls-for-copilot-automations) can also start when an issue is labeled or assigned. The difference is what comes back: a live preview on the developer's own running app, and no pull request until a developer decides. The person asking doesn't install anything or need the project on their own computer: the developer's connected computer runs the app and the agent, and the requester only needs the link. Not the right pick if you want a tool that creates the PR for you; several above do that well. To see the flow before connecting a computer, [try an example change on a sample shop](https://app.butterneck.com/trial), no account needed.
 
 ## How to choose
 
@@ -224,7 +226,7 @@ The person who asks opens a link (or labels a Jira ticket and assigns it) and ch
 - **You want a ticket turned into a pull request automatically:** Synlets, Specship, CoderHelm, CodeHerder (Jira's built-in options are worth a look too).
 - **You want a ticket in Jira turned into a PR, with the PM as the user:** Epicraft, Synlets, CoderHelm.
 - **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), Revise, ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change), Remix (variants of "a live copy of your real app"), Lightsprint, Sparkles, Alloy, Builder.io, Netlify Agent Runners, Kosuke, Productmind, Vixentio.
-- **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless and Frend.
+- **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless (until 21 November 2026; its site now describes a different product) and Frend.
 - **You want the requester to publish small changes themselves:** Refinar, Revyse.
 - **You want better review once a PR exists:** Else.
 - **You're a designer or developer who'll run the tool yourself, with your own coding agent:** Handle Studio, Hexby, Layrr, PulseDev, Modeinspect, medit.
@@ -239,7 +241,7 @@ For a product manager who wants to try Claude Code without setting up the repo, 
 
 ### Is there an AI coding agent for people who don't code?
 
-Yes, several. Most of the tools above let a PM, designer or operator describe a change in plain language and have a coding agent make it in the team's real codebase. They differ in what comes back: a prototype (Workshop), a pull request (ronda, Fixdog, Itera as of 28 Oct, Clogless, Frend, Synlets, Ovren, Flex, Productmind, Vixentio), a merged change (CodeHerder, when no approval gate is on; Revyse, when the project's release setting allows it), or a live preview the person who asked checks before a developer decides (Butterneck, PinAppAI).
+Yes, several. Most of the tools above let a PM, designer or operator describe a change in plain language and have a coding agent make it in the team's real codebase. They differ in what comes back: a prototype (Workshop), a pull request (ronda, Fixdog, Itera as of 28 Oct, Clogless (until 21 November 2026; its site now describes a different product), Frend, Synlets, Ovren, Flex, Productmind, Vixentio), a merged change (CodeHerder, when no approval gate is on; Revyse, when the project's release setting allows it), or a live preview the person who asked checks before a developer decides (Butterneck, PinAppAI).
 
 ### Can a non-developer change an existing app without breaking it?
 
@@ -259,7 +261,7 @@ The "What you get back" column shows what each tool hands over for review: a pro
 
 ### Which tools on this list are alternatives to each other?
 
-Tools on the same line of "How to choose" above do the same job, so they are the closest alternatives to each other. If you are looking at ronda, the other tools that turn a plain-English request into a pull request are Fixdog, Itera, Clogless and Frend. If you like that Revyse can let the person who asked publish small changes, Refinar does that too. For a prototype to explore an idea, as with Modeinspect, look at Workshop. If you'd rather the person who asked check the change before any pull request exists, PinAppAI and Butterneck work that way.
+Tools on the same line of "How to choose" above do the same job, so they are the closest alternatives to each other. If you are looking at ronda, the other tools that turn a plain-English request into a pull request are Fixdog, Itera, Clogless (until 21 November 2026; its site now describes a different product) and Frend. If you like that Revyse can let the person who asked publish small changes, Refinar does that too. For a prototype to explore an idea, as with Modeinspect, look at Workshop. If you'd rather the person who asked check the change before any pull request exists, PinAppAI and Butterneck work that way.
 
 ### Does Butterneck open a pull request?
 
