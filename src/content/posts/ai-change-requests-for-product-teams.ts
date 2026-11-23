@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-19",
+  updated: "2026-11-23",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -190,6 +190,10 @@ Yes, for small, clearly described changes: copy and labels, layout and spacing, 
 ### How is this different from tools that open pull requests?
 
 Butterneck stops at a reviewable change on a live preview. For a comparison with a PR-generating tool, read our [Itera alternative](/blog/itera-alternative) or [Clogless alternative](/blog/clogless-alternative) post, and for the reasoning, [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding).
+
+### Does it work if our code is on GitLab, Bitbucket or another Git host?
+
+Yes. Butterneck doesn't connect to your Git host, so there is no GitHub, GitLab or Bitbucket app to install and no write access to give it. The project is a folder on a developer's connected computer, and the coding agent that developer already uses edits it there. When the person who asked is happy with the preview, the developer commits the change and opens the pull request or merge request in whatever Git host your team already uses, with your usual review rules. More on what runs where: [how Butterneck runs the coding agent on a connected computer](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
 ## Try it
 
