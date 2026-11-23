@@ -139,6 +139,21 @@ html[data-app="butterneck"] {
     padding: 0.9rem 0 0.4rem;
   }
 
+  & .mobile-nav-actions .mobile-nav-trial,
+  & .mobile-nav-actions .mobile-nav-trial-note {
+    grid-column: 1 / -1;
+  }
+
+  & .mobile-nav-actions .mobile-nav-trial-note {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink-2);
+  }
+
   & .mobile-nav .mobile-nav-actions a {
     min-width: 0;
     padding: 0.7rem 0.9rem;
@@ -923,6 +938,23 @@ html[data-app="butterneck"] {
 
     & .landing-cta .landing-btn {
       flex: 1 1 100%;
+    }
+
+    /* Keep the hero trial button in the first screen: walkthrough and demo
+       become compact text links so they don't stack as a third and fourth button. */
+    & .landing-hero .landing-cta .landing-btn-text {
+      flex: 1 1 calc(50% - 0.4rem);
+      min-width: 0;
+      padding: 0.4rem 0.55rem;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    & .landing-hero .landing-cta .landing-btn-text:hover {
+      translate: none;
+      box-shadow: none;
+      background: var(--accent-soft);
     }
 
     & .card {

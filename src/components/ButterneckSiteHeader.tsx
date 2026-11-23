@@ -70,6 +70,15 @@ export function SiteHeader() {
           <a className="landing-btn primary" href={appUrl("/signup")} data-ga-location="mobile_nav">
             Create workspace
           </a>
+          <a
+            className="landing-btn mobile-nav-trial"
+            href={appUrl("/trial")}
+            data-ga-event="trial_click"
+            data-ga-location="mobile_nav"
+          >
+            Try an example change
+          </a>
+          <p className="mobile-nav-trial-note">no account needed</p>
         </div>
       </nav>
     </header>

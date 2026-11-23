@@ -61,10 +61,18 @@ export default function HomePage() {
             <a href={appUrl("/signup")} className="landing-btn primary" data-ga-location="home_hero">
               Create a free workspace
             </a>
+            <a
+              href={appUrl("/trial")}
+              className="landing-btn"
+              data-ga-event="trial_click"
+              data-ga-location="home_hero"
+            >
+              Try an example change
+            </a>
             {WALKTHROUGH_URL && (
               <a
                 href={WALKTHROUGH_URL}
-                className="landing-btn"
+                className="landing-btn landing-btn-text"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-ga-event="book_walkthrough_click"
@@ -73,15 +81,13 @@ export default function HomePage() {
                 Book a walkthrough
               </a>
             )}
-            <a href="#demo" className="landing-btn">
+            <a href="#demo" className="landing-btn landing-btn-text">
               Watch the demo
             </a>
           </div>
           <p className="landing-quiet landing-trial-note">
-            <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_hero">
-              Try an example change on a sample shop, no account needed
-            </a>{" "}
-            before you connect a computer. Your own project still needs a connected computer; Starter is free.
+            on a sample shop, no account needed, before you connect a computer. Your own project still
+            needs a connected computer; Starter is free.
           </p>
           <OnboardingCallNote location="home_hero" />
           <ul className="landing-trust">
@@ -125,6 +131,12 @@ export default function HomePage() {
             Book a walkthrough
           </a>
         </div>
+        <p className="landing-quiet landing-trial-note">
+          <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_demo">
+            Try an example change on a sample shop, no account needed
+          </a>{" "}
+          before you connect a computer. Your own project still needs a connected computer; Starter is free.
+        </p>
       </section>
 
       <section className="landing-proof" aria-label="Where the time goes">
@@ -199,6 +211,12 @@ export default function HomePage() {
         />
         <p className="landing-section-lead">
           Connect the product, let them ask, and decide what goes live.
+        </p>
+        <p className="landing-quiet landing-trial-note">
+          To see the flow first,{" "}
+          <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_how_it_works">
+            try an example change on a sample shop
+          </a>, no account needed.
         </p>
         <ol className="landing-steps">
           {STEPS.map((step) => (
@@ -300,7 +318,22 @@ export default function HomePage() {
         </p>
       </section>
 
-      <PricingSection intro={<p className="landing-quiet">A workspace owner on Starter can try Pro free for one month, once per workspace. <a href="/pricing">How the trial works</a>.</p>} />
+      <PricingSection
+        intro={
+          <>
+            <p className="landing-quiet">
+              A workspace owner on Starter can try Pro free for one month, once per workspace.{" "}
+              <a href="/pricing">How the Pro trial works</a>.
+            </p>
+            <p className="landing-quiet landing-trial-note">
+              To see the product first,{" "}
+              <a href={appUrl("/trial")} data-ga-event="trial_click" data-ga-location="home_pricing">
+                try an example change on a sample shop
+              </a>, no account needed. That is separate from the one-month Pro trial.
+            </p>
+          </>
+        }
+      />
 
       <section id="faq" className="landing-section" aria-labelledby="faq-heading">
         <h2 id="faq-heading">Questions people ask first</h2>
@@ -308,7 +341,7 @@ export default function HomePage() {
           {FAQS.map((item) => (
             <details key={item.q} className="card landing-card">
               <summary>{item.q}</summary>
-              <Points lines={item.lines} />
+              <FaqPoints item={item} />
               {"link" in item && item.link ? (
                 <p>
                   <a href={item.link.href}>{item.link.text}</a>
@@ -391,6 +424,37 @@ function Points({ lines }: { lines: readonly string[] }) {
         <li key={line}>{line}</li>
       ))}
     </ul>
+  );
+}
+
+
+/** Renders a FAQ answer, turning the guest-trial URL into a tracked link when present. */
+function FaqPoints({ item }: { item: (typeof FAQS)[number] }) {
+  return (
+    <ul className="landing-points">
+      {item.lines.map((line) => (
+        <li key={line}>
+          {"trialHref" in item && item.trialHref && line.includes(item.trialHref) ? (
+            <FaqTrialHref line={line} href={item.trialHref} />
+          ) : (
+            line
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function FaqTrialHref({ line, href }: { line: string; href: string }) {
+  const index = line.indexOf(href);
+  return (
+    <>
+      {line.slice(0, index)}
+      <a href={href} data-ga-event="trial_click" data-ga-location="home_faq">
+        {href}
+      </a>
+      {line.slice(index + href.length)}
+    </>
   );
 }
 
