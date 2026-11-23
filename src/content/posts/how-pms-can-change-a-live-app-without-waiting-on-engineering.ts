@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-23",
+  updated: "2026-11-24",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts", "no local dev setup"],
   cover: {
@@ -38,6 +38,8 @@ The change usually takes a developer a few minutes. The wait comes from everythi
 None of that is coding. It is relay. We wrote about this in [human-in-the-loop AI coding](/blog/human-in-the-loop-ai-coding): the change is small, the back-and-forth is what takes the week.
 
 One designer counted it. At Fig, Qinglan Zheng found "more than 10 small improvements were sitting blocked, none of them contentious, all of them stuck in the same handoff chain": copy tweaks, spacing fixes, a reordered form field. After a two-week pilot with one engineer, the team reports small UI fixes going from weeks to days, with every change still passing engineering review. Her summary: the pilot "removed the parts of the process that existed only to translate intent from one person to another. Review stayed." ([From weeks to days: building a design-in-code workflow at Fig](https://www.qinglandesign.com/design-in-code.html), Qinglan Zheng, 2026)
+
+A consultancy saw the same thing on its own website. At Mechanical Rock, a small website change used to start with someone in marketing spotting a wrong label and mentioning it in Slack; it went on a list, and a week later someone remembered. "The fix itself took ten minutes. The waiting took the rest." Their answer was a Slack bot that files a GitHub issue and has a coding agent open a pull request, which an engineer reviews before anything merges. ([From Slack Message to Pull Request: Agentic Delivery Is a Guardrails Problem](https://www.mechanicalrock.io/blog/slack-message-to-pull-request-agentic-delivery-guardrails), Dik Rana, Mechanical Rock, November 2026)
 
 Paper cuts also lose every prioritisation call. Next to a feature or a bug, "rename this button" never looks urgent, so it waits behind work that does. Nobody decided the fix wasn't worth doing. It was just never worth a developer's context switch. That is the gap [AI change requests for product teams](/blog/ai-change-requests-for-product-teams) are meant to close: the person who spotted the problem asks for it directly, and a developer only steps in to decide.
 
