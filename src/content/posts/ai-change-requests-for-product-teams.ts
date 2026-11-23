@@ -193,7 +193,7 @@ Butterneck stops at a reviewable change on a live preview. For a comparison with
 
 ### Does it work if our code is on GitLab, Bitbucket or another Git host?
 
-Yes. Butterneck doesn't connect to your Git host, so there is no GitHub, GitLab or Bitbucket app to install and no write access to give it. The project is a folder on a developer's connected computer, and the coding agent that developer already uses edits it there. When the person who asked is happy with the preview, the developer commits the change and opens the pull request or merge request in whatever Git host your team already uses, with your usual review rules. More on what runs where: [how Butterneck runs the coding agent on a connected computer](/blog/run-ai-coding-agent-sandbox-on-your-machine).
+Yes. Butterneck doesn't need its own access to your Git host, so there is no GitHub, GitLab or Bitbucket app to install and no write access to give it. The project is a folder on a developer's connected computer, and the coding agent that developer already uses edits it there. When the person who asked is happy with the preview, the developer commits the change and opens the pull request or merge request in whatever Git host your team already uses, with your usual review rules. More on what runs where: [how Butterneck runs the coding agent on a connected computer](/blog/run-ai-coding-agent-sandbox-on-your-machine).
 
 ## Try it
 
