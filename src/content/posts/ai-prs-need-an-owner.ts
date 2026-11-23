@@ -132,6 +132,8 @@ Review isn't the only queue, either. As DevOps.com's Mike Vizard put it on 13 No
 
 A common answer to the review bottleneck is more AI: AI code review tools and AI code review agents that comment on a pull request before a human looks at it. On GitHub, for example, Copilot can review pull requests, and Copilot approvals can count toward required approvals if an admin turns them on (they are off by default). These tools can catch issues earlier and shorten the first pass.
 
+**Update, 23 November 2026: AI review in open source.** A preprint from Tilburg University researchers ([Xu, Medappa and Tunc, arXiv 2611.22793](https://arxiv.org/abs/2611.22793), submitted 17 November 2026) uses the 2025 launch of GitHub Copilot's AI reviewer as a natural experiment in open-source repositories. Maintainers first saw a sharp rise in pull requests and in review workload. The AI reviewer made human-written pull requests faster to get through, but "bot PRs take longer to review and merge", and the authors conclude that AI reviewers "aggravate the maintenance burden by encouraging more code contributions via humans and bots." It is a preprint about open-source projects, not company teams.
+
 They don't answer the question the LinearB report raises, though: who owns the change. An AI reviewer can tell you a diff looks fine; it can't tell you the change is what the person asking wanted, or take responsibility for shipping it. That is why we treat AI code review as one input to a developer's review, not a replacement for it. A developer still reviews and decides what ships.
 
 ## How Butterneck handles ownership
