@@ -3,9 +3,9 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "tools-for-non-developers-to-change-an-existing-app",
   title: "AI tools that let non-developers change an existing web app (2026)",
-  seoTitle: "37 AI tools for non-developers to change an existing web app (2026)",
+  seoTitle: "38 AI tools for non-developers to change an existing web app (2026)",
   description:
-    "37 AI tools that let PMs and designers change an existing web app, compared side by side: prices, where the agent runs, PR or live preview, who ships.",
+    "38 AI tools that let PMs and designers change an existing web app, compared side by side: prices, where the agent runs, PR or live preview, who ships.",
   date: "2026-10-28",
   updated: "2026-11-23",
   author: "The Butterneck team",
@@ -21,7 +21,7 @@ export const post: BlogPost = {
 
 **Jump to:** [At a glance](#at-a-glance) · [How to choose](#how-to-choose) · [The tools, one by one](#the-tools-one-by-one) · [Butterneck](#butterneck) · [FAQ](#faq)
 
-Last checked: 29 October to 19 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October to 22 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
@@ -35,6 +35,7 @@ Butterneck isn't affiliated with, endorsed by or sponsored by any other tool lis
 | [ronda](https://useronda.com/) | "Marketing, design, and product" | An isolated live sandbox running your dev server | "ronda writes the code and opens a pull request. Engineering reviews and merges." | Not on the pages we read | Free $0; Starter $9/month; no AI markup. No key needed when you use it from ChatGPT or Claude; the web editor needs your own Anthropic key (as of Nov 11, 2026, per [ronda's pricing page](https://useronda.com/pricing)) |
 | [Refinar](https://refinar.ai/en/for/product-managers) | Product managers (its /for/product-managers page) | "A copy of the live app" | "Publish it or send it to engineering"; risky changes go to a developer first as a draft PR | Not on the pages we read | "From $25 a month" for 250 credits (as of Oct 29, 2026, per [Refinar's pricing page](https://refinar.ai/en/pricing)) |
 | [Fixdog](https://fix.dog/) | "PMs, designers, operators" | "Directly on their live product" | It "auto-generates a PR. Eng reviews and merges." | Not on the page we read | No public price found |
+| [Frend](https://frend.one/) | Teams with an existing GitHub repository ("The AI frontend engineer that ships pull requests") | "An isolated sandbox" in its cloud, running your dev server for a live preview | A pull request on "Frend's own branch"; "You review and merge" | Not on the page we read | "Free to start, with usage limits"; no paid plans yet (as of Nov 22, 2026, per its FAQ) |
 | [Clogless](https://clogless.ai/) | Product teams handing work to engineering | "A live sandbox on your real codebase", in its cloud | A pull request it opens with your Git provider | Yes (one of six ticketing tools, per its [ticket-to-PR page](https://clogless.ai/ticket-to-pull-request)) | $99/month Starter, $489/month Team, billed annually (as of Oct 29, 2026, per [Clogless's pricing page](https://clogless.ai/pricing)) |
 | [Revyse](https://www.revyse.dev/) | "Founders, designers, product, QA, developers and agencies" | Your running Next.js app (an overlay in your dev server or on your live site), or a safe copy from its dashboard | A change on its own branch with a pull request and a preview; it reaches production the way the project chose, with or without a reviewer ("Revyse merges; your host deploys") | Not on the pages we read | Free (150 credits a month, one project, just you); Starter $19, Pro $49 and Business $99 a month, by credits (as of Nov 11, 2026, per [Revyse's pricing page](https://www.revyse.dev/pricing)) |
 | [Revise](https://revise.build/) | People who want to edit "your existing website without writing code"; Pro is "For teams with a frontend bottleneck" | "A separate preview" in its cloud workspace, connected to GitHub, GitLab or Bitbucket | "A pull or merge request" your developer reviews and merges; it "does not automatically publish the change" | Not on the pages we read | Free one-time $0.50 AI + $0.50 workspace budget; Pro $29 per editor per month, but "Paid subscriptions and top-ups are not available yet" (as of Nov 6, 2026, per [Revise's pricing page](https://revise.build/pricing)) |
@@ -84,6 +85,10 @@ Itera is covered below and in our [Itera alternative](/blog/itera-alternative) p
 ### Fixdog
 
 It "lets PMs, designers, operators make changes directly on their live product and auto-generates a PR. Eng reviews and merges." We couldn't find a public price. Good pick if you want an auto-generated PR from a change made on the live product.
+
+### Frend
+
+"Describe a change. Watch it built in a live preview of your app. Review the pull request." Frend clones a GitHub repository into an isolated cloud sandbox, starts your dev server and shows the change in a live preview; you can also mention @frendone on a GitHub issue and get a pull request back. It is frontend only: when an API doesn't exist yet, it "builds against a typed mock". Good pick for a team that already works from GitHub issues and wants frontend pull requests.
 
 ### Itera
 
@@ -219,14 +224,14 @@ The person who asks opens a link (or labels a Jira ticket and assigns it) and ch
 - **You want a ticket turned into a pull request automatically:** Synlets, Specship, CoderHelm, CodeHerder (Jira's built-in options are worth a look too).
 - **You want a ticket in Jira turned into a PR, with the PM as the user:** Epicraft, Synlets, CoderHelm.
 - **You want a cloud preview you iterate on, then a PR:** Plusma, Revyse (cloud), Revise, ronda, Ovren, Flex, Vision (a hosted "isolated environment" for each change), Remix (variants of "a live copy of your real app"), Lightsprint, Sparkles, Alloy, Builder.io, Netlify Agent Runners, Kosuke, Productmind, Vixentio.
-- **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless.
+- **You want a PR from a plain-English request:** ronda, Fixdog, Itera, Clogless and Frend.
 - **You want the requester to publish small changes themselves:** Refinar, Revyse.
 - **You want better review once a PR exists:** Else.
 - **You're a designer or developer who'll run the tool yourself, with your own coding agent:** Handle Studio, Hexby, Layrr, PulseDev, Modeinspect, medit.
 - **You're a designer already working in Figma, on a Mac, with access to the repo:** Figma Make (closed beta).
 - **You want the person who asked to check the change before any PR exists, without installing anything:** PinAppAI, Butterneck.
 
-Check dates: prices and quotes were re-read on each tool's own pages on 29 October 2026, except Itera (see the note under the table). Hexby, Figma Make, Inspect, Vision, Remix, Lightsprint, Sparkles, Alloy and medit were checked on 30 October 2026; Builder.io, Netlify Agent Runners, Kosuke and PulseDev on 31 October 2026, and Netlify Agent Runners' pricing and agent list again on 19 November 2026; Revise on 6 November 2026; Productmind on 7 November 2026. PulseDev and ronda were checked again on 9 November 2026, and PulseDev, ronda, Productmind, Revyse and Vixentio were re-read on 11 November 2026. Prices and features change. Tell us if something here is out of date and we'll fix it.
+Check dates: prices and quotes were re-read on each tool's own pages on 29 October 2026, except Itera (see the note under the table). Hexby, Figma Make, Inspect, Vision, Remix, Lightsprint, Sparkles, Alloy and medit were checked on 30 October 2026; Builder.io, Netlify Agent Runners, Kosuke and PulseDev on 31 October 2026, and Netlify Agent Runners' pricing and agent list again on 19 November 2026; Revise on 6 November 2026; Productmind on 7 November 2026. PulseDev and ronda were checked again on 9 November 2026, and PulseDev, ronda, Productmind, Revyse and Vixentio were re-read on 11 November 2026; Frend on 22 November 2026. Prices and features change. Tell us if something here is out of date and we'll fix it.
 
 For a product manager who wants to try Claude Code without setting up the repo, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
@@ -234,7 +239,7 @@ For a product manager who wants to try Claude Code without setting up the repo, 
 
 ### Is there an AI coding agent for people who don't code?
 
-Yes, several. Most of the tools above let a PM, designer or operator describe a change in plain language and have a coding agent make it in the team's real codebase. They differ in what comes back: a prototype (Workshop), a pull request (ronda, Fixdog, Itera as of 28 Oct, Clogless, Synlets, Ovren, Flex, Productmind, Vixentio), a merged change (CodeHerder, when no approval gate is on; Revyse, when the project's release setting allows it), or a live preview the person who asked checks before a developer decides (Butterneck, PinAppAI).
+Yes, several. Most of the tools above let a PM, designer or operator describe a change in plain language and have a coding agent make it in the team's real codebase. They differ in what comes back: a prototype (Workshop), a pull request (ronda, Fixdog, Itera as of 28 Oct, Clogless, Frend, Synlets, Ovren, Flex, Productmind, Vixentio), a merged change (CodeHerder, when no approval gate is on; Revyse, when the project's release setting allows it), or a live preview the person who asked checks before a developer decides (Butterneck, PinAppAI).
 
 ### Can a non-developer change an existing app without breaking it?
 
@@ -254,7 +259,7 @@ The "What you get back" column shows what each tool hands over for review: a pro
 
 ### Which tools on this list are alternatives to each other?
 
-Tools on the same line of "How to choose" above do the same job, so they are the closest alternatives to each other. If you are looking at ronda, the other tools that turn a plain-English request into a pull request are Fixdog, Itera and Clogless. If you like that Revyse can let the person who asked publish small changes, Refinar does that too. For a prototype to explore an idea, as with Modeinspect, look at Workshop. If you'd rather the person who asked check the change before any pull request exists, PinAppAI and Butterneck work that way.
+Tools on the same line of "How to choose" above do the same job, so they are the closest alternatives to each other. If you are looking at ronda, the other tools that turn a plain-English request into a pull request are Fixdog, Itera, Clogless and Frend. If you like that Revyse can let the person who asked publish small changes, Refinar does that too. For a prototype to explore an idea, as with Modeinspect, look at Workshop. If you'd rather the person who asked check the change before any pull request exists, PinAppAI and Butterneck work that way.
 
 ### Does Butterneck open a pull request?
 
