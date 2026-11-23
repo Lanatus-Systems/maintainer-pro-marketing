@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Clogless vs Butterneck for product teams: cloud sandbox and PR vs a live preview your developer reviews. Plus other Clogless alternatives, from public info.",
   date: "2026-10-28",
-  updated: "2026-11-18",
+  updated: "2026-11-23",
   author: "The Butterneck team",
   tags: ["Clogless alternative", "comparison", "AI change requests", "product teams"],
   cover: {
@@ -16,6 +16,8 @@ export const post: BlogPost = {
     height: 630,
   },
   body: `
+Update, 22 November 2026: since 21 November 2026, clogless.ai describes a different product (data escrow for vendors), and the Clogless pages this comparison cites now show that page. This comparison describes Clogless as its earlier site did (checked 29 October to 21 November 2026).
+
 If you are weighing Clogless and wondering whether an alternative fits your team better, this post compares Clogless and Butterneck side by side. We make Butterneck, so we are not neutral. The two products go after the same problem: small product changes that sit in the engineering backlog. They solve it in different ways. We have tried to stick to what each product says publicly, and to be clear about where Clogless is likely the better pick.
 
 Everything about Clogless below comes from its public website, [clogless.ai](https://clogless.ai), as read on 28 October 2026, mainly its home, how it works, ticket to pull request, security, and pricing pages. Clogless is a new product, and new products change fast. Check their site for the current details.
