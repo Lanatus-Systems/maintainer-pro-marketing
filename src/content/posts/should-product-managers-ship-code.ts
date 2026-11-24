@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-21",
+  updated: "2026-11-24",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -38,6 +38,8 @@ At SDLCAI 2026, Viljami Kuosmanen described how epilot [let non-engineers use co
 The same tension shows up outside the product codebase. In [Everyone's a software engineer now](https://leaddev.com/management/everyones-a-software-engineer-now) (LeadDev, 16 November 2026), Chris Stokel-Walker cites a Retool survey of 817 people building software: 60% had built something outside IT oversight in the previous year. Christina Troy of Tines puts the answer plainly: "Employees need guardrails and frameworks within which to build, and IT teams need to have visibility from the outset of these builds."
 
 Product analytics companies describe the same shift. Mixpanel's CEO Jen Taylor, on its A/NZ Product Intelligence Index 2026: "three in four now say deciding what to build takes longer than building it" ([ARN, 17 November 2026](https://www.arnnet.com.au/article/4249377/ai-speed-to-product-process-creating-decision-making-challenges.html)). Amplitude's Wave agent turns product data into plans for coding agents, and even there, "most teams send bug fixes straight to coding agents, while new features and bigger bets get a human review" ([OpenAI, 12 November 2026](https://openai.com/business/customer-stories/amplitude)).
+
+Atlassian's Sherif Mansour, Head of AI and Product Craft, makes the same point from inside a large company. In a post to Atlassian's product managers he wrote: "In this context, a PM writing code isn't addressing the right problem. The ship moves faster than ever. The priority is ensuring it points in the right direction." He isn't against PMs coding, which he calls a "Great way to learn empathy, get quick changes in, increase velocity etc." ([Direct the ship, don't row it](https://sherifmansour.medium.com/direct-the-ship-dont-row-it-28785929626f), June 2026).
 
 They all land in a similar place. Building is getting cheap. Deciding what ships is still the hard, valuable part.
 
