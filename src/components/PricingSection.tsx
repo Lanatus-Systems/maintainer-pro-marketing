@@ -11,6 +11,7 @@ import {
   countryFromTimeZone,
   formatMoney,
   quotePro,
+  STARTER_PRO_CONNECTED_COMPUTER_LINE,
 } from "@/lib/pricing";
 import { appUrl } from "@/lib/site";
 
@@ -134,6 +135,9 @@ export function PricingSection({
           );
         })}
       </div>
+      <p className="landing-quiet landing-price-shared-note">
+        {STARTER_PRO_CONNECTED_COMPUTER_LINE}
+      </p>
     </section>
   );
 }

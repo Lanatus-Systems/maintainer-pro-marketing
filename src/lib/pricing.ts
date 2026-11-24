@@ -57,7 +57,6 @@ export const BILLING_PLANS: BillingPlan[] = [
       "1 developer and 1 person who requests changes",
       "1 private copy of the product",
       "1 GB of preview traffic a month",
-      "1 connected computer per person",
       "A live preview and chat on that copy",
       "The AI only edits the project you connect",
     ],
@@ -74,7 +73,6 @@ export const BILLING_PLANS: BillingPlan[] = [
       "Priced per person. Developers and people who request changes both count.",
       "50 private copies of the product",
       "50 GB of preview traffic a month",
-      "1 connected computer per person",
       "Everything in Starter",
     ],
   },
@@ -94,6 +92,10 @@ export const BILLING_PLANS: BillingPlan[] = [
     ],
   },
 ];
+
+/** Shown once under the Starter and Pro cards, not on Custom. */
+export const STARTER_PRO_CONNECTED_COMPUTER_LINE =
+  "Starter and Pro: 1 connected computer per user.";
 
 const MONEY_PREFIX: Record<string, string> = {
   USD: "$",

@@ -861,6 +861,10 @@ h3 {
   line-height: 1.45;
 }
 
+.landing-price-shared-note {
+  margin-top: 0.85rem;
+}
+
 .landing-price-amount {
   display: flex;
   flex-wrap: wrap;
