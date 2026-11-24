@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with a live preview before anyone opens a pull request: what the PM checks, who decides, and how it differs from PR previews.",
   date: "2026-10-28",
-  updated: "2026-11-23",
+  updated: "2026-11-25",
   author: "The Butterneck team",
   tags: ["live preview", "preview environment for stakeholders", "PR preview alternative", "stakeholder review", "product teams", "Vercel preview deployments", "stakeholder sign-off", "design QA", "ephemeral preview environments"],
   cover: {
@@ -38,7 +38,7 @@ Every product change has to pass two questions:
 1. **Is this what was asked for?** The words, the layout, the behaviour on the screen the requester had in mind.
 2. **Is this safe to ship?** The code, the tests, the parts of the app the requester never sees.
 
-A pull request is very good at the second question. It shows a diff to someone who can read code. It is poor at the first one, because the person who can answer it, the requester, usually isn't reading diffs, and a diff of a CSS class or a translation file doesn't show them what the page looks like. Reviewers say the context is missing on their side too. In LeadDev's AI Code Review Report 2026 (377 engineers and engineering leaders, published 20 November 2026), 68% say reviewers don't always know which changes need deeper scrutiny, only 26% say they fully understand the AI-generated code they review, and 45% say review capacity is the biggest drag on delivery ([LeadDev report](https://leaddev.com/the-ai-code-review-report-2026); [early figures, 18 November 2026](https://leaddev.com/technical-direction/how-do-you-trust-ai-code-you-didnt-read)).
+A pull request is very good at the second question. It shows a diff to someone who can read code. It is poor at the first one, because the person who can answer it, the requester, usually isn't reading diffs, and a diff of a CSS class or a translation file doesn't show them what the page looks like. Reviewers say the context is missing on their side too. In LeadDev's AI Code Review Report 2026 (377 engineers and engineering leaders, published 20 November 2026), 68% say reviewers don't always know which changes need deeper scrutiny, only 26% say they fully understand the AI-generated code they review, and 45% say review capacity is the biggest drag on delivery ([LeadDev report](https://leaddev.com/the-ai-code-review-report-2026); [early figures, 18 November 2026](https://leaddev.com/technical-direction/how-do-you-trust-ai-code-you-didnt-read)). The same survey asked who is accountable when an AI agent writes a change, another AI reviews it and an automated system merges it: 48% said the person who requested the change, and 14% said the person who approved it ([CodeRabbit, the report's sponsor, 23 November 2026](https://www.tmcnet.com/usubmit/2026/11/23/10486224.htm)). If the person who asked answers for the change, they should see it running before it ships.
 
 When the first question is only asked after the PR, every "not quite" costs a full loop: change the code, push, wait for review again, wait for the build again. When it is asked first, on a preview, the requester can say "shorter" or "move it above the form" while the change is still cheap, and the pull request carries a change that the requester already agreed to.
 
