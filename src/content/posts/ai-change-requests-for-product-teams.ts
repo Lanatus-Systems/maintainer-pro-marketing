@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-23",
+  updated: "2026-11-24",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -170,6 +170,10 @@ On the running app, not in the code. Open the changed screen on the live preview
 ### Can support teams use AI change requests to fix confusing labels and error messages?
 
 Yes, for the small fixes behind repeat tickets: a confusing label, a missing hint on a form, an unclear error message. The support lead opens the share link, types the change in the chat beside the live preview (a customer's screenshot can be attached), and checks the result on screen. A developer still reviews it and decides whether it ships. Keep anything that touches billing, refunds, permissions or customer data with a developer. When the ticket is a bug report, let the person who reported it check the fix on the preview before a developer ships it; see [let the reporter check the fix before it ships](/blog/reporter-checks-the-fix).
+
+### Can marketing or growth teams request changes to our marketing site?
+
+Yes, if the site is code your developers run, for example a Next.js app in your repository. Butterneck works with a web app that the connected computer can start with a command and that serves pages on a local port, so a marketing site works the same way as the product: a product marketer or growth lead opens the share link, asks for the new headline or button label in the chat beside the live preview, and checks the result on screen, including at a phone-sized width. A developer still reviews the change and decides whether it ships; Butterneck doesn't commit, push, open a pull request, merge or deploy.
 
 ### Is the AI allowed to deploy?
 
