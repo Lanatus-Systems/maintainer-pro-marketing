@@ -3,7 +3,7 @@ import type { BlogPost } from "@/content/blog";
 export const post: BlogPost = {
   slug: "run-ai-coding-agent-sandbox-on-your-machine",
   title: "How Butterneck runs an AI coding agent in a sandbox on your own machine",
-  seoTitle: "AI coding agent sandbox on a connected computer: guardrails, rollback",
+  seoTitle: "AI coding agent sandbox on a connected computer",
   description:
     "Run Cursor, Claude Code or Antigravity on a developer's computer for AI change requests: folder isolation, .env guardrails, per-turn rollback, preview links.",
   date: "2026-10-27",

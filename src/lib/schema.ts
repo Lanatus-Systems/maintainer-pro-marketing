@@ -40,7 +40,7 @@ export function organizationJsonLd() {
   };
 }
 
-/** The SoftwareApplication node (Starter free, Pro USD 19 per person a month). No ratings or reviews. */
+/** The SoftwareApplication node (Starter free, Pro USD 19 per person a month). No ratings or reviews. unitText lives on UnitPriceSpecification, not Offer. */
 export function softwareApplicationJsonLd() {
   return {
     "@type": "SoftwareApplication",
@@ -65,7 +65,12 @@ export function softwareApplicationJsonLd() {
         name: "Pro",
         price: "19",
         priceCurrency: "USD",
-        unitText: "person / month",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "19",
+          priceCurrency: "USD",
+          unitText: "person / month",
+        },
         description: "Per person, billed monthly. Annual billing saves 20%.",
       },
     ],
