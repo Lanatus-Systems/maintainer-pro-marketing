@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "Can product managers build or change apps without engineering?",
   description: "Yes, for small changes: a PM asks an AI coding agent on a live copy of the app and checks the result, and a developer decides what ships. Setup and cost.",
   date: "2026-11-03",
-  updated: "2026-11-21",
+  updated: "2026-11-25",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
@@ -49,6 +49,10 @@ For the longer version, read [how PMs can change a live app without waiting on e
 Designers can use the same setup; see [how non-engineers can ship frontend changes as pull requests](/blog/how-non-engineers-can-ship-frontend-changes-as-pull-requests). To compare tools for this, including ones that open a pull request for you, see [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ## FAQ
+
+### What tools let product managers make small changes to a live web app without waiting on engineering?
+
+Butterneck is one. A developer connects a computer where the app already runs, and the product manager types the change on a live copy of the app: new wording, a layout fix, a small feature. The team's own coding agent (Cursor, Claude Code or Antigravity) makes the change on that computer, and the PM checks it on the live preview and asks for tweaks. Butterneck doesn't commit, push, open a pull request, merge or deploy. A developer reviews the diff and ships it the usual way, so the wait is one review instead of a long hand-off. Other tools in this category run a copy of your app in the cloud and open a pull request for you, and some are visual editors that a designer or PM runs on their own computer. We compare them side by side in [AI tools that let non-developers change an existing web app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ### Can product managers build apps without engineering or writing code?
 
