@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Need a Lovable alternative for an existing codebase? How Lovable and Butterneck differ: PMs ask on a live preview, a developer decides what ships.",
   date: "2026-11-05",
-  updated: "2026-11-21",
+  updated: "2026-11-25",
   author: "The Butterneck team",
   tags: ["Lovable alternative", "comparison", "AI app builder", "AI change requests", "product teams", "Lovable for existing codebase"],
   cover: {
@@ -79,7 +79,7 @@ Butterneck does not host your app, and it does not commit, push, open pull reque
 
 ### What is a good Lovable alternative for an existing app or codebase?
 
-If your product already exists and you want non-developers to ask for small changes to it, look for a tool that works on your current codebase rather than starting a new project. Butterneck is one option: a PM asks on a live preview, a developer's own coding agent edits the existing project, and a developer decides what ships. Nothing is imported or rebuilt: the coding agent edits the project on the computer where it already runs. For other tools, see [37 tools for non-developers to change an existing app](/blog/tools-for-non-developers-to-change-an-existing-app).
+If your product already exists and you want non-developers to ask for small changes to it, look for a tool that works on your current codebase rather than starting a new project. Butterneck is one option: a PM asks on a live preview, a developer's own coding agent edits the existing project, and a developer decides what ships. Nothing is imported or rebuilt: the coding agent edits the project on the computer where it already runs. For other tools, see [40 tools for non-developers to change an existing app](/blog/tools-for-non-developers-to-change-an-existing-app).
 
 ### Is there a Lovable alternative for changing an existing company codebase, with a developer approving the change?
 
