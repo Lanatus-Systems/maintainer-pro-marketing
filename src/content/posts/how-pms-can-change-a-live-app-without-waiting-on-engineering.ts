@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests for product managers: ask for small UI changes on a live preview without waiting for engineers. A developer still decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-24",
+  updated: "2026-11-25",
   author: "The Butterneck team",
   tags: ["product managers", "let PMs change a live app", "small changes backlog", "AI coding agents", "workflow", "UI papercuts", "no local dev setup"],
   cover: {
@@ -64,7 +64,7 @@ The default. Works, but every round trip costs a day. The developer still has to
 
 ### Give the PM a no-code tool
 
-Fine for marketing pages built in a CMS. Not useful when the change is in the product's own code.
+Fine for marketing pages built in a CMS. Not useful when the change is in the product's own code. Which kinds of tool fit which job is covered in the FAQ of [can product managers change the app without engineering?](/blog/let-product-managers-change-the-app-without-engineering)
 
 ### Give the PM an AI coding tool
 
