@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-25",
+  updated: "2026-11-26",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -32,6 +32,8 @@ He is honest that it is not simple. Two questions stood out:
 - Are engineers being freed up, or turned into "people who review an endless stream of AI-generated merge requests"?
 
 Jeff Gothelf comes at it from the other side in [How to manage the inevitable mess of running a company where everyone is a builder](https://jeffgothelf.com/blog/how-to-manage-the-inevitable-mess-of-running-a-company-where-everyone-is-a-builder/). His first suggestion: "Keep the right to build separate from the right to ship." Anyone can build and show a prototype. Getting it in front of customers follows a path with evidence at each step.
+
+Octopus Deploy now asks its product managers to bring a prototype in place of a written requirements document and keep refining how the feature works. In The New Stack's words, "A developer can then take it the rest of the way to production" ([The New Stack, 24 November 2026](https://thenewstack.io/ai-coding-delivery-bottleneck/), from an interview with Dan Garfield, Octopus Deploy's VP of Open Source). The same piece names the open question: "someone still has to decide whether any interactions make sense, the new features solve a problem, or — most importantly — whether the team can ship it safely."
 
 At SDLCAI 2026, Viljami Kuosmanen described how epilot [let non-engineers use coding agents on its production codebase](https://sdlcai.org/2026/talks/non-engineers-vibe-code-production/). People tag an agent in a Slack thread, get a pull request and a preview link, and an engineer reviews it; product, design, support and QA all contributed. According to the conference's summary of the talk, an attempted production deployment was caught by monitoring, after which the team separated contribution, merge, CI and production permissions. More proposals also meant more review and testing, and he said he doesn't yet have strong data that delivery got faster.
 
