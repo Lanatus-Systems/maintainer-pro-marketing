@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "Can product managers build or change apps without engineering?",
   description: "Yes, for small changes: a PM asks an AI coding agent on a live copy of the app and checks the result, and a developer decides what ships. Setup and cost.",
   date: "2026-11-03",
-  updated: "2026-11-21",
+  updated: "2026-11-25",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
@@ -57,6 +57,10 @@ A new app, often yes: AI app builders can generate a prototype or an internal to
 ### Can product managers prototype in the real codebase instead of a mockup?
 
 For changes to screens that already exist, yes. The PM opens the share link to the running app and describes the change in plain words. The team's coding agent edits the real project on a developer's connected computer, and the preview updates on the same link, so the PM can show stakeholders a working version in the app's own code, not a mockup. Nothing reaches production until a developer reviews the diff and ships it, and a version nobody wants is simply discarded. A brand-new product or flow is a different job: start it with design and scoping, or an AI app builder.
+
+### Is this the same as an A/B testing, feature-flag or website-builder tool?
+
+No. Those tools do a different job: testing versions of a page against each other, switching finished features on and off, or editing content that lives in a CMS or page builder. Butterneck is for changes to the app's own code. The product manager asks for the change on a live copy of the app, the team's coding agent (Cursor, Claude Code or Antigravity) edits the project on the developer's connected computer, and a developer reviews the diff and ships it the usual way. Butterneck doesn't commit, push, open a pull request, merge or deploy. If the change is wording on a marketing page your team already edits in a CMS, the CMS is the quicker route.
 
 ### Do product managers need to learn to code?
 
