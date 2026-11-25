@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "Should PMs ship code with AI? A Harvard study finds AI agents slow code review. A calmer option: PMs ask on a live preview, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-24",
+  updated: "2026-11-25",
   author: "The Butterneck team",
   tags: ["product managers", "should product managers write code", "PMs shipping code", "AI code review bottleneck"],
   cover: {
@@ -116,6 +116,8 @@ Some technical PMs do, and it can work. But most PMs do not need to write code t
 ### Is it safe to let PMs ship code to production?
 
 Teams trying it, like H&B, keep engineers reviewing both the plan and the merge request. If you want PMs involved without that overhead, let them ask on [a live preview before the PR](/blog/live-preview-before-pull-request) and keep the release with engineering.
+
+Some product leaders draw the line at production itself. "I don't think that they should be pushing to production," Ethan Cole, president of the Product Manager Association Los Angeles, said on Allstacks' Stacked Sessions. In his view, a PM's specialization should be "what to build and not how to build" ([Allstacks, 5 November 2026](https://www.allstacks.com/blog/product-manager-skills-center-on-strategy)). Butterneck is built around that split: the PM asks for the change and checks it on a live copy of the app, and a developer reviews the diff and decides what ships.
 
 ### Can product managers vibe code on an existing codebase?
 
