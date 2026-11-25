@@ -64,7 +64,7 @@ The default. Works, but every round trip costs a day. The developer still has to
 
 ### Give the PM a no-code tool
 
-Fine for marketing pages built in a CMS. Not useful when the change is in the product's own code. Which kinds of tool fit which job is covered in the FAQ of [can product managers change the app without engineering?](/blog/let-product-managers-change-the-app-without-engineering)
+Fine for marketing pages built in a CMS. Not useful when the change is in the product's own code. Which kinds of tool fit which job is covered in the FAQ of [can product managers change the app without engineering?](/blog/let-product-managers-change-the-app-without-engineering).
 
 ### Give the PM an AI coding tool
 
