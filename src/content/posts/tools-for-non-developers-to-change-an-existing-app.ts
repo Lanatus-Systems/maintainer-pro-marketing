@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare 40 AI tools that let PMs and designers change an existing web app, side by side: where the agent runs, live preview or pull request, and who ships.",
   date: "2026-10-28",
-  updated: "2026-11-25",
+  updated: "2026-11-26",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -21,7 +21,7 @@ export const post: BlogPost = {
 
 **Jump to:** [At a glance](#at-a-glance) · [How to choose](#how-to-choose) · [The tools, one by one](#the-tools-one-by-one) · [Butterneck](#butterneck) · [FAQ](#faq)
 
-Last checked: 29 October to 25 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
+Last checked: 29 October to 26 November 2026. Most price cells say when we read them, and each row links to the page we read; the per-tool check dates are at the end of the post. "Not on the pages we read" means we didn't find it there, not that the product lacks it.
 
 Product managers, designers, support staff and founders increasingly want to change the app their team already runs, not build a new one. The AI tools below all work on an existing codebase, but they act at different moments: some give you a prototype, some open a pull request for you, some start after a pull request exists, and some stop before one. We make Butterneck, which is listed too; we've tried to describe every tool in its own words and say where each is the better pick.
 
@@ -165,7 +165,7 @@ A "visual change-request layer for AI-built sites". Reviewers drop pins on the l
 
 ### medit
 
-"Point at your app. Say the change. Watch it ship." An overlay inside your running app: click an element, describe the change, and your own coding agent writes the code on its own branch, with a per-branch preview; with a GitHub token it opens the pull request. Like Layrr and PulseDev, someone runs it on the machine where the app runs; the overlay also opens on other devices on the same network.
+"Point at your app. Say the change. Watch it ship." An overlay inside your running app: click an element, describe the change, and your own coding agent writes the code on its own branch, with a per-branch preview; with a GitHub token it opens the pull request. Like Layrr and PulseDev, someone runs it on the machine where the app runs; the overlay also opens on other devices on the same network. Its homepage now also describes shared sessions: "The same session opens on every screen: the PM types, the designer watches the change land — live."
 
 ### Onlook
 
@@ -244,7 +244,7 @@ The person who asks opens a link (or labels a Jira ticket and assigns it) and ch
 - **You're a designer already working in Figma, on a Mac, with access to the repo:** Figma Make (closed beta).
 - **You want the person who asked to check the change before any PR exists, without installing anything:** PinAppAI, Butterneck.
 
-Check dates: prices and quotes were re-read on each tool's own pages on 29 October 2026, except Itera (see the note under the table). Hexby, Figma Make, Inspect, Vision, Remix, Lightsprint, Sparkles, Alloy and medit were checked on 30 October 2026; Builder.io, Netlify Agent Runners, Kosuke and PulseDev on 31 October 2026, and Netlify Agent Runners' pricing and agent list again on 19 November 2026; Revise on 6 November 2026; Productmind on 7 November 2026. PulseDev and ronda were checked again on 9 November 2026, and PulseDev, ronda, Productmind, Revyse and Vixentio were re-read on 11 November 2026; Frend on 22 November 2026; Modeinspect and Onlook on 24 November 2026; Soffi on 25 November 2026. Prices and features change. Tell us if something here is out of date and we'll fix it.
+Check dates: prices and quotes were re-read on each tool's own pages on 29 October 2026, except Itera (see the note under the table). Hexby, Figma Make, Inspect, Vision, Remix, Lightsprint, Sparkles, Alloy and medit were checked on 30 October 2026; Builder.io, Netlify Agent Runners, Kosuke and PulseDev on 31 October 2026, and Netlify Agent Runners' pricing and agent list again on 19 November 2026; Revise on 6 November 2026; Productmind on 7 November 2026. PulseDev and ronda were checked again on 9 November 2026, and PulseDev, ronda, Productmind, Revyse and Vixentio were re-read on 11 November 2026; Frend on 22 November 2026; Modeinspect and Onlook on 24 November 2026; Soffi on 25 November 2026; medit again on 26 November 2026. Prices and features change. Tell us if something here is out of date and we'll fix it.
 
 For a product manager who wants to try Claude Code without setting up the repo, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
