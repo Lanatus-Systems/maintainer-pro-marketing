@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A five-line AI change request template: how PMs and designers can prompt an AI coding agent to change an existing app, and what to leave to a developer.",
   date: "2026-10-28",
-  updated: "2026-11-18",
+  updated: "2026-11-26",
   author: "The Butterneck team",
   tags: ["AI change request template", "change requests", "AI for product managers", "AI change requests", "product teams"],
   cover: {
@@ -33,6 +33,8 @@ A coding agent reads your message and the code. It does not see your roadmap, th
 - **What must stay.** If you don't say the layout, the other pages or the mobile view must not change, a broad edit is a reasonable reading of your request.
 
 None of this is new. A good ticket for a human developer has the same parts. An agent just acts on what you wrote faster, and with fewer questions.
+
+*Added 26 November 2026.* There is some research behind this. In an ETH Zurich study of 100 students who built and extended small apps with an AI agent, writing skill was a significant predictor of how well they did, alongside computer-science knowledge ([Thorgeirsson, Weidmann and Su, CHI 2026](https://arxiv.org/abs/2603.14133)). In ETH's write-up, Theo Weidmann, one of the authors, said: "People who formulate clear and structured prompts achieve better results, while unclear or imprecise wording is more likely to lead to defective software" ([ETH Zurich](https://ethz.ch/en/news-and-events/eth-news/news/2026/04/what-skills-do-people-need-to-successfully-program-with-ai.html)). The participants were students with some computer-science training, and the study shows a link, not a cause. It is still why the template asks for exact text instead of adjectives.
 
 ## Why the Keep line matters
 
