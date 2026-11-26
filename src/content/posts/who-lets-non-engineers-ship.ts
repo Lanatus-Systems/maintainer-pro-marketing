@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "How Atlassian, Nash, Fieldguide and Carcará let non-engineers ship with engineers involved, from their own posts, and how a live preview keeps that split.",
   date: "2026-11-18",
-  updated: "2026-11-22",
+  updated: "2026-11-27",
   author: "The Butterneck team",
   tags: ["product teams", "AI change requests", "live preview", "code review", "human in the loop", "case studies"],
   cover: {
@@ -78,6 +78,8 @@ They do not agree on timing. Fieldguide's preview sits on a pull request that an
 **A shorter example: Slite.** In a LinkedIn post in August 2026, Nils Jacobsen wrote: "At Slite, anyone can open a PR now: marketing, design, ops, PMs" ([LinkedIn](https://www.linkedin.com/posts/nils-jacobsen_the-hard-part-of-letting-non-engineers-ship-activity-7490663155430375427-OC5n)). What he lists is setup, not a new tool: branch protection so that "Everything goes through a PR", an "ask before" list "for anything touching env vars, migrations, auth, or API routes", preview deploys on every feature branch, and visual regression tests. On the preview: "The person opening the PR sees their change in a real browser before asking for review. Half the "does this look right?" questions answer themselves." Again, it's Slite's own process that opens the pull request, and the changes "still get reviewed by someone whose job title includes it." It's a short social post, not a write-up like the four above.
 
 **Another example: LTV.ai.** In a post on LTV.ai's blog on 2 September 2026, engineer Nikunj Bansal wrote: "Product, design, customer success, and marketing now ship many regular features themselves through an AI coding agent we built called Elty", and "A human engineer still owns the final merge gate." Requests start in a Slack thread; Elty opens the pull request, but "Elty does not merge. Its credentials cannot perform that action." Before a change counts as ready, it runs in an isolated environment and the thread gets a video "anyone involved can review without mentally executing a diff". The post gives one number: "In July, Elty opened 84 pull requests and 45 merged into production." ([LTV.ai](https://www.ltv.ai/blog/non-engineers-shipping-code)) As with Nash, it's LTV.ai's in-house agent that opens those pull requests, not Butterneck.
+
+**A newer example: FurtherAI.** In a post on FurtherAI's engineering blog on 11 November 2026, Sashank Gondala wrote: "One interesting side effect is that non-engineers have started shipping code too. Our designer has merged about 50 changes since August, including the ones that built our design system." People in deployment and customer-facing roles "can also make UI tweaks themselves right from slack", where anyone can "describe a change to an agent, and have it open a PR" ([FurtherAI](https://www.furtherai.com/engineering-blogs/building-an-ai-native-engineering-org)). FurtherAI goes further than the four write-ups above. Engineers turned each "rule only engineers knew" into an automated check (21 so far), and "Low-risk changes that pass tests, automated checks, and AI review merge on their own", up to a third of their changes. Engineers still set the standard, but for those changes a check enforces it, not a person. As with Nash and LTV.ai, it's FurtherAI's own setup that opens and merges those pull requests, not Butterneck.
 
 ## How it works in Butterneck
 
