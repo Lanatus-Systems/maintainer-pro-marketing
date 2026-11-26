@@ -6,7 +6,7 @@ export const post: BlogPost = {
   description:
     "What AI change requests are, how product teams automate the request-to-preview handoff safely on a live copy, what guardrails to check, and a rollout plan.",
   date: "2026-10-27",
-  updated: "2026-11-24",
+  updated: "2026-11-27",
   author: "The Butterneck team",
   tags: ["AI change requests", "product teams", "human in the loop", "change request process", "AI automation for product teams", "AI change requests for support teams"],
   cover: {
@@ -158,6 +158,10 @@ Four things. You ask on the real screen, not from memory. The AI edits the proje
 ### What are AI change requests?
 
 They let non-developers, like product managers and designers, ask for a change to an existing app in plain words. An AI coding agent edits the real code, the requester checks the result on a live preview, and a developer decides what ships.
+
+### How is a change request different from a feature request or a bug report?
+
+A change request asks to alter something that already exists and works: a label, a layout, the wording of an error message. A feature request asks for something the product doesn't do yet. A bug report says something is broken compared with how it should work. AI change requests suit the first kind, and small bugs you can see on the screen, because the person who asked can check the result on a live preview: the button says the new words, the error message now explains what to fix. Feature requests need design and scoping first, so they go to an engineer as a normal ticket (see the good and poor fits above). For a bug, let the person who reported it check the fix on the preview; see [let the reporter check the fix before it ships](/blog/reporter-checks-the-fix). Whatever the kind, a developer still reviews the change and decides whether it ships.
 
 ### Do requesters need technical skills?
 
