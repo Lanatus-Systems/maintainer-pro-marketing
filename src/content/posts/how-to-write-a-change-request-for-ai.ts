@@ -152,6 +152,20 @@ Say exactly what is wrong in your next message. In Butterneck, a turn can also b
 
 Yes. With Butterneck's Jira integration, the ticket's title, description, latest comments and attached files become the request, so put the five lines in the description.
 
+### How do I ask for a change to translated text?
+
+Name the language as well as the screen, and quote the text exactly as it appears in that language. Translated text usually lives in its own file for each language, so say whether the change is for one language or all of them. For example:
+
+\`\`\`
+Where: Checkout page, German version → the button under the total
+Now: "Weiter"
+Want: "Weiter zur Zahlung"
+Keep: The English and French buttons as they are.
+Check: The German checkout shows the new text on desktop and on mobile.
+\`\`\`
+
+Then check the preview in every language you changed. If the wording has legal weight, the same rule applies as in English: get it signed off first (see [What to leave to a developer](#what-to-leave-to-a-developer)).
+
 ## Try it
 
 [Book a 30-minute demo](https://calendar.app.google/p2McAaz4ZwXBiG5m9) and bring a real request your team has been waiting on. We will run it on a live copy. Or see [pricing](/pricing) and start on the free plan; a workspace owner on Starter can also try Pro free for one month.
