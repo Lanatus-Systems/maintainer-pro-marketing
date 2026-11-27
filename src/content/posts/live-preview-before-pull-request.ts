@@ -201,7 +201,7 @@ Yes, and in Butterneck the comment is the request. The person types it in the ch
 
 ### Does the person checking the preview need an account?
 
-No. Looking at a Butterneck preview does not need an account: the requester, or any stakeholder they send the share link to, opens it and uses the running app. Sending a change request is separate. The developer chooses who can ask, a list of people or anyone with the link, and if the link is closed a visitor can ask for access, which the developer allows or declines. Because a preview link can be passed around, use test data in it, not real customer data.
+No. Looking at a Butterneck preview does not need an account: the requester, or any stakeholder they send the share link to, opens it and uses the running app. Sending a change request is separate. The developer chooses who can ask, a list of people or anyone with the link, and if the link is closed a visitor can ask for access, which the developer allows or declines. Share links are unlisted, not a private vault. Anyone with the link can open that preview. Because a preview link can be passed around, use test data in it, not real customer data.
 
 ### Is Butterneck a visual feedback tool for an AI coding agent?
 
