@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "Compare 40 AI tools that let PMs and designers change an existing web app, side by side: where the agent runs, live preview or pull request, and who ships.",
   date: "2026-10-28",
-  updated: "2026-11-27",
+  updated: "2026-11-28",
   author: "The Butterneck team",
   tags: ["comparison", "AI tools", "AI change requests", "product teams", "non-developers"],
   cover: {
@@ -268,7 +268,7 @@ Figma Make on your codebase is a closed beta for now: access is by waitlist, it 
 
 ### Which of these tools let engineers review and approve a change before it merges?
 
-The "What you get back" column shows what each tool hands over for review: a prototype, a pull request or a live preview. Whether a merge can skip review depends on each tool's settings and your repository rules, so check its own page. Butterneck itself doesn't commit anything: the person who asked checks the change on a live preview, then a developer reviews the diff in their own tools and decides whether to commit it, open a pull request and merge.
+The "What you get back" column shows what each tool hands over for review: a prototype, a pull request or a live preview. Whether a merge can skip review depends on each tool's settings and your repository rules, so check its own page. Butterneck itself doesn't commit anything: the person who asked checks the change on a live preview, then a developer reviews the diff in their own tools and decides whether to commit it, open a pull request and merge. Our post on [checking a live preview before the pull request](/blog/live-preview-before-pull-request) explains what the requester checks and when a developer takes over.
 
 ### Which tools on this list are alternatives to each other?
 
