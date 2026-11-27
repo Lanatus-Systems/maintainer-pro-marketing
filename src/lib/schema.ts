@@ -100,7 +100,7 @@ export function homeJsonLd() {
         name: "Butterneck demo: a change request on a live preview",
         description: "A change request typed on a live preview and the AI updating the app.",
         thumbnailUrl: `${SITE_URL}/media/hero-demo-poster.webp`,
-        contentUrl: `${SITE_URL}/media/hero-demo.mp4`,
+        contentUrl: `${SITE_URL}/media/hero-demo-vo.mp4`,
         uploadDate: "2026-10-27T16:29:02+05:30",
         duration: "PT41S",
         publisher: { "@id": `${SITE_URL}/#organization` },
@@ -112,7 +112,7 @@ export function homeJsonLd() {
         description:
           "Ask for a change in chat on the live preview, the developer's AI builds it locally, the preview updates, and the developer decides what ships.",
         thumbnailUrl: `${SITE_URL}/media/how-it-works-poster.webp`,
-        contentUrl: `${SITE_URL}/media/how-it-works.mp4`,
+        contentUrl: `${SITE_URL}/media/how-it-works-vo.mp4`,
         uploadDate: "2026-10-27T16:29:02+05:30",
         duration: "PT37S",
         publisher: { "@id": `${SITE_URL}/#organization` },

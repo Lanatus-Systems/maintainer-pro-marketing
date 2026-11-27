@@ -110,7 +110,7 @@ export default function HomePage() {
           A request typed on the live copy, the AI editing the project, and the updated preview.
         </p>
         <DemoVideo
-          src="/media/hero-demo.mp4"
+          src="/media/hero-demo-vo.mp4"
           poster="/media/hero-demo-poster.webp"
           width={1920}
           height={1080}
@@ -203,7 +203,7 @@ export default function HomePage() {
       <section id="how-it-works" className="landing-section" aria-labelledby="steps-heading">
         <h2 id="steps-heading">How it works</h2>
         <DemoVideo
-          src="/media/how-it-works.mp4"
+          src="/media/how-it-works-vo.mp4"
           poster="/media/how-it-works-poster.webp"
           width={1200}
           height={674}
