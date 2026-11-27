@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "Can product managers build apps without engineering?",
   description: "Yes, for small changes: a PM asks an AI coding agent on a live copy of the app and checks the result, and a developer decides what ships. Setup and cost.",
   date: "2026-11-03",
-  updated: "2026-11-26",
+  updated: "2026-11-27",
   author: "The Butterneck team",
   tags: ["product managers", "AI change requests", "answer", "AI app builder", "AI prototyping for product managers"],
   cover: {
@@ -76,7 +76,7 @@ No. They describe the change in plain words and check the result on the preview.
 
 ### Do product managers or designers need GitHub or repository access?
 
-No. They don't clone the code, open the repository or sign in to a coding tool. A developer connects the project on their own computer, and the requester opens the share link to the running app and types the change in the chat. The developer chooses whose messages start the AI: a list of people, or anyone with the link. Someone who only looks at the preview doesn't need an account. The coding agent already signed in on a developer's connected computer (Claude Code, Cursor or Antigravity) edits the project, and a developer reviews the diff and decides what ships, through the team's usual Git process. Butterneck doesn't commit, push or open a pull request.
+No. They don't clone the code, open the repository or sign in to a coding tool. A developer connects the project on their own computer, and the requester opens the share link to the running app and types the change in the chat. The developer chooses whose messages start the AI: a list of people, or anyone with the link. Someone who only looks at the preview doesn't need an account. The coding agent already signed in on a developer's connected computer (Claude Code, Cursor or Antigravity) edits the project, and a developer reviews the diff and decides what ships, through the team's usual Git process. Butterneck doesn't commit, push or open a pull request. If you were weighing a Claude Code or Cursor seat for each PM instead, see [Claude Code for product managers](/blog/claude-code-for-product-managers).
 
 ### Will the AI push changes to production?
 
