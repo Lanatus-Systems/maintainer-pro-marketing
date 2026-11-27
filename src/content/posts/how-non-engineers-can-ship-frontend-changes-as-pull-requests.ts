@@ -85,6 +85,10 @@ Up to the last step, yes. A designer can ask for a copy, spacing, color or layou
 
 For changes to screens that already exist, yes. The designer opens the share link to the running app and asks for the change in plain words. The team's coding agent edits the real project on a developer's connected computer, and the preview updates on the same link, so what they hand over is a working version in the app's own code, not a mockup. Nothing reaches production until a developer reviews the diff and ships it, and a version nobody wants is simply discarded. New flows and features still start with design and scoping. Jacquelyn Halpern, who works on product design and AI at Salesforce Trailhead, describes the same shift: she writes, "We're using the code and components that underpin the product to build our prototypes", and "Designers are starting to create PRs for review that then get merged into production" ([From Prototype to Pull Request](https://uxmag.com/articles/from-prototype-to-pull-request), UX Magazine, 18 November 2026).
 
+### Can designers use this to pay down design debt?
+
+For the small items on the list, yes. Design debt is the gap between the app as built and its design system: a hardcoded color where a token belongs, spacing set by eye, an error state that looks different on every form. Most of those are the changes in "Which frontend changes to start with" above. A designer opens the share link to the running app, types the fix in the chat (for example, "use our spacing token on this row instead of 14px") and checks it on the screen they mean. A developer then reads the diff, which is also where they confirm the fix uses the existing token rather than adding another hardcoded value, and ships it the usual way or drops it. Changes to a shared component other teams rely on, and anything that needs a flow redesigned, start with an engineer. Butterneck doesn't commit, push or open a pull request.
+
 ### Can a designer open the pull request themselves?
 
 They can if your Git setup allows it, but with Butterneck the developer opens it after reviewing the change. Butterneck doesn't open PRs.
