@@ -203,11 +203,11 @@ export default function HomePage() {
       <section id="how-it-works" className="landing-section" aria-labelledby="steps-heading">
         <h2 id="steps-heading">How it works</h2>
         <DemoVideo
-          src="/media/how-it-works-vo.mp4"
+          src="/media/how-it-works-v2.mp4"
           poster="/media/how-it-works-poster.webp"
           width={1200}
           height={674}
-          label="Butterneck in four steps: ask for a change in chat on the live preview, the developer's AI builds it locally, the preview updates, and the developer decides what ships"
+          label="Butterneck in four steps: ask for a change in chat on the live preview, the developer's own coding agent builds it, the preview updates, and the developer decides what ships"
         />
         <p className="landing-section-lead">
           Connect the product, let them ask, and decide what goes live.

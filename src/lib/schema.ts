@@ -110,9 +110,9 @@ export function homeJsonLd() {
         "@id": `${SITE_URL}/#video-how-it-works`,
         name: "How Butterneck works in four steps",
         description:
-          "Ask for a change in chat on the live preview, the developer's AI builds it locally, the preview updates, and the developer decides what ships.",
+          "Ask for a change in chat on the live preview, the developer's own coding agent builds it, the preview updates, and the developer decides what ships.",
         thumbnailUrl: `${SITE_URL}/media/how-it-works-poster.webp`,
-        contentUrl: `${SITE_URL}/media/how-it-works-vo.mp4`,
+        contentUrl: `${SITE_URL}/media/how-it-works-v2.mp4`,
         uploadDate: "2026-10-27T16:29:02+05:30",
         duration: "PT37S",
         publisher: { "@id": `${SITE_URL}/#organization` },
