@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests with human-in-the-loop AI coding: the person who asked checks a live preview, Butterneck never merges, and a developer decides what ships.",
   date: "2026-10-27",
-  updated: "2026-11-23",
+  updated: "2026-11-27",
   author: "The Butterneck team",
   tags: ["human in the loop", "AI coding agents", "code review", "AI safety", "developer workflow"],
   cover: {
@@ -180,6 +180,10 @@ An AI coding agent proposes and makes changes, and a person approves the steps t
 ### Where does Butterneck put the human?
 
 At two points. The person who asked checks the change on a live preview of the running app. A developer decides whether it ships, and ships it the team's usual way.
+
+### What does a human-in-the-loop feature-request loop look like on a small team?
+
+Roma, a three-person startup, shared one on 25 November 2026. User requests go to their agents, and "Our agents do the work. We make the calls." In the video with that post, a coding agent turns a user's request into a plan, a founder approves the plan, the agent builds the change and deploys it to staging, and the founders click through it themselves before approving it for production. "When a user asked for Granola in the morning, it was live the same day" ([Jan Senderek on X, 25 November 2026](https://x.com/jans/status/2125620087818473610)). Both checks in that loop are made by the founders who own the code. Butterneck is for teams where the person asking isn't a developer: they check the change on a live preview of the running app, and a developer decides whether it ships and ships it the team's usual way. Butterneck itself never opens a pull request, merges or deploys.
 
 ### Does Butterneck open pull requests or merge?
 
