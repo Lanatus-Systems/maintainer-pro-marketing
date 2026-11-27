@@ -6,7 +6,7 @@ export const post: BlogPost = {
   seoTitle: "How to let non-engineers ship frontend changes as pull requests",
   description: "Let PMs and designers check a change on a live preview, then a developer opens the PR. Plus the GitHub setup: protected main, CODEOWNERS, required review.",
   date: "2026-11-03",
-  updated: "2026-11-21",
+  updated: "2026-11-27",
   author: "The Butterneck team",
   tags: ["pull requests", "non-developers", "answer", "designers"],
   cover: {
@@ -25,6 +25,8 @@ Some tools do open a PR for a PM or designer. That can work. But a PR is a poor 
 TJ describes what happens on many teams in [Design Engineering Has a Handoff Problem](https://southleft.substack.com/p/design-engineering-has-a-handoff) (14 November 2026): designers' AI-generated pull requests land with engineers, and "The work didn’t go away. It turned into a stack of pull requests that somebody has to review."
 
 Some design leaders go further and train designers to work in production code. David Siren Eisner, VP of Product Design at Datadog, makes that case in [an interview with Rosenfeld Media](https://rosenfeldmedia.com/from-designing-to-building-the-rise-of-product-design-engineering-with-david-siren-eisner/) about his book *Product Design Engineering*, due from Rosenfeld Media in November 2026. Even he says "the goal is not to turn every designer into an engineer." Intercom's design team made the same move in 2025: designers fix UI issues in their own local environment, and the fix ships "after an Engineer has approved a quick code review", as [Intercom's design leaders describe it](https://ideas.fin.ai/p/intercoms-3-point-framework-for-ai). For designers who don't want to own a branch, the workflow below keeps the pull request with a developer.
+
+The other cost is setup. Adam Gardner, Director of Product at Backstroke, wrote in March 2026 about shipping his first pull request as a PM. Getting the app running on his machine "meant installing and configuring somewhere around a dozen tools I'd never heard of, getting access to five or six different systems", and "without Brian, I wouldn't have gotten through it" (Brian is Backstroke's CTO). His team later built a single command that starts the whole stack, and engineers still review and merge what he pushes ([I'm Just a PM (Who Shipped to Production)](https://www.backstroke.com/blog/just-a-pm-who-shipped-to-production)). He calls the setup "a one-time cost", and for a PM who wants to own branches it can be worth paying. In the workflow below, only the computer a developer connects has to run the app; the person asking opens a share link to it.
 
 ## A workflow that works
 
