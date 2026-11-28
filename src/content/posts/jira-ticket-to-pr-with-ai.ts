@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "AI change requests from a Jira ticket: a label starts the work, the requester checks a live preview, and a developer decides whether to open the PR.",
   date: "2026-10-27",
-  updated: "2026-11-26",
+  updated: "2026-11-28",
   author: "The Butterneck team",
   tags: ["Jira ticket to pull request", "Jira to PR with AI", "Jira AI automation", "AI coding agents", "code review", "link Jira ticket to PR", "Jira tickets for AI agents"],
   cover: {
@@ -160,6 +160,10 @@ Some ticket-to-PR tools can be set to pause until a person approves the agent's 
 ### How do I trigger it from Jira?
 
 Add the label \`butterneck\` and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project. Mapping each developer's Jira account to their computer is part of connecting Jira.
+
+### Can a product owner start a change from a Jira ticket?
+
+Yes. The person who asks doesn't need to be a developer. A product owner, PM or designer writes the ticket as usual: where it is, what it says now, what it should say and what must stay the same. Then they add the label \`butterneck\` and assign the ticket to a teammate whose Jira account is mapped to a computer that has the project. When the AI is done, a short note and a link to the preview go back on the ticket, so the product owner can check the change on the running app and keep refining it in plain words. A developer then reads the diff and decides whether it ships. Butterneck never opens a pull request, merges or deploys.
 
 ### Does the AI read the ticket's comments and attachments?
 
