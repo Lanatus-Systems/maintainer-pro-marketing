@@ -7,7 +7,7 @@ export const post: BlogPost = {
   description:
     "A copyable AI change policy for PMs, designers and support leads: what they can ask an AI coding agent for, what needs an engineer, and who merges.",
   date: "2026-10-27",
-  updated: "2026-11-21",
+  updated: "2026-11-28",
   author: "The Butterneck team",
   tags: [
     "AI change request policy",
@@ -262,9 +262,9 @@ A developer, through your normal release process. The requester accepts the chan
 
 Not under this policy. If a tool you use lets a non-engineer approve and merge a change from inside it, turn that off, or require an approving developer review on the main branch so merge rights stay with a developer. epilot learned this the hard way: after a non-engineer with full push access bypassed CI and deployed to production without review, the team changed the rule to "non-engineers and agents create PRs; engineers review and merge" ([epilot, April 2026](https://dev.to/epilot/our-entire-company-ships-code-now-40-prs-from-non-engineers-in-60-days-jo5)). With Butterneck the requester checks the change on a live preview, and Butterneck doesn't commit, push, open a pull request, merge or deploy: a developer does.
 
-### How do you keep a record of who asked for an AI change and who approved it?
+### How do you keep an audit trail of who asked for an AI change and who approved it?
 
-Keep it where your team already keeps release history. The request is the record of who asked: with Butterneck, the conversation stays on the live copy, and a change started from a Jira ticket gets a short note and a preview link posted back to that ticket. The requester then writes one line saying what they asked for and that they accepted it on the preview (step 2 of the template's review and release section). The approval is the developer's own commit or pull request in your Git host, because Butterneck doesn't commit, push or open a pull request. Put the ticket key or a link to the request in the commit message or pull request description so the two are joined.
+Keep the audit trail where your team already keeps release history. The request is the record of who asked: with Butterneck, the conversation stays on the live copy, and a change started from a Jira ticket gets a short note and a preview link posted back to that ticket. The requester then writes one line saying what they asked for and that they accepted it on the preview (step 2 of the template's review and release section). The approval is the developer's own commit or pull request in your Git host, because Butterneck doesn't commit, push or open a pull request. Put the ticket key or a link to the request in the commit message or pull request description so the two are joined.
 
 ### Can an AI reviewer's approval count as the developer's decision?
 
